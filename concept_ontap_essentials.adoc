@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: concept_ontap_essentials.html 
+summary: ONTAP Essentials enthält verschiedene Dashboards und Workflows, die Ihnen detaillierte Einblicke in Ihre Umgebung bieten. 
+keywords: dashboard, widget, ontap, overview, insight 
+---
+= ONTAP Essentials
+:allow-uri-read: 
+
+
+[role="lead"]
+ONTAP Essentials enthält eine Sammlung von Dashboards und Workflows, die einen detaillierten Überblick über Ihre ONTAP-Bestände und Workloads geben. Bei der Arbeit in den ONTAP-Grundlagen werden die folgenden Begriffe verwendet:
+
+* Infrastruktur/Inventar: Objekte, die Benutzerdaten Storage-/Netzwerkservices bereitstellen
+* Workloads: Objekte, die Benutzern eine Schnittstelle zum Lesen/Schreiben von Daten bieten
+* Datensicherung: Objekte, die mit NetApp Datensicherungs-Technologien gesichert werden können
+
+
+Weitere Begriffe und Definitionen zu ONTAP finden Sie im link:task_dc_na_cdot.html["ONTAP Data Collector"] Dokumentation.
+
+ONTAP Essentials erfordert mindestens einen funktionierenden ONTAP Data Collector mit Daten, die innerhalb der letzten sieben Tage erfasst werden.
+
+
+
+== Überblick
+
+Um die Erkundung zu beginnen, wählen Sie im Hauptmenü des Cloud Insights * ONTAP Essentials* aus.
+
+image:ONTAP_Essentials_Overview_Sept.png["Übersichtskonsole zu ONTAP Essentials"]
+
+Das Dashboard *Übersicht* zeigt nützliche Informationen wie die Anzahl der Cluster in Ihrer Umgebung mit ihrer Gesamtkapazität und ihren Prozentwerten an Performance an. Außerdem werden Prognosedaten zur Anzahl der erwarteten Tage angezeigt, bis ihnen die Storage-Kapazität oder Performance-Kapazität nicht mehr genügend Speicherplatz zur Verfügung steht. Und wenn in Ihrer Infrastruktur Controller bei hohen Temperaturen ausgeführt werden, sind Sie bei ONTAP Essentials genau dies.
+
+Informative Diagramme geben Ihnen einen Überblick über die Performance über einen längeren Zeitraum und über Ausfälle der Kapazitätsauslastung.
+
+Jede dieser Diagramme oder Datenpunkte kann als Ausgangspunkt für Untersuchungen oder Untersuchungen verwendet werden.
+
+Hinweis: Eine „Tage bis zur vollen“ Zahl von „0“ (Null) gibt an, dass die Tage für die volle Anzahl von mehr als 90 Tagen geschätzt werden. Mit anderen Worten: Ihre Systeme sind nicht in der Gefahr, dass der Speicherplatz zu jeder Zeit knapp wird.
+
+
+
+== Datensicherung
+
+Klicken Sie auf die Seite *Datensicherung*, um SnapMirror Beziehungen anzuzeigen. Klicken Sie durch, um Informationen zum Quell- oder Zielvolumen zu erhalten, oder klicken Sie auf das Zahnradsymbol, um Spalten für die Daten hinzuzufügen, die angezeigt werden sollen.
+
+image:ONTAP_Essentials_data_protection.png["Listenseite für SnapMirror Beziehungen"]
+
+
+
+== Meldungen
+
+Hier können Sie die Active Alerts in Ihrer Umgebung anzeigen und potenzielle Probleme schnell auf den Blick nehmen. Wählen Sie die Registerkarte _aufgelöst_ aus, um die Warnmeldungen anzuzeigen, die behoben wurden.
+
+image:ONTAP_Essentials_Alerts_Menu.png["Menü „ONTAP-Warnungen“"]
+image:ONTAP_Essentials_Alerts_Page.png["Beispiel der Seite „ONTAP Alerts“, auf der aktive Meldungen angezeigt werden"]
+
+
+
+== Infrastruktur
+
+Die Seite ONTAP Essentials *Infrastruktur* bietet Ihnen einen Überblick über den Zustand und die Leistung des Clusters. Dabei werden vorkonfigurierte Abfragen für alle grundlegenden ONTAP-Objekte verwendet. Wählen Sie den Objekttyp aus, den Sie erkunden möchten (Cluster, Storage Pool usw.), und legen Sie fest, ob Informationen zu Systemzustand und Performance angezeigt werden sollen. Stellen Sie Filter ein, um sich tiefer in einzelne Systeme einzutauchen.
+
+image:ONTAP_Essentials_Health_Performance.png["Auswahl der Infrastruktur für Storage-Pools"]
+
+Infrastrukturseite mit Cluster-Zustand:image:ONTAP_Essentials_Infrastructure_A.png["Zu erforschen: Infrastrukturobjekte"]
+
+
+
+== Netzwerkbetrieb
+
+Das ONTAP Essentials Networking verschafft Ihnen Ansichten Ihrer FC-, NVME FC-, Ethernet- und iSCSI-Infrastruktur. Auf diesen Seiten können Sie Dinge wie Ports in Ihren Clustern und deren Knoten erkunden.
+
+image:ONTAP_Essentials_Alerts_Menu.png["Netzwerkmenü von ONTAP Essentials"]
+image:ONTAP_Essentials_Alerts_Page.png["Die ONTAP Essentials Netzwerk-FC-Seite zeigt Ports in Cluster-Knoten an"]
+
+
+
+== Workloads
+
+Workloads auf LUNs/Volumes, NFS- oder SMB-Freigaben oder qtrees in Ihrer Umgebung anzeigen und erkunden.
+
+image:ONTAP_Essentials_Workloads_Menu.png["Menü „Workloads“"]
+
+image:ONTAP_Essentials_Workloads_Page.png["Listenseite Workloads"]

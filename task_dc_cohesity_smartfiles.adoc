@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task_dc_cohesity_smartfiles.html 
+keywords: data collector, cohesity 
+summary: Konfigurieren des Datensammlers Cohesity SmartFiles 
+---
+= Datensammler Cohesity SmartFiles
+:allow-uri-read: 
+
+
+[role="lead"]
+Dieser REST API-basierte Collector erwirbt einen Cohesity Cluster und ermittelt die „Ansichten“ (als interne Cloud Insights Volumes), die verschiedenen Nodes sowie Performance-Kennzahlen.
+
+
+
+== Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| Cohesity Cluster-IP | IP-Adresse des Cohesity-Clusters 
+
+
+| Benutzername | Benutzername für den Cohesity Cluster 
+
+
+| Passwort | Passwort, das für den Cohesity Cluster verwendet wird 
+|===
+
+
+== Erweiterte Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| TCP-Port | Port, der für die TCP-Kommunikation mit dem Cohesity-Cluster verwendet wird 
+
+
+| Abfrageintervall für Bestand (min) | Intervall zwischen Bestandsabstimmungen Der Standardwert ist 60 Minuten. 
+
+
+| Leistungsintervall (min) | Intervall zwischen Performance-Abstimmungen Der Standardwert beträgt 900 Sekunden. 
+|===
+
+
+== Fehlerbehebung
+
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].

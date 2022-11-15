@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: cs_notifications_email.html 
+summary: Hinzufügen von E-Mail-Adressen für Benachrichtigungen zu Cloud Secure-Warnungen. 
+keywords: email, notifications, alerts, warnings, attacks 
+---
+= Konfigurieren von E-Mail-Benachrichtigungen für Warnungen, Warnungen und den Zustand des Agent/Data Source Collectors
+:allow-uri-read: 
+
+
+[role="lead"]
+Um Cloud Secure-Warnungsempfänger zu konfigurieren, klicken Sie auf *Admin > Benachrichtigungen* und geben Sie für jeden Empfänger eine E-Mail-Adresse in die entsprechenden Abschnitte ein.
+
+
+
+== Potenzielle Angriffs- und Warnhinweise
+
+Um Benachrichtigungen zu potenziellen Angriffen zu senden, geben Sie die E-Mail-Adressen der Empfänger im Abschnitt „ potenzielle Angriffswarnungen senden “ ein. Für jede Aktion der Warnmeldung werden E-Mail-Benachrichtigungen an die Benachrichtigungsliste gesendet.
+
+Um _Warnhinweise zu senden, geben Sie die E-Mail-Adressen der Empfänger im Abschnitt „ Warnhinweise senden “ ein.
+
+
+
+== Statusüberwachung von Agent und Data Collector
+
+Sie können den Zustand von Agenten und Datenquellen über Benachrichtigungen überwachen.
+
+Um Benachrichtigungen zu erhalten, wenn ein Agent oder Datenquellensammler nicht funktioniert, geben Sie die E-Mail-Adressen der Empfänger im Abschnitt „_Data Collection Health Alerts_“ ein.
+
+Beachten Sie Folgendes:
+
+* Zustandswarnmeldungen werden erst gesendet, nachdem der Agent/Sammler mindestens eine Stunde lang die Meldung beendet hat.
+* Es wird nur eine E-Mail-Benachrichtigung an die vorgesehenen Empfänger in einem bestimmten Zeitraum von 24 Stunden gesendet, auch wenn der Agent oder der Datensammler länger getrennt ist.
+* Bei einem Agent-Fehler wird eine Warnung gesendet (nicht eine pro Collector). Die E-Mail enthält eine Liste aller betroffenen SVMs.
+* Active Directory-Sammlung Fehler wird als Warnung gemeldet; es hat keine Auswirkungen auf Ransomware-Erkennung.
+* Die Setup-Liste „erste Schritte“ enthält jetzt eine neue Phase „_E-Mail-Benachrichtigungen konfigurieren_“.
+

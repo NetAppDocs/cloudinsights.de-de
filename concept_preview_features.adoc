@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: concept_preview_features.html 
+summary: Die Vorschaufunktionen stehen nur mit begrenzter Kapazität zur Verfügung und bieten noch keine Highlights-Funktionen zur Prime Time. 
+keywords: coming soon, preview, 
+---
+= Funktionen und Funktionen der Vorschau
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights stellt neue Features und Funktionen auf _Preview_ Weise vor. Die Vorschaufunktionen werden in begrenzten Umgebungen oder mit begrenzter Kapazität verfügbar gemacht.
+
+Wenn Sie eine oder mehrere dieser Funktionen anzeigen möchten, wenden Sie sich an Ihren link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp Vertriebsteam"] Finden Sie weitere Informationen.
