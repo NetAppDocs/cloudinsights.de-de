@@ -74,6 +74,8 @@ Anmerkungsregeln werden von oben in der Regelliste bis unten verarbeitet. Um die
 . Klicken Sie nach Bedarf auf *nach oben* oder *nach unten bewegen*, bis die Regel an dem gewünschten Ort angezeigt wird.
 
 
+Beachten Sie, dass beim Ausführen mehrerer Regeln, die dieselbe Anmerkung für ein Asset aktualisieren, die erste Regel (wie von oben nach unten ausgeführt) die Anmerkung anwendet und das Asset aktualisiert, dann gilt die zweite Regel, ändert aber keine Beschriftung, die bereits durch die vorherige Regel festgelegt wurde.
+
 
 
 == Anmerkungsregeln werden gelöscht
