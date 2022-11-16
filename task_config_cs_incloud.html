@@ -3082,7 +3082,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-15 22:09:44 +0000">11/15/2022</time>
+    <time datetime="2022-11-16 18:52:31 +0000">11/16/2022</time>
     
   
 
@@ -3201,6 +3201,30 @@
 <div class="paragraph">
 <p>Ausführliche Schritte finden Sie über den folgenden Link: <a href="https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent" class="bare">https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent</a></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="fehlerbehebung">Fehlerbehebung</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Problem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auflösung</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">„Cloud Secure: ONTAP-Typ für Amazon FxSN Datensammler konnte nicht ermittelt werden“, wird vom Data Collector angezeigt. Der Kunde kann den neuen Amazon FSxN-Datensammler nicht zu Cloud Secure hinzufügen. Die Verbindung zum FSxN-Cluster an Port 443 vom Agenten ist zeitabhängig. Für die Kommunikation sind Firewall- und AWS Sicherheitsgruppen die erforderlichen Regeln aktiviert. Ein Agent wurde bereits bereitgestellt und befindet sich auch im selben AWS Konto. Dieser Agent wird verwendet, um die verbleibenden NetApp-Geräte zu verbinden und zu überwachen (und alle funktionieren).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lösen Sie dieses Problem, indem Sie fsxadmin LIF-Netzwerksegment zur Sicherheitsregel des Agenten hinzufügen. Erlaubt alle Ports, wenn Sie sich nicht sicher über die Ports sind.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
