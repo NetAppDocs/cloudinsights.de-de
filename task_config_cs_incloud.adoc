@@ -67,3 +67,18 @@ Konfigurieren Sie die Maschine, die als Cloud Secure-Agent verwendet werden soll
 
 
 Ausführliche Schritte finden Sie über den folgenden Link: https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent
+
+
+
+== Fehlerbehebung
+
+Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.
+
+|===
+
+
+| Problem | Auflösung 
+
+
+| „Cloud Secure: ONTAP-Typ für Amazon FxSN Datensammler konnte nicht ermittelt werden“, wird vom Data Collector angezeigt. Der Kunde kann den neuen Amazon FSxN-Datensammler nicht zu Cloud Secure hinzufügen. Die Verbindung zum FSxN-Cluster an Port 443 vom Agenten ist zeitabhängig. Für die Kommunikation sind Firewall- und AWS Sicherheitsgruppen die erforderlichen Regeln aktiviert. Ein Agent wurde bereits bereitgestellt und befindet sich auch im selben AWS Konto. Dieser Agent wird verwendet, um die verbleibenden NetApp-Geräte zu verbinden und zu überwachen (und alle funktionieren). | Lösen Sie dieses Problem, indem Sie fsxadmin LIF-Netzwerksegment zur Sicherheitsregel des Agenten hinzufügen. Erlaubt alle Ports, wenn Sie sich nicht sicher über die Ports sind. 
+|===
