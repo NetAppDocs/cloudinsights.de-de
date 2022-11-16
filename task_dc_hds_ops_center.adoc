@@ -56,8 +56,8 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 Zur Erfassung von Bestandsdaten müssen Sie Folgendes haben:
 
-* IP-Adresse des Ops Center-Servers
-* Schreibgeschützter Benutzername und Kennwort für die Ops Center-Software und Peer-Berechtigungen
+* IP-Adresse oder Hostname des Ops Center-Servers, der die „Common Services“-Komponente hostet
+* Root/sysadmin Benutzerkonto und Passwort, die auf allen Servern vorhanden sind, auf denen Ops Center Komponenten gehostet werden. HDS hat KEINE Unterstützung DER REST-API für die Nutzung durch LDAP/SSO-Benutzer bis Ops Center 10.8+ implementiert
 
 
 

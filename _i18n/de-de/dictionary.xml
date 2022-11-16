@@ -6446,8 +6446,6 @@
   <block id="a18b5712dface3f20bce7750886350d3" category="cell">Host-Gruppen</block>
   <block id="5b52c3da7acdc6837b619fa0e7beb98b" category="cell">Volume-Zuordnung und -Maskierung</block>
   <block id="b4a20e3a6be7e6cd6f8e3dcdd45cb2a8" category="cell">Volume-Paare</block>
-  <block id="3d9fdded41d1c4003ba59b29e1faef21" category="list-text">IP-Adresse des Ops Center-Servers</block>
-  <block id="2d9bdba47e7ef41afea9893477c6c1b1" category="list-text">Schreibgeschützter Benutzername und Kennwort für die Ops Center-Software und Peer-Berechtigungen</block>
   <block id="8f4ab816532074b60c2865f1089b6d38" category="cell">Hitachi Ops Center-IP-Adresse</block>
   <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">IP-Adresse oder vollqualifizierter Domänenname des Ops Center-Servers, der die Komponente „Allgemeine Dienste“ hostet</block>
   <block id="8db0f231405345684c1dab98cc049f52" category="cell">Benutzername für den Ops-Center-Server.</block>
@@ -9183,4 +9181,6 @@
   <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">Vergewissern Sie sich, dass Sie &gt; 50 Dateien verschlüsseln. Eine kleine Anzahl von Dateien wird ignoriert.</block>
   <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">Führen Sie keinen Angriff mit demselben Benutzer mehrmals durch. Nach einigen Fällen wird CS das Benutzerverhalten kennen und davon ausgehen, dass es sich um das normale Verhalten des Benutzers handelt.</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">Verschlüsseln Sie keine Dateien, die gerade von demselben Benutzer erstellt wurden. Das Ändern einer Datei, die gerade von einem Benutzer erstellt wurde, wird nicht als riskante Aktivität betrachtet. Verwenden Sie stattdessen Dateien, die von einem anderen Benutzer erstellt wurden, ODER warten Sie ein paar Stunden zwischen Erstellung und Verschlüsselung der Dateien.</block>
+  <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">IP-Adresse oder Hostname des Ops Center-Servers, der die „Common Services“-Komponente hostet</block>
+  <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">Root/sysadmin Benutzerkonto und Passwort, die auf allen Servern vorhanden sind, auf denen Ops Center Komponenten gehostet werden. HDS hat KEINE Unterstützung DER REST-API für die Nutzung durch LDAP/SSO-Benutzer bis Ops Center 10.8+ implementiert</block>
 </blocks>
