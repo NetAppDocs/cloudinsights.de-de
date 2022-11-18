@@ -3989,9 +3989,6 @@
   <block id="1dc677ce29033ce9855fe2699237c9a1" category="list-text">*Quell-IP*, auf die das Element zugegriffen wurde. Sie müssen eine gültige Quell-IP-Adresse in doppelten Anführungszeichen angeben, z. B. „10.1.1.1.“. Unvollständige IPs wie „10.1.1.*“, „10.1.*.*“ usw. funktionieren nicht.</block>
   <block id="993bee13d79883a291c5bf94757d27d8" category="list-text">*Protokoll* zum Abrufen protokollspezifischer Aktivitäten.</block>
   <block id="c3d430182436845185c1ac182ba51c05" category="list-text">*Benutzername* des Benutzers, der die Aktivität ausführt. Sie müssen den genauen Benutzernamen angeben, um sie zu filtern. Die Suche mit teilweisen Nutzernamen oder teilweisen Nutzernamen, vorfixiert oder mit ‘*’ abgestickt, funktioniert nicht.</block>
-  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD * *Rauschunterdrückung* zum Filtern von Dateien, die in den letzten 2 Stunden vom Benutzer erstellt werden. Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.</block>
-  <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">*Rauschunterdrückung* zum Filtern von neu erstellten Dateien, die vom Benutzer erstellt wurden (d.h. in den letzten 2 Stunden). Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.</block>
-  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fcaa2</block>
   <block id="5e5226f8443d6c79a977ffd6e71a8d9d" category="paragraph">Die folgenden Felder unterliegen speziellen Filterregeln:</block>
   <block id="3d96016f7628ba3b55f9ed124fe9a321" category="list-text">*Entity Type*, mit Entity (file) Extension</block>
   <block id="5c50b1e65ca02ceaca4a85e8cc5af6bf" category="list-text">*Pfad* der Entität</block>
@@ -4003,17 +4000,12 @@
   <block id="9f5698d8ff9580fb0292b0180a70711f" category="list-text">Der genaue Wert sollte in Anführungszeichen liegen: Beispiel: "suchtext"</block>
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">Platzhalter-Strings dürfen keine Anführungszeichen enthalten: Beispiel: suchtext, \*suchtext*, filtert nach Zeichenfolgen, die ‘seartext’ enthalten.</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">String mit einem Präfix, Beispiel: suchtext* , sucht alle Strings, die mit ‘seartext’ beginnen.</block>
-  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">== Sortieren Von Forensischen Vorgangsverlauf-Daten</block>
   <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">Sie können Vorgangshistorie-Daten nach_Time, User, Source IP, Activity, Path_ und_Entity Type_ sortieren. Standardmäßig wird die Tabelle nach absteigender_Time_-Reihenfolge sortiert, was bedeutet, dass die neuesten Daten zuerst angezeigt werden. Die Sortierung ist für die Felder _Device_ und _Protocol_ deaktiviert.</block>
-  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">== Alle Aktivitäten Exportieren</block>
   <block id="32d755a54c35928d05977d875451dc4b" category="paragraph">Sie können den Vorgangsverlauf in eine CSV-Datei exportieren, indem Sie über der Tabelle „Vorgangsverlauf“ auf die Schaltfläche „_Export_“ klicken. Beachten Sie, dass nur die 10,000 wichtigsten Datensätze exportiert werden.</block>
-  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">== Spaltenauswahl für Alle Aktivitäten</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">In der Tabelle _Alle Aktivitäten_ werden standardmäßig ausgewählte Spalten angezeigt. Um die Spalten hinzuzufügen, zu entfernen oder zu ändern, klicken Sie auf das Zahnradsymbol rechts neben der Tabelle und wählen Sie aus der Liste der verfügbaren Spalten aus.</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">Aktivitätsauswahl, width=30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">== Aufbewahrung Des Vorgangsverlaufs</block>
   <block id="105063dce8eb13075f451e0ddc3ac046" category="paragraph">Der Aktivitätsverlauf wird 13 Monate lang in aktiven Cloud Secure Umgebungen aufbewahrt.</block>
-  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">== Anwendbarkeit von Filtern in Forensics-Seite</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">Filtern</block>
   <block id="b12c51b935d86f01d092fb23a1fa4f9f" category="cell">Das macht es</block>
   <block id="33b1e192582408583865dca3abd0c740" category="cell">In welchen Filtern anwendbar?</block>
@@ -4042,7 +4034,6 @@
   <block id="c9d397dcd3b4e882911495d696df5941" category="cell">Sucht in allen Feldern nach Null-Werten</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">Domäne</block>
   <block id="3c16a1572c295ef2bbd770516679c559" category="cell">Gibt Ergebnisse an, bei denen das Zielfeld leer ist</block>
-  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">== Pfad / ursprüngliche Pfadsuche</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">Suchergebnisse mit und ohne / werden unterschiedlich sein</block>
   <block id="cc2d816075324608acf344b23cf3e6bb" category="cell">/AutoDir1/AutoFile</block>
   <block id="7b8af977b90a67e053ff2667a26828fe" category="cell">Funktioniert</block>
@@ -4059,7 +4050,6 @@
   <block id="137812c306b0ede761fedbc1e1b88824" category="cell">NICHT /AutoFile03242022</block>
   <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
   <block id="8bc6542329adc040b119d4b8973c0d7f" category="cell">Zeigt alle Einträge an</block>
-  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">== Fehlerbehebung</block>
   <block id="df0f20d62dc4ba9c471fdeef6751ec5f" category="cell">Problem</block>
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">Versuchen Sie Dies</block>
   <block id="92232e830756517d2e51d25331f14f25" category="cell">In der Tabelle „Alle Aktivitäten“ in der Spalte ‘Benutzer“ wird der Benutzername wie folgt angezeigt: „ldap:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” oder LDAP:default:80038003“</block>
@@ -9184,4 +9174,11 @@
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">IP-Adresse oder Hostname des Ops Center-Servers, der die „Common Services“-Komponente hostet</block>
   <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">Root/sysadmin Benutzerkonto und Passwort, die auf allen Servern vorhanden sind, auf denen Ops Center Komponenten gehostet werden. HDS hat KEINE Unterstützung DER REST-API für die Nutzung durch LDAP/SSO-Benutzer bis Ops Center 10.8+ implementiert</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">Beachten Sie, dass beim Ausführen mehrerer Regeln, die dieselbe Anmerkung für ein Asset aktualisieren, die erste Regel (wie von oben nach unten ausgeführt) die Anmerkung anwendet und das Asset aktualisiert, dann gilt die zweite Regel, ändert aber keine Beschriftung, die bereits durch die vorherige Regel festgelegt wurde.</block>
+  <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">*Rauschunterdrückung* zum Filtern von Dateien, die in den letzten 2 Stunden vom Benutzer erstellt werden. Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.</block>
+  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">Forensische Vorgangshistorie-Daten Sortieren</block>
+  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">Alle Aktivitäten Werden Exportiert</block>
+  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">Spaltenauswahl für Alle Aktivitäten</block>
+  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">Aufbewahrung Des Aktivitätsverlaufs</block>
+  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Anwendbarkeit von Filtern in Forensics Seite</block>
+  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">Pfadsuche/Original-Pfadsuche</block>
 </blocks>

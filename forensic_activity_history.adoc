@@ -87,15 +87,8 @@ Sie können forensische Aktivitätsdaten nach folgenden Feldern filtern:
 
 
 * *Benutzername* des Benutzers, der die Aktivität ausführt. Sie müssen den genauen Benutzernamen angeben, um sie zu filtern. Die Suche mit teilweisen Nutzernamen oder teilweisen Nutzernamen, vorfixiert oder mit ‘*’ abgestickt, funktioniert nicht.
+* *Rauschunterdrückung* zum Filtern von Dateien, die in den letzten 2 Stunden vom Benutzer erstellt werden. Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.
 
-
-<<<<<<< HEAD * *Rauschunterdrückung* zum Filtern von Dateien, die in den letzten 2 Stunden vom Benutzer erstellt werden. Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.
-
-====
-* *Rauschunterdrückung* zum Filtern von neu erstellten Dateien, die vom Benutzer erstellt wurden (d.h. in den letzten 2 Stunden). Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.
-
-
->>>>>>> 574e310d1e2d0707d9dba0ce1435f338b16fcaa2
 
 Die folgenden Felder unterliegen speziellen Filterregeln:
 
@@ -114,13 +107,19 @@ Die vorhergehenden Felder unterliegen beim Filtern folgenden Kriterien:
 * String mit einem Präfix, Beispiel: suchtext* , sucht alle Strings, die mit ‘seartext’ beginnen.
 
 
-== Sortieren Von Forensischen Vorgangsverlauf-Daten
+
+
+== Forensische Vorgangshistorie-Daten Sortieren
 
 Sie können Vorgangshistorie-Daten nach_Time, User, Source IP, Activity, Path_ und_Entity Type_ sortieren. Standardmäßig wird die Tabelle nach absteigender_Time_-Reihenfolge sortiert, was bedeutet, dass die neuesten Daten zuerst angezeigt werden. Die Sortierung ist für die Felder _Device_ und _Protocol_ deaktiviert.
 
-== Alle Aktivitäten Exportieren
+
+
+== Alle Aktivitäten Werden Exportiert
 
 Sie können den Vorgangsverlauf in eine CSV-Datei exportieren, indem Sie über der Tabelle „Vorgangsverlauf“ auf die Schaltfläche „_Export_“ klicken. Beachten Sie, dass nur die 10,000 wichtigsten Datensätze exportiert werden.
+
+
 
 == Spaltenauswahl für Alle Aktivitäten
 
@@ -128,11 +127,15 @@ In der Tabelle _Alle Aktivitäten_ werden standardmäßig ausgewählte Spalten a
 
 image:CloudSecure_ActivitySelection.png["Aktivitätsauswahl, width=30%"]
 
-== Aufbewahrung Des Vorgangsverlaufs
+
+
+== Aufbewahrung Des Aktivitätsverlaufs
 
 Der Aktivitätsverlauf wird 13 Monate lang in aktiven Cloud Secure Umgebungen aufbewahrt.
 
-== Anwendbarkeit von Filtern in Forensics-Seite
+
+
+== Anwendbarkeit von Filtern in Forensics Seite
 
 |===
 
@@ -154,7 +157,9 @@ Der Aktivitätsverlauf wird 13 Monate lang in aktiven Cloud Secure Umgebungen au
 
 | Keine | Sucht in allen Feldern nach Null-Werten | Keine | Domäne |  | Gibt Ergebnisse an, bei denen das Zielfeld leer ist 
 |===
-== Pfad / ursprüngliche Pfadsuche
+
+
+== Pfadsuche/Original-Pfadsuche
 
 Suchergebnisse mit und ohne / werden unterschiedlich sein
 
@@ -193,6 +198,8 @@ Suchergebnisse mit und ohne / werden unterschiedlich sein
 
 | * | Zeigt alle Einträge an 
 |===
+
+
 == Fehlerbehebung
 
 |===
@@ -206,4 +213,3 @@ Suchergebnisse mit und ohne / werden unterschiedlich sein
 
 | Einige NFS-Ereignisse werden in der UI nicht angezeigt. | Überprüfen Sie Folgendes: 1. Ein Benutzer-Verzeichnis-Collector für AD-Server mit POSIX-Attributen sollte mit dem unixid-Attribut ausgeführt werden, das über UI aktiviert ist. 2. Jeder Benutzer, der NFS-Zugang macht, sollte angezeigt werden, wenn er in der Benutzerseite von UI 3 durchsucht wird. RAW-Ereignisse (Ereignisse, für die der Benutzer noch nicht erkannt wurde) werden für NFS 4 nicht unterstützt. Anonymer Zugriff auf den NFS-Export wird nicht überwacht. 5. Stellen Sie sicher, dass die NFS-Version in weniger als NFS4.1 verwendet wird. 
 |===
-====
