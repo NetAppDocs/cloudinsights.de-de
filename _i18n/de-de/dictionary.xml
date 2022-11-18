@@ -9181,4 +9181,5 @@
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">Anwendbarkeit von Filtern in Forensics Seite</block>
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">Pfadsuche/Original-Pfadsuche</block>
   <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">Root/sysadmin Benutzerkonto und Passwort, die auf allen Servern vorhanden sind, auf denen Ops Center Komponenten gehostet werden. HDS hat KEINE REST-API-Unterstützung für LDAP/SSO-Benutzer bis Ops Center 10.8+ implementiert</block>
+  <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">Das HDS Ops Center „Analyzer“-Modul muss installiert sein Storage Arrays müssen das Ops Center-Modul „Analyzer“ speisen</block>
 </blocks>

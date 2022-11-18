@@ -62,6 +62,14 @@ Zur Erfassung von Bestandsdaten müssen Sie Folgendes haben:
 
 
 
+== Performance-Anforderungen erfüllt
+
+Zur Erfassung von Leistungsdaten müssen die folgenden Anforderungen erfüllt sein:
+
+Das HDS Ops Center „Analyzer“-Modul muss installiert sein Storage Arrays müssen das Ops Center-Modul „Analyzer“ speisen
+
+
+
 == Konfiguration
 
 [cols="2*"]
