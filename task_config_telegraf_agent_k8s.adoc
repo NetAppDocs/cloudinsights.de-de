@@ -339,8 +339,8 @@ Beachten Sie, dass der Standard-Namespace für den NetApp Kubernetes Monitoring 
 Neuere Versionen des Überwachungsoperators können mit den folgenden Befehlen deinstalliert werden:
 
 ....
-kubectl delete agent <name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd <name-space>
+kubectl delete agent -A -l installed-by=nkmo-<name-space>
+kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
 ....
 Wenn der erste Befehl „Keine Ressourcen gefunden“ zurückgibt, verwenden Sie die folgenden Anweisungen, um ältere Versionen des Überwachungsoperators zu deinstallieren.
 
