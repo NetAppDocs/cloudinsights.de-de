@@ -57,7 +57,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 Zur Erfassung von Bestandsdaten müssen Sie Folgendes haben:
 
 * IP-Adresse oder Hostname des Ops Center-Servers, der die „Common Services“-Komponente hostet
-* Root/sysadmin Benutzerkonto und Passwort, die auf allen Servern vorhanden sind, auf denen Ops Center Komponenten gehostet werden. HDS hat KEINE Unterstützung DER REST-API für die Nutzung durch LDAP/SSO-Benutzer bis Ops Center 10.8+ implementiert
+* Root/sysadmin Benutzerkonto und Passwort, die auf allen Servern vorhanden sind, auf denen Ops Center Komponenten gehostet werden. HDS hat KEINE REST-API-Unterstützung für LDAP/SSO-Benutzer bis Ops Center 10.8+ implementiert
 
 
 
@@ -99,7 +99,7 @@ Zur Erfassung von Bestandsdaten müssen Sie Folgendes haben:
 | Wählen Sie „Ausschließen“ oder „Einschließen“, um eine Liste anzugeben | Geben Sie an, ob die unten aufgeführte Array-Liste beim Sammeln von Daten aufgenommen oder ausgeschlossen werden soll. 
 
 
-| Geräteliste filtern | Kommagetrennte Liste der Geräte-IDs oder Array-Namen, die einbezogen oder ausgeschlossen werden sollen 
+| Geräteliste filtern | Kommagetrennte Liste der einzuschließenden oder auszuschließenden Geräteseriennummer 
 
 
 | Leistungsintervall (Sek.) | Intervall zwischen Performance-Abstimmungen Der Standardwert ist 300. 
