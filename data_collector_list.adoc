@@ -210,9 +210,6 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_config_telegraf_mysql.html["MySQL"] | Service 
 
 
-| link:task_dc_na_astra_data_store.html["NetApp Astra Data Store"] | Infrastruktur 
-
-
 | link:task_dc_na_cloud_volumes_ontap.html["NetApp Cloud Volumes ONTAP"] | Infrastruktur 
 
 
