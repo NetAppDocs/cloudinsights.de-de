@@ -101,7 +101,7 @@ Es gibt auch einen Link zur Verfügung zu stellen link:mailto:ng-cloudinsights-c
 Wenn Sie über ein Cloud Insights-Abonnement oder einen bezahlten Support für überwachte NetApp Produkte oder Services verfügen, können Sie sich mit einem NetApp Support-Techniker an die oben genannten Self-Support-Optionen wenden, um Ihr Problem zu lösen.
 
 
-NOTE: Sie müssen sich registrieren, um  support entitlement and accessing support,Aktivieren Sie den Support Für NetApp Cloud-Produkte. Registrieren Sie sich unter NetApp link:https://register.netapp.com["Support-Registrierung Für Cloud-Datenservices"].
+NOTE: Sie müssen sich registrieren, um <<Activating support entitlement and accessing support,Aktivieren Sie den Support>> Für NetApp Cloud-Produkte. Registrieren Sie sich unter NetApp link:https://register.netapp.com["Support-Registrierung Für Cloud-Datenservices"].
 
 Es wird dringend empfohlen, dieses Kontrollkästchen zu aktivieren, damit ein NetApp Support Engineer während Ihrer Support-Sitzung auf Ihre Cloud Insights Umgebung zugreifen kann. So kann der Techniker das Problem beheben und es schnell beheben. Wenn Ihr Problem behoben ist oder Ihre Support-Sitzung beendet wurde, können Sie das Kontrollkästchen deaktivieren.
 

@@ -73,7 +73,7 @@ Siehe link:concept_cs_agent_requirements.html["Anforderungen an den Agenten"] F�
 
 
 
-=== Berechtigungen beim Hinzufügen über Cluster-Management-IP:
+=== Berechtigungen beim Hinzufügen über *Cluster Management IP*:
 
 Wenn Sie den Cluster Management Administrator-Benutzer nicht verwenden können, um Cloud Secure Zugriff auf den ONTAP SVM Datensammler zu gewähren, können Sie einen neuen Benutzer mit dem Namen „cscuser“ erstellen, und zwar mit den Rollen, wie in den Befehlen unten dargestellt. Verwenden Sie den Benutzernamen „cuser“ und das Kennwort für „cscuser“, wenn Sie den Cloud Secure-Datensammler für die Cluster-Management-IP konfigurieren.
 
@@ -97,7 +97,7 @@ security login create -user-or-group-name csuser -application ssh -authmethod pa
 ....
 
 
-=== Berechtigungen beim Hinzufügen über Vserver Management IP:
+=== Berechtigungen beim Hinzufügen über *Vserver Management IP*:
 
 Wenn Sie den Cluster Management Administrator-Benutzer nicht verwenden können, um Cloud Secure Zugriff auf den ONTAP SVM Datensammler zu gewähren, können Sie einen neuen Benutzer mit dem Namen „cscuser“ erstellen, und zwar mit den Rollen, wie in den Befehlen unten dargestellt. Verwenden Sie den Benutzernamen „cuser“ und das Kennwort für „cscuser“, wenn Sie den Cloud Secure-Datensammler für die Verwendung von Vserver Management IP konfigurieren.
 

@@ -98,7 +98,7 @@ Wenn bei der Verwendung von Cloud Insights ein Schloss-Symbol angezeigt wird ima
 
 == Testversion
 
-Wenn Sie sich bei Cloud Insights anmelden und Ihre Umgebung aktiv ist, können Sie Cloud Insights 30 Tage lang kostenlos testen. Während dieser Testversion können Sie sich die Funktionen von Cloud Insights in Ihrer eigenen Umgebung ansehen. Alle Funktionen von Cloud Insights ,Standard Edition Sind während dieser Testversion verfügbar.
+Wenn Sie sich bei Cloud Insights anmelden und Ihre Umgebung aktiv ist, können Sie Cloud Insights 30 Tage lang kostenlos testen. Während dieser Testversion können Sie sich die Funktionen von Cloud Insights in Ihrer eigenen Umgebung ansehen. Alle Funktionen von Cloud Insights <<editions,Standard Edition>> Sind während dieser Testversion verfügbar.
 
 Sie können sich während Ihres Testzeitraums jederzeit für Cloud Insights anmelden. Mit dem Abonnieren von Cloud Insights sichern Sie unterbrechungsfreien Zugriff auf Ihre Daten und können darüber hinaus erweitert werden link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*Produktsupport*"] Optionen:
 
@@ -111,7 +111,7 @@ NOTE: Wenn Sie zusätzliche Zeit benötigen, um Cloud Insights zu testen. Ihre T
 
 == Testversion über AWS Marketplace
 
-Sie können sich zudem über den AWS Marketplace für eine kostenlose Testversion anmelden. Mit der kostenlosen Testversion von AWS Marketplace haben Sie Zugriff auf Cloud Insights ,Premium Edition Für einen Testzeitraum von 33 Tagen, und bis zu 499 ,Verwaltete Einheiten (Mus).
+Sie können sich zudem über den AWS Marketplace für eine kostenlose Testversion anmelden. Mit der kostenlosen Testversion von AWS Marketplace haben Sie Zugriff auf Cloud Insights <<editions,Premium Edition>> Für einen Testzeitraum von 33 Tagen, und bis zu 499 <<pricing,Verwaltete Einheiten>> (Mus).
 
 Hinweis: Wenn Sie mehr als 499 MUs konfigurieren, geben Sie den Status „missachtet“ ein. Während Ihre Testversion in einem nicht autorisierten Zustand ist, verlieren Sie den Zugriff auf einige Cloud Insights-Funktionen, bis die Sicherheitsverletzung behoben ist, entweder durch Verringerung der Anzahl der konfigurierten MUs oder durch das Abonnieren von Cloud Insights.
 
@@ -149,7 +149,7 @@ Beachten Sie, dass die folgenden Datensammler mit einem anderen Raw tib zur Mana
 * NetApp StorageGRID
 
 
-Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder erwartet werden, haben Sie Anspruch auf *Volumenrabatte* und werden dazu aufgefordert, sich an den NetApp Vertrieb zu wenden. Siehe ,Unten Entnehmen.
+Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder erwartet werden, haben Sie Anspruch auf *Volumenrabatte* und werden dazu aufgefordert, sich an den NetApp Vertrieb zu wenden. Siehe <<how-do-i-subscribe,Unten>> Entnehmen.
 
 
 
@@ -166,7 +166,7 @@ NOTE: Der Rechner dient nur zur Schätzung. Die genaue Preisgestaltung wird bei 
 
 == Wie kann ich mich anmelden?
 
-Wenn die Anzahl Ihrer Managed Units kleiner als 1,000 ist, können Sie sich auch über den NetApp Vertrieb anmelden oder ,Self-Subscribe Über AWS Marketplace:
+Wenn die Anzahl Ihrer Managed Units kleiner als 1,000 ist, können Sie sich auch über den NetApp Vertrieb anmelden oder <<self-subscribe-via-aws-marketplace,Self-Subscribe>> Über AWS Marketplace:
 
 
 

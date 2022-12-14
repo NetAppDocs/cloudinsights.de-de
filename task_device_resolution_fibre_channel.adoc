@@ -30,8 +30,10 @@ Der Link „_Total Coverage_“ zeigt eine Liste der für Ihre Konfiguration ver
 
 Sie können Cloud Insights manuell ein Fibre Channel-Gerät hinzufügen, indem Sie die Funktion _Manual Add_ verwenden, die auf der Registerkarte Fibre Channel Identify für Geräteauflösung verfügbar ist. Dieser Prozess kann für die Voridentifizierung eines Geräts verwendet werden, das in Zukunft entdeckt werden soll.
 
+.Bevor Sie beginnen
 Zum erfolgreichen Hinzufügen einer Geräteidentifikation zum System müssen Sie die WWN- oder IP-Adresse und den Gerätenamen kennen.
 
+.Über diese Aufgabe
 Sie können Host, Speicher, Band oder Unbekanntes Fibre Channel-Gerät manuell hinzufügen.
 
 .Verfahren
@@ -93,6 +95,7 @@ Die von Ihnen eingegebenen Geräte werden der Geräteliste auf der Registerkarte
 
 Sie können vorhandene Identifizierungen für Fibre Channel-Geräte von der Cloud Insights-Geräteauflösung in eine CSV-Datei exportieren. Sie können eine Geräteidentifikation exportieren, damit Sie sie ändern und dann wieder in Cloud Insights importieren können, wo sie dann verwendet wird, um Geräte zu identifizieren, die denen ähneln, die ursprünglich mit der exportierten Identifizierung übereinstimmen.
 
+.Über diese Aufgabe
 Dieses Szenario kann verwendet werden, wenn Geräte ähnliche Attribute haben, die einfach in der .CSV-Datei bearbeitet und dann wieder in das System importiert werden können.
 
 Wenn Sie eine Fibre-Channel-Gerätekennung in eine CSV-Datei exportieren, enthält die Datei die folgenden Informationen in der angezeigten Reihenfolge:

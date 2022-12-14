@@ -10,6 +10,7 @@ summary: Sie erstellen Anmerkungsregeln, um Anmerkungen automatisch auf mehrere 
 [role="lead"]
 Mit Anmerkungsregeln können Sie Anmerkungen automatisch auf mehrere Assets anwenden, die auf den von Ihnen definierten Kriterien basieren. Cloud Insights weist anhand dieser Regeln Anmerkungen zu Assets zu. Wenn Cloud Insight die Anmerkungsregeln auswertet, haben Annotationen, die manuell auf den Seiten einzelner Assets festgelegt wurden, Vorrang vor regelbasierten Annotationen.
 
+.Bevor Sie beginnen
 Sie müssen eine Abfrage für die Anmerkungsregel erstellt haben.
 
 .Schritte

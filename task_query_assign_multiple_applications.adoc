@@ -14,6 +14,7 @@ Sie können mehrere zuweisen link:task_create_application.html["Applikationen un
 
 NOTE: Sie können diese Schritte zum Hinzufügen oder Entfernen verwenden link:task_defining_annotations.html["Anmerkungen"] Auf die gleiche Weise.
 
+.Bevor Sie beginnen
 Sie müssen bereits eine Abfrage erstellt haben, die alle Assets findet, die Sie bearbeiten möchten.
 
 .Schritte

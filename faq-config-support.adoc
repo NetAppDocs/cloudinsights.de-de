@@ -31,7 +31,7 @@ Cloud Insights sammelt in der Regel alle 5 Minuten Performance-Daten und jede ½
 
 
 
-== Welche Auswirkungen hat Cloud Insights auf meine Umwelt?
+== Welche Auswirkungen hat Cloud Insights auf meine Umgebung?
 
 Die agentenlose Out-of-Band- und passive IP-Kommunikation von Cloud Insights trägt zur Minimierung von Einrichtung, Wartung und Auswirkungen auf das Datacenter-Ecosystem bei. Das Performance-Entwicklungsteam von Cloud Insights ergreift große Maßnahmen, um die Auswirkungen auf die Performance des Datacenters auf die Monitoring-Aktivitäten selbst zu minimieren. Die Auswirkungen werden in normalen Betriebsumgebungen als unwesentlich angesehen und können in stark ausgelasteten oder leistungsschwächer ausgelasteten Technologieplattformen entspannt oder verschärft werden. Weitere Informationen finden Sie im Cloud Insights Installationsleitfaden.
 

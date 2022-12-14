@@ -94,6 +94,7 @@ Das Dialogfeld Data Collector klonen wird angezeigt.
 . Klicken Sie Auf *Speichern*.
 
 
+.Nachdem Sie fertig sind
 Der Klonvorgang kopiert alle anderen Attribute und Einstellungen, um den neuen Datensammler zu erstellen.
 
 
@@ -109,4 +110,5 @@ Sie können gleichzeitig einige Informationen für mehrere Datensammler bearbeit
 . Klicken Sie im Optionsmenü rechts auf die gewünschte Option.
 
 
+.Nachdem Sie fertig sind
 Die ausgewählte Operation wird auf den Datensammlern durchgeführt. Wenn Sie Datensammler löschen möchten, wird ein Dialogfeld angezeigt, in dem Sie die Aktion anpassen müssen.

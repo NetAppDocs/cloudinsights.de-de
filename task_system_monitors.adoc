@@ -127,7 +127,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | Überprovisionierungsquote Bei Volume Qtree | WARNUNG/KRITISCH | Bei der Überprovisionierung von Volume-qtree wird der Prozentsatz angegeben, bei dem ein Volume durch die qtree Kontingente überengagiert wird. Der festgelegte Schwellenwert für die qtree-Quote wird für den Volumen erreicht. Durch Monitoring der Überprovisionierung von Volume-qtree wird sichergestellt, dass der Benutzer einen unterbrechungsfreien Datenservice erhält. | Wenn kritische Schwellenwerte nicht eingehalten werden, sind sofortige Maßnahmen zur Minimierung von Serviceunterbrechungen zu ergreifen: 1. Vergrößern Sie den Speicherplatz des Volumens 2. Löschen Sie unerwünschte Daten, wenn ein Warnschwellenwert nicht erreicht wird. Dies empfiehlt sich, den Speicherplatz des Volume zu erhöhen. 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -297,7 +297,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | Knoten Panik | WARNUNG | Dieses Ereignis wird ausgegeben, wenn ein Panikzustand eintritt | Wenden Sie sich an den NetApp Kundensupport. 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -335,7 +335,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | Ransomware-Aktivität Erkannt | KRITISCH | Zur Sicherung der Daten gegen erkannte Ransomware wurde eine Snapshot Kopie erstellt, die zur Wiederherstellung der Originaldaten eingesetzt werden kann. Das System generiert und überträgt eine AutoSupport- oder „Call Home“-Nachricht an den technischen Support von NetApp und alle konfigurierten Ziele. AutoSupport Message verbessert die Problembestimmung und -Lösung. | Korrekturmaßnahmen bei Ransomware-Aktivitäten sind mit dem Namen DES FINALEN DOKUMENTS zu beachten. 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -364,7 +364,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | FSX Volume Cache Miss-Verhältnis | Warnung @ > 95 %…Kritisch @ > 100 % | Das Miss-Verhältnis des Volume Cache ist der Prozentsatz von Leseanforderungen der Client-Applikationen, die von der Festplatte zurückgegeben werden, anstatt vom Cache zurückgegeben zu werden. Das bedeutet, dass das Volumen den eingestellten Schwellenwert erreicht hat. | Wenn kritische Schwellenwerte nicht eingehalten werden, sind sofortige Maßnahmen zur Minimierung von Serviceunterbrechungen zu ergreifen: 1. Verschieben Sie einige Workloads vom Node des Volumes, um die I/O-Last zu reduzieren 2. Weniger Bedarf an Workloads mit niedriger Priorität auf demselben Node über QoS-Limits…sofortige Maßnahmen ergreifen, wenn Warnschwellenwert nicht erreicht wird: 1 Verschieben Sie einige Workloads vom Node des Volumes, um die I/O-Last zu reduzieren 2. Durch QoS-Limits sinken die Anforderungen von Workloads mit niedriger Priorität auf demselben Node 3. Änderung der Workload-Merkmale (Blockgröße, Applikations-Caching usw.) 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -408,7 +408,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | POD-Mount fehlgeschlagen | WARNUNG | Diese Warnmeldung tritt auf, wenn ein Mount auf EINEM POD fehlgeschlagen ist. 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -440,7 +440,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | Storage Virtual Machine Geändert | Informativ | Diese Meldung wird angezeigt, wenn eine Storage Virtual Machine geändert wird. 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -460,7 +460,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | Sammlerwarnung | Dieser Alarm kann in der Regel aufgrund einer fehlerhaften Konfiguration des Datensammlers oder des Zielsystems auftreten. Überprüfen Sie die Konfigurationen, um zukünftige Warnmeldungen zu vermeiden. Es kann auch durch einen Abruf von weniger als vollständigen Daten, wo der Datensammler alle Daten, die es konnte gesammelt werden. Dies kann vorkommen, wenn sich während der Datenerfassung Situationen ändern (z. B. wird während der Datenerfassung eine zu Beginn der Datenerfassung vorhandene virtuelle Maschine gelöscht und vor der Erfassung der Daten). | Überprüfen Sie die Konfiguration des Datensammlers oder Zielsystems. Beachten Sie, dass der Monitor für Collector-Warnung mehr Warnmeldungen als andere Monitortypen senden kann. Es wird daher empfohlen, keine Alarmempfänger festzulegen, es sei denn, Sie beheben die Fehlerbehebung. 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -516,7 +516,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | Telnet-Protokoll Aktiviert | Warnung @ > 0 | Telnet ist keine sichere Methode zum Einrichten von Befehlszeilenzugriff auf die ONTAP-Lösung. Telnet sollte für den sicheren Remote-Zugriff deaktiviert werden. | NetApp empfiehlt Secure Shell (SSH) für den sicheren Remote-Zugriff. Um Telnet auf einem Cluster zu deaktivieren, führen Sie den folgenden ONTAP-Befehl im erweiterten Berechtigungsmodus aus:…Security Protocol modify -Application telnet -enabled false 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -533,7 +533,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | SnapMirror BeziehungsVerzögerungen | Warnung @ > 150 %…Kritisch @ > 300 % | Die SnapMirror Beziehungsverzögerung ist der Unterschied zwischen dem Snapshot-Zeitstempel und der Zeit auf dem Zielsystem. Die lag_time_percent ist das Verhältnis der Verzögerungszeit zum Zeitplan-Intervall der SnapMirror Richtlinie. Wenn die Verzögerungszeit dem Zeitungsintervall entspricht, ist lag_time_percent 100 %. Wenn die SnapMirror-Richtlinie keinen Zeitplan enthält, wird lag_time_percent nicht berechnet. | Überwachen Sie den SnapMirror-Status mit dem Befehl „snapmirror show“. Überprüfen Sie den SnapMirror Übertragungsverlauf mithilfe des Befehls „snapmirror show-history“ 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 
@@ -613,7 +613,7 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 | CVO-Volume beschränkt | INFO | Dieses Ereignis zeigt an, dass ein flexibles Volume eingeschränkt wird. | Versetzen Sie das Volume wieder in den Online-Modus. 
 |===
-,Zurück nach oben
+<<top,Zurück nach oben>>
 
 
 

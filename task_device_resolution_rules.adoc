@@ -121,6 +121,7 @@ Ein Update zur Geräteauflösung setzt manuelle Änderungen fest, die seit der l
 
 Diese Funktion wird für spezielle Fälle verwendet, in denen Sie eine bestimmte Regel oder eine Liste von Regeln (mit oder ohne einmalige Neuanordnung) ausführen möchten, um unbekannte Hosts, Speicher und Bandgeräte aufzulösen.
 
+.Bevor Sie beginnen
 Sie verfügen über eine Reihe von Geräten, die nicht identifiziert wurden, und Sie haben auch mehrere Regeln, die andere Geräte erfolgreich identifiziert haben.
 
 

@@ -54,6 +54,7 @@ Wie bereits erwähnt, könnte dies ein iterativer Prozess sein und mehrere Anfra
 
 Anmerkungen sind spezielle Notizen, die Sie Ihren Assets zuweisen, damit Sie Assets nach ihren Anmerkungen filtern können. Die von Ihnen erstellten Annotationen werden verwendet, um die NetApp Root-Aggregate in Ihrer Umgebung zu identifizieren und sicherzustellen, dass diese nicht in einer Liste der internen Volumes mit der höchsten I/O-Dichte enthalten sind.
 
+.Bevor Sie beginnen
 Sie müssen alle Root-Aggregate identifiziert haben, die Sie aus dem Bericht „hohe I/O-Dichte“ ausschließen möchten.
 
 .Schritte
@@ -73,6 +74,7 @@ Sie müssen alle Root-Aggregate identifiziert haben, die Sie aus dem Bericht „
 
 Alternativ zum manuellen Anwenden von Anmerkungen auf einzelne Assets können Sie mithilfe von Anmerkungsregeln automatisch Anmerkungen auf mehrere Assets anwenden. Anmerkungsregeln basieren auf Abfragen, die Sie erstellen, und wenn sie auf dem System ausgeführt werden, fügen sie vorhandenen Assets neue Assets hinzu. Wenn diese Vermögenswerte von der Einbeziehung ausgeschlossen werden, werden auch die neuen Vermögenswerte automatisch ausgeschlossen.
 
+.Bevor Sie beginnen
 Sie müssen eine Abfrage erstellt und gespeichert haben, die die NetApp Root-Aggregate identifiziert, die Sie in Ihrer Umgebung identifiziert haben.
 
 .Schritte

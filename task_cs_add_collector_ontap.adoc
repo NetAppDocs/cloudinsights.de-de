@@ -11,6 +11,7 @@ summary: Hinzufügen von Datensammlern
 [role="lead"]
 Cloud Secure verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen. Die Daten werden Cloud Secure zur Analyse zur Verfügung gestellt.
 
+.Bevor Sie beginnen
 Sie benötigen die folgenden Informationen, um diesen Datensammler zu konfigurieren:
 
 * Ein Agent muss für das Sammeln von Daten konfiguriert sein

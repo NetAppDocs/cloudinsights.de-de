@@ -1314,7 +1314,7 @@ image:define_monitor_conditions_2.png["Überwachungsbedingungen"]
 
 
 
-=== Cloud Secure führen eine Snapshot-Aktion durch
+=== Cloud Secure _Snapshot_ Aktion starten
 
 Cloud Secure schützt Ihre Daten, indem bei der Erkennung schädlicher Aktivitäten automatisch Snapshots erstellt werden. So wird sichergestellt, dass Ihre Daten sicher gesichert werden.
 

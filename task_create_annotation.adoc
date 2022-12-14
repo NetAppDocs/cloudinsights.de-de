@@ -86,8 +86,10 @@ Um Assets anhand von Kriterien, die Sie definieren, automatisch Anmerkungen zuzu
 
 Alternativ zum manuellen Anwenden von Anmerkungen auf einzelne Assets können Sie mithilfe von Anmerkungsregeln automatisch Anmerkungen auf mehrere Assets anwenden. Wenn Insight die Anmerkungsregeln auswertet, haben Annotationen, die manuell auf den Seiten einzelner Assets festgelegt wurden, Vorrang vor regelbasierten Annotationen.
 
+.Bevor Sie beginnen
 Sie müssen eine Abfrage für die Anmerkungsregel erstellt haben.
 
+.Über diese Aufgabe
 Sie können zwar die Anmerkungstypen bearbeiten, während Sie die Regeln erstellen, aber Sie sollten die Typen bereits im Voraus definiert haben.
 
 .Schritte

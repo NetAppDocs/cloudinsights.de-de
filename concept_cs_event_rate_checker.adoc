@@ -11,7 +11,9 @@ keywords: event, checker, rate, sizing
 [role="lead"]
 Das Event Rate Checker wird verwendet, um die kombinierte Ereignisrate von NFS/SMB in der SVM zu prüfen, bevor Sie einen ONTAP SVM Data Collector installieren, um zu ermitteln, wie viele SVMs ein Agent Machine überwachen können. Ein Agent kann bis zu 50 Datensammler unterstützen.
 
-Voraussetzungen:
+
+
+== Voraussetzungen:
 
 * Cluster-IP
 * Benutzername und Passwort für den Cluster-Admin
@@ -70,6 +72,8 @@ B + C sollte kleiner Als A sein, andernfalls kann der Agent-Rechner nicht überw
 Mit anderen Worten, die Anzahl der Datensammler, die einem einzelnen Agenten-Rechner hinzugefügt werden können, sollte der folgenden Formel entsprechen:
 
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
+Siehe link:concept_cs_agent_requirements.html["Anforderungen An Den Agenten"] Seite für zusätzliche Voraussetzungen und Anforderungen.
+
 
 
 == Beispiel

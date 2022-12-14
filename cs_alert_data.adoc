@@ -103,7 +103,7 @@ Detailseite (dieses Beispiel zeigt einen potenziellen Ransomware-Angriff.):image
 
 
 
-== Führen Sie eine Snapshot-Aktion durch
+== _Snapshot_ Aktion durchführen
 
 Cloud Secure schützt Ihre Daten, indem bei der Erkennung schädlicher Aktivitäten automatisch Snapshots erstellt werden. So wird sichergestellt, dass Ihre Daten sicher gesichert werden.
 

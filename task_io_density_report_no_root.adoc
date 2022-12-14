@@ -47,6 +47,7 @@ Wie bereits erwähnt, könnte dies ein iterativer Prozess sein und mehrere Anfra
 
 Anmerkungen sind spezielle Notizen, die Sie Ihren Assets zuweisen, damit Sie Assets nach ihren Anmerkungen filtern können. Die von Ihnen erstellten Annotationen werden verwendet, um die NetApp Root-Aggregate in Ihrer Umgebung zu identifizieren und sicherzustellen, dass diese nicht in einem bestimmten Bericht enthalten sind.
 
+.Bevor Sie beginnen
 Sie müssen alle Root-Aggregate identifiziert haben, die Sie aus dem Bericht „hohe I/O-Dichte“ ausschließen möchten.
 
 .Schritte
@@ -67,6 +68,7 @@ Sie müssen alle Root-Aggregate identifiziert haben, die Sie aus dem Bericht „
 
 Alternativ zum manuellen Anwenden von Anmerkungen auf einzelne Assets können Sie mithilfe von Anmerkungsregeln automatisch Anmerkungen auf mehrere Assets anwenden. Anmerkungsregeln basieren auf Abfragen, die Sie erstellen, und wenn sie auf dem System ausgeführt werden, fügen sie vorhandenen Assets neue Assets hinzu. Wenn diese Vermögenswerte von einem Bericht ausgeschlossen werden, werden auch die neuen Vermögenswerte automatisch ausgeschlossen.
 
+.Bevor Sie beginnen
 Sie müssen eine Abfrage erstellt und gespeichert haben, die die NetApp Root-Aggregate identifiziert, die Sie in Ihrer Umgebung identifiziert haben. . Schritte . Klicken Sie in der Symbolleiste Cloud Insights auf *Verwalten > Anmerkungsregeln* . Klicken Sie Auf *Hinzufügen*
 
 + das Dialogfeld Regel hinzufügen wird angezeigt: .. Geben Sie im Feld Name einen eindeutigen Namen ein, der die Regel beschreibt: *"RootAggrExclude"* .. Klicken Sie auf Abfrage und wählen Sie die Frage aus, die Insight verwenden soll, um die Anmerkungsregel auf: *„Aggregate0“* anzuwenden.. Klicken Sie auf Anmerkung und wählen Sie: *"Root agg exclude"* .. Klicken Sie auf *Wert* und geben Sie *true* ein

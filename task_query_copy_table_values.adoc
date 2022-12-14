@@ -11,6 +11,7 @@ keywords: query, queries, copy, values, clipboard
 [role="lead"]
 Sie können Werte in Tabellen zur Verwendung in Suchfeldern oder anderen Anwendungen in die Zwischenablage kopieren.
 
+.Über diese Aufgabe
 Es gibt zwei Methoden, mit denen Sie Werte aus Tabellen kopieren oder Ergebnisse in die Zwischenablage abfragen können.
 
 .Schritte

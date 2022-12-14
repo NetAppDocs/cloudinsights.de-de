@@ -95,6 +95,7 @@ Dies ist keine umfassende Liste.
 
 Durch Ändern der Zählerreihenfolge in einem Widget mit Streudiagramm werden die Achsen geändert, auf denen die Daten angezeigt werden.
 
+.Über diese Aufgabe
 Dieses Beispiel erstellt ein Scatter-Diagramm, mit dem Sie leistungsschwache VMs sehen können, die eine hohe Latenz im Vergleich zu niedrigen IOPS haben.
 
 .Schritte

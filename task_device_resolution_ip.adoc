@@ -30,6 +30,7 @@ Das Dialogfeld Gerät hinzufügen wird angezeigt
 . Geben Sie die Adresse, die IP-Adresse und einen eindeutigen Gerätenamen ein.
 
 
+.Ergebnis
 Das von Ihnen verwendete Gerät wird der Geräteliste auf der Registerkarte IP Address Identify hinzugefügt.
 
 
@@ -65,6 +66,7 @@ NOTE: Als Best Practice wird empfohlen, zunächst die IP-Adresse Identify-Inform
 
 Sie können vorhandene Identifizierungen für IP-Geräte von der Cloud Insights-Geräteauflösung in eine CSV-Datei exportieren. Sie können eine Geräteidentifikation exportieren, damit Sie sie ändern und dann wieder in Cloud Insights importieren können, wo sie dann verwendet wird, um Geräte zu identifizieren, die denen ähneln, die ursprünglich mit der exportierten Identifizierung übereinstimmen.
 
+.Über diese Aufgabe
 . Dieses Szenario kann verwendet werden, wenn Geräte ähnliche Attribute haben, die einfach in der .CSV-Datei bearbeitet und dann wieder in das System importiert werden können.
 
 Wenn Sie eine IP-Geräte-ID in eine CSV-Datei exportieren, enthält die Datei die folgenden Informationen in der angezeigten Reihenfolge:

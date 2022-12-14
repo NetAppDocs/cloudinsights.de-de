@@ -15,7 +15,7 @@ image:KubernetesNodeFiltering.png["Die Seite Kubernetes Node Detail mit der Filt
 
 
 
-== Erkunden der Pods und Persistent Volumes des Node
+== Wie die Pods und persistenten Volumes des Node erforscht werden
 
 Cloud Insights bietet einen Einblick in den Back-End Storage für Ihre Kubernetes-Umgebungen und gibt Ihnen einen Einblick in die Kubernetes Pods und PVS (Persistent Volumes). Sie können PV-Zähler wie IOPS, Latenz und Durchsatz von der Nutzung eines einzelnen Pods über einen PV-Zähler zu einem PV und bis zum Back-End-Speichergerät verfolgen.
 

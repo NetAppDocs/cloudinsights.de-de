@@ -234,6 +234,7 @@ Die in einem Widget angezeigten Daten werden aus den zugrunde liegenden Datenpun
 * *Anzahl*: Zeigt eine _Anzahl_ von Objekten an, die Daten innerhalb des angegebenen Zeitrahmens gemeldet haben. Sie können das „_gesamte Zeitfenster_“ auswählen, das durch den Zeitbereich des Dashboards bestimmt wird (oder den Zeitbereich des Widgets, wenn die Dashboard-Zeit außer Kraft gesetzt wird), oder ein „_Custom Time Window_“, das Sie auswählen.
 
 
+.Schritte
 Gehen Sie wie folgt vor, um die Gruppierungsmethode festzulegen.
 
 . Wählen Sie in der Abfrage des Widgets einen Asset-Typ und eine Kennzahl (z. B. _Storage_) und eine Kennzahl (z. B. „ Performance IOPS Total_“) aus.
@@ -382,6 +383,7 @@ Verschiedene Metriken verwenden unterschiedliche Maßeinheiten für die Daten, d
 
 Es ist jedoch möglich, beide Datensätze auf einem einzigen aussagekräftigen Diagramm zu grafisch zu gestalten, indem eine Maßeinheit auf der primären (linken) Y-Achse und die andere Maßeinheit auf der sekundären (rechten) Y-Achse eingestellt wird. Jede Metrik wird im eigenen Maßstab dokumentiert.
 
+.Schritte
 Dieses Beispiel veranschaulicht das Konzept der primären und sekundären Achsen in einem Diagramm-Widget.
 
 . Erstellen oder Öffnen eines Dashboards. Fügen Sie dem Dashboard ein Liniendiagramm, ein Spline-Diagramm, ein Flächendiagramm oder ein Stacked Area Chart hinzu.

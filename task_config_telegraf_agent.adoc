@@ -17,7 +17,7 @@ Die aktuelle Telegraf-Version für Cloud Insights ist *1.24.0*.
 NOTE: Für eine genaue Audit- und Datenberichterstattung wird dringend empfohlen, die Zeit auf dem Agent-Rechner mit *Network Time Protocol (NTP)* oder *Simple Network Time Protocol (SNTP)* zu synchronisieren.
 
 
-NOTE: Wenn Sie die Installationsdateien überprüfen möchten, bevor Sie den Agent installieren, lesen Sie den Abschnitt unten auf  Checksums.
+NOTE: Wenn Sie die Installationsdateien überprüfen möchten, bevor Sie den Agent installieren, lesen Sie den Abschnitt unten auf <<Prüfsummen Werden Überprüft>>.
 
 
 
@@ -25,11 +25,11 @@ NOTE: Wenn Sie die Installationsdateien überprüfen möchten, bevor Sie den Age
 
 Wenn Sie einen Service Data Collector installieren und noch keinen Agent konfiguriert haben, werden Sie aufgefordert, zuerst einen Agent für das entsprechende Betriebssystem zu installieren. Dieses Thema enthält Anweisungen zur Installation des Telegraf-Agenten auf folgenden Betriebssystemen:
 
-* 
-*  and CentOS
-*  and Debian
-* 
-* 
+* <<Windows>>
+* <<RHEL und CentOS>>
+* <<Ubuntu und Debian>>
+* <<MacOS>>
+* <<Kubernetes>>
 
 
 Um einen Agent zu installieren, müssen Sie, unabhängig von der verwendeten Plattform, zunächst die folgenden Schritte ausführen:

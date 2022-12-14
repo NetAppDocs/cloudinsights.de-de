@@ -20,8 +20,10 @@ Hinweis: Wenn ein neuer Datensammler hinzugefügt wird, der Assets erfasst oder 
 . Wählen Sie in der Liste „Auswählen...“ den Objekttyp aus, nach dem Sie abfragen möchten. Sie können durch die Liste blättern oder Sie können mit der Eingabe beginnen, um schneller zu finden, wonach Sie suchen.
 
 
+.Bildlaufliste:
 image:QueryDrop-DownList.png["Abfrage Dropdown"]
 
+.Typ-zu-Suche:
 image:QueryPageFilter.png["Eingabe zum Suchen"]
 
 Sie können Filter hinzufügen, um Ihre Anfrage weiter einzuschränken, indem Sie im Feld *Filtern nach* auf die Schaltfläche *+* klicken. Zeilen nach Objekt oder Attribut gruppieren. Bei der Arbeit mit Integrationsdaten (Kubernetes, ONTAP Advanced Metrics usw.) können Sie, falls gewünscht, mehrere Attribute gruppieren.

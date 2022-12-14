@@ -11,6 +11,7 @@ keywords: dashboard, widget, custom, example, virtual machine, vm, performance
 [role="lead"]
 IT-Abteilungen stehen heute vor zahlreichen Herausforderungen. Von Administratoren muss mit weniger Aufwand mehr erreicht werden, und eine vollständige Übersicht über dynamische Datacenter ist daher ein muss. In diesem Beispiel zeigen wir Ihnen, wie Sie ein Dashboard mit Widgets erstellen, die Ihnen betriebliche Einblicke in die Performance der Virtual Machine (VM) in Ihrer Umgebung geben. Wenn Sie diesem Beispiel folgen und Widgets erstellen, um Ihre spezifischen Anforderungen zu erfüllen, können Sie beispielsweise die Performance von Back-End-Storage im Vergleich zur Frontend-Performance der Virtual Machines oder die Anzeige von VM-Latenz gegenüber I/O-Anforderungen visualisieren.
 
+.Über diese Aufgabe
 Hier werden wir ein Dashboard für die Performance von virtuellen Maschinen erstellen, das Folgendes enthält:
 
 * Eine Tabelle mit VM-Namen und Performance-Daten

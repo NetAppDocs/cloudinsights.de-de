@@ -109,6 +109,6 @@ Für *APAC-basierte* Cloud Secure-Umgebungen:
 |===
 
 
-==== Verwandte Themen:
+== Systemgröße
 
 Siehe link:concept_cs_event_rate_checker.html["Ereignisprüfung"] Dokumentation für Informationen zur Größenanpassung

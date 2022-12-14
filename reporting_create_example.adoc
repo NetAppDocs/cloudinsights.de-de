@@ -43,6 +43,7 @@ Fügen Sie entsprechende Namen für Liste und Abfrage hinzu
 . Führen Sie den Bericht durch, indem Sie auf klicken image:Reporting-RunButton.png["Laufen"] Und Auswahl eines Ausgabetyps.
 
 
+.Ergebnis
 Ein Bericht wie der folgende wird erstellt:
 
 image:Reporting-Example1.png["Berichtsbeispiel"]

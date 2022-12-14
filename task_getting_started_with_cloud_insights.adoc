@@ -88,7 +88,7 @@ Sie können später weitere Dashboards importieren, oder link:concept_dashboards
 
 
 
-== Das ist alles daran
+== Mehr ist nicht nötig
 
 Nach Abschluss des anfänglichen Einrichtungsvorgangs beginnt Ihre Umgebung mit der Erfassung der Daten.
 

@@ -21,7 +21,7 @@ NOTE: Für eine genaue Audit- und Datenberichterstattung wird dringend empfohlen
 == Hinzufügen einer Linux-Akquisitionseinheit
 
 .Bevor Sie beginnen
-* Wenn Ihr System einen Proxy verwendet, müssen Sie die Proxy-Umgebungsvariablen festlegen, bevor die Erfassungseinheit installiert wird. Weitere Informationen finden Sie unter  proxy environment variables.
+* Wenn Ihr System einen Proxy verwendet, müssen Sie die Proxy-Umgebungsvariablen festlegen, bevor die Erfassungseinheit installiert wird. Weitere Informationen finden Sie unter <<Festlegen von Proxy-Umgebungsvariablen>>.
 
 
 .Schritte für die Installation der Linux-Erfassungseinheit
@@ -183,6 +183,7 @@ HINWEIS: Die Standarderfassungseinheit kann nicht gelöscht werden. Wählen Sie 
 
 Um eine Erfassungseinheit auf demselben Server/derselben VM neu zu installieren, müssen Sie folgende Schritte ausführen:
 
+.Bevor Sie beginnen
 Sie müssen eine temporäre Erfassungseinheit auf einem separaten Server/einer separaten VM konfigurieren, bevor Sie eine Akquisitionseinheit neu installieren.
 
 .Schritte
