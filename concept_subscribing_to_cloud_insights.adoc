@@ -119,7 +119,7 @@ Die kostenlose Testversion von AWS Marketplace kann nicht erweitert werden. Jede
 
 
 
-== Was ist, wenn meine Testversion abgelaufen ist?
+=== Was ist, wenn meine Testversion abgelaufen ist?
 
 Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Cloud Insights angemeldet haben, haben Sie bis zur Anmeldung nur begrenzte Funktionen.
 

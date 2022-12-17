@@ -12,6 +12,61 @@ NetApp verbessert seine Produkte und Services kontinuierlich. Im Folgenden finde
 
 
 
+== Dezember 2022
+
+
+
+=== Entdecken Sie Ransomware-Schutz und andere Sicherheitsfunktionen während der Cloud Insights-Testversion
+
+Wenn Sie sich ab heute für eine neue Testversion von Cloud Insights anmelden, können Sie sich über Sicherheitsfunktionen wie Ransomware-Erkennung und automatisierte benutzerblockierende Antwortrichtlinien informieren. Wenn Sie sich noch nicht für Ihren Testlauf angemeldet haben, tun Sie es noch heute!
+
+
+
+=== Kubernetes-Workloads verfügen über eine eigene Landing Page
+
+Workloads sind eine wichtige Komponente in Ihrer Kubernetes-Umgebung. Cloud Insights bietet daher jetzt Landing Pages für diese Workloads. Hier können Sie Probleme anzeigen, untersuchen und beheben, die sich auf Ihre Kubernetes-Workloads auswirken.
+
+image:Kubernetes_Workload_LP.png["Beispiel Einer Kubernetes Workload Landing Page"]
+
+
+
+=== Überprüfen Sie Ihre Prüfsummen
+
+Sie haben uns gebeten, Ihnen bei der Installation des Agenten für Windows, Linux und MacOS Prüfsummenwerte zur Verfügung zu stellen, und das ist eine großartige Idee. Hier sind sie also:
+
+image:Agent_Checksum_Instructions.png["Agent-Prüfsummenwerte werden während der Installation angezeigt"]
+
+
+
+=== Verbesserungen Bei Der Protokollierung Von Warnmeldungen
+
+
+
+==== Gruppieren Nach
+
+Wenn Sie einen Protokollmonitor erstellen oder bearbeiten, können Sie jetzt Attribute „Gruppieren nach“ festlegen, um eine zielgerichteter Warnung zu ermöglichen. Suchen Sie nach den Attributen „Gruppieren nach“ unter den „Filter“-Einstellungen in Ihrer Monitordefinition.
+
+image:Monitor_Group_By_Example.png["Gruppieren nach Beispiel in der Monitordefinition"]
+
+Diese Änderung bringt metrische Monitore und Log-Monitore in Funktionsparität durch Normalisierung des Aspekts „Gruppe nach“ der Monitor-Definitionen. Mit dieser Parität können Kunden zur weiteren Anpassung alle systemdefinierten Standardmonitore klonen/duplizieren.
+
+
+
+==== Duplizieren
+
+Sie können jetzt die Monitore Änderungsprotokoll, Kubernetes Log und Data Collector Log klonen (duplizieren). Dadurch wird ein neuer benutzerdefinierter Protokollmonitor erstellt, den Sie an Ihre spezifischen Definitionen anpassen können.
+
+image:Log_Monitor_Duplicate.png["Duplizieren eines Protokollmonitors"]
+
+
+
+=== 11 Neue Standard-ONTAP-Monitore für Business Continuity bei SnapMirror
+
+Wir haben fast ein Dutzend neuer Systemmonitore für SnapMirror for Business Continuity (SMBC) hinzugefügt, die über Änderungen an SMBC-Zertifikaten und ONTAP Mediatoren in Kenntnis setzen.
+
+'''
+
+
 == November 2022
 
 
