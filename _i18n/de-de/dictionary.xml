@@ -9157,7 +9157,6 @@
   <block id="68bcc67f734c4d92ccfcbf87c7520280" category="inline-image-macro">Duplizieren eines Protokollmonitors</block>
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 Neue Standard-ONTAP-Monitore für Business Continuity bei SnapMirror</block>
-  <block id="58884a5363d19bcb025a7a0fd15d3801" category="paragraph">Wir haben fast ein Dutzend neuer Systemmonitore für SnapMirror for Business Continuity (SMBC) hinzugefügt, die über Änderungen an SMBC-Zertifikaten und ONTAP Mediatoren in Kenntnis setzen.</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">Einstellung des Bedienpersonals</block>
   <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.</block>
   <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">Ressourcenbezogene Variablen</block>
@@ -9240,4 +9239,6 @@
   <block id="66a60fbd4168a1ac76bf8fa7d2650519" category="cell">SMBC-Serverzertifikat läuft ab</block>
   <block id="13d0e81b911774edf84b28bd0b95b58f" category="cell">Diese Meldung tritt auf, wenn das Zertifikat des ONTAP Mediator-Servers innerhalb der nächsten 30 Tage abläuft.</block>
   <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">Entfernen Sie vor Ablauf dieses Zertifikats die Konfiguration des aktuellen ONTAP Mediators mithilfe des Befehls „snapmirror Mediator remove“. Aktualisieren eines neuen Serverzertifikats auf dem ONTAP Mediator-Server. Konfigurieren Sie den Zugriff auf den ONTAP Mediator mit dem Befehl „snapmirror Mediator add“ neu.</block>
+  <block id="0800f817875b07895ac4004bbc1c7e5b" category="inline-link-macro">Systemmonitore</block>
+  <block id="e85f7d6ee39ea454f691893ec01b6a2e" category="paragraph">Wir haben fast ein Dutzend neue hinzu <block ref="0524dcf44332373ed9afa3dd2bb38b12" category="inline-link-macro-rx"></block> Für SnapMirror for Business Continuity (SMBC), die eine Warnung bei Änderungen an SMBC-Zertifikaten und ONTAP Mediatoren enthält.</block>
 </blocks>

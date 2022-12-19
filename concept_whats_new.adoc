@@ -62,7 +62,7 @@ image:Log_Monitor_Duplicate.png["Duplizieren eines Protokollmonitors"]
 
 === 11 Neue Standard-ONTAP-Monitore für Business Continuity bei SnapMirror
 
-Wir haben fast ein Dutzend neuer Systemmonitore für SnapMirror for Business Continuity (SMBC) hinzugefügt, die über Änderungen an SMBC-Zertifikaten und ONTAP Mediatoren in Kenntnis setzen.
+Wir haben fast ein Dutzend neue hinzu link:task_system_monitors.html#snapmirror-for-business-continuity-smbc-mediator-log-monitors["Systemmonitore"] Für SnapMirror for Business Continuity (SMBC), die eine Warnung bei Änderungen an SMBC-Zertifikaten und ONTAP Mediatoren enthält.
 
 '''
 
