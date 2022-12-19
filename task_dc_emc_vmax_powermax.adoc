@@ -25,6 +25,23 @@ Bevor Sie diese Datensammlung konfigurieren, sollten Sie sicherstellen, dass Clo
 * Schreibgeschützter Benutzername und Kennwort für die SE-Software
 * DIE UNISPHERE for VMAX-Anwendung muss ausgeführt werden und Statistiken für die EMC VMAX- und PowerMax-Speicher-Arrays sammeln, die von der SMI-S Provider-Installation gemanagt werden
 * Zugriffsvalidierung für die Leistung: In einem Webbrowser auf Ihrer Acquisition Unit gehen Sie zu _\https://<SMI-S Hostname oder IP>:5989/ecomconfig_, wobei „SMI-S Hostname or IP“ die IP-Adresse oder den Hostnamen Ihres SMI-S Servers ist. Diese URL ist für ein Verwaltungsportal für den Service EMC SMI-S (auch bekannt als „ECOM“) vorgesehen. Sie erhalten ein Login-Popup.
+* Berechtigungen müssen in der Daemon-Konfigurationsdatei des Solutions Enabler Servers deklariert werden, die üblicherweise hier zu finden ist: _/var/symapi/config/daemon_Users_
++
+Hier ist eine Beispieldatei mit den richtigen Cisys Berechtigungen.
+
++
+....
+root@cernciaukc101:/root
+14:11:25 # tail /var/symapi/config/daemon_users
+###
+###     Refer to the storrdfd(3) man page for additional details.
+###
+###     As noted above, only authorized users can perform stordaemon control
+###     operations (e.g., shutdown).
+################################################################################
+# smith         storrdfd
+cisys storapid <all>
+....
 
 
 
@@ -123,10 +140,6 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
-
-
-=== Inventar
-
 [cols="2*"]
 |===
 | Problem: | Versuchen Sie dies: 
@@ -154,5 +167,8 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 
 | Fehler: • Der CLI-Befehl "symcfg list -tdev" gibt bei der Erfassung mit Solutions Enabler 7.x von einem Solutions Enabler Server 8.x. möglicherweise falsche Daten zurück • Der CLI-Befehl „symcfg list -srp“ kann bei der Erfassung mit Solutions Enabler 8.1.0 oder früher von einem Solutions Enabler Server 8.3 oder höher falsche Daten zurückgeben. | Vergewissern Sie sich, dass Sie die gleiche Solutions Enabler-Hauptversion verwenden 
+
+
+| Ich sehe Datenerhebungsfehler mit der Meldung "unbekannter Code" | Sie können diese Meldung sehen, wenn die Berechtigungen nicht in der Daemon-Konfigurationsdatei des Solutions Enabler Servers deklariert sind (siehe <<Anforderungen,Anforderungen>> Oben). Hierbei wird davon ausgegangen, dass die Version Ihres SE-Clients mit Ihrer SE-Serverversion übereinstimmt. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
