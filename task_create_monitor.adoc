@@ -93,14 +93,12 @@ image:Monitor_metric_conditions.png["Definieren Sie die Bedingungen des Monitors
 
 === Protokollüberwachung
 
-Beim Erstellen eines *Protokollmonitors* wählen Sie zunächst aus der verfügbaren Protokollliste aus, welches Protokoll überwacht werden soll. Sie können dann nach den verfügbaren Attributen wie oben filtern.
-
-Sie können beispielsweise nach dem Nachrichtentyp „Object.Store.unerreichbar“ in der Quelle logs.netapp.ems filtern:
+Beim Erstellen eines *Protokollmonitors* wählen Sie zunächst aus der verfügbaren Protokollliste aus, welches Protokoll überwacht werden soll. Sie können dann nach den verfügbaren Attributen wie oben filtern. Sie können auch ein oder mehrere Attribute „Gruppieren nach“ auswählen.
 
 
 NOTE: Der Filter Protokollmonitor darf nicht leer sein.
 
-image:Monitor_log_monitor_filter.png["Wählen Sie das zu überwachende Protokoll aus, und setzen Sie einen Filter"]
+image:Monitor_Group_By_Example.png["Wählen Sie Protokoll, das überwacht werden soll, legen Sie einen Filter fest, und wählen Sie ggf. Gruppe nach Methode aus"]
 
 
 
