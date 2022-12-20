@@ -6348,7 +6348,6 @@
   <block id="f9a9b1276eeee5dd40a308e6f4b24631" category="cell">Der Standardwert ist 30 Sekunden</block>
   <block id="819902afffc93c6404da6c6845e68440" category="cell">Performance-Threads Anzahl</block>
   <block id="853e71d0368e6ee77bf4ac9c6d9aa93a" category="cell">Überprüfen Sie, ob Cloud Insights die erweiterten Metriken aus der folgenden Liste erfasst.</block>
-  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">Hinweis: Wenn Sie die neueste Installation von NetApp Kubernetes Monitoring Operator und ein erneuerbares API-Zugriffstoken verwenden, werden auslaufende Tokens automatisch durch neue/aktualisierte API-Zugriffs-Tokens ersetzt. Die hier aufgeführten manuellen Schritte zur Erneuerung des Kubernetes-API-Tokens sind nicht erforderlich.</block>
   <block id="a5dfaed67b2749f907deb26db5abcb10" category="summary">Allgemeine Tipps zur Fehlerbehebung bei Cloud Insights.</block>
   <block id="38bbcd866205b5ab858be293ea3a1f1f" category="doc">Fehlerbehebung Bei Allgemeinen Cloud Insights-Problemen</block>
   <block id="ac9d70899fcbb0d147ded44ff92e7ce8" category="paragraph">Hier finden Sie Vorschläge zur Fehlerbehebung bei Cloud Insights.</block>
@@ -9257,4 +9256,5 @@
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">Service-Richtlinie</block>
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">Bei Verwendung der Service-Policy aus ONTAP Version 9.9.1, um eine Verbindung zum Datenquellensammler herzustellen, ist der Dienst _Data-fpolicy-Client_ zusammen mit dem Datendienst _Data-nfs_ und/oder _Data-cifs_ erforderlich.</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">In Versionen von ONTAP vor 9.9 muss _Data-fpolicy-Client_ nicht gesetzt werden.</block>
+  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">Hinweis: Wenn Sie die neueste Installation von NetApp Kubernetes Monitoring Operator und ein erneuerbares API-Zugriffstoken verwenden, werden auslaufende Tokens automatisch durch neue/aktualisierte API-Zugriffs-Tokens ersetzt. Die unten aufgeführten manuellen Schritte müssen nicht ausgeführt werden.</block>
 </blocks>

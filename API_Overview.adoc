@@ -283,7 +283,7 @@ Die Token für den API-Zugriff haben ein Ablaufdatum. Wenn ein API-Zugriffstoken
 
 Beachten Sie, dass diese Befehle den Standard-Namespace „netapp-Monitoring“ verwenden. Wenn Sie Ihren eigenen Namespace festgelegt haben, ersetzen Sie diesen Namespace in diesen und allen nachfolgenden Befehlen und Dateien.
 
-Hinweis: Wenn Sie die neueste Installation von NetApp Kubernetes Monitoring Operator und ein erneuerbares API-Zugriffstoken verwenden, werden auslaufende Tokens automatisch durch neue/aktualisierte API-Zugriffs-Tokens ersetzt. Die hier aufgeführten manuellen Schritte zur Erneuerung des Kubernetes-API-Tokens sind nicht erforderlich.
+Hinweis: Wenn Sie die neueste Installation von NetApp Kubernetes Monitoring Operator und ein erneuerbares API-Zugriffstoken verwenden, werden auslaufende Tokens automatisch durch neue/aktualisierte API-Zugriffs-Tokens ersetzt. Die unten aufgeführten manuellen Schritte müssen nicht ausgeführt werden.
 
 * Bearbeiten Sie den NetApp Kubernetes Monitoring Operator.
 +
