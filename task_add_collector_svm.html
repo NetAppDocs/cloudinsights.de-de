@@ -3082,7 +3082,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-14 18:07:03 +0000">12/14/2022</time>
+    <time datetime="2022-12-20 16:21:13 +0000">12/20/2022</time>
     
   
 
@@ -3130,7 +3130,7 @@
 <p>Es werden nur SVMs vom Datentyp unterstützt. SVMs mit Infinite Volumes werden nicht unterstützt.</p>
 </li>
 <li>
-<p>SVM hat mehrere Untertypen. Davon werden nur <em>default</em> und <em>Sync_source</em> unterstützt.</p>
+<p>SVM hat mehrere Untertypen. Davon werden nur <em>default</em>, <em>Sync_source</em> und <em>Sync_Destination</em> unterstützt.</p>
 </li>
 <li>
 <p>Ein Agent <a href="task_cs_add_agent.html">"Muss konfiguriert sein"</a> Bevor Sie Datensammler konfigurieren können.</p>
@@ -3357,6 +3357,57 @@ security login create -user-or-group-name csuser -application ontapi -authmethod
 <p>Auf der Seite installierte Datensammler können Sie den Datensammler über das Optionsmenü rechts neben jedem Collector bearbeiten. Sie können den Datensammler neu starten oder die Konfigurationsattribute des Datensammlers bearbeiten.</p>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="empfohlene-konfiguration-für-metro-cluster">Empfohlene Konfiguration für Metro Cluster</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die folgenden Empfehlungen für MetroCluster:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Verbinden Sie zwei Data Collectors – eine mit der Quell-SVM und eine andere mit der Ziel-SVM.</p>
+</li>
+<li>
+<p>Die Datensammler sollten durch <em>Cluster IP</em> verbunden werden.</p>
+</li>
+<li>
+<p>Zu jedem Zeitpunkt sollte ein Datensammler in Betrieb sein, ein anderer wird im Fehler sein.</p>
+<div class="paragraph">
+<p>Der aktuelle ‘running’ SVM-Datensammler wird als <em>running</em> angezeigt. Der Datensammler der aktuellen ‘stovered’ SVM wird als <em>Error</em> angezeigt.</p>
+</div>
+</li>
+<li>
+<p>Bei jeder Umschaltung ändert sich der Zustand des Datensammlers von ‘running’ zu ‘error’ und umgekehrt.</p>
+</li>
+<li>
+<p>Es dauert bis zu zwei Minuten, bis der Datensammler den Fehlerstatus in den Ausführungszustand wechselt.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="service-richtlinie">Service-Richtlinie</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bei Verwendung der Service-Policy aus ONTAP Version 9.9.1, um eine Verbindung zum Datenquellensammler herzustellen, ist der Dienst <em>Data-fpolicy-Client</em> zusammen mit dem Datendienst <em>Data-nfs</em> und/oder <em>Data-cifs</em> erforderlich.</p>
+</div>
+<div class="paragraph">
+<p>Beispiel:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Testcluster-1::*&gt; net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
+-services data-cifs,data-nfs,data,-core,data-fpolicy-client
+(network interface service-policy create)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In Versionen von ONTAP vor 9.9 muss <em>Data-fpolicy-Client</em> nicht gesetzt werden.</p>
 </div>
 </div>
 </div>
