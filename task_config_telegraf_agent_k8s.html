@@ -3082,7 +3082,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-12-17 03:25:17 +0000">12/17/2022</time>
+    <time datetime="2022-12-20 20:56:12 +0000">12/20/2022</time>
     
   
 
@@ -3845,6 +3845,28 @@ Sobald alle Artefakte zufriedenstellend überprüft wurden, kann die Agenteninst
 <div class="paragraph">
 <p>Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.</p>
 </div>
+<div class="paragraph">
+<p>Um diese Werte zu ändern, bearbeiten Sie den Agenten-CR mit dem folgenden Befehl (ersetzen Sie &lt;namespace&gt; für Ihren Namespace):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl edit agent agent-monitoring-netapp -n &lt;namespace&gt;
+Die CR-Spezifikation folgt dem Format:</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> - name: &lt;plugin-name&gt;
+   ...
+   substitutions:
+   - key: &lt;variable-name&gt;
+     value: &lt;desired-value&gt;
+     ...</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Elemente, die mit „Ja“ für „in Standard CR enthalten“ gekennzeichnet sind, sind bereits im Agent CR vorhanden und sind unter dem jeweiligen Plugin zu finden. Elemente, die mit „Nein“ gekennzeichnet sind, müssen manuell hinzugefügt werden, nachdem die Beispiele durch die enthaltenen Standardumsetzungen bereitgestellt wurden.</p>
+</div>
 <div class="sect2">
 <h3 id="ressourcenbezogene-variablen">Ressourcenbezogene Variablen</h3>
 <div class="paragraph">
@@ -3859,7 +3881,7 @@ Sobald alle Artefakte zufriedenstellend überprüft wurden, kann die Agenteninst
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Platzhalter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Variablenname</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Plug-In-Name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">In Standard-CR enthalten</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung</p></td>
