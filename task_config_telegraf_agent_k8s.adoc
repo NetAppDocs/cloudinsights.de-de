@@ -438,6 +438,22 @@ Sobald alle Artefakte zufriedenstellend überprüft wurden, kann die Agenteninst
 
 Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.
 
+Um diese Werte zu ändern, bearbeiten Sie den Agenten-CR mit dem folgenden Befehl (ersetzen Sie <namespace> für Ihren Namespace):
+
+ kubectl edit agent agent-monitoring-netapp -n <namespace>
+Die CR-Spezifikation folgt dem Format:
+
+[listing]
+----
+ - name: <plugin-name>
+   ...
+   substitutions:
+   - key: <variable-name>
+     value: <desired-value>
+     ...
+----
+Elemente, die mit „Ja“ für „in Standard CR enthalten“ gekennzeichnet sind, sind bereits im Agent CR vorhanden und sind unter dem jeweiligen Plugin zu finden. Elemente, die mit „Nein“ gekennzeichnet sind, müssen manuell hinzugefügt werden, nachdem die Beispiele durch die enthaltenen Standardumsetzungen bereitgestellt wurden.
+
 
 
 === Ressourcenbezogene Variablen
@@ -447,7 +463,7 @@ Siehe https://kubernetes.io/docs/concepts/configuration/manage-resources-contain
 |===
 
 
-| Platzhalter | Plug-In-Name | In Standard-CR enthalten | Beschreibung 
+| Variablenname | Plug-In-Name | In Standard-CR enthalten | Beschreibung 
 
 
 | DS_CPU_LIMITS_PLATZHALTER | Agent | ja | Kubernetes-CPU-Limit für telegraf-ds 

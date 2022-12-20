@@ -9257,4 +9257,8 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">Bei Verwendung der Service-Policy aus ONTAP Version 9.9.1, um eine Verbindung zum Datenquellensammler herzustellen, ist der Dienst _Data-fpolicy-Client_ zusammen mit dem Datendienst _Data-nfs_ und/oder _Data-cifs_ erforderlich.</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">In Versionen von ONTAP vor 9.9 muss _Data-fpolicy-Client_ nicht gesetzt werden.</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">Hinweis: Wenn Sie die neueste Installation von NetApp Kubernetes Monitoring Operator und ein erneuerbares API-Zugriffstoken verwenden, werden auslaufende Tokens automatisch durch neue/aktualisierte API-Zugriffs-Tokens ersetzt. Die unten aufgeführten manuellen Schritte müssen nicht ausgeführt werden.</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">Um diese Werte zu ändern, bearbeiten Sie den Agenten-CR mit dem folgenden Befehl (ersetzen Sie &lt;namespace&gt; für Ihren Namespace):</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">Die CR-Spezifikation folgt dem Format:</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">Elemente, die mit „Ja“ für „in Standard CR enthalten“ gekennzeichnet sind, sind bereits im Agent CR vorhanden und sind unter dem jeweiligen Plugin zu finden. Elemente, die mit „Nein“ gekennzeichnet sind, müssen manuell hinzugefügt werden, nachdem die Beispiele durch die enthaltenen Standardumsetzungen bereitgestellt wurden.</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">Variablenname</block>
 </blocks>
