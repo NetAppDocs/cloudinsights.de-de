@@ -9261,4 +9261,6 @@
   <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">Die CR-Spezifikation folgt dem Format:</block>
   <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">Elemente, die mit „Ja“ für „in Standard CR enthalten“ gekennzeichnet sind, sind bereits im Agent CR vorhanden und sind unter dem jeweiligen Plugin zu finden. Elemente, die mit „Nein“ gekennzeichnet sind, müssen manuell hinzugefügt werden, nachdem die Beispiele durch die enthaltenen Standardumsetzungen bereitgestellt wurden.</block>
   <block id="3f60b096843929b02e1a070f57e27584" category="cell">Variablenname</block>
+  <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">CSuser</block>
+  <block id="76ce4e2b9af0d8561c4d9aba287c2dfd" category="paragraph">Beachten Sie, dass, wenn Sie _ hinzufügen<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>_, dieser Benutzer benötigt SSH-Zugriff auf ONTAP.</block>
 </blocks>
