@@ -75,6 +75,7 @@ Wir haben fast ein Dutzend neue hinzu link:task_system_monitors.html#snapmirror-
 
 Es gibt Dutzende neue, systemdefinierte Monitore, um Sie bei potenziellen Problemen mit Cloud Volumes, Sicherheit und Datensicherung zu warnen. Weitere Informationen zu diesen Monitoren link:task_system_monitors.html#security-monitors["Hier"].
 
+'''
 
 
 == Oktober 2022

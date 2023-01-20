@@ -21,12 +21,12 @@ image:kubernetes_tile.png["Kubernetes Data Collector"]
 
 == Vor der Installation des NetApp Kubernetes Monitoring Operator
 
-.Voraussetzungen:
-* Beachten Sie bitte die folgenden Komponentenversionen. Die aktuellen Versionen des NetApp Kubernetes Monitoring Operator:
-+
 [[nkmoversion]]
+.Voraussetzungen:
+* Beachten Sie bitte die folgenden Komponentenversionen. Diese aktuellen Versionen sind in dem NetApp Kubernetes Monitoring Operator enthalten. Diese Versionen müssen Sie besonders beachten, wenn Sie sind <<using-a-custom-or-private-docker-repository,Verwenden eines benutzerdefinierten oder privaten Docker Repositorys>>:
++
 ** Telegraf: 1.24.0
-** kube-rbac-Proxy: V0.13.0
+** kube-rbac-Proxy: V1.13.0
 ** kube-State-Metriken: V2.6.0
 ** Fließendes Bit: 1.9.8
 ** kubernetes-Event-Exporteur: 0.10
@@ -174,18 +174,18 @@ Suchen Sie das Feld „_netapp-Monitoring_ <Version>“ mit dem folgenden Befehl
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository.
 
-Laden Sie alle Open-Source-Abhängigkeiten in Ihre private Docker-Registrierung herunter. Die folgenden Open-Source-Images müssen heruntergeladen werden:
+Laden Sie alle Open-Source-Abhängigkeiten in Ihre private Docker-Registrierung herunter. Die folgenden Open-Source-Images müssen heruntergeladen werden. Siehe <<before-installing-the-netapp-kubernetes-monitoring-operator,Voraussetzungen>> Abschnitt oben für die aktuellsten Versionen dieser Komponenten:
 
 ....
-docker.io/telegraf: 1.22.3
-gcr.io/kubebuilder/kube-rbac-proxy: v0.11.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.4.2
+docker.io/telegraf
+gcr.io/kubebuilder/kube-rbac-proxy
+k8s.gcr.io/kube-state-metrics/kube-state-metrics
 ....
 Wenn fließendes Bit aktiviert ist, laden Sie auch Folgendes herunter:
 
 ....
-docker.io/fluent-bit:1.9.3
-docker.io/kubernetes-event-exporter:0.10
+docker.io/fluent-bit
+docker.io/kubernetes-event-exporter
 ....
 Bearbeiten Sie das Agent-CR, um den neuen Speicherort für den erneuten Docker wiederzugeben. Deaktivieren Sie die automatische Aktualisierung (falls aktiviert).
 

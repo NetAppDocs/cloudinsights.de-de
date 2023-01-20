@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_unisphere_rest.html 
+keywords: data collector, Unisphere, EMC 
+summary: Dell EMC Unisphere REST Data Collector konfigurieren. 
+---
+= Konfigurieren des Dell EMC Unisphere REST-Datensammlers
+:allow-uri-read: 
+
+
+[role="lead"]
+Dieser Datensammler erfasst Bestands- und Performancedaten von Dell EMC Unisphere RESTstorage-Systemen. Zur Konfiguration benötigt der Datensammler eine IP-Adresse des Unisphere-Servers und ein Domain-Konto auf Administratorebene.
+
+
+
+== Anforderungen
+
+* Eine IP-Adresse des Unisphere-Servers
+* Domain-Konto auf Administratorebene für den Unisphere-Server
+* Port 8443:
+
+
+
+
+== Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| IP-Adresse des Unisphere-Servers | IP-Adresse oder vollqualifizierter Domänenname des Unisphere-Servers 
+
+
+| Unisphere-Port | Der Standardwert ist 8443 
+
+
+| Benutzername | Benutzername für Unisphere-Server 
+
+
+| Passwort | Kennwort, das für Unisphere-Server verwendet wird 
+|===
+
+
+== Erweiterte Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| Abfrageintervall für Bestand (min) | Der Standardwert ist 40 Minuten. 
+
+
+| Leistungsintervall (Sek.) | Intervall zwischen Performance-Abstimmungen Der Standardwert beträgt 600 Sekunden. 
+
+
+| Wählen Sie „Ausschließen“ oder „Einschließen“, um eine Liste anzugeben | Geben Sie an, ob VMs ein- oder ausgeschlossen werden sollen 
+
+
+| Bestandsfilter Geräteliste | Liste der zu filternden VMs (durch Komma getrennt oder durch Semikolon getrennt, wenn Komma im Wert verwendet wird) für die Filterung 
+
+
+| Unisphere-Leistungsintervall (Sek.) | Der Standardwert beträgt 300 Sekunden 
+|===
+
+
+== Fehlerbehebung
+
+Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
+
+
+
+=== Inventar
+
+[cols="2*"]
+|===
+| Problem: | Versuchen Sie dies: 
+
+
+| Fehler: Benutzerauthentifizierung fehlgeschlagen. | Stellen Sie sicher, dass Ihre Anmeldeinformationen für dieses Gerät korrekt sind. 
+|===
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].

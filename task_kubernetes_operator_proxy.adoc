@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: task_kubernetes_operator_proxy.html 
+keywords: telegraf, installation, install, agent, telegraf agent 
+summary: 'Cloud Insights unterstützt link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] Als Agent für die Sammlung von Integrationsdaten und kann auf Windows, Linux, macOS und Kubernetes konfiguriert werden.' 
+---
+= Konfigurieren eines Agenten zum Erfassen von Daten
+:allow-uri-read: 
+
+
+[role="lead"]
+Mit einem benutzerdefinierten/privaten Docker-Repository einen Proxy einrichten Ein Proxy kann Für den Überwachungsbetreiber im CR konfiguriert werden, beginnend mit der CI-Bereitstellung, die am 10. Dezember 2021 10 Dezember 2021 in Produktion ging
+
+Kubectl -n netapp-Monitoring bearbeiten Agent-Monitoring-netapp
+
+Fügen Sie im Abschnitt Spec: Dieser Datei den folgenden Code-Block hinzu
+
+Spec: Proxy: IsAuProxyEnabled: <true or false> isTelegrafProxyEnabled: <true or false> isFluentbitProxyEnabled: <true or false> password: <password for proxy, optional> Port: <port for proxy> Server: <server for proxy> Benutzername: <username for proxy, optional> noproxy: <comma separated list of IPs or resolvable hostnames that should bypass a proxy> mit einem benutzerdefinierten/privaten Docker-Repository erhalten den Docker-Schlüssel
+
+Kubectl -n netapp-Monitoring get secret Docker -o yaml
+
+(Kopieren Sie den Wert von .dockerconfigjson: Aus der Ausgabe des obigen Befehls) Decodieren Sie den Docker Secret
+
+Echo <paste from step #1 above> die Ausgabe dieses wird im folgenden json Format sein: { "Auths": {"docker.<cluster>.cloudinsights.netapp.com" : {"Benutzername":"<tenant id>", "Passwort":"<password which is the CI API key>", "auth" :"<encoded username:password basic auth key. Dies ist intern für Docker>"} } } Login in Docker Repository
+
+docker-Login-Docker.<cluster>.cloudinsights.netapp.com (aus Schritt #2) -U <username from step #2>-Passwort: <password from step #2> ziehen Sie das Operator-Docker-Image aus Cloud Insights
+
+docker Pull Docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+
+Das <version>-Feld finden Sie mit dem folgenden Befehl:
+
+Kubectl -n netapp-Monitoring get Deployment Monitoring-Operator / grep „image:“ Schieben Sie das Operator-Image in die private Docker Registry des Unternehmens
+
+Übertragen Sie den Code in Ihr privates/lokales/unternehmenseigenes Docker-Repository gemäß den Unternehmensrichtlinien Laden Sie alle Open-Source-Abhängigkeiten in Ihre private Docker-Registrierung herunter
+
+Die folgenden Open Source Images müssen heruntergeladen werden: docker.io/telegraf:1.19.3 gcr.io/kubebuilder/kube-rbac-Proxy:v0.5.0 k8s.gcr.io/kube-State-metrics/kube-State-metrics:v2.1.0
+
+Wenn fließendes Bit aktiviert ist: docker.io/Fluent-Bit:1.7.8 docker.io/kubernetes-Event-Exporter:0.10 Bearbeiten Sie den Agent CR, um den neuen Repoort des Dockers zu reflektieren, deaktivieren Sie Auto Upgrade (falls aktiviert)
+
+Kubectl -n netapp-Monitoring bearbeiten Agent-Monitoring-netapp
+
+EnableAutoUpgrade: False Docker-repo: <docker repo of the enterprise/corp docker repo> dockerRepoSecret: <optional: Name des Dockergeheimnisses von Enterprise/corp Docker repo, dieses Geheimnis sollte bereits auf dem k8s Cluster im selben Namespace erstellt werden>
+
+Nehmen Sie im Abschnitt Spec: Folgende Änderungen vor:
+
+Spec: telegraf: - Name: ksm Substitutionen: - Key: K8s.gcr.io Wert: <same as "docker-repo" field above>

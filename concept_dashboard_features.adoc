@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_dashboard_features.html 
 summary: Dashboard-Funktionen und -Konzepte. 
-keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility 
+keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility, formatting, conditional, hide, collapse, expand 
 ---
 = Dashboard-Funktionen
 :toc: macro
@@ -628,6 +628,24 @@ Im Widget „Single-Value“ können Sie neben der Einstellung „Warning (orang
 image:Single-Value Widgets.png["Single-Value Widget mit und ohne Formatierung"]
 
 Wenn Sie auf den Link in einem Widget mit einem Wert oder einem Gauge-Widget klicken, wird eine Abfrageseite angezeigt, die der ersten Abfrage im Widget entspricht.
+
+
+
+== Formatieren Von Tabellenwidgets
+
+Wie Widgets mit einem Wert und einer Anzeige können Sie bedingte Formatierungen in TabellenWidgets festlegen, sodass Sie Daten mit Farben und/oder speziellen Symbolen hervorheben können.
+
+Mit Conditional Formatting können Sie Schwellenwerte auf Warnebene und kritische Ebene in den TabellenWidgets festlegen und hervorheben. Dadurch erhalten Sie sofortige Sichtbarkeit für Ausreißer und außergewöhnliche Datenpunkte.
+
+image:ConditionalFormattingExample.png["Beispiel Für Bedingte Formatierung"]
+
+Die bedingte Formatierung wird für jede Spalte in einer Tabelle separat festgelegt. Beispiel: Sie können einen Satz von Schwellenwerten für eine Spalte Kapazität und einen anderen Satz für eine Durchsatzspalte wählen.
+
+Wenn Sie die Einheitenanzeige für eine Spalte ändern, bleibt die bedingte Formatierung erhalten und gibt die Änderung der Werte wieder. Die nachfolgenden Bilder zeigen die gleiche bedingte Formatierung, auch wenn die Anzeigeeinheit anders ist.
+
+image:ConditionalFormatting_GiB.png["Bedingte Formatierung – gib"] image:ConditionalFormatting_TiB.png["Bedingte Formatierung - tib"]
+
+Sie können festlegen, ob die Zustandsformatierung als Farbe, Symbole oder beides angezeigt werden soll.
 
 
 

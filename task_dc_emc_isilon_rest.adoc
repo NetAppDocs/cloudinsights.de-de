@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_isilon_rest.html 
+keywords: data collector, isilon, EMC, DELL, PowerScale 
+summary: Konfiguration des Dell EMC Isilon REST Data Collector 
+---
+= Dell EMC Isilon REST Data Collector
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights verwendet den Dell EMC Isilon REST SSH-Datensammler zum Erfassen von Bestands- und Performance-Daten aus Dell EMC Isilon Storage.
+
+
+
+== Terminologie
+
+Cloud Insights erwirbt die folgenden Bestandsinformationen von diesem Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+
+[cols="2*"]
+|===
+| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+
+
+| Laufwerk | Festplatte 
+
+
+| Cluster | Storage 
+
+
+| Knoten | Storage-Node 
+
+
+| File-System | Internes Volumen 
+|===
+Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Diese stellen für diesen Datensammler möglicherweise nicht alle Fälle dar.
+
+
+
+== Anforderungen
+
+Sie benötigen die folgenden Informationen, um diesen Datensammler zu konfigurieren:
+
+* Administratorrechte für den Rest-Speicher von Dell EMC Isilon
+* IP-Adresse des Dell EMC Isilon REST-Clusters
+* HTTPS-Zugriff auf Port 8080
+
+
+
+
+== Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| Isilon IP-Adresse | Die IP-Adresse oder der vollqualifizierte Domain-Name des Isilon-Speichers 
+
+
+| Benutzername | Benutzername für Isilon 
+
+
+| Passwort | Passwort, das für Isilon verwendet wird 
+|===
+
+
+== Erweiterte Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| HTTPS-Port | Der Standardwert ist 8080. 
+
+
+| Abfrageintervall für Bestand (min) | Intervall zwischen Bestandsabstimmungen Der Standardwert ist 20. 
+
+
+| Leistungsintervall (Sek.) | Intervall zwischen Performance-Abstimmungen Der Standardwert ist 300. 
+|===
+
+
+== Fehlerbehebung
+
+Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
+
+
+
+=== Inventar
+
+[cols="2*"]
+|===
+| Problem: | Versuchen Sie dies: 
+
+
+| „Ungültige Anmeldeinformationen“ mit Fehlermeldungen „Befehle, die für die rollenbasierte Administration nicht aktiviert sind, benötigen Root-Benutzerzugriff“ | * Überprüfen Sie, dass der Benutzer über die Berechtigungen verfügt, um die folgenden Befehle auf dem Gerät auszuführen: > isi Version osselease > isi Status -q > isi Status -n > isi Devices -d %s > isi Lizenz * Überprüfen Sie, dass die im Assistenten verwendeten Anmeldeinformationen mit den Geräteanmeldeinformationen übereinstimmen 
+
+
+| „Interner Fehler“ mit Fehlermeldungen “Befehl <Ihr Befehl> Ausführen fehlgeschlagen mit Berechtigung: <Ihre aktuelle Berechtigung>. Sudo Befehl ausführen Berechtigungsproblem“ | Überprüfen Sie, ob der Benutzer über sudo-Berechtigungen verfügt, um den folgenden Befehl auf dem Gerät auszuführen 
+|===
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].

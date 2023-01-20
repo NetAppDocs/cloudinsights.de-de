@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: bluexp_overview.html 
+summary: Aufbau, Schutz und Kontrolle Ihres hybriden Multi-Cloud-Datenbestands über eine einzige Kontrollebene 
+keywords: bluexp, cloud manager, cm, storage, data, services, integrated 
+---
+= Cloud Insights ist Teil von BlueXP
+:allow-uri-read: 
+
+
+[role="lead"]
+Mit BlueXP können Sie all Ihre NetApp Storage- und Daten-Assets über eine einzige Oberfläche managen. In BlueXP finden Sie viele neue Speicherservices sowie Datenservices, die bisher nur als Stand-Alone-Service mit einer separaten Benutzeroberfläche zur Verfügung standen. Cloud Insights ist einer dieser Services.
+
+
+NOTE: Die Integration des Navigationsmenüs von BlueXP wird als A betrachtet link:concept_preview_features.html["_Vorschau_"] Feature und kann daher geändert werden.
+
+Intuitives neues Menü im Navigationsmenü von BlueXP werden die Datendienste nach Kategorien geordnet und nach ihrer Funktionalität benannt. Zum Beispiel wird das Feature-Set „Cloud Insights“ im Menü „Beobachtbarkeit“ gefunden. Während Sie Cloud Insights erkunden, wird der Abschnitt „Beobachtbarkeit“ oben im Navigationsmenü angezeigt. Dies gilt für jeden BlueXP-Service, wie Sie es erkunden.
+
+image:BlueXP_Nav_Menu.png["Das Navigationsmenü von BlueXP zeigt Beobachtbarkeit oben und andere NetApp Services unten"]
+
+
+NOTE: In dieser Dokumentation können die Begriffe "Cloud Insights" und "Beobachtbarkeit" synonym verwendet werden.
+
+Mit den QuickInfo-Tools finden Sie weitere Informationen.
+
+Weitere Informationen zu BlueXP finden Sie auf der BlueXP-Website.

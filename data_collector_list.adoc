@@ -75,6 +75,9 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_dc_emc_isilon.html["Dell EMC PowerScale (vormals Isilon)"] | Infrastruktur 
 
 
+| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon REST"] | Infrastruktur 
+
+
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | Infrastruktur 
 
 
@@ -85,6 +88,9 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 
 
 | link:task_dc_emc_unity.html["Dell EMC Unity"] | Infrastruktur 
+
+
+| link:task_dc_emc_unisphere_rest.html["Dell EMC Unisphere REST"] | Infrastruktur 
 
 
 | link:task_dc_emc_vmax_powermax.html["Dell EMC VMAX/PowerMax Produktfamilie"] | Infrastruktur 

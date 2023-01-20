@@ -485,7 +485,13 @@ Bitte link:task_config_telegraf_agent_k8s.html["*Los geht hier*"] Informationen 
 
 == Prüfsummen Werden Überprüft
 
-Das Cloud Insights Agent-Installationsprogramm führt Integritätsprüfungen durch. Einige Benutzer müssen jedoch vor der Installation oder Anwendung heruntergeladener Artefakte möglicherweise ihre eigenen Überprüfungen durchführen. Um einen nur-Download-Vorgang durchzuführen (im Gegensatz zum Standard-Download-and-install), können diese Benutzer den Agent-Installation Befehl erhalten von der UI und entfernen Sie die nachhängbare "Installation" Option.
+Das Cloud Insights Agent-Installationsprogramm führt Integritätsprüfungen durch. Einige Benutzer müssen jedoch vor der Installation oder Anwendung heruntergeladener Artefakte möglicherweise ihre eigenen Überprüfungen durchführen. Dazu können Sie das Installationsprogramm herunterladen und eine Prüfsumme für das heruntergeladene Paket erstellen. Anschließend wird die Prüfsumme mit dem in der Installationsanleitung angegebenen Wert verglichen.
+
+
+
+=== Laden Sie das Installationspaket herunter, ohne es zu installieren
+
+Um einen ausschließlich herunterladbaren Vorgang durchzuführen (im Gegensatz zum Standard-Download-and-install), können Benutzer den Agent-Installationbefehl von der UI erhalten bearbeiten und die nachgestellte Option „install“ entfernen.
 
 Führen Sie hierzu folgende Schritte aus:
 
@@ -540,6 +546,27 @@ Genauer gesagt,
  Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
 
 
+
+
+=== Prüfsummenwert generieren
+
+Um den Prüfsummenwert zu generieren, führen Sie für die entsprechende Plattform den folgenden Befehl aus:
+
+* RHEL/Ubuntu:
++
+ sha256sum <package_name>
+* MacOS:
++
+ shasum -a 256 telegraf.pkg
+* Windows:
++
+ Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List
+
+
+
+
+=== Überprüfen Sie die Prüfsumme mithilfe der PEM-Datei
+
 Die signierte Prüfsummendatei kann mit der PEM-Datei verifiziert werden:
 
 * Nicht Windows:
@@ -556,6 +583,10 @@ $signer = $result.SignerCertificate
 Add-Type -Assembly System.Security
 [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 ....
+
+
+=== Installieren Sie das heruntergeladene Paket
+
 Sobald alle Artefakte zufriedenstellend überprüft wurden, kann die Agenteninstallation durch Ausführen von gestartet werden:
 
 Nicht Windows:

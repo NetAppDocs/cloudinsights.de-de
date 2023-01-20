@@ -12,11 +12,11 @@ Nachdem Sie sich zum ersten Mal bei Cloud Insights angemeldet haben und sich zum
 
 Datensammler erkennen Informationen aus Ihren Datenquellen, wie Speichergeräte, Netzwerk-Switches und virtuelle Maschinen. Die erfassten Informationen werden für Analysen, Validierung, Monitoring und Fehlerbehebung verwendet.
 
-Cloud Insights nutzt drei Arten von Datensammlern:
+Cloud Insights bietet drei Arten von Datensammlern an:
 
-* Betriebssysteme
-* Services
-* Infrastruktur
+* Infrastruktur (Storage-Geräte, Netzwerk-Switches, Computing-Infrastruktur)
+* Betriebssysteme (z. B. VMware oder Windows)
+* Services (wie Kafka)
 
 
 Wählen Sie Ihren ersten Datensammler von den unterstützten Anbietern und Modellen aus. Sie können später ganz einfach weitere Datensammler hinzufügen.
@@ -25,7 +25,7 @@ Wählen Sie Ihren ersten Datensammler von den unterstützten Anbietern und Model
 
 == Installieren Sie eine Akquisitionseinheit
 
-Wenn Sie einen Datensammler _Infrastructure_ ausgewählt haben, muss eine Erfassungseinheit Daten in Cloud Insights injizieren. Sie müssen die Software Acquisition Unit auf einem Server oder einer VM herunterladen und installieren, um Daten für Cloud Insights zu sammeln. Eine einzelne Erfassungseinheit kann für mehrere Datensammler verwendet werden.
+Wenn Sie einen Datensammler _Infrastructure_ ausgewählt haben, muss eine Erfassungseinheit Daten in Cloud Insights injizieren. Sie müssen die Software Acquisition Unit auf einem Server oder einer VM auf dem Rechenzentrum herunterladen und installieren, von dem aus Sie die Software erfassen. Eine einzelne Erfassungseinheit kann für mehrere Datensammler verwendet werden.
 
 image:NewLinuxAUInstall.png["Anweisungen für Linux AU"]
 
@@ -43,9 +43,8 @@ Sie können bei Bedarf später weitere Akquisitionseinheiten einrichten. So kön
 Für _Infrastructure_ Datensammler werden Sie aufgefordert, die präsentierten Datensammler-Felder auszufüllen:
 
 * Geben Sie dem Datensammler einen eindeutigen und aussagekräftigen Namen.
-* Geben Sie ggf. den Benutzernamen und das Kennwort ein, um eine Verbindung zum Gerät herzustellen.
+* Geben Sie die Anmeldeinformationen (Benutzername und Kennwort) ein, um eine Verbindung zum Gerät herzustellen.
 * Füllen Sie alle anderen Pflichtfelder in den Abschnitten_Configuration_ und_Advanced Configuration_ aus.
-* Klicken Sie auf *Verbindung testen*, um die Verbindung zum Gerät zu testen.
 * Klicken Sie auf *Collector hinzufügen*, um den Datensammler zu speichern.
 
 
@@ -97,4 +96,22 @@ Wenn der anfängliche Setup-Vorgang unterbrochen wird (z. B. wenn Sie das Browse
 * Wählen Sie einen Data Collector aus
 * Installieren Sie einen Agenten oder eine Akquisitionseinheit, wenn Sie dazu aufgefordert werden
 * Konfigurieren Sie den Data Collector
+
+
+
+
+== Nützliche Definitionen
+
+Die folgenden Definitionen können nützlich sein, wenn Sie über Cloud Insights-Datensammler oder -Funktionen sprechen:
+
+* Kollektorlebenszyklus: Ein Sammler wird zu einem der folgenden Zustände in seinem Lebenszyklus gehören:
++
+** *Vorschau*: Verfügbar in begrenzter Kapazität oder für ein begrenztes Publikum. link:concept_preview_features.html["Vorschaufunktionen"] Und Datensammler werden nach dem Vorschauzeitraum voraussichtlich GA werden. Die Vorschauzeiträume variieren je nach Zielgruppe oder Funktion.
+** *GA*: Ein Feature oder Datensammler, der allgemein für alle Kunden verfügbar ist, basierend auf Edition oder Feature Set.
+** *Deparated*: Gilt für Datensammler, die funktionell nicht mehr nachhaltig sind oder werden sollen. Veraltete Datensammler werden häufig durch neuere, funktional aktualisierte Datensammler ersetzt.
+** *Gelöscht*: Ein Datensammler, der entfernt wurde und nicht mehr verfügbar ist.
+
+
+* Acquisition Unit: Ein Computer, der Datensammler hostet, typischerweise eine virtuelle Maschine. Dieser Computer befindet sich in der Regel im selben Rechenzentrum/VPC wie die überwachten Objekte.
+* Datenquelle: Ein Modul zur Kommunikation mit einem Hardware- oder Software-Stack. Es besteht aus einer Konfiguration und einem Code, der auf dem AU-Computer ausgeführt wird, um mit dem Gerät zu kommunizieren.
 
