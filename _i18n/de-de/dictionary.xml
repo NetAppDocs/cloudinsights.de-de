@@ -9269,20 +9269,6 @@
   <block id="e683c12dcf92dc441c52b41d48fae3bd" category="cell">Liste der zu filternden VMs (durch Komma getrennt oder durch Semikolon getrennt, wenn Komma im Wert verwendet wird) für die Filterung</block>
   <block id="8d9973d4d778ded1eba118da9ff38733" category="cell">Unisphere-Leistungsintervall (Sek.)</block>
   <block id="f1ef5b6a9704d8b164ef33c20e11ce70" category="cell">Der Standardwert beträgt 300 Sekunden</block>
-  <block id="abd9e0bb14f8b22570a2f7f71cda1899" category="doc">Konfiguration von Amazon FSX für NetApp ONTAP</block>
-  <block id="e5444155690679de3490c237e18db0c4" category="paragraph">Dieser Datensammler sammelt Datei- und Benutzerdaten von Amazon FSX für NetApp ONTAP. Dieser Datensammler wird schrittweise in allen Cloud Insights-Servicegebieten zur Verfügung gestellt. Wenden Sie sich an Ihren Vertriebsmitarbeiter, wenn das Symbol für diesen Sammler in Ihrer Cloud Insights-Umgebung nicht angezeigt wird.</block>
-  <block id="0ee580e185da35a40a1d1984bc4f414a" category="list-text">Melden Sie sich bei der AWS Konsole an, navigieren Sie zur Seite EC2-instances, und wählen Sie Launch Instance aus.</block>
-  <block id="5beb340d7612e5199a7f1cf1fa8559a6" category="list-text">Wählen Sie eine RHEL- oder CentOS AMI-Version mit der entsprechenden Version aus, wie in erwähnt <block ref="f14b7add63be60d820928fdd866e56cc" category="inline-link-macro-rx"></block>.</block>
-  <block id="7c197f72661240062d16ebc1d01f474a" category="list-text">Erstellen Sie das Feld Agent in derselben VPC und demselben Subnetz, in dem sich die Amazon FSX für die NetApp ONTAP Instanz befindet.</block>
-  <block id="84cdd7b041998cf9db566c8249b20d66" category="paragraph">Oder die Box „Agent“ sollte in einer VPC liegen, die mit der Amazon FSX für NetApp ONTAP VPC verbunden ist.</block>
-  <block id="d390a93ae0bf8ecb5f3eafac479ff1b7" category="paragraph">Vergewissern Sie sich, dass bidirektionale Kommunikation zwischen dem Agent und Amazon FSX für NetApp ONTAP vorhanden ist.</block>
-  <block id="244fc1e8ff83d4d166131ec1052c59de" category="list-text">Wählen Sie t2.xlarge (4 vcpus und 16 GB RAM) als zugewiesene Ressourcen aus.</block>
-  <block id="8b7fcdb58af006bf84d991e49eeebe51" category="list-text">Installieren Sie wget und entzip native Linux-Pakete.</block>
-  <block id="d885b39aec33db3575946cc072241a27" category="list-text">Navigieren Sie zu Cloud Secure Admin &gt; Data Collectors, und klicken Sie auf die Registerkarte Agents.</block>
-  <block id="30bfaded2cce7bc8bce0c34aedd60d6a" category="list-text">Klicken Sie auf +Agent und geben Sie RHEL als Zielplattform an.</block>
-  <block id="6e9db8c0f07c6f970099588928158b5d" category="list-text">Fügen Sie den Befehl „Agent Installation“ in die RHEL EC2-Instanz ein, bei der Sie angemeldet sind.</block>
-  <block id="fbdfba9c1edac47c47090ea8623a8231" category="paragraph">Dadurch wird der Cloud Secure-Agent installiert, sofern alle Agent-Voraussetzungen erfüllt sind.</block>
-  <block id="662c8fe551cd48617d7f1ceaea434408" category="paragraph">Ausführliche Schritte finden Sie im Cloud Secure <block ref="7902d0521fa6bd726229418f042a3bdf" category="inline-link-macro-rx"></block> Seite,</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">Verwenden eines benutzerdefinierten oder privaten Docker Repositorys</block>
   <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">Beachten Sie bitte die folgenden Komponentenversionen. Diese aktuellen Versionen sind in dem NetApp Kubernetes Monitoring Operator enthalten. Diese Versionen müssen Sie besonders beachten, wenn Sie sind <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>:</block>
   <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">kube-rbac-Proxy: V1.13.0</block>
@@ -10047,7 +10033,6 @@
   <block id="2c56c637347a0a87008437d711d16263" category="cell">Passwort, das für Isilon verwendet wird</block>
   <block id="01cba5236d5d580a0466283128eeaca6" category="cell">Der Standardwert ist 8080.</block>
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">Veraltet</block>
-  <block id="9a792c4a7d9a1e15c6a95f98fe5b6491" category="admonition">Dieser Datensammler ist <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> Stand: 1. Januar 2023. Informationen zum Übergang zur AU-basierten Datenerfassung finden Sie im <block ref="df6681cbd934aebfa279b5a883862ef0" category="inline-link-macro-rx"></block>.</block>
   <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">Aufbau, Schutz und Kontrolle Ihres hybriden Multi-Cloud-Datenbestands über eine einzige Kontrollebene</block>
   <block id="7ce49ad36572c616df2b7b18f0f3c2d5" category="doc">Cloud Insights ist Teil von BlueXP</block>
   <block id="76609753d56a9030bf88cac400655be7" category="paragraph">Mit BlueXP können Sie all Ihre NetApp Storage- und Daten-Assets über eine einzige Oberfläche managen. In BlueXP finden Sie viele neue Speicherservices sowie Datenservices, die bisher nur als Stand-Alone-Service mit einer separaten Benutzeroberfläche zur Verfügung standen. Cloud Insights ist einer dieser Services.</block>
@@ -10681,4 +10666,5 @@
   <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*Gelöscht*: Ein Datensammler, der entfernt wurde und nicht mehr verfügbar ist.</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">Acquisition Unit: Ein Computer, der Datensammler hostet, typischerweise eine virtuelle Maschine. Dieser Computer befindet sich in der Regel im selben Rechenzentrum/VPC wie die überwachten Objekte.</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">Datenquelle: Ein Modul zur Kommunikation mit einem Hardware- oder Software-Stack. Es besteht aus einer Konfiguration und einem Code, der auf dem AU-Computer ausgeführt wird, um mit dem Gerät zu kommunizieren.</block>
+  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">Dieser Datensammler ist <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> Stand: 1. Januar 2023. Informationen zum Übergang zur AU-basierten Datenerfassung finden Sie im <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
 </blocks>
