@@ -51,11 +51,11 @@ Während der kostenlosen Testversion können Sie dies gerne link:concept_subscri
 
 == Melden Sie sich an und gehen Sie
 
-Sobald Ihr Mandant erstellt wurde, können Sie sich jederzeit einfach im NetApp Cloud Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.
+Sobald Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach im NetApp Cloud Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.
 
 Sie können einen Browser auch direkt auf Ihrer URL für die Cloud Insights-Umgebung öffnen, beispielsweise:
 
- https://<environment-name>.c01.cloudinsights.netapp.com/
+ https://<environment-prefix>.c01.cloudinsights.netapp.com/
 Die URL wird auch in die Einladungs-E-Mail jedes Benutzers für einfachen Zugriff und Lesezeichen enthalten. Wenn der Benutzer nicht bereits bei Cloud Central angemeldet ist, werden diese zur Anmeldung aufgefordert.
 
 

@@ -9,14 +9,20 @@ summary: Dell EMC Unisphere REST Data Collector konfigurieren.
 
 
 [role="lead"]
-Dieser Datensammler erfasst Bestands- und Performancedaten von Dell EMC Unisphere RESTstorage-Systemen. Zur Konfiguration benötigt der Datensammler eine IP-Adresse des Unisphere-Servers und ein Domain-Konto auf Administratorebene.
+Dieser Datensammler erfasst Bestands- und Performancedaten von Dell EMC Unisphere für PowerMax/VMAX 3 Managementsystemen.
+
+Bitte beachten Sie, dass Dell/EMC bis Unisphere 10.0 keine Statistiken pro Volume eingeführt hat - dieser Datensammler unterstützt 9.2.0+, kann aber keine Volume-Statistiken sammeln, da sie nicht vorhanden sind.
+
+Eine Unisphere for VMAX/PowerMax-Instanz verwaltet möglicherweise ein oder mehrere Symmetrix 3 oder höhere Speicher-Arrays – dieser Collector versucht standardmäßig, alle Arrays zu ermitteln.
+
+Für die Konfiguration benötigt der Datensammler eine IP-Adresse/FQDN des Unisphere-Servers, eine TCP-Verbindung zu Port 8443 sowie einen Benutzernamen und ein Passwort.
 
 
 
 == Anforderungen
 
-* Eine IP-Adresse des Unisphere-Servers
-* Domain-Konto auf Administratorebene für den Unisphere-Server
+* Eine IP-Adresse/ein vollständig qualifizierter Domain-Name des Unisphere-Servers
+* Benutzername und Passwort
 * Port 8443:
 
 
@@ -52,7 +58,7 @@ Dieser Datensammler erfasst Bestands- und Performancedaten von Dell EMC Unispher
 | Abfrageintervall für Bestand (min) | Der Standardwert ist 40 Minuten. 
 
 
-| Leistungsintervall (Sek.) | Intervall zwischen Performance-Abstimmungen Der Standardwert beträgt 600 Sekunden. 
+| Leistungsintervall (Sek.) | Intervall zwischen Performance-Abstimmungen 
 
 
 | Wählen Sie „Ausschließen“ oder „Einschließen“, um eine Liste anzugeben | Geben Sie an, ob VMs ein- oder ausgeschlossen werden sollen 
