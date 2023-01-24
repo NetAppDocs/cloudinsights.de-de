@@ -597,13 +597,16 @@ Windows:
  .\cloudinsights-windows.ps1 -install
 
 
-== Fehlerbehebung Bei Der Agenteninstallation
+== Fehlerbehebung
 
 Einige Dinge, die Sie versuchen können, wenn Probleme beim Einrichten eines Agenten auftreten:
 
 [cols="2*"]
 |===
 | Problem: | Versuchen Sie dies: 
+
+
+| Nach der Konfiguration eines neuen Plugins und dem Neustart von Telegraf startet Telegraf Telegraf nicht. Die Protokolle zeigen an, dass ein Fehler wie folgt auftritt: "[telegraf] Fehler laufende Agent: Fehler beim Laden der Konfigurationsdatei /etc/telegraf/telegraf.d/cloudinsights-default.conf: Plugin Outputs.http: Zeile 88: Konfiguration spezifiziert die Felder ["use_System_Proxy"], aber sie wurden nicht verwendet" | Die installierte Telegraf-Version ist veraltet. Befolgen Sie die Schritte auf dieser Seite, um *Upgrade the Agent* für Ihre entsprechende Plattform. 
 
 
 | Ich habe bereits einen Agent mit Cloud Insights installiert | Wenn Sie bereits einen Agent auf Ihrem Host/VM installiert haben, müssen Sie den Agent nicht erneut installieren. Wählen Sie in diesem Fall im Bildschirm Agenteninstallation einfach die entsprechende Plattform und die entsprechende Taste aus und klicken Sie auf *Weiter* oder *Fertig*. 

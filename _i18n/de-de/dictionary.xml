@@ -5774,7 +5774,6 @@
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf: 1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">kube-State-Metriken: V2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fließendes Bit: 1.9.8</block>
-  <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">kubernetes-Event-Exporteur: 0.10</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Die Installation des NetApp Kubernetes Monitoring Operator wird mit Kubernetes Version 1.20 oder neuer unterstützt.</block>
   <block id="f555190cc628f345214d8d00c587f506" category="list-text">Wenn Cloud Insights den Backend-Storage überwacht und Kubernetes mit der Docker Container-Laufzeit verwendet wird, kann Cloud Insights Zuordnungen von Pod zu PV-zu-Storage für NFS und iSCSI anzeigen; andere Laufzeiten zeigen nur iSCSI.</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">Upgrade</block>
@@ -7038,7 +7037,6 @@
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">Eine signierte Prüfsummendatei (endet in shar256.signierte oder sha256.ps1)</block>
   <block id="47a6cd89e04d0d805a75aa0fe5822c20" category="list-text">Nicht Windows:</block>
   <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows (nach der Installation des Zertifikats über Import-Zertifikat oben):</block>
-  <block id="e7d024454be5ad9e8d0f6defe29e154f" category="section-title">Fehlerbehebung Bei Der Agenteninstallation</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">Einige Dinge, die Sie versuchen können, wenn Probleme beim Einrichten eines Agenten auftreten:</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">Ich habe bereits einen Agent mit Cloud Insights installiert</block>
   <block id="1fed0141939f301599f8ba56fcb40b18" category="cell">Wenn Sie bereits einen Agent auf Ihrem Host/VM installiert haben, müssen Sie den Agent nicht erneut installieren. Wählen Sie in diesem Fall im Bildschirm Agenteninstallation einfach die entsprechende Plattform und die entsprechende Taste aus und klicken Sie auf *Weiter* oder *Fertig*.</block>
@@ -9266,8 +9264,6 @@
   <block id="8d9973d4d778ded1eba118da9ff38733" category="cell">Unisphere-Leistungsintervall (Sek.)</block>
   <block id="f1ef5b6a9704d8b164ef33c20e11ce70" category="cell">Der Standardwert beträgt 300 Sekunden</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">Verwenden eines benutzerdefinierten oder privaten Docker Repositorys</block>
-  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">Beachten Sie bitte die folgenden Komponentenversionen. Diese aktuellen Versionen sind in dem NetApp Kubernetes Monitoring Operator enthalten. Diese Versionen müssen Sie besonders beachten, wenn Sie sind <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>:</block>
-  <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">kube-rbac-Proxy: V1.13.0</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">Laden Sie alle Open-Source-Abhängigkeiten in Ihre private Docker-Registrierung herunter. Die folgenden Open-Source-Images müssen heruntergeladen werden. Siehe <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> Abschnitt oben für die aktuellsten Versionen dieser Komponenten:</block>
   <block id="c52daf8134416a70f4e670e99e7c4396" category="doc">SupportMatrix für die Datenquelle von Cloud Insight</block>
   <block id="dea5f9ab95bb253b826201d228922448" category="paragraph">Die Supportmatrix für Data Collector enthält eine Referenz für Data Collectors, die von Cloud Insights unterstützt werden, einschließlich Hersteller- und Modellinformationen.</block>
@@ -10706,4 +10702,9 @@
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">Benutzername und Passwort</block>
   <block id="4723d1b438a15598881f85467c0b7be8" category="cell">Intervall zwischen Performance-Abstimmungen</block>
   <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">Sobald Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach im NetApp Cloud Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.</block>
+  <block id="4e6966e86a775d896fac148f8f919b74" category="list-text">Beachten Sie bitte die folgenden Komponentenversionen. Dies sind die aktuellen _required_ Versionen, die vom NetApp Kubernetes Monitoring Operator enthalten sind. Diese Versionen müssen Sie besonders beachten, wenn Sie sind <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>:</block>
+  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">kube-rbac-Proxy: V0.13.0</block>
+  <block id="09fac59df2e8bc91f55d933bf9d5c4b9" category="list-text">kubernetes-Event-Exporter: Version 0.10</block>
+  <block id="051aaec40811db88a3eb9b87af9a7838" category="cell">Nach der Konfiguration eines neuen Plugins und dem Neustart von Telegraf startet Telegraf Telegraf nicht. Die Protokolle zeigen an, dass ein Fehler wie folgt auftritt: "[telegraf] Fehler laufende Agent: Fehler beim Laden der Konfigurationsdatei /etc/telegraf/telegraf.d/cloudinsights-default.conf: Plugin Outputs.http: Zeile 88: Konfiguration spezifiziert die Felder ["use_System_Proxy"], aber sie wurden nicht verwendet"</block>
+  <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">Die installierte Telegraf-Version ist veraltet. Befolgen Sie die Schritte auf dieser Seite, um *Upgrade the Agent* für Ihre entsprechende Plattform.</block>
 </blocks>
