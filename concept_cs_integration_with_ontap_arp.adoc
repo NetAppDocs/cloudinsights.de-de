@@ -67,3 +67,17 @@ Ein hochvertrauliches Banner zeigt auf, dass der Angriff das Verhalten von Ranso
 == Einschränkungen
 
 Wenn eine SVM nicht von Cloud Secure überwacht wird, es aber ARP Ereignisse gibt, die von ONTAP generiert werden, dann werden die Ereignisse immer noch von Cloud Secure empfangen und angezeigt. Es werden jedoch keine forensischen Informationen bezüglich der Warnmeldung und auch keine Benutzerzuordnung erfasst oder angezeigt.
+
+
+
+== Fehlerbehebung
+
+Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.
+
+[cols="2*"]
+|===
+| Problem: | Auflösung: 
+
+
+| E-Mail-Alarme werden 24 Stunden nach einem Angriff empfangen. In der UI werden die Alarme 24 Stunden vorher angezeigt, wenn die E-Mails von der Cloud Insights-Workload-Sicherheit empfangen werden. | Wenn ONTAP das _Ransomware Detected_ Ereignis an Cloud Insights Workload Security (d. h. Cloud Secure) sendet, wird die E-Mail gesendet. Das Ereignis enthält eine Liste von Angriffen und Zeitstempel. Die Workload Security UI zeigt den Warnungszeitstempel der ersten angegriffenen Datei an. ONTAP sendet das _Ransomware Detected_ -Ereignis an Cloud Insights, wenn eine bestimmte Anzahl von Dateien codiert ist. Daher kann es einen Unterschied geben zwischen dem Zeitpunkt, zu dem die Warnung in der UI angezeigt wird, und dem Zeitpunkt, zu dem die E-Mail gesendet wird. 
+|===
