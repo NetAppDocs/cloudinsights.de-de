@@ -24,7 +24,7 @@ Cloud Secure erfasst Daten zur Benutzeraktivität mithilfe eines oder mehrerer A
 == Schritte zum Installieren von Agent
 
 . Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Secure-Umgebung an.
-. Klicken Sie Auf *Admin > Data Collectors > Agents > +Agent*
+. Wählen Sie im Menü *Sicherheit* die Option *Admin > Data Collectors > Agents > +Agent* aus
 +
 Das System zeigt die Seite Agent hinzufügen an:
 

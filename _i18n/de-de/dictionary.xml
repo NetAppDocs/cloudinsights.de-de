@@ -2935,7 +2935,6 @@
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">Während der Installation des Agenten werden ein lokaler Benutzer _cssys_ und eine lokale Gruppe _cssys_ auf dem Computer erstellt. Wenn die Berechtigungseinstellungen die Erstellung eines lokalen Benutzers nicht zulassen und stattdessen Active Directory benötigen, muss im Active Directory-Server ein Benutzer mit dem Benutzernamen _csys_ erstellt werden.</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">Schritte zum Installieren von Agent</block>
   <block id="fc62cd9124318118e4abaac940b4a091" category="list-text">Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Secure-Umgebung an.</block>
-  <block id="ba6a231cc4fc57afa76b3f2a42f71f11" category="list-text">Klicken Sie Auf *Admin &gt; Data Collectors &gt; Agents &gt; +Agent*</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">Das System zeigt die Seite Agent hinzufügen an:</block>
   <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">Agenten 1 hinzufügen</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">Vergewissern Sie sich, dass der Agent-Server die Mindestsystemanforderungen erfüllt.</block>
@@ -10711,4 +10710,5 @@
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">Deinstallieren Sie den telegraf-Agent und führen Sie dann das Installationsskript erneut aus. Folgen Sie den Schritten *Upgrade the Agent* auf dieser Seite für Ihre entsprechende Plattform.</block>
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">E-Mail-Alarme werden 24 Stunden nach einem Angriff empfangen. In der UI werden die Alarme 24 Stunden vorher angezeigt, wenn die E-Mails von der Cloud Insights-Workload-Sicherheit empfangen werden.</block>
   <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">Wenn ONTAP das _Ransomware Detected_ Ereignis an Cloud Insights Workload Security (d. h. Cloud Secure) sendet, wird die E-Mail gesendet. Das Ereignis enthält eine Liste von Angriffen und Zeitstempel. Die Workload Security UI zeigt den Warnungszeitstempel der ersten angegriffenen Datei an. ONTAP sendet das _Ransomware Detected_ -Ereignis an Cloud Insights, wenn eine bestimmte Anzahl von Dateien codiert ist. Daher kann es einen Unterschied geben zwischen dem Zeitpunkt, zu dem die Warnung in der UI angezeigt wird, und dem Zeitpunkt, zu dem die E-Mail gesendet wird.</block>
+  <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">Wählen Sie im Menü *Sicherheit* die Option *Admin &gt; Data Collectors &gt; Agents &gt; +Agent* aus</block>
 </blocks>
