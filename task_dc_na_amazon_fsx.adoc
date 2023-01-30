@@ -44,7 +44,7 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den FSX-
 * Anbieter – AWS
 * Seriennummer: Die Seriennummer des Arrays.
 * IP: In der Regel werden die in der Datenquelle konfigurierten IP(s) oder Hostnamen(s) verwendet.
-* Rohkapazität – Basis-2-Zusammenfassung aller physischen Laufwerke im System, unabhängig von ihrer Rolle.
+* Rohkapazität: Die Summe aus 2 des gesamten SSD-Speichers, der dem FSX-Dateisystem zugewiesen ist
 * Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise beziehen Cloud Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Anstelle des Arrays, die dies anbieten, führt Cloud Insights in der Regel eine IOPS-gewichtete Berechnung durch, die aus den Statistiken der einzelnen internen Volumen abgeleitet wird.
 * Durchsatz: Aggregiert aus internen Volumes. Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Erstellung programmgesteuert durch die Cloud Insights Datenquelle im Rahmen der Bestandsberichterstattung.
 
@@ -55,13 +55,9 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den FSX-
 
 * Storage – auf welchem Storage-Array dieser Pool lebt. Obligatorisch.
 * Typ – ein beschreibenden Wert aus einer Liste mit einer Aufzählung der Möglichkeiten. Am häufigsten wird „Aggregat“ oder „RAID-Gruppe“ sein.
-* Verwendet Flash Pool – Ja/kein Wert: Verfügen in diesem SATA/SAS-basierten Pool über SSDs zur Caching-Beschleunigung?
-* Redundanz: RAID-Level oder Schutzschema. RAID_DP ist Dual-Parity, RAID_TP ist die dreifache Parität.
 * Kapazität – die Werte hier sind die logische genutzte, nutzbare Kapazität und die logische Gesamtkapazität sowie der dafür genutzte Prozentsatz.
-* Überprovisionierung der Kapazität – Wenn Sie durch den Einsatz von Effizienztechnologien eine Summe der Volume- oder internen Volume-Kapazitäten zugewiesen haben, die größer sind als die logische Kapazität des Speicherpools, wird der Prozentwert hier größer als 0 % sein.
-* Snapshot – verwendete und insgesamt Snapshot-Kapazitäten, wenn Ihre Storage Pool-Architektur einem Teil ihrer Kapazität dedizierte Bereiche für Snapshots widmet. ONTAP in MetroCluster Konfigurationen zeigen dies wahrscheinlich, während andere ONTAP Konfigurationen weniger sind.
-* Auslastung – ein Prozentwert, der den höchsten ausgelastet anteil der Festplatte anzeigt, die zur Kapazität dieses Speicherpools beiträgt. Die Festplattenauslastung ist nicht unbedingt mit der Array-Performance korreliert – die Auslastung kann aufgrund von Festplattenwiederherstellungen, Deduplizierungsaktivitäten usw. bei Abwesenheit von Host-gestützten Workloads sehr hoch sein. Auch viele Arrays Replikationsimplementierungen können die Festplattenauslastung steigern, während sie nicht als internes Volume oder Volume-Workload angezeigt werden.
-* IOPS – die Summe der IOPS aller Festplatten, die Kapazität in diesem Storage-Pool beitragen. Durchsatz – der Gesamtdurchsatz aller Festplatten, die Kapazität zu diesem Speicherpool beitragen.
+* IOPS – die Summe der IOPS aller Volumes, die in diesem Storage-Pool zugewiesen sind.
+* Durchsatz – der Gesamtdurchsatz aller Volumes, die in diesem Storage-Pool zugewiesen sind.
 
 
 
@@ -92,6 +88,25 @@ Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses 
 
 | Passwort | Passwort für NetApp Cluster 
 |===
+
+
+== Erweiterte Kennzahlen
+
+Dieser Datensammler sammelt die folgenden erweiterten Metriken aus dem FSX für NetApp ONTAP Storage:
+
+* fpolicy
+* nfsv3
+* nfsv3:Node
+* nfsv4
+* nfsv4_1
+* nfsv4_1:Node
+* nfsv4:Node
+* Policy_Group
+* Qtree
+* Datenmenge
+* Workload_Volume
+
+
 
 
 == Fehlerbehebung

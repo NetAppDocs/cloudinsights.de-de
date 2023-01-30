@@ -10711,4 +10711,18 @@
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">E-Mail-Alarme werden 24 Stunden nach einem Angriff empfangen. In der UI werden die Alarme 24 Stunden vorher angezeigt, wenn die E-Mails von der Cloud Insights-Workload-Sicherheit empfangen werden.</block>
   <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">Wenn ONTAP das _Ransomware Detected_ Ereignis an Cloud Insights Workload Security (d. h. Cloud Secure) sendet, wird die E-Mail gesendet. Das Ereignis enthält eine Liste von Angriffen und Zeitstempel. Die Workload Security UI zeigt den Warnungszeitstempel der ersten angegriffenen Datei an. ONTAP sendet das _Ransomware Detected_ -Ereignis an Cloud Insights, wenn eine bestimmte Anzahl von Dateien codiert ist. Daher kann es einen Unterschied geben zwischen dem Zeitpunkt, zu dem die Warnung in der UI angezeigt wird, und dem Zeitpunkt, zu dem die E-Mail gesendet wird.</block>
   <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">Wählen Sie im Menü *Sicherheit* die Option *Admin &gt; Data Collectors &gt; Agents &gt; +Agent* aus</block>
+  <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">Rohkapazität: Die Summe aus 2 des gesamten SSD-Speichers, der dem FSX-Dateisystem zugewiesen ist</block>
+  <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS – die Summe der IOPS aller Volumes, die in diesem Storage-Pool zugewiesen sind.</block>
+  <block id="056a8b3d2b7210d266cc3fdb33710dc2" category="list-text">Durchsatz – der Gesamtdurchsatz aller Volumes, die in diesem Storage-Pool zugewiesen sind.</block>
+  <block id="c70c5237e843e44e918067a6943132a4" category="section-title">Erweiterte Kennzahlen</block>
+  <block id="6efc5e8caa50fab32c231807d02a492b" category="paragraph">Dieser Datensammler sammelt die folgenden erweiterten Metriken aus dem FSX für NetApp ONTAP Storage:</block>
+  <block id="7e30bf5c3bd5c005d855f2f6816576b2" category="list-text">fpolicy</block>
+  <block id="1b5ad5217299ac08e7305ed9ae0fc329" category="list-text">nfsv3</block>
+  <block id="db31b8e47d6e93240aa15cb08543d7d8" category="list-text">nfsv3:Node</block>
+  <block id="045b07c077b39ac849fd24abe6aecc82" category="list-text">nfsv4</block>
+  <block id="0694297a7c3a0df4c2a4b8f121752190" category="list-text">nfsv4_1</block>
+  <block id="a5eaa78bc9c57ccd6d1f4ad5bb793922" category="list-text">nfsv4_1:Node</block>
+  <block id="6fb7bed0df7f6e9e4f06d0f0caeafead" category="list-text">nfsv4:Node</block>
+  <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">Policy_Group</block>
+  <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">Workload_Volume</block>
 </blocks>
