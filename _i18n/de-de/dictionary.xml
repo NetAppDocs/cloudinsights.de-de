@@ -6195,7 +6195,6 @@
   <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="summary">Cloud Secure verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen.</block>
   <block id="fde8afa3fd65a9f38d9b11377453846e" category="doc">Konfiguration des Cloud Volumes ONTAP und Amazon FSX für NetApp ONTAP Collector</block>
   <block id="c45671a9389f697917f0b33d12822c51" category="section-title">Cloud Volumes ONTAP Storage-Konfiguration</block>
-  <block id="3760923e63b2ef4cd5a4ef21ab164f35" category="paragraph">In der OnCommand Cloud Manager Dokumentation können Sie eine AWS Instanz mit einem Node/HA für das Hosting des Cloud Secure Agent konfigurieren:<block ref="3a865d6888eced2f74a21bc9d0b68884" category="inline-link-rx"></block></block>
   <block id="60b02ea35fab7476f0f0cf2d8cfc680d" category="paragraph">Führen Sie nach Abschluss der Konfiguration die Schritte aus, um die SVM einzurichten:<block ref="91221d0756e81d23329189ffc4e6701a" category="inline-link-rx"></block></block>
   <block id="4aa02491d3ee690a6a014b190a75060e" category="section-title">Unterstützte Plattformen</block>
   <block id="bf6a182a4bf96601e8aa50ed356b9b9f" category="list-text">Cloud Volumes ONTAP, unterstützt bei allen verfügbaren Cloud-Service-Providern. Zum Beispiel Amazon, Azure, Google Cloud.</block>
@@ -10725,4 +10724,5 @@
   <block id="6fb7bed0df7f6e9e4f06d0f0caeafead" category="list-text">nfsv4:Node</block>
   <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">Policy_Group</block>
   <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">Workload_Volume</block>
+  <block id="eb7df28f88bc327c30fcc0b6ef2648ff" category="paragraph">In der OnCommand Cloud Volumes ONTAP-Dokumentation können Sie eine Single Node/HA AWS-Instanz zum Hosten des Cloud Secure-Agenten konfigurieren:<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
 </blocks>

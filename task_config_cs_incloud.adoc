@@ -15,7 +15,7 @@ Cloud Secure verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Ger
 
 == Cloud Volumes ONTAP Storage-Konfiguration
 
-In der OnCommand Cloud Manager Dokumentation können Sie eine AWS Instanz mit einem Node/HA für das Hosting des Cloud Secure Agent konfigurieren:https://docs.netapp.com/us-en/occm/index.html[]
+In der OnCommand Cloud Volumes ONTAP-Dokumentation können Sie eine Single Node/HA AWS-Instanz zum Hosten des Cloud Secure-Agenten konfigurieren:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
 Führen Sie nach Abschluss der Konfiguration die Schritte aus, um die SVM einzurichten:https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
