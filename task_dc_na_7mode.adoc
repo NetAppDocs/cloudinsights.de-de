@@ -17,6 +17,9 @@ Bei Storage-Systemen mit Data ONTAP Software im 7-Mode verwenden Sie den 7-Mode 
 
 Cloud Insights erwirbt die folgenden Bestandsinformationen vom NetApp 7-Mode Data Collector. Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
+
+NOTE: Dieser Datensammler ist link:task_getting_started_with_cloud_insights.html#useful-definitions["Veraltet"].
+
 [cols="2*"]
 |===
 | Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
