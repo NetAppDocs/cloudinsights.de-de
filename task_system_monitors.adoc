@@ -661,6 +661,81 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 
 
 
+=== Zusätzliche Monitore für Stromversorgung, Heartbeat und Sonstiges System
+
+|===
+| Monitorname | Schweregrad | Beschreibung Des Monitors | Korrekturmaßnahme 
+
+
+| Erkannte Festplatten-Shelf-Stromversorgung | INFORMATIV | Diese Meldung tritt auf, wenn dem Festplatten-Shelf ein Netzteil hinzugefügt wird. | KEINE 
+
+
+| Netzteil Der Platten-Shelfs Entfernt | INFORMATIV | Diese Meldung tritt auf, wenn ein Netzteil aus dem Festplatten-Shelf entfernt wird. | KEINE 
+
+
+| MetroCluster Automatische ungeplante Umschaltung deaktiviert | KRITISCH | Diese Meldung tritt auf, wenn die Funktion zur automatischen ungeplanten Umschaltung deaktiviert ist. | Führen Sie den Befehl „MetroCluster modify -Node-Name <nodename> -automatic-Switchover-onFailure True“ für jeden Node im Cluster aus, um die automatische Umschaltung zu ermöglichen. 
+
+
+| MetroCluster Speicherbrücke nicht erreichbar | KRITISCH | Die Speicherbrücke ist über das Managementnetzwerk nicht erreichbar | 1) Wenn die Bridge durch SNMP überwacht wird, überprüfen Sie, ob die Knoten-Management-LIF über den Befehl „Network Interface show“ verfügt. Stellen Sie sicher, dass die Bridge aktiv ist, indem Sie den Befehl „Network ping“ verwenden. 2) Wenn die Bridge im Band überwacht wird, überprüfen Sie die Fabric-Verkabelung zur Bridge und stellen Sie dann sicher, dass die Bridge eingeschaltet ist. 
+
+
+| MetroCluster-Brückentemperatur anormal - unter kritisch | KRITISCH | Der Sensor auf der Fibre Channel-Bridge meldet eine Temperatur, die unter dem kritischen Schwellenwert liegt. | 1) Überprüfen Sie den Betriebsstatus der Lüfter auf der Speicherbrücke. 2) Überprüfen Sie, ob die Brücke unter den empfohlenen Temperaturbedingungen funktioniert. 
+
+
+| MetroCluster-Brückentemperatur anormal - über kritisch | KRITISCH | Der Sensor auf der Fibre Channel-Bridge meldet eine Temperatur, die über dem kritischen Schwellenwert liegt. | 1) Überprüfen Sie den Betriebsstatus des Chassis-Temperatursensor auf der Storage Bridge mit dem Befehl „Storage Bridge show -cooling“. 2) Überprüfen Sie, ob die Speicherbrücke unter den empfohlenen Temperaturbedingungen funktioniert. 
+
+
+| MetroCluster Aggregat links ab | WARNUNG | Das Aggregat wurde während des Umschalttaschens zurückgelassen. | 1) Überprüfen Sie den Aggregatzustand mit dem Befehl „aggr show“. 2) Wenn das Aggregat online ist, geben Sie es mit dem Befehl „MetroCluster switchback“ an seinen ursprünglichen Eigentümer zurück. 
+
+
+| Alle Links zwischen MetroCluster-Partnern sind ausgefallen | KRITISCH | RDMA Interconnect-Adapter und Intercluster LIFs haben beschädigte Verbindungen mit dem Peering-Cluster bzw. der Peering-Cluster ist ausgefallen. | 1) Stellen Sie sicher, dass die Intercluster LIFs betriebsbereit sind und ausgeführt werden. Reparieren Sie die Intercluster-LIFs, wenn sie ausgefallen sind. 2) Überprüfen Sie, ob der Peering-Cluster mit dem Befehl „Cluster Peer ping“ betriebsbereit ist und ausgeführt wird. Sollte das Peering Cluster ausfallen, sind Sie im MetroCluster Leitfaden für Disaster Recovery zu finden. 3) Überprüfen Sie bei Fabric MetroCluster, ob die ISLs der Back-End-Fabric-Strategie verfügbar sind. Reparieren Sie die ISLs des Back-End Fabric, wenn sie ausgefallen sind. 4) Überprüfen Sie bei nicht-Fabric-Konfigurationen mit MetroCluster, ob die Verkabelung zwischen den RDMA Interconnect Adaptern korrekt ist. Konfigurieren Sie die Verkabelung neu, wenn die Links ausgefallen sind. 
+
+
+| MetroCluster Partner über Peering-Netzwerk nicht erreichbar | KRITISCH | Die Konnektivität zum Peer-Cluster ist unterbrochen. | 1) Stellen Sie sicher, dass der Port mit dem richtigen Netzwerk/Switch verbunden ist. 2) Stellen Sie sicher, dass die Intercluster LIF mit dem Peering Cluster verbunden ist. 3) Stellen Sie sicher, dass der Peering-Cluster durch den Befehl „Cluster Peer ping“ betriebsbereit ist und ausgeführt wird. Sollte das Peering Cluster ausfallen, lesen Sie den MetroCluster Leitfaden für Disaster Recovery nach. 
+
+
+| MetroCluster Inter Schalten Sie alle Verbindungen ab | KRITISCH | Alle Inter-Switch Links (ISLs) auf dem Storage Switch sind ausgefallen. | 1) Reparieren Sie die ISLs des Back-End Fabric auf dem Storage Switch. 2) sicherstellen dass der Partner-Switch an ist und seine ISLs betriebsbereit sind. 3) sicherstellen, dass Zwischengeräte, wie z.B. xWDM-Geräte, betriebsbereit sind. 
+
+
+| Link zu MetroCluster-Knoten zu Storage-Stack SAS ausgefallen | WARNUNG | Der SAS-Adapter oder das angeschlossene Kabel befinden sich möglicherweise auf dem Fehler. | 1. Vergewissern Sie sich, dass der SAS-Adapter online ist und ausgeführt wird. 2. Stellen Sie sicher, dass die physische Kabelverbindung sicher ist und funktioniert, und ersetzen Sie ggf. das Kabel. 3. Wenn der SAS-Adapter an die Platten-Shelves angeschlossen ist, stellen Sie sicher, dass die IOMs und Festplatten ordnungsgemäß eingesetzt sind. 
+
+
+| MetroClusterFC Initiator Links ausgefallen | KRITISCH | Der FC-Initiator-Adapter befindet sich auf einem Fehler. | 1. Stellen Sie sicher, dass der FC Initiator-Link nicht manipuliert wurde. 2. Überprüfen Sie den Betriebsstatus des FC Initiator-Adapters mit dem Befehl „System Node run -Node local -Command Storage show Adapter“. 
+
+
+| FC-VI Interconnect-Link ausgefallen | KRITISCH | Die physische Verbindung auf dem FC-VI-Port ist offline. | 1. Stellen Sie sicher, dass die FC-VI-Verbindung nicht manipuliert wurde. 2. Überprüfen Sie, ob der physische Status des FC-VI-Adapters „up“ ist, indem Sie den Befehl „MetroCluster Interconnect Adapter show“ verwenden. 3. Wenn die Konfiguration umfasst Fabric Switches, stellen Sie sicher, dass sie ordnungsgemäß verkabelt und konfiguriert sind. 
+
+
+| MetroCluster Spare-Festplatten übrig | WARNUNG | Die Ersatzfestplatte wurde während des Umschalttaschens zurückgelassen. | Wenn die Festplatte nicht ausgemustert wird, senden Sie sie mit dem Befehl „MetroCluster switchback“ an den ursprünglichen Eigentümer zurück. 
+
+
+| Port der MetroCluster-Speicherbrücke unten | KRITISCH | Der Port auf der Speicherbrücke ist offline. | 1) Überprüfen Sie den Betriebsstatus der Ports auf der Speicherbrücke mit dem Befehl „Storage Bridge show -Ports“. 2) Überprüfung der logischen und physischen Verbindung zum Port 
+
+
+| Fehler bei den MetroCluster Storage-Switch-Lüftern | KRITISCH | Der Lüfter am Speicherschalter ist fehlgeschlagen. | 1) Stellen Sie sicher, dass die Lüfter im Switch ordnungsgemäß funktionieren, indem Sie den Befehl „Storage Switch show -cooling“ verwenden. 2) Stellen Sie sicher, dass die Lüfter-FRUs ordnungsgemäß eingesetzt und betriebsbereit sind. 
+
+
+| MetroCluster-Speicherschalter nicht erreichbar | KRITISCH | Der Storage-Switch ist über das Managementnetzwerk nicht erreichbar. | 1) Stellen Sie sicher, dass die Node-Management-LIF über den Befehl „Network Interface show“ verfügt. 2) Stellen Sie sicher, dass der Switch aktiv ist, indem Sie den Befehl „Network ping“ verwenden. 3) Stellen Sie sicher, dass der Switch über SNMP erreichbar ist, indem Sie seine SNMP-Einstellungen nach der Anmeldung am Switch überprüfen. 
+
+
+| MetroCluster-Switch-Netzteile fehlgeschlagen | KRITISCH | Eine Netzteileinheit am Speicherschalter ist nicht funktionsfähig. | 1) Überprüfen Sie die Fehlerdetails mit dem Befehl „Storage Switch show -error -Switch-Name <swtich name>“. 2) Identifizieren Sie das fehlerhafte Netzteil mit dem Befehl „Storage Switch show -Power -Switch-Name <switch name>“. 3) Stellen Sie sicher, dass das Netzteil ordnungsgemäß in das Gehäuse des Speicherschalters eingesetzt und voll funktionsfähig ist. 
+
+
+| Fehler beim MetroCluster-Schalter der Temperatursensoren | KRITISCH | Der Sensor am Fibre Channel-Switch ist fehlgeschlagen. | 1) Überprüfen Sie den Betriebsstatus der Temperatursensoren am Speicherschalter mit dem Befehl „Storage Switch show -cooling“. 2) Überprüfen Sie, ob der Schalter unter den empfohlenen Temperaturbedingungen funktioniert. 
+
+
+| MetroCluster-Schalter Temperatur anormal | KRITISCH | Der Temperatursensor am Fibre Channel-Schalter meldet eine anormale Temperatur. | 1) Überprüfen Sie den Betriebsstatus der Temperatursensoren am Speicherschalter mit dem Befehl „Storage Switch show -cooling“. 2) Überprüfen Sie, ob der Schalter unter den empfohlenen Temperaturbedingungen funktioniert. 
+
+
+| Heartbeat Des Service-Prozessors Nicht Erreicht | INFORMATIV | Diese Meldung tritt auf, wenn ONTAP kein erwartetes „Heartbeat“-Signal vom Service-Prozessor (SP) empfängt. Zusammen mit dieser Meldung werden Protokolldateien vom SP zum Debuggen ausgesendet. ONTAP setzt den SP zurück, um die Kommunikation wiederherzustellen. Der SP ist während eines Neustarts für bis zu zwei Minuten nicht verfügbar. | Wenden Sie sich an den technischen Support von NetApp. 
+
+
+| Der Heartbeat Des Service-Prozessors Wurde Angehalten | WARNUNG | Diese Meldung tritt auf, wenn ONTAP keine Heartbeats mehr vom Service-Prozessor (SP) empfängt. Je nach Hardwaredesign kann das System weiterhin Daten bereitstellen oder das Herunterfahren bestimmen, um Datenverluste oder Hardware-Schäden zu vermeiden. Das System stellt weiterhin Daten bereit, da der SP jedoch möglicherweise nicht funktioniert, kann das System keine Benachrichtigungen über heruntergekommen Appliances, Boot-Fehler oder Open Firmware (OFW) Power-On Self-Test (POST)-Fehler senden. Wenn Ihr System so konfiguriert ist, generiert und überträgt eine AutoSupport-Meldung (oder „Call Home“) an den technischen Support von NetApp und an die konfigurierten Ziele. Die erfolgreiche Bereitstellung einer AutoSupport-Botschaft verbessert die Problembestimmung und -Lösung erheblich. | Wenn das System heruntergefahren wurde, versuchen Sie ein schwieriges Ausschalten: Ziehen Sie den Controller aus dem Chassis heraus, drücken Sie ihn zurück, und schalten Sie das System ein. Wenden Sie sich an den technischen Support von NetApp, wenn das Problem nach dem aus- und Wiedereinschalten oder andere möglicherweise Aufmerksamkeitsbedingungen weiterhin besteht. 
+|===
+<<top,Zurück nach oben>>
+
+
+
 == Weitere Informationen
 
 * link:task_view_and_manage_alerts.html["Anzeigen und Fehlstellen von Warnungen"]

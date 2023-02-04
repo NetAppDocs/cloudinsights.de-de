@@ -12,6 +12,26 @@ NetApp verbessert seine Produkte und Services kontinuierlich. Im Folgenden finde
 
 
 
+== Januar 2023
+
+
+
+=== Neue Protokollmonitore
+
+Wir haben fast zwei Dutzend hinzugefügt link:task_system_monitors.html["Zusätzliche Systemmonitore"] Um bei unterbrochenen Interconnect-Links, Heartbeat-Problemen und vielem mehr eine Warnung zu erhalten. Darüber hinaus wurden drei neue Data Protection Log-Monitore hinzugefügt, um Änderungen bei der automatischen Neusynchronisierung von SnapMirror, der MetroCluster-Spiegelung und dem Resync von FabricPool-Spiegelung zu benachrichtigen.
+
+Beachten Sie, dass einige dieser Monitore standardmäßig _aktiviert_ sind. Sie müssen sie _Pause_ ausführen, wenn Sie darauf nicht hinweisen möchten. Beachten Sie auch, dass diese Monitore nicht für die Übermittlung von Benachrichtigungen konfiguriert sind. Sie müssen Benachrichtigungsempfänger auf diesen Monitoren konfigurieren, wenn Sie Benachrichtigungen per E-Mail oder Webhook senden möchten.
+
+
+
+=== .CSV-Export für alle Dashboard-TabellenWidgets
+
+Es ist wichtig, dass Sie den Zugriff auf Ihre Daten sicherstellen, sodass wir .CSV-Export durchgeführt haben image:csv_export_icon["Symbol .csv-Export"] Verfügbar für alle metrischen Abfragen, Dashboard-Tabellen-Widgets und Objekt-Landing Pages, unabhängig vom Datentyp (Asset oder Integration), den Sie abfragen.
+
+Anpassungen von Daten wie Spaltenauswahl, Umbenennung von Spalten und Umbauten von Einheiten sind nun auch in der neuen Exportfunktion enthalten.
+
+
+
 == Dezember 2022
 
 

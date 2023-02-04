@@ -12,24 +12,19 @@ keywords: query, queries, export, csv
 Sie können die Ergebnisse einer beliebigen Abfrage in eine .CSV-Datei exportieren, die es Ihnen ermöglicht, die Daten zu analysieren oder in eine andere Anwendung zu importieren.
 
 .Schritte
-. Melden Sie sich bei Ihrem Cloud Insights-Mandanten an.
+. Melden Sie sich bei Cloud Insights an.
 . Klicken Sie auf *Abfragen* und wählen Sie *Alle Anfragen anzeigen*.
 +
 Die Seite Abfragen wird angezeigt.
 
 . Klicken Sie auf eine Abfrage.
 . Klicken Sie Auf image:ExportButton.png["Schaltfläche Exportieren"] So exportieren Sie die Abfrageergebnisse in eine CSV-Datei.
-. Führen Sie bei der entsprechenden Aufforderung einen der folgenden Schritte aus:
-+
-.. Klicken Sie auf *Öffnen mit* und dann auf *OK*, um die Datei mit Microsoft Excel zu öffnen und die Datei an einem bestimmten Speicherort zu speichern.
-.. Klicken Sie auf *Datei speichern* und dann auf *OK*, um die Datei im Ordner Downloads zu speichern.
 
 
 
+NOTE: Der Export nach .CSV ist auch im Menü „drei Punkte“ in den Dashboard-Tabellen Widgets sowie in den meisten Landing Page-Tabellen verfügbar.
 
-Alle Attribute für die Objekte in den aktuell für die Anzeige ausgewählten Spalten werden in die Datei exportiert, unabhängig davon, ob diese Attribute angezeigt werden.
-
-Beachten Sie beim Exportieren von Abfrageergebnissen, dass alle Zeilen in der Ergebnistabelle exportiert werden, nicht nur die ausgewählten oder auf dem Bildschirm angezeigten Zeilen bis zu maximal 10,000 Zeilen.
+Die exportierten Daten geben die aktuell angezeigten Filter-, Spalten- und Spaltennamen wieder.
 
 Hinweis: Wenn ein Komma in einem Asset-Namen angezeigt wird, schließt der Export den Namen in Anführungszeichen ein, wobei der Asset-Name und das richtige .csv-Format beibehalten werden.
 
