@@ -9112,7 +9112,6 @@
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11 Neue Standard-ONTAP-Monitore für Business Continuity bei SnapMirror</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">Einstellung des Bedienpersonals</block>
-  <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.</block>
   <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">Ressourcenbezogene Variablen</block>
   <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">Siehe<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block> Weitere Informationen zu Kubernetes-Ressourcen finden Sie hier.</block>
   <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">Platzhalter</block>
@@ -10804,4 +10803,7 @@
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">Die exportierten Daten geben die aktuell angezeigten Filter-, Spalten- und Spaltennamen wieder.</block>
   <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*Diese Seite*</block>
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">Diese Seite ist ein Stub. Die aktuelle Unisphere-Dokumentation finden Sie unter <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>.</block>
+  <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. Anweisungen und Listen der Variablen, die Sie einstellen können, finden Sie in der im Installationspaket enthaltenen README-Datei. Verwenden Sie nach der Installation des Operators den folgenden Befehl, um README anzuzeigen:</block>
+  <block id="60adfc96965dc4b561d28aa82001462f" category="paragraph">//// - Start der Feinabstimmung der Bereich kann der NetApp Kubernetes Monitoring Operator auf optimale Performance eingestellt werden, indem bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung durchgeführt werden. In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.</block>
+  <block id="6bfc80ca044f246ded7fc934d4dacbaa" category="paragraph">/// - Abstimmbereich beenden</block>
 </blocks>

@@ -436,7 +436,10 @@ Sobald alle Artefakte zufriedenstellend überprüft wurden, kann die Agenteninst
 
 == Einstellung des Bedienpersonals
 
-Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.
+Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. Anweisungen und Listen der Variablen, die Sie einstellen können, finden Sie in der im Installationspaket enthaltenen README-Datei. Verwenden Sie nach der Installation des Operators den folgenden Befehl, um README anzuzeigen:
+
+ kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
+//// - Start der Feinabstimmung der Bereich kann der NetApp Kubernetes Monitoring Operator auf optimale Performance eingestellt werden, indem bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung durchgeführt werden. In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.
 
 Um diese Werte zu ändern, bearbeiten Sie den Agenten-CR mit dem folgenden Befehl (ersetzen Sie <namespace> für Ihren Namespace):
 
@@ -542,6 +545,8 @@ Siehe https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#a
 
 | CURL_CMD_PLATZHALTER | Agent | ja | Der curl-Befehl zum Herunterladen verschiedener Ressourcen. Ex) „curl“ oder „curl -k“ 
 |===
+/// - Abstimmbereich beenden
+
 
 
 == Fehlerbehebung
