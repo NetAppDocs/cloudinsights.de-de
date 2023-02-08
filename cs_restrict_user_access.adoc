@@ -53,7 +53,6 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 * Erstellen Sie eine neue Angriffsrichtlinie oder bearbeiten Sie eine vorhandene Angriffsrichtlinie.
 * Wählen Sie die SVMs aus, auf denen die Angriffsrichtlinie überwacht werden soll.
 * Klicken Sie auf das Kontrollkästchen „Benutzerdateizugriff blockieren“. Die Funktion wird aktiviert, wenn diese Option ausgewählt ist.
-* Wählen Sie unter „Benutzerzugriff begrenzen“, welche Restriktionsart angewendet werden soll.
 * Wählen Sie unter „Zeitraum“ die Zeit aus, bis die Blockierung angewendet werden soll.
 * Um die automatische Blockierung von Benutzern zu testen, können Sie einen Angriff über ein simulieren link:concept_cs_attack_simulator.html["Simuliertes Skript"].
 
