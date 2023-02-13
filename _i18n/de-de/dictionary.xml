@@ -10752,7 +10752,6 @@
   <block id="9de2afa9a42c7e74a8b83bbef4f14c20" category="list-text">Telegraf: 1.25.0</block>
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Wenn Sie eine *Windows*-Erfassungseinheit deinstallieren:</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:</block>
-  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows und Linux:*</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*Nach* die AU deinstallieren:</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Gehen Sie in Cloud Insights zu *Admin &gt; Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.</block>
 </blocks>
