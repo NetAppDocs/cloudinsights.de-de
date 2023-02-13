@@ -153,13 +153,19 @@ Wenn Sie Cloud Secure in Ihrer Umgebung verwenden, werden auch die konfigurierte
 
 Gehen Sie zum Deinstallieren der Software Acquisition Unit wie folgt vor:
 
+'''
 *Windows:*
+
+Wenn Sie eine *Windows*-Erfassungseinheit deinstallieren:
 
 . Öffnen Sie auf dem Acquisition Unit Server/VM die Systemsteuerung und wählen Sie *Programm deinstallieren*. Wählen Sie das Programm Cloud Insights Acquisition Unit zum Entfernen aus.
 . Klicken Sie auf Deinstallieren, und befolgen Sie die Anweisungen.
 
 
+'''
 *Linux:*
+
+Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:
 
 . Führen Sie auf dem Server/VM der Acquisition Unit den folgenden Befehl aus:
 +
@@ -169,14 +175,18 @@ Gehen Sie zum Deinstallieren der Software Acquisition Unit wie folgt vor:
  sudo cloudinsights-uninstall.sh --help
 
 
-* Beides:*
+'''
+*Windows und Linux:*
 
-. Nachdem Sie die AU-Software deinstalliert haben, gehen Sie zu *Admin > Data Collectors* und wählen Sie die Registerkarte *Acquisition Units* aus.
+*Nach* die AU deinstallieren:
+
+. Gehen Sie in Cloud Insights zu *Admin > Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.
 . Klicken Sie rechts neben der zu deinstallierenden Erfassungseinheit auf die Schaltfläche Optionen, und wählen Sie _Löschen_. Sie können eine Erfassungseinheit nur löschen, wenn ihr keine Datensammler zugewiesen sind.
 
 
 HINWEIS: Die Standarderfassungseinheit kann nicht gelöscht werden. Wählen Sie eine andere AU als Standard aus, bevor Sie die alte löschen.
 
+'''
 
 
 == Erneutes Installieren einer Erfassungseinheit

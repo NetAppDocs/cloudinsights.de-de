@@ -19,15 +19,14 @@ Mit Cloud Insights können Sie Daten von Ressourcen, die zu Applikationen zugeor
 
 .Schritte
 . Klicken Sie im Menü Cloud Insights auf *Verwalten > Anwendungen*.
-
-+ das Dialogfeld Anwendung hinzufügen wird angezeigt.
++
+Das Dialogfeld Anwendung hinzufügen wird angezeigt.
 
 . Geben Sie einen eindeutigen Namen für die Anwendung ein.
 . Wählen Sie eine Priorität für die Anwendung aus.
 . Klicken Sie Auf *Speichern*.
 
 
-.Nachdem Sie fertig sind
 Nach dem Definieren einer Anwendung kann sie Assets zugewiesen werden.
 
 

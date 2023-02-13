@@ -5425,8 +5425,6 @@
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">Um die Daten zu verfolgen, die mit bestimmten Applikationen verknüpft sind, die in Ihrer Umgebung ausgeführt werden, können Sie die Applikationen in Cloud Insights definieren.</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">Wenn Sie die Anwendung einer Geschäftseinheit zuordnen möchten, müssen Sie die Geschäftseinheit erstellen, bevor Sie die Anwendung definieren.</block>
   <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">Mit Cloud Insights können Sie Daten von Ressourcen, die zu Applikationen zugeordnet sind, aus z. B. zu Nutzungsdaten oder zur Kostenberichterstellung nachverfolgen.</block>
-  <block id="6d9d461026a19a3d065af99db5765921" category="paragraph">. Klicken Sie im Menü Cloud Insights auf *Verwalten &gt; Anwendungen*.</block>
-  <block id="0062c1fbde704d862293af74f9c341ee" category="paragraph">+ das Dialogfeld Anwendung hinzufügen wird angezeigt.</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">Geben Sie einen eindeutigen Namen für die Anwendung ein.</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">Wählen Sie eine Priorität für die Anwendung aus.</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">Klicken Sie Auf *Speichern*.</block>
@@ -5747,7 +5745,6 @@
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Vor der Installation des NetApp Kubernetes Monitoring Operator</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">Voraussetzungen:</block>
-  <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf: 1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">kube-State-Metriken: V2.6.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fließendes Bit: 1.9.8</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Die Installation des NetApp Kubernetes Monitoring Operator wird mit Kubernetes Version 1.20 oder neuer unterstützt.</block>
@@ -6249,8 +6246,6 @@
   <block id="abf0b3ef23b5557422e33977a6ac3fbf" category="paragraph">*Linux:*</block>
   <block id="76812a2c2f6df7659757d83719299fb8" category="list-text">Führen Sie auf dem Server/VM der Acquisition Unit den folgenden Befehl aus:</block>
   <block id="fcee21cb77c380c25d5b88c1b64869b8" category="list-text">Um Hilfe bei der Deinstallation zu erhalten, führen Sie folgende Schritte aus:</block>
-  <block id="ec62359e3a6ba69aa52f3e51f45e7418" category="paragraph">* Beides:*</block>
-  <block id="0de5666c48f0424cee331c8922fd923a" category="list-text">Nachdem Sie die AU-Software deinstalliert haben, gehen Sie zu *Admin &gt; Data Collectors* und wählen Sie die Registerkarte *Acquisition Units* aus.</block>
   <block id="c3cda1df3a7bb86d771c8e59aac35b0e" category="list-text">Klicken Sie rechts neben der zu deinstallierenden Erfassungseinheit auf die Schaltfläche Optionen, und wählen Sie _Löschen_. Sie können eine Erfassungseinheit nur löschen, wenn ihr keine Datensammler zugewiesen sind.</block>
   <block id="4262a364178344226a6201df72deaa22" category="paragraph">HINWEIS: Die Standarderfassungseinheit kann nicht gelöscht werden. Wählen Sie eine andere AU als Standard aus, bevor Sie die alte löschen.</block>
   <block id="9cfc47a14abb521242e2e73ee615049c" category="section-title">Erneutes Installieren einer Erfassungseinheit</block>
@@ -10752,4 +10747,12 @@
   <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">Um den NetApp Kubernetes Monitoring Operator zu entfernen</block>
   <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">Bearbeiten Sie die Bereitstellung des Monitoring-Operators, und ändern Sie alle Bildreferenzen, um den neuen Speicherort für den Docker Repo zu verwenden:</block>
   <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">Bearbeiten Sie das Agent CR, um den neuen Repoort des Dockers wiederzugeben.</block>
+  <block id="613a30078b8f568ccca3b9cbd8a35c12" category="list-text">Klicken Sie im Menü Cloud Insights auf *Verwalten &gt; Anwendungen*.</block>
+  <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">Das Dialogfeld Anwendung hinzufügen wird angezeigt.</block>
+  <block id="9de2afa9a42c7e74a8b83bbef4f14c20" category="list-text">Telegraf: 1.25.0</block>
+  <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Wenn Sie eine *Windows*-Erfassungseinheit deinstallieren:</block>
+  <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows und Linux:*</block>
+  <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*Nach* die AU deinstallieren:</block>
+  <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Gehen Sie in Cloud Insights zu *Admin &gt; Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.</block>
 </blocks>
