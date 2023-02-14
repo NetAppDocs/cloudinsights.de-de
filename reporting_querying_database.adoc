@@ -62,7 +62,7 @@ Versuchen Sie einfache Abfragen wie
 
 Die URL für alle Anrufe lautet _\https://<Cloud Insights URL>/Rest/v1/dwh-Management/odata_.
 
-* GET /{Schema}/** - ruft Daten aus der Berichtsdatenbank ab, erfordert mindestens _Guest_-Rolle.
+* GET /{Schema}/** - ruft Daten aus der Berichtsdatenbank ab.
 
 
 Format: _\https://<Cloud Insights URL>/Rest/v1/dwh-Management/odata/<Schema_Name>/<query>_

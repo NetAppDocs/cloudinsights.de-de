@@ -10754,4 +10754,5 @@
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*Nach* die AU deinstallieren:</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Gehen Sie in Cloud Insights zu *Admin &gt; Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows und Linux:*</block>
+  <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">GET /{Schema}/** - ruft Daten aus der Berichtsdatenbank ab.</block>
 </blocks>
