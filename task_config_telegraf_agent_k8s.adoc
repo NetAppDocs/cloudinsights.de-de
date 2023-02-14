@@ -257,9 +257,8 @@ Um den telegraf-Agent zu aktualisieren, gehen Sie wie folgt vor:
 . Notieren Sie sich den Cluster-Namen, der von Cloud Insights anerkannt ist. Sie können den Cluster-Namen anzeigen, indem Sie den folgenden Befehl ausführen. Wenn Ihr Namespace nicht der Standard (_CI-Monitoring_) ist, ersetzen Sie den entsprechenden Namespace:
 +
  kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
-. Backup vorhandener Konfigurationen:
-+
- kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+
+
 . Speichern Sie den K8s-Clusternamen für die Verwendung während der Installation der Bedienerlösung K8s, um die Datenkontinuität zu gewährleisten.
 +
 Wenn Sie sich den Namen des K8s-Clusters in CI nicht merken, können Sie ihn mit der folgenden Befehlszeile aus Ihrer gespeicherten Konfiguration extrahieren:
@@ -294,9 +293,6 @@ Führen Sie die folgenden Befehle für die Aktualisierung der Installation durch
 * Notieren Sie sich den Cluster-Namen, der von Cloud Insights anerkannt ist. Sie können den Cluster-Namen anzeigen, indem Sie den folgenden Befehl ausführen. Wenn Ihr Namespace nicht der Standard (_netapp-Monitoring_) ist, ersetzen Sie den entsprechenden Namespace:
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-* Backup vorhandener Konfigurationen:
-+
- kubectl --namespace netapp-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
 <<to-remove-the-netapp-kubernetes-monitoring-operator,Deinstallieren>> Der aktuelle Operator.

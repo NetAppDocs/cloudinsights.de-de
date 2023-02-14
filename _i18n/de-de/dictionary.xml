@@ -5824,7 +5824,6 @@
   <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">Upgrade vom skriptbasierten Agent auf den NetApp Kubernetes Monitoring Operator</block>
   <block id="8cf39a7fcad49926187638c2ef3888e4" category="paragraph">Um den telegraf-Agent zu aktualisieren, gehen Sie wie folgt vor:</block>
   <block id="ce980eb171cf0f52904feafd9843c0cf" category="list-text">Notieren Sie sich den Cluster-Namen, der von Cloud Insights anerkannt ist. Sie können den Cluster-Namen anzeigen, indem Sie den folgenden Befehl ausführen. Wenn Ihr Namespace nicht der Standard (_CI-Monitoring_) ist, ersetzen Sie den entsprechenden Namespace:</block>
-  <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">Backup vorhandener Konfigurationen:</block>
   <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">Speichern Sie den K8s-Clusternamen für die Verwendung während der Installation der Bedienerlösung K8s, um die Datenkontinuität zu gewährleisten.</block>
   <block id="35c735048514e15b96558a336dddd484" category="paragraph">Wenn Sie sich den Namen des K8s-Clusters in CI nicht merken, können Sie ihn mit der folgenden Befehlszeile aus Ihrer gespeicherten Konfiguration extrahieren:</block>
   <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">Entfernen Sie die skriptbasierte Überwachung</block>
@@ -10754,4 +10753,5 @@
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*Nach* die AU deinstallieren:</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Gehen Sie in Cloud Insights zu *Admin &gt; Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows und Linux:*</block>
 </blocks>
