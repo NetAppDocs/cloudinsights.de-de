@@ -211,7 +211,7 @@ sidebar:
         url: "/task_config_cs_incloud.html"
       - title: Cloud Secure Benutzerverwaltung
         url: "/task_cs_user_management.html"
-      - title: Ereignisprüfung
+      - title: Event Rate Checker (Agent Sizing Guide)
         url: "/concept_cs_event_rate_checker.html"
     - title: Meldungen
       url: "/cs_alert_data.html"

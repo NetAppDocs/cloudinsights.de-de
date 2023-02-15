@@ -4,7 +4,7 @@ permalink: concept_cs_event_rate_checker.html
 summary: Dieses Skript kann ausgeführt werden, um die Ereignisrate in der SVM zu prüfen, bevor eine ONTAP SVM DSC installiert wird 
 keywords: event, checker, rate, sizing, size, guide, 
 ---
-= SVM Event Rate Checker (Sizing Guide)
+= SVM Event Rate Checker (Agent Sizing Guide)
 :allow-uri-read: 
 
 
