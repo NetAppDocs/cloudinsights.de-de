@@ -10753,7 +10753,4 @@
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows und Linux:*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">GET /{Schema}/** - ruft Daten aus der Berichtsdatenbank ab.</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">Dieses Skript kann ausgeführt werden, um die Ereignisrate in der SVM zu prüfen, bevor eine ONTAP SVM DSC installiert wird</block>
-  <block id="190dd3a6d5f6ca42267f12b57190351c" category="doc">SVM Event Rate Checker (Sizing Guide)</block>
-  <block id="a2d414ab492937f815ce3679fbf45352" category="paragraph">Das Event Rate Checker wird verwendet, um die kombinierte Ereignisrate von NFS/SMB in der SVM zu prüfen, bevor Sie einen ONTAP SVM Data Collector installieren, um zu ermitteln, wie viele SVMs ein Agent Machine überwachen können. Verwenden Sie den Event Rate Checker als Leitfaden zur Größenbestimmung, um Ihre Agenten-Anforderungen zu planen.</block>
-  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">Ein Agent kann bis zu 50 Datensammler unterstützen.</block>
 </blocks>
