@@ -4,12 +4,14 @@ permalink: concept_cs_event_rate_checker.html
 summary: Dieses Skript kann ausgeführt werden, um die Ereignisrate in der SVM zu prüfen, bevor eine ONTAP SVM DSC installiert wird 
 keywords: event, checker, rate, sizing, size, guide, 
 ---
-= 4157783a6d651918a4d418c15ddff12f
+= SVM Event Rate Checker (Sizing Guide)
 :allow-uri-read: 
 
 
 [role="lead"]
-eff09a47f0894badbc59afef03e773cb
+Das Event Rate Checker wird verwendet, um die kombinierte Ereignisrate von NFS/SMB in der SVM zu prüfen, bevor Sie einen ONTAP SVM Data Collector installieren, um zu ermitteln, wie viele SVMs ein Agent Machine überwachen können. Verwenden Sie den Event Rate Checker als Leitfaden zur Größenbestimmung, um Ihre Sicherheitsumgebung zu planen.
+
+Ein Agent kann bis zu 50 Datensammler unterstützen.
 
 
 
