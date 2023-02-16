@@ -440,14 +440,14 @@ Um den Agent auf macOS zu deinstallieren, führen Sie in einem Bash-Terminal Fol
 . Deinstallieren Sie den telegraf-Agent:
 +
 ....
-cp /Applications/telegraf.app/scripts/uninstall /tmp
+sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
 sudo /tmp/uninstall
 ....
 . Entfernen Sie alle Konfigurations- oder Protokolldateien, die zurückgelassen werden können:
 +
 ....
-rm -rf /usr/local/etc/telegraf*
-rm -rf /usr/local/var/log/telegraf.*
+sudo rm -rf /usr/local/etc/telegraf*
+sudo rm -rf /usr/local/var/log/telegraf.*
 ....
 
 
@@ -463,7 +463,7 @@ Um den telegraf-Agent zu aktualisieren, gehen Sie wie folgt vor:
 . Deinstallieren Sie den vorherigen telegraf-Agent:
 +
 ....
-cp /Applications/telegraf.app/scripts/uninstall /tmp
+sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
 sudo /tmp/uninstall
 ....
 . link:#macos["Installieren Sie den neuen Agenten"].
