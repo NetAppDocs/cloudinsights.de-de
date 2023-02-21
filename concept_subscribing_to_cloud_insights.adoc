@@ -98,7 +98,7 @@ Wenn bei der Verwendung von Cloud Insights ein Schloss-Symbol angezeigt wird ima
 
 == Testversion
 
-Wenn Sie sich bei Cloud Insights anmelden und Ihre Umgebung aktiv ist, können Sie Cloud Insights 30 Tage lang kostenlos testen. Während dieser Testversion können Sie sich die Funktionen von Cloud Insights in Ihrer eigenen Umgebung ansehen. Alle Funktionen von Cloud Insights <<editions,Standard Edition>> Sind während dieser Testversion verfügbar.
+Wenn Sie sich bei Cloud Insights anmelden und Ihre Umgebung aktiv ist, können Sie Cloud Insights 30 Tage lang kostenlos testen. Während dieser Testversion können Sie sich die Funktionen von Cloud Insights in Ihrer eigenen Umgebung ansehen.
 
 Sie können sich während Ihres Testzeitraums jederzeit für Cloud Insights anmelden. Mit dem Abonnieren von Cloud Insights sichern Sie unterbrechungsfreien Zugriff auf Ihre Daten und können darüber hinaus erweitert werden link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["*Produktsupport*"] Optionen:
 
