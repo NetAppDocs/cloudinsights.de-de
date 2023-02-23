@@ -2831,7 +2831,6 @@
   <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">\https://.../odata/dwh_custom/custom_queries</block>
   <block id="25de0257c507b6c736e10a9674011469" category="section-title">Beispiele FÜR REST-API</block>
   <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">Die URL für alle Anrufe lautet _\https://&lt;Cloud Insights URL&gt;/Rest/v1/dwh-Management/odata_.</block>
-  <block id="538c8f380c1292ec200c79af465d46b6" category="list-text">GET /{Schema}/** - ruft Daten aus der Berichtsdatenbank ab, erfordert mindestens _Guest_-Rolle.</block>
   <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">Format: _\https://&lt;Cloud Insights URL&gt;/Rest/v1/dwh-Management/odata/&lt;Schema_Name&gt;/&lt;query&gt;_</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">Beispiel:</block>
   <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">Ergebnis:</block>
@@ -10348,10 +10347,6 @@
   <block id="37b9c8ac0158a9b9c57a6fd39c09112a" category="cell">CpuIdleTimePercent.total</block>
   <block id="82e45cbb75d74071b021fa2fb638e1da" category="cell">CpuTotalWaitTimePercent.total</block>
   <block id="6d26c12f389d527e1ebe5f28f0ca597b" category="cell">UsedkapazitätForReportingMB</block>
-  <block id="5b18f1d58f1483da5c81155095d22768" category="section-title">EINRICHTUNG DES REST-Clients für synchrone Abfragen</block>
-  <block id="ca5f5ae182f010eb67697760ff6586f3" category="list-text">Die Abfrage muss in einer einzigen Zeile enthalten sein</block>
-  <block id="2f9a3dbd7bceea75acec35221d985871" category="list-text">Muss ein gültiger JSON-String sein</block>
-  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">APIkeys eignen sich gut für _Sync_ oder _Async_ &lt;TBD More information&gt;</block>
   <block id="e8cdc72b15f2eb76eb1815f526758f2e" category="doc">Einblicke: Anspruchsvolle Workloads</block>
   <block id="b6178403f1fb13fa361db9ac6d3f0273" category="paragraph">Durch Workloads mit hohen Auswirkungen kann die Performance anderer Workloads in einer gemeinsamen Ressource reduziert werden. Cloud Insights bietet Tools, mit denen Sie die Sättigung von Ressourcen und Auswirkungen in Ihrer Umgebung analysieren können.</block>
   <block id="7dbc3325f8c8ce0b9644c6385df9308d" category="paragraph">Eine * wirkungsvolle* oder _gierige_ Ressource ist eine, die negative Auswirkungen auf eine andere Ressource verursacht. Beispielsweise kann ein Volume mit sehr hohen IOPS zu einer erhöhten Latenz bei anderen Volumes führen (d. h. _beeinträchtigte_ oder beeinträchtigte Ressourcen). Wirkungsvolle und beeinträchtigte Ressourcen sind „Kollegen“, die dieselbe gemeinsam genutzte Ressource nutzen, zum Beispiel einen Storage-Pool oder ein Volume.</block>
@@ -10785,4 +10780,5 @@
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">Erste Schritte Mit Workload Security</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">Konfigurieren eines Workload Security Agent</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">Workload Security User Management</block>
+  <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">Acquisition Unit installiert, deinstalliert, Proxy-Support konfiguriert und vieles mehr unter Windows und Linux.</block>
 </blocks>
