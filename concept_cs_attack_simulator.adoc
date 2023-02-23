@@ -1,30 +1,30 @@
----
-sidebar: sidebar 
-permalink: concept_cs_attack_simulator.html 
-keywords: ransomware, simulation, simulator, restrict, attack 
-summary: Mit einem Skript können Sie einen Ransomware-Angriff zum Testen oder zur Demonstration von Cloud Secure simulieren 
----
-= Cloud Secure: Simulation eines Angriffs
+= Workload Security: Simulation eines Angriffs
 :allow-uri-read: 
 
 
+Code --- Sidebar: Sidebar permalink: concept_cs_attack_simulator.html Schlüsselwörter: ransomware, Simulation, Simulator, beschränken, Angriff Zusammenfassung: Mit einem Skript, können Sie einen Ransomware-Angriff für Tests oder Demonstration Workload Security simulieren ---
+
+
+
+= Workload Security: Simulation eines Angriffs
+
 [role="lead"]
-Sie können die Anweisungen auf dieser Seite verwenden, um einen Angriff zum Testen oder zur Demonstration von Cloud Secure mit dem mitgelieferten Cloud Secure Ransomware-Simulationsskript zu simulieren.
+Mithilfe der Anweisungen auf dieser Seite können Sie einen Angriff für das Testen oder Demonieren der Workload-Sicherheit mithilfe des im Lieferumfang enthaltenen Skripts Ransomware Simulation simulieren.
 
 
 
 == Dinge zu beachten, bevor Sie beginnen
 
 * Das Ransomware-Simulationsskript funktioniert nur auf Linux.
-* Das Skript wird mit den Installationsdateien des Cloud Secure Agent bereitgestellt. Sie ist auf jedem Rechner verfügbar, auf dem ein Cloud Secure-Agent installiert ist.
-* Sie können das Skript auf dem Cloud Secure-Agent-Rechner selbst ausführen; es ist nicht erforderlich, einen anderen Linux-Rechner vorzubereiten. Wenn Sie jedoch das Skript lieber auf einem anderen System ausführen möchten, kopieren Sie einfach das Skript und führen es dort aus.
+* Das Skript wird mit den Installationsdateien des Workload Security Agent bereitgestellt. Sie ist auf jedem Computer verfügbar, auf dem ein Workload Security Agent installiert ist.
+* Sie können das Skript auf dem Workload Security Agent-Rechner selbst ausführen; es ist nicht erforderlich, einen anderen Linux-Rechner vorzubereiten. Wenn Sie jedoch das Skript lieber auf einem anderen System ausführen möchten, kopieren Sie einfach das Skript und führen es dort aus.
 
 
 
 
 == Mindestens 1,000 Beispieldateien haben
 
-Dieses Skript sollte auf einer SVM mit einem Ordner ausgeführt werden, der Dateien verschlüsselt. Es wird empfohlen, mindestens 1,000 Dateien in diesem Ordner und allen Unterordnern zu haben. Die Dateien dürfen nicht leer sein. Erstellen Sie die Dateien nicht und verschlüsseln Sie sie mit demselben Benutzer. Cloud Secure erachtet dies als eine risikoarme Aktivität und erzeugt daher keine Warnmeldung (d. h., der gleiche Benutzer ändert die Dateien, die er gerade erstellt hat).
+Dieses Skript sollte auf einer SVM mit einem Ordner ausgeführt werden, der Dateien verschlüsselt. Es wird empfohlen, mindestens 1,000 Dateien in diesem Ordner und allen Unterordnern zu haben. Die Dateien dürfen nicht leer sein. Erstellen Sie die Dateien nicht und verschlüsseln Sie sie mit demselben Benutzer. Workload Security berücksichtigt diese Aktivität mit niedrigem Risiko und erzeugt daher keine Warnmeldung (d. h. der gleiche Benutzer ändert die Dateien, die er gerade erstellt hat).
 
 Siehe unten für Anweisungen zu link:#create-files-programmatically["Programmgesteuertes Erstellen nicht leerer Dateien"].
 
@@ -57,7 +57,7 @@ So mounten Sie CIFS in Linux:
  mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o username=raisa
 Richten Sie als Nächstes einen Data Collector ein:
 
-. Konfigurieren Sie den Cloud Secure-Agent, falls er nicht bereits ausgeführt wurde.
+. Konfigurieren Sie den Workload Security Agent, falls er noch nicht ausgeführt wurde.
 . Konfigurieren Sie den SVM-Datensammler, falls noch nicht geschehen.
 
 
@@ -65,7 +65,7 @@ Richten Sie als Nächstes einen Data Collector ein:
 
 == Führen Sie das Skript Ransomware Simulator aus
 
-. Melden Sie sich (ssh) beim Cloud Secure-Agent-Rechner an.
+. Melden Sie sich (ssh) beim Workload Security Agent-Rechner an.
 . Navigieren Sie zu: _/opt/netapp/cloudSecure/Agent/install_
 . Rufen Sie das Simulator-Skript ohne Parameter auf, um die Verwendung zu sehen:
 +
@@ -118,7 +118,7 @@ File /root/for/File002.txt is restored.
 
 == Führen Sie das Skript mehrmals aus
 
-Nachdem ein Ransomware-Angriff für einen Benutzer generiert wurde, wechseln Sie zu einem anderen Benutzer, um einen zusätzlichen Angriff zu generieren. Cloud Secure erlernt das Benutzerverhalten und warnt bei wiederholten Ransomware-Angriffen innerhalb kurzer Zeit für denselben Benutzer.
+Nachdem ein Ransomware-Angriff für einen Benutzer generiert wurde, wechseln Sie zu einem anderen Benutzer, um einen zusätzlichen Angriff zu generieren. Workload Security erlernt das Benutzerverhalten und warnt bei wiederholten Ransomware-Angriffen innerhalb kurzer Zeit für denselben Benutzer nicht.
 
 
 

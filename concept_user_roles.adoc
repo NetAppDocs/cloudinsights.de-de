@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_user_roles.html 
-keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observabilityu 
+keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observability 
 summary: Cloud Insights stellt mehrere Benutzerkonten mit unterschiedlichen Berechtigungsebenen zur Verfügung. 
 ---
 = Benutzerkonten und Rollen
@@ -18,7 +18,7 @@ Cloud Insights bietet bis zu vier Benutzerkontorollen: Kontoinhaber, Administrat
 Sie verwenden ein Konto mit Administratorrechten zum Erstellen oder Ändern von Benutzerkonten. Jedem Benutzerkonto wird über die folgenden Berechtigungsebenen eine Rolle für jede Cloud Insights-Funktion zugewiesen.
 
 |===
-| Rolle | Beobachtbarkeit | Sicherheit | Berichterstellung 
+| Rolle | Beobachtbarkeit | Workload-Sicherheit | Berichterstellung 
 
 
 | Kontoinhaber 3+| Es können Abonnements geändert, Rechnungs- und Nutzungsinformationen angezeigt und alle Administratorfunktionen für Beobachtbarkeit, Sicherheit und Reporting ausgeführt werden. Eigentümer können außerdem Benutzer einladen und verwalten sowie Einstellungen für SSO Authentifizierung und Identitätsföderation verwalten. Der erste Kontoinhaber wird bei der Registrierung für Cloud Insights erstellt. Es wird dringend empfohlen, für jede Cloud Insights-Umgebung mindestens zwei Account-Inhaber zu haben.  

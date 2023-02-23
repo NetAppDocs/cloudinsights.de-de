@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_cs_event_rate_checker.html 
 summary: Dieses Skript kann ausgeführt werden, um die Ereignisrate in der SVM zu prüfen, bevor eine ONTAP SVM DSC installiert wird 
-keywords: event, checker, rate, sizing, size, guide, 
+keywords: event, checker, rate, sizing, cloud secure 
 ---
 = SVM Event Rate Checker (Agent Sizing Guide)
 :allow-uri-read: 
@@ -47,8 +47,7 @@ Schritte
  “Svm svm_rate is generating 100 events/sec”.
 
 
-. Jeder ONTAP SVM Data Collector kann einer einzelnen SVM zugeordnet werden. Dies bedeutet, dass jeder Data Collector die Anzahl der von einer einzelnen SVM generierten Ereignisse erhalten kann.
-
+Jeder ONTAP SVM Data Collector kann einer einzelnen SVM zugeordnet werden. Dies bedeutet, dass jeder Data Collector die Anzahl der von einer einzelnen SVM generierten Ereignisse erhalten kann.
 
 Beachten Sie Folgendes:
 
@@ -144,10 +143,10 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| Frage: Wenn ich dieses Skript auf einer SVM lasse, die bereits für Cloud Secure konfiguriert ist, benutzt es nur die bestehende fpolicy-Konfiguration auf der SVM oder richtet es einen temporären ein und führt den Prozess aus? 
+| Frage: Wenn ich dieses Skript auf einer SVM lasse, die bereits für Workload Security konfiguriert ist, verwendet es nur die bestehende fpolicy-Konfiguration auf der SVM oder richtet es einen temporären ein und führt den Prozess aus? 
 
 
-| Antwort: Der Event-Ratenüberprüfung kann auch für eine SVM, die bereits für Cloud Secure konfiguriert ist, problemlos ausgeführt werden. Es sollte keine Auswirkungen geben. 
+| Antwort: Der Event Rate Checker kann auch für eine SVM, die bereits für Workload-Sicherheit konfiguriert ist, problemlos ausgeführt werden. Es sollte keine Auswirkungen geben. 
 
 
 | Frage: Kann ich die Anzahl der SVMs erhöhen, auf denen das Skript ausgeführt werden kann? 

@@ -78,7 +78,7 @@ Wenn der Proxy nicht für die Verkehrsprüfung eingerichtet ist, kann eine Ausna
 
 === Anzeigen von Proxy-Endpunkten
 
-Sie können Ihre Proxy-Endpunkte anzeigen, indem Sie beim Onboarding auf den Link *Proxy-Einstellungen* klicken oder auf der Seite *Hilfe > Support* den Link unter _Proxy-Einstellungen_ wählen. Eine Tabelle wie die folgende wird angezeigt. Wenn Sie Cloud Secure in Ihrer Umgebung verwenden, werden auch die konfigurierten Endpunkt-URLs in dieser Liste angezeigt.
+Sie können Ihre Proxy-Endpunkte anzeigen, indem Sie beim Onboarding auf den Link *Proxy-Einstellungen* klicken oder auf der Seite *Hilfe > Support* den Link unter _Proxy-Einstellungen_ wählen. Eine Tabelle wie die folgende wird angezeigt. Wenn Sie Workload Security in Ihrer Umgebung haben, werden auch die konfigurierten Endpunkt-URLs in dieser Liste angezeigt.
 
 image:ProxyEndpoints_NewTable.png["Tabelle Mit Proxy-Endpunkten"]
 

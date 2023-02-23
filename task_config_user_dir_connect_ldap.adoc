@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_config_user_dir_connect_ldap.html 
-keywords: collector, configure, LDAP, Active Directory 
-summary: Cloud Secure LDAP-Benutzerverzeichnissammler wird konfiguriert 
+keywords: collector, configure, LDAP, Active Directory, cloud secure 
+summary: Konfigurieren des LDAP-Benutzerverzeichnissammler für die Workload-Sicherheit 
 ---
 = Konfigurieren eines LDAP Directory Server Collectors
 :allow-uri-read: 
 
 
 [role="lead"]
-Sie konfigurieren Cloud Secure zum Sammeln von Benutzerattributen von LDAP-Verzeichnisservern.
+Sie konfigurieren die Workload Security so, dass Benutzerattribute von LDAP Directory-Servern erfasst werden.
 
 .Bevor Sie beginnen
 * Sie müssen ein Cloud Insights-Administrator oder -Kontoinhaber sein, um diese Aufgabe auszuführen.
@@ -18,7 +18,7 @@ Sie konfigurieren Cloud Secure zum Sammeln von Benutzerattributen von LDAP-Verze
 
 
 .Schritte zum Konfigurieren eines Benutzerverzeichnissammler
-. Klicken Sie im Menü Cloud Secure auf: *Admin > Datensammler > Benutzerverzeichnissammler > + Benutzerverzeichnissammler*, und wählen Sie *LDAP-Verzeichnisserver* aus
+. Klicken Sie im Menü Workload Security auf: *Admin > Data Collectors > User Directory Collectors > + User Directory Collector* und wählen Sie *LDAP Directory Server*
 +
 Das System zeigt den Bildschirm Benutzerverzeichnis hinzufügen an.
 
@@ -120,7 +120,7 @@ Klicken Sie auf Optionale Attribute einschließen, um eines der folgenden Attrib
 
 Sie können LDAP-Benutzerberechtigungen und Attributdefinitionen mithilfe der folgenden Verfahren validieren:
 
-* Verwenden Sie den folgenden Befehl, um die Cloud Secure LDAP-Benutzerrechte zu validieren:
+* Verwenden Sie den folgenden Befehl, um die Berechtigung für LDAP-Benutzer für die Workload-Sicherheit zu validieren:
 +
  ldapsearch -D "uid=john ,cn=users,cn=accounts,dc=dorp,dc=company,dc=com" -W -x -LLL -o ldif-wrap=no -b "cn=accounts,dc=dorp,dc=company,dc=com" -H ldap://vmwipaapp08.dorp.company.com
 * Verwenden Sie den LDAP Explorer, um in einer LDAP-Datenbank zu navigieren, Objekteigenschaften und -Attribute anzuzeigen, Berechtigungen anzuzeigen, das Schema eines Objekts anzuzeigen und komplexe Suchen auszuführen, die Sie speichern und erneut ausführen können.
@@ -150,7 +150,7 @@ In der folgenden Tabelle werden bekannte Probleme und Auflösungen beschrieben, 
 | Das Hinzufügen eines LDAP-Directory-Connectors führt zum Status ‘Fehler’. Fehler sagt: „Das Objekt, das DN=DC=hq,DC=Domainname,DC=com als Waldname angegeben hat, konnte nicht abgerufen werden.“ | Falsche Suchbasis angegeben. Bearbeiten und geben Sie den richtigen Namen für die Gesamtstruktur an. 
 
 
-| Die optionalen Attribute des Domain-Benutzers werden auf der Seite Cloud Secure-Benutzerprofil nicht angezeigt. | Dies ist wahrscheinlich auf eine Diskrepanz zwischen den Namen der in CloudSecure hinzugefügten optionalen Attribute und den tatsächlichen Attributnamen in Active Directory zurückzuführen. Bei Feldern wird die Groß-/Kleinschreibung beachtet. Bearbeiten und geben Sie die korrekten optionalen Attributnamen an. 
+| Die optionalen Attribute des Domänenbenutzers werden auf der Seite „Workload Security User Profile“ nicht angezeigt. | Dies ist wahrscheinlich auf eine Diskrepanz zwischen den Namen der in CloudSecure hinzugefügten optionalen Attribute und den tatsächlichen Attributnamen in Active Directory zurückzuführen. Bei Feldern wird die Groß-/Kleinschreibung beachtet. Bearbeiten und geben Sie die korrekten optionalen Attributnamen an. 
 
 
 | Datensammler im Fehlerzustand mit „LDAP-Benutzer konnten nicht abgerufen werden. Grund für Fehler: Verbindung auf dem Server nicht möglich, Verbindung ist Null“ | Starten Sie den Kollektor neu, indem Sie auf die Schaltfläche _Neustart_ klicken. 
@@ -189,5 +189,5 @@ In der folgenden Tabelle werden bekannte Probleme und Auflösungen beschrieben, 
 | Die Telefonnummer wird nicht auf der Benutzerprofilseite ausgefüllt. | Dies ist wahrscheinlich auf ein Problem bei der Attributzuordnung mit dem Active Directory zurückzuführen. 1. Bearbeiten Sie den jeweiligen Active Directory-Collector, der die Informationen des Benutzers aus Active Directory abrufen wird. 2. Hinweis unter optionalen Attributen gibt es einen Feldnamen „Telefonnummer“, der dem Active Directory-Attribut ‘Telefonnummernnummer’ zugeordnet ist. 4. Verwenden Sie jetzt das Active Directory Explorer-Tool wie oben beschrieben, um den LDAP Directory-Server zu durchsuchen und den korrekten Attributnamen anzuzeigen. 3. Stellen Sie sicher, dass im LDAP-Verzeichnis ein Attribut namens ‘Telefonnummernnummer’ vorhanden ist, das tatsächlich die Telefonnummer des Benutzers hat. 5. Sagen wir ‘LDAP-Verzeichnis, dass es in „Phonenumber“ geändert wurde. 6. Dann bearbeiten Sie den CloudSecure User Directory Collector. Ersetzen Sie im optionalen Attributbereich ‘Telefonnummerierung’ durch ‘Phonenumber’. 7. Speichern Sie den Active Directory-Collector, wird der Sammler neu starten und erhalten die Telefonnummer des Benutzers und die gleiche in der Benutzerprofil Seite. 
 
 
-| Wenn das Verschlüsselungszertifikat (SSL) auf dem Active Directory-Server (AD) aktiviert ist, kann der Cloud Secure-Benutzerverzeichnissammler keine Verbindung zum AD-Server herstellen. | Deaktivieren Sie die AD-Serververschlüsselung, bevor Sie einen User Directory Collector konfigurieren. Sobald die Benutzerdetails abgerufen wurde, wird es dort für 13 Monate sein. Wenn der AD-Server nach dem Abrufen der Benutzerdetails getrennt wird, werden die neu hinzugefügten Benutzer in AD nicht abgerufen. Um wieder abrufen zu können, muss der Benutzer-Verzeichnis-Collector mit AD verbunden sein. 
+| Wenn das Verschlüsselungszertifikat (SSL) auf dem Active Directory (AD)-Server aktiviert ist, kann der Workload Security User Directory Collector keine Verbindung zum AD-Server herstellen. | Deaktivieren Sie die AD-Serververschlüsselung, bevor Sie einen User Directory Collector konfigurieren. Sobald die Benutzerdetails abgerufen wurde, wird es dort für 13 Monate sein. Wenn der AD-Server nach dem Abrufen der Benutzerdetails getrennt wird, werden die neu hinzugefügten Benutzer in AD nicht abgerufen. Um wieder abrufen zu können, muss der Benutzer-Verzeichnis-Collector mit AD verbunden sein. 
 |===

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: cs_notifications_email.html 
-summary: Hinzufügen von E-Mail-Adressen für Benachrichtigungen zu Cloud Secure-Warnungen. 
+summary: Hinzufügen von E-Mail-Adressen für Benachrichtigungen zu Workload-Sicherheitswarnungen 
 keywords: email, notifications, alerts, warnings, attacks 
 ---
 = Konfigurieren von E-Mail-Benachrichtigungen für Warnungen, Warnungen und den Zustand des Agent/Data Source Collectors
@@ -9,7 +9,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 [role="lead"]
-Um Cloud Secure-Warnungsempfänger zu konfigurieren, klicken Sie auf *Admin > Benachrichtigungen* und geben Sie für jeden Empfänger eine E-Mail-Adresse in die entsprechenden Abschnitte ein.
+Um die Empfänger von Benachrichtigungen für die Workload-Sicherheit zu konfigurieren, klicken Sie auf *Admin > Benachrichtigungen* und geben Sie für jeden Empfänger eine E-Mail-Adresse in die entsprechenden Abschnitte ein.
 
 
 

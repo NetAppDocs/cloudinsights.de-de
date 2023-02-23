@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_delete_agent.html 
-keywords: agent, Cloud Secure, delete agent 
-summary: Cloud Secure-Agenten werden gelöscht 
+keywords: agent, Workload Security, delete agent, Cloud Secure 
+summary: Löschen von Workload Security Agents 
 ---
-= Löschen eines Cloud Secure-Agenten
+= Löschen eines Workload Security Agent
 :allow-uri-read: 
 
 
 [role="lead"]
-Wenn Sie einen Cloud Secure-Agenten löschen, müssen alle dem Agenten zugeordneten Datensammler zuerst gelöscht werden.
+Wenn Sie einen Workload Security Agent löschen, müssen alle dem Agent zugeordneten Datensammler zuerst gelöscht werden.
 
 
 
@@ -19,7 +19,7 @@ Wenn Sie einen Cloud Secure-Agenten löschen, müssen alle dem Agenten zugeordne
 IMPORTANT: Durch das Löschen eines Agenten werden alle dem Agenten zugeordneten Datensammler gelöscht. Wenn Sie die Datensammler mit einem anderen Agenten konfigurieren möchten, sollten Sie vor dem Löschen des Agenten ein Backup der Data Collector-Konfigurationen erstellen.
 
 .Bevor Sie beginnen
-. Stellen Sie sicher, dass alle mit dem Agenten verknüpften Datensammler aus dem Cloud Secure-Portal gelöscht werden.
+. Stellen Sie sicher, dass alle mit dem Agenten verknüpften Datensammler aus dem Workload Security-Portal gelöscht werden.
 +
 Hinweis: Ignorieren Sie diesen Schritt, wenn sich alle zugehörigen Kollektoren im STATUS „GESTOPPT“ befinden.
 

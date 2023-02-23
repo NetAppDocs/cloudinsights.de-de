@@ -91,7 +91,7 @@ Sie können Ihre Proxy-Endpunkt-URLs anzeigen, indem Sie beim Auswählen eines D
 
 image:ProxyEndpoints_NewTable.png["Tabelle Mit Proxy-Endpunkten"]
 
-Wenn Sie Cloud Secure in Ihrer Umgebung verwenden, werden auch die konfigurierten Endpunkt-URLs in dieser Liste angezeigt.
+Wenn Sie Workload Security in Ihrer Umgebung haben, werden auch die konfigurierten Endpunkt-URLs in dieser Liste angezeigt.
 
 
 
@@ -145,7 +145,7 @@ Sie können Ihre Proxy-Endpunkt-URLs anzeigen, indem Sie beim Auswählen eines D
 
 image:ProxyEndpoints_NewTable.png["Tabelle Mit Proxy-Endpunkten"]
 
-Wenn Sie Cloud Secure in Ihrer Umgebung verwenden, werden auch die konfigurierten Endpunkt-URLs in dieser Liste angezeigt.
+Wenn Sie Workload Security in Ihrer Umgebung haben, werden auch die konfigurierten Endpunkt-URLs in dieser Liste angezeigt.
 
 
 

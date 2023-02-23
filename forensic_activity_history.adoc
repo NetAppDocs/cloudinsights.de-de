@@ -9,7 +9,7 @@ summary: Verlaufsdaten für forensische Aktivitäten
 
 
 [role="lead"]
-Auf der Seite „Alle Aktivitäten“ finden Sie Informationen zu den Aktionen, die an Einheiten der Cloud Secure-Umgebung durchgeführt werden.
+Auf der Seite Alle Aktivitäten können Sie die Aktionen verstehen, die für Einheiten in der Workload-Sicherheitsumgebung durchgeführt werden.
 
 
 
@@ -131,7 +131,7 @@ image:CloudSecure_ActivitySelection.png["Aktivitätsauswahl, width=30%"]
 
 == Aufbewahrung Des Aktivitätsverlaufs
 
-Der Aktivitätsverlauf wird 13 Monate lang in aktiven Cloud Secure Umgebungen aufbewahrt.
+Der Aktivitätsverlauf wird 13 Monate lang in aktiven Workload-Sicherheitsumgebungen aufbewahrt.
 
 
 

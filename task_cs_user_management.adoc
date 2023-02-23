@@ -1,25 +1,25 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_user_management.html 
-keywords: Cloud Secure, User, Login, account 
-summary: Cloud Secure-Benutzerkonten werden über die Cloud Insights Benutzerverwaltung gemanagt 
+keywords: Workload Security, User, Login, account, cloud secure 
+summary: Benutzerkonten für die Workload-Sicherheit werden über das Cloud Insights Benutzermanagement verwaltet 
 ---
 = Benutzerverwaltung
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure-Benutzerkonten werden über Cloud Insights gemanagt.
+Benutzerkonten für die Workload-Sicherheit werden über Cloud Insights gemanagt.
 
-Cloud Insights bietet vier Benutzerkontoebenen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen. Ein Benutzerkonto mit Administratorrechten kann Benutzer erstellen oder ändern und jedem Benutzer eine der folgenden Cloud Secure-Rollen zuweisen:
+Cloud Insights bietet vier Benutzerkontoebenen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen. Ein Benutzerkonto mit Administratorrechten kann Benutzer erstellen oder ändern und jedem Benutzer eine der folgenden Workload-Sicherheitsrollen zuweisen:
 
 |===
 
 
-| Rolle | Cloud Secure Zugriff 
+| Rolle | Zugriff Auf Die Workload-Sicherheit 
 
 
-| Verwalter | Alle Cloud Secure-Funktionen, einschließlich der Funktionen für Alarme, Forensik, Datensammler, automatisierte Antwortrichtlinien und APIs für Cloud Secure, können ausgeführt werden. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Cloud Secure-Rollen zuweisen. 
+| Verwalter | Alle Workload-Sicherheitsfunktionen, einschließlich derer für Warnmeldungen, Forensik, Datensammler, automatisierte Antwortrichtlinien und APIs für Workload-Sicherheit, sind möglich. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Workload-Sicherheitsrollen zuweisen. 
 
 
 | Benutzer | Kann Warnungen anzeigen und verwalten und Forensik anzeigen. Benutzer können den Alarmstatus ändern, eine Notiz hinzufügen, Snapshots manuell erstellen und den Benutzerzugriff einschränken. 
@@ -28,7 +28,7 @@ Cloud Insights bietet vier Benutzerkontoebenen: Kontoinhaber, Administrator, Ben
 | Gast | Kann Warnungen und Forensik anzeigen. Gastrolle kann den Alarmstatus nicht ändern, Notizen hinzufügen, Snapshots manuell erstellen oder den Benutzerzugriff einschränken. 
 |===
 .Schritte
-. Melden Sie sich bei Cloud Secure an
+. Melden Sie sich bei Workload Security an
 . Klicken Sie im Menü auf *Admin > Benutzerverwaltung*
 +
 Sie werden zur Seite User Management von Cloud Insights weitergeleitet.

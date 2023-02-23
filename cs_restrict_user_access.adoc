@@ -2,20 +2,20 @@
 sidebar: sidebar 
 permalink: cs_restrict_user_access.html 
 keywords: alert, snapshot,  attack 
-summary: Mit Cloud Secure können Sie den Benutzerzugriff bei Verdacht auf Sabotage einschränken 
+summary: Mit Workload Security können Sie den Benutzerzugriff auch nach vermuteter Sabotage einschränken 
 ---
 = Blockieren Des Benutzerzugriffs
 :allow-uri-read: 
 
 
 [role="lead"]
-Sobald ein Angriff erkannt wird, kann Cloud Secure den Angriff stoppen, indem der Benutzerzugriff auf das Dateisystem blockiert wird. Der Zugriff kann automatisch mithilfe von Automated Response Policies oder manuell über die Alarm- oder Benutzerdetails-Seiten gesperrt werden.
+Sobald ein Angriff erkannt wurde, kann Workload Security den Angriff beenden, indem der Benutzerzugriff auf das Dateisystem blockiert wird. Der Zugriff kann automatisch mithilfe von Automated Response Policies oder manuell über die Alarm- oder Benutzerdetails-Seiten gesperrt werden.
 
 Beim Blockieren des Benutzerzugriffs sollten Sie einen Sperrzeitraum festlegen. Nach Ende des ausgewählten Zeitraums wird der Benutzerzugriff automatisch wiederhergestellt. Das Zugriffssperre wird sowohl für SMB- als auch für NFS-Protokolle unterstützt.
 
-Benutzer ist direkt für SMB gesperrt und die IP-Adresse der Host Machines, die den Angriff verursachen, wird für NFS blockiert. Diese Machine-IP-Adressen sind für den Zugriff auf alle Storage Virtual Machines (SVMs) vorgesehen, die von Cloud Secure überwacht werden.
+Benutzer ist direkt für SMB gesperrt und die IP-Adresse der Host Machines, die den Angriff verursachen, wird für NFS blockiert. Diese Computer-IP-Adressen dürfen nicht auf alle Storage Virtual Machines (SVMs) zugreifen, die durch Workload Security überwacht werden.
 
-Zum Beispiel, sagen wir, Cloud Secure verwaltet 10 SVMs und die automatische Antwortrichtlinie ist für vier dieser SVMs konfiguriert. Wenn der Angriff in einer der vier SVMs stammt, wird der Zugriff des Benutzers in allen 10 SVMs blockiert. Auf der ursprünglichen SVM wird noch ein Snapshot erstellt.
+Zum Beispiel, sagen wir, Workload Security verwaltet 10 SVMs und die automatische Antwortrichtlinie ist für vier dieser SVMs konfiguriert. Wenn der Angriff in einer der vier SVMs stammt, wird der Zugriff des Benutzers in allen 10 SVMs blockiert. Auf der ursprünglichen SVM wird noch ein Snapshot erstellt.
 
 Falls vier SVMs mit einer für SMB konfigurierten SVM und eine für NFS konfigurierte SVM und die übrigen beiden für NFS und SMB konfiguriert sind, werden alle SVMs blockiert, wenn der Angriff aus einer der vier SVMs stammt.
 
@@ -27,7 +27,7 @@ Für diese Funktion sind Anmeldedaten auf Cluster-Ebene erforderlich.
 
 Wenn Sie Anmeldedaten für die Cluster-Administration verwenden, sind keine neuen Berechtigungen erforderlich.
 
-Wenn Sie einen benutzerdefinierten Benutzer verwenden (z. B. _cscuser_), der dem Benutzer Berechtigungen erteilt, führen Sie die folgenden Schritte aus, um Cloud Secure Berechtigungen zum Blockieren des Benutzers zu erteilen.
+Wenn Sie einen benutzerdefinierten Benutzer (z. B. _cscuser_) mit den dem Benutzer angegebenen Berechtigungen verwenden, führen Sie die folgenden Schritte aus, um Workload Security-Berechtigungen zum Blockieren des Benutzers zu erteilen.
 
 Führen Sie für CSuser mit Cluster-Anmeldedaten die folgenden Schritte in der ONTAP-Befehlszeile aus:
 
@@ -42,7 +42,7 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == Wie wird die Funktion aktiviert?
 
-* Navigieren Sie in Cloud Secure zu *Admin > Richtlinien für automatische Reaktionen > Einstellungen für Antwortrichtlinien > Benutzerzugriff blockieren*.
+* Navigieren Sie unter Workload Security zu *Admin > Automated Response Policies > Response Policy Settings > Block User Access*.
 * Legen Sie „Benutzerzugriff sperren aktivieren“ auf „_Enabled_“ fest.
 
 
@@ -85,7 +85,7 @@ Auf der Seite Warnungsdetails und Benutzerdetails im Bedienfeld können Sie eine
 
 Sie können die Funktion jederzeit deaktivieren. Wenn es eingeschränkte Benutzer im System gibt, müssen Sie zuerst den Zugriff wiederherstellen.
 
-* Navigieren Sie in Cloud Secure zu *Admin > Richtlinien für automatische Reaktionen > Einstellungen für Antwortrichtlinien > Benutzerzugriff blockieren*
+* Navigieren Sie unter Workload Security zu *Admin > Automated Response Policies > Response Policy Settings > Block User Access*
 * Deaktivieren Sie die Option „Benutzerzugriff blockieren aktivieren“.
 
 
@@ -95,7 +95,7 @@ Die Funktion wird von allen Seiten ausgeblendet.
 
 == Manuelle Wiederherstellung der IPs für NFS
 
-Führen Sie die folgenden Schritte aus, um IP-Adressen manuell von ONTAP wiederherzustellen, wenn Ihre Cloud Secure-Testversion abläuft oder wenn der Agent/Collector nicht verfügbar ist.
+Führen Sie die folgenden Schritte aus, um IP-Adressen von ONTAP manuell wiederherzustellen, wenn Ihre Workload-Sicherheitsstudie abläuft oder wenn der Agent/Collector nicht verfügbar ist.
 
 . Listen Sie alle Exportrichtlinien auf einer SVM auf.
 +
@@ -117,10 +117,10 @@ svm3        test            3       cifs,    0.0.0.0/0             any
                                     flexcache
 4 entries were displayed.
 ....
-. Löschen Sie die Regeln über alle Richtlinien auf der SVM, die als Client Match „cloudSecure_rule“ haben, indem Sie den entsprechenden RegelIndex angeben. Die Cloud Secure-Regel liegt in der Regel bei 1.
+. Löschen Sie die Regeln über alle Richtlinien auf der SVM, die als Client Match „cloudSecure_rule“ haben, indem Sie den entsprechenden RegelIndex angeben. Workload-Sicherheitsregel liegt in der Regel bei 1.
 +
  contrail-qa-fas8020::*> export-policy rule delete -vserver <svm name> -policyname * -ruleindex 1
-. Stellen Sie sicher, dass die Cloud Secure-Regel gelöscht wird (optionaler Schritt zur Bestätigung).
+. Stellen Sie sicher, dass die Sicherheitsregel für Workloads gelöscht wird (optionaler Schritt zur Bestätigung).
 +
 ....
 contrail-qa-fas8020::*> export-policy rule show -vserver <svm name>
@@ -140,12 +140,12 @@ svm2         test            3       cifs,    0.0.0.0/0             any
 
 == Benutzer für SMB manuell wiederherstellen
 
-Führen Sie die folgenden Schritte aus, um alle Benutzer manuell von ONTAP wiederherzustellen, wenn Ihre Cloud Secure-Testversion abläuft oder wenn der Agent/Collector nicht verfügbar ist.
+Führen Sie die folgenden Schritte aus, um alle Benutzer von ONTAP manuell wiederherzustellen, wenn Ihre Testversion für die Workload-Sicherheit abläuft oder wenn der Agent/Collector nicht verfügbar ist.
 
-Sie können die Liste der in Cloud Secure blockierten Benutzer von der Benutzer-Listenseite erhalten.
+Sie können die Liste der in Workload Security blockierten Benutzer auf der Benutzer-Listenseite abrufen.
 
 . Melden Sie sich mit Cluster_admin_-Anmeldedaten beim ONTAP Cluster an (wo Sie die Blockierung von Benutzern aufheben möchten). (Bei Amazon FSX melden Sie sich mit FSX-Anmeldeinformationen an).
-. Führen Sie den folgenden Befehl aus, um alle durch Cloud Secure für SMB blockierten Benutzer in allen SVMs aufzulisten:
+. Führen Sie den folgenden Befehl aus, um alle durch Workload Security für SMB blockierten Benutzer in allen SVMs aufzulisten:
 +
  vserver name-mapping show -direction win-unix -replacement " "
 +
@@ -182,7 +182,7 @@ Für die zuvor blockierten Benutzer sollten keine Einträge angezeigt werden.
 | Problem | Versuchen Sie Dies 
 
 
-| Einige der Benutzer werden nicht eingeschränkt, obwohl es einen Angriff gibt. | 1. Stellen Sie sicher, dass sich der Data Collector und der Agent für die SVMs im Status _running_ befinden. Cloud Secure kann keine Befehle senden, wenn der Datensammler und der Agent angehalten sind. 2. Dies liegt daran, dass der Benutzer möglicherweise von einem Computer mit einer neuen IP-Adresse auf den Speicher zugegriffen hat, die zuvor nicht verwendet wurde. Die Einschränkung erfolgt über die IP-Adresse des Hosts, über den der Benutzer auf den Speicher zugreift. Überprüfen Sie in der UI (Warndetails > Zugriffsbegrenzungsverlauf für diesen Benutzer > betroffene IP-Adressen) die Liste der eingeschränkten IP-Adressen. Wenn der Benutzer von einem Host aus auf Speicher zugreift, der eine andere IP als die eingeschränkten IP hat, kann der Benutzer weiterhin über die nicht eingeschränkte IP auf den Speicher zugreifen. Wenn der Benutzer versucht, von den Hosts, deren IP-Adressen eingeschränkt sind, auf den Speicher zuzugreifen, wird nicht zugegriffen werden können. 
+| Einige der Benutzer werden nicht eingeschränkt, obwohl es einen Angriff gibt. | 1. Stellen Sie sicher, dass sich der Data Collector und der Agent für die SVMs im Status _running_ befinden. Workload Security kann keine Befehle senden, wenn der Data Collector und der Agent angehalten sind. 2. Dies liegt daran, dass der Benutzer möglicherweise von einem Computer mit einer neuen IP-Adresse auf den Speicher zugegriffen hat, die zuvor nicht verwendet wurde. Die Einschränkung erfolgt über die IP-Adresse des Hosts, über den der Benutzer auf den Speicher zugreift. Überprüfen Sie in der UI (Warndetails > Zugriffsbegrenzungsverlauf für diesen Benutzer > betroffene IP-Adressen) die Liste der eingeschränkten IP-Adressen. Wenn der Benutzer von einem Host aus auf Speicher zugreift, der eine andere IP als die eingeschränkten IP hat, kann der Benutzer weiterhin über die nicht eingeschränkte IP auf den Speicher zugreifen. Wenn der Benutzer versucht, von den Hosts, deren IP-Adressen eingeschränkt sind, auf den Speicher zuzugreifen, wird nicht zugegriffen werden können. 
 
 
 | Manuelles Klicken auf Zugriff beschränken gibt „IP-Adressen dieses Benutzers wurden bereits eingeschränkt“. | Die zu beschränkte IP wird bereits von einem anderen Benutzer eingeschränkt. 

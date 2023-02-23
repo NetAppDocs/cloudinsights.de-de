@@ -55,4 +55,4 @@ Die Benutzerliste wird alle 12 Stunden aktualisiert.
 
 == Aufbewahrungsrichtlinie
 
-Wenn die Benutzerliste nicht erneut aktualisiert wird, wird sie 13 Monate lang aufbewahrt. Nach 13 Monaten werden die Daten gelöscht. Wird die Cloud Secure-Umgebung gelöscht, werden alle der Umgebung zugeordneten Daten gelöscht.
+Wenn die Benutzerliste nicht erneut aktualisiert wird, wird sie 13 Monate lang aufbewahrt. Nach 13 Monaten werden die Daten gelöscht. Wenn die Workload-Sicherheitsumgebung gelöscht wird, werden alle der Umgebung zugeordneten Daten gelöscht.

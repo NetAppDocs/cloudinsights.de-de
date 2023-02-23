@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: cs_intro.html 
-keywords: CloudSecure 
+keywords: CloudSecure, Cloud Secure 
 summary: Überblick 
 ---
-= Informationen zu Cloud Secure
+= Allgemeines Zur Storage Workload Security
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure schützt Ihre Daten durch nützliche Informationen zu Bedrohungen von innen. Es ermöglicht eine zentrale Übersicht und Kontrolle über den Zugriff auf alle Unternehmensdaten in Hybrid-Cloud-Umgebungen, damit Sicherheits- und Compliance-Ziele erfüllt werden.
+Die Cloud Insights Storage Workload Security (ehemals Cloud Secure) schützt Ihre Daten mithilfe intelligenter Funktionen vor Bedrohungen von innen. Es ermöglicht eine zentrale Übersicht und Kontrolle über den Zugriff auf alle Unternehmensdaten in Hybrid-Cloud-Umgebungen, damit Sicherheits- und Compliance-Ziele erfüllt werden.
 
 
 
@@ -17,7 +17,7 @@ Cloud Secure schützt Ihre Daten durch nützliche Informationen zu Bedrohungen v
 
 Verschaffen Sie sich einen zentralen Überblick und kontrollieren Sie den Benutzerzugriff auf wichtige Unternehmensdaten, die lokal oder in der Cloud gespeichert sind.
 
-Ersetzen Sie Tools und manuelle Prozesse, die nicht zeitgerecht und präzise Einblicke in Datenzugriff und -Kontrolle bieten. Cloud Secure wird sowohl in der Cloud als auch in lokalen Storage-Systemen ausgeführt und bietet Warnmeldungen zu schädlichem Benutzerverhalten in Echtzeit.
+Ersetzen Sie Tools und manuelle Prozesse, die nicht zeitgerecht und präzise Einblicke in Datenzugriff und -Kontrolle bieten. Workload Security wird auf einzigartige Weise in der Cloud und in lokalen Storage-Systemen ausgeführt, sodass Sie über schädliches Benutzerverhalten in Echtzeit benachrichtigt werden können.
 
 
 

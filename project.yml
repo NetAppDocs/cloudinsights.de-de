@@ -187,19 +187,19 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: Schematabellen
       url: "/reference_schemas.html"
-  - title: Cloud Secure
+  - title: Sicherheit Von Storage-Workloads
     entries:
-    - title: Informationen zu Cloud Secure
+    - title: Allgemeines Zur Workload-Sicherheit
       url: "/cs_intro.html"
     - title: Erste Schritte
       entries:
-      - title: Erste Schritte mit Cloud Secure
+      - title: Erste Schritte Mit Workload Security
         url: "/task_cs_getting_started.html"
-      - title: Anforderungen Für Cloud Secure-Agenten
+      - title: Anforderungen An Security Agent Für Workloads
         url: "/concept_cs_agent_requirements.html"
-      - title: Konfigurieren eines Cloud Secure-Agenten
+      - title: Konfigurieren eines Workload Security Agent
         url: "/task_cs_add_agent.html"
-      - title: Löschen eines Cloud Secure-Agenten
+      - title: Löschen eines Workload Security Agent
         url: "/task_cs_delete_agent.html"
       - title: Konfigurieren eines AD Directory Collectors
         url: "/task_config_user_dir_connect.html"
@@ -209,7 +209,7 @@ sidebar:
         url: "/task_add_collector_svm.html"
       - title: Konfigurieren des Cloud ONTAP Data Collectors
         url: "/task_config_cs_incloud.html"
-      - title: Cloud Secure Benutzerverwaltung
+      - title: Workload Security User Management
         url: "/task_cs_user_management.html"
       - title: Event Rate Checker (Agent Sizing Guide)
         url: "/concept_cs_event_rate_checker.html"
@@ -233,7 +233,7 @@ sidebar:
       url: "/concept_cs_attack_simulator.html"
     - title: Benachrichtigungen
       url: "/cs_notifications_email.html"
-    - title: Cloud Secure API
+    - title: Workload-Sicherheits-API
       url: "/concept_cs_api.html"
   - title: Active IQ
     url: "/concept_activeiq.html"

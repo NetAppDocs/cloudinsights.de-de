@@ -1,21 +1,21 @@
 ---
 sidebar: sidebar 
 permalink: task_config_cs_incloud.html 
-keywords: Cloud, Storage, AWS, Cloud Volumes, Cloud ONTAP, firewall, VPC, Subnet, 
-summary: Cloud Secure verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen. 
+keywords: Cloud, Storage, AWS, Cloud Volumes, Cloud ONTAP, firewall, VPC, Subnet,  cloud secure 
+summary: Workload Security verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen. 
 ---
 = Konfiguration des Cloud Volumes ONTAP und Amazon FSX für NetApp ONTAP Collector
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen.
+Workload Security verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen.
 
 
 
 == Cloud Volumes ONTAP Storage-Konfiguration
 
-In der OnCommand Cloud Volumes ONTAP-Dokumentation können Sie eine Single Node/HA AWS-Instanz zum Hosten des Cloud Secure-Agenten konfigurieren:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
+In der OnCommand Cloud Volumes ONTAP-Dokumentation können Sie eine AWS-Instanz mit einem Node/HA für das Hosting des Workload Security Agent konfigurieren:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
 Führen Sie nach Abschluss der Konfiguration die Schritte aus, um die SVM einzurichten:https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
@@ -35,9 +35,9 @@ Die Agent-Maschine muss in den jeweiligen Subnetzen der Cloud-Service-Provider k
 
 Unten sind die Schritte für die Installation von Agenten in AWS aufgeführt. Die entsprechenden Schritte, die für den Cloud-Service-Provider gelten, können für die Installation in Azure oder Google Cloud befolgt werden.
 
-Konfigurieren Sie in AWS die Maschine, die als Cloud Secure-Agent verwendet werden soll, mit den folgenden Schritten:
+Konfigurieren Sie in AWS die Maschine, die als Workload Security Agent verwendet werden soll, mit den folgenden Schritten:
 
-Konfigurieren Sie die Maschine, die als Cloud Secure-Agent verwendet werden soll, mit den folgenden Schritten:
+Konfigurieren Sie die Maschine, die als Workload Security Agent verwendet werden soll, wie folgt:
 
 .Schritte
 . Melden Sie sich bei der AWS Konsole an, und navigieren Sie zur Seite EC2-instances, und wählen Sie _Launch Instance_ aus.
@@ -57,13 +57,13 @@ Konfigurieren Sie die Maschine, die als Cloud Secure-Agent verwendet werden soll
 
 
 
-== Installieren Sie den Cloud Secure Agent
+== Installieren Sie den Workload Security Agent
 
 . Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Insights-Umgebung an.
-. Navigieren Sie zu Cloud Secure *Admin > Data Collectors* und klicken Sie auf die Registerkarte *Agents*.
+. Navigieren Sie zu Workload Security *Admin > Data Collectors* und klicken Sie auf die Registerkarte *Agents*.
 . Klicken Sie auf *+Agent* und geben Sie RHEL als Zielplattform an.
 . Kopieren Sie den Befehl Agenteninstallation.
-. Fügen Sie den Befehl „Agent Installation“ in die RHEL EC2-Instanz ein, bei der Sie angemeldet sind. Dies installiert den Cloud Secure-Agent, der alle zur Verfügung stellt link:concept_cs_agent_requirements.html["Agent-Voraussetzungen"] Werden erfüllt.
+. Fügen Sie den Befehl „Agent Installation“ in die RHEL EC2-Instanz ein, bei der Sie angemeldet sind. Dadurch wird der Workload Security Agent installiert, der alle zur Verfügung stellt link:concept_cs_agent_requirements.html["Agent-Voraussetzungen"] Werden erfüllt.
 
 
 Ausführliche Schritte finden Sie über den folgenden Link: https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent
@@ -80,5 +80,5 @@ Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.
 | Problem | Auflösung 
 
 
-| „Cloud Secure: ONTAP-Typ für Amazon FxSN Datensammler konnte nicht ermittelt werden“, wird vom Data Collector angezeigt. Der Kunde kann den neuen Amazon FSxN-Datensammler nicht zu Cloud Secure hinzufügen. Die Verbindung zum FSxN-Cluster an Port 443 vom Agenten ist zeitabhängig. Für die Kommunikation sind Firewall- und AWS Sicherheitsgruppen die erforderlichen Regeln aktiviert. Ein Agent wurde bereits bereitgestellt und befindet sich auch im selben AWS Konto. Dieser Agent wird verwendet, um die verbleibenden NetApp-Geräte zu verbinden und zu überwachen (und alle funktionieren). | Lösen Sie dieses Problem, indem Sie fsxadmin LIF-Netzwerksegment zur Sicherheitsregel des Agenten hinzufügen. Erlaubt alle Ports, wenn Sie sich nicht sicher über die Ports sind. 
+| „Workload-Sicherheit: Fehler beim ermitteln des ONTAP-Typs für Amazon FxSN Datensammler“ Fehler wird vom Data Collector angezeigt. Der Kunde kann den neuen Amazon FSxN Data Collector nicht zur Workload Security hinzufügen. Die Verbindung zum FSxN-Cluster an Port 443 vom Agenten ist zeitabhängig. Für die Kommunikation sind Firewall- und AWS Sicherheitsgruppen die erforderlichen Regeln aktiviert. Ein Agent wurde bereits bereitgestellt und befindet sich auch im selben AWS Konto. Dieser Agent wird verwendet, um die verbleibenden NetApp-Geräte zu verbinden und zu überwachen (und alle funktionieren). | Lösen Sie dieses Problem, indem Sie fsxadmin LIF-Netzwerksegment zur Sicherheitsregel des Agenten hinzufügen. Erlaubt alle Ports, wenn Sie sich nicht sicher über die Ports sind. 
 |===

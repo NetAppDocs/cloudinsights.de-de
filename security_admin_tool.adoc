@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: security_admin_tool.html 
+summary: Cloud Insights befolgt die Best Practices für die Sicherheit während des gesamten Release-Lebenszyklus. 
+keywords: security, risk, protection 
+---
+= Sicherheitstool
+:allow-uri-read: 
+
+
+[role="lead"]
+Die CI beinhaltet Sicherheitsfunktionen, die den Betrieb von Insight Umgebungen mit verbesserter Sicherheit ermöglichen. Zu den Funktionen gehören Verbesserungen der Verschlüsselung, das Hashing von Passwörtern und die Möglichkeit, interne Benutzer-Passwörter und Schlüsselpaare zu ändern, die Passwörter verschlüsseln und entschlüsseln.
+
+Zum Schutz sensibler Daten empfiehlt NetApp, die Standardschlüssel und das Erfassungs-Benutzerpasswort nach einer Installation oder einem Upgrade zu ändern.
+
+Verschlüsselte Passwörter für die Datenquelle werden in Cloud Insights gespeichert, wobei ein öffentlicher Schlüssel zur Verschlüsselung von Passwörtern verwendet wird, wenn ein Benutzer diese auf einer Konfigurationsseite des Datensammlers eingibt. Cloud Insights verfügt nicht über die privaten Schlüssel, die zur Entschlüsselung der Passwörter für Datensammler erforderlich sind; nur Acquisition Units verfügen über den privaten Datensammler-Schlüssel, der zur Entschlüsselung von Kennwörtern für Datensammler benötigt wird.
+
+
+
+== Überlegungen zu Upgrades und Installationen
+
+Wenn Ihr Insight-System nicht standardmäßige Sicherheitskonfigurationen enthält (d. h. Sie haben ein rekeyed Kennwort), müssen Sie Ihre Sicherheitskonfigurationen sichern. Durch die Installation neuer Software oder in einigen Fällen eines Software-Upgrades wird das System auf eine Standardsicherheitskonfiguration zurückgesetzt. Wenn Ihr System auf die Standardkonfiguration zurückgesetzt wird, müssen Sie die nicht voreingestellte Konfiguration wiederherstellen, damit das System ordnungsgemäß funktioniert.
+
+
+
+== Sicherheitsverwaltung auf der Akquisitionseinheit
+
+Mit dem SecurityAdmin-Tool können Sie Sicherheitsoptionen für Cloud Insights verwalten und auf dem System der Erfassungseinheit ausgeführt werden. Die Sicherheitsverwaltung umfasst das Verwalten von Schlüsseln und Passwörtern, das Speichern und Wiederherstellen von Sicherheitskonfigurationen, die Sie erstellen oder auf die Standardeinstellungen wiederherstellen.
+
+
+
+== Bevor Sie beginnen
+
+Sie müssen über Administratorrechte auf dem AU-System verfügen, um Sicherheitskonfigurationsaufgaben auszuführen.
+
+Informationen zu dieser Aufgabe das SecurityAdmin-Tool finden Sie im System der Erfassungseinheit an einem der folgenden Standorte:
+
+* *Windows - C:\Programme\SANscreen\securityadmin\bin\securityadmin.bat
+* *Linux - /bin/oci-securityadmin.sh
+
+
+.Schritte
+* *Starten Sie das SecurityAdmin-Tool im interaktiven Modus (-i).
++
+Folgende Optionen werden angezeigt:
+
+* Backup
++
+Erstellt eine Sicherungszip-Datei des Tresors, die alle Passwörter und Schlüssel enthält und legt die Datei an einem vom Benutzer angegebenen Speicherort oder an den folgenden Standardstandorten ab:
+
++
+....
+Windows - C:\Program Files\SANscreen\backup\vault
+Linux - /var/log/netapp/oci/backup/vault
+....
+* Wiederherstellen
++
+Stellt die Zip-Sicherung des erstellten Tresors wieder her. Nach der Wiederherstellung werden alle Passwörter und Schlüssel zum Zeitpunkt der Backup-Erstellung auf die vorhandenen Werte zurückgesetzt.
+
++
+Restore kann verwendet werden, um Passwörter und Schlüssel auf mehreren Servern zu synchronisieren, zum Beispiel: - Ändern Sie Verschlüsselungsschlüssel auf der AU - Erstellen Sie ein Backup des Tresors - Wiederherstellen der Tresorsicherung auf jedem aus
+
+* Verschlüsselungsschlüssel Ändern
++
+Ändern Sie die AU-Verschlüsselungsschlüssel, die zum Verschlüsseln oder Entschlüsseln von Gerätepasswörtern verwendet werden.
+
++
+Wenn Sie Verschlüsselungsschlüssel ändern, sollten Sie Ihre neue Sicherheitskonfiguration sichern, damit Sie sie nach einem Upgrade oder einer Installation wiederherstellen können.
+
+* Passwort Aktualisieren
++
+Passwort für 'Acquisition'-Benutzerkonto ändern.
+
++
+Wenn Sie Passwörter ändern, sollten Sie Ihre neue Sicherheitskonfiguration sichern, damit Sie sie bei Bedarf wiederherstellen können.
+
+* Auf Standardwerte zurücksetzen
++
+Setzt das Erfassungs-Benutzerpasswort und die Erfassungs-Benutzerverschlüsselungsschlüssel auf die Standardwerte zurück. Bei der Installation werden die Standardwerte angegeben.
+
+* Beenden
++
+Beenden Sie das SecurityAdmin-Tool.
+
+
+
+Wählen Sie die Option, die Sie konfigurieren möchten, und befolgen Sie die Anweisungen.

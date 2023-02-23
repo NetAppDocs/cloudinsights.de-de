@@ -25,6 +25,6 @@ Siehe link:cs_restrict_user_access.html["Einschränken Des Benutzerzugriffs"] Se
 
 Sie können eine Richtlinie für automatische Reaktionen ändern oder anhalten, indem Sie die Option im Dropdown-Menü der Richtlinie auswählen.
 
-Cloud Secure löscht automatisch Snapshots einmal pro Tag basierend auf den Einstellungen des Snapshot Löschen.
+Workload Security löscht automatisch Snapshots einmal pro Tag auf Basis der Snapshot-Einstellungen.
 
 image:CloudSecure_SnapshotPurgeSettings.png["Einstellungen Für Snapshot Löschen"]

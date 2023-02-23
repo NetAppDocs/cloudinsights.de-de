@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_cs_agent_requirements.html 
 summary: Der Server oder die VM, die Sie als Agent verwenden, müssen die Mindestanforderungen erfüllen 
-keywords: agent, Linux, requirements, docker, browsers, permissions, Network 
+keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cloud Secure 
 ---
-= Anforderungen An Den Agenten
+= Anforderungen An Security Agent Für Workloads
 :allow-uri-read: 
 
 
@@ -31,9 +31,9 @@ Unbedingt link:task_cs_add_agent.html["Installieren Sie einen Agenten"] Um Infor
 | Verfügbarer Festplattenspeicher | Speicherplatz sollte auf diese Weise zugewiesen werden: /Opt/netapp 35 GB (Minimum) Wenn /opt ein gemounteter Ordner aus einem NAS-Speicher ist, stellen Sie sicher, dass lokale Benutzer Zugriff auf diesen Ordner haben. Agent oder Data Collector können nicht installiert werden, wenn lokale Benutzer nicht über die Berechtigung zu diesem Ordner verfügen. Siehe link:task_cs_add_agent.html#troubleshooting-agent-errors["Fehlerbehebung"] Weitere Informationen finden Sie in diesem Abschnitt. 
 
 
-| Netzwerk | 100 Mbit/s bis 1 Gbit/s Ethernet-Verbindung, statische IP-Adresse, IP-Konnektivität zu allen Geräten und ein erforderlicher Port zur Cloud Secure-Instanz (80 oder 443). 
+| Netzwerk | 100 Mbit/s bis 1 Gbit/s Ethernet-Verbindung, statische IP-Adresse, IP-Konnektivität zu allen Geräten und ein erforderlicher Port zur Workload Security-Instanz (80 oder 443). 
 |===
-Hinweis: Der Cloud Secure Agent kann auf demselben Rechner wie eine Cloud Insights-Erfassungseinheit und/oder Agent installiert werden. Es ist jedoch eine Best Practice, diese in separaten Maschinen zu installieren. Wenn diese auf demselben Rechner installiert sind, weisen Sie den Festplattenspeicherplatz wie unten gezeigt zu:
+Hinweis: Der Workload Security Agent kann auf demselben Rechner wie ein Cloud Insights-Erfassungsgerät und/oder -Agent installiert werden. Es ist jedoch eine Best Practice, diese in separaten Maschinen zu installieren. Wenn diese auf demselben Rechner installiert sind, weisen Sie den Festplattenspeicherplatz wie unten gezeigt zu:
 
 |===
 
@@ -51,7 +51,7 @@ Hinweis: Der Cloud Secure Agent kann auf demselben Rechner wie eine Cloud Insigh
 
 == Zugriffsregeln Für Das Cloud-Netzwerk
 
-Für *US-basierte* Cloud Secure-Umgebungen:
+Für * US-basierte * -Sicherheitsumgebungen:
 
 [cols="5*"]
 |===
@@ -63,7 +63,7 @@ Für *US-basierte* Cloud Secure-Umgebungen:
 
 | TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Authentifizierungsservices 
 |===
-Für *Cloud Secure-Umgebungen mit Sitz in Europa:
+Für *Europa-basierte* Arbeitslastsicherheitsumgebungen:
 
 [cols="5*"]
 |===
@@ -75,7 +75,7 @@ Für *Cloud Secure-Umgebungen mit Sitz in Europa:
 
 | TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Authentifizierungsservices 
 |===
-Für *APAC-basierte* Cloud Secure-Umgebungen:
+Für * APAC-basierte * -Arbeitsumgebungen:
 
 [cols="5*"]
 |===
@@ -107,7 +107,7 @@ Beachten Sie, dass beim Hinzufügen von _link:task_add_collector_svm.html#permis
 | TCP | 35000 - 55000 | SVM-Daten-LIF-IP-Adressen | Eingehend/Ausgehend | Kommunikation mit ONTAP bei FPolicy-Ereignissen 
 
 
-| TCP | 7 | SVM-Daten-LIF-IP-Adressen | Bidirektional | Bidirektional zwischen ONTAP und Cloud Secure. Agent pingt die SVM-LIFs an. 
+| TCP | 7 | SVM-Daten-LIF-IP-Adressen | Bidirektional | Bidirektional zwischen ONTAP und Workload Security. Agent pingt die SVM-LIFs an. 
 |===
 
 

@@ -2,32 +2,32 @@
 sidebar: sidebar 
 permalink: concept_cs_api.html 
 keywords: api, access, token, swagger 
-summary: Cloud Secure bietet eine leistungsstarke API zur Integration in andere Applikationen wie CMDBs. 
+summary: Workload Security umfasst eine leistungsstarke API zur Integration in andere Applikationen wie CMDBs. 
 ---
-= Cloud Secure API
+= Workload-Sicherheits-API
 :allow-uri-read: 
 
 
 [role="lead"]
-Die Cloud Secure API ermöglicht NetApp Kunden und unabhängigen Software-Anbietern (ISVs) die Integration von Cloud Secure in andere Applikationen wie CMDB- oder andere Ticketsysteme.
+Die Workload-Sicherheits-API ermöglicht NetApp Kunden und unabhängigen Software-Anbietern (ISVs) die Integration der Workload-Sicherheit in andere Applikationen wie CMDB- oder andere Ticketsysteme.
 
 Anforderungen für API-Zugriff:
 
 * Ein API-Zugriffstoken-Modell wird verwendet, um den Zugriff zu gewähren.
-* Das Management von API-Token wird von Cloud Secure-Benutzern mit der Administratorrolle durchgeführt.
+* Das Management von API-Token wird von Workload Security-Benutzern mit der Administratorrolle durchgeführt.
 
 
 
 
 == API-Dokumentation (Swagger)
 
-Die neuesten API-Informationen finden Sie, indem Sie sich bei Cloud Secure anmelden und zu *Admin > API-Zugriff* navigieren. Klicken Sie auf den Link *API Documentation*. Die API-Dokumentation ist Swagger-basiert, die eine kurze Beschreibung und Verwendungsinformationen für die API enthält und Sie können es in Ihrer Umgebung ausprobieren.
+Die neuesten API-Informationen finden Sie, indem Sie sich bei Workload Security anmelden und zu *Admin > API Access* navigieren. Klicken Sie auf den Link *API Documentation*. Die API-Dokumentation ist Swagger-basiert, die eine kurze Beschreibung und Verwendungsinformationen für die API enthält und Sie können es in Ihrer Umgebung ausprobieren.
 
 
 
 == API-Zugriffs-Tokens
 
-Bevor Sie die Cloud Secure-API verwenden, müssen Sie ein oder mehrere *API-Zugriffstoken* erstellen. Access Tokens gewähren Leseberechtigungen. Sie können auch die Ablauffrist für jedes Access Token festlegen.
+Bevor Sie die Workload Security API verwenden, müssen Sie ein oder mehrere *API Access Token* erstellen. Access Tokens gewähren Leseberechtigungen. Sie können auch die Ablauffrist für jedes Access Token festlegen.
 
 So erstellen Sie ein Access Token:
 

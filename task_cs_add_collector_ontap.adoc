@@ -9,7 +9,7 @@ summary: Hinzufügen von Datensammlern
 
 
 [role="lead"]
-Cloud Secure verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen. Die Daten werden Cloud Secure zur Analyse zur Verfügung gestellt.
+Workload Security verwendet Datensammler, um Datei- und Benutzerzugriffsdaten von Geräten zu erfassen. Die Daten werden der Workload Security zur Analyse zur Verfügung gestellt.
 
 .Bevor Sie beginnen
 Sie benötigen die folgenden Informationen, um diesen Datensammler zu konfigurieren:
@@ -21,7 +21,7 @@ Sie benötigen die folgenden Informationen, um diesen Datensammler zu konfigurie
 
 
 .Schritte zur Konfiguration
-. Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Secure-Umgebung an.
+. Melden Sie sich als Administrator oder Account-Inhaber an Ihrer Workload Security-Umgebung an.
 . Klicken Sie Auf *Admin > Datensammler > +Datensammler*
 +
 Das System zeigt die verfügbaren Datensammler an.
