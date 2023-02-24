@@ -10609,7 +10609,6 @@
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">Event Rate Checker (Agent Sizing Guide)</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">Wenn Sie sich bei Cloud Insights anmelden und Ihre Umgebung aktiv ist, können Sie Cloud Insights 30 Tage lang kostenlos testen. Während dieser Testversion können Sie sich die Funktionen von Cloud Insights in Ihrer eigenen Umgebung ansehen.</block>
   <block id="fca4fedbe53af4420a279beead573bdf" category="doc">Workload Security: Simulation eines Angriffs</block>
-  <block id="373799975bf9df78f2b7e58b488fdb43" category="paragraph">Code --- Sidebar: Sidebar permalink: concept_cs_attack_simulator.html Schlüsselwörter: ransomware, Simulation, Simulator, beschränken, Angriff Zusammenfassung: Mit einem Skript, können Sie einen Ransomware-Angriff für Tests oder Demonstration Workload Security simulieren ---</block>
   <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">Mithilfe der Anweisungen auf dieser Seite können Sie einen Angriff für das Testen oder Demonieren der Workload-Sicherheit mithilfe des im Lieferumfang enthaltenen Skripts Ransomware Simulation simulieren.</block>
   <block id="16fa78539f96944e79f64b961036e74d" category="list-text">Das Skript wird mit den Installationsdateien des Workload Security Agent bereitgestellt. Sie ist auf jedem Computer verfügbar, auf dem ein Workload Security Agent installiert ist.</block>
   <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">Sie können das Skript auf dem Workload Security Agent-Rechner selbst ausführen; es ist nicht erforderlich, einen anderen Linux-Rechner vorzubereiten. Wenn Sie jedoch das Skript lieber auf einem anderen System ausführen möchten, kopieren Sie einfach das Skript und führen es dort aus.</block>
@@ -10781,4 +10780,5 @@
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">Konfigurieren eines Workload Security Agent</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">Workload Security User Management</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">Acquisition Unit installiert, deinstalliert, Proxy-Support konfiguriert und vieles mehr unter Windows und Linux.</block>
+  <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">Mithilfe eines Skripts können Sie einen Ransomware-Angriff zum Testen oder Vorführen von Workload Security simulieren</block>
 </blocks>

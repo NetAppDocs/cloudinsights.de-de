@@ -1,12 +1,12 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_attack_simulator.html 
+keywords: ransomware, simulation, simulator, restrict, attack 
+summary: Mithilfe eines Skripts können Sie einen Ransomware-Angriff zum Testen oder Vorführen von Workload Security simulieren 
+---
 = Workload Security: Simulation eines Angriffs
 :allow-uri-read: 
 
-
-Code --- Sidebar: Sidebar permalink: concept_cs_attack_simulator.html Schlüsselwörter: ransomware, Simulation, Simulator, beschränken, Angriff Zusammenfassung: Mit einem Skript, können Sie einen Ransomware-Angriff für Tests oder Demonstration Workload Security simulieren ---
-
-
-
-= Workload Security: Simulation eines Angriffs
 
 [role="lead"]
 Mithilfe der Anweisungen auf dieser Seite können Sie einen Angriff für das Testen oder Demonieren der Workload-Sicherheit mithilfe des im Lieferumfang enthaltenen Skripts Ransomware Simulation simulieren.
