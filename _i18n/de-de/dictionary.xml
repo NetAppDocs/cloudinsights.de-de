@@ -8759,7 +8759,6 @@
   <block id="4aba696177ce8a74216803ac14343d2c" category="sidebar">Konfigurierte Datensammler Verwalten</block>
   <block id="72633c43eaf6d098d8df9b7b7cf5fb7a" category="sidebar">Untersuchen Sie Fehler der Datensammlung</block>
   <block id="3f919c7c06027082bb746a8ef324bad2" category="sidebar">Empfohlene Dashboards Werden Importiert</block>
-  <block id="299db49f1f95a819e1364febfbbb0b0f" category="sidebar">Wechsel zu anderen Cloud Central Produkten</block>
   <block id="7d98fdc49fc17d8fbb4bb34a4904c7c8" category="sidebar">Liste Des Data Collectors</block>
   <block id="dccd6b1a35e5f58699c220a398ba4b60" category="sidebar">Automatische Geräteauflösung</block>
   <block id="a0a44b683686e93d33180f439c1b3ed7" category="sidebar">Übersicht Über Die Geräteauflösung</block>
@@ -10781,4 +10780,6 @@
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">Workload Security User Management</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">Acquisition Unit installiert, deinstalliert, Proxy-Support konfiguriert und vieles mehr unter Windows und Linux.</block>
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">Mithilfe eines Skripts können Sie einen Ransomware-Angriff zum Testen oder Vorführen von Workload Security simulieren</block>
+  <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">Benutzer (IP-Adresse) Blockieren für NFS funktioniert, aber für SMB / CIFS, sehe ich eine Fehlermeldung: “SID to DomainName Transformation fehlgeschlagen. Grund-Timeout: Socket wurde nicht hergestellt“</block>
+  <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">Dies kann vorkommen, dass _csuser_ nicht über die Berechtigung verfügt, ssh auszuführen. (Stellen Sie die Verbindung auf Cluster-Ebene sicher, und stellen Sie dann sicher, dass der Benutzer ssh ausführen kann.) _Csuser_ Rolle erfordert diese Berechtigungen.<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>Führen Sie für _csuser_ mit Cluster-Anmeldeinformationen über die ONTAP-Befehlszeile Folgendes aus: Sicherheits-Login Rolle create -role csrole -cmddirname "vserver Export-Policy rule" -Access all Security Login role create -role csrdirname set -Access all Security Login role create -role csrole -cmddirname "vserver cifs Session" -Access all Security Login role create -role csrole -cmddirname "vserver Services Access-Check Authentication Translate" -Access all Security Login Rolle create -role csrole -cmddirname "vserver Name-Mapping" -Access all Wenn _csuser_ nicht verwendet wird und wenn Admin-Benutzer auf Cluster-Ebene verwendet wird, stellen Sie sicher, dass der Admin-Benutzer SSH-Berechtigung für ONTAP hat.</block>
 </blocks>
