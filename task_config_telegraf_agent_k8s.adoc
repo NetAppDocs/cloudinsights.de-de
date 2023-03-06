@@ -54,10 +54,7 @@ Cloud Insights unterstützt das Monitoring von Kubernetes-Nodes, auf denen Linux
 |===
 * Der NetApp Kubernetes Monitoring Operator und seine Abhängigkeiten (telegraf, kube-State-metrics, Fluentbit, etc.) werden nicht auf Nodes unterstützt, die mit der Arm64-Architektur ausgeführt werden.
 * Folgende Befehle müssen verfügbar sein: _Curl_, _sudo_, _openssl_, _sha256sum_ und _kubectl_. Um optimale Ergebnisse zu erzielen, fügen Sie diese Befehle in den PFAD ein.
-
-
->>>>>>> E64b5299cf9e0451417037778f9d37b84b9d9e6b * der Host, den Sie für die Installation des NetApp Kubernetes Monitoring Operator verwenden werden, muss für die Kommunikation mit dem Ziel-K8s-Cluster _kubectl_ konfiguriert haben und über eine Internetverbindung zu Ihrer Cloud Insights-Umgebung verfügen. Wenn für diesen Host ein Proxy erforderlich ist, um Cloud Insights zu erreichen, befolgen Sie die Anweisungen im <<configuring-proxy-support,Proxy-Unterstützung Wird Konfiguriert>> Abschnitt.
-
+* Der Host, den Sie für die Installation des NetApp Kubernetes Monitoring Operator verwenden werden, muss für die Kommunikation mit dem Ziel-K8s-Cluster _kubectl_ konfiguriert sein. Zudem muss eine Internetverbindung zur Cloud Insights-Umgebung vorhanden sein. Wenn für diesen Host ein Proxy erforderlich ist, um Cloud Insights zu erreichen, befolgen Sie die Anweisungen im <<configuring-proxy-support,Proxy-Unterstützung Wird Konfiguriert>> Abschnitt.
 * Der NetApp Kubernetes Monitoring Operator installiert seine eigenen kube-State-Metriken, um Konflikte mit anderen Instanzen zu vermeiden.
 * Wenn Sie sich während der Installation hinter einem Proxy befinden oder wenn Sie den zu überwachenden K8s-Cluster betreiben, befolgen Sie die Anweisungen im <<configuring-proxy-support,Proxy-Unterstützung Wird Konfiguriert>> Abschnitt.
 * Zum Erstellen von Kubernetes-Clusterrollen und Rollenbindungen müssen Sie über die erforderlichen Berechtigungen verfügen.
@@ -426,7 +423,7 @@ Das Installationsskript, die Umgebungsdatei und die YAML-Dateien können mittels
 
 Die PEM-Datei kann durch Bestätigung des Fingerabdrucks wie folgt verifiziert werden:
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 Genauer gesagt,
 
  openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
