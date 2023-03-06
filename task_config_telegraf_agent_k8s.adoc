@@ -33,7 +33,7 @@ image:kubernetes_tile.png["Kubernetes Data Collector"]
 
 
 * Die Installation des NetApp Kubernetes Monitoring Operator wird mit Kubernetes Version 1.20 oder neuer unterstützt.
-* Wenn Cloud Insights den Backend-Storage überwacht und Kubernetes mit der Docker Container-Laufzeit verwendet wird, kann Cloud Insights Zuordnungen von Pod zu PV-zu-Storage für NFS und iSCSI anzeigen; andere Laufzeiten zeigen nur iSCSI.
+* Wenn Cloud Insights den Back-End-Storage überwacht und Kubernetes bei der Laufzeit des Docker Containers verwendet wird, kann Cloud Insights Pod-zu-PV-zu-Storage-Zuordnungen für NFS und iSCSI anzeigen. Andere Runtimes zeigen nur NFS an.
 * Ab August 2022 unterstützt der NetApp Kubernetes Monitoring Operator Pod Security Policy (PSP). Unbedingt <<Aktualisierung,Upgrade>> Den neuesten NetApp Kubernetes Monitoring Operator finden, wenn in Ihrer Umgebung PSP verwendet wird.
 * Wenn Sie auf OpenShift 4.6 oder höher laufen, müssen Sie die *OpenShift-Anweisungen* weiter unten befolgen. Außerdem müssen Sie sicherstellen, dass diese Voraussetzungen erfüllt sind.
 * Die Überwachung ist nur auf Linux Knoten installiert
