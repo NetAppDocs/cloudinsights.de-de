@@ -90,10 +90,14 @@ Um die Variable(en) festzulegen, führen Sie auf Ihrem System *vor* der Installa
 
 . Legen Sie die Umgebungsvariable _https_Proxy_ und/oder _http_Proxy_ für den aktuellen Benutzer fest:
 +
- export https_proxy=<proxy_server>:<proxy_port>
-. _/etc/default/telegraf_ erstellen und Definitionen für die Variable(en) _https_Proxy_ und/oder _http_Proxy_ einfügen:
+.. Wenn der Proxy, der eingerichtet wird, keine Authentifizierung (Benutzername/Passwort) aufweist, führen Sie den folgenden Befehl aus:
 +
- https_proxy=<proxy_server>:<proxy_port>
+ export https_proxy=<proxy_server>:<proxy_port>
+.. Wenn der Proxy, der eingerichtet wird, über Authentifizierung (Benutzername/Passwort) verfügt, führen Sie folgenden Befehl aus:
++
+ export http_proxy= <proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
+
+
 
 
 Nachdem Sie alle diese Anweisungen gelesen haben, installieren Sie den Proxy, der für die Kommunikation Ihres Kubernetes Clusters mit Ihrer Cloud Insights-Umgebung verwendet wurde.
