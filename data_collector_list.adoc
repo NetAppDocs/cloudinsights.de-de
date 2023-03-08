@@ -75,7 +75,7 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_dc_emc_isilon.html["Dell EMC PowerScale (vormals Isilon)"] | Infrastruktur 
 
 
-| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon REST"] | Infrastruktur 
+| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon/PowerScale REST"] | Infrastruktur 
 
 
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | Infrastruktur 

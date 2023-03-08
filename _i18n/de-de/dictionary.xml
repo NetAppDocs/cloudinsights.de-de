@@ -9773,7 +9773,6 @@
   <block id="0df3afc7b3c290bc4820d50b2bee11b4" category="cell">CPU-Wartezeit insgesamt in Prozent</block>
   <block id="2c4465560ecae928ff0585737c3acf45" category="cell">VMware API</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web-Services</block>
-  <block id="831b6c031c23b2fb141faacc1a32e259" category="doc">Dell EMC Isilon REST Data Collector</block>
   <block id="6d06382ef6c5abdd0a682226c6351821" category="list-text">HTTPS-Zugriff auf Port 8080</block>
   <block id="f7ef35e4c0665f97997b1078e76e42c4" category="cell">Isilon IP-Adresse</block>
   <block id="ed705ee9e97ca31274136726da061128" category="cell">Die IP-Adresse oder der vollqualifizierte Domain-Name des Isilon-Speichers</block>
@@ -10371,8 +10370,6 @@
   <block id="ba6ad5c825f9877ce4f39aaf439755f6" category="list-text">MacOS:</block>
   <block id="2759aa04a78ddf03f5db1a25acdca496" category="section-title">Überprüfen Sie die Prüfsumme mithilfe der PEM-Datei</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">Installieren Sie das heruntergeladene Paket</block>
-  <block id="3fb9d15e7ce5e74d2d3cbbd4d6d1eeb7" category="inline-link-macro">Dell EMC Isilon REST</block>
-  <block id="debcc72094a806a749160def821d5dcf" category="cell"><block ref="debcc72094a806a749160def821d5dcf" category="inline-link-macro-rx"></block></block>
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Dell EMC Unisphere REST</block>
   <block id="7bb1c93f44835a04f1a5d46dd4f4b400" category="cell"><block ref="7bb1c93f44835a04f1a5d46dd4f4b400" category="inline-link-macro-rx"></block></block>
   <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights unterstützt <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> Als Agent für die Sammlung von Integrationsdaten und kann auf Windows, Linux, macOS und Kubernetes konfiguriert werden.</block>
@@ -10786,4 +10783,8 @@
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud-Anbindung für ONTAP 9.9+ veraltet</block>
   <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">Die Cloud-Verbindung für den ONTAP 9.9+-Datensammler wird veraltet. Ab dem 4. April 2023 werden die Datensammler von Cloud Connection in Ihrer Umgebung keine Daten mehr sammeln, sondern beim Abrufen einen Fehler anzeigen. Der Datensammler der Cloud-Verbindung wird in einem späteren Update komplett aus Cloud Insights entfernt.</block>
   <block id="8ae386dae67728714e42ae37acbde665" category="paragraph">Vor dem 4. April 2023 ist die Konfiguration eines neuen Datensammlers für die NetApp ONTAP Datenmanagement-Software für alle ONTAP Systeme, die derzeit über Cloud Connection erfasst werden, erforderlich. <block ref="61bbaeff08609910a4a5c1401ada9f16" category="inline-link-macro-rx"></block>.</block>
+  <block id="3d535cce2c7c7b6ca074afafcd02ca81" category="inline-link-macro">Dell EMC Isilon/PowerScale REST</block>
+  <block id="0f68b3cd7cc981b302e5fc48409617ab" category="cell"><block ref="0f68b3cd7cc981b302e5fc48409617ab" category="inline-link-macro-rx"></block></block>
+  <block id="e23a1eab258608c673f841550477728b" category="doc">Rest-Datensammler Dell EMC Isilon/PowerScale</block>
+  <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon/PowerScale REST</block>
 </blocks>
