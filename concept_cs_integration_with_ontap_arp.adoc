@@ -58,7 +58,9 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 Im Folgenden wird eine Beispielwarnung angezeigt, die aufgrund eines ARP-Ereignisses generiert wurde:
 
-image:CS_ONTAP_ARP_EXAMPLE.png["Beispielbildschirm von ONTAP ARP"]
+image:CS_Ransomware_Example_1.png["Ransomware Alert – oberer Abschnitt"]
+image:CS_Ransomware_Example_2.png["Ransomware Alert – oberer Abschnitt"]
+image:CS_Ransomware_Example_3.png["Ransomware Alert – oberer Abschnitt"]
 
 Ein hochvertrauliches Banner zeigt auf, dass der Angriff das Verhalten von Ransomware zusammen mit Dateiverschlüsselungsaktivitäten gezeigt hat. Das Diagramm der verschlüsselten Dateien gibt den Zeitstempel an, mit dem die Volume-Verschlüsselungsaktivität von der ARP-Lösung erkannt wurde.
 
