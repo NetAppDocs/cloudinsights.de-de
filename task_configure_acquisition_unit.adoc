@@ -83,6 +83,8 @@ Am einfachsten ist es, die Platzhalterkonfiguration in Ihrem Proxy/Firewall anzu
 
 NOTE: Die Verwendung eines Sternchen (*) für Platzhalter ist üblich, aber Ihre Proxy-/Firewall-Konfiguration kann ein anderes Format verwenden. Fragen Sie in Ihrer Proxy-Dokumentation nach, um die korrekte Platzhalterspezifikation in Ihrer Umgebung sicherzustellen.
 
+Weitere Informationen zur Proxy-Konfiguration finden Sie im NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["Wissensdatenbank"].
+
 
 
 ==== Anzeigen von Proxy-URLs
@@ -136,6 +138,8 @@ Am einfachsten ist es, die Platzhalterkonfiguration in Ihrem Proxy/Firewall anzu
  *.cloudinsights.netapp.com
 
 NOTE: Die Verwendung eines Sternchen (*) für Platzhalter ist üblich, aber Ihre Proxy-/Firewall-Konfiguration kann ein anderes Format verwenden. Fragen Sie in Ihrer Proxy-Dokumentation nach, um die korrekte Platzhalterspezifikation in Ihrer Umgebung sicherzustellen.
+
+Weitere Informationen zur Proxy-Konfiguration finden Sie im NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["Wissensdatenbank"].
 
 
 
