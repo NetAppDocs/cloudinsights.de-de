@@ -68,7 +68,9 @@ image:SupportPage_SN_Section-NA.png["SN_Screen"]
 
 == Abrufen Von Support-Informationen
 
-NetApp bietet auf verschiedene Weise Unterstützung für Cloud Insights. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledgebase-Artikel (KB) oder die NetApp Community. Für Benutzer, die eine der Cloud Insights Editionen (Basic, Standard, Premium) abonniert haben, steht der technische Support per Telefon- oder WebTicketing zur Verfügung. Für Webticket und die Case-Verwaltung ist ein NSS-Konto (NetApp Support Site) erforderlich.
+NetApp bietet auf verschiedene Weise Unterstützung für Cloud Insights. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledgebase-Artikel (KB) oder die NetApp Community. Für Benutzer, die eine der Cloud Insights-Editionen (Basic*, Standard, Premium) abonniert haben, steht der technische Support per Telefon oder Web-Ticketing zur Verfügung. Für Webticket und die Case-Verwaltung ist ein NSS-Konto (NetApp Support Site) erforderlich.
+
+*Der Support ist bei Basic Edition verfügbar, sofern alle NetApp Speichersysteme mindestens auf Premium Support Level abgedeckt sind.
 
 
 
