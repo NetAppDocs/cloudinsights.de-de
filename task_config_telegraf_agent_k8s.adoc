@@ -172,7 +172,10 @@ password: <password from docker secret step above>
 ....
 Ziehen Sie das Fahrerandockerbild aus dem Cloud Insights. Stellen Sie sicher, dass die Versionsnummer _netapp-Monitoring_ aktuell ist:
 
- docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+....
+docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<version>
+....
 Suchen Sie das Feld „_netapp-Monitoring_ <Version>“ mit dem folgenden Befehl:
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
