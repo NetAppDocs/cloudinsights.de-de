@@ -453,7 +453,7 @@ Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Perform
 
 Einige Dinge, die Sie versuchen können, wenn Probleme bei der Einrichtung des NetApp Kubernetes Monitoring Operators auftreten:
 
-[cols="2*"]
+[cols="stretch"]
 |===
 | Problem: | Versuchen Sie dies: 
 
@@ -480,5 +480,17 @@ Einige Dinge, die Sie versuchen können, wenn Probleme bei der Einrichtung des N
 
 
 | „ImagePullBackoff“-Fehler erkannt | Diese Fehler treten möglicherweise auf, wenn Sie über ein benutzerdefiniertes oder privates Docker Repository verfügen und den NetApp Kubernetes Monitoring Operator noch nicht so konfiguriert haben, dass es richtig erkannt wird. <<using-a-custom-or-private-docker-repository,Weitere Informationen>> Info zur Konfiguration für benutzerdefinierte/private Repo. 
+
+
+| Ich habe ein Problem mit der Installation meines Monitoring-Bedieners, und die aktuelle Dokumentation hilft mir nicht, es zu lösen.  a| 
+Erfassen oder notieren Sie die Ausgabe der folgenden Befehle, und wenden Sie sich an den technischen Support.
+
+[listing]
+----
+ kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
+ kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+----
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
