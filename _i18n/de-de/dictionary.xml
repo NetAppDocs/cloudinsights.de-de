@@ -10796,4 +10796,5 @@
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">Ich habe ein Problem mit der Installation meines Monitoring-Bedieners, und die aktuelle Dokumentation hilft mir nicht, es zu lösen.</block>
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">Erfassen oder notieren Sie die Ausgabe der folgenden Befehle, und wenden Sie sich an den technischen Support.</block>
+  <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
 </blocks>
