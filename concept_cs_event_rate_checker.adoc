@@ -143,32 +143,23 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| Frage: Wenn ich dieses Skript auf einer SVM lasse, die bereits für Workload Security konfiguriert ist, verwendet es nur die bestehende fpolicy-Konfiguration auf der SVM oder richtet es einen temporären ein und führt den Prozess aus? 
+| Frage | Antwort 
 
 
-| Antwort: Der Event Rate Checker kann auch für eine SVM, die bereits für Workload-Sicherheit konfiguriert ist, problemlos ausgeführt werden. Es sollte keine Auswirkungen geben. 
+| Wenn ich dieses Skript auf einer SVM ausführe, die bereits für die Workload-Sicherheit konfiguriert ist, verwendet es einfach die bestehende fpolicy-Konfiguration auf der SVM oder richtet es eine temporäre ein und führt den Prozess aus? | Der Event Rate Checker kann auch für eine bereits für Workload Security konfigurierte SVM einwandfrei ausgeführt werden. Es sollte keine Auswirkungen geben. 
 
 
-| Frage: Kann ich die Anzahl der SVMs erhöhen, auf denen das Skript ausgeführt werden kann? 
+| Kann ich die Anzahl der SVMs erhöhen, auf denen das Skript ausgeführt werden kann? | Ja. Bearbeiten Sie einfach das Skript und ändern Sie die maximale Anzahl der SVMs von 5 in eine beliebige Zahl. 
 
 
-| Antwort: Ja. Bearbeiten Sie einfach das Skript und ändern Sie die maximale Anzahl der SVMs von 5 in eine beliebige Zahl. 
+| Wenn ich die Anzahl der SVMs vergrössern möchte, wird sich damit die Ausführung des Skripts verlängern? | Nein Das Skript wird für maximal 5 Minuten ausgeführt, selbst wenn die Anzahl der SVMs erhöht wird. 
 
 
-| Frage: Wenn ich die Anzahl der SVMs erhöhe, wird es die Zeit für das Ausführen des Skripts verkürzen? 
+| Kann ich die Anzahl der SVMs erhöhen, auf denen das Skript ausgeführt werden kann? | Ja. Sie müssen das Skript bearbeiten und die maximale Anzahl an SVMs von 5 in eine beliebige andere Maximalzahl ändern. 
 
 
-| Antwort: Nein Das Skript wird für maximal 5 Minuten ausgeführt, selbst wenn die Anzahl der SVMs erhöht wird. 
+| Wenn ich die Anzahl der SVMs vergrössern möchte, wird sich damit die Ausführung des Skripts verlängern? | Nein Das Skript läuft für maximal 5 Minuten, selbst wenn die Anzahl der SVMs erhöht wird. 
 
 
-| Frage: Kann ich die Anzahl der SVMs erhöhen, auf denen das Skript ausgeführt werden kann? 
-
-
-| Antwort: Ja. Sie müssen das Skript bearbeiten und die maximale Anzahl an SVMs von 5 in eine beliebige andere Maximalzahl ändern. 
-
-
-| Frage: Wenn ich die Anzahl der SVMs erhöhe, wird es die Zeit für das Ausführen des Skripts verkürzen? 
-
-
-| Antwort: Nein Das Skript läuft für maximal 5 Minuten, selbst wenn die Anzahl der SVMs erhöht wird. 
+| Was passiert, wenn ich die Ereignisratsprüfung mit einem vorhandenen Agenten durchführe? | Wenn Sie die Ereignisratenprüfung für einen bereits vorhandenen Agenten ausführen, kann dies zu einer Erhöhung der Latenz auf der SVM führen. Diese Erhöhung ist temporär, während die Ereignisratenprüfung ausgeführt wird. 
 |===

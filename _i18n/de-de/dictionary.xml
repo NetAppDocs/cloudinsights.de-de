@@ -3103,12 +3103,6 @@
   <block id="7040b350f10440ae0d8da871848e4a81" category="list-text">Eine bereits vorhandene fpolicy mit demselben Namen, der gleichen Sequenznummer usw. gibt einen Fehler.</block>
   <block id="92848109d677425a3581b7e70806e998" category="list-text">Das Skript wird während des Laufs abrupt unterbrochen.</block>
   <block id="f03d806bb84581d824fc78103e668b12" category="paragraph">Ein Beispiel für einen Skriptdurchlauf ist unten dargestellt:</block>
-  <block id="414578a6fb051cf762571b6abc3062a7" category="cell">Frage: Kann ich die Anzahl der SVMs erhöhen, auf denen das Skript ausgeführt werden kann?</block>
-  <block id="4c39b760a2129c8773ade4e38c7ee8a1" category="cell">Antwort: Ja. Bearbeiten Sie einfach das Skript und ändern Sie die maximale Anzahl der SVMs von 5 in eine beliebige Zahl.</block>
-  <block id="70fd916f11013b88f353d7c4cc8288b0" category="cell">Frage: Wenn ich die Anzahl der SVMs erhöhe, wird es die Zeit für das Ausführen des Skripts verkürzen?</block>
-  <block id="f64044d833e646b68fe903a7d7204ce9" category="cell">Antwort: Nein Das Skript wird für maximal 5 Minuten ausgeführt, selbst wenn die Anzahl der SVMs erhöht wird.</block>
-  <block id="aeb20f65fbd8c09dda397cfc3a4d6120" category="cell">Antwort: Ja. Sie müssen das Skript bearbeiten und die maximale Anzahl an SVMs von 5 in eine beliebige andere Maximalzahl ändern.</block>
-  <block id="e90fb31b8ec18f1817a08fecf70d9418" category="cell">Antwort: Nein Das Skript läuft für maximal 5 Minuten, selbst wenn die Anzahl der SVMs erhöht wird.</block>
   <block id="92726ab5faeb2cb9208eaac9af0346bd" category="doc">Benutzerverwaltung</block>
   <block id="db03a10b973a96816a6cf82300b069fa" category="cell">Cloud Secure Zugriff</block>
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">Alle Cloud Secure-Funktionen, einschließlich der Funktionen für Alarme, Forensik, Datensammler, automatisierte Antwortrichtlinien und APIs für Cloud Secure, können ausgeführt werden. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Cloud Secure-Rollen zuweisen.</block>
@@ -10744,8 +10738,6 @@
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">Auf der Seite Alle Aktivitäten können Sie die Aktionen verstehen, die für Einheiten in der Workload-Sicherheitsumgebung durchgeführt werden.</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">Der Aktivitätsverlauf wird 13 Monate lang in aktiven Workload-Sicherheitsumgebungen aufbewahrt.</block>
-  <block id="48d308d5944f69b2199664d16fb4ef02" category="cell">Frage: Wenn ich dieses Skript auf einer SVM lasse, die bereits für Workload Security konfiguriert ist, verwendet es nur die bestehende fpolicy-Konfiguration auf der SVM oder richtet es einen temporären ein und führt den Prozess aus?</block>
-  <block id="6dc6e27b054fdfb47ea4834bce442633" category="cell">Antwort: Der Event Rate Checker kann auch für eine SVM, die bereits für Workload-Sicherheit konfiguriert ist, problemlos ausgeführt werden. Es sollte keine Auswirkungen geben.</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">In der OnCommand Cloud Volumes ONTAP-Dokumentation können Sie eine AWS-Instanz mit einem Node/HA für das Hosting des Workload Security Agent konfigurieren:<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">Konfigurieren Sie in AWS die Maschine, die als Workload Security Agent verwendet werden soll, mit den folgenden Schritten:</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">Konfigurieren Sie die Maschine, die als Workload Security Agent verwendet werden soll, wie folgt:</block>
@@ -10797,4 +10789,16 @@
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">Erfassen oder notieren Sie die Ausgabe der folgenden Befehle, und wenden Sie sich an den technischen Support.</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">Das Dashboard *Übersicht* zeigt nützliche Informationen wie die Anzahl der Cluster in Ihrer Umgebung mit ihrer Gesamtkapazität und ihren Prozentwerten an Performance an. Außerdem werden Prognosedaten zur Anzahl der erwarteten Tage angezeigt, bis ihnen die Storage-Kapazität oder Performance-Kapazität nicht mehr genügend Speicherplatz zur Verfügung steht. Außerdem, wenn Controller in Ihrer Infrastruktur mit einer CPU von mehr als 65 % laufen - wodurch Ihr Cluster möglicherweise im Falle eines Failovers gefährdet wird - zeigt ONTAP Essentials diese als „Hot“ Controller an.</block>
+  <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">Frage</block>
+  <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">Antwort</block>
+  <block id="d0361ec8dd55377b979879d46798dd21" category="cell">Wenn ich dieses Skript auf einer SVM ausführe, die bereits für die Workload-Sicherheit konfiguriert ist, verwendet es einfach die bestehende fpolicy-Konfiguration auf der SVM oder richtet es eine temporäre ein und führt den Prozess aus?</block>
+  <block id="dd6c1727e8619e941f226765e3ee28ed" category="cell">Der Event Rate Checker kann auch für eine bereits für Workload Security konfigurierte SVM einwandfrei ausgeführt werden. Es sollte keine Auswirkungen geben.</block>
+  <block id="865bc2d6c9cc50637b3abc05118e4574" category="cell">Kann ich die Anzahl der SVMs erhöhen, auf denen das Skript ausgeführt werden kann?</block>
+  <block id="d2a27dbe2bebb82fe8bccf11a4f69d9b" category="cell">Ja. Bearbeiten Sie einfach das Skript und ändern Sie die maximale Anzahl der SVMs von 5 in eine beliebige Zahl.</block>
+  <block id="e94aec426eb2ace8240d7abaeefa8597" category="cell">Wenn ich die Anzahl der SVMs vergrössern möchte, wird sich damit die Ausführung des Skripts verlängern?</block>
+  <block id="3367c7848384adc0d8f9445dcca8b87e" category="cell">Nein Das Skript wird für maximal 5 Minuten ausgeführt, selbst wenn die Anzahl der SVMs erhöht wird.</block>
+  <block id="49eeed91da2974d7d682c9398b2adbd0" category="cell">Ja. Sie müssen das Skript bearbeiten und die maximale Anzahl an SVMs von 5 in eine beliebige andere Maximalzahl ändern.</block>
+  <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">Nein Das Skript läuft für maximal 5 Minuten, selbst wenn die Anzahl der SVMs erhöht wird.</block>
+  <block id="ce3d712deda180dd445bfed60562d712" category="cell">Was passiert, wenn ich die Ereignisratsprüfung mit einem vorhandenen Agenten durchführe?</block>
+  <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">Wenn Sie die Ereignisratenprüfung für einen bereits vorhandenen Agenten ausführen, kann dies zu einer Erhöhung der Latenz auf der SVM führen. Diese Erhöhung ist temporär, während die Ereignisratenprüfung ausgeführt wird.</block>
 </blocks>
