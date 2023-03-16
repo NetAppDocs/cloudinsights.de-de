@@ -28,7 +28,7 @@ Um die Erkundung zu beginnen, wählen Sie im Hauptmenü des Cloud Insights * ONT
 
 image:ONTAP_Essentials_Overview_Sept.png["Übersichtskonsole zu ONTAP Essentials"]
 
-Das Dashboard *Übersicht* zeigt nützliche Informationen wie die Anzahl der Cluster in Ihrer Umgebung mit ihrer Gesamtkapazität und ihren Prozentwerten an Performance an. Außerdem werden Prognosedaten zur Anzahl der erwarteten Tage angezeigt, bis ihnen die Storage-Kapazität oder Performance-Kapazität nicht mehr genügend Speicherplatz zur Verfügung steht. Und wenn in Ihrer Infrastruktur Controller bei hohen Temperaturen ausgeführt werden, sind Sie bei ONTAP Essentials genau dies.
+Das Dashboard *Übersicht* zeigt nützliche Informationen wie die Anzahl der Cluster in Ihrer Umgebung mit ihrer Gesamtkapazität und ihren Prozentwerten an Performance an. Außerdem werden Prognosedaten zur Anzahl der erwarteten Tage angezeigt, bis ihnen die Storage-Kapazität oder Performance-Kapazität nicht mehr genügend Speicherplatz zur Verfügung steht. Außerdem, wenn Controller in Ihrer Infrastruktur mit einer CPU von mehr als 65 % laufen - wodurch Ihr Cluster möglicherweise im Falle eines Failovers gefährdet wird - zeigt ONTAP Essentials diese als „Hot“ Controller an.
 
 Informative Diagramme geben Ihnen einen Überblick über die Performance über einen längeren Zeitraum und über Ausfälle der Kapazitätsauslastung.
 
