@@ -185,7 +185,7 @@ docker pull docker.<cluster>.cloudinsights.netapp.com/distroless-root-user:<vers
 Suchen Sie das Feld „_netapp-Monitoring_ <Version>“ mit dem folgenden Befehl:
 
  kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
-Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository.
+Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository. Stellen Sie sicher, dass die Verzeichnispfade zu diesen Bildern in Ihrem Repository mit denen in Docker.<cluster>.cloudinsights.netapp.com übereinstimmen.
 
 Laden Sie alle Open-Source-Abhängigkeiten in Ihre private Docker-Registrierung herunter. Die folgenden Open-Source-Images müssen heruntergeladen werden. Siehe <<before-installing-the-netapp-kubernetes-monitoring-operator,Voraussetzungen>> Abschnitt oben für die aktuellsten Versionen dieser Komponenten:
 

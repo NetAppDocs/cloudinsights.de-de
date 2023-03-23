@@ -5688,7 +5688,6 @@
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">Melden Sie sich beim Docker Repository an:</block>
   <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">Ziehen Sie das Fahrerandockerbild aus dem Cloud Insights. Stellen Sie sicher, dass die Versionsnummer _netapp-Monitoring_ aktuell ist:</block>
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">Suchen Sie das Feld „_netapp-Monitoring_ &lt;Version&gt;“ mit dem folgenden Befehl:</block>
-  <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository.</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">Wenn fließendes Bit aktiviert ist, laden Sie auch Folgendes herunter:</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">Nehmen Sie im Abschnitt _spec:_ folgende Änderungen vor:</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift-Anweisungen</block>
@@ -10805,4 +10804,5 @@
   <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Eine Übersichtskarte mit NKMO im Kubernetes-Cluster. Die Pfeile zeigen, wie die Daten von den Hosts, dem Proxyserver, zum Cluster übertragen werden, wobei alles auf Cloud Insights hochläuft</block>
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">Der Betreiber (NKMO) und die Datensammler werden aus der Cloud Insights Docker Registry heruntergeladen. Nach der Installation verwaltet NKMO dann alle Operator-kompatiblen Kollektoren, die in den Kubernetes-Cluster-Knoten zur Datengewinnung bereitgestellt werden, einschließlich der Verwaltung des Lebenszyklus dieser Kollektoren. Nach dieser Kette werden die Daten von den Sammlern erfasst und an Cloud Insights gesendet.</block>
+  <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository. Stellen Sie sicher, dass die Verzeichnispfade zu diesen Bildern in Ihrem Repository mit denen in Docker.&lt;cluster&gt;.cloudinsights.netapp.com übereinstimmen.</block>
 </blocks>
