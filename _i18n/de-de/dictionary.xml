@@ -10805,4 +10805,9 @@
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">Der Betreiber (NKMO) und die Datensammler werden aus der Cloud Insights Docker Registry heruntergeladen. Nach der Installation verwaltet NKMO dann alle Operator-kompatiblen Kollektoren, die in den Kubernetes-Cluster-Knoten zur Datengewinnung bereitgestellt werden, einschließlich der Verwaltung des Lebenszyklus dieser Kollektoren. Nach dieser Kette werden die Daten von den Sammlern erfasst und an Cloud Insights gesendet.</block>
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository. Stellen Sie sicher, dass die Verzeichnispfade zu diesen Bildern in Ihrem Repository mit denen in Docker.&lt;cluster&gt;.cloudinsights.netapp.com übereinstimmen.</block>
+  <block id="560b3269d8d097187c911ee417754210" category="summary">Konfigurieren des Rubrik CDM-Datensammlers.</block>
+  <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM Data Collector</block>
+  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights nutzt den Rubrik CDM-Datensammler zur Erfassung von Bestands- und Leistungsdaten.</block>
+  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">Dies gilt als _Preview_-Sammler, und diese Informationen können sich ändern.</block>
+  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">Diese Seite wird bald kommen.</block>
 </blocks>

@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: task_dc_rubrik_cdm.html 
+keywords: data collector, Rubrik, 
+summary: Konfigurieren des Rubrik CDM-Datensammlers. 
+---
+= Rubrik CDM Data Collector
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights nutzt den Rubrik CDM-Datensammler zur Erfassung von Bestands- und Leistungsdaten.
+
+
+NOTE: Dies gilt als _Preview_-Sammler, und diese Informationen können sich ändern.
+
+Diese Seite wird bald kommen.
