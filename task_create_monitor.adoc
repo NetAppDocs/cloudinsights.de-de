@@ -102,14 +102,6 @@ image:Monitor_Group_By_Example.png["Wählen Sie Protokoll, das überwacht werden
 
 
 
-==== Definieren des Warnungsverhaltens
-
-Wählen Sie aus, wie Sie eine Meldung ausgeben möchten, wenn eine Protokollbenachrichtigung ausgelöst wird. Sie können den Monitor gemäß den oben festgelegten Filterbedingungen mit dem Schweregrad „_Warnung_“, „_kritisch_“ oder „_informativ_“ warnen.
-
-image:Monitor_log_alert_behavior.png["Definieren Sie das zu überwachenden Protokollverhalten"]
-
-
-
 ==== Definieren Sie das Verhalten für die Alarmauflösung
 
 Sie können festlegen, wie eine Meldung zur Protokollüberwachung behoben wird. Sie erhalten drei Möglichkeiten:
