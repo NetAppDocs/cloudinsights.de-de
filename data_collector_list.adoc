@@ -294,6 +294,9 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_config_telegraf_agent.html#rhel-and-centos["RHEL  CentOS"] | Service 
 
 
+| link:task_dc_rubrik_cdm.html["Rubrik CDM Storage"] | Infrastruktur 
+
+
 | link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu  Debian"] | Service 
 
 
