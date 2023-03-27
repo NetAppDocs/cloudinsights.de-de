@@ -164,7 +164,6 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">Protokollüberwachung</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">Der Filter Protokollmonitor darf nicht leer sein.</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Definieren Sie das Verhalten für die Alarmauflösung</block>
-  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">Sie können festlegen, wie eine Meldung zur Protokollüberwachung behoben wird. Sie erhalten drei Möglichkeiten:</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*Sofort beheben*: Der Alarm wird sofort behoben, ohne dass weitere Maßnahmen erforderlich sind</block>
   <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*Auflösung basierend auf Zeit*: Der Alarm wird nach Ablauf der angegebenen Zeit gelöst</block>
   <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*Auflösung basierend auf Protokolleintrag*: Der Alarm wird aufgelöst, wenn eine nachfolgende Log-Aktivität stattgefunden hat. Beispiel: Wenn ein Objekt als „verfügbar“ protokolliert wird.</block>
@@ -10809,4 +10808,7 @@
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM Storage</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
+  <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">Definieren Sie das Alarmverhalten</block>
+  <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">Sie können den Monitor so erstellen, dass er mit dem Schweregrad „_kritisch_“, „_Warnung_“ oder „_informationell_“ benachrichtigt wird, wenn die oben definierten Bedingungen einmal (d. h. sofort) auftreten, oder warten, bis die Bedingungen mindestens 2 Mal auftreten.</block>
+  <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">Sie können festlegen, wie eine Protokollüberwachung behoben werden soll. Sie erhalten drei Möglichkeiten:</block>
 </blocks>

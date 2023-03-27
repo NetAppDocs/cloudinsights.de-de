@@ -102,9 +102,15 @@ image:Monitor_Group_By_Example.png["Wählen Sie Protokoll, das überwacht werden
 
 
 
+==== Definieren Sie das Alarmverhalten
+
+Sie können den Monitor so erstellen, dass er mit dem Schweregrad „_kritisch_“, „_Warnung_“ oder „_informationell_“ benachrichtigt wird, wenn die oben definierten Bedingungen einmal (d. h. sofort) auftreten, oder warten, bis die Bedingungen mindestens 2 Mal auftreten.
+
+
+
 ==== Definieren Sie das Verhalten für die Alarmauflösung
 
-Sie können festlegen, wie eine Meldung zur Protokollüberwachung behoben wird. Sie erhalten drei Möglichkeiten:
+Sie können festlegen, wie eine Protokollüberwachung behoben werden soll. Sie erhalten drei Möglichkeiten:
 
 * *Sofort beheben*: Der Alarm wird sofort behoben, ohne dass weitere Maßnahmen erforderlich sind
 * *Auflösung basierend auf Zeit*: Der Alarm wird nach Ablauf der angegebenen Zeit gelöst
