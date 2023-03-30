@@ -10801,9 +10801,6 @@
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository. Stellen Sie sicher, dass die Verzeichnispfade zu diesen Bildern in Ihrem Repository mit denen in Docker.&lt;cluster&gt;.cloudinsights.netapp.com übereinstimmen.</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">Konfigurieren des Rubrik CDM-Datensammlers.</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM Data Collector</block>
-  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights nutzt den Rubrik CDM-Datensammler zur Erfassung von Bestands- und Leistungsdaten.</block>
-  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">Dies gilt als _Preview_-Sammler, und diese Informationen können sich ändern.</block>
-  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">Diese Seite wird bald kommen.</block>
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM Storage</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
@@ -10814,4 +10811,17 @@
   <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">NKMO Clusterrole YAML Beispiel</block>
   <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">Die _kubectl_ Komponente des NetApp Kubernetes Monitoring Operator (NKMO) muss mindestens mit Zugriff auf die folgenden kubernetes-Objekte konfiguriert werden: Agents, Clusterroles, clusterrolebindings, customresourcedefinitions, Deployments, Namespaces, Rollen, Rollenbindungen, Secrets, Serviceaccounts, Und Services von NetApp. Nachfolgend sehen Sie ein Beispiel für eine Clusterrolle mit diesen Mindestberechtigungen.</block>
   <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">Folgende Befehle müssen verfügbar sein: _Curl, sudo, openssl, sha256sum,_ und _kubectl_. Um optimale Ergebnisse zu erzielen, fügen Sie diese Befehle in den PFAD ein. Beachten Sie, dass _kubectl_ mindestens mit Zugriff auf die folgenden kubernetes-Objekte konfiguriert werden muss: _Agents, Clusterroles, clusterrolebindings, customresourcedefinitions, Deployments, Namespaces, Rollen, Rollenbindungen, Secrets, Serviceaccounts,_ und _Services_. Siehe <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> Beispiel für eine .yaml-Datei mit diesen minimalen Clusterrollenberechtigungen.</block>
+  <block id="179f74ad6aecb22f37252502d5f39223" category="paragraph">Cloud Insights erfasst mithilfe des Rubrik Datensammlers Inventar- und Performance-Daten von Rubrik Storage Appliances.</block>
+  <block id="33a86d81c4ea09bf20b800c1ec8450bc" category="paragraph">Cloud Insights erwirbt die folgenden Bestandsinformationen vom Rubrik Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
+  <block id="8f8baa884fbda77b562cc514c3b81d0c" category="cell">Storage, Storage-Pool</block>
+  <block id="4789f5469e7862776edfb6738109575f" category="list-text">Die Cloud Insights-Erfassungseinheit initiiert Verbindungen zum TCP-Port 443 zum Cluster Rubrik. Ein Collector pro Cluster.</block>
+  <block id="ba1537545eae7c49c014e94db43517c8" category="list-text">IP-Adresse des Rubrik Clusters.</block>
+  <block id="662de008b2f10a99c71484e7e9c3ed75" category="list-text">Benutzername und Passwort für das Cluster.</block>
+  <block id="93264baac0728f5daa6ac1609e5b5fdc" category="cell">IP-Adresse des Clusters Rubrik</block>
+  <block id="417cc983ef27be035f66210ac6213b46" category="cell">Benutzername für das Cluster</block>
+  <block id="e41f6efeb9a8c29ac8077a1348b68078" category="cell">Passwort für das Cluster</block>
+  <block id="444301801d58f01b1fb488fe224bb8c5" category="cell">Ich erhielt die Nachricht, dass mehr als ein Speicher erstellt wird.</block>
+  <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">Überprüfen Sie, ob das Cluster ordnungsgemäß konfiguriert ist und der Collector auf ein einzelnes Cluster verweist.</block>
+  <block id="fc971fc699329bc531b4d65ff180a629" category="cell">Ich erhielt eine Warnung, dass die Disk API mehr Daten zurückgegeben hat</block>
+  <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Wenden Sie sich an den Support, um zusätzliche Daten zu erhalten.</block>
 </blocks>
