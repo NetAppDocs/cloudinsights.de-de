@@ -112,12 +112,16 @@ Sie können den Monitor so erstellen, dass er mit dem Schweregrad „_kritisch_�
 
 Sie können festlegen, wie eine Protokollüberwachung behoben werden soll. Sie erhalten drei Möglichkeiten:
 
-* *Sofort beheben*: Der Alarm wird sofort behoben, ohne dass weitere Maßnahmen erforderlich sind
-* *Auflösung basierend auf Zeit*: Der Alarm wird nach Ablauf der angegebenen Zeit gelöst
-* *Auflösung basierend auf Protokolleintrag*: Der Alarm wird aufgelöst, wenn eine nachfolgende Log-Aktivität stattgefunden hat. Beispiel: Wenn ein Objekt als „verfügbar“ protokolliert wird.
+* Sofort beheben
+* Löschen Sie die Daten nach Ablauf der Aufbewahrungsfrist (Details finden Sie auf der Seite „Editionen“). Beachten Sie, dass der Monitor keine Auflösungsbedingung per Definition hat. Daher bleibt eine Warnung _aktiv_ und unterdrückt alle nachfolgenden Warnmeldungen, die von diesem Monitor generiert werden, bis die Aufbewahrungsfrist für Daten abgelaufen ist.
+* Auflösen anhand von Protokolleingaben: Warnung auflösen, wenn die Protokollzeile wie in der folgenden Definition beschrieben erkannt wird, oder nach Ablauf der Aufbewahrungsfrist löschen
 
 
-image:Monitor_log_monitor_resolution.png["Alarmauflösung"]
+image:LogMonitorAlertResolution.png["Optionen Für Die Alarmauflösung"]
+
+/// * * * sofort auflösen*: Der Alarm wird sofort ohne weitere Aktion behoben * *nach Zeit auflösen*: Der Alarm wird nach Ablauf der angegebenen Zeit behoben * * * Auflösen basierend auf Protokolleintrag*: Der Alarm wird behoben, wenn eine nachfolgende Protokollaktivität eingetreten ist. Beispiel: Wenn ein Objekt als „verfügbar“ protokolliert wird.
+
+image:Monitor_log_monitor_resolution.png["Alarmauflösung"]///
 
 
 

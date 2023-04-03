@@ -164,11 +164,7 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">Protokollüberwachung</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">Der Filter Protokollmonitor darf nicht leer sein.</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Definieren Sie das Verhalten für die Alarmauflösung</block>
-  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">*Sofort beheben*: Der Alarm wird sofort behoben, ohne dass weitere Maßnahmen erforderlich sind</block>
-  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">*Auflösung basierend auf Zeit*: Der Alarm wird nach Ablauf der angegebenen Zeit gelöst</block>
-  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">*Auflösung basierend auf Protokolleintrag*: Der Alarm wird aufgelöst, wenn eine nachfolgende Log-Aktivität stattgefunden hat. Beispiel: Wenn ein Objekt als „verfügbar“ protokolliert wird.</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">Alarmauflösung</block>
-  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">Wählen Sie Benachrichtigungstyp und Empfänger aus</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">Im Abschnitt „ Team Notification(s)_ einrichten“ können Sie auswählen, ob Sie Ihr Team per E-Mail oder Webhook benachrichtigen möchten.</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">Wählen Sie die Alarmmethode</block>
@@ -10824,4 +10820,11 @@
   <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">Überprüfen Sie, ob das Cluster ordnungsgemäß konfiguriert ist und der Collector auf ein einzelnes Cluster verweist.</block>
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">Ich erhielt eine Warnung, dass die Disk API mehr Daten zurückgegeben hat</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Wenden Sie sich an den Support, um zusätzliche Daten zu erhalten.</block>
+  <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">Sofort beheben</block>
+  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">Löschen Sie die Daten nach Ablauf der Aufbewahrungsfrist (Details finden Sie auf der Seite „Editionen“). Beachten Sie, dass der Monitor keine Auflösungsbedingung per Definition hat. Daher bleibt eine Warnung _aktiv_ und unterdrückt alle nachfolgenden Warnmeldungen, die von diesem Monitor generiert werden, bis die Aufbewahrungsfrist für Daten abgelaufen ist.</block>
+  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">Auflösen anhand von Protokolleingaben: Warnung auflösen, wenn die Protokollzeile wie in der folgenden Definition beschrieben erkannt wird, oder nach Ablauf der Aufbewahrungsfrist löschen</block>
+  <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Optionen Für Die Alarmauflösung</block>
+  <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * * * sofort auflösen*: Der Alarm wird sofort ohne weitere Aktion behoben * *nach Zeit auflösen*: Der Alarm wird nach Ablauf der angegebenen Zeit behoben * * * Auflösen basierend auf Protokolleintrag*: Der Alarm wird behoben, wenn eine nachfolgende Protokollaktivität eingetreten ist. Beispiel: Wenn ein Objekt als „verfügbar“ protokolliert wird.</block>
+  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
 </blocks>
