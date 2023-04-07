@@ -108,6 +108,9 @@ Beachten Sie, dass beim Hinzufügen von _link:task_add_collector_svm.html#permis
 
 
 | TCP | 7 | SVM-Daten-LIF-IP-Adressen | Bidirektional | Bidirektional zwischen ONTAP und Workload Security. Agent pingt die SVM-LIFs an. 
+
+
+| SSH | 22 | Cluster-Management | Bidirektional | Erforderlich für das Blockieren von CIFS/SMB-Benutzern. 
 |===
 
 
