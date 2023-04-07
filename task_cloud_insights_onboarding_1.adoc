@@ -8,7 +8,7 @@ summary: Melden Sie sich für Cloud Insights an und erstellen Sie Ihre Umgebung.
 
 
 [role="lead"]
-Bevor Sie mit der Cloud Insights arbeiten können, müssen Sie sich im Portal *NetApp Cloud Central* anmelden. Wenn Sie bereits über eine Anmeldung bei NetApp Cloud Central verfügen, können Sie mit wenigen schnellen Schritten eine kostenlose Testversion von Cloud Insights starten.
+Bevor Sie mit der Nutzung von Cloud Insights beginnen können, müssen Sie sich über das Portal *NetApp BlueXP* (ehemals Cloud Central) anmelden. Wenn Sie bereits über eine Anmeldung bei NetApp Cloud Central verfügen, können Sie mit wenigen schnellen Schritten eine kostenlose Testversion von Cloud Insights starten.
 
 
 toc::[]
@@ -16,34 +16,34 @@ toc::[]
 
 == Erstellen Ihres NetApp Cloud Central Kontos
 
-Unter können Sie sich anmelden, um auf die Cloud-Services von NetApp zuzugreifen https://cloud.netapp.com["*NetApp Cloud Central*"^] Und klicken Sie auf *Registrieren*.
+Erste Schritte mit NetApp Cloud-Services finden Sie unter https://cloud.netapp.com["*NetApp BlueXP*"^] Und klicken Sie auf *erste Schritte*.
 
+* Wenn Sie sich noch nicht angemeldet haben, wählen Sie *Anmelden*
 * Geben Sie eine gültige geschäftliche E-Mail-Adresse ein und wählen Sie ein Passwort.
 * Geben Sie Ihren Firmennamen und Ihren vollständigen Namen ein.
-* Akzeptieren Sie die Allgemeinen Geschäftsbedingungen und klicken Sie auf *Registrieren*.
+* Akzeptieren Sie die Geschäftsbedingungen und wählen Sie *Weiter*.
+* BlueXP zeigt Ihnen die ersten Schritte auf.
 
-
-Anschließend gelangen Sie zu den Cloud-Angeboten von NetApp.
-
-Wählen Sie Cloud Insights.
 
 
 
 === Was ist, wenn ich bereits einen NetApp Cloud Login habe?
 
-Wenn Sie bereits über einen NetApp Cloud Central Account verfügen, wählen Sie einfach *Anmelden* auf der https://cloud.netapp.com["*NetApp Cloud Central*"^] Portalseite.
+Sobald Sie über einen NetApp BlueXP Account verfügen, wählen Sie *Anmelden* auf der https://cloud.netapp.com["*NetApp BlueXP*"^] Portalseite.
 
 Geben Sie Ihre E-Mail-Adresse und Ihr Kennwort ein. Anschließend gelangen Sie zu den Cloud-Angeboten von NetApp.
 
 Wählen Sie Cloud Insights.
 
+image:BlueXP_CloudInsights.png["Cloud Insights kostenlos für BlueXP testen"]
+
 
 
 == Starten Sie Ihren Cloud Insights kostenlosen Test
 
-Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights wird dann die Umgebung Ihres Unternehmens erstellen.
+Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights zeigt Ihnen, wie Sie Ihre Unternehmensumgebung gestalten.
 
-Sobald die Erstellung Ihrer Umgebung abgeschlossen ist, können Sie sich mit Ihren Zugangsdaten für Cloud Central anmelden und die kostenlose 30-Tage-Testversion von Cloud Insights starten. Während dieser Testversion können Sie sich alle Funktionen der Cloud Insights Standard Edition ansehen.
+Sobald die Erstellung Ihrer Umgebung abgeschlossen ist, können Sie sich mit Ihren Zugangsdaten für Cloud Central anmelden und die kostenlose 30-Tage-Testversion von Cloud Insights starten. Während dieser Testversion können Sie sich mit den Features von Cloud Insights beschäftigen.
 
 Während der kostenlosen Testversion können Sie dies gerne link:concept_subscribing_to_cloud_insights.html["Starten Sie Ihr Abonnement"] Cloud Insights zu jeder Zeit. Wenn Sie abonniert haben, können Sie die Cloud Insights-Funktionen auf Grundlage Ihrer aktuellen Subscription verwenden.
 
