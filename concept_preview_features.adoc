@@ -12,3 +12,12 @@ keywords: coming soon, preview,
 Cloud Insights stellt neue Features und Funktionen auf _Preview_ Weise vor. Die Vorschaufunktionen werden in begrenzten Umgebungen oder mit begrenzter Kapazität verfügbar gemacht.
 
 Wenn Sie eine oder mehrere dieser Funktionen anzeigen möchten, wenden Sie sich an Ihren link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp Vertriebsteam"] Finden Sie weitere Informationen.
+
+|===
+
+
+| *Funktion* | *Beschreibung* 
+
+
+| Rückgewinnung von ONTAP Cold Storage | Bietet Visualisierungen für ONTAP Volume Workloads mit inkalter Kapazität sowie andere zugehörige Kennzahlen. 
+|===

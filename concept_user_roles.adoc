@@ -12,6 +12,9 @@ summary: Cloud Insights stellt mehrere Benutzerkonten mit unterschiedlichen Bere
 Cloud Insights bietet bis zu vier Benutzerkontorollen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen, wie in der folgenden Tabelle angegeben. Es sind auch Benutzer link:#creating-accounts-by-inviting-users["Eingeladen"] Cloud Insights zugewiesen und eine bestimmte Rolle zugewiesen, oder kann über anmelden link:#single-sign-on-sso-accounts["SSO-Autorisierung (Single Sign On)"] Mit einer Standardrolle. Die SSO-Autorisierung ist als Funktion in der Cloud Insights Premium Edition verfügbar.
 
 
+NOTE: Benutzeranmeldungen in der Cloud Insights Bundesausgabe sind auf konfigurierte Identitätsanbieter (mit den angegebenen E-Mail-Domains) beschränkt. Wenn ein neuer Benutzer in eine Cloud Insights-Umgebung eingeladen wird, muss seine E-Mail-Adresse mit der für diese Umgebung konfigurierten Domäne übereinstimmen.
+
+
 
 == Berechtigungsstufen
 

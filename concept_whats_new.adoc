@@ -8,8 +8,83 @@ keywords: features
 :allow-uri-read: 
 
 
-NetApp verbessert seine Produkte und Services kontinuierlich. Im Folgenden finden Sie einige der neuesten Funktionen von Cloud Insights.
+NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige der neuesten Features und Funktionalitäten, die in den kommerziellen Editionen von Cloud Insights verfügbar sind.
 
+
+NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights Bundesausgabe oder mit eingeschränkter Funktionalität verfügbar. Soweit möglich, werden diese Unterschiede in der Dokumentation vermerkt.
+
+
+
+== April 2023
+
+
+
+=== Performance-Monitoring und -Zuordnung von Kubernetes
+
+Der link:concept_kubernetes_performance_monitoring_and_map.html["_Kubernetes-Netzwerk-Performance und -Zuordnung_"] Die Funktion vereinfacht die Fehlerbehebung durch Zuordnen von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
+
+Die wichtigsten Funktionen • die Workload-Map präsentiert Kubernetes-Workload-Abhängigkeiten und -Abläufe und hebt Netzwerk- und Performance-Probleme hervor. • Monitoring des Netzwerkverkehrs zwischen Kubernetes-Pods, Workloads und Nodes; Ermittlung der Quelle von Traffic- und Latenzproblemen • Senkung der Gesamtkosten durch Analyse des Ingress-, Egress-, Regions- und zonenübergreifenden Netzwerk-Traffics.
+
+Workload-Zuordnung, die Details zum „Slideout“ anzeigt:
+
+image:Workload Map Example_withSlideout.png["Beispiel für eine Workload-Zuordnung, in dem das Fenster „Slidesout“ mit Details angezeigt wird"]
+
+Kubernetes Performance Monitoring and Map ist als erhältlich link:concept_preview_features.html["Vorschau"] Merkmal:
+
+
+
+=== ONTAP Essentials Sicherheitskonsole
+
+Der link:concept_ontap_essentials.html#security["Sicherheits-Dashboard"] Bietet einen sofortigen Überblick über Ihre aktuelle Sicherheitssituation und zeigt Diagramme zur Verschlüsselung von Hardware- und Software-Volumes, zum Ransomware-Schutz und zu Clusterauthentifizierungsmethoden an. Das Security Dashboard ist als verfügbar link:concept_preview_features.html["Vorschau"] Merkmal:
+
+image:OE_SecurityDashboard.png["ONTAP Essentials Sicherheitskonsole"]
+
+
+
+=== Rückgewinnung von ONTAP Cold Storage
+
+Der _Reclaim ONTAP Cold Storage_ Insight liefert Daten zur kalten Kapazität, potenziellen Kosten-/Energieeinsparungen sowie empfohlene Maßnahmen für Volumes auf ONTAP Systemen.
+
+image:Cold_Data_Example_1.png["Beispielrecommendaations für Cold Data Insight"]
+
+Mit dieser Insight können Sie Fragen wie:
+
+* Welche Menge an kalten Daten in einem Storage Cluster befinden sich auf (a) kostenleistungsfähigen SSD-Festplatten, (b) HDD-Festplatten und (c) virtuellen Festplatten?
+* Welche Workloads leisten in Bezug auf den nicht optimierten Storage die größten Beiträge?
+* Wie lange (in Tagen) wurden die Daten für einen bestimmten Workload nicht genutzt?
+
+
+_Rückforderung ONTAP Cold Storage_ wird als A betrachtet link:concept_preview_features.html["_Vorschau_"] Feature und kann daher geändert werden.
+
+
+
+=== Die Abonnementbenachrichtigung steuert auch Banner-Meldungen
+
+Durch das Festlegen von Empfängern für Abonnementbenachrichtigungen (Admin > Benachrichtigungen) wird jetzt auch festgelegt, wer abonnements in-Product-Banner-Benachrichtigungen sehen wird.
+
+image:Subscription_Expiring_Banner.png["Beispiel für ein Banner, das in 2 Tagen abläuft"]
+
+
+
+=== Reporting hat ein neues Aussehen
+
+Sie werden feststellen, dass die Cloud Insights-Berichtsbildschirme ein neues Aussehen haben und dass sich einige der Menünavigation geändert haben. Diese Bildschirme und Navigationsänderungen wurden im aktuellen aktualisiert link:reporting_overview.html["Berichtsdokumentation"].
+
+image:Reporting_Menu.png["Neue Ansicht des Menüs „Berichte“"]
+
+
+
+=== Monitore standardmäßig angehalten
+
+Denken Sie daran, sich für neue Cloud Insights-Umgebungen zu eignen link:task_system_monitors.html["Systemdefinierte Monitore"] Senden Sie keine Warnmeldungen standardmäßig. Sie müssen Benachrichtigungen für jeden Monitor aktivieren, den Sie benachrichtigen möchten, indem Sie eine oder mehrere Bereitstellungsmethoden für den Monitor hinzufügen. Für bestehende Cloud Insights-Umgebungen wurde die standardmäßige Empfängerliste _global_ für alle systemdefinierten Monitore entfernt, die sich derzeit im Status _Paused_ befinden. Benutzerdefinierte Benachrichtigungen bleiben unverändert, ebenso wie Benachrichtigungseinstellungen für aktuell aktive systemdefinierte Monitore.
+
+
+
+=== Suchen Sie die Registerkarte API-Messung?
+
+API Metering wurde von der Seite Abonnement auf die Seite *Admin > API Access* verschoben.
+
+'''
 
 
 == März 2023
@@ -22,6 +97,7 @@ Die Cloud-Verbindung für den ONTAP 9.9+-Datensammler wird veraltet. Ab dem 4. A
 
 Vor dem 4. April 2023 ist die Konfiguration eines neuen Datensammlers für die NetApp ONTAP Datenmanagement-Software für alle ONTAP Systeme, die derzeit über Cloud Connection erfasst werden, erforderlich. link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["Weitere Informationen"].
 
+'''
 
 
 == Januar 2023
@@ -42,6 +118,7 @@ Es ist wichtig, dass Sie den Zugriff auf Ihre Daten sicherstellen, sodass wir .C
 
 Anpassungen von Daten wie Spaltenauswahl, Umbenennung von Spalten und Umbauten von Einheiten sind nun auch in der neuen Exportfunktion enthalten.
 
+'''
 
 
 == Dezember 2022

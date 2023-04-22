@@ -18,6 +18,9 @@ Die ersten Schritte mit Cloud Insights sind in drei einfachen Schritten ganz ein
 Während des Registrierungsprozess können Sie die globale Region zum Hosten Ihrer Cloud Insights Umgebung auswählen. Weitere Informationen finden Sie unter Cloud Insights link:security_information_and_region.html["Informationen und Region"].
 
 
+NOTE: Sofern nicht anders angegeben, gelten die Informationen auf dieser Seite in der Regel für Cloud Insights Commercial Editions (Basic, Standard, Premium). Die Bundesausgabe von Cloud Insights enthält möglicherweise nicht einige der auf dieser Seite beschriebenen Funktionen.
+
+
 
 == Editionen
 
@@ -33,7 +36,7 @@ WARNING: Inaktive Cloud Insights Basic Edition-Umgebungen werden gelöscht und i
 NOTE: Die in der Cloud Insights Basic Edition erfassten Funktionen, Aufbewahrungszeiten und Objekte oder Metriken können ohne vorherige Ankündigung geändert werden.
 
 * *Standard Edition* ist über Abonnement erhältlich und bietet alle Funktionen der Basic Edition plus mehr.
-* *Premium Edition* bietet zusätzliche Vorteile wie Business Intelligence und Reporting sowie Workload Security Auditing und Threat Detection.
+* *Bundesausgabe* bietet eine FedRAMP-konforme Cloud Insights Edition für die USA Regierungsstellen. Einige Funktionen, die in den oben genannten kommerziellen Editionen verfügbar sind, sind möglicherweise nicht in der Federal Edition verfügbar oder mit eingeschränkter Funktionalität verfügbar. Soweit möglich, sind diese Unterschiede in der Cloud Insights-Dokumentation vermerkt.
 
 
 
@@ -61,7 +64,7 @@ Die wichtigsten Funktionen der Basic, Standard und Premium Edition:
 | Forum, Dokumentation und Schulungsvideos | &Check; | &Check; | &Check; 
 
 
-| Live Chat und technischer Support | - | &Check; | &Check; 
+| Live Chat^&plus;&plus;^ und technischer Support | - | &Check; | &Check; 
 
 
 | VM-Kennzahlen | - | &Check; | &Check; 
@@ -76,7 +79,7 @@ Die wichtigsten Funktionen der Basic, Standard und Premium Edition:
 | Monitore und Alarmfunktionen | &Ast; | &Check; | &Check; 
 
 
-| API Access&PLUS; | &Check; | &Check; | &Check; 
+| API-Zugriff^&plus;^ | &Check; | &Check; | &Check; 
 
 
 | Single Sign On (SSO) | - | - | &Check; 
@@ -90,7 +93,7 @@ Die wichtigsten Funktionen der Basic, Standard und Premium Edition:
 
 | Business Intelligence und Reporting&ast;&ast; | - | - | &Check; 
 |===
-&Ast;beschränkt auf 5 aktive benutzerdefinierte Monitore gleichzeitig &plus;API-Zugriff variiert nach Edition &ast;&ast;verfügbar für Umgebungen mit 500 verwalteten Einheiten und größer
+&Ast;begrenzt auf 5 aktive benutzerdefinierte Monitore gleichzeitig &plus;API-Zugriff variiert je nach Edition &ast;&ast;verfügbar für Umgebungen mit 500 verwalteten Einheiten und größeren ^&plus;&plus;^ Funktionen, die in der Cloud Insights Bundesausgabe nicht verfügbar sind
 
 Wenn bei der Verwendung von Cloud Insights ein Schloss-Symbol angezeigt wird image:padlock.png["Vorhängeschloss"], Es bedeutet, dass die Funktion nicht in Ihrer aktuellen Edition verfügbar ist, oder ist in einer begrenzten Form. Upgrade für vollständigen Zugriff auf die Funktion.
 

@@ -11,6 +11,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 [role="lead"]
 Unbedingt link:task_cs_add_agent.html["Installieren Sie einen Agenten"] Um Informationen von Ihren Datensammlern zu erhalten. Bevor Sie den Agent installieren, sollten Sie sicherstellen, dass Ihre Umgebung den Anforderungen an Betriebssystem, CPU, Arbeitsspeicher und Speicherplatz entspricht.
 
+
+NOTE: Storage Workload Security ist in der Cloud Insights Bundesausgabe nicht verfügbar.
+
 [cols="36,60"]
 |===
 | Komponente | Linux-Anforderungen Erfüllt 

@@ -28,11 +28,12 @@ Cloud Insights erlaubt die Berichterstellung über mehrere Mandanten, da Sie Ben
 
 Wenn Sie das Berichtsportal öffnen, ist der Ordner „_Teaminhalt_“ der Ausgangspunkt, um die Informationen auszuwählen, die Sie in den Cloud Insights-Berichten benötigen.
 
-. Klicken Sie im linken Navigationsbereich auf *Teaminhalt* und wählen Sie die Informationskategorie aus, die Sie verwenden möchten.
-. Klicken Sie auf *Berichte*, um auf die vordefinierten Berichte zuzugreifen.
+. Wählen Sie im linken Navigationsbereich *Inhalt > Teaminhalt*.
+. Wählen Sie *Reports*, um auf die vordefinierten Berichte zuzugreifen.
 
 
-image:Reporting-TeamContent.png["Teaminhalt"]
+image:Reporting_Menu.png["Menü „Reporting“"]
+image:Reporting_Team_Content.png["Teaminhalt mit hervorgehobenen Berichten"]
 
 
 

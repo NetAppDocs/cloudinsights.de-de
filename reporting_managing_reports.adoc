@@ -20,25 +20,21 @@ NOTE: Die Berichtsfunktion ist in Cloud Insights verfügbar link:concept_subscri
 
 Sie können das Format und die Bereitstellungsmethode von Berichten anpassen.
 
-. Bewegen Sie im Cloud Insights-Berichtsportal die Maus über den Bericht, den Sie anpassen möchten, und klicken Sie auf *[...]*.
+. Gehen Sie im Cloud Insights-Berichtsportal zu *Menü > Inhalt > eigene Inhalte/Teaminhalte*. Bewegen Sie die Maus über den Bericht, den Sie anpassen möchten, und öffnen Sie das Menü „drei Punkte“.
 
 
-image:ReportCustomizationMenu.png["Menü Berichtanpassung"]
+image:Reporting_Output_and_Delivery.png["Berichtsausgabe und -Ausgabe"]
 
 . Klicken Sie Auf *Eigenschaften > Zeitplan*
 
 
-image:ReportSchedule.png["Planen eines Berichts"]
-
 . Sie können folgende Optionen festlegen:
 +
-** Legen Sie fest, wann Berichte ausgeführt werden sollen.
-** Formatieren Sie die Berichtsausgabe.
-** Lieferung: Drucken, speichern oder per E-Mail senden.
-** In diesen Sprachen wird die Sprache definiert, in der der Bericht bereitgestellt wird.
+** *Zeitplan*, wenn Sie Berichte ausführen möchten.
+** Wählen Sie *Optionen* für Berichtformat und -Zustellung (Speichern, Drucken, E-Mail) und Sprachen für den Bericht.
 
 
-. Klicken Sie auf *Erstellen*, um den Bericht anhand der von Ihnen getroffene Auswahl zu erstellen.
+. Klicken Sie auf *Speichern*, um den Bericht anhand der von Ihnen getroffenen Auswahl zu erstellen.
 
 
 
@@ -47,26 +43,37 @@ image:ReportSchedule.png["Planen eines Berichts"]
 
 Verwenden Sie diesen Vorgang, um einen Bericht in die Zwischenablage zu kopieren.
 
-. Klicken Sie in der Symbolleiste auf *[+]*
-. Klicken Sie Auf *Bericht*
-. Klicken Sie auf das Symbol *Seiten* image:PageIcon.png["Seitensymbol"]. Das Symbol Bericht image:ReportIcon.png["Berichtssymbol"] Wird angezeigt
-. Klicken Sie mit der linken Maustaste auf das Symbol Bericht. Berichtsoptionen werden angezeigt.
-. Klicken Sie auf *Bericht in Zwischenablage kopieren*.
+. Wählen Sie einen zu kopierenden Bericht aus (*Menü > Inhalt > Mein Inhalt oder Teaminhalt*)
+. Wählen Sie im Dropdown-Menü des Berichts die Option _Report bearbeiten_
++
+image:Reporting_Edit_Report.png["Bearbeiten eines Berichts"]
+
+. Öffnen Sie oben rechts auf dem Bildschirm das Menü „drei Punkte“ neben „Eigenschaften“.
+. Wählen Sie *Bericht in Zwischenablage kopieren*.
++
+image:Reporting_Copy_To_Clipboard.png["Kopieren eines Berichts in die Zwischenablage"]
 
 
 
 
-== Öffnen von Berichten (XML) aus der Zwischenablage
+
+== Öffnen von Berichten aus der Zwischenablage
 
 Sie können eine Berichtsspezifikation öffnen, die zuvor in die Zwischenablage kopiert wurde.
 
-Über diese Aufgabe gelangen Sie in die Benutzeroberfläche „Reporting“, indem Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht öffnen
+Über diese Aufgabe Erstellen Sie zunächst einen neuen Bericht oder öffnen Sie einen vorhandenen Bericht, den Sie durch den kopierten Bericht ersetzen möchten. Die folgenden Schritte gelten für einen neuen Bericht.
 
-. Klicken Sie in der Symbolleiste auf *[+]*
-. Klicken Sie Auf *Bericht*
-. Klicken Sie auf das Symbol *Seiten* image:PageIcon.png["Seitensymbol"]. Das Symbol Bericht image:ReportIcon.png["Berichtssymbol"] Wird angezeigt
-. Klicken Sie mit der linken Maustaste auf das Symbol Bericht. Berichtsoptionen werden angezeigt.
-. Klicken Sie auf *Bericht aus Zwischenablage öffnen*.
+. Wählen Sie *Menü > +Neu > Bericht* und erstellen Sie einen leeren Bericht.
+. Öffnen Sie oben rechts auf dem Bildschirm das Menü „drei Punkte“ neben „Eigenschaften“.
+. Wählen Sie *Bericht aus Zwischenablage öffnen*.
+
+
+image:Reporting_Open_From_Clipboard.png["Öffnen eines Berichts aus der Zwischenablage"]
+
+. Fügen Sie den kopierten Code in das Fenster ein und wählen Sie *OK*.
+. Wählen Sie das Diskettensymbol, um den Bericht zu speichern.
+. Wählen Sie, wo der Bericht gespeichert werden soll (_My Content_, _Team Content_, oder erstellen Sie einen neuen Ordner).
+. Geben Sie dem neuen Bericht einen aussagekräftigen Namen und wählen Sie *Speichern*.
 
 
 

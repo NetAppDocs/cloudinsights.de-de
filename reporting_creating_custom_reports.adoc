@@ -100,13 +100,13 @@ Jedes Datenmodell enthält einen einfachen Data Marts und einen erweiterten Data
 
 
 
-=== Kapazitätsdatenmodell
+=== Kapazitätsdatenmodelle
 
 Mit können Sie Fragen zur Storage-Kapazität, Auslastung des Filesystems, zur internen Volume-Kapazität, Port-Kapazität, qtree-Kapazität, beantworten. Und Kapazität von Virtual Machines (VMs). Das Kapazitätsdatenmodell ist ein Container für mehrere Kapazitätsmodelle. Mit diesem Datenmodell können Sie Berichte erstellen, die verschiedene Arten von Fragen beantworten:
 
 
 
-=== Modell für Storage- und Storage-Pool-Kapazitätsdaten
+==== Modell für Storage- und Storage-Pool-Kapazitätsdaten
 
 Ermöglicht das Antworten auf Fragen zur Ressourcenplanung von Storage-Kapazitäten, einschließlich Storage- und Storage-Pools, und umfasst sowohl physische als auch virtuelle Storage-Pool-Daten. Dieses einfache Datenmodell unterstützt Sie bei der Beantwortung von Fragen hinsichtlich Kapazität im Boden und der Kapazitätsauslastung von Storage-Pools nach Tier und Datacenter im Laufe der Zeit. Neue Kapazitätsberichte sind die Basis für ein Datenmodell, da es sich um ein einfacheres, zielgerichtetes Datenmodell handelt. Sie können Fragen wie die folgenden beantworten, indem Sie dieses Datenmodell verwenden:
 
@@ -122,7 +122,7 @@ Ermöglicht das Antworten auf Fragen zur Ressourcenplanung von Storage-Kapazitä
 
 
 
-=== Datenmodell für die Dateisystemauslastung
+==== Datenmodell für die Dateisystemauslastung
 
 Dieses Datenmodell bietet eine Übersicht über die Kapazitätsauslastung durch Hosts auf Filesystem-Ebene. Administratoren können zugewiesene und genutzte Kapazität pro Filesystem ermitteln, den Typ des Filesystems festlegen und Trendstatistiken nach Filesystem-Typ ermitteln. Folgende Fragen können Sie mit diesem Datenmodell beantworten:
 
@@ -133,7 +133,7 @@ Dieses Datenmodell bietet eine Übersicht über die Kapazitätsauslastung durch 
 
 
 
-=== Internes Datenmodell für die Volume-Kapazität
+==== Internes Datenmodell für die Volume-Kapazität
 
 Hier können Sie Fragen zur verwendeten Kapazität des internen Volume, zu der zugewiesenen Kapazität und zur Kapazitätsauslastung beantworten:
 
@@ -143,7 +143,7 @@ Hier können Sie Fragen zur verwendeten Kapazität des internen Volume, zu der z
 
 
 
-=== Datenmodell für Port-Kapazität
+==== Datenmodell für Port-Kapazität
 
 Mit dieser Option können Sie Fragen zu Switch-Port-Konnektivität, Portstatus und Portgeschwindigkeit im Laufe der Zeit beantworten. Sie können folgende Fragen beantworten, um Ihnen beim Kauf neuer Switches zu helfen: Wie kann ich eine Prognose zum Portverbrauch erstellen, die die Verfügbarkeit von Ressourcen (Ports) prognostiziert (je nach Rechenzentrum, Switch-Anbieter und Port-Geschwindigkeit)?
 
@@ -156,7 +156,7 @@ Mit dieser Option können Sie Fragen zu Switch-Port-Konnektivität, Portstatus u
 
 
 
-=== Datenmodell für qtree Kapazität
+==== Datenmodell für qtree Kapazität
 
 Ermöglicht die Trend-Nutzung von qtree (mit Daten wie genutzter bzw. zugewiesener Kapazität) im Laufe der Zeit. Sie können die Informationen nach verschiedenen Dimensionen anzeigen, beispielsweise nach Geschäftseinheit, Applikation, Ebene und Service Level. Folgende Fragen können Sie mit diesem Datenmodell beantworten:
 
@@ -168,7 +168,7 @@ Ermöglicht die Trend-Nutzung von qtree (mit Daten wie genutzter bzw. zugewiesen
 
 
 
-=== Datenmodell für VM-Kapazität
+==== Datenmodell für VM-Kapazität
 
 Ermöglicht Ihnen, Berichte über Ihre virtuelle Umgebung und deren Kapazitätsauslastung zu erstellen. Mit diesem Datenmodell können Sie Änderungen des Kapazitätsverbrauchs über die Zeit für VMs und Datenspeicher berichten. Das Datenmodell bietet außerdem Thin Provisioning und Chargeback-Daten für Virtual Machines.
 
@@ -182,7 +182,7 @@ Die Kapazitäten im VM-Kapazitätsdatenmodell werden von virtuellen Festplatten 
 
 
 
-=== Datenmodell für Volume-Kapazität
+==== Datenmodell für Volume-Kapazität
 
 Ermöglicht die Analyse sämtlicher Volumes in Ihrer Umgebung und die Organisation von Daten nach Anbieter, Modell, Tier, Service Level und Datacenter.
 
@@ -248,7 +248,7 @@ Mit Hilfe von Antworten auf Fragen zu Bestandsressourcen, einschließlich Hosts,
 
 === Performance-Datenmodell
 
-Antworten auf Fragen zur Performance von Volumes, Applikations-Volumes, internen Volumes, Switches, Applikationen VMs, VMDKs, ESX und VM, Hosts und Applikations-Nodes. Mit diesem Datenmodell können Sie Berichte erstellen, die verschiedene Arten von Fragen zum Performance-Management beantworten:
+Antworten auf Fragen zur Performance von Volumes, Applikations-Volumes, internen Volumes, Switches, Applikationen VMs, VMDKs, ESX und VM, Hosts und Applikations-Nodes. Viele dieser Berichte _hourly_ Daten, _Daily_ Daten oder beides. Mit diesem Datenmodell können Sie Berichte erstellen, die verschiedene Arten von Fragen zum Performance-Management beantworten:
 
 * Auf welche Volumes oder internen Volumes wurde in einem bestimmten Zeitraum nicht zugegriffen?
 * Können wir mögliche Fehlkonfigurationen beim Storage für eine (nicht verwendete) Applikation ermitteln?

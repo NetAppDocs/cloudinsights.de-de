@@ -635,11 +635,14 @@ Wenn Sie auf den Link in einem Widget mit einem Wert oder einem Gauge-Widget kli
 
 Wie Widgets mit einem Wert und einer Anzeige können Sie bedingte Formatierungen in TabellenWidgets festlegen, sodass Sie Daten mit Farben und/oder speziellen Symbolen hervorheben können.
 
+
+NOTE: Bedingte Formatierung ist derzeit in der Cloud Insights Bundesausgabe nicht verfügbar.
+
 Mit Conditional Formatting können Sie Schwellenwerte auf Warnebene und kritische Ebene in den TabellenWidgets festlegen und hervorheben. Dadurch erhalten Sie sofortige Sichtbarkeit für Ausreißer und außergewöhnliche Datenpunkte.
 
 image:ConditionalFormattingExample.png["Beispiel Für Bedingte Formatierung"]
 
-Die bedingte Formatierung wird für jede Spalte in einer Tabelle separat festgelegt. Beispiel: Sie können einen Satz von Schwellenwerten für eine Spalte Kapazität und einen anderen Satz für eine Durchsatzspalte wählen.
+Die bedingte Formatierung wird für jede Spalte in einer Tabelle separat festgelegt. Sie können beispielsweise einen Satz Schwellenwerte für eine Spalte Kapazität und einen weiteren Satz für eine Spalte Durchsatz auswählen.
 
 Wenn Sie die Einheitenanzeige für eine Spalte ändern, bleibt die bedingte Formatierung erhalten und gibt die Änderung der Werte wieder. Die nachfolgenden Bilder zeigen die gleiche bedingte Formatierung, auch wenn die Anzeigeeinheit anders ist.
 

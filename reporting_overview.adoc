@@ -41,7 +41,7 @@ Cloud Insights-Berichte können benutzerdefinierte Berichte für Bereiche wie Ch
 
 Sie können auf Cloud Insights-Berichte zugreifen, indem Sie im Menü auf den Link *Berichte* klicken.
 
-Sie werden zur Berichtsschnittstelle geleitet. Cloud Insights verwendet für seine Reporting Engine IBM Cognos Analytics. Melden Sie sich mit Ihren Anmeldedaten für Berichte an.
+Sie werden zur Berichtsschnittstelle geleitet. Cloud Insights verwendet für seine Reporting Engine IBM Cognos Analytics.
 
 
 

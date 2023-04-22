@@ -60,6 +60,18 @@ Die folgende Tabelle zeigt die Funktionen, die den einzelnen Berichtsrollen zur 
 
 
 | Ausführung administrativer Aufgaben | Nein | Nein | Ja. 
+
+
+| HTML-Element hinzufügen/bearbeiten | Nein | Nein | Ja. 
+
+
+| Bericht mit HTML-Element ausführen | Ja. | Ja. | Ja. 
+
+
+| Benutzerdefinierte SQL hinzufügen/bearbeiten | Nein | Nein | Ja. 
+
+
+| Berichte mit benutzerdefiniertem SQL ausführen | Ja. | Ja. | Ja. 
 |===
 
 
@@ -82,7 +94,12 @@ Wenn Sie bereits Premium Edition-Kunde sind, ist SSO für Ihre Umgebung nicht au
 
 Um sicherzustellen, dass Ihre Berichte erhalten bleiben, migrieren Sie alle Berichte von _My Content_ zu _Team Content_. Gehen Sie dabei wie folgt vor. Vor der Aktivierung von SSO in Ihrer Umgebung sind folgende Schritte erforderlich:
 
-. Erstellen Sie einen neuen Ordner in _Team Content_
+. Navigieren Sie zu *Menü > Inhalt*
+
+
+image:Reporting_Menu.png["Cognos-Menü oben links"]
+
+. Erstellen Sie einen neuen Ordner in *_Team Content_*
 +
 .. Wenn mehrere Benutzer erstellt wurden, erstellen Sie für jeden Benutzer einen separaten Ordner, um zu vermeiden, dass Berichte mit doppelten Namen überschrieben werden
 

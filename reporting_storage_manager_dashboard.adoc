@@ -14,11 +14,15 @@ Das Storage Manager Dashboard bietet Ihnen eine zentrale Visualisierung, mit der
 
 NOTE: Die Berichtsfunktion ist in Cloud Insights verfügbar link:concept_subscribing_to_cloud_insights.html["Premium Edition"].
 
-Das Dashboard besteht aus sieben Komponenten, die kontextbezogene Informationen zu bestimmten Aspekten Ihrer Storage-Umgebung enthalten. Sie können die Aspekte Ihrer Storage-Services detailliert analysieren und einen Abschnitt, der für Sie am wichtigsten ist, analysieren.
-
 
 
 == Zusammenfassung
+
+Wenn Sie *Storage Manager Dashboard* aus Team Content auswählen, erhalten Sie mehrere Berichte, die Informationen über Ihren Datenverkehr und Ihren Speicher enthalten.
+
+image:Reporting_Storage_Manager_Dashboard_Choices.png["Optionen Des Storage Manager Dashboard"]
+
+Der *Storage Manager Report* besteht aus sieben Komponenten, die Kontextinformationen zu vielen Aspekten Ihrer Speicherumgebung enthalten. Sie können die Aspekte Ihrer Storage-Services detailliert analysieren und einen Abschnitt, der für Sie am wichtigsten ist, analysieren.
 
 image:Reporting-SMD.png["Storage Manager Dashboard"]
 

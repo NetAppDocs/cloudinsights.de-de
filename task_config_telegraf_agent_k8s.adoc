@@ -454,6 +454,9 @@ Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Perform
 
  kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
 
+NOTE: Die Bedienerabstimmung ist in der Cloud Insights Bundesausgabe nicht verfügbar
+
+
 
 == Fehlerbehebung
 

@@ -12,6 +12,9 @@ keywords: email, notifications, alerts, warnings, attacks
 Um die Empfänger von Benachrichtigungen für die Workload-Sicherheit zu konfigurieren, klicken Sie auf *Admin > Benachrichtigungen* und geben Sie für jeden Empfänger eine E-Mail-Adresse in die entsprechenden Abschnitte ein.
 
 
+NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
+
+
 
 == Potenzielle Angriffs- und Warnhinweise
 

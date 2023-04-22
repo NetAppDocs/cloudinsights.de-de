@@ -23,6 +23,8 @@ sidebar:
       url: "/security_overview.html"
     - title: Was wir speichern und wo
       url: "/security_information_and_region.html"
+    - title: Sicherheitstool
+      url: "/security_admin_tool.html"
   - title: Erste Schritte
     entries:
     - title: Lernprogramme Zu Funktionen

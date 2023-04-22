@@ -11,6 +11,9 @@ summary: Workload Security umfasst eine leistungsstarke API zur Integration in a
 [role="lead"]
 Die Workload-Sicherheits-API ermöglicht NetApp Kunden und unabhängigen Software-Anbietern (ISVs) die Integration der Workload-Sicherheit in andere Applikationen wie CMDB- oder andere Ticketsysteme.
 
+
+NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
+
 Anforderungen für API-Zugriff:
 
 * Ein API-Zugriffstoken-Modell wird verwendet, um den Zugriff zu gewähren.

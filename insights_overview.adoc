@@ -28,3 +28,12 @@ Durch Workloads mit hohen Auswirkungen kann die Performance anderer Workloads in
 === Kubernetes Namespaces sind nicht mehr platzsparend
 
 Die Kubernetes Namesaces sind nicht mehr Teil des Space Insight. Sie erhalten einen Einblick in Workloads in Ihren Kubernetes-Namespaces, die Gefahr bestehen, dass der Speicherplatz zu knapp wird. Sie erhalten eine Schätzung für die Anzahl der verbleibenden Tage, bevor der Speicherplatz voll ist. link:insights_k8s_namespaces_running_out_of_space.html["Weitere Informationen"]
+
+
+
+=== Rückgewinnung von ONTAP Cold Storage
+
+Der _Reclaim ONTAP Cold Storage_ Insight liefert Daten zur kalten Kapazität, zu potenziellen Kosten-/Energieeinsparungen sowie empfohlene Maßnahmen für Volumes auf ONTAP Systemen. link:insights_reclaim_ontap_cold_storage.html["Weitere Informationen"]
+
+
+NOTE: Dies ist eine _Preview_ Funktion und kann sich im Laufe der Zeit ändern, wenn Verbesserungen vorgenommen werden. link:/concept_preview_features.html["Weitere Informationen ."] Informationen zu den Funktionen der Cloud Insights-Vorschau.

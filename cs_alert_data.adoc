@@ -11,6 +11,9 @@ summary: Workload Security erzeugt Warnmeldungen bei abnormalen Benutzeraktivit�
 [role="lead"]
 Die Seite „Workload Security Alerts“ zeigt eine Zeitleiste aktueller Angriffe und/oder Warnungen an und ermöglicht Ihnen, Details zu jedem Problem anzuzeigen.
 
+
+NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
+
 image:CloudSecureAlertsListPage.png["Alarmliste"]
 
 

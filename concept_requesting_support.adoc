@@ -10,7 +10,10 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 
 
 toc::[]
-Sie können auf die Support-Optionen in Cloud Insights zugreifen, indem Sie auf *Hilfe > Support* klicken. Die verfügbaren Support-Optionen hängen davon ab, ob Sie sich im Test- oder Abonnementmodus befinden.
+Sie können auf die Support-Optionen in Cloud Insights zugreifen, indem Sie auf *Hilfe > Support* klicken. Welche Support-Optionen Ihnen zur Verfügung stehen, hängt von Ihrer Cloud Insights Edition ab.
+
+
+NOTE: Die Live-Chat-Support-Option ist in der Cloud Insights Bundesausgabe nicht verfügbar.
 
 image:SupportPageWithLearningCenter.png["Support-Seite"]
 

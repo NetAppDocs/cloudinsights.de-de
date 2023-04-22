@@ -26,13 +26,11 @@ ONTAP Essentials erfordert mindestens einen funktionierenden ONTAP Data Collecto
 
 Um die Erkundung zu beginnen, wählen Sie im Hauptmenü des Cloud Insights * ONTAP Essentials* aus.
 
-image:ONTAP_Essentials_Overview_Sept.png["Übersichtskonsole zu ONTAP Essentials"]
+image:OE_Overview.png["Übersichtskonsole zu ONTAP Essentials"]
 
 Das Dashboard *Übersicht* zeigt nützliche Informationen wie die Anzahl der Cluster in Ihrer Umgebung mit ihrer Gesamtkapazität und ihren Prozentwerten an Performance an. Außerdem werden Prognosedaten zur Anzahl der erwarteten Tage angezeigt, bis ihnen die Storage-Kapazität oder Performance-Kapazität nicht mehr genügend Speicherplatz zur Verfügung steht. Außerdem, wenn Controller in Ihrer Infrastruktur mit einer CPU von mehr als 65 % laufen - wodurch Ihr Cluster möglicherweise im Falle eines Failovers gefährdet wird - zeigt ONTAP Essentials diese als „Hot“ Controller an.
 
-Informative Diagramme geben Ihnen einen Überblick über die Performance über einen längeren Zeitraum und über Ausfälle der Kapazitätsauslastung.
-
-Jede dieser Diagramme oder Datenpunkte kann als Ausgangspunkt für Untersuchungen oder Untersuchungen verwendet werden.
+Informative Diagramme geben Ihnen einen Überblick über die Performance über einen längeren Zeitraum und über Ausfälle der Kapazitätsauslastung. Jede dieser Diagramme oder Datenpunkte kann als Ausgangspunkt für Untersuchungen oder Untersuchungen verwendet werden.
 
 Hinweis: Eine „Tage bis zur vollen“ Zahl von „0“ (Null) gibt an, dass die Tage für die volle Anzahl von mehr als 90 Tagen geschätzt werden. Mit anderen Worten: Ihre Systeme sind nicht in der Gefahr, dass der Speicherplatz zu jeder Zeit knapp wird.
 
@@ -42,7 +40,84 @@ Hinweis: Eine „Tage bis zur vollen“ Zahl von „0“ (Null) gibt an, dass di
 
 Klicken Sie auf die Seite *Datensicherung*, um SnapMirror Beziehungen anzuzeigen. Klicken Sie durch, um Informationen zum Quell- oder Zielvolumen zu erhalten, oder klicken Sie auf das Zahnradsymbol, um Spalten für die Daten hinzuzufügen, die angezeigt werden sollen.
 
-image:ONTAP_Essentials_data_protection.png["Listenseite für SnapMirror Beziehungen"]
+image:OE_DataProtection.png["Listenseite für SnapMirror Beziehungen"]
+
+
+
+== Sicherheit
+
+Das Security Dashboard bietet Ihnen einen sofortigen Überblick über Ihre aktuelle Sicherheitssituation und zeigt Diagramme zur Verschlüsselung von Hardware- und Software-Volumes, zum Ransomware-Schutz und zu Clusterauthentifizierungsmethoden an. Die Sicherheitskriterien werden anhand der in definierten Empfehlungen bewertet link:https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["*NetApp Security Hardening Guide for ONTAP 9*"].
+
+Wählen Sie eine beliebige Verschlüsselung oder Anti-Ransomware-Zählung aus, um in Ihre Umgebung einzutauchen.
+
+image:OE_SecurityDashboard.png["ONTAP Essentials Sicherheitskonsole"]
+
+Das ONTAP Essentials SicherheitsDashboard überwacht die Umgebung, um den Cluster-Compliance-Status zu ermitteln. Siehe link:https://docs.netapp.com/us-en/active-iq-unified-manager/health-checker/reference_cluster_compliance_categories.html["Cluster-Compliance-Kategorien"] Um mehr zu erfahren. ONTAP Essentials verwendet die folgenden Monitore zur Bestimmung der Compliance:
+
+|===
+| Monitorname | Attributname (angezeigt in Cluster-Details) | Attributkonformer Wert 
+
+
+| FIPS-Modus deaktiviert | FIPS-Modus | Aktiviert 
+
+
+| Cluster unsichere Chiffren für SSH | Sichere SSH-Einstellungen | Ja. 
+
+
+| Telnet-Protokoll Aktiviert | Telnet | Deaktiviert 
+
+
+| Remote Shell Aktiviert | Remote Shell | Deaktiviert 
+
+
+| Lokaler Admin-Standardbenutzer Aktiviert | Standard-Admin-Benutzer | Deaktiviert 
+
+
+| MD5-Kennwort gehasht | MD5 wird verwendet | Nein 
+
+
+| Cluster-Peer-Kommunikation Ist Nicht Verschlüsselt | Cluster-Peering | Verschlüsselt/Kein Peer 
+
+
+| AutoSupport HTTPS-Transport deaktiviert | AutoSupport über HTTPS | Ja. 
+
+
+| Es sind keine NTP-Server konfiguriert | Network Time Protocol | Konfiguriert 
+
+
+| NTP-Serveranzahl ist niedrig | Network Time Protocol | Konfiguriert 
+
+
+| Das Cluster-Anmelde-Banner Ist Deaktiviert | Anmelde-Banner | Aktiviert 
+
+
+| Protokollweiterleitung Nicht Verschlüsselt | Protokollweiterleitung Verschlüsselt | Ja. 
+|===
+Wenn ein Monitor oben deaktiviert ist, wird der Wert für das entsprechende Sicherheitsattribut in den Cluster-Details als ‘nicht aktiviert’ angezeigt.
+
+image:OE_Cluster_Compliance_Example.png["Cluster-Compliance-Status"]
+
+Bei SVMs werden die folgenden Monitore im Security Dashboard angezeigt:
+
+|===
+| Monitorname | Attributname (angezeigt unter Storage VM Settings) | Attributkonformer Wert 
+
+
+| Storage VM unsichere Chiffren für SSH | Sichere SSH-Einstellungen | Ja. 
+
+
+| Anmeldebanner für Storage VM deaktiviert | Anmelde-Banner | Aktiviert 
+
+
+| Überwachungsprotokoll für Storage VM ist deaktiviert | Überwachungsprotokoll | Aktiviert 
+|===
+Wählen Sie in der Cluster-Liste _View Details_ für jedes Cluster aus, um ein „Slideout“-Fenster zu öffnen, in dem die aktuellen Einstellungen für _Cluster, Storage VM,_ oder _Anti-Ransomware_ angezeigt werden.
+
+Cluster-Details umfassen den Verbindungsstatus, Zertifikatsinformationen und vieles mehr:image:OE_Cluster_Slideout.png["Fenster „Clusterdetails“"]
+
+Details zur Storage VM zeigen Audit- und SSH-Informationen an:image:OE_Storage_Slideout.png["Registerkarte „Speicher“"]
+
+Details zur Sicherheit von Ransomware zeigen, ob eine Storage-VM durch den Schutz vor Ransomware oder Cloud Insights-Workload-Sicherheit von ONTAP geschützt ist. Beachten Sie, dass in der Spalte „ONTAP ARP“ der aktuelle Status des integrierten Schutzes vor Ransomware von ONTAP angezeigt wird, der auf dem ONTAP System konfiguriert ist. Cloud Insights Workload-Sicherheit kann aktiviert werden, indem in dieser Spalte „Schützen“ ausgewählt wird.image:OE_Anti-Ransomware_Slideout.png["Anti-Ransomware-Registerkarte"]
 
 
 
@@ -50,8 +125,7 @@ image:ONTAP_Essentials_data_protection.png["Listenseite für SnapMirror Beziehun
 
 Hier können Sie die Active Alerts in Ihrer Umgebung anzeigen und potenzielle Probleme schnell auf den Blick nehmen. Wählen Sie die Registerkarte _aufgelöst_ aus, um die Warnmeldungen anzuzeigen, die behoben wurden.
 
-image:ONTAP_Essentials_Alerts_Menu.png["Menü „ONTAP-Warnungen“"]
-image:ONTAP_Essentials_Alerts_Page.png["Beispiel der Seite „ONTAP Alerts“, auf der aktive Meldungen angezeigt werden"]
+image:OE_Alerts.png["Liste der ONTAP Essentials-Warnungen"]
 
 
 

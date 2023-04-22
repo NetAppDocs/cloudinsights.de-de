@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: concept_kubernetes_performance_monitoring_and_map.html 
+keywords: service map, workloads, Kubernetes, 
+summary: Präsentiert Abhängigkeiten und Datenflüsse von Kubernetes-Workloads und hebt Netzwerk- und Performance-Probleme hervor 
+---
+= Performance-Monitoring und -Zuordnung von Kubernetes
+:allow-uri-read: 
+
+
+[role="lead"]
+Die Kubernetes Netzwerk-Performance- und Zuordnungsfunktion vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
+
+
+NOTE: Die Performance und Zuordnung des Kubernetes-Netzwerks ist eine link:concept_preview_features.html["Vorschau"] Und kann sich ändern.
+
+Die wichtigsten Funktionen • die Workload-Map präsentiert Kubernetes-Workload-Abhängigkeiten und -Abläufe und hebt Netzwerk- und Performance-Probleme hervor. • Monitoring des Netzwerkverkehrs zwischen Kubernetes-Pods, Workloads und Nodes; Ermittlung der Quelle von Traffic- und Latenzproblemen • Senkung der Gesamtkosten durch Analyse des Ingress-, Egress-, Regions- und zonenübergreifenden Netzwerk-Traffics.
+
+image:Workload Map Example_withSlideout.png["Beispiel für eine Workload-Zuordnung, in dem das Fenster „Slidesout“ mit Details angezeigt wird"]
+
+
+
+== Voraussetzungen
+
+Bevor Sie die Kubernetes-Netzwerk-Performance und -Zuordnung verwenden können, müssen Sie den konfiguriert haben link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] Um diese Option zu aktivieren. Aktivieren Sie während der Bereitstellung des Operators das Kontrollkästchen „Netzwerkleistung und Zuordnung“, um es zu aktivieren. Sie können diese Option auch aktivieren, indem Sie zu einer Kubernetes-Landing Page navigieren und „Implementierung ändern“ auswählen.
+
+image:ServiceMap_NKMO_Deployment_Options.png["Auswahl der Option Karte beim NKMO-Stup"]
+
+
+
+== Monitore
+
+Die Workload Map verwendet link:task_create_monitor.html["Monitore"] Um Informationen abzuleiten. Cloud Insights bietet eine Reihe von Kubernetes-Standardmonitoren an (beachten Sie, dass diese standardmäßig „_Paused_“ sein können. Sie können die gewünschten Monitore _Resume_ (d. h. aktivieren) oder benutzerdefinierte Monitore für kubernetes-Objekte erstellen, die auch von der Workload Map verwendet werden.
+
+
+
+== Die Karte
+
+Die Karte zeigt Services (auch als Workloads bezeichnet) und deren Beziehungen zueinander an. Pfeile zeigen die Verkehrsrichtung. Wenn Sie den Mauszeiger über einen Workload halten, werden zusammenfassende Informationen zu diesem Workload angezeigt, wie im folgenden Beispiel zu sehen ist:
+
+image:ServiceMap_Simple_Example.png["Beispiel eines Workload-Zuordnungs-Workloads"]
+
+Symbole innerhalb der Kreise stellen verschiedene Diensttypen dar. Beachten Sie, dass Symbole nur sichtbar sind, wenn die zugrunde liegenden Objekte vorhanden sind <<workload-labels,Etiketten>>.
+
+image:ServiceMap_Icons.png["Erläuterung Der Servicesymbole"]
+
+Die Größe jedes Kreises gibt die Knotengröße an. Beachten Sie, dass diese Größen relativ sind. Ihr Browser-Zoom-Level oder die Bildschirmgröße kann sich auf die tatsächlichen Kreisgrößen auswirken. Auf die gleiche Weise gibt Ihnen der Linienstil einen schnellen Überblick über die Verbindungsgröße; fett leuchtete Linien sind stark frequentlicht, während die gestrichelten Linien weniger Verkehr aufweisen.
+
+Zahlen innerhalb der Kreise sind die Anzahl der externen Verbindungen, die derzeit vom Dienst verarbeitet werden.
+
+image:ServiceMap_Node_and_Connection_Legend.png["Legende mit relativem Kreis (Knoten) und Verbindungsgrößen"]
+
+
+
+== Workload-Details und -Alarme
+
+Farbige Kreise weisen auf eine Warnung auf Warn- oder kritische Ebene für die Arbeitslast hin. Bewegen Sie den Mauszeiger über den Kreis, um eine Zusammenfassung des Problems zu erhalten, oder klicken Sie auf den Kreis, um ein Slideout-Fenster mit mehr Details zu öffnen.
+
+image:Workload_Map_Slideout_with_Alert.png["Details Zum Workload-Slideout Mit Warnungen"]
+
+
+
+== Filtern
+
+Wie bei anderen Cloud Insights-Funktionen können Sie auch bei den Filtern einfach den Fokus auf die gewünschten Objekte oder Workload-Attribute legen.
+
+image:Workload_Map_Filtering.png["Workload Map-Filterung"]
+
+
+
+== Workload-Etiketten
+
+Workload-Bezeichnungen sind erforderlich, wenn die Zuordnung die angezeigten Workload-Typen (d. h. die Kreissymbole) identifizieren soll. Die Bezeichnungen werden wie folgt abgeleitet:
+
+* Name des Dienstes/der Anwendung, der allgemein ausgeführt wird
+* Wenn es sich bei der Quelle um einen Pod handelt:
++
+** Abgeleitet aus dem Workload-Etikett des Pods
+** Erwartetes Label für den Workload: App.kubernetes.io/component
+** Bezeichnung Name Referenz: https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** Empfohlene Etiketten:
++
+*** Frontend
+*** Back-End
+*** Datenbank
+*** Cache
+*** Warteschlange
+*** kafka
+
+
+
+
+* Wenn die externe Quelle des K8s-Clusters:
++
+** Versuchen Sie, den DNS-aufgelösten Namen zu analysieren und extrahieren Sie den Diensttyp
++
+Beispiel: s3.eu-north-1.amazonaws.com
+
++
+Aufgelöster Name analysiert, um s3 zu erhalten
+
+
+
+
