@@ -22,7 +22,7 @@ summary: Erstellen von Monitoren, damit bei Performance- oder Bestandsschwellenw
 Cloud Insights umfasst eine Reihe von systemdefinierten Monitoren für Kennzahlen und Protokolle. Die verfügbaren Systemmonitore sind abhängig von den Datensammlern in Ihrer Umgebung. Aus diesem Grund können sich die in Cloud Insights verfügbaren Monitore ändern, wenn Datensammler hinzugefügt oder ihre Konfigurationen geändert werden.
 
 
-NOTE: Die meisten Systemmonitore befinden sich standardmäßig im Status _Paused_. Bevor Sie den Monitor wieder aufnehmen können, müssen Sie sicherstellen, dass _Advanced Counter Data Collection_ und _Enable ONTAP EMS Log Collection_ im Data Collector aktiviert sind. Diese Optionen finden Sie im ONTAP Data Collector unter _Erweiterte Konfiguration_:image:Enable_Log_Monitor_Collection.png["Aktivieren der Advanced Counter- und EMS Log-Sammlung für ONTAP"]
+NOTE: Viele Systemmonitore befinden sich standardmäßig im Status „_Paused_“. Sie können einen Systemmonitor aktivieren, indem Sie die Option „_Fortsetzen_“ für den Monitor auswählen. Stellen Sie sicher, dass _Advanced Counter Data Collection_ und _enable ONTAP EMS Log Collection_ im Data Collector aktiviert sind. Diese Optionen finden Sie im ONTAP Data Collector unter _Erweiterte Konfiguration_:image:Enable_Log_Monitor_Collection.png["Aktivieren der Advanced Counter- und EMS Log-Sammlung für ONTAP"]
 
 
 toc::[]
