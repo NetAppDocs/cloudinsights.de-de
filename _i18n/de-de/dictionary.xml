@@ -1719,7 +1719,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">API-Kommunikation mit ONTAP</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM-Daten-LIF-IP-Adressen</block>
-  <block id="610c4c7f3524467ba601e165dfb7b27c" category="cell">Eingehend/Ausgehend</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">Kommunikation mit ONTAP bei FPolicy-Ereignissen</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">Bidirektional</block>
@@ -10568,7 +10567,6 @@
   <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">Für * US-basierte * -Sicherheitsumgebungen:</block>
   <block id="cd901a4d0c763788558340776fd2cdb5" category="paragraph">Für *Europa-basierte* Arbeitslastsicherheitsumgebungen:</block>
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">Für * APAC-basierte * -Arbeitsumgebungen:</block>
-  <block id="c62621daddc9bbedf66f077464765078" category="cell">Bidirektional zwischen ONTAP und Workload Security. Agent pingt die SVM-LIFs an.</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">Wenn Sie Workload Security in Ihrer Umgebung haben, werden auch die konfigurierten Endpunkt-URLs in dieser Liste angezeigt.</block>
   <block id="5711e9cabb01e59f7ce2f48ba56a6e96" category="paragraph">Beachten Sie, dass die API-Typen, auf die ein Benutzer Zugriff hat, auch vom abhängen <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> Sie werden in allen Cloud Insights Funktionen eingesetzt (Monitoring, Workload-Sicherheit, Berichterstellung).</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">Workload Security löscht automatisch Snapshots einmal pro Tag auf Basis der Snapshot-Einstellungen.</block>
@@ -11044,4 +11042,6 @@
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">Einige der Net-Observer-Pods im NKMO-Namespace befinden sich im Status „Ausstehend“</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">NET-Observer ist ein DemonSet und führt in jedem Knoten des K8s-Clusters einen Pod aus. • Beachten Sie den Pod, der sich im Status „Ausstehend“ befindet, und prüfen Sie, ob ein Ressourcenproblem für CPU oder Speicher vorliegt. Stellen Sie sicher, dass der erforderliche Arbeitsspeicher und die erforderliche CPU im Knoten verfügbar sind.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Viele Systemmonitore befinden sich standardmäßig im Status „_Paused_“. Sie können einen Systemmonitor aktivieren, indem Sie die Option „_Fortsetzen_“ für den Monitor auswählen. Stellen Sie sicher, dass _Advanced Counter Data Collection_ und _enable ONTAP EMS Log Collection_ im Data Collector aktiviert sind. Diese Optionen finden Sie im ONTAP Data Collector unter _Erweiterte Konfiguration_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">Eingehend</block>
+  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">Unidirektional zwischen ONTAP und Workload-Sicherheit. Agent pingt die SVM-LIFs an.</block>
 </blocks>

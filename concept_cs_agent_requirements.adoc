@@ -107,13 +107,13 @@ Beachten Sie, dass beim Hinzufügen von _link:task_add_collector_svm.html#permis
 | TCP | 443 | Cluster- oder SVM-Management-IP-Adresse (abhängig von der SVM-Collector-Konfiguration) | Abgehender Anruf | API-Kommunikation mit ONTAP 
 
 
-| TCP | 35000 - 55000 | SVM-Daten-LIF-IP-Adressen | Eingehend/Ausgehend | Kommunikation mit ONTAP bei FPolicy-Ereignissen 
+| TCP | 35000 - 55000 | SVM-Daten-LIF-IP-Adressen | Eingehend | Kommunikation mit ONTAP bei FPolicy-Ereignissen 
 
 
-| TCP | 7 | SVM-Daten-LIF-IP-Adressen | Bidirektional | Bidirektional zwischen ONTAP und Workload Security. Agent pingt die SVM-LIFs an. 
+| TCP | 7 | SVM-Daten-LIF-IP-Adressen | Abgehender Anruf | Unidirektional zwischen ONTAP und Workload-Sicherheit. Agent pingt die SVM-LIFs an. 
 
 
-| SSH | 22 | Cluster-Management | Bidirektional | Erforderlich für das Blockieren von CIFS/SMB-Benutzern. 
+| SSH | 22 | Cluster-Management | Abgehender Anruf | Erforderlich für das Blockieren von CIFS/SMB-Benutzern. 
 |===
 
 
