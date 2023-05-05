@@ -49,24 +49,3 @@ Die folgenden Objekte und ihre Zähler werden als Node-Kennzahlen erfasst:
 == Einrichtung
 
 Informationen zur Einrichtung und Fehlerbehebung finden Sie im link:task_config_telegraf_agent.html["Konfigurieren eines Agenten"] Seite.
-
-
-
-== MacOS-Speicherauslastung
-
-Cloud Insights (via Telegraf) und macOS berichten über verschiedene Nummern für die Speichernutzung. Sowohl Telegraf als auch der Mac-Aktivitätsmonitor verwenden Metriken, die von _vm_stat_ gesammelt wurden, jedoch wird die Gesamtspeichernutzung jeweils unterschiedlich berechnet.
-
-*Telegraf* berechnet _Memory Used Total_ wie folgt:
-
- Memory Used Total = Memory Total - Memory Available Total
-Wobei _Memory Available Total_ aus der Summe von „Pages free“ und „Pages inactive“ in _vm_stat_ abgeleitet wird.
-
-*Der Mac-Aktivitätsmonitor* berechnet hingegen den verwendeten Speicher wie folgt:
-
- Memory Used = App Memory + Wired Memory + Compressed
-Wo?
-
-* _App Memory_ wird aus dem Unterschied zwischen „Anonymen Seiten“ und „Seiten auffindbar“ in _vm_stat_,
-* _Wired Memory_ wird von „Pages Wired Down“ in _vm_stat_, und abgeleitet
-* _Compressed_ wird aus „Seiten, die durch Kompressor belegt sind“ in _vm_stat_ abgeleitet.
-

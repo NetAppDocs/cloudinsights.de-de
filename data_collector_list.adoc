@@ -198,9 +198,6 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_dc_lenovo.html["Lenovo HX-Serie"] | Infrastruktur 
 
 
-| link:task_config_telegraf_agent.html#macos["MacOS"] | Service 
-
-
 | link:task_config_telegraf_memcached.html["Gememcachte"] | Service 
 
 

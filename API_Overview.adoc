@@ -312,21 +312,6 @@ spec:
 
 
 
-==== MacOS
-
-* Bearbeiten Sie die Telegraf-Konfigurationsdateien und ersetzen Sie alle Instanzen des alten API-Tokens durch das neue API-Token.
-+
- sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /usr/local/etc/telegraf.d/*.conf
-* Telegraf Neu Starten.
-+
-....
-sudo launchctl stop telegraf
-sudo launchctl start telegraf
-....
-
-
-
-
 ==== Windows
 
 * Ersetzen Sie für jede Telegraf-Konfigurationsdatei in _C:\Programme\telegraf\telegraf.d_ alle Instanzen des alten API-Tokens durch das neue API-Token.

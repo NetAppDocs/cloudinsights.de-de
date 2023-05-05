@@ -58,7 +58,7 @@ Sie können später zusätzliche Datensammler konfigurieren.
 
 === Betriebssystem:
 
-Wählen Sie für Datensammler _Betriebssystem_ eine Plattform (MacOS, Linux, Windows) aus, um einen Cloud Insights-Agent zu installieren. Sie müssen mindestens einen Agenten haben, um Daten von Services zu erfassen. Der Agent erfasst auch Daten vom Host selbst, zur Verwendung in Cloud Insights. Diese Daten werden in Widgets usw. als „Knoten“-Daten kategorisiert
+Wählen Sie für _Betriebssystem_ Datensammler eine Plattform (Linux, Windows) aus, um einen Cloud Insights-Agenten zu installieren. Sie müssen mindestens einen Agenten haben, um Daten von Services zu erfassen. Der Agent erfasst auch Daten vom Host selbst, zur Verwendung in Cloud Insights. Diese Daten werden in Widgets usw. als „Knoten“-Daten kategorisiert
 
 * Öffnen Sie ein Terminal- oder Befehlsfenster auf dem Agent-Host oder der VM, und fügen Sie den angezeigten Befehl ein, um den Agenten zu installieren.
 * Klicken Sie nach Abschluss der Installation auf *Setup abschließen*.

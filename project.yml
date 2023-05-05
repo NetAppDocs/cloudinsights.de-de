@@ -37,9 +37,9 @@ sidebar:
         url: "/concept_acquisition_unit_requirements.html"
       - title: Konfigurieren einer Akquisitionseinheit
         url: "/task_configure_acquisition_unit.html"
-      - title: Konfigurieren eines Agenten (Windows/Linux/Mac)
+      - title: Konfigurieren eines Agenten unter Windows/Linux
         url: "/task_config_telegraf_agent.html"
-      - title: Konfigurieren eines Agenten (Kubernetes)
+      - title: Konfigurieren eines Kubernetes-Operators
         url: "/task_config_telegraf_agent_k8s.html"
       - title: Konfigurieren Von Datensammlern
         url: "/task_configure_data_collectors.html"

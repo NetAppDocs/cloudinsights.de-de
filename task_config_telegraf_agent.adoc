@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: Cloud Insights unterstützt Telegraf als Agent zur Erfassung von Integrationsdaten und kann unter Windows, Linux, macOS und Kubernetes konfiguriert werden. 
+summary: Cloud Insights unterstützt Telegraf als Agent für die Erfassung von Integrationsdaten und kann unter Windows oder Linux konfiguriert werden. 
 ---
-= Konfigurieren eines Agenten zum Erfassen von Daten (Windows/Linux/Mac)
+= Konfigurieren eines Agenten zur Datenerfassung (Windows/Linux)
 :allow-uri-read: 
 
 
@@ -28,8 +28,6 @@ Wenn Sie einen Service Data Collector installieren und noch keinen Agent konfigu
 * <<Windows>>
 * <<RHEL und CentOS>>
 * <<Ubuntu und Debian>>
-* <<MacOS>>
-* <<Kubernetes>>
 
 
 Um einen Agent zu installieren, müssen Sie, unabhängig von der verwendeten Plattform, zunächst die folgenden Schritte ausführen:
@@ -37,9 +35,7 @@ Um einen Agent zu installieren, müssen Sie, unabhängig von der verwendeten Pla
 . Melden Sie sich beim Host an, den Sie für Ihren Agenten verwenden werden.
 . Melden Sie sich auf Ihrer Cloud Insights-Website an und gehen Sie zu *Admin > Datensammler*.
 . Klicken Sie auf *+Data Collector* und wählen Sie einen zu installierenden Datensammler aus.
-
-
-. Wählen Sie die geeignete Plattform für Ihren Host (Windows, Linux, macOS usw.)
+. Wählen Sie die passende Plattform für Ihren Host (Windows, Linux)
 . Befolgen Sie die verbleibenden Schritte für jede Plattform.
 
 
@@ -345,145 +341,6 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 
 
-=== MacOS
-
-
-
-==== Voraussetzungen:
-
-* Folgende Befehle müssen verfügbar sein: Curl, sudo, openssl und shasum
-* Wenn Sie sich hinter einem Proxy befinden, müssen Sie die Anweisungen im Abschnitt * Proxy-Unterstützung für macOS* befolgen.
-
-
-
-
-==== Proxy-Unterstützung für macOS wird konfiguriert
-
-
-NOTE: Wenn in Ihrer Umgebung ein Proxy verwendet wird, lesen Sie diesen Abschnitt vor der Installation.
-
-
-NOTE: In den folgenden Schritten werden die Aktionen beschrieben, die zum Festlegen der Umgebungsvariablen _http_Proxy/HTTPS_Proxy_ erforderlich sind. In einigen Proxyumgebungen müssen Benutzer möglicherweise auch die Variable _no_Proxy-Umgebung_ einstellen.
-
-Führen Sie bei Systemen, die sich hinter einem Proxy befinden, folgende Schritte aus, um die Umgebungsvariable _https_Proxy_ und/oder _http_Proxy_ für den aktuellen Benutzer *VOR* zur Installation des Telegraf-Agenten festzulegen:
-
- export https_proxy=<proxy_server>:<proxy_port>
-*NACH* Installation des Telegraf-Agenten, fügen Sie die entsprechende _https_Proxy_ und/oder _http_Proxy_ Variable(en) in _/Applications/telegraf.App/Contents/telegraf.plist_: hinzu und setzen Sie sie ein
-
-....
-…
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-   <key>EnvironmentVariables</key>
-   <dict>
-          <key>https_proxy</key>
-          <string><proxy_server>:<proxy_port></string>
-   </dict>
-   <key>Program</key>
-   <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-   <key>Label</key>
-   <string>telegraf</string>
-   <key>ProgramArguments</key>
-   <array>
-     <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-     <string>--config</string>
-     <string>/usr/local/etc/telegraf.conf</string>
-     <string>--config-directory</string>
-     <string>/usr/local/etc/telegraf.d</string>
-   </array>
-   <key>RunAtLoad</key>
-   <true/>
-</dict>
-</plist>
-…
-....
-Starten Sie dann Telegraf nach dem Laden der oben genannten Änderungen neu:
-
-....
-sudo launchctl stop telegraf
-sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl start telegraf
-....
-
-
-==== Installieren des Agenten
-
-image:Agent_Requirements_Macos.png["MacOS Agent-Installation"]
-
-.Schritte zum Installieren von Agent auf macOS:
-. Wählen Sie einen Agent-Zugriffsschlüssel aus.
-. Kopieren Sie den Befehlsblock aus dem Agent-Installationsdialog. Sie können auf das Clipboard-Symbol klicken, um den Befehl schnell in die Zwischenablage zu kopieren.
-. Öffnen Sie ein Fenster „Bash“
-. Fügen Sie den Befehl in das Fenster „Bash“ ein, und drücken Sie die Eingabetaste.
-. Der Befehl lädt das entsprechende Agent-Installationsprogramm herunter, installiert es und legt eine Standardkonfiguration fest. Nach Abschluss des Vorgangs wird der Agent-Service neu gestartet. Der Befehl hat einen eindeutigen Schlüssel und ist 24 Stunden lang gültig.
-. Wenn Sie zuvor einen Telegraf-Agent mit Homebrew installiert haben, werden Sie aufgefordert, ihn zu deinstallieren. Nachdem der zuvor installierte Telegraf Agent deinstalliert wurde, führen Sie den Befehl in Schritt 5 erneut aus.
-. Klicken Sie auf *Fertig* oder *Weiter*
-
-
-Nach der Installation des Agent können Sie den Dienst mit den folgenden Befehlen starten/stoppen:
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
-
-
-==== Deinstallieren des Agenten
-
-Um den Agent auf macOS zu deinstallieren, führen Sie in einem Bash-Terminal Folgendes aus:
-
-. Stoppen Sie den Telegraf-Service:
-+
- sudo launchctl stop telegraf
-. Deinstallieren Sie den telegraf-Agent:
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. Entfernen Sie alle Konfigurations- oder Protokolldateien, die zurückgelassen werden können:
-+
-....
-sudo rm -rf /usr/local/etc/telegraf*
-sudo rm -rf /usr/local/var/log/telegraf.*
-....
-
-
-
-
-==== Aktualisieren des Agenten
-
-Um den telegraf-Agent zu aktualisieren, gehen Sie wie folgt vor:
-
-. Stoppen sie den telegraf-Service:
-+
- sudo launchctl stop telegraf
-. Deinstallieren Sie den vorherigen telegraf-Agent:
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. link:#macos["Installieren Sie den neuen Agenten"].
-
-
-{Leer} {leer} {leer} {leer} {leer} leer {Leer}
-
-
-
-== Kubernetes
-
-Der NetApp Kubernetes Monitoring Operator (NKMO) ist die bevorzugte Methode zur Installation von Kubernetes für Cloud Insights Insights. Es ermöglicht eine flexiblere Konfiguration der Überwachung in weniger Schritten sowie erweiterte Möglichkeiten zur Überwachung anderer Software, die im K8s Cluster ausgeführt wird.
-
-Bitte link:task_config_telegraf_agent_k8s.html["*Los geht hier*"] Informationen und Installationsanweisungen für den NetApp Kubernetes Monitoring Operator.
-
-{Leer} {leer} {leer} {leer} {leer} leer {Leer}
-
-
-
 == Prüfsummen Werden Überprüft
 
 Das Cloud Insights Agent-Installationsprogramm führt Integritätsprüfungen durch. Einige Benutzer müssen jedoch vor der Installation oder Anwendung heruntergeladener Artefakte möglicherweise ihre eigenen Überprüfungen durchführen. Dazu können Sie das Installationsprogramm herunterladen und eine Prüfsumme für das heruntergeladene Paket erstellen. Anschließend wird die Prüfsumme mit dem in der Installationsanleitung angegebenen Wert verglichen.
@@ -498,7 +355,7 @@ Führen Sie hierzu folgende Schritte aus:
 
 . Kopieren Sie das Agent Installer-Snippet wie angewiesen.
 . Anstatt das Snippet in ein Befehlsfenster einzufügen, fügen Sie es in einen Texteditor ein.
-. Entfernen Sie die nachgestellten „--install“ (Linux/Mac) oder „-install“ (Windows) aus dem Befehl.
+. Entfernen Sie die nachstehende „--install“ (Linux) oder „-install“ (Windows) aus dem Befehl.
 . Kopieren Sie den gesamten Befehl aus dem Texteditor.
 . Fügen Sie es nun in Ihr Befehlsfenster ein (in einem Arbeitsverzeichnis) und führen Sie es aus.
 
@@ -556,9 +413,6 @@ Um den Prüfsummenwert zu generieren, führen Sie für die entsprechende Plattfo
 * RHEL/Ubuntu:
 +
  sha256sum <package_name>
-* MacOS:
-+
- shasum -a 256 telegraf.pkg
 * Windows:
 +
  Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List

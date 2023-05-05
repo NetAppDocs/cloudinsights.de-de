@@ -141,7 +141,7 @@ image:Kubernetes_Workload_LP.png["Beispiel Einer Kubernetes Workload Landing Pag
 
 === Überprüfen Sie Ihre Prüfsummen
 
-Sie haben uns gebeten, Ihnen bei der Installation des Agenten für Windows, Linux und MacOS Prüfsummenwerte zur Verfügung zu stellen, und das ist eine großartige Idee. Hier sind sie also:
+Sie haben uns gebeten, Ihnen während der Installation des Agenten für Windows und Linux Prüfsummenwerte bereitzustellen, und wir denken, dass das eine tolle Idee ist. Hier sind sie also:
 
 image:Agent_Checksum_Instructions.png["Agent-Prüfsummenwerte werden während der Installation angezeigt"]
 
