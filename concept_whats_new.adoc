@@ -15,6 +15,16 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== Mai 2023
+
+
+
+=== Verbesserte Workload-Sicherheit beim Laden des Bildschirms
+
+Cloud Insights hat die Benutzerfreundlichkeit verbessert, da Bildschirme für Beobachtbarkeit und Workload-Sicherheit effizienter angezeigt werden. Dadurch verkürzt sich die Ladezeit, während Sie auf diese Funktionen navigieren. Beachten Sie, dass sich die URLs der Seite Workload Security geändert haben. Vorherige URLs werden automatisch zu den neuen URLs umgeleitet.
+
+
+
 == April 2023
 
 
