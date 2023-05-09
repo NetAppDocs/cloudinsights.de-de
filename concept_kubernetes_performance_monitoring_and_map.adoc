@@ -16,7 +16,7 @@ NOTE: Die Performance und Zuordnung des Kubernetes-Netzwerks ist eine link:conce
 
 Die wichtigsten Funktionen • die Workload-Map präsentiert Kubernetes-Workload-Abhängigkeiten und -Abläufe und hebt Netzwerk- und Performance-Probleme hervor. • Monitoring des Netzwerkverkehrs zwischen Kubernetes-Pods, Workloads und Nodes; Ermittlung der Quelle von Traffic- und Latenzproblemen • Senkung der Gesamtkosten durch Analyse des Ingress-, Egress-, Regions- und zonenübergreifenden Netzwerk-Traffics.
 
-image:Workload Map Example_withSlideout.png["Beispiel für eine Workload-Zuordnung, in dem das Fenster „Slidesout“ mit Details angezeigt wird"]
+image:workload-map-animated.gif["Beispiel Für Eine Workload-Zuordnung"]
 
 
 
