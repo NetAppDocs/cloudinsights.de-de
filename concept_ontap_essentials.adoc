@@ -40,7 +40,8 @@ Hinweis: Eine „Tage bis zur vollen“ Zahl von „0“ (Null) gibt an, dass di
 
 Klicken Sie auf die Seite *Datensicherung*, um SnapMirror Beziehungen anzuzeigen. Klicken Sie durch, um Informationen zum Quell- oder Zielvolumen zu erhalten, oder klicken Sie auf das Zahnradsymbol, um Spalten für die Daten hinzuzufügen, die angezeigt werden sollen.
 
-image:OE_DataProtection.png["Listenseite für SnapMirror Beziehungen"]
+image:DataProtectionDashboard_OverviewWidgets.png["Data Protection Dashboard-Widgets, die lokale und Remote-Übersichten anzeigen"]
+image:DataProtectionDashboard_ClusterList.png["Liste Der Datensicherungs-Cluster"]
 
 
 
