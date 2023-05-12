@@ -92,7 +92,7 @@ sidebar:
     - title: Kubernetes Cluster-Seite
       url: "/kubernetes_cluster_detail.html"
     - title: Kubernetes Monitoring und -Zuordnung
-      url: "/concept_kubernetes_network_monitoring_and_map.html"
+      url: "/concept_kubernetes_performance_monitoring_and_map.html"
   - title: Einblick
     entries:
     - title: Überblick
@@ -173,8 +173,6 @@ sidebar:
       url: "/concept_asset_user_data_section.html"
     - title: Abschnitt „Verwandte Warnmeldungen“
       url: "/concept_asset_alerts_section.html"
-    - title: Storage-Virtualisierung
-      url: "/concept_storage_virtualization.html"
     - title: Tipps und Tricks für die Suche nach Ressourcen
       url: "/concept_searching_assets.html"
   - title: Berichterstellung

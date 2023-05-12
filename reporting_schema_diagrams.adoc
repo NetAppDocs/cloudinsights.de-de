@@ -22,51 +22,33 @@ Die folgenden Bilder beschreiben das Inventurdatamart.
 
 
 
-=== Anmerkungen
+=== Storage
 
-image:annotations.png[""]
-
-
-
-=== Applikationen Unterstützt
-
-image:apps_annot.png[""]
+image:storage.png[""]
 
 
 
-=== Kubernetes-Kennzahlen
+=== Storage-Node
 
-image:k8s_schema.jpg["Kubernetes"]
-
-
-
-==== Kennzahlen Für Kubernetes Cluster
-
-image:k8s_cluster_metrics_fact.jpg["Kennzahlen Für Kubernetes Cluster"]
+image:storage_node.png[""]
 
 
 
-==== Kenngrößen Für Kubernetes-Namespace
+=== SAN-Fabric
 
-image:k8s_namespace_metrics_fact.jpg["Kenngrößen Für Kubernetes-Namespace"]
-
-
-
-==== Kenngrößen Für Kubernetes-Nodes
-
-image:k8s_node_metrics_fact.jpg["Kenngrößen Für Kubernetes-Nodes"]
+image:fabric.png[""]
 
 
 
-==== Kennzahl der Kubernetes PVC
+=== Port-Konnektivität
 
-image:k8s_pvc_metrics_fact.jpg["Kennzahl der Kubernetes PVC"]
+image:connectivity.png[""]
 
 
 
-==== Kenngrößen Für Kubernetes-Workloads
+=== VM
 
-image:k8s_workload_metrics_fact.jpg["Kenngrößen Für Kubernetes-Workloads"]
+image:vm.png[""]
 
 
 
@@ -82,76 +64,39 @@ image:logical.png[""]
 
 
 
-=== Port-Konnektivität
+=== Anmerkungen
 
-image:connectivity.png[""]
-
-
-
-=== SAN-Fabric
-
-image:fabric.png[""]
+image:annotations.png[""]
 
 
 
-=== Storage
+=== Applikationen Unterstützt
 
-image:storage.png[""]
-
-
-
-=== Storage-Node
-
-image:storage_node.png[""]
+image:apps_annot.png[""]
 
 
 
-=== VM
+=== Kapazität im Storage- und Speicherpool
 
-image:vm.png[""]
-
-'''
-
-
-== Kapazitätsdatamart
-
-Die folgenden Bilder beschreiben die Datenkapazität.
+image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 
 
-=== Kostenverrechnung
+=== Volume-Kapazität
 
-image:Chargeback_Fact.png[""]
-
-
-
-=== Kapazität Der Festplattengruppe
-
-image:Disk_Group_Capacity.png[""]
+image:Volume_Capacity.png[""]
 
 
 
-=== Auslastung Des Filesystems
+=== VM-Kapazität
 
-image:fs_util.png[""]
+image:VM_Capacity_Fact.png[""]
 
 
 
 === Kapazität Des Internen Volumes
 
 image:Internal_Volume_Capacity_Fact.png[""]
-
-
-
-=== Kubernetes PV-Kapazität
-
-image:k8s_pvc_capacity_fact.jpg[""]
-
-
-
-=== Port-Kapazität
-
-image:ports.png[""]
 
 
 
@@ -173,23 +118,28 @@ image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 
 
-=== Kapazität Des Storage-Nodes
+=== Auslastung Des Filesystems
 
-image:Storage_Node_Capacity_Fact.jpg[""]
-
-
-
-=== VM-Kapazität
-
-image:VM_Capacity_Fact.png[""]
+image:fs_util.png[""]
 
 
 
-=== Volume-Kapazität
+=== Port-Kapazität
 
-image:Volume_Capacity.png[""]
+image:ports.png[""]
 
-'''
+
+
+=== Kostenverrechnung
+
+image:Chargeback_Fact.png[""]
+
+
+
+=== Kapazität Der Festplattengruppe
+
+image:Disk_Group_Capacity.png[""]
+
 
 
 == Performance Datamart
@@ -200,55 +150,43 @@ Die folgenden Bilder beschreiben das Performance-Datum.
 
 === Stündliche Performance Des Applikations-Volumes
 
-image:application_performance_fact.jpg[""]
-
-
-
-=== Tägliche Festplatten-Performance
-
-image:disk_daily_performance_fact.png[""]
-
-
-
-=== Stündliche Festplatten-Performance
-
-image:disk_hourly_performance_fact.png[""]
-
-
-
-=== Stündliche Host-Performance
-
-image:host_performance_fact.jpg[""]
+b68ed2de708ea9b3b40e76b37e99573b
 
 
 
 === Stündliche Performance Des Internen Volumes
 
-image:internal_volume_performance_fact.jpg[""]
+49849b07ecf6904a481a051c4c6e59bf
+
+
+
+=== Stündliche Performance Des Internen Volumes
+
+566adfd62d1d59e5aa02e13ceb0d2212
 
 
 
 === Tägliche Performance Des Internen Volumes
 
-image:internal_volume_daily_performance_fact.jpg[""]
+8665cb5eac9e402f835407ee789aba61
+
+
+
+=== Stündliche Volume-Performance
+
+image:vmdk_hourly_performance_fact.png[""]
+
+
+
+=== Tägliche Volume Performance
+
+d14385553d6e0a6f14394bc02a502a42
 
 
 
 === Tägliche Qtree Performance
 
 image:QtreeDailyPerformanceFact.png[""]
-
-
-
-=== Tägliche Storage-Node-Performance
-
-image:storage_node_daily_performance_fact.jpg[""]
-
-
-
-=== Stündliche Storage-Node-Performance
-
-image:storage_node_hourly_performance_fact.jpg[""]
 
 
 
@@ -318,12 +256,24 @@ image:vmdk_hourly_performance_fact.png[""]
 
 
 
-=== Stündliche Volume-Performance
+=== Stündliche Storage-Node-Performance
 
-image:volume_performance_fact.jpg[""]
+a6040f821773a9032da45c788b24e202
 
 
 
-=== Tägliche Volume Performance
+=== Tägliche Festplatten-Performance
 
-image:volume_daily_performance_fact.jpg[""]
+image:disk_daily_performance_fact.png[""]
+
+
+
+=== Stündliche Festplatten-Performance
+
+image:disk_hourly_performance_fact.png[""]
+
+
+
+== Kubernetes
+
+image:k8s_schema.jpg["Kubernetes"]
