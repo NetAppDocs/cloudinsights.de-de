@@ -5,7 +5,17 @@ summary: Neue Funktionen in Cloud Insights verfügbar
 keywords: features 
 ---
 = Was ist neu bei Cloud Insights
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige der neuesten Features und Funktionalitäten, die in den kommerziellen Editionen von Cloud Insights verfügbar sind.
