@@ -54,19 +54,8 @@ Für jede Aktion der Warnmeldung werden E-Mail-Benachrichtigungen an die Benachr
 
 Wählen Sie zum Konfigurieren von Empfängern für globale Warnmeldungen die gewünschten Empfänger im Abschnitt *Empfänger für globale Monitorbenachrichtigungen* aus.
 
+[role="thumb"]
 Sie können die globale Empfängerliste für einen einzelnen Monitor immer überschreiben, wenn Sie den Monitor erstellen oder ändern.
 
 
 NOTE: ONTAP Data Collector-Benachrichtigungen haben Vorrang vor allen spezifischen Monitoring-Benachrichtigungen, die für den Cluster/den Datensammler relevant sind. Die Empfängerliste, die Sie für den Data Collector selbst festgelegt haben, erhält die Warnungen zum Datensammler. Wenn keine aktiven Warnungen zur Datenerfassung vorhanden sind, werden die von Monitor erzeugten Warnmeldungen an bestimmte Überwachungsempfänger gesendet.
-
-
-
-== Bearbeiten von Benachrichtigungen für ONTAP
-
-Sie können Benachrichtigungen für ONTAP-Cluster ändern, indem Sie in der oberen rechten Dropdown-Liste auf einer Storage-Landing-Page „_Benachrichtigungen bearbeiten“ auswählen.
-
-image:EditONTAPNotifications.png["ONTAP Benachrichtigungen bearbeiten"]
-
-Von hier aus können Sie Benachrichtigungen für kritische, Warn-, Informations- und/oder gelöste Warnmeldungen festlegen. Jedes Szenario kann die Liste der globalen Empfänger oder andere von Ihnen ausgewählte Empfänger benachrichtigen.
-
-image:EditONTAPNotifications_MultipleScenarios.png["ONTAP-Benachrichtigungen für verschiedene Szenarien"]
