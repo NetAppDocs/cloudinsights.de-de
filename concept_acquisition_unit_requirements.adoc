@@ -21,7 +21,7 @@ Sie müssen eine Acquisition Unit (AU) installieren, um Informationen aus Ihren 
 | Komponente | Linux-Anforderungen Erfüllt | Windows Anforderungen 
 
 
-| Betriebssystem | 9eaf347efd9d5225664dc4c414a82eb2 | Ein Computer mit einer lizenzierten Version von einer der folgenden Komponenten: * Microsoft Windows 10 64-Bit * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen. 
+| Betriebssystem | Ein Computer, auf dem eine lizenzierte Version von einer der folgenden Versionen läuft: * CentOS (64-Bit): 7.2 bis 7.9, Stream 8, Stream 9 * Debian (64-Bit): 9 und 10 * Oracle Enterprise Linux (64-Bit): 7.5 bis 7.9, 8.1 bis 8.4 * Red hat Enterprise Linux (64-Bit): 7.2 bis 7.9, 8.1 bis 9.1 * Rocky 9.0, 9.1 * Ubuntu Server: 18.04 und 20.04 LTS auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen. | Ein Computer mit einer lizenzierten Version von einer der folgenden Komponenten: * Microsoft Windows 10 64-Bit * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen. 
 
 
 | CPU | 2 CPU-Kerne | Gleich 
