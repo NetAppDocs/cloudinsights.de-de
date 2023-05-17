@@ -18,7 +18,7 @@ NOTE: Diese Seite bezieht sich auf Anweisungen von Dritten, die möglicherweise 
 
 == Slack-Beispiel:
 
-* Gehen Sie zu https://api.slack.com/apps[] Und erstellen Sie eine neue App Gib ihm einen aussagekräftigen Namen und wähle den Slack Workspace aus.
+* Gehen Sie zu https://[] Und erstellen Sie eine neue App Gib ihm einen aussagekräftigen Namen und wähle den Slack Workspace aus.
 +
 image:Webhooks_Slack_Create_Webhook.png["Slack Webhook Erstellen"]
 
@@ -59,6 +59,6 @@ image:Webhooks_Slack_Notifications.png["Webhook-Benachrichtigungen"]
 
 ==== Weitere Informationen:
 
-* Informationen zum Ändern von Nachrichtenformat und -Layout finden Sie unter https://api.slack.com/messaging/composing[]
-* Fehlerbehandlung: https://api.slack.com/messaging/webhooks#handling_errors[]
+* Informationen zum Ändern von Nachrichtenformat und -Layout finden Sie unter https://[]
+* Fehlerbehandlung: https://[]
 

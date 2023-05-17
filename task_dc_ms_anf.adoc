@@ -27,7 +27,7 @@ Sobald das Konto ordnungsgemäß konfiguriert ist und Sie die Applikation in Azu
 
 
 
-https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+https://[]
 
 
 

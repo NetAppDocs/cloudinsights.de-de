@@ -1,18 +1,28 @@
 ---
 sidebar: sidebar 
-permalink: concept_kubernetes_performance_monitoring_and_map.html 
+permalink: concept_kubernetes_network_monitoring_and_map.html 
 keywords: service map, workloads, Kubernetes, 
 summary: Präsentiert Abhängigkeiten und Datenflüsse von Kubernetes-Workloads und hebt Netzwerk- und Performance-Probleme hervor 
 ---
-= Performance-Monitoring und -Zuordnung von Kubernetes
+= Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-Die Kubernetes Netzwerk-Performance- und Zuordnungsfunktion vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
+Die Kubernetes Funktion zur Überwachung und Zuordnung der Netzwerk-Performance vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
 
 
-NOTE: Die Performance und Zuordnung des Kubernetes-Netzwerks ist eine link:concept_preview_features.html["Vorschau"] Und kann sich ändern.
+NOTE: Die Performance-Überwachung und -Zuordnung des Kubernetes-Netzwerks ist eine link:concept_preview_features.html["Vorschau"] Und kann sich ändern.
 
 Die wichtigsten Funktionen • die Workload-Map präsentiert Kubernetes-Workload-Abhängigkeiten und -Abläufe und hebt Netzwerk- und Performance-Probleme hervor. • Monitoring des Netzwerkverkehrs zwischen Kubernetes-Pods, Workloads und Nodes; Ermittlung der Quelle von Traffic- und Latenzproblemen • Senkung der Gesamtkosten durch Analyse des Ingress-, Egress-, Regions- und zonenübergreifenden Netzwerk-Traffics.
 
@@ -22,7 +32,7 @@ image:workload-map-animated.gif["Beispiel Für Eine Workload-Zuordnung"]
 
 == Voraussetzungen
 
-Bevor Sie die Kubernetes-Netzwerk-Performance und -Zuordnung verwenden können, müssen Sie den konfiguriert haben link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] Um diese Option zu aktivieren. Aktivieren Sie während der Bereitstellung des Operators das Kontrollkästchen „Netzwerkleistung und Zuordnung“, um es zu aktivieren. Sie können diese Option auch aktivieren, indem Sie zu einer Kubernetes-Landing Page navigieren und „Implementierung ändern“ auswählen.
+Bevor Sie die Kubernetes-Netzwerk-Performance-Überwachung und -Zuordnung verwenden können, müssen Sie den konfiguriert haben link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] Um diese Option zu aktivieren. Aktivieren Sie während der Bereitstellung des Operators das Kontrollkästchen „Netzwerkleistung und Zuordnung“, um es zu aktivieren. Sie können diese Option auch aktivieren, indem Sie zu einer Kubernetes-Landing Page navigieren und „Implementierung ändern“ auswählen.
 
 image:ServiceMap_NKMO_Deployment_Options.png["Auswahl der Option Karte beim NKMO-Stup"]
 
@@ -77,7 +87,7 @@ Workload-Bezeichnungen sind erforderlich, wenn die Zuordnung die angezeigten Wor
 +
 ** Abgeleitet aus dem Workload-Etikett des Pods
 ** Erwartetes Label für den Workload: App.kubernetes.io/component
-** Bezeichnung Name Referenz: https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** Bezeichnung Name Referenz: https://[]
 ** Empfohlene Etiketten:
 +
 *** Frontend

@@ -29,10 +29,48 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
-=== Verbesserte Workload-Sicherheit beim Laden des Bildschirms
+=== Verbesserte Installation Von Kubernetes Monitoring Operator
 
-Cloud Insights hat die Benutzerfreundlichkeit verbessert, da Bildschirme für Beobachtbarkeit und Workload-Sicherheit effizienter angezeigt werden. Dadurch verkürzt sich die Ladezeit, während Sie auf diese Funktionen navigieren. Beachten Sie, dass sich die URLs der Seite Workload Security geändert haben. Vorherige URLs werden automatisch zu den neuen URLs umgeleitet.
+Installation und Konfiguration des link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] Mit den folgenden Verbesserungen ist es einfacher denn je:
 
+* Umgebung link:telegraf_agent_k8s_config_options.html["Konfigurationseinstellungen"] Werden in einer einzelnen, selbst dokumentierten Konfigurationsdatei gespeichert.
+* Schritt-für-Schritt-Anleitung zum Hochladen von Kubernetes Monitoring Operator Images in Ihr privates Repository.
+* Upgrades sind ganz einfach mit einem einzigen Befehl möglich. So können Sie Ihr Kubernetes-Monitoring aktualisieren und benutzerdefinierte Konfigurationen behalten.
+* Sicherer: API-Schlüssel verwalten Geheimnisse sicher.
+* Einfache Integration und Implementierung mit CI/CD-Automatisierungstools.
+
+
+
+
+=== Storage-Virtualisierung
+
+Cloud Insights kann zwischen einem Storage-Array mit lokalem Speicher oder der Virtualisierung anderer Storage-Arrays unterscheiden. So können Sie Kosten nachvollziehen und die Performance vom Front-End bis zum Back-End Ihrer Infrastruktur differenzieren.
+
+image:StorageVirtualization_StorageSummary.png["Storage-Landing Page, auf der Informationen zu virtuellem und gesichertem Speicher angezeigt werden"]
+
+
+
+=== Neue Webhook-Parameter
+
+Beim Erstellen eines link:task_create_webhook.html["Webhook"] Benachrichtigung können Sie diese Parameter nun in Ihre Webhook-Definition aufnehmen:
+
+* %%TriggeredOnKeys%%
+* %%TriggeredOnValues%%
+
+
+
+
+=== Kubernetes PV-Daten melden
+
+Von Cloud Insights gesammelte Informationen zu persistentem Volume (Kubernetes Persistent Volume, PV) können jetzt für die Berichterstellung verwendet werden. Dies ermöglicht Chargeback, Trendanalysen, Prognosen, TTF-Berechnungen, Weitere Geschäftsberichte zu Kennzahlen für Kubernetes-Cluster, Namespaces, Workloads und mehr.
+
+
+
+=== Standard-ONTAP-Systemmonitore für neue Kunden aktiviert
+
+Viele ONTAP-Systemmonitore sind in neuen Cloud Insights-Umgebungen standardmäßig aktiviert (d. h. _reaktiviert_). Bisher haben die meisten Monitore den Standardstatus „_Paused_“. Da die geschäftlichen Anforderungen von Unternehmen zu Unternehmen variieren, empfehlen wir immer einen Blick auf die zu werfen link:task_system_monitors.html["Systemmonitore"] In Ihrer Umgebung vorhalten und je nach Alarmanforderungen wieder aufnehmen.
+
+'''
 
 
 == April 2023
@@ -41,7 +79,7 @@ Cloud Insights hat die Benutzerfreundlichkeit verbessert, da Bildschirme für Be
 
 === Performance-Monitoring und -Zuordnung von Kubernetes
 
-Der link:concept_kubernetes_performance_monitoring_and_map.html["_Kubernetes-Netzwerk-Performance und -Zuordnung_"] Die Funktion vereinfacht die Fehlerbehebung durch Zuordnen von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
+Der link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetes-Netzwerk-Performance und -Zuordnung_"] Die Funktion vereinfacht die Fehlerbehebung durch Zuordnen von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
 
 Die wichtigsten Funktionen • die Workload-Map präsentiert Kubernetes-Workload-Abhängigkeiten und -Abläufe und hebt Netzwerk- und Performance-Probleme hervor. • Monitoring des Netzwerkverkehrs zwischen Kubernetes-Pods, Workloads und Nodes; Ermittlung der Quelle von Traffic- und Latenzproblemen • Senkung der Gesamtkosten durch Analyse des Ingress-, Egress-, Regions- und zonenübergreifenden Netzwerk-Traffics.
 
@@ -1621,8 +1659,8 @@ Cloud Insights verfügt über eine Vielzahl an vordefinierten Dashboards, um Ihn
 
 Weitere Informationen zu erweiterten ONTAP Daten finden Sie unter folgenden Links:
 
-* https://mysupport.netapp.com/site/tools/tool-eula/netapp-harvest[] (Hinweis: Sie müssen sich beim NetApp Support anmelden.)
-* https://nabox.org/faq/[]
+* https://[] (Hinweis: Sie müssen sich beim NetApp Support anmelden.)
+* https://[]
 
 
 

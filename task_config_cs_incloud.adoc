@@ -15,9 +15,9 @@ Workload Security verwendet Datensammler, um Datei- und Benutzerzugriffsdaten vo
 
 == Cloud Volumes ONTAP Storage-Konfiguration
 
-In der OnCommand Cloud Volumes ONTAP-Dokumentation können Sie eine AWS-Instanz mit einem Node/HA für das Hosting des Workload Security Agent konfigurieren:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
+In der OnCommand Cloud Volumes ONTAP-Dokumentation können Sie eine AWS-Instanz mit einem Node/HA für das Hosting des Workload Security Agent konfigurieren:https://[]
 
-Führen Sie nach Abschluss der Konfiguration die Schritte aus, um die SVM einzurichten:https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
+Führen Sie nach Abschluss der Konfiguration die Schritte aus, um die SVM einzurichten:https://[]
 
 
 
@@ -41,7 +41,7 @@ Konfigurieren Sie die Maschine, die als Workload Security Agent verwendet werden
 
 .Schritte
 . Melden Sie sich bei der AWS Konsole an, und navigieren Sie zur Seite EC2-instances, und wählen Sie _Launch Instance_ aus.
-. Wählen Sie eine RHEL- oder CentOS AMI-Lösung mit der entsprechenden Version aus, wie auf dieser Seite erwähnt:https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
+. Wählen Sie eine RHEL- oder CentOS AMI-Lösung mit der entsprechenden Version aus, wie auf dieser Seite erwähnt:https://[]
 . Wählen Sie die VPC und das Subnetz aus, in der die Cloud-ONTAP-Instanz residiert.
 . Wählen Sie _t2.xlarge_ (4 vcpus und 16 GB RAM) als zugewiesene Ressourcen aus.
 +
