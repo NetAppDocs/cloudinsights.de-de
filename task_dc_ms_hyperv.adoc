@@ -5,11 +5,21 @@ keywords: data collector, Microsoft, Hyper-V
 summary: Microsoft Hyper-V-Datensammler konfigurieren. 
 ---
 = Microsoft Hyper-V Datensammler
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-7715b27c3c633c894edbc1c3480d311c
+Der Microsoft Hyper-V Datensammler erfasst Bestands- und Performancedaten aus der virtualisierten Server Computing-Umgebung. Dieser Datensammler kann einen eigenständigen Hyper-V-Host oder einen gesamten Cluster erkennen und einen Collector pro eigenständigen Host oder Cluster erstellen.
 
 
 
@@ -48,13 +58,12 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 Zur Konfiguration dieses Datensammlers sind folgende Voraussetzungen erforderlich:
 
 * Für die Hyper-V muss Port 5985 geöffnet sein, damit Daten erfasst und Remote-Zugriff/-Management erfolgen können.
-* ecda38bc28a47936b29d11e115c3da48
-* 0d2113f67a7658f557c02b2de3f05cf1
-* 6c3c9df6e16d0246aaa0ec5441c04561
-* 8c1948e0309134002250ecab98bf55ec
+* IP-Adresse oder FQDN des Clusters oder Standalone-Hypervisors. Die Verwendung des unverankerten Cluster-Hostnamens oder der IP ist wahrscheinlich der zuverlässigste Ansatz im Vergleich dazu, den Collector nur auf einen bestimmten Knoten in einem Cluster zu verweisen.
+* Benutzerkonto auf administrativer Ebene, das für alle Hypervisoren im Cluster funktioniert.
+* WinRM muss aktiviert sein und alle Hypervisoren abhören
 * Port-Anforderungen: Port 135 über WMI & Dynamic TCP Ports zugewiesen 1024-65535 für Windows 2003 und älter und 49152-65535 für Windows 2008.
 * DNS-Auflösung muss erfolgreich sein, auch wenn der Datensammler nur auf eine IP-Adresse verweist
-* cdc59ca9a737e48e94e58966b33d355f
+* Für jeden Hyper-V Hypervisor muss für jede VM, auf jedem Host, „Resource Metering“ aktiviert sein. Dadurch kann jeder Hypervisor auf jedem Gast mehr Daten für Cloud Insights zur Verfügung stellen. Wenn diese Einstellung nicht festgelegt ist, werden für jeden Gast weniger Performance-Metriken erfasst. Weitere Informationen zur Ressourcenmessung finden Sie in der Microsoft-Dokumentation:
 +
 link:https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831661(v=ws.11)["Hyper-V Übersicht zur Ressourcenmessung"]
 
@@ -75,7 +84,7 @@ NOTE: Für den Hyper-V-Datensammler ist eine Windows Acquisition Unit erforderli
 | Feld | Beschreibung 
 
 
-| 48b865172aa7a91dee1b9137be290087 | 93a540a173a30e909c6fc0df2f5f12cd 
+| Cluster-IP-Adresse oder fließender Cluster-FQDN | Die IP-Adresse oder der vollständig qualifizierte Domänenname für das Cluster oder ein eigenständiger Hypervisor ohne Cluster 
 
 
 | Benutzername | Administrator-Benutzername für den Hypervisor 
@@ -84,7 +93,7 @@ NOTE: Für den Hyper-V-Datensammler ist eine Windows Acquisition Unit erforderli
 | Passwort | Kennwort für den Hypervisor 
 
 
-| 7eaf62c20e3754bb13a378f4a1535681 | 3f47a0b347b090238ebf3146d05878eb 
+| DNS-Domain-Suffix | Das Hostnamen-Suffix, das mit dem einfachen Hostnamen kombiniert wird, um den FQDN eines Hypervisors zu rendern 
 |===
 
 
