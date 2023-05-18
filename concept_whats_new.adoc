@@ -79,7 +79,7 @@ Viele ONTAP-Systemmonitore sind in neuen Cloud Insights-Umgebungen standardmäß
 
 === Performance-Monitoring und -Zuordnung von Kubernetes
 
-5d6a6764c313767cd859950497830f19
+Der link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetes-Netzwerk-Performance und -Zuordnung_"] Die Funktion vereinfacht die Fehlerbehebung durch Zuordnen von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
 
 Die wichtigsten Funktionen • die Workload-Map präsentiert Kubernetes-Workload-Abhängigkeiten und -Abläufe und hebt Netzwerk- und Performance-Probleme hervor. • Monitoring des Netzwerkverkehrs zwischen Kubernetes-Pods, Workloads und Nodes; Ermittlung der Quelle von Traffic- und Latenzproblemen • Senkung der Gesamtkosten durch Analyse des Ingress-, Egress-, Regions- und zonenübergreifenden Netzwerk-Traffics.
 
