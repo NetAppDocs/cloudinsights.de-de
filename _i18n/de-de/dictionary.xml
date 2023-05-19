@@ -11157,9 +11157,6 @@
   <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">Ein Computer, auf dem eine lizenzierte Version von einer der folgenden Versionen läuft: * CentOS (64-Bit): 7.2 bis 7.9, Stream 8, Stream 9 * Debian (64-Bit): 9 und 10 * Oracle Enterprise Linux (64-Bit): 7.5 bis 7.9, 8.1 bis 8.4 * Red hat Enterprise Linux (64-Bit): 7.2 bis 7.9, 8.1 bis 9.1 * Rocky 9.0, 9.1 * Ubuntu Server: 18.04 und 20.04 LTS auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">Zusätzliche Federal Edition-Anforderung</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">Für Installationen von Akquisitionseinheiten in Cloud Insights-Clustern der Bundesausgabe muss das zugrunde liegende Betriebssystem eine gute Entropiequelle haben. Auf Linux-Systemen erfolgt dies typischerweise durch die Installation von _rng-Tools_ oder durch die Hardware-Zufallszahlengenerierung (RNG). Es liegt in der Verantwortung des Kunden, sicherzustellen, dass diese Anforderung auf der Maschine der Erfassungseinheit erfüllt wird.</block>
-  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">Beachten Sie Folgendes:</block>
-  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">Kalte Daten, die weniger als 30 Tage alt sind, werden nicht angezeigt.</block>
-  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">Einzelne Volumes in einer FlexGroup werden in den Berechnungen für kalte Daten nicht berücksichtigt (da für die Komponenten keine Tier-Richtlinie festgelegt werden kann).</block>
   <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">Informationen Zur Stromversorgung Für Kalte Daten</block>
   <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">Empfehlungen</block>
@@ -11172,4 +11169,5 @@
   <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">Tabelle Mit Kalten Daten-Workloads</block>
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">Beachten Sie, dass kalte Daten, die weniger als 30 Tage alt sind, nicht angezeigt werden.</block>
 </blocks>
