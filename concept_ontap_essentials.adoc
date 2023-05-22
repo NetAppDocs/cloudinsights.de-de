@@ -38,9 +38,33 @@ Hinweis: Eine „Tage bis zur vollen“ Zahl von „0“ (Null) gibt an, dass di
 
 == Datensicherung
 
-Klicken Sie auf die Seite *Datensicherung*, um SnapMirror Beziehungen anzuzeigen. Klicken Sie durch, um Informationen zum Quell- oder Zielvolumen zu erhalten, oder klicken Sie auf das Zahnradsymbol, um Spalten für die Daten hinzuzufügen, die angezeigt werden sollen.
+Auf der Seite *Data Protection* wird der Status von Volumes angezeigt, die durch *Snapshot-Kopien* oder *SnapMirror-Richtlinien* geschützt sind.
 
-image:DataProtectionDashboard_OverviewWidgets.png["Data Protection Dashboard-Widgets, die lokale und Remote-Übersichten anzeigen"]
+Im Abschnitt _Local Protection Overview_ bieten die Diagramme die folgenden Informationen für Volumes, die durch Snapshot-Kopien geschützt sind:
+
+* Die Anzahl der durch Snapshot Kopien geschützten Volumes bzw. Volumes, die nicht geschützt sind.
+* Die Anzahl der Volumes, die den reservierten Speicherplatz für die Snapshot-Kopien verwenden oder überschreiten.
+* Die Anzahl der Volumes in einem bestimmten Bereich der Anzahl der Snapshot Kopien (d. h. weniger als 10 Kopien, 10 bis 200 usw.).
+
+
+Im Abschnitt _Remote Protection Overview_ bieten die Diagramme Informationen zu Volumes, die durch SnapMirror Richtlinien geschützt sind:
+
+* Anzahl fehlerhafter und fehlerhafter SnapMirror Beziehungen
+* Die Anzahl der SnapMirror Beziehungen, die eine Verzögerung beim Recovery Point Objective (RPO) verzeichnen, basierend auf dem lag Status.
+* Die Anzahl der durch SnapMirror Volume-Sicherungstypen geschützten Beziehungen, z. B. Volume SnapMirror, SVMDR-Beziehungen, FlexGroup SnapMirror Beziehungen, SnapMirror Business Continuity (SMBC)-Beziehungen und ungesicherte Volumes.
+* Die Anzahl der durch die SnapMirror-Beziehungstypen geschützten Beziehungen, z. B. Asynchronous Mirror, Asynchronous Vault, Asynchronous MirrorVault, StrictSync und Sync.
+
+
+image:DataProtectionDashboard_OverviewWidgets_.png["Data Protection Dashboard-Widgets, die lokale und Remote-Übersichten anzeigen"]
+
+Das _Clusters_-Raster unten auf der Seite enthält Details zu folgenden Themen:
+
+* Volumes, die nicht durch Snapshots geschützt sind.
+* Volumes, die den Speicherplatz der Snapshot-Reserve nicht erreichen.
+* Volumes, die nicht durch snapmirror Richtlinien geschützt sind, und snapmirror Beziehungen weisen Verzögerungen auf.
+* Ungesunde SnapMirror Beziehungen.
+
+
 image:DataProtectionDashboard_ClusterList.png["Liste Der Datensicherungs-Cluster"]
 
 
