@@ -15,7 +15,7 @@ Siehe auch link:task_troubleshooting_linux_acquisition_unit_problems.html["Fehle
 
 
 
-== Probleme bei der Anmeldung:
+== Probleme bei der Anmeldung
 
 |===
 | *Problem:* | *Teste das:* 

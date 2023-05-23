@@ -6048,7 +6048,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">Fehlerbehebung Bei Problemen Mit Der Linux-Erfassungseinheit</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Fehlerbehebung Bei Problemen Mit Der Windows-Erfassungseinheit</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">Siehe auch <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> Und <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>.</block>
-  <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">Probleme bei der Anmeldung:</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights meldet sich alle 5 Minuten ab</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">Aktivieren Sie die Zustimmung von Dritten zu den erforderlichen NetApp und auth0-Cookies. Beispiel: Geben Sie in Chrome "chrome://settings/Cookies" in der Browser-URL ein. Wählen Sie die Option „Alle Cookies zulassen“. *ODER* Wählen Sie "Cookies von Drittanbietern blockieren" und fügen Sie Ausnahmen für [*.]auth0.com und [*.]netapp.com hinzu. Hinweis: Achten Sie darauf, bei der Erstellung einer Ausnahme die Option „Cookies von Drittanbietern auf dieser Website einschl.“ auszuwählen.</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">Ich habe ein Cloud Central Konto, kann mich aber nicht bei Cloud Central anmelden.</block>
@@ -11175,4 +11174,5 @@
   <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">Nur harte Kontingente - die entweder manuell festgelegt oder durch Trident eingestellt sind - werden als festgelegte Kontingente angezeigt; wenn keine harten Kontingente angegeben werden, wird die Qtree-Kapazität die interne Volume-Kapazität sein.</block>
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">Ich habe sowohl eine weiche als auch eine harte Quote manuell im selben Qtree eingestellt, aber die insgesamt darstellende Kapazität ist die harte Quote; ist das richtig?</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Ja, wenn eine harte Quote angegeben wird, wird diese als Gesamtkapazität angezeigt.</block>
+  <block id="37b418c8c2b422040e90081e18556979" category="section-title">Probleme bei der Anmeldung</block>
 </blocks>
