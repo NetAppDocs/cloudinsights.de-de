@@ -11168,4 +11168,11 @@
   <block id="9354fc9fde4206bac6177054249907e9" category="list-text">Ungesunde SnapMirror Beziehungen.</block>
   <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e4b936a4866074908ad57fac7de40e48" category="admonition">Dieser Datensammler ist ab dem 4. April 2023 nicht mehr in Cloud Insights zu installieren und wird ab dem 25. Mai 2023 aus allen Cloud Insights-Installationen entfernt. Informationen zum Übergang zur AU-basierten Datenerfassung finden Sie im <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>.</block>
+  <block id="6f482c482b4f6739bf91b49fb509e1fa" category="section-title">Andere Probleme</block>
+  <block id="38371752dff5ee84c99f5d61b5071683" category="cell">*Frage:*</block>
+  <block id="c0a6863442a128c06f6f664c5acfb867" category="cell">*Antwort:*</block>
+  <block id="17cd9c18b0bda3836dcd76df6d7b3e6d" category="cell">Meine Qtree-Hard-Quoten werden korrekt in Abfragen angezeigt, aber meine Soft Quotas werden als Gesamtkapazität des Volumes angezeigt. Ist das richtig?</block>
+  <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">Nur harte Kontingente - die entweder manuell festgelegt oder durch Trident eingestellt sind - werden als festgelegte Kontingente angezeigt; wenn keine harten Kontingente angegeben werden, wird die Qtree-Kapazität die interne Volume-Kapazität sein.</block>
+  <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">Ich habe sowohl eine weiche als auch eine harte Quote manuell im selben Qtree eingestellt, aber die insgesamt darstellende Kapazität ist die harte Quote; ist das richtig?</block>
+  <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Ja, wenn eine harte Quote angegeben wird, wird diese als Gesamtkapazität angezeigt.</block>
 </blocks>
