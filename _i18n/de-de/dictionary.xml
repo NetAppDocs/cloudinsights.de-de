@@ -11175,4 +11175,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">Ich habe sowohl eine weiche als auch eine harte Quote manuell im selben Qtree eingestellt, aber die insgesamt darstellende Kapazität ist die harte Quote; ist das richtig?</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">Ja, wenn eine harte Quote angegeben wird, wird diese als Gesamtkapazität angezeigt.</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">Probleme bei der Anmeldung</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Ich sehe Folgendes in meinen Protokollen sofort nach der Installation des NetApp Kubernetes Monitoring Operator: [inputs.prometheus] Fehler im Plugin: Fehler beim Herstellen der HTTP-Anfrage an<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Verstehen<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> TCP wählen: Lookup kube-State-metrics.&lt;namespace&gt;.svc.Cluster.local: Kein solcher Host</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Diese Meldung wird normalerweise nur angezeigt, wenn ein neuer Operator installiert ist und der Pod „_telegraf-rs_“ vor dem Einschalten des Pod „_ksm_“ steht. Diese Meldungen sollten beendet werden, sobald alle Pods ausgeführt werden.</block>
 </blocks>
