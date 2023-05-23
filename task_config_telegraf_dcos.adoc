@@ -29,7 +29,7 @@ Wenn Sie bereits einen Agenten konfiguriert haben, wählen Sie das entsprechende
 
 == Einrichtung
 
-Informationen zur Einrichtung finden Sie im https://["DC/OS-Dokumentation"].
+Informationen zur Einrichtung finden Sie im https://docs.mesosphere.com["DC/OS-Dokumentation"].
 
 
 

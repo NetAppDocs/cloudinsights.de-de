@@ -14,7 +14,7 @@ Dieser Datensammler ermöglicht die Erfassung von Daten von Apache-Servern in Ih
 .Voraussetzungen
 * Sie müssen Ihren Apache HTTP Server einrichten und ordnungsgemäß ausführen lassen
 * Sie müssen über sudo- oder Administratorberechtigungen auf Ihrem Agent-Host/VM verfügen
-* In der Regel ist das Apache _mod_Status_-Modul so konfiguriert, dass eine Seite am Speicherort '/Server-Status?Auto' des Apache-Servers angezeigt wird. Die Option _ExtendedStatus_ muss aktiviert sein, um alle verfügbaren Felder zu erfassen. Informationen zum Konfigurieren des Servers finden Sie in der Apache-Moduldokumentation: https://[]
+* In der Regel ist das Apache _mod_Status_-Modul so konfiguriert, dass eine Seite am Speicherort '/Server-Status?Auto' des Apache-Servers angezeigt wird. Die Option _ExtendedStatus_ muss aktiviert sein, um alle verfügbaren Felder zu erfassen. Informationen zum Konfigurieren des Servers finden Sie in der Apache-Moduldokumentation: https://httpd.apache.org/docs/2.4/mod/mod_status.html#enable[]
 
 
 

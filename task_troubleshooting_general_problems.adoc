@@ -24,7 +24,7 @@ Siehe auch link:task_troubleshooting_linux_acquisition_unit_problems.html["Fehle
 | Cloud Insights meldet sich alle 5 Minuten ab | Aktivieren Sie die Zustimmung von Dritten zu den erforderlichen NetApp und auth0-Cookies. Beispiel: Geben Sie in Chrome "chrome://settings/Cookies" in der Browser-URL ein. Wählen Sie die Option „Alle Cookies zulassen“. *ODER* Wählen Sie "Cookies von Drittanbietern blockieren" und fügen Sie Ausnahmen für [*.]auth0.com und [*.]netapp.com hinzu. Hinweis: Achten Sie darauf, bei der Erstellung einer Ausnahme die Option „Cookies von Drittanbietern auf dieser Website einschl.“ auszuwählen. 
 
 
-| Ich habe ein Cloud Central Konto, kann mich aber nicht bei Cloud Central anmelden. | Öffnen Sie ein Ticket von https://[]. Wählen Sie die Kategorie „cloud.netapp.com > Konto-/Login-Probleme“ oder „cloud.netapp.com > Verbundprobleme“ aus. Dies gilt speziell für Probleme oder Fragen zu Cloud Central. Bei allen anderen technischen Support-Problemen mit Cloud Insights wenden Sie sich an link:concept_requesting_support.html["NetApp Support"]. 
+| Ich habe ein Cloud Central Konto, kann mich aber nicht bei Cloud Central anmelden. | Öffnen Sie ein Ticket von https://mysupport.netapp.com/site/help[]. Wählen Sie die Kategorie „cloud.netapp.com > Konto-/Login-Probleme“ oder „cloud.netapp.com > Verbundprobleme“ aus. Dies gilt speziell für Probleme oder Fragen zu Cloud Central. Bei allen anderen technischen Support-Problemen mit Cloud Insights wenden Sie sich an link:concept_requesting_support.html["NetApp Support"]. 
 
 
 | Ich habe zu Cloud Insights eingeladen, erhalte aber eine „nicht autorisierte“ Nachricht. | Vergewissern Sie sich, dass Sie sich für ein Cloud Central Konto angemeldet haben oder dass Ihr Unternehmen SSO-Anmeldedaten mit Cloud Central verwendet. Überprüfen Sie, ob die E-Mail-Adresse Ihres Cloud Central-Profils mit der E-Mail-Adresse übereinstimmt, die in Ihrer Cloud Insights-Begrüßungs-E-Mail Stimmt die E-Mail nicht überein, fordern Sie eine neue Einladung mit der richtigen E-Mail-Adresse an. 
@@ -46,4 +46,4 @@ Wenn Sie über ein aktives Cloud Insights Abonnement verfügen, können Sie folg
 link:https://www.netapp.com/us/contact-us/support.aspx["Telefon"]
 link:https://mysupport.netapp.com/site/cases/mine/create?serialNumber=95001014387268156333["Support-Ticket"]
 
-Weitere Informationen finden Sie im https://["Cloud Insights Support-Dokumentation"].
+Weitere Informationen finden Sie im https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Cloud Insights Support-Dokumentation"].

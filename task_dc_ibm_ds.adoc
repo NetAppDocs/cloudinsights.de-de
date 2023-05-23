@@ -114,7 +114,7 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Problem: | Versuchen Sie dies: 
 
 
-| Fehler mit CMUC00192E, CMUC00191E oder CMUC00190E | * Eingabe von Anmeldeinformationen und IP-Adresse überprüfen. * Versuchen Sie, mit dem Array über die Web-Management-Konsole zu kommunizieren https://[]. Ersetzen Sie die €{ip} durch die konfigurierte IP-Adresse des Datensammlers. 
+| Fehler mit CMUC00192E, CMUC00191E oder CMUC00190E | * Eingabe von Anmeldeinformationen und IP-Adresse überprüfen. * Versuchen Sie, mit dem Array über die Web-Management-Konsole zu kommunizieren https://${ip}:8452/DS8000/Console[]. Ersetzen Sie die €{ip} durch die konfigurierte IP-Adresse des Datensammlers. 
 
 
 | Fehler: * Programm kann nicht ausgeführt werden * Fehler beim Ausführen des Befehls | * Von der Cloud Insights-Erfassungseinheit Öffnen Sie eine CMD * Öffnen Sie CLI.CFG-Datei im Home Directory/lib von CLI und überprüfen Sie die Eigenschaft JAVA_INSTALL, bearbeiten Sie den Wert entsprechend Ihrer Umgebung * Anzeigen Sie die auf diesem Computer installierte Java-Version, und geben Sie Folgendes ein: „java -Version“ * Ping die IP-Adresse des im CLI-Befehl angegebenen IBM-Speichergeräts wurde ausgegeben. * Wenn alle oben genannten gut funktioniert haben, dann führen Sie manuell einen CLI-Befehl aus 

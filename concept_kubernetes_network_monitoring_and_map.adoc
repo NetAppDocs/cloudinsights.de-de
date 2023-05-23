@@ -87,7 +87,7 @@ Workload-Bezeichnungen sind erforderlich, wenn die Zuordnung die angezeigten Wor
 +
 ** Abgeleitet aus dem Workload-Etikett des Pods
 ** Erwartetes Label für den Workload: App.kubernetes.io/component
-** Bezeichnung Name Referenz: https://[]
+** Bezeichnung Name Referenz: https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** Empfohlene Etiketten:
 +
 *** Frontend

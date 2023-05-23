@@ -30,7 +30,7 @@ image:PuppetDCConfigWindows.png["Puppet-Konfiguration"]
 
 == Einrichtung
 
-Informationen finden Sie unter https://["Puppet-Dokumentation"]
+Informationen finden Sie unter https://puppet.com/docs["Puppet-Dokumentation"]
 
 
 

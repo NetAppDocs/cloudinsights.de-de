@@ -371,19 +371,19 @@ Der NetApp Kubernetes Monitoring Operator installiert kube-State-Metriken automa
 
 Verwenden Sie die folgenden Links, um auf Informationen zu diesen kube State-Metriken zuzugreifen:
 
-. https://["Kennzahlen für die Konfigmap"]
-. https://["DemonSet Metrics"]
-. https://["Implementierungsmetriken"]
-. https://["Ingress Metrics"]
-. https://["Namespace-Kennzahlen"]
-. https://["Node-Kennzahlen"]
-. https://["Persistente Volume-Kennzahlen"]
-. https://["Kenngrößen Für Die Forderung Im Persistenten Volume"]
-. https://["Pod-Metriken"]
-. https://["Kennzahlen für ReplicaSet"]
-. https://["Geheimkennzahlen"]
-. https://["Service-Kennzahlen"]
-. https://["StatfulSet-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["Kennzahlen für die Konfigmap"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet Metrics"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["Implementierungsmetriken"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["Ingress Metrics"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["Namespace-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["Node-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["Persistente Volume-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["Kenngrößen Für Die Forderung Im Persistenten Volume"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Pod-Metriken"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["Kennzahlen für ReplicaSet"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["Geheimkennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["Service-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatfulSet-Kennzahlen"]
 
 
 

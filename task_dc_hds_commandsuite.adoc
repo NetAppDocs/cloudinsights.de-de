@@ -101,7 +101,7 @@ Zur Erfassung von Bestandsdaten müssen Sie Folgendes haben:
 * Schreibgeschützter Benutzername und Kennwort für die HiCommand Device Manager-Software und Peer-Berechtigungen
 * Port-Anforderungen: 2001 (http) oder 2443 (https)
 * Melden Sie sich mit Benutzernamen und Kennwort bei der HiCommand Device Manager-Software an
-* Überprüfen Sie den Zugriff auf HiCommand Device Manager http://[]
+* Überprüfen Sie den Zugriff auf HiCommand Device Manager http://<HiCommand_Device_Manager_IP>:2001/service/StorageManager[]
 
 
 

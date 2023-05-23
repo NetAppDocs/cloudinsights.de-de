@@ -30,7 +30,7 @@ image:ActiveMQDCConfigWindows.png["ActiveMQ-Konfiguration"]
 
 == Einrichtung
 
-Informationen finden Sie unter http://["ActiveMQ-Dokumentation"]
+Informationen finden Sie unter http://activemq.apache.org/getting-started.html["ActiveMQ-Dokumentation"]
 
 
 
