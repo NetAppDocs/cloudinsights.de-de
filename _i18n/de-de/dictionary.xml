@@ -10709,7 +10709,6 @@
   <block id="4cbba110d06cbe92766e7957041807de" category="inline-link-macro">Monitore</block>
   <block id="398ef11564cb3ebb8d3480da183b89bb" category="paragraph">Die Workload Map verwendet <block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block> Um Informationen abzuleiten. Cloud Insights bietet eine Reihe von Kubernetes-Standardmonitoren an (beachten Sie, dass diese standardmäßig „_Paused_“ sein können. Sie können die gewünschten Monitore _Resume_ (d. h. aktivieren) oder benutzerdefinierte Monitore für kubernetes-Objekte erstellen, die auch von der Workload Map verwendet werden.</block>
   <block id="cfd443d1fe6acb5a33edeb19eee876d8" category="section-title">Die Karte</block>
-  <block id="15e3eddd185c05a5fb388c2cd109a194" category="paragraph">Die Karte zeigt Services (auch als Workloads bezeichnet) und deren Beziehungen zueinander an. Pfeile zeigen die Verkehrsrichtung. Wenn Sie den Mauszeiger über einen Workload halten, werden zusammenfassende Informationen zu diesem Workload angezeigt, wie im folgenden Beispiel zu sehen ist:</block>
   <block id="7e31e16b7e4d0bdec82f97e29845098b" category="inline-image-macro">Beispiel eines Workload-Zuordnungs-Workloads</block>
   <block id="05790ee528b0026e6b4e1c22baf014ea" category="paragraph"><block ref="05790ee528b0026e6b4e1c22baf014ea" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42cecfeff00cc916fef4f64e7b921079" category="inline-xref">Etiketten</block>
@@ -10731,7 +10730,6 @@
   <block id="deb0475feb493ff82c79e1e3ae6d77ea" category="paragraph">Workload-Bezeichnungen sind erforderlich, wenn die Zuordnung die angezeigten Workload-Typen (d. h. die Kreissymbole) identifizieren soll. Die Bezeichnungen werden wie folgt abgeleitet:</block>
   <block id="7bdbd3fbfd646718abde6244c5ef84ca" category="list-text">Name des Dienstes/der Anwendung, der allgemein ausgeführt wird</block>
   <block id="8079e3a427e5574a8e11aee165eaa34a" category="list-text">Wenn es sich bei der Quelle um einen Pod handelt:</block>
-  <block id="f5617cd916f968d6f57576092e33e68c" category="list-text">Abgeleitet aus dem Workload-Etikett des Pods</block>
   <block id="1cf01db723421f728c6d1ec366bc1525" category="list-text">Erwartetes Label für den Workload: App.kubernetes.io/component</block>
   <block id="f7a8098a415987972c499ac42c4b95f9" category="list-text">Bezeichnung Name Referenz:<block ref="625495fb7d70df26441db849ce9bb393" category="inline-link-rx"></block></block>
   <block id="1dbb5d26447acfe771d67c1e833d6d5a" category="list-text">Empfohlene Etiketten:</block>
@@ -10741,10 +10739,6 @@
   <block id="0fea6a13c52b4d4725368f24b045ca84" category="list-text">Cache</block>
   <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">Warteschlange</block>
   <block id="541661622185851c248b41bf0cea7ad0" category="list-text">kafka</block>
-  <block id="30231f87db181989dc6b48606b359f57" category="list-text">Wenn die externe Quelle des K8s-Clusters:</block>
-  <block id="2aa36d2124c1619305f749c6418c781f" category="list-text">Versuchen Sie, den DNS-aufgelösten Namen zu analysieren und extrahieren Sie den Diensttyp</block>
-  <block id="1c145c21f55cfe3b796f2a421f92f818" category="paragraph">Beispiel: s3.eu-north-1.amazonaws.com</block>
-  <block id="bf0940aef56e172d86f9f25d77945341" category="paragraph">Aufgelöster Name analysiert, um s3 zu erhalten</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige der neuesten Features und Funktionalitäten, die in den kommerziellen Editionen von Cloud Insights verfügbar sind.</block>
   <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights Bundesausgabe oder mit eingeschränkter Funktionalität verfügbar. Soweit möglich, werden diese Unterschiede in der Dokumentation vermerkt.</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">April 2023</block>
@@ -10896,7 +10890,6 @@
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">Erste Schritte mit dem Überwachungsbediener</block>
   <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubernetes Monitoring und -Zuordnung</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks</block>
-  <block id="30d4cb002f857650eba9633e4a50ff2a" category="paragraph">Die Kubernetes Funktion zur Überwachung und Zuordnung der Netzwerk-Performance vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Die Performance-Überwachung und -Zuordnung des Kubernetes-Netzwerks ist eine <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> Und kann sich ändern.</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">Bevor Sie die Kubernetes-Netzwerk-Performance-Überwachung und -Zuordnung verwenden können, müssen Sie den konfiguriert haben <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> Um diese Option zu aktivieren. Aktivieren Sie während der Bereitstellung des Operators das Kontrollkästchen „Netzwerkleistung und Zuordnung“, um es zu aktivieren. Sie können diese Option auch aktivieren, indem Sie zu einer Kubernetes-Landing Page navigieren und „Implementierung ändern“ auswählen.</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">Der NetApp Kubernetes Monitoring Operator verfügt über eine Reihe konfigurierbarer Optionen.</block>
@@ -11180,4 +11173,30 @@
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">Ebenso wird durch Eingabe einer Zeichenfolge im Feld _Find_ die übereinstimmenden Workloads hervorgehoben.</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">Durch Eingabe des Find-Felds werden die Workloads hervorgehoben</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Die Kubernetes Funktion zur Überwachung und Zuordnung der Netzwerk-Performance vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Services (auch Workloads genannt). Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.</block>
+  <block id="2e4063447ef8819aa5df170524b0bc11" category="paragraph">Sie können Cloud Insights-Metrik-Warnmeldungen für jeden der unten aufgeführten Objekttypen erstellen. Stellen Sie sicher, dass das Objekt nach ID gruppiert ist.</block>
+  <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">kubernetes.Workload</block>
+  <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">kubernetes.demonset</block>
+  <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
+  <block id="da08d7cb113a582345e1c87537667bfd" category="list-text">kubernetes.cronjob</block>
+  <block id="e8eeaeeace97ddc1d8d3fd0e2d727de6" category="list-text">kubernetes.Job</block>
+  <block id="2dd2185af8e18909d0c1f96b139ff088" category="list-text">kubernetes.Replicaset</block>
+  <block id="b11992f8220e27ed38a528aa3279ca6c" category="list-text">kubernetes.statefulset</block>
+  <block id="959158aaf864560f2a6da1c5111a2488" category="list-text">kubernetes.POD</block>
+  <block id="e5dd88b41415ccc9b96130968a48a25c" category="list-text">kubernetes.network_traffic_l4</block>
+  <block id="5b5c93dfe04a64ec52da6b4603542b2d" category="paragraph">Die Karte zeigt Services/Workloads und deren Beziehungen zueinander an. Pfeile zeigen die Verkehrsrichtung. Wenn Sie den Mauszeiger über einen Workload halten, werden zusammenfassende Informationen zu diesem Workload angezeigt, wie im folgenden Beispiel zu sehen ist:</block>
+  <block id="85adf3862ca2037a273ff3441c2be5f9" category="list-text">Die Bezeichnung leitet sich vom Workload-Etikett des Pods ab</block>
+  <block id="cf568df890526e57bf700e2dc4b65a7c" category="list-text">Wenn sich die Quelle außerhalb des kubernetes-Clusters befindet:</block>
+  <block id="87ff7926a3611a5c9e94e85db4fa5bea" category="list-text">Cloud Insights versucht, den DNS-aufgelösten Namen zu analysieren, um den Diensttyp zu extrahieren.</block>
+  <block id="bd1a60f90cea9c1c50d2670c398e61e4" category="paragraph">Beispiel: Mit einem DNS-aufgelösten Namen von _s3.eu-north-1.amazonaws.com_ wird der aufgelöste Name analysiert, um _s3_ als Diensttyp zu erhalten.</block>
+  <block id="500b3306f51ddde04e4c6da822f4a0e1" category="section-title">So Geht Es Richtig</block>
+  <block id="85b2e2afff81bc570758ed245f94e0ab" category="paragraph">Mit einem Rechtsklick auf einen Workload erhalten Sie zusätzliche Optionen, um weitere Informationen zu erhalten. Von hier aus können Sie beispielsweise die Ansicht vergrößern, um die Verbindungen für diesen Workload anzuzeigen.</block>
+  <block id="382fe39fadd269cb6f5709f01bcb97f3" category="inline-image-macro">Workload Map Klicken Sie mit der rechten Maustaste auf Zoom, um die Verbindungen des Workloads anzuzeigen</block>
+  <block id="11cf13816a69e8f7513d902d787c018f" category="paragraph"><block ref="11cf13816a69e8f7513d902d787c018f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="08a268f9324eb2fedb3f30f6aed68c83" category="paragraph">Alternativ können Sie das Detailslideout-Panel öffnen, um die Registerkarte _Summary_, _Network_ oder _Pod &amp; Storage_ direkt anzuzeigen.</block>
+  <block id="c878025155cecb2c39acd2fc019a750c" category="inline-image-macro">Beispiel Für Die Registerkarte „Detail Slide Out Network“</block>
+  <block id="e1ad379a2729c042c49570a56d16450f" category="paragraph"><block ref="e1ad379a2729c042c49570a56d16450f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">Durch Auswahl von _Gehe zu Anlagenseite_ wird die detaillierte Zielseite für die Anlage für den Workload geöffnet.</block>
+  <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">Workload-Asset-Seite</block>
+  <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
