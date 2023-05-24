@@ -70,11 +70,15 @@ image:Workload_Map_Slideout_with_Alert.png["Details Zum Workload-Slideout Mit Wa
 
 
 
-== Filtern
+== Suchen und Filtern
 
 Wie bei anderen Cloud Insights-Funktionen können Sie auch bei den Filtern einfach den Fokus auf die gewünschten Objekte oder Workload-Attribute legen.
 
 image:Workload_Map_Filtering.png["Workload Map-Filterung"]
+
+Ebenso wird durch Eingabe einer Zeichenfolge im Feld _Find_ die übereinstimmenden Workloads hervorgehoben.
+
+image:Workload_Map_Find_Highlighting.png["Durch Eingabe des Find-Felds werden die Workloads hervorgehoben"]
 
 
 

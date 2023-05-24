@@ -10724,7 +10724,6 @@
   <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">Farbige Kreise weisen auf eine Warnung auf Warn- oder kritische Ebene für die Arbeitslast hin. Bewegen Sie den Mauszeiger über den Kreis, um eine Zusammenfassung des Problems zu erhalten, oder klicken Sie auf den Kreis, um ein Slideout-Fenster mit mehr Details zu öffnen.</block>
   <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">Details Zum Workload-Slideout Mit Warnungen</block>
   <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">Filtern</block>
   <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">Wie bei anderen Cloud Insights-Funktionen können Sie auch bei den Filtern einfach den Fokus auf die gewünschten Objekte oder Workload-Attribute legen.</block>
   <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">Workload Map-Filterung</block>
   <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
@@ -11177,4 +11176,8 @@
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">Probleme bei der Anmeldung</block>
   <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">Ich sehe Folgendes in meinen Protokollen sofort nach der Installation des NetApp Kubernetes Monitoring Operator: [inputs.prometheus] Fehler im Plugin: Fehler beim Herstellen der HTTP-Anfrage an<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> Verstehen<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> TCP wählen: Lookup kube-State-metrics.&lt;namespace&gt;.svc.Cluster.local: Kein solcher Host</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Diese Meldung wird normalerweise nur angezeigt, wenn ein neuer Operator installiert ist und der Pod „_telegraf-rs_“ vor dem Einschalten des Pod „_ksm_“ steht. Diese Meldungen sollten beendet werden, sobald alle Pods ausgeführt werden.</block>
+  <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">Suchen und Filtern</block>
+  <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">Ebenso wird durch Eingabe einer Zeichenfolge im Feld _Find_ die übereinstimmenden Workloads hervorgehoben.</block>
+  <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">Durch Eingabe des Find-Felds werden die Workloads hervorgehoben</block>
+  <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
