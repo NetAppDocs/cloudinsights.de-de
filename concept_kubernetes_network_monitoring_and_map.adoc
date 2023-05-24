@@ -42,7 +42,7 @@ image:ServiceMap_NKMO_Deployment_Options.png["Auswahl der Option Karte beim NKMO
 
 Die Workload Map verwendet link:task_create_monitor.html["Monitore"] Um Informationen abzuleiten. Cloud Insights bietet eine Reihe von Kubernetes-Standardmonitoren an (beachten Sie, dass diese standardmäßig „_Paused_“ sein können. Sie können die gewünschten Monitore _Resume_ (d. h. aktivieren) oder benutzerdefinierte Monitore für kubernetes-Objekte erstellen, die auch von der Workload Map verwendet werden.
 
-Sie können Cloud Insights-Metrik-Warnmeldungen für jeden der unten aufgeführten Objekttypen erstellen. Stellen Sie sicher, dass das Objekt nach ID gruppiert ist.
+Sie können Cloud Insights-Metrik-Warnmeldungen für jeden der unten aufgeführten Objekttypen erstellen. Stellen Sie sicher, dass die Daten nach dem Standardobjekttyp gruppiert sind.
 
 * kubernetes.Workload
 * kubernetes.demonset
