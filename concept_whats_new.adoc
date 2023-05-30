@@ -60,9 +60,11 @@ Beim Erstellen eines link:task_create_webhook.html["Webhook"] Benachrichtigung k
 
 
 
-=== Kubernetes PV-Daten melden
+=== Berichte zu Kubernetes-Daten
 
-Von Cloud Insights gesammelte Informationen zu persistentem Volume (Kubernetes Persistent Volume, PV) können jetzt für die Berichterstellung verwendet werden. Dies ermöglicht Chargeback, Trendanalysen, Prognosen, TTF-Berechnungen, Weitere Geschäftsberichte zu Kennzahlen für Kubernetes-Cluster, Namespaces, Workloads und mehr.
+Cloud Insights kann jetzt Berichte zu allen Kubernetes-Daten erstellen, einschließlich PV, PVC, Workload, Cluster und Namespace.
+
+Von Cloud Insights gesammelte Kubernetes-Daten – einschließlich persistenter Volumes (PV), PVC, Workloads, Cluster und Namespaces – können jetzt in der Berichterstellung verwendet werden. Dies ermöglicht Chargeback, Trendanalysen, Prognosen, TTF-Berechnungen, Und andere Geschäftsberichte zu Kennzahlen für Kubernetes.
 
 
 
