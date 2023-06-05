@@ -2802,9 +2802,7 @@
   <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">Sie können automatische Antwortrichtlinien für potenzielle Angriffe (z. B. Ransomware) und/oder Warnungen zu Aktivitäten festlegen</block>
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">Automatisierte Antwortrichtlinien</block>
   <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">Antwortrichtlinien lösen Aktionen aus, wie z. B. das Erstellen eines Snapshots oder das Einschränken des Benutzerzugriffs bei einem Angriff oder einem anormalen Benutzerverhalten.</block>
-  <block id="4a2c418e248f1a17cef7314e84e4d21f" category="paragraph">Sie können Richtlinien für bestimmte Geräte oder alle Geräte festlegen. Um eine Antwortrichtlinie festzulegen, wählen Sie *Admin &gt; Automated Response Policies* und klicken Sie auf die entsprechende *+Policy+ Schaltfläche. Sie können Richtlinien für Angriffe oder Warnungen erstellen.</block>
   <block id="74caaeae1f2607ea4824df314e3bd233" category="inline-image-macro">Angriffsrichtlinie Erstellen</block>
-  <block id="96dd8b86864f9c90bf0289c5f7b02b4d" category="paragraph"><block ref="96dd8b86864f9c90bf0289c5f7b02b4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">Sie müssen die Richtlinie mit einem eindeutigen Namen speichern.</block>
   <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">Um eine automatische Antwortzeit zu deaktivieren (z. B. Snapshot erstellen), überprüfen Sie einfach die Aktion und speichern Sie die Richtlinie.</block>
   <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">Details zu Warnmeldungen</block>
@@ -11205,4 +11203,6 @@
   <block id="f7e530357a9fe13372b34f49bcbf5513" category="list-text">Die E-Mail-Benachrichtigungen für Agent- und Data Collector-Upgrades werden einen Tag vor dem geplanten Upgrade an die E-Mail-IDs gesendet.</block>
   <block id="be8e3ac01b05912cba21f26369a5a852" category="cell">E-Mail-IDs sind in den „Data Collector Health Alerts“ vorhanden, ich erhalte jedoch keine Benachrichtigungen.</block>
   <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">Benachrichtigungs-E-Mails werden von der NetApp Cloud Insights-Domain gesendet, d. h. von _accounts@service.cloudinsights.netapp.com_. Einige Unternehmen blockieren eingehende E-Mails, wenn sie von einer externen Domäne stammen. Stellen Sie sicher, dass externe Benachrichtigungen von NetApp Cloud Insights-Domänen auf die Whitelist gesetzt sind.</block>
+  <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">Sie können Richtlinien für bestimmte Geräte oder alle Geräte festlegen. Um eine Antwortrichtlinie festzulegen, wählen Sie *Admin &gt; Automatische Antwortrichtlinien* aus und klicken Sie auf die entsprechende Schaltfläche *+Policy*. Sie können Richtlinien für Angriffe oder Warnungen erstellen.</block>
+  <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
