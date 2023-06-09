@@ -5,7 +5,17 @@ summary: Cloud Insights verfügt über Tutorials, die Ihnen zeigen, wie Sie viel
 keywords: onboarding, getting started, video, tutorial, resolution, dashboard, query, troubleshooting 
 ---
 = Lernprogramme Zu Funktionen
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
