@@ -114,7 +114,7 @@ Sie können Unterstützung durch eine der folgenden Methoden anfordern. Um diese
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["* Telefon*"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["*Support-Ticket*"]
-* *Chat* - Sie werden mit dem NetApp Support-Personal in Verbindung stehen (nur an Wochentagen). Der Chat ist in der Menüoption *Hilfe > Live-Chat* oben rechts auf einem beliebigen Cloud Insights-Bildschirm verfügbar.
+* *Chat* - Sie werden mit NetApp-Support-Mitarbeiter für Unterstützung (nur an Wochentagen) verbunden werden. Der Chat ist in der Menüoption *Hilfe > Live-Chat* oben rechts auf einem beliebigen Cloud Insights-Bildschirm verfügbar.
 
 
 Sie können auch Unterstützung für den Vertrieb anfordern, indem Sie auf die klicken link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["*Vertrieb Kontaktieren*"] Verlinken:

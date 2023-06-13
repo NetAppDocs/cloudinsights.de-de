@@ -25,6 +25,61 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== Juni 2023
+
+
+
+=== Überprüfen Sie Ihre Nutzung
+
+Ab Juni 2023 bietet Cloud Insights eine Aufschlüsselung der Auslastung der verwalteten Einheiten basierend auf dem Funktionssatz. Sie können jetzt die Managed Unit (MU)-Nutzung für Ihre Infrastruktur sowie die MU-Nutzung in Verbindung mit Kubernetes schnell anzeigen und überwachen.
+
+image:Metering_Usage.png["Aufschlüsselung Der Nutzungsnutzung"]
+
+
+
+=== Kubernetes-Netzwerküberwachung und -Zuordnung ist für alle verfügbar
+
+Der link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetes-Netzwerk-Performance und -Zuordnung_"] Vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Workloads und bietet Echtzeiteinblick in die Latenzen und Anomalien der Kubernetes-Netzwerk-Performance. So können Performance-Probleme erkannt werden, bevor sie sich auf die Benutzer auswirken. Viele Kunden fanden es hilfreich während der Vorschau, und jetzt ist es für alle zu genießen.
+
+
+
+=== Berichterstellung
+
+Die Berichtskomponente von Cloud Insights wurde in „Cloud Insights-Analyse“ umbenannt. Keine Sorge, die Funktionalität bleibt gleich.
+
+
+
+=== Änderungen bei der Erfassung/Erfassung:
+
+Die folgenden Änderungen an der Data Collector/Acquisition Unit sind vorhanden:
+
+* Die Mus für Data Domain und Cohesity betragen 40 tib : 1 MU.
+* Acquisition Units unterstützen jetzt RHEL und Rocky 9.0 und 9.1.
+
+
+
+
+=== Neue ONTAP Essentials Dashboards
+
+Die folgenden ONTAP Essentials Dashboards sind in Vorschauumgebungen verfügbar und jetzt für alle verfügbar:
+
+* Sicherheits-Dashboard
+* Data Protection Dashboard (einschließlich Überblick über den lokalen und den Remote-Schutz)
+
+
+
+
+=== Zusätzliche Systemmonitore
+
+Die folgenden Systemmonitore sind im Lieferumfang von Cloud Insights enthalten:
+
+* Der FCP-Service für Storage-VM ist nicht verfügbar
+* Speicher-VM iSCSI-Service nicht verfügbar
+
+
+'''
+
+
 == Mai 2023
 
 

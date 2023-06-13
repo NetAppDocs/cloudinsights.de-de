@@ -50,6 +50,17 @@ NOTE: Wenn Sie einen Proxy verwenden, lesen Sie die Proxy-Anweisungen für Ihre 
 
 
 
+=== Speicherorte Protokollieren
+
+Telegraf-Protokollmeldungen werden von stdout zu den folgenden Standardprotokolldateien umgeleitet:
+
+* RHEL/CentOS: /Var/log/telegraf/telegraf.log
+* Ubuntu/Debian: /Var/log/telegraf/telegraf.log
+* Windows: C:\Programme\telegraf\telegraf.log
+
+
+
+
 === Windows
 
 
