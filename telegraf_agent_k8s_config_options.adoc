@@ -39,7 +39,7 @@ In der folgenden Tabelle sind die möglichen Optionen für die AgentConfiguratio
 | telegraf |  | Konfigurationsoptionen, mit denen die telegraf-Installation des Bedieners angepasst werden kann 
 
 
-|  | Erfassungsintervall | Erfassungsintervall für Metriken in Sekunden 
+|  | Erfassungsintervall | Messgrößen-Erfassungsintervall, in Sekunden (max. = 60 s) 
 
 
 |  | DsCpuLimit | CPU-Limit für telegraf ds 

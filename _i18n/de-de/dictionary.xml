@@ -10854,7 +10854,6 @@
   <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">telegraf</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">Konfigurationsoptionen, mit denen die telegraf-Installation des Bedieners angepasst werden kann</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">Erfassungsintervall</block>
-  <block id="ddc880d728f800827e372a1d2f48313a" category="cell">Erfassungsintervall für Metriken in Sekunden</block>
   <block id="2129471bf14899d19206e2b1aa6c00ca" category="cell">DsCpuLimit</block>
   <block id="718918f6bff9fdd2a6292afbe4549d0b" category="cell">CPU-Limit für telegraf ds</block>
   <block id="5eeea2f6351dff2df3a80bcff5cdd5be" category="cell">DsMemLimit</block>
@@ -11211,4 +11210,5 @@ Beispiel: Verwenden Sie den String _testvolume*_ anstatt _*testvolume_ oder _*Te
 Verwenden Sie eine präfixbasierte Suche, um alle Aktivitäten unterhalb eines bestimmten Ordners rekursiv anzuzeigen (hierarchische Suche). Z.B. _/path1/path2/path3_ oder _“/path1/path2/path3“_ listet alle Aktivitäten rekursiv unter _/path1/path2/path3_ auf.
 Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerkarte „Alle Aktivitäten“ verwenden.</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat* - Sie werden mit NetApp-Support-Mitarbeiter für Unterstützung (nur an Wochentagen) verbunden werden. Der Chat ist in der Menüoption *Hilfe &gt; Live-Chat* oben rechts auf einem beliebigen Cloud Insights-Bildschirm verfügbar.</block>
+  <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">Messgrößen-Erfassungsintervall, in Sekunden (max. = 60 s)</block>
 </blocks>
