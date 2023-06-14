@@ -5,7 +5,17 @@ summary: Allgemeine Tipps zur Fehlerbehebung bei Cloud Insights.
 keywords: troubleshooting, problems, browser, login, log in, accessing, access to, Trident, qtree, quota 
 ---
 = Fehlerbehebung Bei Allgemeinen Cloud Insights-Problemen
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

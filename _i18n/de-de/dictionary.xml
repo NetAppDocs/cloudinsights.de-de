@@ -1355,7 +1355,6 @@
   <block id="5c60750a2abc4b9d7aa61cc76e102a94" category="cell">Mögliche Lösungen: * Empfohlen: Zertifikat für Virtual Center durch Verwendung von Stronger (z.B. neu generieren 1024-Bit) RSA-Schlüssel * Nicht empfohlen: Ändern Sie die JVM java.security-Konfiguration, um die Einschränkung jdk.certpath.diabledAlgorithms zu nutzen, um einen 512-Bit-RSA-Schlüssel zu ermöglichen. Siehe Versionshinweise zu JDK 7 Update 40 unter <block ref="ac06061ee1016775797c99e274153a15" category="inline-link-rx"></block></block>
   <block id="d5d5b9f170a27fd5f88756592b939a58" category="summary">Wenn Sie sich über die Applikationen in der Umgebung Ihres Unternehmens informieren, können Sie die Nutzung und die Kosten Ihrer Ressourcen nachverfolgen.</block>
   <block id="66eb03874fd60842ce2afb5ab2f59e21" category="doc">Nachverfolgung der Asset-Nutzung nach Applikation</block>
-  <block id="fcef7a70b7e9119c20e30e9ab1556015" category="paragraph">Wenn Sie sich über die Applikationen in der Umgebung Ihres Unternehmens informieren, können Sie die Nutzung und die Kosten Ihrer Ressourcen nachverfolgen.</block>
   <block id="49376b02066c48dc7163dd18c3a35c8e" category="paragraph">Bevor Sie Daten zu den in Ihrer Umgebung ausgeführten Applikationen nachverfolgen können, müssen Sie zunächst diese Applikationen definieren und sie den entsprechenden Assets zuordnen. Applikationen können folgenden Assets zugewiesen werden: Hosts, virtuelle Maschinen, Volumes, interne Volumes, qtrees, Freigaben und Hypervisoren:</block>
   <block id="7a5c742197c3513b7a70556975974799" category="paragraph">Dieses Thema enthält ein Beispiel für die Verfolgung der Verwendung virtueller Maschinen, die das Marketingteam für seine Exchange-E-Mail verwendet.</block>
   <block id="122304f18fc1f52e984e99abf836f513" category="paragraph">Möglicherweise möchten Sie eine Tabelle ähnlich der folgenden erstellen, um die in Ihrer Umgebung verwendeten Applikationen zu identifizieren und die Gruppe oder Geschäftseinheit mit den jeweiligen Applikationen zu notieren.</block>
@@ -5263,7 +5262,6 @@
   <block id="d277b1caec042177f4e38daf4ba9c735" category="paragraph">Webhaken für <block ref="d38416df564b8fab0d5bf94bcee43e7f" category="inline-link-macro-rx"></block>Webhaken für <block ref="95ac5170c5012e9551d08ea594650d6e" category="inline-link-macro-rx"></block>Webhaken für <block ref="973c3eb9f830c62535e232e5f5d9c6dc" category="inline-link-macro-rx"></block>Webhaken für <block ref="864c30ce6045ed450c74103c83df4646" category="inline-link-macro-rx"></block></block>
   <block id="c5c601f0f7513cb66c54f7740aebd769" category="summary">IBM TotalStorage DS4000 Datensammler</block>
   <block id="bb368e45192fd41360b40a61c441bbf7" category="paragraph">Dieser Datensammler erfasst Bestands- und Performance-Informationen aus dem IBM DS4000 Storage-System. Es gibt zwei mögliche Konfigurationen (Firmware 6.x und Firmware 7.x+), und beide haben die gleichen Werte.</block>
-  <block id="18d3625d121f112f86fd37791d1bf10d" category="paragraph">Cloud Insightst erwirbt die folgenden Bestandsinformationen vom IBM DS4000 Datensammler. Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
   <block id="d9dc66c5dd0daf41b61af8de89a60066" category="list-text">Die IP-Adresse jedes DS5- oder FAStT-Arrays</block>
   <block id="90708586f8afae2670c5e389c5b3df37" category="list-text">Zugriffsvalidierung durch Ping der IP-Adresse beider Controller auf dem Array</block>
   <block id="d0ad61d8d4e1d5d38bb6b0cb90a5d934" category="list-text">Port-Anforderungen: 2463</block>
@@ -6135,7 +6133,6 @@
   <block id="03600e14e8c249775af21bb69579dc2c" category="paragraph">+ Es kann bis zu zwei Abfrageperioden dauern, bevor Daten aus der Umgebung in Dashboards angezeigt oder zur Abfrage verfügbar sind.</block>
   <block id="de2080ec5e0e147976f00793ebd67db1" category="summary">Details zu forensischen Einheiten</block>
   <block id="ab440e736c2d9e3403efa72117388494" category="doc">Forensische Entität – Details</block>
-  <block id="d2386b3d08b7b3147c97ac77153b47f4" category="paragraph">toc: Makro :Hardbreakes: :Toclevels: 1 :nofooter: :Icons: Font :linkatttrs: :Imagesdir: ./media/</block>
   <block id="0759459fd7984031945fba78588c75bb" category="paragraph">Auf der Seite „Entity Detail“ können Sie auf detaillierte Informationen zu einer Entität zugreifen.</block>
   <block id="f8db4b534ba055c3a01a896220cf7409" category="paragraph">Sie greifen auf die zu</block>
   <block id="153bbbe3830b008df288fad38c0b3a83" category="list-text">Entitätsprofil</block>
@@ -11211,4 +11208,59 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat* - Sie werden mit NetApp-Support-Mitarbeiter für Unterstützung (nur an Wochentagen) verbunden werden. Der Chat ist in der Menüoption *Hilfe &gt; Live-Chat* oben rechts auf einem beliebigen Cloud Insights-Bildschirm verfügbar.</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">Messgrößen-Erfassungsintervall, in Sekunden (max. = 60 s)</block>
   <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">Wenn SELinux aktiviert und durchgesetzt wird, wird wahrscheinlich verhindert, dass die Telegraf PODs auf die Datei /proc/1/mountstats auf dem Kubernetes-Knoten zugreifen. Um diese Einschränkung zu überwinden, bearbeiten Sie die Agentkonfiguration und aktivieren Sie die runPrivileged-Einstellung. Weitere Informationen finden Sie unter:<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>.</block>
+  <block id="3407e6f55320fe223ef04230620a7680" category="paragraph">Cloud Insights erfasst die folgenden Inventarinformationen aus dem IBM DS4000 Datensammler. Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
+  <block id="c65b3d448a7cc9416a433ee0c45038b9" category="summary">Cloud Insights kann so konfiguriert werden, dass AU-Software manuell aktualisiert werden muss, sodass Sie mehr Kontrolle über die in Ihrer Umgebung installierte Software haben.</block>
+  <block id="a7c522a068ca75556dee476101135cc4" category="doc">Manuelle Installation Der Acquisition Unit-Software</block>
+  <block id="8b01a0d5e9fc950e10c5789185b76fab" category="paragraph">Standardmäßig aktualisiert Cloud Insights die Acquisition Unit (AU)-Software automatisch, wenn Updates bereitgestellt werden. In sicheren kontrollierten Umgebungen ist eine automatische Aktualisierung jedoch möglicherweise nicht möglich oder nicht gewünscht.  In diesen Fällen kann Cloud Insights so konfiguriert werden, dass AU-Software manuell aktualisiert werden kann, sodass Sie mehr Kontrolle über die in Ihrer Umgebung installierte Software haben.</block>
+  <block id="7fa388dd2c2240646539be23019e8d18" category="paragraph">Führen Sie die folgenden Schritte durch, um die AU-Software manuell herunterzuladen und zu installieren. Cloud Insights bietet eine hilfreiche Swagger-Dokumentationsseite, die Sie für viele dieser Schritte verwenden können, oder Sie können Ihr eigenes API-Skript/Befehle verwenden. Gehen Sie zu Admin &gt; API-Zugriff und klicken Sie auf den Link „API Documentation“.</block>
+  <block id="39d5d5a9880f1ad19fe6d2c1a8b95da4" category="paragraph">Bei Linux und Windows ist der Prozess ähnlich.</block>
+  <block id="f7c4249be54645abe9d6bbb85ffd95e3" category="section-title">Durchführen einer NEUEN AU-Installation unter Linux:</block>
+  <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">Erstellen Sie in Cloud Insights ein API-Token.</block>
+  <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">Navigieren Sie zu *Admin &gt; API Access* und wählen Sie *+API Access Token*.</block>
+  <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">Legen Sie einen *Namen* und *Beschreibung* fest, der leicht zu identifizieren ist</block>
+  <block id="095edbf2eeed607f4203d4060d6bebab" category="list-text">Typ: *Acquisition Unit*</block>
+  <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">Berechtigungen: *Lesen/Schreiben*</block>
+  <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">Wählen Sie die gewünschten Werte für *expiry* und *Auto-Renew* aus</block>
+  <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">Kopieren Sie das generierte API-Zugriffstoken. Dieser Schritt muss durchgeführt werden, bevor Sie das Fenster schließen können.</block>
+  <block id="c53a7287de20acd49117a565baa3a38a" category="paragraph"><block ref="c53a7287de20acd49117a565baa3a38a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">Verwenden Sie in Swagger (Admin &gt; API-Zugriff &gt; API-Dokumentation) das Token, um Cloud Insights-APIs zu autorisieren</block>
+  <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">Klicken Sie oben rechts im Swagger-Bildschirm auf _autorisieren_</block>
+  <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">Fügen Sie das kopierte Token von oben in das Feld „Kunden-APIKey“ ein</block>
+  <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">Klicken Sie Auf *Autorisieren*</block>
+  <block id="e90cef1e648cb27fd619c6f8c92f8f4d" category="list-text">Schließen Sie das Fenster</block>
+  <block id="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="paragraph"><block ref="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2cae2725952c883826876920381ecb59" category="list-text">Laden Sie das AU-Installationsprogramm mithilfe der _/au/Installers/{Platform}/latest_ oder _/au/Installers/{Platform}/{Version}_ API herunter:</block>
+  <block id="88eb9a112ead77fb26b1599f4f223fc1" category="list-text">Plattform: *linux*</block>
+  <block id="52205a46ef276687ee5647ea8fe6eb0b" category="list-text">Version: *&lt;version&gt;* (neueste oder angegebene)</block>
+  <block id="8441f82f2a5dd29ac44e118b98df995c" category="inline-image-macro">API zum Abrufen der neuesten AU-Version</block>
+  <block id="ae6ea5b2f32189b7018c970fbb10e3bb" category="paragraph"><block ref="ae6ea5b2f32189b7018c970fbb10e3bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c827b541aa6a7d60d4a0c16c12d4ebc" category="admonition">Wenn Sie nicht die neueste Version herunterladen, bestätigen Sie mit NetApp die AU-Version, die zum Download angegeben werden soll.</block>
+  <block id="d1720e1ae1c7ec3cfaaf2b6708405d4f" category="list-text">Klicken Sie Auf *Datei Herunterladen*. Wenn Sie diese Schritte auf einem anderen System als dem AU-System ausführen, kopieren Sie die heruntergeladene Datei auf das AU-System.</block>
+  <block id="07b7a71211b83fdb6affc9516bd8c884" category="list-text">Alternativ können Sie den resultierenden CURL-Befehl auf dem AU-System ausführen:</block>
+  <block id="1786f7c932f739c573815e056569419d" category="list-text">Zu diesem Zeitpunkt sollte die Installationsdatei auf dem AU-System vorhanden sein.</block>
+  <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">Die nächsten Schritte erfordern die Verwendung eines temporären Tokens. Verwenden Sie nicht das oben erstellte API Access-Token.</block>
+  <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">Erstellen Sie im Cloud Insights-API-Swagger mithilfe der _/au/oneTimeToken_-API ein einmaliger Token.</block>
+  <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">Kopieren Sie das resultierende einmalige Token.</block>
+  <block id="c7a15bab2443e9ad4efdb034095ab235" category="paragraph"><block ref="100d1787d5f8172a57c3e18a398e0c17" category="inline-image-macro-rx" type="image"></block>
+<block ref="0b1cbf7e91a826bb9e4ce0091ddf900c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">Navigieren Sie auf dem Computer, auf dem die AU installiert werden soll, zu dem Ordner, der die heruntergeladene Installationsdatei enthält. Für die folgenden Befehle muss der Benutzer über Root-Berechtigungen verfügen.</block>
+  <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">Entpacken Sie die Installationsdatei</block>
+  <block id="f0aa130be42df30dfb32287298a294dc" category="list-text">Ändern Sie das Verzeichnis in den resultierenden Installationsordner</block>
+  <block id="b03ba9c0b65f3d61c05a13e6e0556f6e" category="list-text">Exportieren Sie das einmalige Token und die Installer-Version in Umgebungsvariablen, indem Sie Folgendes ausführen:</block>
+  <block id="f355abfc0309011b2480d033a0bd5a7c" category="list-text">Führen Sie Folgendes aus, um CI mit einem benutzerdefinierten Benutzer und einer benutzerdefinierten Gruppe zu installieren:</block>
+  <block id="c2edf0fde07151d96c99ce933b5db7fc" category="paragraph">Hinweis: Wenn Sie keinen benutzerdefinierten Benutzer und keine benutzerdefinierte Gruppe verwenden möchten, können Sie den Standard „cisys“-Benutzer und die Standardgruppe verwenden.  Führen Sie in diesem Fall den obigen Befehl install aus, geben Sie jedoch nicht den Benutzer und die Gruppe an.</block>
+  <block id="442acde7a27750391de6a8358d813ebf" category="paragraph">Zu diesem Zeitpunkt wird die AU-Software auf dem System installiert und ist für den benutzerdefinierten Benutzer und die Gruppe zugänglich. Sie haben jedoch nicht die Möglichkeit, Datensammler hinzuzufügen. Um dies manuell zu tun, müssen Sie die Datei Datasources.war an den richtigen Speicherort kopieren.</block>
+  <block id="aa65691c6297c950fcee712307bb1a91" category="list-text">Navigieren Sie zum Quellspeicherort für Datasources.war, und überprüfen Sie dort die ZIP-Datei:</block>
+  <block id="a97626ad22c898bbe0080f7f7799f0e0" category="list-text">Beachten Sie die Berechtigungen für den Standardordner Datasources.war:</block>
+  <block id="43b4370cb1861295e2cf1d82e2cf71ce" category="list-text">Für die nächsten Schritte müssen Sie zum Benutzer root wechseln (oder sich abmelden und mit anmelden).</block>
+  <block id="c228e145e9e61000d0f54dd253874651" category="list-text">Hinweis: Wenn Sie den Standard „cisys“-Benutzer und die Standardgruppe verwenden, müssen Sie diesen Schritt nicht ausführen.</block>
+  <block id="579e7c70138d11bebf2d5787d6df5c96" category="list-text">Hinweis: Benutzerdefinierter Benutzer kann jeder Benutzer sein, der Mitglied einer benutzerdefinierten Gruppe ist, die Sie cloudinsights-install.sh während der AU-Installation bereitgestellt haben, und kann der gleiche oder andere Benutzer sein als der benutzerdefinierte Benutzer, den Sie während der AU-Installation angegeben haben.</block>
+  <block id="802dfb282c205a5ce3de537f88b12f68" category="list-text">Erstellen Sie einen Arbeitsordner, und passen Sie ihn an die gleichen Berechtigungen an:</block>
+  <block id="93fb085f87c8ff2c36aa100fa213c9c8" category="list-text">Hinweis: Wenn Sie den Benutzer und die Gruppe „cisys“ verwenden, werden diese in der obigen Ausgabe angezeigt.</block>
+  <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">Kopieren Sie die _Datenquellen-war-&lt;version&gt;.zip_ in den Arbeitsordner. Beispiel:</block>
+  <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">Wechseln Sie in den Download-Ordner, und entpacken Sie die Datei:</block>
+  <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">Stellen Sie sicher, dass Benutzer, Gruppe und Berechtigungen für alle Dateien korrekt sind:</block>
+  <block id="a0698382f5e68c4355ea29e32842015d" category="list-text">Hinweis: Wenn Sie AU mit verschiedenen benutzerdefinierten Benutzern verwalten möchten, stellen Sie sicher, dass die Gruppenberechtigungen für Eigentümer und Gruppe auf Lesen und Schreiben eingestellt sind (_chmod 660 …_)</block>
+  <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">Starten Sie den AU neu.</block>
+  <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">Navigieren Sie in Cloud Insights zu *Admin &gt; Data Collectors* und wählen Sie die Registerkarte *Acquisition Units* aus. Wählen Sie _Neustart_ aus dem Menü „drei Punkte“ rechts neben der AU.</block>
 </blocks>

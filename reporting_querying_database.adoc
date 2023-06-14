@@ -5,7 +5,17 @@ summary: Verwenden Sie Cloud Insights-APIs, um die Berichtsdatenbank direkt abzu
 keywords: reporting, cognos, data warehouse, dwh, API 
 ---
 = Greifen Sie über die API auf die Berichtsdatenbank zu
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

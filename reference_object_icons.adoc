@@ -5,7 +5,17 @@ summary: Referenz für das Cloud Insights-Objektsymbol
 keywords: icons, assets, objects, reference 
 ---
 = Objekt Symbol Referenz
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

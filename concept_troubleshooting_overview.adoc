@@ -5,7 +5,17 @@ summary: In diesem Abschnitt finden Sie Tipps und Tricks, mit denen Sie Fehler i
 keywords:  
 ---
 = Fehlerbehebung Bei Cloud Insights-Problemen
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

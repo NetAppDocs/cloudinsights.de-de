@@ -5,7 +5,17 @@ summary: Sie erstellen Anmerkungsregeln, mit denen Anmerkungen automatisch auf m
 keywords: application, create application, 
 ---
 = Anwendungen Werden Erstellt
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

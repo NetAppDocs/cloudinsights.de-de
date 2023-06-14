@@ -5,7 +5,17 @@ summary: 'Time-to-Live (TTL) und Downsampling erklärt'
 keywords: time-to-live, TTL, downsampling, downsample, 
 ---
 = Time-to-Live (TTL)- und Downsampling-Daten
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

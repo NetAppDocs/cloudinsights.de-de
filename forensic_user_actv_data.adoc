@@ -5,7 +5,17 @@ keywords: Forensic, user activity, user activity data,
 summary: Daten zu forensischen Benutzeraktivitäten 
 ---
 = Daten Zu Forensischen Benutzeraktivitäten
+:toc: macro
+:hardbreaks:
+:toclevels: 
 :allow-uri-read: 
+:toc: 
+:toclevels: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 Die Seite Benutzeraktivität hilft Ihnen, die Aktionen zu verstehen, die von Benutzern für Einheiten durchgeführt werden.

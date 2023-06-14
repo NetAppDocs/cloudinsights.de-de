@@ -5,7 +5,17 @@ summary: Der Server oder die VM, die Sie als Akquisitionseinheit verwenden, müs
 keywords: AU, acquisition unit, RAU, requirements, sizing 
 ---
 = Anforderungen An Die Erfassungseinheit
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

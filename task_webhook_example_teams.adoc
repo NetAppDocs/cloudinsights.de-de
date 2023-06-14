@@ -5,10 +5,20 @@ keywords: webhook, notification, Microsoft, Teams, integration
 summary: Erstellen Sie einen Webhook, um für Microsoft-Teams über die Schwellenwerte für Leistung oder Bestand zu informieren 
 ---
 = Webhook-Beispiel für Microsoft-Teams
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
-[role="lead lead"]
+[role="lead"]
 Mit Webhooks können Benutzer über einen benutzerdefinierten Webhook-Kanal Benachrichtigungen an verschiedene Anwendungen senden. Diese Seite enthält ein Beispiel für das Einrichten von Webhooks für Teams.
 
 

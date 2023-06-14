@@ -5,7 +5,17 @@ keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate
 summary: Die Cloud Insights-API ermöglicht die Integration in andere Applikationen, z. B. Monitoring- und Reporting-Systeme. 
 ---
 = Cloud Insights API
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

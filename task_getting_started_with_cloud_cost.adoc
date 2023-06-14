@@ -5,7 +5,17 @@ summary: Erste Schritte mit der Cloud – Kosten
 keywords: analysis, cost, analyzer 
 ---
 = Erste Schritte mit der Cloud – Kosten
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

@@ -5,9 +5,20 @@ summary: Erste Schritte mit Cloud Insights
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = Erste Schritte zum Sammeln von Daten
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
+[role="lead"]
 Nachdem Sie sich zum ersten Mal bei Cloud Insights angemeldet haben und sich zum ersten Mal in Ihrer Umgebung anmelden, führen Sie die folgenden Schritte durch, um mit der Erfassung und dem Management der Daten zu beginnen.
 
 Datensammler erkennen Informationen aus Ihren Datenquellen, wie Speichergeräte, Netzwerk-Switches und virtuelle Maschinen. Die erfassten Informationen werden für Analysen, Validierung, Monitoring und Fehlerbehebung verwendet.

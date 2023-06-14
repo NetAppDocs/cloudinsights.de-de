@@ -5,14 +5,25 @@ summary: Ändern oder Löschen einer Abfrage
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = Eine Abfrage ändern oder löschen
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
+
+[role="lead]"]
+Sie können die Kriterien ändern, die einer Abfrage zugeordnet sind, wenn Sie die Suchkriterien für die abfragenden Assets ändern möchten.
 
 
 
 == Ändern einer Abfrage
-
-Sie können die Kriterien ändern, die einer Abfrage zugeordnet sind, wenn Sie die Suchkriterien für die abfragenden Assets ändern möchten.
 
 .Schritte
 . Klicken Sie auf *Abfragen* und wählen Sie *Alle Anfragen anzeigen*.

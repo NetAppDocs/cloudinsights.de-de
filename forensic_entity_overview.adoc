@@ -5,12 +5,15 @@ keywords: Forensic, entity, entity overview, entity behavior, entities
 summary: Seite mit forensischen Einheiten 
 ---
 = Seite Mit Forensischen Einheiten
+:toc: macro
 :hardbreaks:
 :allow-uri-read: 
+:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 Die Seite Forensics Entities enthält detaillierte Informationen über die Aktivität der Entität in Ihrer Umgebung.

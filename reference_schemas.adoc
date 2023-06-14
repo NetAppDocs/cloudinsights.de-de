@@ -5,7 +5,17 @@ summary: Schema-Diagramme und -Tabellen für Data Warehouse zur Verwendung mit R
 keywords: dwh, data warehouse, schema, reporting 
 ---
 = Cloud Insights Schemas für Reporting
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
