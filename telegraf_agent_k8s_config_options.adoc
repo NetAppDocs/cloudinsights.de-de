@@ -19,7 +19,7 @@ summary: Der NetApp Kubernetes Monitoring Operator verfügt über eine Reihe kon
 
 
 [role="lead"]
-Die Installation und Konfiguration des NetApp Kubernetes Monitoring Operator kann angepasst werden.
+Der link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] Installation und Konfiguration können individuell angepasst werden.
 
 In der folgenden Tabelle sind die möglichen Optionen für die AgentConfiguration-Datei aufgeführt:
 
@@ -41,9 +41,6 @@ In der folgenden Tabelle sind die möglichen Optionen für die AgentConfiguratio
 
 
 |  | Proxy Format: Proxy: Server: Port: Benutzername: Passwort: Noproxy: IsTelegrafProxyEnabled: IsAuProxyEnabled: IsFluentbitProxyEnabled: IsCollectorProxyEnabled: | Optional für den Kunden zum Festlegen des Proxys. Dies ist in der Regel Kunden Corporate Proxy. 
-
-
-|  | AgentUUID | Eine eindeutig identifizierte Zeichenfolge für alle Cloud Insights-Benutzerinstallationen. Dies wird normalerweise automatisch von Cloud Insights festgelegt. 
 
 
 | telegraf |  | Konfigurationsoptionen, mit denen die telegraf-Installation des Bedieners angepasst werden kann 
