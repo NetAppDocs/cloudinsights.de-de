@@ -11261,4 +11261,5 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">Starten Sie den AU neu.</block>
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">Navigieren Sie in Cloud Insights zu *Admin &gt; Data Collectors* und wählen Sie die Registerkarte *Acquisition Units* aus. Wählen Sie _Neustart_ aus dem Menü „drei Punkte“ rechts neben der AU.</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">Der <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> Installation und Konfiguration können individuell angepasst werden.</block>
+  <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Bedieneroptionen Überwachen</block>
 </blocks>
