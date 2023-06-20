@@ -10462,7 +10462,6 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">Mithilfe eines Skripts können Sie einen Ransomware-Angriff zum Testen oder Vorführen von Workload Security simulieren</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">Benutzer (IP-Adresse) Blockieren für NFS funktioniert, aber für SMB / CIFS, sehe ich eine Fehlermeldung: “SID to DomainName Transformation fehlgeschlagen. Grund-Timeout: Socket wurde nicht hergestellt“</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">Dies kann vorkommen, dass _csuser_ nicht über die Berechtigung verfügt, ssh auszuführen. (Stellen Sie die Verbindung auf Cluster-Ebene sicher, und stellen Sie dann sicher, dass der Benutzer ssh ausführen kann.) _Csuser_ Rolle erfordert diese Berechtigungen.<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>Führen Sie für _csuser_ mit Cluster-Anmeldeinformationen über die ONTAP-Befehlszeile Folgendes aus: Sicherheits-Login Rolle create -role csrole -cmddirname "vserver Export-Policy rule" -Access all Security Login role create -role csrdirname set -Access all Security Login role create -role csrole -cmddirname "vserver cifs Session" -Access all Security Login role create -role csrole -cmddirname "vserver Services Access-Check Authentication Translate" -Access all Security Login Rolle create -role csrole -cmddirname "vserver Name-Mapping" -Access all Wenn _csuser_ nicht verwendet wird und wenn Admin-Benutzer auf Cluster-Ebene verwendet wird, stellen Sie sicher, dass der Admin-Benutzer SSH-Berechtigung für ONTAP hat.</block>
-  <block id="c41953836f0cf08f49697db26ddf6a47" category="cell">Ein Computer, auf dem eine lizenzierte Version von einer der folgenden Versionen läuft: Red hat Enterprise Linux 7.x, 8.x 64-Bit CentOS 7.x 64-Bit CentOS 8 Stream Ubuntu 20 bis 22 64-Bit Rocky 8.x 64-Bit, Rocky 9.x 64-Bit auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen. SE (Security Enhanced) Linux wird nicht unterstützt.</block>
   <block id="39331dcf20cdc1eb4f9f6846be32417f" category="list-text">Wenn Cloud Insights den Back-End-Storage überwacht und Kubernetes bei der Laufzeit des Docker Containers verwendet wird, kann Cloud Insights POD-to-PV-to-Storage-Zuordnungen sowie Kennzahlen für NFS und iSCSI anzeigen. Andere Laufzeiten zeigen nur NFS an.</block>
   <block id="fb4d860c1938626a4cb9b8f66c6eb6f2" category="section-title">März 2023</block>
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">Cloud-Anbindung für ONTAP 9.9+ veraltet</block>
@@ -11264,4 +11263,16 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Bedieneroptionen Überwachen</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">Ich sehe keine Kennzahlen für die Kubernetes-Kronjobs, die in meinem Cluster vorhanden sind, erfasst.</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Überprüfen Ihrer Kubernetes Version (d. h.<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>).  Wenn es v1.20.x oder niedriger ist, ist dies eine erwartete Einschränkung.  Die mit dem NetApp Kubernetes Monitoring Operator implementierte Version von kube-State-Metrics unterstützt nur v1.cronjob.  Bei Kubernetes 1.20.x und niedriger befindet sich die Ressource cronjob unter v1beta.cronjob.  Daher können kube-State-Metriken die Ressource cronjob nicht finden.</block>
+  <block id="9f0b6346113de87bff4b194abaf599f1" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
+
+Red hat Enterprise Linux 7.x, 8.x 64-Bit
+CentOS 7.x 64 Bit
+CentOS 8-Stream
+Ubuntu 20 bis 22 64-Bit
+Rocky 8.x 64 Bit, Rocky 9.x 64 Bit
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4
+
+Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
+
+SE (Security Enhanced) Linux wird nicht unterstützt.</block>
 </blocks>

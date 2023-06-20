@@ -29,7 +29,18 @@ NOTE: Storage Workload Security ist in der Cloud Insights Bundesausgabe nicht ve
 | Komponente | Linux-Anforderungen Erfüllt 
 
 
-| Betriebssystem | Ein Computer, auf dem eine lizenzierte Version von einer der folgenden Versionen läuft: Red hat Enterprise Linux 7.x, 8.x 64-Bit CentOS 7.x 64-Bit CentOS 8 Stream Ubuntu 20 bis 22 64-Bit Rocky 8.x 64-Bit, Rocky 9.x 64-Bit auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen. SE (Security Enhanced) Linux wird nicht unterstützt. 
+| Betriebssystem | Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
+
+Red hat Enterprise Linux 7.x, 8.x 64-Bit
+CentOS 7.x 64 Bit
+CentOS 8-Stream
+Ubuntu 20 bis 22 64-Bit
+Rocky 8.x 64 Bit, Rocky 9.x 64 Bit
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4
+
+Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
+
+SE (Security Enhanced) Linux wird nicht unterstützt. 
 
 
 | Befehle | Für die Installation ist „entpacken“ erforderlich. Darüber hinaus ist für die Installation, das Ausführen von Skripten und die Deinstallation der Befehl 'udo su –' erforderlich. 
