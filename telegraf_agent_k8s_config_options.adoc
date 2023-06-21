@@ -124,6 +124,12 @@ In der folgenden Tabelle sind die möglichen Optionen für die AgentConfiguratio
 |  | Etiketten | Eine durch Kommas getrennte Liste von Ressourcen, die kube-State-metrics erfassen sollte +++ Beispiel: Cronjobs=[*],demonsets=[*],Deployments=[*],ingresses=[*],Jobs=[*],namepaces=[*],Nodes=[*], persistent volumeclaims=[*]=[*][*][[+ 
 
 
+|  | CpuLimit | CPU-Limit für die bereitstellung von kube-State-Metriken 
+
+
+|  | MemLimit | MEM-Limit für die implementierung von kube-State-Metriken 
+
+
 | Protokolle |  | Konfigurationsoptionen, mit denen die Protokollsammlung und die Installation des Bedieners angepasst werden können 
 
 
