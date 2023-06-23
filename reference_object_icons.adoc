@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference_object_icons.html 
 summary: Referenz für das Cloud Insights-Objektsymbol 
-keywords: icons, assets, objects, reference 
+keywords: icons, assets, objects, reference, kubernetes, map 
 ---
 = Objekt Symbol Referenz
 :toc: macro
@@ -21,4 +21,20 @@ keywords: icons, assets, objects, reference
 [role="lead"]
 Ein kurzer Verweis auf Objektsymbole, die in Cloud Insights verwendet werden.
 
-image:Icon_Glossary.png["Symbolreferenz"]
+
+
+== Infrastruktursymbole:
+
+image:Icon_Glossary.png["Infrastruktursymbol Referenz"]
+
+
+
+== Kubernetes-Symbole:
+
+image:K8sIconsWithLabels.png["Kubernetes-Symbol-Referenz, width=180"]
+
+
+
+== Symbole für die Kubernetes-Netzwerkleistungsüberwachung und -Zuordnung:
+
+image:ServiceMap_Icons.png["Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks, Breite=640"]
