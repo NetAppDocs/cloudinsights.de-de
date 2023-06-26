@@ -11261,18 +11261,6 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Bedieneroptionen Überwachen</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">Ich sehe keine Kennzahlen für die Kubernetes-Kronjobs, die in meinem Cluster vorhanden sind, erfasst.</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">Überprüfen Ihrer Kubernetes Version (d. h.<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>).  Wenn es v1.20.x oder niedriger ist, ist dies eine erwartete Einschränkung.  Die mit dem NetApp Kubernetes Monitoring Operator implementierte Version von kube-State-Metrics unterstützt nur v1.cronjob.  Bei Kubernetes 1.20.x und niedriger befindet sich die Ressource cronjob unter v1beta.cronjob.  Daher können kube-State-Metriken die Ressource cronjob nicht finden.</block>
-  <block id="9f0b6346113de87bff4b194abaf599f1" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
-
-Red hat Enterprise Linux 7.x, 8.x 64-Bit
-CentOS 7.x 64 Bit
-CentOS 8-Stream
-Ubuntu 20 bis 22 64-Bit
-Rocky 8.x 64 Bit, Rocky 9.x 64 Bit
-SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4
-
-Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
-
-SE (Security Enhanced) Linux wird nicht unterstützt.</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">CPU-Limit für die bereitstellung von kube-State-Metriken</block>
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">MEM-Limit für die implementierung von kube-State-Metriken</block>
   <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">Infrastruktursymbole:</block>
@@ -11284,4 +11272,16 @@ SE (Security Enhanced) Linux wird nicht unterstützt.</block>
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Symbole für die Kubernetes-Netzwerkleistungsüberwachung und -Zuordnung:</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks, Breite=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c21ecdc3b22488b71dfec9e5360e46ce" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
+
+Red hat Enterprise Linux 7.x, 8.x 64-Bit, SELinux
+CentOS 7.x 64-Bit, SELinux
+CentOS 8 Stream, SELinux
+Ubuntu 20 bis 22 64-Bit
+Rocky 8.x 64-Bit, Rocky 9.x 64-Bit, SELinux
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux unter SUSE 15 SP3
+
+Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
+
+SE (Security Enhanced) Linux wird nicht unterstützt.</block>
 </blocks>
