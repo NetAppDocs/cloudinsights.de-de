@@ -11284,4 +11284,8 @@ SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinu
 Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
 
 SE (Security Enhanced) Linux wird nicht unterstützt.</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">Nach der Installation des Bedieners geben die telegraf-ds-Pods CrashLoopBackOff ein und die POD-Protokolle zeigen „su: Authentication failure“ an.</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">Bearbeiten Sie die konfiguration der netapp-Monitoring-Konfiguration und setzen Sie _dockerMetricCollectionEnabled_ auf false.  Weitere Informationen finden Sie im Abschnitt des Bedieners <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Erfassen von Docker-Kennzahlen Standardmäßig ist dieser Wert auf „true“ gesetzt, und Docker-Kennzahlen werden für lokale, Docker-basierte K8s-Bereitstellungen erfasst. Um die Erfassung der Docker-Metrik zu deaktivieren, setzen Sie diese auf FALSE.</block>
 </blocks>
