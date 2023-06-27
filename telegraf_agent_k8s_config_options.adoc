@@ -109,9 +109,6 @@ In der folgenden Tabelle sind die möglichen Optionen für die AgentConfiguratio
 |  | AusgabeTimeout | Siehe link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf-Konfigurationsdokumentation"] 
 
 
-|  | DockerMetricCollectionEnabled | Erfassen von Docker-Kennzahlen Standardmäßig ist dieser Wert auf „true“ gesetzt, und Docker-Kennzahlen werden für lokale, Docker-basierte K8s-Bereitstellungen erfasst. Um die Erfassung der Docker-Metrik zu deaktivieren, setzen Sie diese auf FALSE. 
-
-
 | status-Kennzahlen von kube |  | Konfigurationsoptionen, mit denen die installation von kube-Statusmetriken des Operators angepasst werden kann 
 
 
@@ -231,10 +228,6 @@ spec:
 
     # Declare Rancher cluster as managed. Set this to true if your Rancher cluster is managed as opposed to on-premise.
     #isManagedRancher: true|false
-
-    # By default, docker metrics will be collected for on-premise, docker-based k8s deployments. To disable docker metric collection, set this to false.
-    # dockerMetricCollectionEnabled: true|false
-
 
     # Deamonset CPU/Mem limits and requests
     # dsCpuLimit:
