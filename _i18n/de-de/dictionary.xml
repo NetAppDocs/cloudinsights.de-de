@@ -164,7 +164,6 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">Protokollüberwachung</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">Der Filter Protokollmonitor darf nicht leer sein.</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">Definieren Sie das Verhalten für die Alarmauflösung</block>
-  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">Alarmauflösung</block>
   <block id="0c2055379a44f0c3e3fa1c66b6e90e9d" category="section-title">Wählen Sie Benachrichtigungstyp und Empfänger aus</block>
   <block id="89275c0783a0e53b681cf17404e53efd" category="paragraph">Im Abschnitt „ Team Notification(s)_ einrichten“ können Sie auswählen, ob Sie Ihr Team per E-Mail oder Webhook benachrichtigen möchten.</block>
   <block id="f5ea0637921e9f794d41cae2031b1d5c" category="inline-image-macro">Wählen Sie die Alarmmethode</block>
@@ -10526,12 +10525,8 @@
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">Ich erhielt eine Warnung, dass die Disk API mehr Daten zurückgegeben hat</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">Wenden Sie sich an den Support, um zusätzliche Daten zu erhalten.</block>
   <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">Sofort beheben</block>
-  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">Löschen Sie die Daten nach Ablauf der Aufbewahrungsfrist (Details finden Sie auf der Seite „Editionen“). Beachten Sie, dass der Monitor keine Auflösungsbedingung per Definition hat. Daher bleibt eine Warnung _aktiv_ und unterdrückt alle nachfolgenden Warnmeldungen, die von diesem Monitor generiert werden, bis die Aufbewahrungsfrist für Daten abgelaufen ist.</block>
-  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">Auflösen anhand von Protokolleingaben: Warnung auflösen, wenn die Protokollzeile wie in der folgenden Definition beschrieben erkannt wird, oder nach Ablauf der Aufbewahrungsfrist löschen</block>
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Optionen Für Die Alarmauflösung</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">/// * * * sofort auflösen*: Der Alarm wird sofort ohne weitere Aktion behoben * *nach Zeit auflösen*: Der Alarm wird nach Ablauf der angegebenen Zeit behoben * * * Auflösen basierend auf Protokolleintrag*: Der Alarm wird behoben, wenn eine nachfolgende Protokollaktivität eingetreten ist. Beispiel: Wenn ein Objekt als „verfügbar“ protokolliert wird.</block>
-  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
   <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">Bevor Sie mit der Nutzung von Cloud Insights beginnen können, müssen Sie sich über das Portal *NetApp BlueXP* (ehemals Cloud Central) anmelden. Wenn Sie bereits über eine Anmeldung bei NetApp Cloud Central verfügen, können Sie mit wenigen schnellen Schritten eine kostenlose Testversion von Cloud Insights starten.</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">*NetApp BlueXP*</block>
   <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">Erste Schritte mit NetApp Cloud-Services finden Sie unter<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> Und klicken Sie auf *erste Schritte*.</block>
@@ -11284,8 +11279,6 @@ SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinu
 Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
 
 SE (Security Enhanced) Linux wird nicht unterstützt.</block>
-  <block id="45698e13b1c2f7241751839133834506" category="cell">Nach der Installation des Bedieners geben die telegraf-ds-Pods CrashLoopBackOff ein und die POD-Protokolle zeigen „su: Authentication failure“ an.</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">Bearbeiten Sie die konfiguration der netapp-Monitoring-Konfiguration und setzen Sie _dockerMetricCollectionEnabled_ auf false.  Weitere Informationen finden Sie im Abschnitt des Bedieners <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Erfassen von Docker-Kennzahlen Standardmäßig ist dieser Wert auf „true“ gesetzt, und Docker-Kennzahlen werden für lokale, Docker-basierte K8s-Bereitstellungen erfasst. Um die Erfassung der Docker-Metrik zu deaktivieren, setzen Sie diese auf FALSE.</block>
+  <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">Löschen Sie die Daten nach Ablauf der Aufbewahrungsfrist (Details finden Sie auf der Seite „Editionen“). Beachten Sie, dass der Monitor keine Auflösungsbedingung per Definition hat. Daher bleibt eine Warnung _aktiv_ und unterdrückt alle nachfolgenden Warnungen mit übereinstimmenden _Group_by_, die von diesem Monitor erstellt wurden, bis die Aufbewahrungsfrist für Daten abgelaufen ist.</block>
+  <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Auflösen anhand von Protokolleingaben: Warnung auflösen, wenn die Protokollzeile wie in der folgenden Definition beschrieben erkannt wird, oder nach Ablauf der Aufbewahrungsfrist löschen.</block>
 </blocks>
