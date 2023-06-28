@@ -78,6 +78,7 @@ Der Preis für Cloud Insights ist pro *verwaltete Einheit*. Die Nutzung Ihrer ve
 
 * 1 Managed Unit = 2 Hosts (jede virtuelle oder physische Maschine)
 * 1 Managed Unit = 4 tib unformatierte Kapazität physischer oder virtueller Festplatten
+* 1 Managed Unit = 4 vCPUs von Uberentes
 
 
 Beachten Sie, dass die folgenden Datensammler mit einem anderen Raw tib zur Managed Unit-Rate gemessen werden. Alle 40 tib unformatierten Kapazitäten auf diesen Datensammlern werden als 1 Managed Unit (MU) geladen:
@@ -97,7 +98,7 @@ Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder erwarte
 
 === Schätzen Sie Ihre Abonnementkosten Ein
 
-Die Abonnementrechner geben Ihnen eine geschätzte monatliche Cloud Insights-Kosten basierend auf der Anzahl der verwalteten Einheiten, die Sie voraussichtlich benötigen. Die aktuellen Werte sind bereits ausgefüllt, und Sie können diese Werte anpassen, um Sie bei der Planung des geschätzten zukünftigen Wachstums zu unterstützen. Sie können die Werte für Infrastruktur, Kubernetes oder beides anpassen.
+Mithilfe der Abonnementrechner können Sie Ihre Cloud Insights-Abonnementkosten anhand der Anzahl der benötigten verwalteten Einheiten abschätzen. Die aktuellen Werte sind bereits ausgefüllt, und Sie können diese Werte anpassen, um Sie bei der Planung des geschätzten zukünftigen Wachstums zu unterstützen. Sie können die Werte für Infrastruktur, Kubernetes oder beides anpassen.
 
 Ihre geschätzten Listenkosten ändern sich abhängig von Ihrem Abonnementzeitraum.
 HINWEIS: Die Rechner dienen nur zur Schätzung. Die genaue Preisgestaltung wird bei der Anmeldung festgelegt.
@@ -148,6 +149,7 @@ Auf der Registerkarte „Subscription Summary“ wird Folgendes angezeigt:
 * Seriennummer Des Abonnements
 * Aktuelle ME-Nutzung und „Was wäre, wenn?“ Kostenkalkulation
 * Links, um Ihr Abonnement zu ändern
+* Ansichten der Managed Unit-Nutzung
 
 
 
