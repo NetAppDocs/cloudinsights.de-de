@@ -43,12 +43,6 @@ Der link:concept_kubernetes_network_monitoring_and_map.html["_Kubernetes-Netzwer
 
 
 
-=== Berichterstellung
-
-Die Berichtskomponente von Cloud Insights wurde in „Cloud Insights-Analyse“ umbenannt. Keine Sorge, die Funktionalität bleibt gleich.
-
-
-
 === Änderungen bei der Erfassung/Erfassung:
 
 Die folgenden Änderungen an der Data Collector/Acquisition Unit sind vorhanden:
