@@ -222,7 +222,7 @@ Suchergebnisse mit und ohne / werden unterschiedlich sein
 | Einige NFS-Ereignisse werden in der UI nicht angezeigt. | Überprüfen Sie Folgendes: 1. Ein Benutzer-Verzeichnis-Collector für AD-Server mit POSIX-Attributen sollte mit dem unixid-Attribut ausgeführt werden, das über UI aktiviert ist. 2. Jeder Benutzer, der NFS-Zugang macht, sollte angezeigt werden, wenn er in der Benutzerseite von UI 3 durchsucht wird. RAW-Ereignisse (Ereignisse, für die der Benutzer noch nicht erkannt wurde) werden für NFS 4 nicht unterstützt. Anonymer Zugriff auf den NFS-Export wird nicht überwacht. 5. Stellen Sie sicher, dass die NFS-Version in weniger als NFS4.1 verwendet wird. 
 
 
-| Nachdem Sie einige Buchstaben mit einem Platzhalterzeichen wie Sternchen (\*) in die Filter auf den Seiten Forensics _All Activity_ oder _entities_ eingegeben haben, werden die Seiten sehr langsam geladen. | Ein Sternchen (\*) in der Suchzeichenfolge sucht nach allem. Führende Platzhalterzeichenfolgen wie _*<searchTerm>_ oder _*<searchTerm>*_ führen jedoch zu einer langsamen Abfrage.
+| Nachdem Sie einige Buchstaben mit einem Platzhalterzeichen wie Sternchen (*) in die Filter auf den Seiten Forensics _All Activity_ oder _entities_ eingegeben haben, werden die Seiten sehr langsam geladen. | Ein Sternchen (\*) in der Suchzeichenfolge sucht nach allem. Führende Platzhalterzeichenfolgen wie _*<searchTerm>_ oder _*<searchTerm>*_ führen jedoch zu einer langsamen Abfrage.
 Um eine bessere Leistung zu erzielen, verwenden Sie stattdessen Präfix-Strings im Format _<searchTerm>*_ (mit anderen Worten: Fügen Sie das Sternchen (*) _nach_ einem Suchbegriff hinzu).
 Beispiel: Verwenden Sie den String _testvolume*_ anstatt _*testvolume_ oder _*Test*Volume_.
 
