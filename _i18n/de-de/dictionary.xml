@@ -11168,7 +11168,6 @@ HINWEIS: Die Rechner dienen nur zur Schätzung. Die genaue Preisgestaltung wird 
   <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">Kubernetes-Netzwerküberwachung und -Zuordnung ist für alle verfügbar</block>
   <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">Der <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Workloads und bietet Echtzeiteinblick in die Latenzen und Anomalien der Kubernetes-Netzwerk-Performance. So können Performance-Probleme erkannt werden, bevor sie sich auf die Benutzer auswirken. Viele Kunden fanden es hilfreich während der Vorschau, und jetzt ist es für alle zu genießen.</block>
-  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Die Berichtskomponente von Cloud Insights wurde in „Cloud Insights-Analyse“ umbenannt. Keine Sorge, die Funktionalität bleibt gleich.</block>
   <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">Änderungen bei der Erfassung/Erfassung:</block>
   <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">Die folgenden Änderungen an der Data Collector/Acquisition Unit sind vorhanden:</block>
   <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">Die Mus für Data Domain und Cohesity betragen 40 tib : 1 MU.</block>
@@ -11283,4 +11282,6 @@ SE (Security Enhanced) Linux wird nicht unterstützt.</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Managed Unit = 4 vCPUs von Uberentes</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">Mithilfe der Abonnementrechner können Sie Ihre Cloud Insights-Abonnementkosten anhand der Anzahl der benötigten verwalteten Einheiten abschätzen. Die aktuellen Werte sind bereits ausgefüllt, und Sie können diese Werte anpassen, um Sie bei der Planung des geschätzten zukünftigen Wachstums zu unterstützen. Sie können die Werte für Infrastruktur, Kubernetes oder beides anpassen.</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">Ansichten der Managed Unit-Nutzung</block>
+  <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">Bearbeiten eines vorhandenen Berichts</block>
+  <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">Beachten Sie, dass die Bearbeitung von Dateien am Standardspeicherort das Risiko birgt, dass diese Berichte bei der nächsten Aktualisierung des Berichtkatalogs überschrieben werden. Es wird empfohlen, den bearbeiteten Bericht unter einem neuen Namen zu speichern oder an einem nicht standardmäßigen Speicherort zu speichern.</block>
 </blocks>
