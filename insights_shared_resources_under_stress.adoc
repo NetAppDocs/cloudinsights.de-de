@@ -43,20 +43,20 @@ Ein *Konflikt* oder *Sättigung* tritt auf, wenn sich die IOPS auf andere Ressou
 
 == Anspruchsvolle Workloads
 
-Klicken Sie im Cloud Insights-Menü auf *Dashboards > freigegebene Ressourcen unter Stress*, um sich mit anspruchsvollen und beeinträchtigten Workloads in Ihren gemeinsam genutzten Ressourcen vertraut zu machen.
+Wenn Sie sich mit anspruchsvollen und beeinträchtigten Workloads in Ihren gemeinsam genutzten Ressourcen vertraut machen möchten, klicken Sie auf *Dashboards > Insights* und wählen Sie die Option *Shared Resources under Stress* Insight aus.
 
-image:Shared_resources_Under_Stress_menu.png["Liste Der Workloads"]
+image:InsightsMenu.png["Menü „Insights“"]
 
-Cloud Insights zeigt eine Liste aller Workloads an, bei denen eine Sättigung erkannt wurde. Beachten Sie, dass Cloud Insights nur Workloads anzeigt, bei denen mindestens eine _anspruchsvolle Ressource_ und* mindestens eine _betroffene Ressource_ erkannt wurde.
+Cloud Insights zeigt eine Liste aller Workloads an, bei denen eine Sättigung erkannt wurde. Beachten Sie, dass Cloud Insights Workloads zeigt, bei denen mindestens eine _anspruchsvolle Ressource_ *oder* _betroffene Ressource_ erkannt wurde.
 
 Klicken Sie auf einen Workload, um die Detailseite anzuzeigen. Das obere Diagramm zeigt den Vorgang auf der gemeinsam genutzten Ressource (z. B. einen Storage-Pool), über den Konflikte/Sättigung stattfinden.
 
-image:Shared_resources_Under_Stress_SharedResource.png["Gemeinsam genutzte Ressourcen mit Konflikten"]
+image:ResourceInsightShared.png["Gemeinsam genutzte Ressourcen mit Konflikten"]
 
 Im Folgenden werden die beiden Diagramme mit den _anspruchsvollen_ Workloads und den Workloads angezeigt, die _durch diese anspruchsvollen Workloads beeinträchtigt sind.
 
-image:Insights_Demanding_Workload_Chart.png["Diagramm mit anspruchsvollen Workloads"]
-image:Insights_Impacted_Workload_Chart.png["Betroffene Workload-Grafik"]
+image:ResourceInsightDemanding.png["Diagramm mit anspruchsvollen Workloads"]
+image:ResourceInsightImpacted-a.png["Betroffene Workload-Grafik"]
 
 Unter den einzelnen Tabellen finden Sie eine Liste mit Workloads und/oder Ressourcen, die von den Engpässen betroffen sind oder die von diesen Konflikten betroffen sind. Wenn Sie auf eine Ressource klicken (z. B. auf eine VM), wird eine Detailseite für diese Ressource geöffnet. Wenn Sie auf einen Workload klicken, wird eine Abfrageseite geöffnet, auf der die beteiligten Pods angezeigt werden. Beachten Sie, dass, wenn der Link eine leere Abfrage öffnet, es sein kann, dass der betroffene Pod nicht mehr Teil der aktiven Konflikte ist. Sie können den Zeitbereich der Abfrage ändern, um die Pod-Liste in einem größeren oder stärker fokussierten Zeitbereich anzuzeigen.
 
