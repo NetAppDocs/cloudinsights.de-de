@@ -41,7 +41,7 @@ Dies fasst vom Kunden bereitgestellte Konfigurationsdaten zusammen, die zur Verw
 
 * Secrets
 +
-Secrets bestehen aus den Anmeldeinformationen, die von der Cloud Insights-Erfassungseinheit für den Zugriff auf Kundengeräte und -Dienste verwendet werden. Diese Anmeldedaten werden mit AES-256 verschlüsselt, die privaten Schlüssel werden nur in den Acquisition Units gespeichert und verlassen nie die Kundenumgebung. Selbst privilegierte Cloud Insights SREs können aufgrund dieses Designs nicht in Klartext auf Kundengeheimnisse zugreifen.
+Secrets bestehen aus den Anmeldeinformationen, die von der Cloud Insights-Erfassungseinheit für den Zugriff auf Kundengeräte und -Dienste verwendet werden. Diese Anmeldeinformationen werden mit einer starken asymmetrischen Verschlüsselung verschlüsselt, und die privaten Schlüssel werden nur auf den Akquisitionseinheiten gespeichert und verlassen nie die Kundenumgebung. Selbst privilegierte Cloud Insights SREs können aufgrund dieses Designs nicht in Klartext auf Kundengeheimnisse zugreifen.
 
 * Funktionale Daten
 +
