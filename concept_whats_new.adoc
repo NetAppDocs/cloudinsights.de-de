@@ -39,7 +39,7 @@ image:Recent_Changes_Example.png["Beispiel Für Kürzliche Änderungen"]
 
 === Verbesserungen Des Bedieners
 
-Die folgenden Verbesserungen wurden an vorgenommen link:/telegraf_agent_k8s_config_options.html["Kubernetes Operator"] Implementierung:
+Die folgenden Verbesserungen wurden an vorgenommen link:telegraf_agent_k8s_config_options.html["Kubernetes Operator"] Implementierung:
 
 * Option zum Umgehen der metrischen Erfassung von Andockern
 * Möglichkeit, telegraf-Demonsets und Replikasets Toleranzen hinzuzufügen und anzupassen
@@ -63,7 +63,7 @@ image:Operator_Public_Image_Key.png["Laden Sie den öffentlichen Schlüssel heru
 
 === Aggregation, bedingte Formatierung und mehr für Abfragen
 
-Aggregation, Einheitenauswahl, bedingte Formatierung und Spaltenumbenennung gehören zu den nützlichsten Funktionen eines Dashboard-Tabellen-Widgets, und jetzt sind dieselben Funktionen verfügbar link:/task_create_query.html["Abfragen"].
+Aggregation, Einheitenauswahl, bedingte Formatierung und Spaltenumbenennung gehören zu den nützlichsten Funktionen eines Dashboard-Tabellen-Widgets, und jetzt sind dieselben Funktionen verfügbar link:task_create_query.html["Abfragen"].
 
 image:Query_Page_Aggregation_etc.png["Ergebnisse der Abfrageseite mit Aggregation, bedingter Formatierung, Einheitenanzeige und Spaltenumbenennung"]
 
