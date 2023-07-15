@@ -25,6 +25,72 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== Juli 2023
+
+
+
+=== Letzte Änderungen Anzeigen
+
+Die Landing Pages des Data Collectors enthalten nun eine Liste der letzten Änderungen. Klicken Sie einfach auf die Schaltfläche „Letzte Änderungen“ unten auf einer beliebigen Landing Page für den Datensammler, um die letzten Änderungen an der Datensammlung anzuzeigen.
+
+image:Recent_Changes_Example.png["Beispiel Für Kürzliche Änderungen"]
+
+
+
+=== Verbesserungen Des Bedieners
+
+Die folgenden Verbesserungen wurden an vorgenommen link:/telegraf_agent_k8s_config_options.html["Kubernetes Operator"] Implementierung:
+
+* Option zum Umgehen der metrischen Erfassung von Andockern
+* Möglichkeit, telegraf-Demonsets und Replikasets Toleranzen hinzuzufügen und anzupassen
+
+
+
+
+=== Einblick: Cold Storage-Lösung Zurückgewinnen
+
+Der link:insights_reclaim_ontap_cold_storage.html["Gewinnen Sie einen Einblick in ONTAP Cold Storage zurück"] Unterstützt jetzt FlexGroups und ist jetzt für alle Kunden verfügbar.
+
+
+
+=== Unterschrift Des Bedieners
+
+Für Kunden, die ein privates Repository für ihren NetApp-Kubernetes-Überwachungsoperator verwenden, können Sie jetzt den öffentlichen Schlüssel für die Bildsignatur während der Installation des Bedieners kopieren, um die Authentizität der heruntergeladenen Software zu bestätigen. Wählen Sie während des optionalen Schritts die Schaltfläche _Copy Image Signature Public Key_ aus, um das Bedienerbild in Ihr privates Projektarchiv zu laden.
+
+image:Operator_Public_Image_Key.png["Laden Sie den öffentlichen Schlüssel herunter"]
+
+
+
+=== Aggregation, bedingte Formatierung und mehr für Abfragen
+
+Aggregation, Einheitenauswahl, bedingte Formatierung und Spaltenumbenennung gehören zu den nützlichsten Funktionen eines Dashboard-Tabellen-Widgets, und jetzt sind dieselben Funktionen verfügbar link:/task_create_query.html["Abfragen"].
+
+image:Query_Page_Aggregation_etc.png["Ergebnisse der Abfrageseite mit Aggregation, bedingter Formatierung, Einheitenanzeige und Spaltenumbenennung"]
+
+Diese Funktionen sind jetzt für Integrationsdaten (Kubernetes, ONTAP Advanced Metrics usw.) verfügbar und werden in Kürze auch für Infrastrukturobjekte (Storage, Volume, Switch usw.) erhältlich sein.
+
+
+
+=== API für Audit
+
+Sie können jetzt eine API zum Abfragen oder Exportieren von überwachten Ereignissen verwenden. Gehen Sie zu Admin > API Access, und wählen Sie den Link _API Documentation_, um Informationen zu erhalten.
+
+image:Audit_API_Swagger.png["API Swagger für Audit, width=400"]
+
+
+
+=== Data Collector: Trident Economy
+
+Cloud Insights unterstützt jetzt den Trident-Wirtschaftstreiber und bietet damit folgende Vorteile:
+
+* Erhalten Sie Einblick in die Pod-zu-ONTAP Qtree-Zuordnung und Performance-Metriken.
+* Sorgen Sie für eine nahtlose Fehlerbehebung und einfache Navigation von Kubernetes Pods zum Back-End-Storage
+* Proaktive Erkennung von Back-End-Performance-Problemen mit Monitoren
+
+
+'''
+
+
 == Juni 2023
 
 

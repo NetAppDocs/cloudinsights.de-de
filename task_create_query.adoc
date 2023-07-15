@@ -44,6 +44,54 @@ Die Liste der Abfrageergebnisse zeigt je nach dem gesuchten Objekttyp eine Reihe
 
 image:QuerySelectColumns.png["Wählen Sie Spalten Aus"]
 
+
+
+== Wählen Sie „Aggregation“, „Einheiten“, „Bedingte Formatierung“
+
+
+
+=== Aggregation und Einheiten
+
+Bei „Wert“-Spalten können Sie Ihre Abfrageergebnisse weiter verfeinern, indem Sie auswählen, wie die angezeigten Werte aggregiert werden, und die Einheiten auswählen, in denen diese Werte angezeigt werden. Diese Optionen finden Sie, indem Sie das Menü „drei Punkte“ in der oberen Ecke einer Spalte auswählen.
+
+image:Query_Page_Aggregation_etc.png["Ergebnisse der Abfrageseite mit Aggregation, bedingter Formatierung, Einheitenanzeige und Spaltenumbenennung"]
+
+
+
+==== Einheiten
+
+Sie können die Einheiten auswählen, in denen die Werte angezeigt werden sollen. Wenn z. B. in der Spalte „ausgewählt“ die Bruttokapazität angezeigt wird und die Werte in gib angezeigt werden, sie jedoch lieber als tib angezeigt werden, wählen Sie aus dem Dropdown-Menü „Geräteanzeige“ einfach „tib“ aus.
+
+
+
+==== Aggregation
+
+Wenn die angezeigten Werte aus den zugrunde liegenden Daten als „Durchschnitt“ aggregiert werden, Aber Sie möchten die Summe aller Werte anzeigen, wählen Sie "Summe" entweder aus der Dropdown-Liste _Group by_ (wenn Sie die Summen in Gruppen anzeigen möchten) oder aus der Dropdown-Liste _time Aggregate by_ (wenn die Zeilenwerte Summen der zugrunde liegenden Daten anzeigen sollen).
+
+Sie können gruppierte Datenpunkte nach _AVG, Max, Min oder Sum_ aggregieren.
+
+Sie können einzelne Zeilendaten nach _Average, Last Data Point Acquired, Maximum, Minimum oder Sum_ aggregieren.
+
+
+
+==== Bedingte Formatierung
+
+Mit der bedingten Formatierung können Sie in der Liste der Abfrageergebnisse Schwellenwerte für die Warn- und kritische Ebene hervorheben und so Ausreißer und außergewöhnliche Datenpunkte sofort sichtbar machen.
+
+image:Query_Page_Conditional_Formatting.png["Bedingte Formatierung auf Abfrageseite"]
+
+Bedingte Formatierung wird für jede Spalte separat festgelegt. Sie können beispielsweise einen Satz Schwellenwerte für eine Spalte Kapazität und einen weiteren Satz für eine Spalte Durchsatz auswählen.
+
+
+
+==== Spalte Umbenennen
+
+Durch das Umbenennen einer Spalte wird der angezeigte Name in der Liste der Abfrageergebnisse geändert. Der neue Spaltenname wird auch in der resultierenden Datei angezeigt, wenn Sie die Abfrageliste in .CSV exportieren.
+
+
+
+=== Speichern
+
 Nachdem Sie Ihre Anfrage so konfiguriert haben, dass Sie die gewünschten Ergebnisse anzeigen, können Sie auf die Schaltfläche *Speichern* klicken, um die Abfrage für die zukünftige Verwendung zu speichern. Geben Sie ihm einen aussagekräftigen und eindeutigen Namen.
 
 

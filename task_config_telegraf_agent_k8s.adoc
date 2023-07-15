@@ -204,6 +204,14 @@ OpenShift kann zusätzliche Sicherheitsstufen implementieren, die den Zugriff au
 
 
 
+=== Toleranzen und Verfleckungen
+
+Die DemonSets _telegraf_, _Fluent-Bit_ und _net-Observer_ müssen einen Pod auf jedem Knoten in Ihrem Cluster planen, um Daten auf allen Knoten korrekt zu erfassen. Der Operator wurde so konfiguriert, dass er einige bekannte *Fehler* toleriert. Wenn Sie auf Ihren Nodes benutzerdefinierte Taints konfiguriert haben und damit verhindern, dass Pods auf jedem Knoten ausgeführt werden, können Sie für diese Taints eine *Toleration* erstellen link:telegraf_agent_k8s_config_options.html["In der _AgentConfiguration_"]. Wenn Sie auf alle Nodes im Cluster benutzerdefinierte Taints angewendet haben, müssen Sie der Operator-Bereitstellung auch die erforderlichen Toleranzen hinzufügen, damit der Operator-Pod geplant und ausgeführt werden kann.
+
+Weitere Informationen zu Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["Tönungen und Tolerationen"].
+
+
+
 == Installation des NetApp Kubernetes Monitoring Operator
 
 image:NKMO-Instructions-1.png[""]
@@ -512,5 +520,8 @@ Erfassen oder notieren Sie die Ausgabe der folgenden Befehle, und wenden Sie sic
 
 
 | Ich sehe keine Kennzahlen für die Kubernetes-Kronjobs, die in meinem Cluster vorhanden sind, erfasst. | Überprüfen Ihrer Kubernetes Version (d. h. `kubectl version`).  Wenn es v1.20.x oder niedriger ist, ist dies eine erwartete Einschränkung.  Die mit dem NetApp Kubernetes Monitoring Operator implementierte Version von kube-State-Metrics unterstützt nur v1.cronjob.  Bei Kubernetes 1.20.x und niedriger befindet sich die Ressource cronjob unter v1beta.cronjob.  Daher können kube-State-Metriken die Ressource cronjob nicht finden. 
+
+
+| Nach der Installation des Bedieners geben die telegraf-ds-Pods CrashLoopBackOff ein und die POD-Protokolle zeigen „su: Authentication failure“ an. | Bearbeiten Sie die konfiguration der netapp-Monitoring-Konfiguration und setzen Sie _dockerMetricCollectionEnabled_ auf false.  Weitere Informationen finden Sie im Abschnitt des Bedieners link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"]. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
