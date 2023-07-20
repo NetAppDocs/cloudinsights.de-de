@@ -11358,5 +11358,5 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">l4-Tolerationen</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">Die folgenden Verbesserungen wurden an vorgenommen <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> Implementierung:</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">Aggregation, Einheitenauswahl, bedingte Formatierung und Spaltenumbenennung gehören zu den nützlichsten Funktionen eines Dashboard-Tabellen-Widgets, und jetzt sind dieselben Funktionen verfügbar <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
-  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">Bearbeiten Sie die Bereitstellung des Monitoring-Operators in Operator-config.yaml, und ändern Sie alle Bildverweise, um Ihr privates Docker-Repository zu verwenden.</block>
+  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Bearbeiten Sie die Bereitstellung des Monitoring-Operators in Operator-Deployment.yaml, und ändern Sie alle Bildverweise, um Ihr privates Docker-Repository zu verwenden.</block>
 </blocks>
