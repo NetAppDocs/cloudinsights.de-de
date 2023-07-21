@@ -11359,4 +11359,23 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">Aggregation, Einheitenauswahl, bedingte Formatierung und Spaltenumbenennung gehören zu den nützlichsten Funktionen eines Dashboard-Tabellen-Widgets, und jetzt sind dieselben Funktionen verfügbar <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>.</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">Bearbeiten Sie die Bereitstellung des Monitoring-Operators in Operator-Deployment.yaml, und ändern Sie alle Bildverweise, um Ihr privates Docker-Repository zu verwenden.</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">Wenn Sie einen Proxy für eine oder beide dieser Optionen verwenden, müssen Sie zuerst sicherstellen, dass Ihr Proxy für eine gute Kommunikation mit Ihrer Cloud Insights-Umgebung konfiguriert ist, um den NetApp Kubernetes-Betriebsmonitor zu installieren. Beispielsweise müssen Sie von den Servern/VMs, von denen Sie den Operator installieren möchten, auf Cloud Insights zugreifen und Binärdateien von Cloud Insights herunterladen können.</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Ich sehe wiederholte Fehlermeldungen wie die folgenden in meinen Telegraf-Protokollen:
+
+ E! [Agent] Fehler beim Schreiben in Outputs.http: Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> Kontext-Deadline überschritten (Client.Timeout beim Warten auf Header überschritten)</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">Bearbeiten Sie jede Telegraf-Konfigurationsdatei (z. B. /etc/telegraf/telegraf.d/*.conf), und erhöhen Sie das Timeout für die Telegraf-Ausgabemodule.  Beispiel: Ersetzen Sie in jeder conf-Datei alle Instanzen von...
+
+[[Outputs.http]]
+...
+Timeout = „5s“
+...
+
+
+...Mit den folgenden:
+
+[[Outputs.http]]
+...
+Timeout = „10s“
+...
+
+Starten Sie Telegraf anschließend neu.</block>
 </blocks>

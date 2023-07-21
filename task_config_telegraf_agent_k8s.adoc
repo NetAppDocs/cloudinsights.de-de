@@ -523,5 +523,25 @@ Erfassen oder notieren Sie die Ausgabe der folgenden Befehle, und wenden Sie sic
 
 
 | Nach der Installation des Bedieners geben die telegraf-ds-Pods CrashLoopBackOff ein und die POD-Protokolle zeigen „su: Authentication failure“ an. | Bearbeiten Sie die konfiguration der netapp-Monitoring-Konfiguration und setzen Sie _dockerMetricCollectionEnabled_ auf false.  Weitere Informationen finden Sie im Abschnitt des Bedieners link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"]. 
+
+
+| Ich sehe wiederholte Fehlermeldungen wie die folgenden in meinen Telegraf-Protokollen:
+
+ E! [Agent] Fehler beim Schreiben in Outputs.http: Post "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] Kontext-Deadline überschritten (Client.Timeout beim Warten auf Header überschritten) | Bearbeiten Sie jede Telegraf-Konfigurationsdatei (z. B. /etc/telegraf/telegraf.d/*.conf), und erhöhen Sie das Timeout für die Telegraf-Ausgabemodule.  Beispiel: Ersetzen Sie in jeder conf-Datei alle Instanzen von...
+
+[[Outputs.http]]
+...
+Timeout = „5s“
+...
+
+
+...Mit den folgenden:
+
+[[Outputs.http]]
+...
+Timeout = „10s“
+...
+
+Starten Sie Telegraf anschließend neu. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
