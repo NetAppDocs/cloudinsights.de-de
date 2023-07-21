@@ -98,7 +98,7 @@ An zwei Stellen können Sie in Ihrer Umgebung einen Proxy verwenden, um den NetA
 * Proxy für die Kommunikation mit Ihrer Cloud Insights Umgebung durch das Ziel-Kubernetes-Cluster
 
 
-Wenn Sie einen Proxy für diesen oder beide verwenden, müssen Sie für die Installation des NetApp Kubernetes Operating Monitor zunächst sicherstellen, dass Ihr Proxy konfiguriert ist und eine gute Kommunikation mit Ihrer Cloud Insights-Umgebung ermöglicht. Wenn Sie über einen Proxy verfügen und über den Server/die VM auf Cloud Insights zugreifen können, von dem aus Sie den Operator installieren möchten, wird Ihr Proxy wahrscheinlich richtig konfiguriert.
+Wenn Sie einen Proxy für eine oder beide dieser Optionen verwenden, müssen Sie zuerst sicherstellen, dass Ihr Proxy für eine gute Kommunikation mit Ihrer Cloud Insights-Umgebung konfiguriert ist, um den NetApp Kubernetes-Betriebsmonitor zu installieren. Beispielsweise müssen Sie von den Servern/VMs, von denen Sie den Operator installieren möchten, auf Cloud Insights zugreifen und Binärdateien von Cloud Insights herunterladen können.
 
 Legen Sie für den Proxy, der zur Installation des NetApp Kubernetes Operating Monitor verwendet wurde, vor der Installation des Operators die Umgebungsvariablen _http_Proxy/https_Proxy_ fest. In einigen Proxy-Umgebungen müssen Sie möglicherweise auch die Variable _no_Proxy Environment_ festlegen.
 
