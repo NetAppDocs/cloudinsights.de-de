@@ -185,6 +185,47 @@ Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses 
 |===
 
 
+== ONTAP-Leistungskennzahlen
+
+Mehrere ONTAP Modelle bieten Strommetriken für Cloud Insights, die für Monitoring- oder Alarmfunktionen verwendet werden können. Die unten aufgeführten Listen unterstützter und nicht unterstützter Modelle sind nicht umfassend, sollten jedoch einige Hinweise enthalten. Wenn ein Modell in der gleichen Familie wie ein Modell auf der Liste ist, sollte der Support identisch sein.
+
+Unterstützte Modelle:
+
+A200
+A220
+A250
+A300
+A320
+A400
+A700
+A700s
+A800
+A900
+C190
+FAS2240-4
+FAS2552
+FAS2650
+FAS2720
+FAS2750
+FAS8200
+FAS8300
+FAS8700
+FAS9000
+
+Nicht Unterstützte Modelle:
+
+FAS2620
+FAS3250
+FAS3270
+FAS500f
+FAS6280
+FAS/ALL FLASH FAS 8020
+FAS/ALL FLASH FAS 8040
+FAS/ALL FLASH FAS 8060
+FAS/ALL FLASH FAS 8080
+
+
+
 == Ein Hinweis zu Berechtigungen
 
 Da eine Reihe von Cloud Insights ONTAP Dashboards auf erweiterte ONTAP-Zähler angewiesen sind, müssen Sie im Abschnitt Data Collector Advanced Configuration *Advanced Counter Data Collection* aktivieren.
