@@ -99,8 +99,10 @@ Der HTTP-Header, in dem das Access Token übergeben wird, ist *X-CloudInsights-A
 
 Verwenden Sie zum Abrufen von Lagerbeständen beispielsweise Folgendes:
 
- curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
+ curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey:<API_Access_Token>'
 Wobei _<API_Access_Token>_ das Token ist, das Sie bei der Erstellung des API-Zugriffs gespeichert haben.
+
+Beispiele für die API, die Sie verwenden möchten, finden Sie auf den Seiten der Schwagger.
 
 
 
@@ -304,7 +306,7 @@ Hinweis: Wenn Sie die neueste Installation von NetApp Kubernetes Monitoring Oper
 spec:
 …
   output-sink:
-  - api-key: <NEW_API_TOKEN>
+  - api-key:<NEW_API_TOKEN>
 ....
 
 
