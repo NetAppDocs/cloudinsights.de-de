@@ -10809,7 +10809,6 @@
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">Beispiel Für Eine Workload-Zuordnung</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">Erste Schritte mit dem Überwachungsbediener</block>
-  <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubernetes Monitoring und -Zuordnung</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Die Performance-Überwachung und -Zuordnung des Kubernetes-Netzwerks ist eine <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> Und kann sich ändern.</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">Bevor Sie die Kubernetes-Netzwerk-Performance-Überwachung und -Zuordnung verwenden können, müssen Sie den konfiguriert haben <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> Um diese Option zu aktivieren. Aktivieren Sie während der Bereitstellung des Operators das Kontrollkästchen „Netzwerkleistung und Zuordnung“, um es zu aktivieren. Sie können diese Option auch aktivieren, indem Sie zu einer Kubernetes-Landing Page navigieren und „Implementierung ändern“ auswählen.</block>
@@ -11412,4 +11411,5 @@ FAS/ALL FLASH FAS 8020
 FAS/ALL FLASH FAS 8040
 FAS/ALL FLASH FAS 8060
 FAS/ALL FLASH FAS 8080</block>
+  <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">Netzwerküberwachung und -Zuordnung</block>
 </blocks>
