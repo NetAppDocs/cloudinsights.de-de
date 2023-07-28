@@ -47,7 +47,7 @@ Siehe unten für Anweisungen zu link:#create-files-programmatically["Programmges
 
 . Stellen Sie sicher, dass verschlüsselte Dateien nicht leer sind.
 . Vergewissern Sie sich, dass Sie > 50 Dateien verschlüsseln. Eine kleine Anzahl von Dateien wird ignoriert.
-. Führen Sie keinen Angriff mit demselben Benutzer mehrmals durch. Nach einigen Fällen wird CS das Benutzerverhalten kennen und davon ausgehen, dass es sich um das normale Verhalten des Benutzers handelt.
+. Führen Sie keinen Angriff mit demselben Benutzer mehrmals durch. Nach ein paar Mal lernt Workload Security dieses Benutzerverhalten kennen und geht davon aus, dass es sich um das normale Verhalten des Benutzers handelt.
 . Verschlüsseln Sie keine Dateien, die gerade von demselben Benutzer erstellt wurden. Das Ändern einer Datei, die gerade von einem Benutzer erstellt wurde, wird nicht als riskante Aktivität betrachtet. Verwenden Sie stattdessen Dateien, die von einem anderen Benutzer erstellt wurden, ODER warten Sie ein paar Stunden zwischen Erstellung und Verschlüsselung der Dateien.
 
 
