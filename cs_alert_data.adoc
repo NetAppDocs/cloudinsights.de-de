@@ -141,9 +141,6 @@ Warnungen und Warnungen werden 13 Monate lang aufbewahrt. Warnungen und Warnunge
 | Problem: | Versuchen Sie Das: 
 
 
-| Gibt es für durch Workload-Sicherheit (CS) ergriffene Snapshots eine Spülzeit/Archivierungsdauer für CS-Snapshots? | Nein Für CS-Snapshots ist kein Spülzeitraum/Archivierungszeitraum festgelegt. Der Benutzer muss die Spülrichtlinie für CS-Snapshots definieren. Weitere Informationen finden Sie im link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["ONTAP-Dokumentation"] Über das Einrichten der Richtlinien. 
-
-
 | Es besteht die Situation, dass ONTAP stündliche Snapshots pro Tag erstellt. Werden Workload Security (CS) Snapshots dies beeinträchtigen? Wird CS Schnappschuss den stündlichen Snapshot-Platz machen? Wird der stündliche StandardSnapshot angehalten? | Arbeitslastsicherheit Schnappschüsse werden die stündlichen Schnappschüsse nicht beeinflussen. CS Snapshots nehmen keinen stündlichen Snapshot-Platz in Anspruch und sollten wie zuvor fortgesetzt werden. Der standardmäßige stündliche Snapshot wird nicht angehalten. 
 
 
