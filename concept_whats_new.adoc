@@ -25,6 +25,70 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== August 2023
+
+
+
+=== Verbesserte Menüs
+
+Wir haben das Navigationsmenü auf der linken Seite aktualisiert, um die Workflows unserer Kunden besser zu unterstützen. Neue Elemente der obersten Ebene wie _Kubernetes_ ermöglichen beschleunigten Zugriff auf die Bedürfnisse des Kunden, und eine konsolidierte Administratorkonsole unterstützt die Rolle des Mandanten-Eigentümers.
+
+Hier einige weitere Beispiele für die Änderungen:
+
+* Im obersten _Observability_-Menü werden Datenerkennung, Warnmeldungen und Protokollabfragen angezeigt
+* Die Funktionen von ‘API Access für Beobachtbarkeit und Workload-Sicherheit befinden sich unter einem Menü
+* Ebenso für Observability und Workload Security ‘Benachrichtigungen’ Funktionalität, jetzt auch unter einem Menü
+
+
+image:NewLeftNavMenu.png["Aktualisiertes Linkes Navigationsmenü"]
+
+Hier ist eine kurze Liste der Funktionen, die Sie unter jedem Menü finden:
+
+Beobachtbarkeit:
+
+* Mehr Erfahren (Dashboards, Kennzahlen-Abfragen, Infrastruktureinblicke)
+* Warnmeldungen (Monitore und Alarmfunktionen)
+* Kollektoren (Datensammler und Erfassungseinheiten)
+* Protokollabfragen
+* Anreichern (Anmerkungs- und Anmerkungsregeln, Anwendungen, Geräteauflösung)
+* Berichterstellung
+
+
+Kubernetes:
+
+* Cluster Exploration und Network Map
+
+
+Workload-Sicherheit:
+
+* Meldungen
+* Forensik
+* Kollektoren
+* Richtlinien
+
+
+Grundlagen von ONTAP:
+
+* Datensicherung
+* Sicherheit
+* Meldungen
+* Infrastruktur
+* Netzwerkbetrieb
+* Workloads
+*VMware
+
+
+Admin.:
+
+* API-Zugriff
+* Prüfung
+* Benachrichtigungen
+* Abonnementinformationen
+* Benutzerverwaltung
+
+
+
+
 == Juli 2023
 
 
