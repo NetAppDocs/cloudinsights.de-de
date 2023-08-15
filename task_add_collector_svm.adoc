@@ -234,7 +234,42 @@ image:CS_Data_Collector_Error.png[""]
 | Data Collector wird einige Zeit ausgeführt und stoppt nach einer zufälligen Zeit, schlägt fehl mit: "Fehlermeldung: Connector befindet sich im Fehlerzustand. Dienstname: Audit. Grund für Fehler: Externer fpolicy-Server überlastet.“ | Die Ereignisrate von ONTAP war weit höher als die, die das Feld Agent verarbeiten kann. Damit wurde die Verbindung beendet. Überprüfen Sie den Peak Traffic in CloudSecure, wenn die Verbindung unterbrochen wurde. Dies können Sie auf der Seite *CloudSecure > Aktivitätsforensics > Alle Aktivitäten* überprüfen. Wenn der maximale aggregierte Datenverkehr höher ist als der, was die Agent Box verarbeiten kann, lesen Sie die Seite Event Rate Checker zur Dimensionierung der Collector-Bereitstellung in einer Agent-Box. Wenn der Agent vor dem 4. März 2021 in der Agent-Box installiert wurde, führen Sie die folgenden Befehle in der Agent-Box aus: Echo 'net.Core.rmem_max=8388608' >> /etc/sysctl.conf Echo 'net.ipv4.tcp_rmem = 4096 2097152 8388608' >> /etc/sysctl.conf sysctl -p Neustart des Sammlers von der UI nach der Größenänderung. 
 
 
-| Collector meldet Fehlermeldung: „Keine lokale IP-Adresse auf dem Anschluss gefunden, die die Datenschnittstellen der SVM erreichen kann“. | Dies ist sehr wahrscheinlich auf der Seite des ONTAP-Netzwerks zurückzuführen. Bitte führen Sie folgende Schritte aus: 1. Stellen Sie sicher, dass es keine Firewalls auf der SVM-Datenlüf oder dem Management- l gibt, welche die Verbindung von der SVM blockieren. 2. Beim Hinzufügen einer SVM über eine Cluster-Management-IP, stellen Sie bitte sicher, dass die Daten- und Management- lif der SVM von der Agent-VM pingfähig sind. Bei Problemen prüfen Sie Gateway, Netzmaske und Routen für den Lif. Sie können auch versuchen, sich mithilfe von ssh unter Verwendung der Cluster-Management-IP beim Cluster anzumelden und die Agent-IP zu pingen. Stellen Sie sicher, dass die Agent-IP pingfähig ist: _Network ping -vserver <vserver Name> -Destination <Agent IP> -lif <Lif Name> -show-Detail_ Wenn Sie nicht pingfähig sind, stellen Sie sicher, dass die Netzwerkeinstellungen in ONTAP korrekt sind, so dass der Agent-Rechner pingfähig ist. 3. Wenn Sie eine Verbindung über Cluster-IP versucht haben und es nicht funktioniert, versuchen Sie, direkt über SVM-IP zu verbinden. Die Schritte zur Verbindung über SVM IP finden Sie oben. 4. Beim Hinzufügen des Collectors über SVM IP und vsadmin Zugangsdaten prüfen, ob die SVM Lif die Data PLUS Mgmt-Rolle aktiviert hat. In diesem Fall funktioniert der Ping an die SVM Lif, allerdings funktioniert SSH an die SVM Lif nicht. Wenn ja, erstellen Sie ein SVM Management-only-Lif und versuchen Sie, eine Verbindung über diese SVM-Management-only-Lizenz herzustellen. 5. Wenn es immer noch nicht funktioniert, erstellen Sie eine neue SVM-Lif und versuchen Sie eine Verbindung über diese Lif. Stellen Sie sicher, dass die Subnetzmaske richtig eingestellt ist. 6. Erweitertes Debugging: A) Starten Sie eine Paketverfolgung in ONTAP. b) Try to Connect a Data Collector to the SVM from CloudSecure UI. c) warten, bis der Fehler angezeigt wird. Stoppen Sie die Paketverfolgung in ONTAP. d) Öffnen Sie die Paketverfolgung von ONTAP. Er ist an diesem Standort verfügbar _\https://<cluster_mgmt_ip>/spi/<clustername>/etc/log/packet_traces/_ e) stellen Sie sicher, dass ein SYN von ONTAP zur Agent-Box kommt. f) Wenn es kein SYN von ONTAP gibt, dann ist es ein Problem mit Firewall in ONTAP. G) Öffnen Sie die Firewall in ONTAP, so dass ONTAP in der Lage ist, die Agent-Box zu verbinden. 7. Wenn es noch nicht funktioniert, wenden Sie sich bitte an das Netzwerkteam, um sicherzustellen, dass keine externe Firewall die Verbindung von ONTAP zur Agent Box blockiert. 8. Wenn keiner der oben genannten Probleme löst, öffnen Sie einen Fall mit link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Netapp Support"] Für weitere Unterstützung. 
+| Collector meldet Fehlermeldung: „Keine lokale IP-Adresse auf dem Anschluss gefunden, die die Datenschnittstellen der SVM erreichen kann“. | Dies ist sehr wahrscheinlich auf der Seite des ONTAP-Netzwerks zurückzuführen. Bitte befolgen Sie diese Schritte:
+
+1. Stellen Sie sicher, dass es keine Firewalls auf den SVM-Daten-LIF oder das Management-LIF gibt, die die Verbindung von der SVM blockieren.
+
+2. Beim Hinzufügen einer SVM über eine Cluster-Management-IP, stellen Sie bitte sicher, dass die Daten- und Management- lif der SVM von der Agent-VM pingfähig sind. Bei Problemen prüfen Sie Gateway, Netzmaske und Routen für den Lif.
+
+Sie können auch versuchen, sich mithilfe von ssh unter Verwendung der Cluster-Management-IP beim Cluster anzumelden und die Agent-IP zu pingen. Stellen Sie sicher, dass die Agent-IP pingfähig ist:
+
+_Network ping -vserver <vserver name> -Destination <Agent IP> -lif <Lif Name> -show-Detail_
+
+Wenn nicht pingfähig, stellen Sie sicher, dass die Netzwerkeinstellungen in ONTAP korrekt sind, so dass der Agent-Rechner pingfähig ist.
+
+3. Wenn Sie eine Verbindung über Cluster-IP versucht haben und es nicht funktioniert, versuchen Sie, direkt über SVM-IP zu verbinden. Die Schritte zur Verbindung über SVM IP finden Sie oben.
+
+4. Beim Hinzufügen des Collectors über SVM IP und vsadmin Zugangsdaten prüfen, ob die SVM Lif die Data PLUS Mgmt-Rolle aktiviert hat. In diesem Fall funktioniert der Ping an die SVM Lif, allerdings funktioniert SSH an die SVM Lif nicht.
+Wenn ja, erstellen Sie ein SVM Management-only-Lif und versuchen Sie, eine Verbindung über diese SVM-Management-only-Lizenz herzustellen.
+
+5. Wenn es immer noch nicht funktioniert, erstellen Sie eine neue SVM-Lif und versuchen Sie eine Verbindung über diese Lif. Stellen Sie sicher, dass die Subnetzmaske richtig eingestellt ist.
+
+6. Erweitertes Debugging:
+A) Starten Sie eine Paketverfolgung in ONTAP.
+b) Versuchen Sie, einen Datensammler von der CloudSecure UI aus mit der SVM zu verbinden.
+c) Warten Sie, bis der Fehler angezeigt wird. Stoppen Sie die Paketverfolgung in ONTAP.
+d) Öffnen Sie die Paketverfolgung von ONTAP. Sie ist an diesem Standort verfügbar
+
+ _\https://<cluster_mgmt_ip>/spi/<clustername>/etc/log/Packet_Traces/_
+
+E) Stellen Sie sicher, dass ein SYN von ONTAP zum Feld Agent vorhanden ist.
+f) Wenn es kein SYN von ONTAP gibt, dann ist es ein Problem mit der Firewall in ONTAP.
+G) Öffnen Sie die Firewall in ONTAP, so dass ONTAP die Agent Box verbinden kann.
+
+7. Wenn es noch nicht funktioniert, wenden Sie sich bitte an das Netzwerkteam, um sicherzustellen, dass keine externe Firewall die Verbindung von ONTAP zur Agent Box blockiert.
+
+8. Stellen Sie sicher, dass Port 7 offen ist.
+
+9. Wenn keine der oben genannten löst das Problem, öffnen Sie einen Fall mit link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Netapp Support"] Für weitere Unterstützung. 
 
 
 | Nachricht: „Es konnte der ONTAP-Typ für [Hostname: <IP-Adresse> nicht ermittelt werden. Grund: Verbindungsfehler zum Speichersystem <IP-Adresse>: Host ist nicht erreichbar (Host nicht erreichbar)“ | 1. Überprüfen Sie, ob die richtige SVM-IP-Management-Adresse oder Cluster-Management-IP angegeben wurde. 2. SSH zu der SVM oder dem Cluster, mit dem Sie beabsichtigen zu verbinden. Sobald Sie eine Verbindung hergestellt haben, stellen Sie sicher, dass der SVM oder der Cluster-Name korrekt ist. 
