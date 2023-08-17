@@ -10665,7 +10665,6 @@ SE (Security Enhanced) Linux wird nicht unterstützt.</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">Tönungen und Tolerationen</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">Weitere Informationen zu Kubernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>.</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">Nach der Installation des Bedieners geben die telegraf-ds-Pods CrashLoopBackOff ein und die POD-Protokolle zeigen „su: Authentication failure“ an.</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">Bearbeiten Sie die konfiguration der netapp-Monitoring-Konfiguration und setzen Sie _dockerMetricCollectionEnabled_ auf false.  Weitere Informationen finden Sie im Abschnitt des Bedieners <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">DockerMetricCollectionEnabled</block>
   <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">Erfassen von Docker-Kennzahlen Standardmäßig ist dieser Wert auf „true“ gesetzt, und Docker-Kennzahlen werden für lokale, Docker-basierte K8s-Bereitstellungen erfasst. Um die Erfassung der Docker-Metrik zu deaktivieren, setzen Sie diese auf FALSE.</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">DsToleranzen</block>
@@ -11086,4 +11085,21 @@ G) Öffnen Sie die Firewall in ONTAP, so dass ONTAP die Agent Box verbinden kann
 8. Stellen Sie sicher, dass Port 7 offen ist.
 
 9. Wenn keine der oben genannten löst das Problem, öffnen Sie einen Fall mit <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> Für weitere Unterstützung.</block>
+  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">Bearbeiten Sie den Abschnitt netapp-Monitoring-Configuration in _AgentConfiguration_ und setzen Sie _dockerMetricCollectionEnabled_ auf false. Weitere Informationen finden Sie im Abschnitt des Bedieners <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.
+
+HINWEIS: wenn Sie die Cloud Insights Federal Edition verwenden, können Benutzer mit Einschränkungen hinsichtlich der Verwendung von _su_ keine Docker-Metriken erfassen, da der Zugriff auf den Dockersockel entweder den telegraf-Container als root ausführen muss oder _su_ verwenden muss, um den telegraf-Benutzer zur Docker-Gruppe hinzuzufügen. Die Docker Metric Collection und die Verwendung von _su_ sind standardmäßig aktiviert. Um beides zu deaktivieren, entfernen Sie den Eintrag _telegraf.Docker_ in der Datei _AgentConfiguration_:
+
+...
+Spez.:
+...
+telegraf:
+    ...
+     - Name: docker
+            Run-Modus:
+              - DemonSet
+            Ersetzungen:
+              - SCHLÜSSEL: DOCKER_UNIX_SOCK_PLACEHOLDER
+                Wert: unix:///run/Docker.Sock
+    ...
+...</block>
 </blocks>
