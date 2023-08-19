@@ -12912,4 +12912,25 @@ VMware vCenter Server 8.0.0 Build-21457384
 VMware vCenter Server 8.0.1 Build-21560480
 VMware vCenter Server 8.0.1 Build-21815093
 VMware vCenter Server 8.0.1 Build-21860503</block>
+  <block id="88abed0a9fa0fc7ed8be52f2de6d7f8d" category="section-title">Sammeln von Isilon/PowerScale-Protokollen und Advanced Analytics-Daten</block>
+  <block id="93fa5fa7b7ca64e0109bdf3bfcc7c80d" category="paragraph">Die Isilon REST- und PowerScale Rest-Collectors enthalten die folgenden Verbesserungen:</block>
+  <block id="6bfe1d5f79aa2a34935e35f4ad9f09c4" category="list-text">Isilon-Protokollereignisse stehen zur Verwendung in Abfragen und Warnmeldungen zur Verfügung</block>
+  <block id="c5922f5c7421c7ae70b97241261d79fa" category="list-text">Isilon Advanced Analytic-Attribute stehen für Abfragen, Dashboards und Warnmeldungen zur Verfügung:</block>
+  <block id="055ffc0f204dd9571932f105cc192d97" category="list-text">emc_isilon.Cluster</block>
+  <block id="cc6fab0cd00772a7953b679fc832724f" category="list-text">emc_isilon.node</block>
+  <block id="30c0414214be11c59b1aa207a90a8b3d" category="list-text">emc_isilon.node_disk</block>
+  <block id="2f6871a6b3a926d4a14c71d0a97a5c03" category="list-text">emc_isilon.net_iface</block>
+  <block id="89dff3ed7503a715bcf83455f5951412" category="paragraph">Diese sind standardmäßig für Benutzer der Isilon REST- und/oder PowerScale REST-Collectors aktiviert. NetApp empfiehlt Benutzern des CLI-basierten Collectors von Isilon dringend, zu dem neuen REST-API-basierten Collector zu migrieren, um Verbesserungen wie die oben genannten zu erhalten.</block>
+  <block id="f1c89ccf6bd41e321d0a5a4570ccbd41" category="section-title">Verbesserte Workload-Map</block>
+  <block id="406a6589551ad505a8c76df3da8e6d33" category="paragraph">Die Workload-Zuordnung ist benutzerfreundlicher und weniger laut. Sie gruppiert alle ähnlichen externen Services zu einem Node, wenn sie mit denselben Workloads kommunizieren. Dadurch verringert sich die Komplexität der Grafik und es lässt sich leichter nachvollziehen, wie Services miteinander verbunden sind.</block>
+  <block id="f2f7479271c7e3bd1526b7c962cfd1b6" category="paragraph">Wenn Sie einen gruppierten Knoten auswählen, wird eine detaillierte Tabelle mit den Kennzahlen für den Netzwerkverkehr für jeden externen Service angezeigt, der für diesen Knoten relevant ist.</block>
+  <block id="ec9c27a1c2d5a1d4769d15b48868bdaf" category="section-title">Anpassung der Nutzung von Kubernetes Managed Unit</block>
+  <block id="5e232fe3a0e64ea5b8742398f66c956c" category="paragraph">Wenn eine Compute-Ressource in Ihrer Kubernetes-Cluster-Umgebung sowohl vom NetApp Kubernetes Monitoring Operator als auch vom zugrunde liegenden Datensammler für die Infrastruktur (z. B. VMware) gezählt wird, wird die Nutzung dieser Ressourcen angepasst, um eine möglichst effiziente Zählung der gemanagten Einheiten zu gewährleisten. Sie können die Kubernetes-MU-Anpassungen auf der Seite Admin &gt; Subscription sowohl auf der Registerkarte Summary als auch Usage anzeigen.</block>
+  <block id="16cc34ec25ef5292c49b7fcf27d01385" category="inline-image-macro">K8s-ME-Anpassung, die auf dem Schätzrechner angezeigt wird</block>
+  <block id="9740da1fe13081b9e8603e12c24f457b" category="paragraph">Registerkarte „Zusammenfassung“:
+<block ref="f2ff1c7008221f157f7e2a4df38ba4f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="465299d39a69339fb8fc976919bdf64f" category="inline-image-macro">K8s-ME-Anpassung wird auf der Registerkarte „Nutzung“ angezeigt</block>
+  <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">Registerkarte „Verwendung“:
+<block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">Acquisition Units unterstützen jetzt RHEL 8.7.</block>
 </blocks>

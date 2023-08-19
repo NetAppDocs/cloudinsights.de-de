@@ -29,6 +29,54 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+=== Sammeln von Isilon/PowerScale-Protokollen und Advanced Analytics-Daten
+
+Die Isilon REST- und PowerScale Rest-Collectors enthalten die folgenden Verbesserungen:
+
+* Isilon-Protokollereignisse stehen zur Verwendung in Abfragen und Warnmeldungen zur Verfügung
+* Isilon Advanced Analytic-Attribute stehen für Abfragen, Dashboards und Warnmeldungen zur Verfügung:
++
+** emc_isilon.Cluster
+** emc_isilon.node
+** emc_isilon.node_disk
+** emc_isilon.net_iface
+
+
+
+
+Diese sind standardmäßig für Benutzer der Isilon REST- und/oder PowerScale REST-Collectors aktiviert. NetApp empfiehlt Benutzern des CLI-basierten Collectors von Isilon dringend, zu dem neuen REST-API-basierten Collector zu migrieren, um Verbesserungen wie die oben genannten zu erhalten.
+
+
+
+=== Verbesserte Workload-Map
+
+Die Workload-Zuordnung ist benutzerfreundlicher und weniger laut. Sie gruppiert alle ähnlichen externen Services zu einem Node, wenn sie mit denselben Workloads kommunizieren. Dadurch verringert sich die Komplexität der Grafik und es lässt sich leichter nachvollziehen, wie Services miteinander verbunden sind.
+
+Wenn Sie einen gruppierten Knoten auswählen, wird eine detaillierte Tabelle mit den Kennzahlen für den Netzwerkverkehr für jeden externen Service angezeigt, der für diesen Knoten relevant ist.
+
+
+
+=== Anpassung der Nutzung von Kubernetes Managed Unit
+
+Wenn eine Compute-Ressource in Ihrer Kubernetes-Cluster-Umgebung sowohl vom NetApp Kubernetes Monitoring Operator als auch vom zugrunde liegenden Datensammler für die Infrastruktur (z. B. VMware) gezählt wird, wird die Nutzung dieser Ressourcen angepasst, um eine möglichst effiziente Zählung der gemanagten Einheiten zu gewährleisten. Sie können die Kubernetes-MU-Anpassungen auf der Seite Admin > Subscription sowohl auf der Registerkarte Summary als auch Usage anzeigen.
+
+Registerkarte „Zusammenfassung“:
+image:MU_Adjustments_K8s.png["K8s-ME-Anpassung, die auf dem Schätzrechner angezeigt wird"]
+
+Registerkarte „Verwendung“:
+image:MU_Adjustments_K8s_Usage_Tab.png["K8s-ME-Anpassung wird auf der Registerkarte „Nutzung“ angezeigt"]
+
+
+
+=== Änderungen bei der Erfassung/Erfassung:
+
+Die folgenden Änderungen an der Data Collector/Acquisition Unit sind vorhanden:
+
+* Acquisition Units unterstützen jetzt RHEL 8.7.
+
+
+
+
 === Verbesserte Menüs
 
 Wir haben das Navigationsmenü auf der linken Seite aktualisiert, um die Workflows unserer Kunden besser zu unterstützen. Neue Elemente der obersten Ebene wie _Kubernetes_ ermöglichen beschleunigten Zugriff auf die Bedürfnisse des Kunden, und eine konsolidierte Administratorkonsole unterstützt die Rolle des Mandanten-Eigentümers.
