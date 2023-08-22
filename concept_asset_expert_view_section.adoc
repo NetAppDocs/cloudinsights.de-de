@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_expert_view_section.html 
 summary: Der Abschnitt „Expertenansicht“ einer Asset-Seite ist ein leistungsstarkes Tool zur Fehlerbehebung oder Überwachung. 
-keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, 
+keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, refresh 
 ---
 = Expertensicht
 :toc: macro
@@ -19,7 +19,7 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 
 [role="lead"]
-Im Abschnitt „Expertenansicht“ auf der Seite „Anlage“ können Sie anhand einer beliebigen Anzahl anwendbarer Metriken im Kontext eines ausgewählten Zeitraums im Leistungsdiagramm und aller damit verbundenen Ressourcen eine Performance-Probe für das Basisressource anzeigen.
+Im Abschnitt „Expertenansicht“ auf der Seite „Anlage“ können Sie anhand einer beliebigen Anzahl anwendbarer Metriken im Kontext eines ausgewählten Zeitraums im Leistungsdiagramm und aller damit verbundenen Ressourcen eine Performance-Probe für das Basisressource anzeigen.  Die Daten in den Diagrammen werden automatisch aktualisiert, wenn Datensammler abfragen und aktualisierte Daten erfasst werden.
 
 
 

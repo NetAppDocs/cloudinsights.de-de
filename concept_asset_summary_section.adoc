@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_summary_section.html 
 summary: Überblick über den Abschnitt „Übersicht der Assets“ in Cloud Insights. 
-keywords: asset, summary, landing page, topology 
+keywords: asset, summary, landing page, topology, auto, refresh 
 ---
 = Abschnitt „Ressourcen-Seite-Übersicht“
 :toc: macro
@@ -20,6 +20,8 @@ keywords: asset, summary, landing page, topology
 
 [role="lead"]
 Im Abschnitt Zusammenfassung einer Asset-Seite werden allgemeine Informationen zu einem Asset angezeigt, einschließlich der Frage, ob Kennzahlen oder Leistungsrichtlinien für Bedenken sorgen. Potenzielle Problembereiche werden durch einen roten Kreis gekennzeichnet.
+
+Die Informationen in der Zusammenfassung sowie in beliebigen Tabellen oder benutzerdefinierten Widgets auf der Bestandsseite werden automatisch auf Basis des ausgewählten Zeitbereichs aktualisiert. Sie können die aktuelle Aktualisierungsrate in der oberen rechten Ecke des Abschnitts Zusammenfassung, den Tabellen und beliebigen benutzerdefinierten Widgets anzeigen.
 
 image:Summary_Section_Example.png[""]
 

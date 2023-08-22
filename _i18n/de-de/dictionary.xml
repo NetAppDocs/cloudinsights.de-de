@@ -2595,7 +2595,6 @@
   <block id="5554fa4604a77c00b97cc92dddbddae0" category="paragraph">Siehe auch: <block ref="ea87b650688a440fdf731c2f51da4279" category="inline-link-macro-rx"></block></block>
   <block id="27a216601981d13fcf078fa6774638a5" category="summary">Der Abschnitt „Expertenansicht“ einer Asset-Seite ist ein leistungsstarkes Tool zur Fehlerbehebung oder Überwachung.</block>
   <block id="b7020f7cb2b885f482e520e38265e6b0" category="doc">Expertensicht</block>
-  <block id="6769810373d64f6178c70417f3100129" category="paragraph">Im Abschnitt „Expertenansicht“ auf der Seite „Anlage“ können Sie anhand einer beliebigen Anzahl anwendbarer Metriken im Kontext eines ausgewählten Zeitraums im Leistungsdiagramm und aller damit verbundenen Ressourcen eine Performance-Probe für das Basisressource anzeigen.</block>
   <block id="a095544b81060891734744ad5bd2a5c3" category="section-title">Verwenden des Abschnitts „Expertenansicht“</block>
   <block id="62329137e14077120c0de9e866ecae4b" category="paragraph">Im Folgenden finden Sie ein Beispiel für den Abschnitt „Expert View“ auf einer Storage Asset-Seite:</block>
   <block id="beaa4bde61b31a115ee598bebfa3f120" category="inline-image-macro">Beispiel Einer Expertenansicht</block>
@@ -12933,4 +12932,7 @@ VMware vCenter Server 8.0.1 Build-21860503</block>
   <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">Registerkarte „Verwendung“:
 <block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">Acquisition Units unterstützen jetzt RHEL 8.7.</block>
+  <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">Im Abschnitt „Expertenansicht“ auf der Seite „Anlage“ können Sie anhand einer beliebigen Anzahl anwendbarer Metriken im Kontext eines ausgewählten Zeitraums im Leistungsdiagramm und aller damit verbundenen Ressourcen eine Performance-Probe für das Basisressource anzeigen.  Die Daten in den Diagrammen werden automatisch aktualisiert, wenn Datensammler abfragen und aktualisierte Daten erfasst werden.</block>
+  <block id="05c3e307f6dc616e1f39e3e2b33522d0" category="paragraph">Die Informationen in einer Zusammenfassung der Bestandsseite sowie in beliebigen Tabellen oder benutzerdefinierten Widgets auf der Seite werden automatisch basierend auf dem ausgewählten Zeitraum aktualisiert. Die aktuelle Aktualisierungsrate wird in der oberen rechten Ecke des Abschnitts Zusammenfassung und in allen relevanten Tabellen oder Widgets auf der Seite angezeigt.</block>
+  <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">Die Informationen in der Zusammenfassung sowie in beliebigen Tabellen oder benutzerdefinierten Widgets auf der Bestandsseite werden automatisch auf Basis des ausgewählten Zeitbereichs aktualisiert. Sie können die aktuelle Aktualisierungsrate in der oberen rechten Ecke des Abschnitts Zusammenfassung, den Tabellen und beliebigen benutzerdefinierten Widgets anzeigen.</block>
 </blocks>

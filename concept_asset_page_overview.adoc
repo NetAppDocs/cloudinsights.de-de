@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_page_overview.html 
 summary: Asset-Seiten können für die meisten Objekttypen angezeigt werden. 
-keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric 
+keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric, refresh 
 ---
 = Übersicht Über Die Asset-Seite
 :toc: macro
@@ -69,6 +69,8 @@ Sie können das Zeitsegment der angezeigten Daten ändern, indem Sie eine Option
 
 
 Im benutzerdefinierten Zeitbereich können Sie bis zu 31 aufeinander folgende Tage auswählen. Sie können für diesen Bereich auch die Startzeit und die Endzeit des Tages festlegen. Die standardmäßige Startzeit ist 12:00 UHR am ersten ausgewählten Tag und die standardmäßige Endzeit ist am letzten ausgewählten Tag 11:59 Uhr. Wenn Sie auf Anwenden klicken, wird der benutzerdefinierte Zeitbereich auf die Asset-Seite angewendet.
+
+Die Informationen in einer Zusammenfassung der Bestandsseite sowie in beliebigen Tabellen oder benutzerdefinierten Widgets auf der Seite werden automatisch basierend auf dem ausgewählten Zeitraum aktualisiert. Die aktuelle Aktualisierungsrate wird in der oberen rechten Ecke des Abschnitts Zusammenfassung und in allen relevanten Tabellen oder Widgets auf der Seite angezeigt.
 
 
 
