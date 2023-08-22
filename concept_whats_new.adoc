@@ -4,7 +4,7 @@ permalink: concept_whats_new.html
 summary: Neue Funktionen in Cloud Insights verfügbar 
 keywords: features 
 ---
-= Was ist neu bei Cloud Insights
+= Neuerungen bei Cloud Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 2

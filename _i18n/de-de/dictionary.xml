@@ -7043,7 +7043,6 @@
   <block id="ca1b516707306a7db85b8ed1c44a3272" category="paragraph">Ihr letztes VM Performance Dashboard sieht so aus:</block>
   <block id="8b8c0577487afb0f8113ae70ab69f902" category="paragraph"><block ref="8b8c0577487afb0f8113ae70ab69f902" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Neue Funktionen in Cloud Insights verfügbar</block>
-  <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Was ist neu bei Cloud Insights</block>
   <block id="01a314c1b9df8a1e936aee8eb0691f89" category="section-title">November 2022</block>
   <block id="1213554c7911deac461074eac67a0744" category="section-title">Mehr als 40 neue Sicherheits-, Datenerfassungs- und CVO-Monitore!</block>
   <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">Es gibt Dutzende neue, systemdefinierte Monitore, um Sie bei potenziellen Problemen mit Cloud Volumes, Sicherheit und Datensicherung zu warnen. Weitere Informationen zu diesen Monitoren <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>.</block>
@@ -12935,4 +12934,5 @@ VMware vCenter Server 8.0.1 Build-21860503</block>
   <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">Im Abschnitt „Expertenansicht“ auf der Seite „Anlage“ können Sie anhand einer beliebigen Anzahl anwendbarer Metriken im Kontext eines ausgewählten Zeitraums im Leistungsdiagramm und aller damit verbundenen Ressourcen eine Performance-Probe für das Basisressource anzeigen.  Die Daten in den Diagrammen werden automatisch aktualisiert, wenn Datensammler abfragen und aktualisierte Daten erfasst werden.</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">Die Informationen in der Zusammenfassung sowie in beliebigen Tabellen oder benutzerdefinierten Widgets auf der Bestandsseite werden automatisch auf Basis des ausgewählten Zeitbereichs aktualisiert. Sie können die aktuelle Aktualisierungsrate in der oberen rechten Ecke des Abschnitts Zusammenfassung, den Tabellen und beliebigen benutzerdefinierten Widgets anzeigen.</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">Die Informationen in einer Zusammenfassung der Bestandsseite sowie in beliebigen Tabellen oder benutzerdefinierten Widgets auf der Seite werden automatisch basierend auf dem ausgewählten Zeitraum aktualisiert. Die aktuelle Aktualisierungsrate wird in der oberen rechten Ecke des Abschnitts Zusammenfassung sowie in allen relevanten Tabellen oder Widgets auf der Seite angezeigt.</block>
+  <block id="820c5f3d48103a56a44610787108dad5" category="doc">Neuerungen bei Cloud Insights</block>
 </blocks>
