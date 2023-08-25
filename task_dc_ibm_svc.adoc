@@ -130,4 +130,4 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 | Fehler: „Der Befehl kann nicht initiiert werden, da er nicht auf dem Konfigurations-Node ausgeführt wurde.“ | Der Befehl muss auf dem Konfigurationsknoten ausgeführt werden. 
 |===
-Weitere Informationen zu diesem Data Collector finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
+Weitere Informationen zu diesem Data Collector finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

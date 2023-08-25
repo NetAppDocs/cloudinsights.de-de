@@ -119,4 +119,4 @@ Wo?
 * Die Meldung <message> ist das Gerät, das als Fehlermeldung zurückgegeben wurde.
 
 
-Weitere Informationen zu diesem Data Collector finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
+Weitere Informationen zu diesem Data Collector finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

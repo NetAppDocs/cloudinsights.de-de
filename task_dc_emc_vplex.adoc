@@ -166,4 +166,4 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 | Fehler: Keine Leistungsdaten vom Director gemeldet | • Überprüfen Sie, ob die System-Performance-Monitore ordnungsgemäß ausgeführt werden • Bitte wenden Sie sich an den EMC Support, um die Aktualisierung der Protokolldateien des Systems Performance Monitor zu ermöglichen 
 |===
-Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

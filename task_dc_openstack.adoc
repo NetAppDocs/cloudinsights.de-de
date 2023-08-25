@@ -126,4 +126,4 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 | „Konfigurationsfehler“ mit Fehlermeldungen beginnen mit „Policy lässt nicht zu“ oder „Sie sind nicht autorisiert“ | * ip-Adresse prüfen * Benutzername und Passwort überprüfen 
 |===
-Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

@@ -316,4 +316,4 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 | „Fehler beim Sammeln der Leistung aus ZAPI“ Fehler | Dies liegt normalerweise daran, dass perfstat nicht ausgeführt wird. Versuchen Sie auf jedem Knoten den folgenden Befehl: > _System Node systemshell -Node * -command „spmctl -h cmd -stop; spmctl -h cmd -exec“_ 
 |===
-Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

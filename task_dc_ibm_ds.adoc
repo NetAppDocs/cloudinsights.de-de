@@ -129,4 +129,4 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 | Fehler: * Programm kann nicht ausgeführt werden * Fehler beim Ausführen des Befehls | * Von der Cloud Insights-Erfassungseinheit Öffnen Sie eine CMD * Öffnen Sie CLI.CFG-Datei im Home Directory/lib von CLI und überprüfen Sie die Eigenschaft JAVA_INSTALL, bearbeiten Sie den Wert entsprechend Ihrer Umgebung * Anzeigen Sie die auf diesem Computer installierte Java-Version, und geben Sie Folgendes ein: „java -Version“ * Ping die IP-Adresse des im CLI-Befehl angegebenen IBM-Speichergeräts wurde ausgegeben. * Wenn alle oben genannten gut funktioniert haben, dann führen Sie manuell einen CLI-Befehl aus 
 |===
-Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

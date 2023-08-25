@@ -216,4 +216,4 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 | Fehler „Verbindung zum vFiler konnte nicht hergestellt werden“ | Überprüfen Sie, ob die Fähigkeiten des Erwerbs von Benutzern mindestens folgende Fähigkeiten enthalten: api-* Security-API-vfiler Login-http-admin Bestätigen Sie, dass Filer mindestens ONTAPI Version 1.7 läuft. 
 |===
-Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["Data Collector Supportmatrix"].
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
