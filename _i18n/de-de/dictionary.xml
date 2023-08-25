@@ -98,7 +98,6 @@
   <block id="20be84be5f193d53b7e93ee4b7d0b8e7" category="cell">Vergewissern Sie sich, dass es keine Firewall zwischen der CI AU und dem Array gibt, die die CI AU daran versperren würde, TCP-Verbindungen zu 5988 oder 5989 zu machen. Sobald das geschehen ist, und wenn Sie bestätigt haben, dass es keine Firewall gibt, sollten Sie SSH auf das Array, und verwenden Sie den "showcim" Befehl zu bestätigen. Überprüfen Sie, dass: * Dienst aktiviert ist * HTTPS-Port sollte 5989 sein. Wenn alle diese sind, können Sie versuchen, „stopcim“ und dann ein „startcim“, um den CIM neu zu starten (d.h. SMI-S-Service).</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="inline-link-macro">Unterstützung</block>
   <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">Data Collector Supportmatrix</block>
-  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">Weitere Informationen finden Sie im <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Oder auf der <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
   <block id="97d56c15017ad32b1cbc85383d592281" category="summary">ECS-Datensammler konfigurieren.</block>
   <block id="696067539a48ac7ca42724de79fbd051" category="doc">Konfigurieren des EMC ECS-Datensammlers</block>
   <block id="0dd54ea5de1f0186d88f6171945bf17a" category="paragraph">Dieser Datensammler erfasst Bestands- und Performancedaten von EMC ECS Speichersystemen. Zur Konfiguration benötigt der Datensammler eine IP-Adresse des ECS-Servers und ein Domain-Konto auf Administratorebene.</block>
@@ -473,7 +472,6 @@
   <block id="a9ae711f88079f5c90a9af915867432d" category="cell">Bezeichnungsschlüssel und Werte, auf denen VMs gefiltert werden sollen</block>
   <block id="7955a23503311b9724986a9aa7bfd0c4" category="cell">Klicken Sie auf *+ Filter Label*, um die VMs (und zugehörigen Festplatten) auszuwählen, die durch Filtern nach Schlüsseln und Werten, die Schlüssel und Werte der Labels auf der VM entsprechen, einzuschließen bzw. auszuschließen. Etikettenschlüssel ist erforderlich, Etikettenwert ist optional. Wenn der Etikettenwert leer ist, wird die VM solange gefiltert, wie sie dem Etikettenschlüssel entspricht.</block>
   <block id="185c9af3780ba13252cc4d44cfa1daf0" category="cell">Der Standardwert ist 1800 Sekunden</block>
-  <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">Weitere Informationen zu diesem Data Collector finden Sie im <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Oder auf der <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>.</block>
   <block id="f3affd068b3b1c8b1c14040de68e962f" category="doc">Beispiele für reguläre Ausdrücke</block>
   <block id="6e56e07c6a060470f30f55387ae47aef" category="paragraph">Wenn Sie den regulären Ausdrucks-Ansatz als Ihre Ausgangs-Benennungsstrategie ausgewählt haben, können Sie die Beispiele für reguläre Ausdrücke als Leitfäden für Ihre eigenen Ausdrücke verwenden, die in den automatischen Auflösungsmethoden von Cloud Insights verwendet werden.</block>
   <block id="29fcd384116085fb186a63a78e0b427c" category="section-title">Formatieren von regulären Ausdrücken</block>
@@ -3551,7 +3549,6 @@
   <block id="533e65443960283ff24073ad80db0e3d" category="paragraph"><block ref="533e65443960283ff24073ad80db0e3d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c52cf8dba7f709e8910813b93418d94" category="section-title">Supportmatrix Für Cloud Insights Data Collector</block>
   <block id="d59e2e05079f7c9c24f5bbba7c6e3547" category="inline-link-macro">*Cloud Insights Data Collector Supportmatrix*, Rolle=„extern“</block>
-  <block id="34a28f543ea4981287965bd3ea1448ef" category="paragraph">Sie können Informationen und Details zu unterstützten Datensammlern im anzeigen oder herunterladen <block ref="4928518ab1eaba703f07b7f823f64b48" category="inline-link-macro-rx"></block>.</block>
   <block id="ab7edf5d95e4001229e2908ae791460a" category="section-title">Learning Center</block>
   <block id="b81816f08eee3d7d65d91572590180d0" category="paragraph">Unabhängig von Ihrem Abonnement *Hilfe &gt; Support* Links zu verschiedenen Kursangeboten der NetApp University, damit Sie den größtmöglichen Nutzen aus Cloud Insights ziehen können. Erfahren Sie mehr darüber!</block>
   <block id="d88662e1a105ca69f2e4f75dda790104" category="summary">Allgemeine Anweisungen zur Datenerfassung</block>
@@ -12937,4 +12934,5 @@ VMware vCenter Server 8.0.1 Build-21860503</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">Weitere Informationen zu diesem Data Collector finden Sie im <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Oder auf der <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">Weitere Informationen finden Sie im <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Oder auf der <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">Weitere Informationen zu diesem Datensammler finden Sie im <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Oder auf der <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
+  <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">Sie können Informationen und Details zu unterstützten Datensammlern im anzeigen oder herunterladen <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>.</block>
 </blocks>
