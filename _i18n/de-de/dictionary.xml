@@ -4272,10 +4272,7 @@
   <block id="0aa574554c08c96c168c1e97ad174912" category="cell">Kennwort für das Array</block>
   <block id="504153dba55dae032aeb4a2bc21e177f" category="cell">Der von Nimble REST API verwendete Port. Der Standardwert ist 5392.</block>
   <block id="b658088fb929fb96d594ab2f4ffdab24" category="paragraph">Hinweis: Das Standard-Performance-Abfrageintervall beträgt 300 Sekunden und kann nicht geändert werden. Dies ist das einzige von HPE Alletra 6000 unterstützte Intervall.</block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">Konfiguration von Cloud Insights mit NetApp ONTAP Streaming Telemetrie</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP Streaming-Telemetrie</block>
   <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">NetApp Cloud Connection für ONTAP 9.9 oder höher</block>
-  <block id="458a37db2666885e234720ccdea58253" category="paragraph">Aktuelle Informationen finden Sie im <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> Datensammlungsseite.</block>
   <block id="137b3f649398a1f9fa1259c39d880c93" category="summary">Die Cloud Insights-API ermöglicht die Integration in andere Applikationen, z. B. Monitoring- und Reporting-Systeme.</block>
   <block id="2be3c4c4132fe06361d81b1c1784eac3" category="doc">Cloud Insights API</block>
   <block id="551279e83d2a3c07e1a53609f28238f1" category="paragraph">Die Cloud Insights API ermöglicht NetApp Kunden und unabhängigen Software-Anbietern (ISVs) die Integration von Cloud Insights in andere Applikationen wie CMDB- oder andere Ticketsysteme.</block>
@@ -12935,4 +12932,11 @@ VMware vCenter Server 8.0.1 Build-21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">Weitere Informationen finden Sie im <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Oder auf der <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">Weitere Informationen zu diesem Datensammler finden Sie im <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Oder auf der <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>.</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">Sie können Informationen und Details zu unterstützten Datensammlern im anzeigen oder herunterladen <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>.</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">AnzuzeiEinblick in Aggregate</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Wenn das zu überwachende Cluster benutzerdefinierte Ressourcen enthält, für die keine ClusterRole vorhanden ist <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>Sie müssen dem Bediener manuell Zugriff auf diese Ressourcen gewähren, um sie mit Ereignisprotokollen zu überwachen.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Bearbeiten Sie _Operator-additional-permissions.yaml_ vor der Installation oder nach der Installation bearbeiten Sie die Ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Erstellen Sie eine neue Regel für die gewünschten apiGroups und Ressourcen mit den Verben ["get", "watch", "list"]. Siehe \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Übernehmen Sie die Änderungen auf das Cluster</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">Ich vermisse _involvedobject_ Daten für einige Event Logs.</block>
+  <block id="2420d7dae924d9613e0f888211903abc" category="cell">Stellen Sie sicher, dass Sie die Schritte im befolgt haben <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> Abschnitt oben.</block>
 </blocks>
