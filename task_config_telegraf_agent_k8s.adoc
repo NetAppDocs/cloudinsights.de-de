@@ -212,17 +212,6 @@ Weitere Informationen zu Kubernetes link:https://kubernetes.io/docs/concepts/sch
 
 
 
-=== Berechtigungen
-
-Wenn das zu überwachende Cluster benutzerdefinierte Ressourcen enthält, für die keine ClusterRole vorhanden ist link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["AnzuzeiEinblick in Aggregate"]Sie müssen dem Bediener manuell Zugriff auf diese Ressourcen gewähren, um sie mit Ereignisprotokollen zu überwachen.
-
-. Bearbeiten Sie _Operator-additional-permissions.yaml_ vor der Installation oder nach der Installation bearbeiten Sie die Ressource _ClusterRole/<namespace>-additional-permissions_
-. Erstellen Sie eine neue Regel für die gewünschten apiGroups und Ressourcen mit den Verben ["get", "watch", "list"]. Siehe \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
-. Übernehmen Sie die Änderungen auf das Cluster
-
-
-
-
 == Installation des NetApp Kubernetes Monitoring Operator
 
 image:NKMO-Instructions-1.png[""]
@@ -570,8 +559,5 @@ Timeout = „10s“
 ...
 
 Starten Sie Telegraf anschließend neu. 
-
-
-| Ich vermisse _involvedobject_ Daten für einige Event Logs. | Stellen Sie sicher, dass Sie die Schritte im befolgt haben <<permissions,Berechtigungen>> Abschnitt oben. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
