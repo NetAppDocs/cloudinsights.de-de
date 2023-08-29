@@ -205,7 +205,7 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: Schematabellen
       url: "/reference_schemas.html"
-  - title: Sicherheit Von Storage-Workloads
+  - title: Workload-Sicherheit
     entries:
     - title: Allgemeines Zur Workload-Sicherheit
       url: "/cs_intro.html"
