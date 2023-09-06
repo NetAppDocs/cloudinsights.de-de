@@ -33,6 +33,9 @@ NOTE: Sofern nicht anders angegeben, gelten die Informationen auf dieser Seite i
 
 Einen vollständigen Vergleich der in der Cloud Insights Basic und Premium Edition verfügbaren Funktionen finden Sie im link:https://bluexp.netapp.com/cloud-insights-pricing["Cloud Insights-Preisgestaltung"] Seite.
 
+
+WARNING: Inaktive Cloud Insights Basic Edition-Umgebungen werden gelöscht und ihre Ressourcen wieder freigegeben. Eine Umgebung gilt als inaktiv, wenn 30 aufeinander folgende Tage keine Benutzeraktivität zur Verfügung steht, wenn 7 aufeinanderfolgende Tage keine Daten aufgenommen wurden. Cloud Insights sendet eine Benachrichtigung und vergibt die Kulanzzeit von vier Tagen vor dem Löschen einer Umgebung.
+
 Wenn bei der Verwendung von Cloud Insights ein Schloss-Symbol angezeigt wird image:padlock.png["Vorhängeschloss"], Es bedeutet, dass die Funktion nicht in Ihrer aktuellen Edition verfügbar ist, oder ist in einer begrenzten Form. Upgrade für vollständigen Zugriff auf die Funktion.
 
 
