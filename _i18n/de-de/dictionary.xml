@@ -5657,9 +5657,6 @@
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">Der Log Explorer ist ein leistungsstarkes Tool zur Untersuchung von Problemen anhand verschiedener Systemprotokolle.</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">Log-Explorer</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Der Cloud Insights Log Explorer ist ein leistungsstarkes Tool zum Abfragen von Systemprotokollen. Zusätzlich zur Unterstützung bei Ermittlungen können Sie auch eine Protokollabfrage in einem Monitor speichern, um Warnmeldungen zu geben, wenn diese bestimmten Protokollauslöser aktiviert sind.</block>
-  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">Klicken Sie zum Erkunden von Protokollen auf *Abfragen &gt; +Neue Protokollabfrage*.</block>
-  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">Menü Abfragen protokollieren, 480</block>
-  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">Wählen Sie ein verfügbares Protokoll aus der Liste aus.</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">Wählen Sie Ihr Protokoll</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
@@ -5669,10 +5666,7 @@
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">Die Ergebnisse werden in einem Diagramm angezeigt, in dem die Anzahl der Protokollinstanzen in jedem angezeigten Zeitraum angezeigt wird. Unter der Grafik sehen Sie die Protokolleinträge, die sich selbst bewegen. Das Diagramm und die Einträge werden automatisch auf der Grundlage des ausgewählten Zeitbereichs aktualisiert.</block>
   <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">Abfragebeispiel mit Filter</block>
   <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">Das Diagramm Protokoll</block>
-  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">Das Diagramm zeigt die Anzahl der Protokolleinträge, gruppiert in _Buckets_, die auf dem ausgewählten Zeitbereich des Dashboards basieren. Die Buckets für jeden Zeitbereich sind wie folgt:</block>
   <block id="a311182bfffa770574efa58415204e5e" category="cell">Dashboard-Zeitbereich</block>
-  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">Bucket-Größe</block>
   <block id="19835cec9600eb5f9fc332ed671fc46a" category="cell">10 Sekunden</block>
   <block id="cc2ce94ec935cfe3b39913486e0ee27c" category="cell">15 Sekunden</block>
   <block id="e0e8774db3dbc0633c02ff72ce710ba3" category="cell">30 Sekunden</block>
@@ -5681,14 +5675,7 @@
   <block id="4b9fb98e0952078c236a9fb09c0c6dc7" category="cell">5 Minuten</block>
   <block id="3a3853e1fe25e10ecaa88617010f9e41" category="cell">10 Minuten</block>
   <block id="0d109f2a2e5b1f92e8b4de51b6bd9363" category="cell">15 Minuten</block>
-  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30 Minuten</block>
-  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45 Minuten</block>
   <block id="5ce155ac62ee03701f7a117676333008" category="cell">2 Stunden</block>
-  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1 Tag</block>
-  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">Ziehen Sie zum Vergrößern des Diagramms einfach die Schieberegler von beiden Seiten. Um den gezoomten Bereich zu verschieben, klicken und halten Sie ihn im weißen Bereich, und bewegen Sie ihn nach links oder rechts. Klicken Sie auf _Zoom_ zurücksetzen, um die Zoomstufe zurückzusetzen.</block>
-  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">Vergrößern Sie den Zoom, indem Sie die Seiten des Diagramms ziehen</block>
-  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">Beachten Sie, dass beim Zoomen des Diagramms oder beim Scrollen der Tabelle die automatische Aktualisierung des Dashboards unterbrochen wird und der Zeitbereich die eingefrorene Zeit anzeigt. Um die Aktualisierung fortzusetzen, klicken Sie auf die Schaltfläche _Fortsetzen_ <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>. Dadurch wird auch die Zoomstufe zurückgesetzt.</block>
   <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">Sie können jederzeit auf _Protokollmonitor erstellen_ klicken, um einen neuen Monitor basierend auf dem aktuellen Filter zu erstellen.</block>
   <block id="5498a5f4896f117c2848f41304cec816" category="section-title">Protokolldetails</block>
   <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">Wenn Sie auf eine beliebige Stelle in einem Protokolleintrag in der Liste klicken, wird ein Detailfenster für diesen Eintrag geöffnet. Hier können Sie weitere Informationen zur Veranstaltung einsehen.</block>
@@ -12464,4 +12451,30 @@ V9.2.4.2</block>
 9.9.1P8
 9.9.1P9</block>
   <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">Inaktive Cloud Insights Basic Edition-Umgebungen werden gelöscht und ihre Ressourcen wieder freigegeben. Eine Umgebung gilt als inaktiv, wenn 30 aufeinander folgende Tage keine Benutzeraktivität zur Verfügung steht, wenn 7 aufeinanderfolgende Tage keine Daten aufgenommen wurden. Cloud Insights sendet eine Benachrichtigung und vergibt die Kulanzzeit von vier Tagen vor dem Löschen einer Umgebung.</block>
+  <block id="12a4857a4dbeb827f3ccc062e3e95447" category="paragraph">Klicken Sie auf *Log Queries &gt; +New Log Query*, um mit der Suche nach Protokollen zu beginnen.</block>
+  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">Filtern</block>
+  <block id="c372ce68f746709e625ff6a439caabb9" category="section-title">Ein-/Ausschließen</block>
+  <block id="2787899688f12e7489007de8b12213d5" category="paragraph">Beim Filtern der Protokolle können Sie wählen, ob Sie *include* (d.h. "Filter to") oder *exclude* die von Ihnen eintippten Strings wählen. Ausgeschlossene Zeichenfolgen werden im abgeschlossenen Filter als „NICHT &lt;string&gt;“ angezeigt.</block>
+  <block id="1734ff7c4f75b54c961ad7d4359787e1" category="inline-image-macro">Protokollfilter zeigt Ausschlussoption an</block>
+  <block id="405c7a3556714c3c384503dcad4e730a" category="paragraph"><block ref="405c7a3556714c3c384503dcad4e730a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">Erweiterte Filterung</block>
+  <block id="110b3aa692108cdd731e2a20e7fab59a" category="paragraph">Wenn Sie in Abfragen oder Dashboard-Widgets nach Text- oder Listenwerten filtern, werden Sie beim Eingeben mit der Option angezeigt, basierend auf dem aktuellen Text einen *Platzhalter-Filter* zu erstellen. Wenn Sie diese Option auswählen, werden alle Ergebnisse angezeigt, die dem Platzhalterausdruck entsprechen. Sie können auch Ausdrücke mit NOT, AND, OR oder erstellen oder Sie können die Option „Keine“ auswählen, um nach Nullwerten zu filtern.</block>
+  <block id="ca6fcfb5b3944c9f5e1fc9d91e8b5fc9" category="admonition">Achten Sie darauf, Ihre Abfrage frühzeitig und häufig zu speichern, wenn Sie Ihre Filterung erstellen. Beim erweiterten Abfragen handelt es sich um einen „Freiform“-String-Eintrag, und beim Erstellen können Fehler beim Parsen auftreten.</block>
+  <block id="6682349270b7766210b24eb769ff2f4b" category="paragraph">Sehen Sie sich dieses Bildschirmbild an, das gefilterte Ergebnisse für eine erweiterte Abfrage des _logs.kubernetes.Event_-Protokolls zeigt. Auf dieser Seite ist viel los, was unter dem Bild erklärt wird:</block>
+  <block id="1e7fa24e8c554b3ada8b33899f9054fb" category="inline-image-macro">Der Bildschirm „Erweiterte Abfrage“ Wird Erläutert</block>
+  <block id="67e358a5c19a682585f241c67623688b" category="paragraph"><block ref="67e358a5c19a682585f241c67623688b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46a8b17ae4f06cb7ca1032e9fd81030d" category="list-text">Diese erweiterte Abfragezeichenfolge filtert Folgendes:</block>
+  <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">Filtern Sie nach Protokolleinträgen mit einem _reason_, der das Wort "failed" enthält, aber nichts mit dem spezifischen Grund von "FailedMount".</block>
+  <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">Fügen Sie einen dieser Einträge mit _metadata.namespace_ ein, einschließlich des Wortes "Monitoring", aber schließen Sie die spezifischen Namespaces von "cm-Monitoring" oder "EG-Monitoring" aus.</block>
+  <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">Beachten Sie, dass im obigen Fall, da sowohl "cm-Monitoring" als auch "EG-Monitoring" einen Bindestrich ("-") enthalten, die Strings in doppelte Anführungszeichen eingefügt werden müssen, oder ein Parsing-Fehler angezeigt wird. Zeichenfolgen, die keine Bindestriche, Leerzeichen usw. enthalten, müssen nicht in Anführungszeichen eingeschlossen werden. Im Zweifelsfall versuchen Sie, die Zeichenfolge in Anführungszeichen zu setzen.</block>
+  <block id="af949190b79fd7ebdb106c82bad91ccd" category="list-text">Die Ergebnisse des aktuellen Filters, einschließlich aller „Filtern nach“-Werte UND des Filters „Erweiterte Abfrage“. Die Liste kann nach allen angezeigten Spalten sortiert werden. Um weitere Spalten anzuzeigen, wählen Sie das Zahnrad-Symbol.</block>
+  <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">Das Diagramm wurde vergrößert, um nur Protokollergebnisse anzuzeigen, die innerhalb eines bestimmten Zeitrahmens aufgetreten sind. Der hier angezeigte Zeitbereich entspricht dem aktuellen Zoomfaktor. Wählen Sie die Schaltfläche _Zoom zurücksetzen_, um den Zoom-Level auf den aktuellen Cloud Insights-Zeitbereich zurückzusetzen.</block>
+  <block id="e9c3a605437c1d21260249137747effc" category="list-text">Die Diagrammergebnisse wurden nach dem Feld _source_ gruppiert. Das Diagramm zeigt die Ergebnisse in jeder Spalte, die in Farben gruppiert sind. Wenn Sie den Mauszeiger über eine Spalte im Diagramm bewegen, werden einige Details zu den spezifischen Einträgen angezeigt.</block>
+  <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">Details Zum Gruppierten Hover</block>
+  <block id="540bd2dacf8012f1036c7cbb4c950e57" category="paragraph"><block ref="540bd2dacf8012f1036c7cbb4c950e57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c9bb5a9e84c262c583c25b07c1af190" category="paragraph">Sie können einen einfachen Filter mit einem erweiterten Abfragefilter kombinieren; der resultierende Filter ist ein "UND" der beiden.</block>
+  <block id="b761d7a9aa49f18da68cf21ea910b857" category="section-title">Die Diagrammlegende</block>
+  <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">Die _Legend_ unterhalb des Diagramms hat auch einige Überraschungen. Für jedes in der Legende angezeigte Ergebnis (basierend auf dem aktuellen Filter) haben Sie die Möglichkeit, nur Ergebnisse für diese Zeile anzuzeigen (Filter hinzufügen) oder Ergebnisse anzuzeigen, die NICHT für diese Zeile vorhanden sind (Filter hinzufügen). Das Diagramm und die Liste Protokolleinträge werden aktualisiert, um die Ergebnisse basierend auf Ihrer Auswahl anzuzeigen.  Um diese Filterung zu entfernen, öffnen Sie die Legende erneut, und wählen Sie [X], um den Legendenfilter zu löschen.</block>
+  <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">Advanced Query Legen zeigt "Filter hinzufügen" für das erste Ergebnis</block>
+  <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
