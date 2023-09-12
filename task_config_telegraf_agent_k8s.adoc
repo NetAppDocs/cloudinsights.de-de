@@ -218,7 +218,7 @@ image:NKMO-Instructions-1.png[""]
 image:NKMO-Instructions-2.png[""]
 
 .Schritte zur Installation des NetApp Kubernetes Monitoring Operator Agent auf Kubernetes:
-. Geben Sie einen eindeutigen Cluster-Namen und einen eindeutigen Namespace ein. Wenn Sie es sind <<Aktualisierung,Aktualisierung>> Verwenden Sie vom Skript-basierten Agent oder einem vorherigen Kubernetes Operator denselben Cluster-Namen und denselben Namespace.
+. Geben Sie einen eindeutigen Cluster-Namen und einen eindeutigen Namespace ein. Wenn Sie es sind <<Aktualisierung,Aktualisierung>> Verwenden Sie aus einem früheren Kubernetes-Operator den gleichen Cluster-Namen und Namespace.
 . Sobald diese eingegeben wurden, können Sie den Download-Befehl-Snippet in die Zwischenablage kopieren.
 . Fügen Sie das Snippet in ein _bash_ Fenster ein und führen Sie es aus. Die Installationsdateien des Bedieners werden heruntergeladen. Beachten Sie, dass das Snippet einen eindeutigen Schlüssel hat und für 24 Stunden gültig ist.
 . Wenn Sie ein benutzerdefiniertes oder privates Repository haben, kopieren Sie das optionale Bild-Pull-Snippet, fügen Sie es in eine _bash_-Shell ein und führen Sie es aus. Nachdem die Bilder gezogen wurden, kopieren Sie sie in Ihr privates Repository. Stellen Sie sicher, dass Sie dieselben Tags und Ordnerstrukturen beibehalten. Aktualisieren Sie die Pfade in _Operator-Deployment.yaml_ sowie die Einstellungen des Docker-Repository in _Operator-config.yaml_.
@@ -250,20 +250,9 @@ Dieser Bildschirm zeigt auch den aktuellen Status der Protokollerfassung an. Im 
 
 == Aktualisierung
 
-
-NOTE: Wenn Sie bereits über einen skriptbasierten Agent verfügen, müssen Sie _ein Upgrade auf den NetApp Kubernetes Monitoring Operator durchführen.
-
-
-
-=== Upgrade vom skriptbasierten Agent auf den NetApp Kubernetes Monitoring Operator
-
-Um den telegraf-Agent zu aktualisieren, gehen Sie wie folgt vor:
-
-. Notieren Sie sich den Cluster-Namen, der von Cloud Insights anerkannt ist. Sie können den Cluster-Namen anzeigen, indem Sie den folgenden Befehl ausführen. Wenn Ihr Namespace nicht der Standard (_CI-Monitoring_) ist, ersetzen Sie den entsprechenden Namespace:
+. Backup vorhandener Konfigurationen:
 +
- kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
-
-
+ kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 . Speichern Sie den K8s-Clusternamen für die Verwendung während der Installation der Bedienerlösung K8s, um die Datenkontinuität zu gewährleisten.
 +
 Wenn Sie sich den Namen des K8s-Clusters in CI nicht merken, können Sie ihn mit der folgenden Befehlszeile aus Ihrer gespeicherten Konfiguration extrahieren:
@@ -290,54 +279,6 @@ Wenn zusätzlich zu Telegraf der Monitoring-Namespace für andere Zwecke verwend
 
 
 
-
-=== Upgrade auf den aktuellen NetApp Kubernetes Monitoring Operator
-
-Ermitteln Sie, ob eine AgentConfiguration bei dem vorhandenen Operator vorhanden ist (wenn Ihr Namespace nicht der Standardwert _netapp-Monitoring_ ist, ersetzen Sie den entsprechenden Namespace):
-
- kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
-Wenn eine AgentConfiguration vorhanden ist:
-
-* <<installing-the-netapp-kubernetes-monitoring-operator,Installieren>> Der letzte Operator über den vorhandenen Operator.
-+
-** Stellen Sie sicher, dass Sie es sind <<using-a-custom-or-private-docker-repository,Die neuesten Container-Bilder werden angezeigt>> Wenn Sie ein benutzerdefiniertes Repository verwenden.
-
-
-
-
-Wenn AgentConfiguration nicht vorhanden ist:
-
-* Notieren Sie sich den von Cloud Insights erkannten Cluster-Namen (wenn Ihr Namespace nicht der standardmäßige netapp-Monitoring ist, ersetzen Sie den entsprechenden Namespace):
-+
- kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-* Erstellen Sie eine Sicherung des bestehenden Operators (wenn Ihr Namespace nicht der Standard-netapp-Überwachung ist, ersetzen Sie den entsprechenden Namespace):
-+
- kubectl -n netapp-monitoring get agent -o yaml > agent_backup.yaml
-* <<to-remove-the-netapp-kubernetes-monitoring-operator,Deinstallieren>> Der vorhandene Operator.
-* <<installing-the-netapp-kubernetes-monitoring-operator,Installieren>> Der neueste Operator.
-+
-** Verwenden Sie denselben Cluster-Namen.
-** Nachdem Sie die neuesten Operator YAML-Dateien heruntergeladen haben, können Sie alle in Agent_Backup.yaml gefundenen Anpassungen vor der Bereitstellung an den heruntergeladenen Operator-config.yaml übertragen.
-** Stellen Sie sicher, dass Sie es sind <<using-a-custom-or-private-docker-repository,Die neuesten Container-Bilder werden angezeigt>> Wenn Sie ein benutzerdefiniertes Repository verwenden.
-
-
-
-
-
-
-== Stoppen und Starten des NetApp Kubernetes Monitoring Operator
-
-So beenden Sie den NetApp Kubernetes Monitoring Operator:
-
- kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=0
-So starten Sie den NetApp Kubernetes Monitoring Operator:
-
- kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1
-
-
-== Deinstallation
-
-
 NOTE: Wenn Sie auf einem bereits installierten, skriptbasierten Kubernetes-Agent ausgeführt werden, müssen Sie dies unbedingt tun <<Aktualisierung,Upgrade>> Für den NetApp Kubernetes Monitoring Operator.
 
 
@@ -357,207 +298,117 @@ Wenn zusätzlich zu Telegraf der Monitoring-Namespace für andere Zwecke verwend
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
 
 
-=== Um den NetApp Kubernetes Monitoring Operator zu entfernen
+== Einstellung des Bedienpersonals
 
-Beachten Sie, dass der Standard-Namespace für den NetApp Kubernetes Monitoring Operator „netapp-Monitoring“ ist. Wenn Sie Ihren eigenen Namespace festgelegt haben, ersetzen Sie diesen Namespace in diesen und allen nachfolgenden Befehlen und Dateien.
-
-Neuere Versionen des Überwachungsoperators können mit den folgenden Befehlen deinstalliert werden:
-
-....
-kubectl delete agent -A -l installed-by=nkmo-<name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
-....
-Wenn der erste Befehl „Keine Ressourcen gefunden“ zurückgibt, verwenden Sie die folgenden Anweisungen, um ältere Versionen des Überwachungsoperators zu deinstallieren.
-
-Führen Sie jeden der folgenden Befehle in der Reihenfolge aus. Abhängig von Ihrer aktuellen Installation können einige dieser Befehle Nachrichten ‘object not found’ zurückgeben. Diese Meldungen können sicher ignoriert werden.
-
-....
-kubectl -n <NAMESPACE> delete agent agent-monitoring-netapp
-kubectl delete crd agents.monitoring.netapp.com
-kubectl -n <NAMESPACE> delete role agent-leader-election-role
-kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader <NAMESPACE>-agent-manager-role <NAMESPACE>-agent-proxy-role <NAMESPACE>-cluster-role-privileged
-kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding <NAMESPACE>-agent-manager-rolebinding <NAMESPACE>-agent-proxy-rolebinding <NAMESPACE>-cluster-role-binding-privileged
-kubectl delete <NAMESPACE>-psp-nkmo
-kubectl delete ns <NAMESPACE>
-....
-Wenn zuvor eine Security Context Constraint manuell für eine skriptbasierte Telegraf-Installation erstellt wurde:
-
- kubectl delete scc telegraf-hostaccess
-
-
-== Über Kube-State-Metrics
-
-Der NetApp Kubernetes Monitoring Operator installiert kube-State-Metriken automatisch. Gleichzeitig ist keine Interaktion mit den Benutzern erforderlich.
-
-
-
-=== kube-State-Metrics Counters
-
-Verwenden Sie die folgenden Links, um auf Informationen zu diesen kube State-Metriken zuzugreifen:
-
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["Kennzahlen für die Konfigmap"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet Metrics"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["Implementierungsmetriken"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["Ingress Metrics"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["Namespace-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["Node-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["Persistente Volume-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["Kenngrößen Für Die Forderung Im Persistenten Volume"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Pod-Metriken"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["Kennzahlen für ReplicaSet"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["Geheimkennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["Service-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatfulSet-Kennzahlen"]
-
-
-
-
-== Überprüfen Von Kubernetes Prüfsummen
-
-Das Cloud Insights Agent-Installationsprogramm führt Integritätsprüfungen durch. Einige Benutzer müssen jedoch vor der Installation oder Anwendung heruntergeladener Artefakte möglicherweise ihre eigenen Überprüfungen durchführen. Um einen nur-Download-Vorgang durchzuführen (im Gegensatz zum Standard-Download-and-install), können diese Benutzer den Agent-Installation Befehl erhalten von der UI und entfernen Sie die nachhängbare "Installation" Option.
-
-Führen Sie hierzu folgende Schritte aus:
-
-. Kopieren Sie das Agent Installer-Snippet wie angewiesen.
-. Anstatt das Snippet in ein Befehlsfenster einzufügen, fügen Sie es in einen Texteditor ein.
-. Entfernen Sie den nachfolgenden „--install“ aus dem Befehl.
-. Kopieren Sie den gesamten Befehl aus dem Texteditor.
-. Fügen Sie es nun in Ihr Befehlsfenster ein (in einem Arbeitsverzeichnis) und führen Sie es aus.
-+
-** Download und Installation (Standard):
-+
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
-** Nur Download:
-+
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
-
-
-
-
-Der Download-Only-Befehl lädt alle erforderlichen Artefakte vom Cloud Insights in das Arbeitsverzeichnis herunter. Die Artefakte umfassen, dürfen aber nicht beschränkt sein auf:
-
-* Ein Installationsskript
-* Einer Umgebungsdatei
-* YAML-Dateien
-* Eine signierte Prüfsumme-Datei (sha256.signed)
-* Eine PEM-Datei (netapp_cert.pem) zur Signaturverifizierung
-
-
-Das Installationsskript, die Umgebungsdatei und die YAML-Dateien können mittels Sichtprüfung verifiziert werden.
-
-Die PEM-Datei kann durch Bestätigung des Fingerabdrucks wie folgt verifiziert werden:
-
- 1A918038E8E127BB5C87A202DF173B97A05B4996
-Genauer gesagt,
-
- openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
-Die signierte Prüfsummendatei kann mit der PEM-Datei verifiziert werden:
-
- openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
-Sobald alle Artefakte zufriedenstellend überprüft wurden, kann die Agenteninstallation durch Ausführen von gestartet werden:
+Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen. Anweisungen und Listen der Variablen, die Sie einstellen können, finden Sie in der im Installationspaket enthaltenen README-Datei. Verwenden Sie nach der Installation des Operators den folgenden Befehl, um README anzuzeigen:
 
  sudo -E -H ./<installation_script_name> --install
 
+NOTE: Die Bedienerabstimmung ist in der Cloud Insights Bundesausgabe nicht verfügbar
 
-== Fehlerbehebung
+Sie können den NetApp Kubernetes Monitoring Operator für eine optimale Performance anpassen, indem Sie bestimmte Variablen für benutzerdefinierte Ressourcen Feinabstimmung vornehmen.  In den folgenden Tabellen finden Sie Variablen, die Sie festlegen können.
 
-Einige Dinge, die Sie versuchen können, wenn Probleme bei der Einrichtung des NetApp Kubernetes Monitoring Operators auftreten:
+Um diese Werte zu ändern, bearbeiten Sie den Agenten-CR mit dem folgenden Befehl (ersetzen Sie <namespace> für Ihren Namespace):
 
-[cols="stretch"]
-|===
-| Problem: | Versuchen Sie dies: 
-
-
-| Ich sehe keinen Hyperlink/Verbindung zwischen meinem Kubernetes Persistent Volume und dem entsprechenden Back-End Storage-Gerät. Mein Kubernetes Persistent Volume wird mit dem Hostnamen des Storage-Servers konfiguriert. | Befolgen Sie die Schritte, um den bestehenden Telegraf-Agent zu deinstallieren, und installieren Sie dann den neuesten Telegraf-Agent erneut. Sie müssen Telegraf Version 2.0 oder höher verwenden, und Ihr Kubernetes Cluster Storage muss von Cloud Insights aktiv überwacht werden. 
-
-
-| Ich sehe Nachrichten in den Protokollen, die folgenden ähneln: E0901 15:21:39.962145 1 Reflektor.go:178] k8s.io/kube-State-metrics/intern/Store/Builder.go:352: Listen fehlgeschlagen *v1.MutatingWebhookKonfiguration: Der Server konnte die angeforderte Ressource E0901 15:21 352:43.168161 1 Reflektor.GO:178] k8s.io/kukio-Verzeichnis nicht gefunden | Diese Nachrichten können auftreten, wenn Sie kube-State-Metrics Version 2.0.0 oder höher mit Kubernetes-Versionen unter 1.20 ausführen. Um die Kubernetes-Version zu erhalten: _Kubectl Version_ um die kube-State-metrics-Version zu erhalten: _Kubectl get Deploy/kube-State-metrics -o jsonpath='{..image}'_ um zu verhindern, dass diese Nachrichten passieren, können Benutzer ihre kube-State-Metrics-Implementierung ändern, um die folgenden Elemente zu deaktivieren: _Mutingwebhookkonfigurationen___volumehaWeitere Resources=certificationesigningrequests,configmaps,cronjobs,dämsets, Bereitstellungen,Endpunkte,HorizontalpodAutoscaler,nesresses,Jobs,Begrenzungsbereiche,Namensräume,Netzwerkrichtlinien,Knoten,Persistenz,stagemasnesmases,nesmasnesmases,nesmasnesmasnesmasnesnesmasnesequets,ndecoses,nescontascrises,nesequequequequesefises,nesequequesequesefiscones,mases,nesequidatequesequesefiscones,nesequesequesefiscrises,nesequesequesefiscones,nesefisconesefisconmases,mases,nesequesequesefiscones,necequesequeseques Validatingwebhookkonfigurationen, Volumeanhänge“ 
-
-
-| Ich sehe Fehlermeldungen von Telegraf ähnlich wie die folgenden, aber Telegraf startet und läuft: Okt 11 14:23:41 ip-172-31-39-47 systemd[1]: Startete den Plugin-getriebenen Server Agent für das Reporting von Metriken in InfluxDB. Okt 11 14:23:41 ip-172-31-39-47 telegraf[1827]: Time=„2021-10-11T14:23:41Z“ Level=error msg=„konnte kein Cache-Verzeichnis erstellen. /Etc/telegraf/.Cache/snowflake, err: Mkdir /etc/telegraf/.ca che: Berechtigung verweigert. Ignorierte\n" Funktion=„gosnowflake.(*defaultLogger).Errorf“ file=„log.go:120“ Okt 11 14:23:41 ip-172-31-39-47 telegraf[1827]: Time=„2021-10-11T14:23:41Z“ Level=Fehler msg=„konnte nicht geöffnet werden. Ignoriert. Öffnen Sie /etc/telegraf/.Cache/snowflake/ocsp_response_Cache.json: Keine solche Datei oder Verzeichnis\n" func="gosnowflake.(*defaultLogger).Errorf" file="log.go:120" Okt 11 14:23:41 ip-172-31:39-47 telegraf[1827 23]: 2021-10-11T14:41I! Telegraf 1.19.3 Starten | Dies ist ein bekanntes Problem. Siehe link:https://github.com/influxdata/telegraf/issues/9407["Dieser GitHub-Artikel"] Entnehmen. Solange Telegraf läuft, können Benutzer diese Fehlermeldungen ignorieren. 
-
-
-| Auf Kubernetes meldet mein Telegraf pod(s) den folgenden Fehler: „Fehler in der Verarbeitung von mountstats-Infos: Habe mountstats-Datei nicht geöffnet: /Hostfs/proc/1/mountstats, Fehler: Open /hostfs/proc/1/mountstats: Permission dementied“ | Wenn SELinux aktiviert und durchgesetzt wird, wird wahrscheinlich verhindert, dass die Telegraf PODs auf die Datei /proc/1/mountstats auf dem Kubernetes-Knoten zugreifen. Um diese Einschränkung zu überwinden, bearbeiten Sie die Agentkonfiguration und aktivieren Sie die runPrivileged-Einstellung. Weitere Informationen finden Sie unter: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]. 
-
-
-| Auf Kubernetes meldet mein Telegraf ReplicaSet POD den folgenden Fehler: [inputs.prometheus] Fehler im Plugin: Konnte keine keypair /etc/kubernetes/pki/etcd/Server.crt:/etc/kubernetes/pki/etcd/Server.key: Öffnen /etc/kubernetes/pki/etcd/Server.crt: Keine solche Datei oder Verzeichnis | Der Pod Telegraf ReplicaSet soll auf einem Knoten ausgeführt werden, der als Master oder für etc bestimmt ist. Wenn der ReplicaSet-Pod auf einem dieser Knoten nicht ausgeführt wird, werden diese Fehler angezeigt. Überprüfen Sie, ob Ihre Master/etcd-Knoten eine Tönungswalle haben. Fügen Sie in diesem Fall die erforderlichen Verträgungen in das Telegraf ReplicaSet, telegraf-rs ein. Bearbeiten Sie zum Beispiel die Datei ReplicaSet... kubectl edit rs telegraf-rs ...und fügen Sie die entsprechenden Verträgungen der Spezifikation hinzu. Starten Sie anschließend den Pod ReplicaSet neu. 
-
-
-| Ich habe eine PSP/PSA Umgebung. Hat dies Auswirkungen auf meinen Überwachungsperator? | Wenn Ihr Kubernetes Cluster mit der Pod Security Policy (PSP) oder PSA (Pod Security Admission) ausgeführt wird, müssen Sie ein Upgrade auf den aktuellen NetApp Kubernetes Monitoring Operator durchführen. Führen Sie die folgenden Schritte aus, um auf den aktuellen NKMO mit Unterstützung für PSP/PSA zu aktualisieren: 1. <<uninstalling,Deinstallieren>> Der vorherige Überwachungsoperator: Kubectl delete Agent-Monitoring-netapp -n netapp-Monitoring kubectl delete ns netapp-Monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrolle Agent-Manager-role Agent-Proxy-role Agent-metrics-reader kubectl delete clusterrolebinding Agent-Manager-rolebinding Agent-Proxy-rolebinding Agent-Proxy-rolebinding Agent-Cluster-admin-rolebinding 2. <<installing-the-netapp-kubernetes-monitoring-operator,Installieren>> Die neueste Version des Überwachungsbedieners. 
-
-
-| Bei der Bereitstellung des NKMO begegnete mir Probleme, und PSP/PSA ist im Einsatz. | 1. Bearbeiten Sie den Agenten mit dem folgenden Befehl: Kubectl -n <Name-space> Edit Agent 2. Markieren Sie „Sicherheitspolitik aktiviert“ als „falsch“. Dadurch werden Pod Security Policies und Pod Security Admission deaktiviert und die Bereitstellung des NKMO ermöglicht. Bestätigung mit den folgenden Befehlen: Kubectl get psp (sollte Pod Security Policy entfernt zeigen) kubectl get all -n <Namespace> grep -i psp (sollte zeigen, dass nichts gefunden wird) 
-
-
-| „ImagePullBackoff“-Fehler erkannt | Diese Fehler treten möglicherweise auf, wenn Sie über ein benutzerdefiniertes oder privates Docker Repository verfügen und den NetApp Kubernetes Monitoring Operator noch nicht so konfiguriert haben, dass es richtig erkannt wird. <<using-a-custom-or-private-docker-repository,Weitere Informationen>> Info zur Konfiguration für benutzerdefinierte/private Repo. 
-
-
-| Ich habe ein Problem mit der Installation meines Monitoring-Bedieners, und die aktuelle Dokumentation hilft mir nicht, es zu lösen.  a| 
-Erfassen oder notieren Sie die Ausgabe der folgenden Befehle, und wenden Sie sich an den technischen Support.
+ kubectl edit agent agent-monitoring-netapp -n <namespace>
+Die CR-Spezifikation folgt dem Format:
 
 [listing]
 ----
- kubectl -n netapp-monitoring get all
- kubectl -n netapp-monitoring describe all
- kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
- kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+ - name: <plugin-name>
+   ...
+   substitutions:
+   - key: <variable-name>
+     value: <desired-value>
+     ...
 ----
+Elemente, die mit „Ja“ für „in Standard CR enthalten“ gekennzeichnet sind, sind bereits im Agent CR vorhanden und sind unter dem jeweiligen Plugin zu finden. Elemente, die mit „Nein“ gekennzeichnet sind, müssen manuell hinzugefügt werden, nachdem die Beispiele durch die enthaltenen Standardumsetzungen bereitgestellt wurden.
 
 
-| NET-Observer (Workload Map)-Pods im NKMO-Namespace befinden sich in CrashLoopBackOff | Diese Pods entsprechen dem Workload Map-Datensammler für Network Observability. Versuchen Sie Folgendes: • Überprüfen Sie die Protokolle eines der Pods, um die minimale Kernel-Version zu bestätigen. Beispiel: --- {"CI-Tenant-id":"your-Tenant-id","Collector-Cluster":"your-k8s-Cluster-Name","Environment":"prod","Level":"error","msg":"failed in validation. Grund: Kernel-Version 3.10.0 ist kleiner als die minimale Kernel-Version von 4.18.0","Time":"2022-11-09T08:23:08Z"} ---- • Net-Observer-Pods erfordern die Linux-Kernel-Version mindestens 4.18.0. Überprüfen Sie die Kernel-Version mit dem Befehl „uname -r“ und stellen Sie sicher, dass sie >= 4.18.0 sind 
 
+=== Ressourcenbezogene Variablen
 
-| NET-Observer Pods im NKMO Namespace befinden sich in CrashLoopBackOff in der OpenShift 4 Umgebung | Dies wird derzeit nicht unterstützt. Achten Sie darauf, dass Support in einem zukünftigen Update hinzugefügt wird. 
+Siehe https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/[]	Weitere Informationen zu Kubernetes-Ressourcen finden Sie hier.
 
-
-| Pods werden in NKMO Namespace ausgeführt (Standard: netapp-Monitoring), es werden jedoch keine Daten in der UI für die Workload-Zuordnung oder Kubernetes-Kennzahlen in Abfragen angezeigt | Überprüfen Sie die Zeiteinstellung auf den Knoten des K8S-Clusters. Für eine genaue Prüfung und Datenberichterstattung wird dringend empfohlen, die Zeit auf dem Agent-Rechner mit Network Time Protocol (NTP) oder Simple Network Time Protocol (SNTP) zu synchronisieren. 
-
-
-| Einige der Net-Observer-Pods im NKMO-Namespace befinden sich im Status „Ausstehend“ | NET-Observer ist ein DemonSet und führt in jedem Knoten des K8s-Clusters einen Pod aus. • Beachten Sie den Pod, der sich im Status „Ausstehend“ befindet, und prüfen Sie, ob ein Ressourcenproblem für CPU oder Speicher vorliegt. Stellen Sie sicher, dass der erforderliche Arbeitsspeicher und die erforderliche CPU im Knoten verfügbar sind. 
-
-
-| Ich sehe Folgendes in meinen Protokollen sofort nach der Installation des NetApp Kubernetes Monitoring Operator: [inputs.prometheus] Fehler im Plugin: Fehler beim Herstellen der HTTP-Anfrage an http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] Verstehen http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] TCP wählen: Lookup kube-State-metrics.<namespace>.svc.Cluster.local: Kein solcher Host | Diese Meldung wird normalerweise nur angezeigt, wenn ein neuer Operator installiert ist und der Pod „_telegraf-rs_“ vor dem Einschalten des Pod „_ksm_“ steht. Diese Meldungen sollten beendet werden, sobald alle Pods ausgeführt werden. 
-
-
-| Ich sehe keine Kennzahlen für die Kubernetes-Kronjobs, die in meinem Cluster vorhanden sind, erfasst. | Überprüfen Ihrer Kubernetes Version (d. h. `kubectl version`).  Wenn es v1.20.x oder niedriger ist, ist dies eine erwartete Einschränkung.  Die mit dem NetApp Kubernetes Monitoring Operator implementierte Version von kube-State-Metrics unterstützt nur v1.cronjob.  Bei Kubernetes 1.20.x und niedriger befindet sich die Ressource cronjob unter v1beta.cronjob.  Daher können kube-State-Metriken die Ressource cronjob nicht finden. 
-
-
-| Nach der Installation des Bedieners geben die telegraf-ds-Pods CrashLoopBackOff ein und die POD-Protokolle zeigen „su: Authentication failure“ an. | Bearbeiten Sie den Abschnitt netapp-Monitoring-Configuration in _AgentConfiguration_ und setzen Sie _dockerMetricCollectionEnabled_ auf false. Weitere Informationen finden Sie im Abschnitt des Bedieners link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"].
-
-HINWEIS: wenn Sie die Cloud Insights Federal Edition verwenden, können Benutzer mit Einschränkungen hinsichtlich der Verwendung von _su_ keine Docker-Metriken erfassen, da der Zugriff auf den Dockersockel entweder den telegraf-Container als root ausführen muss oder _su_ verwenden muss, um den telegraf-Benutzer zur Docker-Gruppe hinzuzufügen. Die Docker Metric Collection und die Verwendung von _su_ sind standardmäßig aktiviert. Um beides zu deaktivieren, entfernen Sie den Eintrag _telegraf.Docker_ in der Datei _AgentConfiguration_:
-
-...
-Spez.:
-...
-telegraf:
-    ...
-     - Name: docker
-            Run-Modus:
-              - DemonSet
-            Ersetzungen:
-              - SCHLÜSSEL: DOCKER_UNIX_SOCK_PLACEHOLDER
-                Wert: unix:///run/Docker.Sock
-    ...
-... 
-
-
-| Ich sehe wiederholte Fehlermeldungen wie die folgenden in meinen Telegraf-Protokollen:
-
- E! [Agent] Fehler beim Schreiben in Outputs.http: Post "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] Kontext-Deadline überschritten (Client.Timeout beim Warten auf Header überschritten) | Bearbeiten Sie jede Telegraf-Konfigurationsdatei (z. B. /etc/telegraf/telegraf.d/*.conf), und erhöhen Sie das Timeout für die Telegraf-Ausgabemodule.  Beispiel: Ersetzen Sie in jeder conf-Datei alle Instanzen von...
-
-[[Outputs.http]]
-...
-Timeout = „5s“
-...
-
-
-...Mit den folgenden:
-
-[[Outputs.http]]
-...
-Timeout = „10s“
-...
-
-Starten Sie Telegraf anschließend neu. 
 |===
-Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
+
+
+| Variablenname | Plug-In-Name | In Standard-CR enthalten | Beschreibung 
+
+
+| DS_CPU_LIMITS_PLATZHALTER | Agent | ja | Kubernetes-CPU-Limit für telegraf-ds 
+
+
+| DS_MEM_LIMITS_PLATZHALTER | Agent | ja | Kubernetes mem Limit für telegraf-ds 
+
+
+| DS_CPU_REQUEST_PLATZHALTER | Agent | ja | Kubernetes-cpu-Anforderungen für telegraf-ds 
+
+
+| DS_MEM_REQUEST_PLATZHALTER | Agent | ja | Kubernetes-Speicheranforderungen für telegraf-ds 
+
+
+| RS_CPU_LIMITS_PLATZHALTER | Agent | ja | Kubernetes-CPU-Limit für telegraf-rs. 
+
+
+| RS_MEM_LIMITS_PLATZHALTER | Agent | ja | Kubernetes mem Limit für telegraf-rs 
+
+
+| RS_CPU_REQUEST_PLATZHALTER | Agent | ja | Kubernetes-cpu-Anforderungen für telegraf-rs 
+
+
+| RS_MEM_REQUEST_PLATZHALTER | Agent | ja | Kubernetes-Speicheranforderungen für telegraf-rs 
+
+
+| KSM_CPU_REQUEST_PLATZHALTER: | ksm | ja | Kubernetes-cpu-Anfragen für die Bereitstellung von kube-State-Metriken 
+
+
+| KSM_MEM_REQUEST_PLATZHALTER: | ksm | ja | Kubernetes-cpu-Anfragen für die Bereitstellung von kube-State-Metriken 
+|===
+
+
+=== Telegraf-bezogene Variablen
+
+Siehe https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent[] Für Informationen zu telegraf-Variablen.
+
+|===
+
+
+| Platzhalter | Plug-In-Name | In Standard-CR enthalten | Beschreibung 
+
+
+| COLLECTION_INTERVAL_PLACEHOLDER | Agent | Nein | (Setzt telegraf Intervall, Typ Intervall): Die Standardzeit telegraf wird zwischen den Eingängen für alle Plugins warten. Gültige Zeiteinheiten sind ns, US (oder µs), ms, s, m, h. 
+
+
+| ROUND_INTERVAL_PLACEHOLDER | Agent | Nein | (Legt telegraf round_interval fest, Typ boolean) sammelt Kennzahlen zu Vielfachen des Intervalls 
+
+
+| METRIC_BATCH_SIZE_PLACEHOLDER | Agent | Nein | (Legt telegraf metric_Batch_size fest, Typ int) maximale Anzahl von Datensätzen für einen Ausgang telegraf schreibt in einem Batch 
+
+
+| METRIC_BUFFER_LIMIT_PLACEHOLDER | Agent | Nein | (Legt telegraf metric_buffer_Limit, Typ int fest) maximale Anzahl an Datensätzen für eine Ausgabe telegraf speichert bis ein erfolgreicher Schreibvorgang ansteht 
+
+
+| COLLECTION_JITTER_PLATZHALTER | Agent | Nein | (Setzt telegraf Collection_Jitter, Typ-Intervall): Jedes Plugin wartet eine zufällige Zeitspanne zwischen der geplanten Abholzeit und jener Zeit + Collection_Jitter, bevor es Eingaben sammelt 
+
+
+| PRECISION_PLACEHOLDER | Agent | Nein | (Setzt telegraf-Präzision, Typfintervall): Die gesammelten Kennzahlen werden auf die angegebene Präzision gerundet, wenn sie auf "0s" gesetzt wird, wird die Präzision von den Einheiten, die durch Intervall angegeben 
+
+
+| FLUSH_INTERVAL_PLACEHOLDER | Agent | Nein | (Setzt telegraf flush_interval, type interval): Standardzeit telegraf wartet zwischen Schreibausgängen. 
+
+
+| FLUSH_JITTER_PLATZHALTER | Agent | Nein | (Setzt telegraf flush_Jitter, Typ-Intervall): Jeder Ausgang wartet eine zufällige Zeitdauer zwischen der geplanten Schreibzeit und dieser Zeit + flush_Jitter, bevor er die Ausgänge schreibt 
+|===
+
+
+=== Verschiedene Variablen
+
+|===
+
+
+| Platzhalter | Plug-In-Name | In Standard-CR enthalten | Beschreibung 
+
+
+| CURL_CMD_PLATZHALTER | Agent | ja | Der curl-Befehl zum Herunterladen verschiedener Ressourcen. Ex) „curl“ oder „curl -k“ 
+|===
