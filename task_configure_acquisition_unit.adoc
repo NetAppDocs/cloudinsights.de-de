@@ -198,9 +198,10 @@ Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:
 . Klicken Sie rechts neben der zu deinstallierenden Erfassungseinheit auf die Schaltfläche Optionen, und wählen Sie _Löschen_. Sie können eine Erfassungseinheit nur löschen, wenn ihr keine Datensammler zugewiesen sind.
 
 
-HINWEIS: Die Standarderfassungseinheit kann nicht gelöscht werden. Wählen Sie eine andere AU als Standard aus, bevor Sie die alte löschen.
 
+NOTE: Eine Acquisition Unit (AU), mit der Datensammler verbunden sind, kann nicht gelöscht werden. Verschieben Sie alle AU Datensammler auf eine andere AU (bearbeiten Sie den Sammler und wählen Sie einfach eine andere AU), bevor Sie die ursprüngliche AU löschen.
 '''
+
 
 
 == Erneutes Installieren einer Erfassungseinheit

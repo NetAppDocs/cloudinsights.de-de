@@ -5474,12 +5474,8 @@
   <block id="d5712dd84650ff1cb4915da1c121ffbb" category="paragraph">Informationen können im gefunden werden <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Seite.</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights unterstützt Telegraf als Agent bei der Erfassung von Integrationsdaten in Kubernetes.</block>
   <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">Konfiguration des NetApp Kubernetes Monitoring Operator</block>
-  <block id="5da82ececca61ed15fcd7ca2e6f43b59" category="inline-link-macro">Fließendes Bit</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
-  <block id="21b0eec92dd9a89050827e1eb2801ea8" category="paragraph">Cloud Insights verwendet u. a. verschiedene Komponenten <block ref="5dd2dd4557ccd99c6f8d2bb01747a70d" category="inline-link-macro-rx"></block> Und <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block>, Für die Erfassung von Kubernetes-Daten. Telegraf ist ein Plug-in-gestützter Server-Agent, mit dem Kennzahlen, Ereignisse und Protokolle erfasst und protokolliert werden können. Input-Plugins werden verwendet, um die gewünschten Informationen in den Agenten zu sammeln, indem Sie direkt auf das System/Betriebssystem zugreifen, indem Sie APIs von Drittanbietern aufrufen oder konfigurierte Streams (d. h. anhören Kafka, StatsD usw.). Mit Output-Plug-ins werden die gesammelten Metriken, Ereignisse und Protokolle vom Agenten an Cloud Insights gesendet.</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights bietet die Sammlung *NetApp Kubernetes Monitoring Operator* (NKMO) für Kubernetes an. Wählen Sie beim Hinzufügen eines Datensammlers einfach die Kachel „Kubernetes“.</block>
-  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collector</block>
-  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Vor der Installation des NetApp Kubernetes Monitoring Operator</block>
   <block id="63b31ca49de01854f780d1e1722cd1c1" category="list-title">Voraussetzungen:</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Die Installation des NetApp Kubernetes Monitoring Operator wird mit Kubernetes Version 1.20 oder neuer unterstützt.</block>
@@ -5841,7 +5837,6 @@
   <block id="76812a2c2f6df7659757d83719299fb8" category="list-text">Führen Sie auf dem Server/VM der Acquisition Unit den folgenden Befehl aus:</block>
   <block id="fcee21cb77c380c25d5b88c1b64869b8" category="list-text">Um Hilfe bei der Deinstallation zu erhalten, führen Sie folgende Schritte aus:</block>
   <block id="c3cda1df3a7bb86d771c8e59aac35b0e" category="list-text">Klicken Sie rechts neben der zu deinstallierenden Erfassungseinheit auf die Schaltfläche Optionen, und wählen Sie _Löschen_. Sie können eine Erfassungseinheit nur löschen, wenn ihr keine Datensammler zugewiesen sind.</block>
-  <block id="4262a364178344226a6201df72deaa22" category="paragraph">HINWEIS: Die Standarderfassungseinheit kann nicht gelöscht werden. Wählen Sie eine andere AU als Standard aus, bevor Sie die alte löschen.</block>
   <block id="9cfc47a14abb521242e2e73ee615049c" category="section-title">Erneutes Installieren einer Erfassungseinheit</block>
   <block id="957deaa4b12e9e98b0ee4181b18c7361" category="paragraph">Um eine Erfassungseinheit auf demselben Server/derselben VM neu zu installieren, müssen Sie folgende Schritte ausführen:</block>
   <block id="1405103bcf8e1e217a5c701e0664adf3" category="paragraph">Sie müssen eine temporäre Erfassungseinheit auf einem separaten Server/einer separaten VM konfigurieren, bevor Sie eine Akquisitionseinheit neu installieren.</block>
@@ -9677,9 +9672,6 @@
   <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">Nein Das Skript läuft für maximal 5 Minuten, selbst wenn die Anzahl der SVMs erhöht wird.</block>
   <block id="ce3d712deda180dd445bfed60562d712" category="cell">Was passiert, wenn ich die Ereignisratsprüfung mit einem vorhandenen Agenten durchführe?</block>
   <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">Wenn Sie die Ereignisratenprüfung für einen bereits vorhandenen Agenten ausführen, kann dies zu einer Erhöhung der Latenz auf der SVM führen. Diese Erhöhung ist temporär, während die Ereignisratenprüfung ausgeführt wird.</block>
-  <block id="bca1503414d74a046e28b7530006b1be" category="paragraph">Unten finden Sie eine allgemeine Abbildung, die zeigt, wo sich der Bediener in Ihrer Umgebung befindet. Je nach Umgebung ist _Proxy Server_ möglicherweise erforderlich oder nicht.</block>
-  <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">Eine Übersichtskarte mit NKMO im Kubernetes-Cluster. Die Pfeile zeigen, wie die Daten von den Hosts, dem Proxyserver, zum Cluster übertragen werden, wobei alles auf Cloud Insights hochläuft</block>
-  <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">Der Betreiber (NKMO) und die Datensammler werden aus der Cloud Insights Docker Registry heruntergeladen. Nach der Installation verwaltet NKMO dann alle Operator-kompatiblen Kollektoren, die in den Kubernetes-Cluster-Knoten zur Datengewinnung bereitgestellt werden, einschließlich der Verwaltung des Lebenszyklus dieser Kollektoren. Nach dieser Kette werden die Daten von den Sammlern erfasst und an Cloud Insights gesendet.</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">Konfigurieren des Rubrik CDM-Datensammlers.</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM Data Collector</block>
@@ -12402,4 +12394,6 @@ V9.2.4.2</block>
   <block id="82ae7df2222778ee2748567434e1d911" category="section-title">Verschiedene Variablen</block>
   <block id="327fbef93ac997add024577e1fdbe932" category="cell">CURL_CMD_PLATZHALTER</block>
   <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">Der curl-Befehl zum Herunterladen verschiedener Ressourcen. Ex) „curl“ oder „curl -k“</block>
+  <block id="ce657060a1d97a0550e523e90be61acd" category="admonition">Eine Acquisition Unit (AU), mit der Datensammler verbunden sind, kann nicht gelöscht werden. Verschieben Sie alle AU Datensammler auf eine andere AU (bearbeiten Sie den Sammler und wählen Sie einfach eine andere AU), bevor Sie die ursprüngliche AU löschen.
+'''</block>
 </blocks>
