@@ -200,7 +200,10 @@ Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:
 
 
 NOTE: Eine Acquisition Unit (AU), mit der Datensammler verbunden sind, kann nicht gelöscht werden. Verschieben Sie alle AU Datensammler auf eine andere AU (bearbeiten Sie den Sammler und wählen Sie einfach eine andere AU), bevor Sie die ursprüngliche AU löschen.
-'''
+
+Für die Geräteauflösung wird eine Akquisitionseinheit mit einem Stern daneben verwendet. Bevor Sie diese AU entfernen, müssen Sie ein anderes AU auswählen, das für die Geräteauflösung verwendet werden soll. Bewegen Sie den Mauszeiger über eine andere AU, und öffnen Sie das Menü „drei Punkte“, um „für Geräteauflösung verwenden“ auszuwählen.
+
+image:AU_for_Device_Resolution.png["AU wird für Geräteauflösung verwendet"]
 
 
 
