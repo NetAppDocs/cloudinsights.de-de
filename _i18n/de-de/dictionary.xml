@@ -12398,4 +12398,10 @@ V9.2.4.2</block>
   <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">Für die Geräteauflösung wird eine Akquisitionseinheit mit einem Stern daneben verwendet. Bevor Sie diese AU entfernen, müssen Sie ein anderes AU auswählen, das für die Geräteauflösung verwendet werden soll. Bewegen Sie den Mauszeiger über eine andere AU, und öffnen Sie das Menü „drei Punkte“, um „für Geräteauflösung verwenden“ auszuwählen.</block>
   <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">AU wird für Geräteauflösung verwendet</block>
   <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">AnzuzeiEinblick in Aggregate</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Wenn das zu überwachende Cluster benutzerdefinierte Ressourcen enthält, für die keine ClusterRole vorhanden ist <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>Sie müssen dem Bediener manuell Zugriff auf diese Ressourcen gewähren, um sie mit Ereignisprotokollen zu überwachen.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Bearbeiten Sie _Operator-additional-permissions.yaml_ vor der Installation oder nach der Installation bearbeiten Sie die Ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Erstellen Sie eine neue Regel für die gewünschten apiGroups und Ressourcen mit den Verben ["get", "watch", "list"]. Siehe \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Übernehmen Sie die Änderungen auf das Cluster</block>
+  <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">Hinweis: Wenn Sie zuvor hinzugefügte Berechtigungen entfernen möchten, werden die Änderungen erst wirksam, wenn der Pod _Event-Exporter_ neu gestartet wird.</block>
 </blocks>
