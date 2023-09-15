@@ -25,6 +25,71 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== September 2023
+
+
+
+=== In den Protokollen finden Sie ganz einfach, was Sie möchten
+
+Log Query (*Observability > Log Queries > +New Log Query*) enthält eine Reihe von link:concept_log_explorer.html#advanced-filtering["Vorgestellt werden"] Um die Protokollforschung einfacher und informativer zu machen.
+
+
+
+==== Ein-/Ausschließen
+
+Beim Filtern nach einem Wert können Sie ganz einfach wählen, ob *include* oder *exclude* Ergebnisse dem Filter entsprechen. Durch Auswahl von „Exclude“ wird ein Filter „NOT <value>“ erstellt. Sie können die ein- und Ausschlusswerte in einem einzelnen Filter kombinieren.
+
+image:Log_Query_Exclude_Filter.png["Filter, das die Optionsschaltfläche „Ausschließen“ anzeigt"]
+
+
+
+==== Erweiterte Abfrage
+
+*Advanced Querying* gibt Ihnen die Möglichkeit, "freie Form"-Filter zu erstellen, indem Sie Werte mit AND, NOT, OR, Wildcards, etc. Kombinieren ODER ausschließen
+
+image:Log_Advanced_Query_Example.png["Beispiel für eine Protokollabfrage, die die Funktionen AND, NOT und ODER illustriert"]
+
+Die Optionen „Filtern nach“ und „Erweiterte Abfrage“ werden zu einer einzigen Abfrage zusammengefasst. Die Ergebnisse werden in der Ergebnisliste und im Diagramm angezeigt.
+
+
+
+==== Gruppierung im Diagramm
+
+Wenn Sie ein Protokollattribut für *Gruppieren nach* auswählen, werden in der Liste und im Diagramm die Ergebnisse des aktuellen Filters angezeigt. Im Diagramm werden die Spalten in Farben gruppiert. Wenn Sie den Mauszeiger über eine Spalte im Diagramm bewegen, werden Details zu den spezifischen Einträgen angezeigt, ähnlich den allgemeinen Informationen, die beim erweitern der Diagrammlegende angezeigt werden.  In der Legende können Sie auch festlegen, ob ein Filter ein- oder Ausschlussfilter für eine bestimmte Gruppierung verwendet werden soll.
+
+image:Log_Query_Group_By_Chart.png["Protokollabfrage Gruppieren Sie anhand von Beispielen, die gestapelte Spalten im Diagramm anzeigen"]
+
+
+
+=== Fenster „Schwebende“ Protokolldetails
+
+Wenn Sie Protokolle mithilfe der Protokollabfrage untersuchen, wird durch Auswahl eines Eintrags in der Liste ein Detailfenster für diesen Eintrag geöffnet. Sie können nun wählen, ob das Schiebefenster „frei“ (d. h. über den Rest des Bildschirms angezeigt) oder „in Seite“ (d. h. als eigenen Rahmen auf der Seite angezeigt) angezeigt werden soll. Um zwischen diesen Ansichten zu wechseln, klicken Sie oben rechts im Bedienfeld auf die Schaltfläche „in Page / Floating“.
+
+image:Log_Query_Floating_Detail_Panel.png["„In-Page“-Schiebefenster mit hervorgehobener Schaltfläche"]
+
+
+
+=== Schließen Sie das Menü ab
+
+Sie können das linke Cloud Insights-Navigationsmenü durch Auswahl der Schaltfläche „Minimieren“ unter dem Menü ausblenden. Wenn das Menü minimiert ist, bewegen Sie den Mauszeiger über ein Symbol, um zu sehen, welcher Abschnitt geöffnet wird. Durch Auswahl des Symbols wird das Menü geöffnet und Sie gelangen direkt zu diesem Abschnitt.
+
+image:CI_Menu_Minimize_Button.png["Minimieren Sie das Menü"]
+
+
+
+=== Verbesserungen Des Data Collectors
+
+Cloud Insights erleichtert das Anzeigen und Auffinden von Daten-Collector-Informationen:
+
+* *Die Verarbeitung von Datensammlerlisten* ist effizienter, was bedeutet, dass die Zeit, die benötigt wird, um diese Listen anzuzeigen und zu navigieren, stark reduziert wird. Wenn Sie eine große Umgebung mit vielen Datensammlern haben, werden Sie eine deutliche Verbesserung bei der Auflistung Ihrer Datensammler sehen.
+
+
+* Die *Data Collector Support Matrix* ist von einer .PDF-Datei auf eine .HTML-basierte Seite umgestiegen, schneller zu navigieren und einfacher zu warten. Schauen Sie sich die neue Matrix hier an: https://docs.netapp.com/us-en/cloudinsights/reference_data_collector_support_matrix.html[]
+
+
+'''
+
+
 == August 2023
 
 
