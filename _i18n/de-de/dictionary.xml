@@ -10199,7 +10199,6 @@
   <block id="80501d323e4be5227482cd3a9ab61d4f" category="inline-image-macro">ONTAP-Benachrichtigungen für verschiedene Szenarien</block>
   <block id="a2792f9c8cd4eac5285b213778bf54bd" category="paragraph"><block ref="a2792f9c8cd4eac5285b213778bf54bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">Der <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> Die Funktion vereinfacht die Fehlerbehebung durch Zuordnen von Abhängigkeiten zwischen Kubernetes-Workloads. Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.</block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">Ein Computer, auf dem eine lizenzierte Version von einer der folgenden Versionen läuft: * CentOS (64-Bit): 7.2 bis 7.9, Stream 8, Stream 9 * Debian (64-Bit): 9 und 10 * Oracle Enterprise Linux (64-Bit): 7.5 bis 7.9, 8.1 bis 8.4 * Red hat Enterprise Linux (64-Bit): 7.2 bis 7.9, 8.1 bis 9.1 * Rocky 9.0, 9.1 * Ubuntu Server: 18.04 und 20.04 LTS auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">Zusätzliche Federal Edition-Anforderung</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">Für Installationen von Akquisitionseinheiten in Cloud Insights-Clustern der Bundesausgabe muss das zugrunde liegende Betriebssystem eine gute Entropiequelle haben. Auf Linux-Systemen erfolgt dies typischerweise durch die Installation von _rng-Tools_ oder durch die Hardware-Zufallszahlengenerierung (RNG). Es liegt in der Verantwortung des Kunden, sicherzustellen, dass diese Anforderung auf der Maschine der Erfassungseinheit erfüllt wird.</block>
   <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">Informationen Zur Stromversorgung Für Kalte Daten</block>
@@ -12433,4 +12432,14 @@ V9.2.4.2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insights erleichtert das Anzeigen und Auffinden von Daten-Collector-Informationen:</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*Die Verarbeitung von Datensammlerlisten* ist effizienter, was bedeutet, dass die Zeit, die benötigt wird, um diese Listen anzuzeigen und zu navigieren, stark reduziert wird. Wenn Sie eine große Umgebung mit vielen Datensammlern haben, werden Sie eine deutliche Verbesserung bei der Auflistung Ihrer Datensammler sehen.</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">Die *Data Collector Support Matrix* ist von einer .PDF-Datei auf eine .HTML-basierte Seite umgestiegen, schneller zu navigieren und einfacher zu warten. Schauen Sie sich die neue Matrix hier an:<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
+  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
+
+* CentOS (64-bit): 7.2 bis 7.9, Stream 8, Stream 9
+* Debian (64-bit): 9 und 10
+* Oracle Enterprise Linux (64 Bit): 7.5 bis 7.9, 8.1 bis 8.4
+* Red hat Enterprise Linux (64 Bit): 7.2 bis 7.9, 8.1 bis 8.7, 9.1
+* Rocky 9.0, 9.1
+* Ubuntu Server: 18.04 und 20.04 LTS
+
+Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
 </blocks>
