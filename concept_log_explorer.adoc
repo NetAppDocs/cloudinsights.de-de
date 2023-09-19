@@ -78,7 +78,7 @@ Beachten Sie, dass im obigen Fall, da sowohl "cm-Monitoring" als auch "EG-Monito
 
 
 
-. Die Ergebnisse des aktuellen Filters, einschließlich aller „Filtern nach“-Werte UND des Filters „Erweiterte Abfrage“. Die Liste kann nach allen angezeigten Spalten sortiert werden. Um weitere Spalten anzuzeigen, wählen Sie das Zahnrad-Symbol.
+. Die Ergebnisse des aktuellen Filters, einschließlich aller „Filtern nach“-Werte UND des erweiterten Abfragefilters, werden in der Ergebnisliste angezeigt. Die Liste kann nach allen angezeigten Spalten sortiert werden. Um weitere Spalten anzuzeigen, wählen Sie das Zahnrad-Symbol.
 . Das Diagramm wurde vergrößert, um nur Protokollergebnisse anzuzeigen, die innerhalb eines bestimmten Zeitrahmens aufgetreten sind. Der hier angezeigte Zeitbereich entspricht dem aktuellen Zoomfaktor. Wählen Sie die Schaltfläche _Zoom zurücksetzen_, um den Zoom-Level auf den aktuellen Cloud Insights-Zeitbereich zurückzusetzen.
 . Die Diagrammergebnisse wurden nach dem Feld _source_ gruppiert. Das Diagramm zeigt die Ergebnisse in jeder Spalte, die in Farben gruppiert sind. Wenn Sie den Mauszeiger über eine Spalte im Diagramm bewegen, werden einige Details zu den spezifischen Einträgen angezeigt.
 +
