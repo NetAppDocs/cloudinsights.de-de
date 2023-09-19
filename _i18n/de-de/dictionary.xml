@@ -4831,23 +4831,7 @@
   <block id="478d052d4cfb6a52aa1167cc91369a53" category="cell">FSX Volume Cache Miss-Verhältnis</block>
   <block id="3285dee4815080320066f09ef70efdc0" category="cell">Wenn kritische Schwellenwerte nicht eingehalten werden, sind sofortige Maßnahmen zur Minimierung von Serviceunterbrechungen zu ergreifen: 1. Verschieben Sie einige Workloads vom Node des Volumes, um die I/O-Last zu reduzieren 2. Weniger Bedarf an Workloads mit niedriger Priorität auf demselben Node über QoS-Limits…sofortige Maßnahmen ergreifen, wenn Warnschwellenwert nicht erreicht wird: 1 Verschieben Sie einige Workloads vom Node des Volumes, um die I/O-Last zu reduzieren 2. Durch QoS-Limits sinken die Anforderungen von Workloads mit niedriger Priorität auf demselben Node 3. Änderung der Workload-Merkmale (Blockgröße, Applikations-Caching usw.)</block>
   <block id="fff01ad725d8d95091bb3ef05163c7ba" category="section-title">K8s-Monitore</block>
-  <block id="f294f708940b046c4b5c6c3fe2beb74d" category="cell">POD erstellt</block>
   <block id="5391f9a882a54c787b206138ed6d28b0" category="cell">Informativ</block>
-  <block id="2b52cb18ad3dc04e8b3f5b0a217dab16" category="cell">Diese Warnmeldung tritt auf, wenn ein POD erstellt wird.</block>
-  <block id="f0b518884d4692e825876fc2d7fca44a" category="cell">POD gelöscht</block>
-  <block id="0639cadac03e80ed4b6257e91f9bd8e3" category="cell">Diese Warnmeldung tritt auf, wenn ein POD gelöscht wird.</block>
-  <block id="39d7b0860d5ecdb0380a2c77c4dc332e" category="cell">Demset Erstellt</block>
-  <block id="e098953d5def2535f5787c6fcd748361" category="cell">Diese Warnung tritt auf, wenn ein Demset erstellt wird.</block>
-  <block id="0de1cf7dabd7089b851b4cbcb81dac73" category="cell">Demset Gelöscht</block>
-  <block id="c9e4867a446fa930c3f7f1dff2ddaf9c" category="cell">Diese Warnung tritt auf, wenn ein Demset gelöscht wird.</block>
-  <block id="3d89b8eed7c69a8a767fb928b4562a31" category="cell">Replikaset Erstellt</block>
-  <block id="73ce536af3f9104c8f119e8eb860e726" category="cell">Diese Warnung wird angezeigt, wenn ein Replikaset erstellt wird.</block>
-  <block id="eeabcf367afdad2d67693fc3246849de" category="cell">Replikaset Gelöscht</block>
-  <block id="33230c56cde1b140e9cd5f9fc6dd1815" category="cell">Diese Warnung wird angezeigt, wenn ein Replikaset gelöscht wird.</block>
-  <block id="5e68de0568b7ee3ce1ee168f6023b496" category="cell">Implementierung Wurde Erstellt</block>
-  <block id="bcf54384c450fe942a8b2365ec90cc58" category="cell">Diese Warnmeldung erscheint, wenn eine Bereitstellung erstellt wird.</block>
-  <block id="90582794610cecc6bf6c1b849f118be0" category="cell">POD fehlgeschlagen</block>
-  <block id="1fb5af0b070e3edfc1b28299d45542c7" category="cell">Diese Warnung tritt auf, wenn EIN POD ausfällt.</block>
   <block id="fac4e44d90149e3d2fdc712cbc9bb991" category="cell">POD-Anbindung fehlgeschlagen</block>
   <block id="b60b475ab9762e47d4888115edfe5fe4" category="cell">Dieser Alarm tritt auf, wenn ein Volume-Anhang mit POD fehlgeschlagen ist.</block>
   <block id="309238af720d23dd7b5017c92842c5ed" category="cell">Die Forderung Für Das Persistente Volume Konnte Nicht Verbindlich Sein</block>
@@ -12443,4 +12427,172 @@ V9.2.4.2</block>
 
 Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
   <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">NET-Observer-l4-ds zusätzliche Toleranzen.</block>
+  <block id="5549e3ded48b31ecc7b00b810fa6b7ea" category="cell">Korrekturmaßnahmen</block>
+  <block id="dacff74646dd80517d0cffd123266041" category="cell">Schweregrad/Schwellenwert</block>
+  <block id="a0fc1910fcbc18de2726e16e8e450c0e" category="cell">Hohe Persistent Volume Latency</block>
+  <block id="acf1a4cb85a03e701ce12c2b5af1697c" category="cell">Hohe persistente Volume-Latenzen bedeuten, dass die Applikationen selbst möglicherweise darunter leiden und ihre Aufgaben nicht ausführen können. Das Monitoring von Latenzen bei persistenten Volumes ist für eine applikationskonsistente Performance von entscheidender Bedeutung. Die folgenden Latenzzeiten sind auf Grundlage des Medientyps zu erwarten – SSD bis zu 1-2 Millisekunden, SAS bis zu 8-10 Millisekunden und SATA-HDD 17-20 Millisekunden.</block>
+  <block id="23342e50cb508ff10388d5171bab5292" category="cell">**Sofortmaßnahmen**
+	Wenn kritische Grenzwerte überschritten werden, sollten sofortige Maßnahmen zur Minimierung von Serviceunterbrechungen in Betracht gezogen werden:
+		Wenn dem Volume eine QoS-Richtlinie zugewiesen ist, bewerten Sie seine Grenzwerte, falls der Volume-Workload gedrosselt wird.
+		**Maßnahmen, Die Bald Zu Tun Sind**
+	Wenn der Warnungsschwellenwert überschritten wird, planen Sie die folgenden Sofortmaßnahmen:
+		1. Wenn der Speicherpool auch eine hohe Auslastung hat, verschieben Sie das Volume in einen anderen Speicherpool.
+	2. Wenn dem Volume eine QoS-Richtlinie zugewiesen ist, bewerten sie ihre Grenzwerte für den Fall, dass sie den Volume-Workload dazu bringen, gedrosselt zu werden.
+	3. Wenn der Controller auch eine hohe Auslastung aufweist, verschieben Sie das Volume auf einen anderen Controller oder verringern Sie die Gesamtlast des Controllers.</block>
+  <block id="803448f7213deba01eb02cdcf79fd429" category="cell">Warnung @ &gt; 6,000 μs
+	Kritisch @ &gt; 12,000 μs</block>
+  <block id="90b04ed8e7a658e5a53536008dbc49ca" category="cell">Cluster-Speichersättigung Hoch</block>
+  <block id="647a330e362524d08e4713d9d799fac3" category="cell">Die zuteilbare Arbeitsspeichersättigung des Clusters ist hoch.
+	Die Cluster-CPU-Sättigung wird als Summe der Arbeitsspeicherauslastung berechnet, geteilt durch die Summe des zuteilbaren Arbeitsspeichers aller K8s-Nodes.</block>
+  <block id="5ddf5dd104ca2c41c79e1923eafaab0a" category="cell">Nodes hinzufügen.
+	Beheben Sie alle nicht geplanten Knoten.
+	Pods passender Größe zur Freigabe von Speicher auf Nodes</block>
+  <block id="5e2de4e8a6fc94dfdcde0d23d16a4b45" category="cell">Warnung @ &gt; 80 %
+	Kritisch @ &gt; 90 %</block>
+  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">Warnung</block>
+  <block id="45418d6dfe7cd04b64a53acde16e3ac3" category="cell">Hohe Wiederübertragungsrate</block>
+  <block id="bfb4c85db6684f06b563d6cdd7918965" category="cell">Hohe TCP-Übertragungsrate</block>
+  <block id="d99165642f1db07fbe730ecc58aa4786" category="cell">Überprüfung auf Netzwerküberlastung – ermitteln von Workloads, die eine hohe Netzwerkbandbreite verbrauchen.
+	Überprüfen Sie die Pod-CPU-Auslastung.
+	Prüfen Sie die Leistung des Hardwareletzwerks.</block>
+  <block id="27d40f1ffa3b1b63509d8c164f792e2b" category="cell">Warnung @ &gt; 10 %
+	Kritisch @ &gt; 25 %</block>
+  <block id="4e969a481a508599577f19a66c5a2c7d" category="cell">Kapazität Des Node-Dateisystems Hoch</block>
+  <block id="fb781ac8e192e21d893a740ed76df796" category="cell">- Erhöhen Sie die Größe der Knotenplatten, um sicherzustellen, dass genügend Platz für die Anwendungsdateien vorhanden ist.
+- Verringern Sie die Verwendung von Anwendungsdateien.</block>
+  <block id="987be04e5e051fed3f030c2cd4ff1d32" category="cell">Warnung @ &gt; 80 %
+ Kritisch @ &gt; 90 %</block>
+  <block id="0d69047d13e9146b8262619f5d342fbf" category="cell">Workload-Netzwerk-Jitter Hoch</block>
+  <block id="4c6d9c0e11174f170d06049863db3bb1" category="cell">Hoher TCP Jitter (hohe Latenz/Reaktionszeiten)</block>
+  <block id="0fc3d756aa02a551d20d8ecba29b15a1" category="cell">Prüfen Sie auf Netzwerküberlastung. Ermittlung von Workloads, die sehr viel Netzwerkbandbreite in Anspruch nehmen
+Überprüfen Sie die Pod-CPU-Auslastung.
+Prüfen Sie die Leistung des Hardwareletzwerks</block>
+  <block id="0b08522ca39f06e97361791696c099e6" category="cell">Warnung @ &gt; 30 ms
+ Kritisch @ &gt; 50 ms</block>
+  <block id="5c8d95aa52f5f7fa3c761dc1931f2437" category="cell">Durchsatz Bei Persistenten Volumes</block>
+  <block id="ce667327ae727d17bb7630071127ce99" category="cell">MBIT/S-Schwellenwerte auf persistenten Volumes können verwendet werden, um einen Administrator zu benachrichtigen, wenn persistente Volumes die vordefinierten Performance-Erwartungen übertreffen und möglicherweise andere persistente Volumes beeinträchtigen. Durch Aktivieren dieses Monitors werden Warnungen generiert, die für das typische Durchsatzprofil persistenter Volumes auf SSDs geeignet sind. Dieser Monitor deckt alle persistenten Volumes in Ihrer Umgebung ab. Die Warn- und kritischen Schwellenwerte können basierend auf Ihren Monitoring-Zielen angepasst werden, indem dieser Monitor dupliziert und Grenzwerte für Ihre Storage-Klasse angepasst werden. Ein duplizierter Monitor kann zudem auf einen Teil der persistenten Volumes in Ihrer Umgebung ausgerichtet werden.</block>
+  <block id="349a265834d31c44dd4c4d988ae086a5" category="cell">**Sofortmaßnahmen**
+Wenn kritische Grenzwerte nicht eingehalten werden, sollten sofortige Maßnahmen geplant werden, um die Serviceunterbrechung zu minimieren:
+1. Einführung QoS MBPS Grenzen für das Volume.
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien.
+**Maßnahmen, Die Bald Zu Tun Sind**
+Wenn der Warnungsschwellenwert überschritten wird, planen Sie die folgenden Sofortmaßnahmen:
+1. Einführung QoS MBPS Grenzen für das Volume.
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien.</block>
+  <block id="da3a106e23c4f2bb1f4abed10895a5eb" category="cell">Warnung @ &gt; 10,000 MB/s
+ Kritisch @ &gt; 15,000 MB/s</block>
+  <block id="2cb486fc59da30d769c702eb01d788ed" category="cell">Behälter, der Gefahr läuft, OOM zu töten</block>
+  <block id="4451a534f9bef0a82e96f0c18b8f16bd" category="cell">Die Speichergrenzen des Containers sind zu niedrig eingestellt. Der Container ist in Gefahr der Entfernung (Out of Memory Kill).</block>
+  <block id="77f8b545bfce1b75706171f18d013f8c" category="cell">Erhöhen Sie die Speichergrenzen des Containers.</block>
+  <block id="a2c21993b043d505436e461c962d53a6" category="cell">Warnung @ &gt; 95 %</block>
+  <block id="381bd9782459bd6690d99e8a8a81ea06" category="cell">Workload-Ausfall</block>
+  <block id="d17f44dd62f560c6b98986fba619fcaa" category="cell">Workload enthält keine funktionstüchtigen Pods.</block>
+  <block id="317b54184772540ad23340d4d76c09ef" category="cell">Kritisch @ &lt; 1</block>
+  <block id="8d889f31bcf23267b347a3fb4cb1ff1a" category="cell">ResourceQuota Mem Limits Überschreiten</block>
+  <block id="e6f393bbe1c9300a33e61931440df8d0" category="cell">Die Speichergrenzen für Namespace überschreiten ResourceQuota</block>
+  <block id="cb6d920e3afdddd6d3dd2e25a249a7ce" category="cell">ResourceQuota Mem Requests About to Exceed</block>
+  <block id="e5355e449eb03dfd98c1255687241437" category="cell">Speicheranforderungen für Namespace überschreiten ResourceQuota</block>
+  <block id="d056d53ae2322df97c75b1ce5dac5cff" category="cell">Fehler Beim Erstellen Des Node</block>
+  <block id="c941e3d6c35513ec6bad317f797958dd" category="cell">Der Knoten konnte aufgrund eines Konfigurationsfehlers nicht geplant werden.</block>
+  <block id="701714f5fbd36524d1a2977a95a150a5" category="cell">Prüfen Sie das Kubernetes-Ereignisprotokoll auf die Ursache des Konfigurationsfehlers.</block>
+  <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">Kritisch</block>
+  <block id="0e14c27d69d1477839d9efc8b0ad46f8" category="cell">Die Rückgewinnung Des Persistenten Volumes Ist Fehlgeschlagen</block>
+  <block id="8c8cbcc14840938903ba6a12977112a5" category="cell">Die automatische Rückgewinnung des Volumes ist fehlgeschlagen.</block>
+  <block id="f6aad30681bba4322fc5af1af69cf8ef" category="cell">Warnung @ &gt; 0 B</block>
+  <block id="a01254b5fadca078ea74cbeb0e57fe0c" category="cell">Container-CPU-Drosselung</block>
+  <block id="1bf5d16fa7c5d9c8897cd4d824dac923" category="cell">Die CPU-Grenzwerte des Containers sind zu niedrig eingestellt. Container-Prozesse werden verlangsamt.</block>
+  <block id="62a706a5ff0ecfd04050efa911929788" category="cell">Erhöhen Sie die CPU-Limits für Container.</block>
+  <block id="de6571525c704c8657b3102f71cd1329" category="cell">Warnung @ &gt; 95 %
+ Kritisch @ &gt; 98 %</block>
+  <block id="12ffb413fda4bff7ed3d529fab7e21dd" category="cell">Fehler beim Löschen des Service Load Balancer</block>
+  <block id="b50c21eaa4dde5dcceb05f3d5e10e7c3" category="cell">Persistente Volume-IOPS</block>
+  <block id="54e09e4f57136b1abc2be3badec732b0" category="cell">IOPS-Schwellenwerte auf persistenten Volumes können verwendet werden, um einen Administrator zu benachrichtigen, wenn persistente Volumes die vordefinierten Performance-Erwartungen übertreffen. Durch die Aktivierung dieser Überwachung werden Warnungen generiert, die für das typische IOPS-Profil von persistenten Volumes geeignet sind. Dieser Monitor deckt alle persistenten Volumes in Ihrer Umgebung ab. Die Warn- und kritischen Schwellenwerte können basierend auf Ihren Monitoring-Zielen angepasst werden, indem dieser Monitor dupliziert wird und Grenzwerte für Ihren Workload festgelegt werden.</block>
+  <block id="c9b0218269436ed0877e903ae0a00283" category="cell">**Sofortmaßnahmen**
+Wenn der kritische Schwellenwert überschritten wird, planen Sie sofortige Maßnahmen ein, um die Serviceunterbrechung zu minimieren:
+1. Einführen von QoS-IOPS-Limits für das Volume
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien.
+**Maßnahmen, Die Bald Zu Tun Sind**
+Wenn der Warnungsschwellenwert überschritten wird, planen Sie die folgenden Sofortmaßnahmen:
+1. Einführen von QoS-IOPS-Limits für das Volume
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien.</block>
+  <block id="29b0560962e1c0212afb7c4ecbb71c93" category="cell">Warnung @ &gt; 20,000 IO/s
+ Kritisch @ &gt; 25,000 IO/s</block>
+  <block id="87cfeec4bdb82649fe26dbd8b7bf29f9" category="cell">Fehler beim Aktualisieren des Service Load Balancer</block>
+  <block id="2643d59c01ffa8a1c0684fc4eb390bcc" category="cell">Knoten-PID-Druck</block>
+  <block id="1288eedc6e2511d2721df59f399ac7fa" category="cell">Die verfügbaren Prozesskennungen auf dem Knoten (Linux) sind unter einen Schwellenwert für die Entfernung gefallen.</block>
+  <block id="8d9541f2f1d32c5fb01855176e5c57c1" category="cell">Suchen und beheben Sie Pods, die viele Prozesse generieren und den Knoten der verfügbaren Prozess-IDs aushungern.
+Richten Sie PodPidsLimit ein, um Ihren Node vor Pods oder Containern zu schützen, die zu viele Prozesse hervorbringen.</block>
+  <block id="4dbefdf4b1ddb3ca9769f134be871e4b" category="cell">Kritisch @ &gt; 0</block>
+  <block id="95bea6890aa529aa4331870c42c52bea" category="cell">Fehler Beim Ziehen Des Pod-Image</block>
+  <block id="25a9cfb04ab08da2d3408b6841891ac7" category="cell">Kubernetes konnte das Pod-Container-Image nicht abrufen.</block>
+  <block id="6f6bdaa9544f6281972ea06985fb9ab7" category="cell">- Stellen Sie sicher, dass das Bild des Pod korrekt in der Pod-Konfiguration geschrieben ist.
+- Check Image Tag existiert in Ihrer Registry.
+- Überprüfen Sie die Zugangsdaten für die Image Registry.
+- Überprüfen Sie auf Registry-Verbindungsprobleme.
+- Überprüfen Sie, dass Sie nicht die von öffentlichen Registrierungsanbietern auferlegten Ratenlimits erreichen.</block>
+  <block id="94c150c1b83894781d50071af135ea80" category="cell">Job Wird Zu Lang Ausgeführt</block>
+  <block id="1cf41ef56ce8a9eb75257ff3c8693f09" category="cell">Job wird zu lange ausgeführt</block>
+  <block id="3d1aa5736ce76c14a4ebe18eaf3a77d6" category="cell">Warnung @ &gt; 1 Std
+ Kritisch @ &gt; 5 Std</block>
+  <block id="7841d72460ad10b826b67c603889a136" category="cell">Knotenspeicher Hoch</block>
+  <block id="2aceb65bfe4bea21524bfc1a1b116165" category="cell">Die Speichernutzung der Nodes ist hoch</block>
+  <block id="71da577c9b69706906f95d0fd5696368" category="cell">Nodes hinzufügen.
+Beheben Sie alle nicht geplanten Knoten.
+Pods passender Größe zur Freigabe von Speicher auf Nodes</block>
+  <block id="e5e09bf52d280084c87d12264b756edd" category="cell">Warnung @ &gt; 85 %
+ Kritisch @ &gt; 90 %</block>
+  <block id="74ef7bdeeb51a483e58c7ded021952ed" category="cell">ResourceQuota CPU-Limits Überschreiten</block>
+  <block id="9b8e4b0bb0460afb26f3786cfd249927" category="cell">CPU-Limits für Namespace überschreiten ResourceQuota</block>
+  <block id="aa5d59f5b34fcd2e6570cb5b597748ae" category="cell">Pod Crash Loop-Rückmeldung</block>
+  <block id="2f6430566c6afc6ea2ca5b08f5bb7c01" category="cell">Pod ist abgestürzt und versucht, es mehrmals neu zu starten.</block>
+  <block id="3bdafc039774c767282dbe18d44c1c99" category="cell">Kritisch @ &gt; 3</block>
+  <block id="147f45a9ef97cc0341380f6f8a1d6e01" category="cell">Knoten CPU hoch</block>
+  <block id="3e37bc9b357938449001aad25ef8f753" category="cell">CPU-Auslastung der Knoten ist hoch.</block>
+  <block id="2681406d533aa4d58826e3edffbcc642" category="cell">Nodes hinzufügen.
+Beheben Sie alle nicht geplanten Knoten.
+Pods passender Größe zur Freigabe von CPU auf Nodes</block>
+  <block id="bbbc0887121969dffaaac1addd997c03" category="cell">Workload-Netzwerk-Latenz RTT hoch</block>
+  <block id="9d45c8691c30b49f5f9bb02bd9d560b0" category="cell">Hohe TCP-RTT-Latenz (Round Trip Time)</block>
+  <block id="d7fb4a35576851603f71e722e49b7694" category="cell">Auf Netzwerküberlastung prüfen ▒ Workloads identifizieren, die eine hohe Netzwerkbandbreite verbrauchen.
+Überprüfen Sie die Pod-CPU-Auslastung.
+Prüfen Sie die Leistung des Hardwareletzwerks.</block>
+  <block id="5e8fb3d2a2c4c6e442f16a447b6ce44c" category="cell">Warnung @ &gt; 150 ms
+ Kritisch @ &gt; 300 ms</block>
+  <block id="f51ad3a32d20f12a4aa62f7865c24b05" category="cell">Job Fehlgeschlagen</block>
+  <block id="62cc8941365780e844a7a1a3edfdae70" category="cell">Der Job wurde aufgrund eines Node-Absturzes oder Neubootens, Ressourcenerschöpfung, Job-Zeitüberschreitung oder Fehler bei der POD-Planung nicht erfolgreich abgeschlossen.</block>
+  <block id="5ee1a3ccbcd9ac286dece4ebf73be882" category="cell">Prüfen Sie die Kubernetes-Ereignisprotokolle auf Fehlerursachen.</block>
+  <block id="2ec669c0c57f515b14422f2029d0d00c" category="cell">Warnung @ &gt; 1</block>
+  <block id="4b9573f7ad02d63bbbaee8beda615e22" category="cell">Persistentes Volume in wenigen Tagen vollständig</block>
+  <block id="f24107b73347142c35cd13250c79c514" category="cell">Dem persistenten Volume geht in wenigen Tagen der Speicherplatz aus</block>
+  <block id="ff886ed7d916977aab8b3fb7aae56d53" category="cell">-Erhöhen Sie die Volumegröße, um sicherzustellen, dass ausreichend Platz für die Anwendungsdateien vorhanden ist.
+-Reduzieren Sie die Menge der in Anwendungen gespeicherten Daten.</block>
+  <block id="c9e8926f037a4aaf0bfbc95008a28ce5" category="cell">Warnung @ &lt; 8 Tage
+ Kritisch @ &lt; 3 Tage</block>
+  <block id="c314f44daabd371d9d8799b6e3cffa7a" category="cell">Speicherdruck Des Node</block>
+  <block id="348e57fa4d72e6a73235b6317cc9498e" category="cell">Dem Node geht der Speicher aus. Der verfügbare Speicher hat den Schwellenwert für die Entfernung erreicht.</block>
+  <block id="13e758d164117d8a33c597c0707dc8f5" category="cell">Knoten Nicht Bereit</block>
+  <block id="3c15047d3f6252c3a62c846cf5fcc9aa" category="cell">Der Node war 5 Minuten lang nicht bereit</block>
+  <block id="9aa3333109c5063bd5f328edf601ba38" category="cell">Überprüfen Sie, ob der Node über genügend CPU-, Arbeitsspeicher- und Festplattenressourcen verfügt.
+Prüfen Sie die Konnektivität des Node-Netzwerks.
+Prüfen Sie die Kubernetes-Ereignisprotokolle auf Fehlerursachen.</block>
+  <block id="72fc9f4b384a114b1502bdf2b1a4981b" category="cell">Kapazität Des Persistenten Volumes Hoch</block>
+  <block id="9e20a4e791e5b3fcd5f0cdf5e58976a0" category="cell">Die von einem persistenten Volume genutzte Back-End-Kapazität ist hoch.</block>
+  <block id="1af3a99d19897f9593f718d7e186ede9" category="cell">- Erhöhen Sie die Volume-Größe, um sicherzustellen, dass genügend Platz für die Anwendungsdateien vorhanden ist.
+- Reduzierung der in Anwendungen gespeicherten Datenmenge.</block>
+  <block id="342ebde848a696c7b94b3852d026d450" category="cell">Fehler beim Erstellen des Service Load Balancer</block>
+  <block id="fdc1b09aa1ad52660639e653ccf495f9" category="cell">Erstellen Des Service Load Balancer Fehlgeschlagen</block>
+  <block id="e00662f582c55c273e64f4e3cffcd0dd" category="cell">Workload-Replikatfehler</block>
+  <block id="bc323bcbe0862d9bb52aeff43583e9ee" category="cell">Einige Pods sind derzeit nicht für eine Bereitstellung oder ein DemonSet verfügbar.</block>
+  <block id="88009a6fc741fb272943a946dcf66624" category="cell">ResourceQuota CPU Requests About to Exceed</block>
+  <block id="5e6016e4c2bd2e4bd4df818a1bf2e362" category="cell">CPU-Anforderungen für Namespace überschreiten ResourceQuota</block>
+  <block id="e9ab30ecefea517194998d555f0b0e37" category="cell">Überprüfung auf Netzwerküberlastung – ermitteln von Workloads, die eine hohe Netzwerkbandbreite verbrauchen.
+Überprüfen Sie die Pod-CPU-Auslastung.
+Prüfen Sie die Leistung des Hardwareletzwerks.</block>
+  <block id="a42092b4bcc7ac433713e0441e1787b1" category="cell">Warnung @ &gt; 10 %
+ Kritisch @ &gt; 25 %</block>
+  <block id="b0e0b6c8516b4a336ca0958188e4ddc7" category="cell">Node-Festplattendruck</block>
+  <block id="b0faff68997bb5f0c79ea09d9187e7ce" category="cell">Verfügbarer Speicherplatz und Inodes auf dem Root-Dateisystem des Knotens oder dem Image-Dateisystem haben einen Schwellenwert für die Entfernung erreicht.</block>
+  <block id="7a630b16f340cd744188cfe88ea277e0" category="cell">Cluster-CPU-Sättigung hoch</block>
+  <block id="ef9e90b0a74afb98891334eb9c2fec60" category="cell">Cluster-zuteilbare CPU-Sättigung ist hoch.
+Die Cluster-CPU-Sättigung wird als Summe der CPU-Auslastung berechnet, geteilt durch die Summe der zuteilbaren CPU aller K8s-Nodes.</block>
 </blocks>

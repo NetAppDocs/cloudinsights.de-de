@@ -373,40 +373,193 @@ Nachfolgend sind die derzeit in Cloud Insights enthaltenen Systemmonitore aufgef
 |===
 
 
-| Monitorname | Schweregrad | Beschreibung Des Monitors 
+| Monitorname | Beschreibung | Korrekturmaßnahmen | Schweregrad/Schwellenwert 
 
 
-| POD erstellt | Informativ | Diese Warnmeldung tritt auf, wenn ein POD erstellt wird. 
+| Hohe Persistent Volume Latency | Hohe persistente Volume-Latenzen bedeuten, dass die Applikationen selbst möglicherweise darunter leiden und ihre Aufgaben nicht ausführen können. Das Monitoring von Latenzen bei persistenten Volumes ist für eine applikationskonsistente Performance von entscheidender Bedeutung. Die folgenden Latenzzeiten sind auf Grundlage des Medientyps zu erwarten – SSD bis zu 1-2 Millisekunden, SAS bis zu 8-10 Millisekunden und SATA-HDD 17-20 Millisekunden. | **Sofortmaßnahmen**
+	Wenn kritische Grenzwerte überschritten werden, sollten sofortige Maßnahmen zur Minimierung von Serviceunterbrechungen in Betracht gezogen werden:
+		Wenn dem Volume eine QoS-Richtlinie zugewiesen ist, bewerten Sie seine Grenzwerte, falls der Volume-Workload gedrosselt wird.
+		**Maßnahmen, Die Bald Zu Tun Sind**
+	Wenn der Warnungsschwellenwert überschritten wird, planen Sie die folgenden Sofortmaßnahmen:
+		1. Wenn der Speicherpool auch eine hohe Auslastung hat, verschieben Sie das Volume in einen anderen Speicherpool.
+	2. Wenn dem Volume eine QoS-Richtlinie zugewiesen ist, bewerten sie ihre Grenzwerte für den Fall, dass sie den Volume-Workload dazu bringen, gedrosselt zu werden.
+	3. Wenn der Controller auch eine hohe Auslastung aufweist, verschieben Sie das Volume auf einen anderen Controller oder verringern Sie die Gesamtlast des Controllers. | Warnung @ > 6,000 μs
+	Kritisch @ > 12,000 μs 
 
 
-| POD gelöscht | Informativ | Diese Warnmeldung tritt auf, wenn ein POD gelöscht wird. 
+| Cluster-Speichersättigung Hoch | Die zuteilbare Arbeitsspeichersättigung des Clusters ist hoch.
+	Die Cluster-CPU-Sättigung wird als Summe der Arbeitsspeicherauslastung berechnet, geteilt durch die Summe des zuteilbaren Arbeitsspeichers aller K8s-Nodes. | Nodes hinzufügen.
+	Beheben Sie alle nicht geplanten Knoten.
+	Pods passender Größe zur Freigabe von Speicher auf Nodes | Warnung @ > 80 %
+	Kritisch @ > 90 % 
 
 
-| Demset Erstellt | Informativ | Diese Warnung tritt auf, wenn ein Demset erstellt wird. 
+| POD-Anbindung fehlgeschlagen | Dieser Alarm tritt auf, wenn ein Volume-Anhang mit POD fehlgeschlagen ist. |  | Warnung 
 
 
-| Demset Gelöscht | Informativ | Diese Warnung tritt auf, wenn ein Demset gelöscht wird. 
+| Hohe Wiederübertragungsrate | Hohe TCP-Übertragungsrate | Überprüfung auf Netzwerküberlastung – ermitteln von Workloads, die eine hohe Netzwerkbandbreite verbrauchen.
+	Überprüfen Sie die Pod-CPU-Auslastung.
+	Prüfen Sie die Leistung des Hardwareletzwerks. | Warnung @ > 10 %
+	Kritisch @ > 25 % 
 
 
-| Replikaset Erstellt | Informativ | Diese Warnung wird angezeigt, wenn ein Replikaset erstellt wird. 
+| Kapazität Des Node-Dateisystems Hoch | Kapazität Des Node-Dateisystems Hoch | - Erhöhen Sie die Größe der Knotenplatten, um sicherzustellen, dass genügend Platz für die Anwendungsdateien vorhanden ist.
+- Verringern Sie die Verwendung von Anwendungsdateien. | Warnung @ > 80 %
+ Kritisch @ > 90 % 
 
 
-| Replikaset Gelöscht | Informativ | Diese Warnung wird angezeigt, wenn ein Replikaset gelöscht wird. 
+| Workload-Netzwerk-Jitter Hoch | Hoher TCP Jitter (hohe Latenz/Reaktionszeiten) | Prüfen Sie auf Netzwerküberlastung. Ermittlung von Workloads, die sehr viel Netzwerkbandbreite in Anspruch nehmen
+Überprüfen Sie die Pod-CPU-Auslastung.
+Prüfen Sie die Leistung des Hardwareletzwerks | Warnung @ > 30 ms
+ Kritisch @ > 50 ms 
 
 
-| Implementierung Wurde Erstellt | Informativ | Diese Warnmeldung erscheint, wenn eine Bereitstellung erstellt wird. 
+| Durchsatz Bei Persistenten Volumes | MBIT/S-Schwellenwerte auf persistenten Volumes können verwendet werden, um einen Administrator zu benachrichtigen, wenn persistente Volumes die vordefinierten Performance-Erwartungen übertreffen und möglicherweise andere persistente Volumes beeinträchtigen. Durch Aktivieren dieses Monitors werden Warnungen generiert, die für das typische Durchsatzprofil persistenter Volumes auf SSDs geeignet sind. Dieser Monitor deckt alle persistenten Volumes in Ihrer Umgebung ab. Die Warn- und kritischen Schwellenwerte können basierend auf Ihren Monitoring-Zielen angepasst werden, indem dieser Monitor dupliziert und Grenzwerte für Ihre Storage-Klasse angepasst werden. Ein duplizierter Monitor kann zudem auf einen Teil der persistenten Volumes in Ihrer Umgebung ausgerichtet werden. | **Sofortmaßnahmen**
+Wenn kritische Grenzwerte nicht eingehalten werden, sollten sofortige Maßnahmen geplant werden, um die Serviceunterbrechung zu minimieren:
+1. Einführung QoS MBPS Grenzen für das Volume.
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien.
+**Maßnahmen, Die Bald Zu Tun Sind**
+Wenn der Warnungsschwellenwert überschritten wird, planen Sie die folgenden Sofortmaßnahmen:
+1. Einführung QoS MBPS Grenzen für das Volume.
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien. | Warnung @ > 10,000 MB/s
+ Kritisch @ > 15,000 MB/s 
 
 
-| POD fehlgeschlagen | WARNUNG | Diese Warnung tritt auf, wenn EIN POD ausfällt. 
+| Behälter, der Gefahr läuft, OOM zu töten | Die Speichergrenzen des Containers sind zu niedrig eingestellt. Der Container ist in Gefahr der Entfernung (Out of Memory Kill). | Erhöhen Sie die Speichergrenzen des Containers. | Warnung @ > 95 % 
 
 
-| POD-Anbindung fehlgeschlagen | WARNUNG | Dieser Alarm tritt auf, wenn ein Volume-Anhang mit POD fehlgeschlagen ist. 
+| Workload-Ausfall | Workload enthält keine funktionstüchtigen Pods. |  | Kritisch @ < 1 
 
 
-| Die Forderung Für Das Persistente Volume Konnte Nicht Verbindlich Sein | WARNUNG | Dieser Alarm tritt auf, wenn eine Bindung an einem PVC fehlgeschlagen ist. 
+| Die Forderung Für Das Persistente Volume Konnte Nicht Verbindlich Sein | Dieser Alarm tritt auf, wenn eine Bindung an einem PVC fehlgeschlagen ist. |  | Warnung 
 
 
-| POD-Mount fehlgeschlagen | WARNUNG | Diese Warnmeldung tritt auf, wenn ein Mount auf EINEM POD fehlgeschlagen ist. 
+| ResourceQuota Mem Limits Überschreiten | Die Speichergrenzen für Namespace überschreiten ResourceQuota |  | Warnung @ > 80 %
+ Kritisch @ > 90 % 
+
+
+| ResourceQuota Mem Requests About to Exceed | Speicheranforderungen für Namespace überschreiten ResourceQuota |  | Warnung @ > 80 %
+ Kritisch @ > 90 % 
+
+
+| Fehler Beim Erstellen Des Node | Der Knoten konnte aufgrund eines Konfigurationsfehlers nicht geplant werden. | Prüfen Sie das Kubernetes-Ereignisprotokoll auf die Ursache des Konfigurationsfehlers. | Kritisch 
+
+
+| Die Rückgewinnung Des Persistenten Volumes Ist Fehlgeschlagen | Die automatische Rückgewinnung des Volumes ist fehlgeschlagen. |  | Warnung @ > 0 B 
+
+
+| Container-CPU-Drosselung | Die CPU-Grenzwerte des Containers sind zu niedrig eingestellt. Container-Prozesse werden verlangsamt. | Erhöhen Sie die CPU-Limits für Container. | Warnung @ > 95 %
+ Kritisch @ > 98 % 
+
+
+| Fehler beim Löschen des Service Load Balancer |  |  | Warnung 
+
+
+| Persistente Volume-IOPS | IOPS-Schwellenwerte auf persistenten Volumes können verwendet werden, um einen Administrator zu benachrichtigen, wenn persistente Volumes die vordefinierten Performance-Erwartungen übertreffen. Durch die Aktivierung dieser Überwachung werden Warnungen generiert, die für das typische IOPS-Profil von persistenten Volumes geeignet sind. Dieser Monitor deckt alle persistenten Volumes in Ihrer Umgebung ab. Die Warn- und kritischen Schwellenwerte können basierend auf Ihren Monitoring-Zielen angepasst werden, indem dieser Monitor dupliziert wird und Grenzwerte für Ihren Workload festgelegt werden. | **Sofortmaßnahmen**
+Wenn der kritische Schwellenwert überschritten wird, planen Sie sofortige Maßnahmen ein, um die Serviceunterbrechung zu minimieren:
+1. Einführen von QoS-IOPS-Limits für das Volume
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien.
+**Maßnahmen, Die Bald Zu Tun Sind**
+Wenn der Warnungsschwellenwert überschritten wird, planen Sie die folgenden Sofortmaßnahmen:
+1. Einführen von QoS-IOPS-Limits für das Volume
+2. Überprüfen Sie die Anwendung, die die Arbeitslast auf dem Volumen für Anomalien. | Warnung @ > 20,000 IO/s
+ Kritisch @ > 25,000 IO/s 
+
+
+| Fehler beim Aktualisieren des Service Load Balancer |  |  | Warnung 
+
+
+| POD-Mount fehlgeschlagen | Diese Warnmeldung tritt auf, wenn ein Mount auf EINEM POD fehlgeschlagen ist. |  | Warnung 
+
+
+| Knoten-PID-Druck | Die verfügbaren Prozesskennungen auf dem Knoten (Linux) sind unter einen Schwellenwert für die Entfernung gefallen. | Suchen und beheben Sie Pods, die viele Prozesse generieren und den Knoten der verfügbaren Prozess-IDs aushungern.
+Richten Sie PodPidsLimit ein, um Ihren Node vor Pods oder Containern zu schützen, die zu viele Prozesse hervorbringen. | Kritisch @ > 0 
+
+
+| Fehler Beim Ziehen Des Pod-Image | Kubernetes konnte das Pod-Container-Image nicht abrufen. | - Stellen Sie sicher, dass das Bild des Pod korrekt in der Pod-Konfiguration geschrieben ist.
+- Check Image Tag existiert in Ihrer Registry.
+- Überprüfen Sie die Zugangsdaten für die Image Registry.
+- Überprüfen Sie auf Registry-Verbindungsprobleme.
+- Überprüfen Sie, dass Sie nicht die von öffentlichen Registrierungsanbietern auferlegten Ratenlimits erreichen. | Warnung 
+
+
+| Job Wird Zu Lang Ausgeführt | Job wird zu lange ausgeführt |  | Warnung @ > 1 Std
+ Kritisch @ > 5 Std 
+
+
+| Knotenspeicher Hoch | Die Speichernutzung der Nodes ist hoch | Nodes hinzufügen.
+Beheben Sie alle nicht geplanten Knoten.
+Pods passender Größe zur Freigabe von Speicher auf Nodes | Warnung @ > 85 %
+ Kritisch @ > 90 % 
+
+
+| ResourceQuota CPU-Limits Überschreiten | CPU-Limits für Namespace überschreiten ResourceQuota |  | Warnung @ > 80 %
+ Kritisch @ > 90 % 
+
+
+| Pod Crash Loop-Rückmeldung | Pod ist abgestürzt und versucht, es mehrmals neu zu starten. |  | Kritisch @ > 3 
+
+
+| Knoten CPU hoch | CPU-Auslastung der Knoten ist hoch. | Nodes hinzufügen.
+Beheben Sie alle nicht geplanten Knoten.
+Pods passender Größe zur Freigabe von CPU auf Nodes | Warnung @ > 80 %
+ Kritisch @ > 90 % 
+
+
+| Workload-Netzwerk-Latenz RTT hoch | Hohe TCP-RTT-Latenz (Round Trip Time) | Auf Netzwerküberlastung prüfen ▒ Workloads identifizieren, die eine hohe Netzwerkbandbreite verbrauchen.
+Überprüfen Sie die Pod-CPU-Auslastung.
+Prüfen Sie die Leistung des Hardwareletzwerks. | Warnung @ > 150 ms
+ Kritisch @ > 300 ms 
+
+
+| Job Fehlgeschlagen | Der Job wurde aufgrund eines Node-Absturzes oder Neubootens, Ressourcenerschöpfung, Job-Zeitüberschreitung oder Fehler bei der POD-Planung nicht erfolgreich abgeschlossen. | Prüfen Sie die Kubernetes-Ereignisprotokolle auf Fehlerursachen. | Warnung @ > 1 
+
+
+| Persistentes Volume in wenigen Tagen vollständig | Dem persistenten Volume geht in wenigen Tagen der Speicherplatz aus | -Erhöhen Sie die Volumegröße, um sicherzustellen, dass ausreichend Platz für die Anwendungsdateien vorhanden ist.
+-Reduzieren Sie die Menge der in Anwendungen gespeicherten Daten. | Warnung @ < 8 Tage
+ Kritisch @ < 3 Tage 
+
+
+| Speicherdruck Des Node | Dem Node geht der Speicher aus. Der verfügbare Speicher hat den Schwellenwert für die Entfernung erreicht. | Nodes hinzufügen.
+Beheben Sie alle nicht geplanten Knoten.
+Pods passender Größe zur Freigabe von Speicher auf Nodes | Kritisch @ > 0 
+
+
+| Knoten Nicht Bereit | Der Node war 5 Minuten lang nicht bereit | Überprüfen Sie, ob der Node über genügend CPU-, Arbeitsspeicher- und Festplattenressourcen verfügt.
+Prüfen Sie die Konnektivität des Node-Netzwerks.
+Prüfen Sie die Kubernetes-Ereignisprotokolle auf Fehlerursachen. | Kritisch @ < 1 
+
+
+| Kapazität Des Persistenten Volumes Hoch | Die von einem persistenten Volume genutzte Back-End-Kapazität ist hoch. | - Erhöhen Sie die Volume-Größe, um sicherzustellen, dass genügend Platz für die Anwendungsdateien vorhanden ist.
+- Reduzierung der in Anwendungen gespeicherten Datenmenge. | Warnung @ > 80 %
+ Kritisch @ > 90 % 
+
+
+| Fehler beim Erstellen des Service Load Balancer | Erstellen Des Service Load Balancer Fehlgeschlagen |  | Kritisch 
+
+
+| Workload-Replikatfehler | Einige Pods sind derzeit nicht für eine Bereitstellung oder ein DemonSet verfügbar. |  | Warnung @ > 1 
+
+
+| ResourceQuota CPU Requests About to Exceed | CPU-Anforderungen für Namespace überschreiten ResourceQuota |  | Warnung @ > 80 %
+ Kritisch @ > 90 % 
+
+
+| Hohe Wiederübertragungsrate | Hohe TCP-Übertragungsrate | Überprüfung auf Netzwerküberlastung – ermitteln von Workloads, die eine hohe Netzwerkbandbreite verbrauchen.
+Überprüfen Sie die Pod-CPU-Auslastung.
+Prüfen Sie die Leistung des Hardwareletzwerks. | Warnung @ > 10 %
+ Kritisch @ > 25 % 
+
+
+| Node-Festplattendruck | Verfügbarer Speicherplatz und Inodes auf dem Root-Dateisystem des Knotens oder dem Image-Dateisystem haben einen Schwellenwert für die Entfernung erreicht. | - Erhöhen Sie die Größe der Knotenplatten, um sicherzustellen, dass genügend Platz für die Anwendungsdateien vorhanden ist.
+- Verringern Sie die Verwendung von Anwendungsdateien. | Kritisch @ > 0 
+
+
+| Cluster-CPU-Sättigung hoch | Cluster-zuteilbare CPU-Sättigung ist hoch.
+Die Cluster-CPU-Sättigung wird als Summe der CPU-Auslastung berechnet, geteilt durch die Summe der zuteilbaren CPU aller K8s-Nodes. | Nodes hinzufügen.
+Beheben Sie alle nicht geplanten Knoten.
+Pods passender Größe zur Freigabe von CPU auf Nodes | Warnung @ > 80 %
+ Kritisch @ > 90 % 
 |===
 <<top,Zurück nach oben>>
 
