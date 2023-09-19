@@ -12442,4 +12442,5 @@ V9.2.4.2</block>
 * Ubuntu Server: 18.04 und 20.04 LTS
 
 Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
+  <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">NET-Observer-l4-ds zusätzliche Toleranzen.</block>
 </blocks>

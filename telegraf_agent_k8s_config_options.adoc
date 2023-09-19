@@ -159,6 +159,12 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
 |  | DnsMode | TCP/UDP, Modus für DNS 
 
 
+|  | Fluent-Bit-Tolerationen | Fluent-Bit-ds zusätzliche Toleranzen. 
+
+
+|  | Ereignis-Exporteur-Tolerationen | Ereignis-Exporteur zusätzliche Toleranzen. 
+
+
 | Workload-Zuordnung |  | Konfigurationsoptionen, mit denen die Erfassung der Workload-Zuordnung und die Installation des Operators angepasst werden können 
 
 
@@ -183,13 +189,7 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
 |  | EnableDNSLookup | True/false, DNS-Suche aktivieren 
 
 
-|  | Fluent-Bit-Tolerationen | Fluent-Bit-ds zusätzliche Toleranzen. 
-
-
-|  | Ereignis-Exporteur-Tolerationen | Ereignis-Exporteur zusätzliche Toleranzen. 
-
-
-| Workload-Zuordnung |  | l4-Tolerationen 
+|  | l4-Tolerationen | NET-Observer-l4-ds zusätzliche Toleranzen. 
 |===
 
 
