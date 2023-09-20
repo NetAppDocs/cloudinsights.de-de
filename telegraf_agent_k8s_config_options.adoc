@@ -180,7 +180,7 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
 |  | MemRequest | MEM-Anforderung für Netto-Beobachter ds 
 
 
-|  | MetricAgregationInterval | Intervall für die metrische Aggregation in Sekunden 
+|  | MetricAggregationInterval | Intervall für die metrische Aggregation in Sekunden 
 
 
 |  | BpfPollInterval | BPF-Abfrageintervall in Sekunden 
