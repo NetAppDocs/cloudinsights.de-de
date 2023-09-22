@@ -3627,8 +3627,6 @@
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">Während des Registrierungsprozess können Sie die globale Region zum Hosten Ihrer Cloud Insights Umgebung auswählen. Weitere Informationen finden Sie unter Cloud Insights <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>.</block>
   <block id="fd8da5ef10133e4ba884d6f85e21c49d" category="cell">Datenhaltung</block>
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7 Tage</block>
-  <block id="4ad5aab71ddf80b1c8c2c18804db012d" category="cell">90 Tage</block>
-  <block id="025025548582d3777fd0b072c16e2656" category="cell">13 Monaten</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">Single Sign On (SSO)</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">Vorhängeschloss</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Wenn bei der Verwendung von Cloud Insights ein Schloss-Symbol angezeigt wird <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>, Es bedeutet, dass die Funktion nicht in Ihrer aktuellen Edition verfügbar ist, oder ist in einer begrenzten Form. Upgrade für vollständigen Zugriff auf die Funktion.</block>
@@ -6042,14 +6040,9 @@
   <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">Bei AWS werden die Groß-/Kleinschreibung berücksichtigt, während die Groß-/Kleinschreibung von Cloud Insights nicht berücksichtigt wird. Wenn Sie also eine Annotation mit dem Namen „EIGENTÜMER“ in Cloud Insights und den Tags mit dem Namen „EIGENTÜMER“, „Eigentümer“ und „Eigentümer“ in S3 erstellen, werden alle S3-Varianten des „EIGENTÜMERS“ der Annotation von Cloud Insight zugeordnet.</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">Sie müssen jedes Child-Konto so konfigurieren, dass eine AWS Rolle zugewiesen wird, die es der Haupt-Account-ID ermöglicht, über das Kinder-Konto auf S3-Details zuzugreifen.</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">Best Practice: Es wird dringend empfohlen, dem S3-Hauptkonto die vordefinierte Richtlinie _AmazonS3ReadOnlyAccess_ zuzuweisen. Außerdem sollte dem in der Datenquelle konfigurierten Benutzer mindestens die vordefinierte Richtlinie _AWSOrganizationsReadOnlyAccess_ zugewiesen sein, um AWS abzufragen.</block>
-  <block id="4a4a6b257377a1be5e4488cf0a12459b" category="summary">Time-to-Live (TTL) und Downsampling erklärt</block>
-  <block id="ded51882afc1e18389057617d96454cb" category="doc">Time-to-Live (TTL)- und Downsampling-Daten</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">Da Cloud Insights Daten für einen festgelegten Zeitraum (pro Edition) speichert, können Tausende von Datenpunkten verarbeitet werden. Daten können daher vor der Anzeige in Diagrammen und Tabellen in einem Downsampling erfasst werden.</block>
-  <block id="9f006f2f14b484069511ef4a3f5315b3" category="section-title">Datenaufbewahrung (Live-Zeiten)</block>
   <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">Cloud Insights speichert die Daten für einen Zeitraum, der von der aktiven abonnierten Edition festgelegt wurde. Die Datenaufbewahrung wird auch als Time-to-Live oder TTL bezeichnet.</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">Ausgabe</block>
-  <block id="433a6d1dc9f59395173b9c44da198568" category="cell">TTL</block>
-  <block id="c6de11ce9bf3311bd827033947947ad4" category="paragraph">Bei Premium Edition-Abonnements mit mindestens 500 verwalteten Einheiten (MUs) werden auch Business Intelligence- und Reporting-Daten für den Zeitraum von 13 Monaten gespeichert.</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">Downsampling von Daten</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">*Downsampling* bietet eine statistische Angleichung Ihrer Daten in Diagrammen, so dass Sie einen effizienten Überblick über die Daten erhalten, ohne jeden Datenpunkt anzeigen zu müssen, und gleichzeitig eine genaue Ansicht Ihrer gesammelten Daten erhalten.</block>
   <block id="b75dadfce21049a86b69409a71f9d89d" category="section-title">Warum ist ein Downsampling erforderlich?</block>
@@ -12730,4 +12723,9 @@ Starten Sie Telegraf anschließend neu.</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Vor der Installation oder Aktualisierung des Bedieners</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Installieren des Überwachungsbedieners</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggregationInterval</block>
+  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">Time-to-Live (TTL) - d. h. Datenaufbewahrung und Downsampling werden erläutert</block>
+  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">Datenhaltung und Downsampling von Daten</block>
+  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">Datenaufbewahrung (auch bekannt als Time-to-Live)</block>
+  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 Tage</block>
+  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Bei Premium Edition-Abonnements mit mindestens 500 verwalteten Einheiten (Managed Units, Mus) werden Business Intelligence- und Reporting-Daten 13 Monate lang aufbewahrt.</block>
 </blocks>

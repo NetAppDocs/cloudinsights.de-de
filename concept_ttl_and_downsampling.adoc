@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_ttl_and_downsampling.html 
-summary: 'Time-to-Live (TTL) und Downsampling erklärt' 
-keywords: time-to-live, TTL, downsampling, downsample, 
+summary: 'Time-to-Live (TTL) - d. h. Datenaufbewahrung und Downsampling werden erläutert' 
+keywords: time-to-live, TTL, downsampling, downsample, retention 
 ---
-= Time-to-Live (TTL)- und Downsampling-Daten
+= Datenhaltung und Downsampling von Daten
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -23,23 +23,20 @@ Da Cloud Insights Daten für einen festgelegten Zeitraum (pro Edition) speichert
 
 
 
-== Datenaufbewahrung (Live-Zeiten)
+== Datenaufbewahrung (auch bekannt als Time-to-Live)
 
 Cloud Insights speichert die Daten für einen Zeitraum, der von der aktiven abonnierten Edition festgelegt wurde. Die Datenaufbewahrung wird auch als Time-to-Live oder TTL bezeichnet.
 
 |===
-| Ausgabe | TTL 
+| Ausgabe | Datenhaltung 
 
 
 | Basic | 7 Tage 
 
 
-| Standard | 90 Tage 
-
-
-| Premium | 13 Monaten 
+| Premium | 90 Tage 
 |===
-Bei Premium Edition-Abonnements mit mindestens 500 verwalteten Einheiten (MUs) werden auch Business Intelligence- und Reporting-Daten für den Zeitraum von 13 Monaten gespeichert.
+Bei Premium Edition-Abonnements mit mindestens 500 verwalteten Einheiten (Managed Units, Mus) werden Business Intelligence- und Reporting-Daten 13 Monate lang aufbewahrt.
 
 
 
