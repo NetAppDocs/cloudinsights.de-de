@@ -12507,7 +12507,6 @@ Die Cluster-CPU-Sättigung wird als Summe der CPU-Auslastung berechnet, geteilt 
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">Der Betreiber und die Datensammler werden von der Cloud Insights Docker Registry heruntergeladen. Nach der Installation verwaltet NKMO dann alle Operator-kompatiblen Kollektoren, die in den Kubernetes-Cluster-Knoten zur Datengewinnung bereitgestellt werden, einschließlich der Verwaltung des Lebenszyklus dieser Kollektoren. Nach dieser Kette werden die Daten von den Sammlern erfasst und an Cloud Insights gesendet.</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*Vor der Installation oder Aktualisierung*</block>
-  <block id="f8d86927776a602d23bcf32f5dc5ea76" category="admonition">Lesen Sie die <block ref="0b7fc724dd1c400c20e2b859e6c06230" category="inline-link-macro-rx"></block> Dokumentation vor der Installation oder dem Upgrade des NetApp Kubernetes Monitoring Operator.</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">Upgrade auf den aktuellen NetApp Kubernetes Monitoring Operator</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">Ermitteln Sie, ob eine AgentConfiguration bei dem vorhandenen Operator vorhanden ist (wenn Ihr Namespace nicht der Standardwert _netapp-Monitoring_ ist, ersetzen Sie den entsprechenden Namespace):</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">Wenn eine AgentConfiguration vorhanden ist:</block>
@@ -12726,4 +12725,12 @@ Rocky 8.x 64-Bit, Rocky 9.x 64-Bit, SELinux
 SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux unter SUSE 15 SP3
 
 Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">AnzuzeiEinblick in Aggregate</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">Wenn das zu überwachende Cluster benutzerdefinierte Ressourcen enthält, für die keine ClusterRole vorhanden ist <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>Sie müssen dem Bediener manuell Zugriff auf diese Ressourcen gewähren, um sie mit Ereignisprotokollen zu überwachen.</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Bearbeiten Sie _Operator-additional-permissions.yaml_ vor der Installation oder nach der Installation bearbeiten Sie die Ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Erstellen Sie eine neue Regel für die gewünschten apiGroups und Ressourcen mit den Verben ["get", "watch", "list"]. Siehe \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Übernehmen Sie die Änderungen auf das Cluster</block>
+  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">Lesen Sie die <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Dokumentation vor der Installation oder dem Upgrade des NetApp Kubernetes Monitoring Operator.</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">Ich vermisse _involvedobject_ Daten für einige Event Logs.</block>
+  <block id="67ee92e19812baa7cedb346320ca0182" category="cell">Stellen Sie sicher, dass Sie die Schritte im befolgt haben <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> Abschnitt oben.</block>
 </blocks>

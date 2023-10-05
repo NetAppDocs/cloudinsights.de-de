@@ -193,6 +193,17 @@ OpenShift kann zusätzliche Sicherheitsstufen implementieren, die den Zugriff au
 
 
 
+=== Berechtigungen
+
+Wenn das zu überwachende Cluster benutzerdefinierte Ressourcen enthält, für die keine ClusterRole vorhanden ist link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["AnzuzeiEinblick in Aggregate"]Sie müssen dem Bediener manuell Zugriff auf diese Ressourcen gewähren, um sie mit Ereignisprotokollen zu überwachen.
+
+. Bearbeiten Sie _Operator-additional-permissions.yaml_ vor der Installation oder nach der Installation bearbeiten Sie die Ressource _ClusterRole/<namespace>-additional-permissions_
+. Erstellen Sie eine neue Regel für die gewünschten apiGroups und Ressourcen mit den Verben ["get", "watch", "list"]. Siehe \https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. Übernehmen Sie die Änderungen auf das Cluster
+
+
+
+
 === Toleranzen und Verfleckungen
 
 Die DemonSets _telegraf_, _Fluent-Bit_ und _net-Observer_ müssen einen Pod auf jedem Knoten in Ihrem Cluster planen, um Daten auf allen Knoten korrekt zu erfassen. Der Operator wurde so konfiguriert, dass er einige bekannte *Fehler* toleriert. Wenn Sie auf Ihren Nodes benutzerdefinierte Taints konfiguriert haben und damit verhindern, dass Pods auf jedem Knoten ausgeführt werden, können Sie für diese Taints eine *Toleration* erstellen link:telegraf_agent_k8s_config_options.html["In der _AgentConfiguration_"]. Wenn Sie auf alle Nodes im Cluster benutzerdefinierte Taints angewendet haben, müssen Sie der Operator-Bereitstellung auch die erforderlichen Toleranzen hinzufügen, damit der Operator-Pod geplant und ausgeführt werden kann.

@@ -32,7 +32,7 @@ Der Betreiber und die Datensammler werden von der Cloud Insights Docker Registry
 == Vor der Installation des NetApp Kubernetes Monitoring Operator
 
 
-IMPORTANT: Lesen Sie die link:/pre-requisites_for_k8s_operator.html["*Vor der Installation oder Aktualisierung*"] Dokumentation vor der Installation oder dem Upgrade des NetApp Kubernetes Monitoring Operator.
+IMPORTANT: Lesen Sie die link:pre-requisites_for_k8s_operator.html["*Vor der Installation oder Aktualisierung*"] Dokumentation vor der Installation oder dem Upgrade des NetApp Kubernetes Monitoring Operator.
 
 
 
@@ -523,5 +523,8 @@ Timeout = „10s“
 ...
 
 Starten Sie Telegraf anschließend neu. 
+
+
+| Ich vermisse _involvedobject_ Daten für einige Event Logs. | Stellen Sie sicher, dass Sie die Schritte im befolgt haben link:pre-requisites_for_k8s_operator.html["Berechtigungen"] Abschnitt oben. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
