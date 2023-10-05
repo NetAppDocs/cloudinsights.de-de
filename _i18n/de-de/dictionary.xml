@@ -10367,18 +10367,6 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Symbole für die Kubernetes-Netzwerkleistungsüberwachung und -Zuordnung:</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks, Breite=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c21ecdc3b22488b71dfec9e5360e46ce" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
-
-Red hat Enterprise Linux 7.x, 8.x 64-Bit, SELinux
-CentOS 7.x 64-Bit, SELinux
-CentOS 8 Stream, SELinux
-Ubuntu 20 bis 22 64-Bit
-Rocky 8.x 64-Bit, Rocky 9.x 64-Bit, SELinux
-SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux unter SUSE 15 SP3
-
-Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
-
-SE (Security Enhanced) Linux wird nicht unterstützt.</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">Löschen Sie die Daten nach Ablauf der Aufbewahrungsfrist (Details finden Sie auf der Seite „Editionen“). Beachten Sie, dass der Monitor keine Auflösungsbedingung per Definition hat. Daher bleibt eine Warnung _aktiv_ und unterdrückt alle nachfolgenden Warnungen mit übereinstimmenden _Group_by_, die von diesem Monitor erstellt wurden, bis die Aufbewahrungsfrist für Daten abgelaufen ist.</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Auflösen anhand von Protokolleingaben: Warnung auflösen, wenn die Protokollzeile wie in der folgenden Definition beschrieben erkannt wird, oder nach Ablauf der Aufbewahrungsfrist löschen.</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB-Protokollversion 3.1 und früher.  Workload Security funktioniert nicht in SMB-Konfigurationen, die FlexCache verwenden. Bei Systemen mit FlexCache ab ONTAP 9.7 wird FPolicy nur in einer NFS-Umgebung unterstützt.</block>
@@ -12728,4 +12716,14 @@ Starten Sie Telegraf anschließend neu.</block>
   <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">Datenaufbewahrung (auch bekannt als Time-to-Live)</block>
   <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 Tage</block>
   <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Bei Premium Edition-Abonnements mit mindestens 500 verwalteten Einheiten (Managed Units, Mus) werden Business Intelligence- und Reporting-Daten 13 Monate lang aufbewahrt.</block>
+  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
+
+Red hat Enterprise Linux 7.x, 8.x 64-Bit, SELinux
+CentOS 7.x 64-Bit, SELinux
+CentOS 8 Stream, SELinux
+Ubuntu 20 bis 22 64-Bit
+Rocky 8.x 64-Bit, Rocky 9.x 64-Bit, SELinux
+SUSE Linux Enterprise Server 15 SP3, SUSE Linux Enterprise Server 15 SP4, SELinux unter SUSE 15 SP3
+
+Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
 </blocks>
