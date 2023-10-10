@@ -53,7 +53,7 @@ NOTE: Wenn Sie zusätzliche Zeit benötigen, um Cloud Insights zu testen. Ihre T
 
 
 
-== Testversion über AWS Marketplace
+=== Testversion über AWS Marketplace
 
 Sie können sich zudem über den AWS Marketplace für eine kostenlose Testversion anmelden. Mit der kostenlosen Testversion von AWS Marketplace haben Sie 33 Tage lang Zugriff auf Cloud Insights, maximal 499 Tage <<pricing,Verwaltete Einheiten>> (Mus).
 
@@ -63,9 +63,41 @@ Die kostenlose Testversion von AWS Marketplace kann nicht erweitert werden. Sie 
 
 
 
-=== Was ist, wenn meine Testversion abgelaufen ist?
+==== Was ist, wenn meine Testversion abgelaufen ist?
 
 Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Cloud Insights angemeldet haben, haben Sie bis zur Anmeldung nur begrenzte Funktionen.
+
+
+
+== Modulversuche
+
+Demnächst Hier!
+
+
+NOTE: Modultest gilt als Vorschau-Funktion und kann daher geändert werden.
+
+Zusätzlich zu Ihrer ersten Cloud Insights-Testversion können Sie auch *Modulversuche* nutzen. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes zu Ihrer Umgebung hinzufügen, können Sie automatisch eine 30-Tage-Testversion von Kubernetes Observability starten, sobald Sie den NetApp Kubernetes Monitoring Operator installieren. Ihnen wird am Ende des Testzeitraums nur die Nutzung Ihrer von Kubernetes Observability gemanagten Einheit in Rechnung gestellt.
+
+
+NOTE: Denken Sie daran, dass Ihnen nach dem Testzeitraum eine Gebühr für die Nutzung neuer verwalteter Einheiten (Managed Unit, MU) berechnet wird. Planen Sie daher entsprechend. Wenn Ihre Modulversuchs beendet ist, werden Sie benachrichtigt, wenn Sie weitere Mus hinzufügen müssen, um Serviceunterbrechungen zu vermeiden.
+
+Sie können die Nutzung Ihrer verwalteten Einheit auf der Seite *Admin > Abonnement* auf der Registerkarte *Nutzung* überwachen.
+
+image:Module_Trials_UsageTab.png["Bildschirm „ME-Nutzung“"]
+
+
+
+=== Kalkulator
+
+Während einer Modulversuchs wird die ME-Nutzung für Ressourcen, die für das Modul verbraucht werden, nicht geändert. aber Sie können den *Estimator* (auf der _Summary_ Registerkarte) öffnen, um zu sehen, wie Mus nach der Testversion geladen werden, sowie mit "Was wäre wenn"-Szenarien mit der Anzahl der Mus spielen, die Sie in Zukunft benötigen. Setzen Sie die Zahlen zurück, indem Sie den Kalkulator beenden.
+
+image:Module_Trials_Estimator.png["Kalkulator"]
+
+Aktivieren Sie das Kontrollkästchen neben einem Modul, um die gesamten ME des Moduls zu den geschätzten Kosten hinzuzufügen oder zu entfernen.
+
+Mit dem Kalkulator können Sie außerdem sehen, wie die Zahlen für ein Add-On, bei dem Sie Ihre aktuelle Abonnementdauer beibehalten und die Anzahl der lizenzierten verwalteten Einheiten erhöhen, oder für ein Verlängerungsabonnement, das Sie beim Kauf Ihres aktuellen Abonnements erwerben würden, gestapelt werden Laufzeit endet.
+
+Beachten Sie, dass Kunden nur einmal pro Abonnement für eine Modulversion berechtigt sind.
 
 
 

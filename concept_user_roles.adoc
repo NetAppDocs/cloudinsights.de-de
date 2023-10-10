@@ -263,3 +263,20 @@ Aktivieren Sie jedoch die automatische Bereitstellung von _SSO-Benutzern_ nicht,
 * Ihr Unternehmen verfügt über mehr als einen Cloud Insights-Mandanten
 * Ihr Unternehmen möchte nicht, dass jeder Benutzer in der föderierten Domäne einen gewissen automatischen Zugriff auf den Cloud Insights-Mandanten hat. _Zu diesem Zeitpunkt verfügen wir nicht über die Möglichkeit, Gruppen zu nutzen, um den Rollenzugriff mit dieser Option_ zu steuern.
 
+
+
+
+== Einschränken des Zugriffs nach Domäne
+
+Cloud Insights kann den Benutzerzugriff auf die von Ihnen angegebenen Domänen beschränken. Wählen Sie auf der Seite *Admin > User Management* die Option "Domains einschränken" aus.
+
+image:Restrict_Domains_Modal.png["Beschränken von Domänen auf Standarddomänen, Standarddomänen und zusätzliche Domänen, die Sie angeben, oder keine Einschränkungen"]
+
+Ihnen werden folgende Auswahlmöglichkeiten angezeigt:
+
+* Keine Einschränkungen: Cloud Insights bleibt Benutzern unabhängig von ihrer Domain zugänglich.
+* Beschränken Sie den Zugriff auf Standarddomänen: Standarddomänen sind die, die von Ihren Cloud Insights-Umgebungs-Kontoeigentümern verwendet werden. Diese Domains sind immer zugänglich.
+* Beschränken Sie den Zugriff auf die von Ihnen angegebenen Standardwerte und Domänen. Führen Sie alle Domänen auf, die Sie Zugriff auf Ihre Cloud Insights-Umgebung haben möchten, zusätzlich zu den Standarddomänen.
+
+
+image:Restrict_Domains_Tooltip.png[""]
