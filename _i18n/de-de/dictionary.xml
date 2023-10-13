@@ -3643,11 +3643,8 @@
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Der Preis für Cloud Insights ist pro *verwaltete Einheit*. Die Nutzung Ihrer verwalteten Einheiten wird anhand der Anzahl der *Hosts oder virtuellen Maschinen* und der Menge der *unformatierten Kapazität* berechnet, die in Ihrer Infrastrukturumgebung verwaltet wird.</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 Managed Unit = 2 Hosts (jede virtuelle oder physische Maschine)</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 Managed Unit = 4 tib unformatierte Kapazität physischer oder virtueller Festplatten</block>
-  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">Beachten Sie, dass die folgenden Datensammler mit einem anderen Raw tib zur Managed Unit-Rate gemessen werden. Alle 40 tib unformatierten Kapazitäten auf diesen Datensammlern werden als 1 Managed Unit (MU) geladen:</block>
-  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform</block>
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
-  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID</block>
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">Unten</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder erwartet werden, haben Sie Anspruch auf *Volumenrabatte* und werden dazu aufgefordert, sich an den NetApp Vertrieb zu wenden. Siehe <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> Entnehmen.</block>
   <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">Schätzen Sie Ihre Abonnementkosten Ein</block>
@@ -9621,7 +9618,6 @@
   <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
 <block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">Das Dashboard *Übersicht* zeigt nützliche Informationen wie die Anzahl der Cluster in Ihrer Umgebung mit ihrer Gesamtkapazität und ihren Prozentwerten an Performance an. Außerdem werden Prognosedaten zur Anzahl der erwarteten Tage angezeigt, bis ihnen die Storage-Kapazität oder Performance-Kapazität nicht mehr genügend Speicherplatz zur Verfügung steht. Außerdem, wenn Controller in Ihrer Infrastruktur mit einer CPU von mehr als 65 % laufen - wodurch Ihr Cluster möglicherweise im Falle eines Failovers gefährdet wird - zeigt ONTAP Essentials diese als „Hot“ Controller an.</block>
   <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">Frage</block>
   <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">Antwort</block>
@@ -10250,8 +10246,6 @@
   <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">Sie können sich zudem über den AWS Marketplace für eine kostenlose Testversion anmelden. Mit der kostenlosen Testversion von AWS Marketplace haben Sie 33 Tage lang Zugriff auf Cloud Insights, maximal 499 Tage <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> (Mus).</block>
   <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">Die kostenlose Testversion von AWS Marketplace kann nicht erweitert werden. Sie können jederzeit während der Testversion auf ein Cloud Insights-Abonnement für die Basisversion herunterstufen oder auf ein kostenpflichtiges Cloud Insights-Abonnement wechseln, indem Sie die Seite *Admin -&gt; Abonnement* aufrufen.</block>
   <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">Um sich zu registrieren, gehen Sie zu *Admin -&gt; Abonnement*. Zusätzlich zu den Schaltflächen *Abonnieren* können Sie Ihre installierten Datensammler sehen und Ihre geschätzten Preise berechnen. In einer typischen Umgebung können Sie auf die Schaltfläche Self-Service AWS Marketplace klicken. Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder davon erwartet werden, haben Sie ein Anrecht auf Volume Pricing.</block>
-  <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Cohesity SmartFiles</block>
-  <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC Data Domain</block>
   <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">Ihre geschätzten Listenkosten ändern sich abhängig von Ihrem Abonnementzeitraum.
 HINWEIS: Die Rechner dienen nur zur Schätzung. Die genaue Preisgestaltung wird bei der Anmeldung festgelegt.</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">Abonnementseite mit Kostenkalkulationsrechnern für Infrastruktur und Kubernetes</block>
@@ -12756,4 +12750,5 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">Beschränken Sie den Zugriff auf Standarddomänen: Standarddomänen sind die, die von Ihren Cloud Insights-Umgebungs-Kontoeigentümern verwendet werden. Diese Domains sind immer zugänglich.</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">Beschränken Sie den Zugriff auf die von Ihnen angegebenen Standardwerte und Domänen. Führen Sie alle Domänen auf, die Sie Zugriff auf Ihre Cloud Insights-Umgebung haben möchten, zusätzlich zu den Standarddomänen.</block>
   <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a67db23e86df970f58242b726cddbe4" category="list-text">1 Managed Unit = 40 tib unformatierte Kapazität ausgewählter sekundärer Speicher: AWS S3, Cohesity SmartFiles, Dell EMC Data Domain, Dell EMC ECS, Hitachi Content Platform, IBM Cleversafe, NetApp StorageGRID.</block>
 </blocks>
