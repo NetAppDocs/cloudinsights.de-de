@@ -526,5 +526,8 @@ Starten Sie Telegraf anschließend neu.
 
 
 | Ich vermisse _involvedobject_ Daten für einige Event Logs. | Stellen Sie sicher, dass Sie die Schritte im befolgt haben link:pre-requisites_for_k8s_operator.html["Berechtigungen"] Abschnitt oben. 
+
+
+| Wieso werden zwei Monitoring Operator Pods ausgeführt, einer mit dem Namen netapp-CI-Monitoring-Operator-<pod> und der andere mit dem Namen Monitoring-Operator-<pod>? | Ab dem 12. Oktober 2023 hat Cloud Insights den Betreiber refaktorisiert, um unseren Nutzern besser zu dienen. Damit diese Änderungen vollständig übernommen werden, müssen Sie dies tun <<uninstalling,Entfernen Sie den alten Bediener>> Und <<installing-the-netapp-kubernetes-monitoring-operator,Installieren Sie den neuen>>. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

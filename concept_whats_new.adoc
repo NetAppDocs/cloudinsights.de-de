@@ -25,6 +25,35 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== Oktober 2023
+
+
+
+=== Modulversuche
+
+Zusätzlich zu Ihrer ersten Testversion von Cloud Insights können Sie von diesen Funktionen profitieren link:/concept_subscribing_to_cloud_insights.html#module-trials["Modulversuche"]. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes in Ihre Umgebung integrieren möchten, können Sie automatisch für eine 30-Tage-Testversion von Kubernetes Observability starten. Ihnen wird am Ende des Testzeitraums nur die Nutzung Ihrer von Kubernetes Observability gemanagten Einheit in Rechnung gestellt.
+
+
+
+=== Beschränken Sie den Zugriff auf bestimmte Domänen
+
+Administratoren und Kontoinhaber haben jetzt die Möglichkeit, dies zu erreichen link:/concept_user_roles.html#restricting-access-by-domain["Einschränken des Cloud Insights-Zugriffs"] E-Mail-Domänen, die sie angeben. Gehen Sie zu *Admin > User Management* und wählen Sie die Schaltfläche _Domains einschränken_.
+
+image:Restrict_Domains_Modal.png["Modal Der Domänen Einschränken"]
+
+
+
+=== Updates Für Data Collector
+
+Die folgenden Änderungen an der Data Collector/Acquisition Unit sind vorhanden:
+
+* *Isilon / PowerScale REST*: Unter dem Namen _emc_isilon.node_pool.*_ wurden verschiedene neue Attribute und Kennzahlen zu den erweiterten Analysefunktionen von Cloud Insights hinzugefügt. Mit diesen Zählern und Attributen können Benutzer Dashboards und Monitore für den Kapazitätsverbrauch von _Node_Pool_ erstellen. Benutzer mit Isilon-Clustern, die aus unterschiedlichen Hardware-Node-Modellen erstellt wurden, verfügen über mehrere Node-Pools. Das Verständnis der HDD-/SSD-/Gesamtkapazität auf Node-Pool-Ebene ist sowohl für die Überwachung als auch für die Planung von Nutzen.
+* *Rubrik* "Dienstkonto" Authentifizierungsunterstützung: Cloud Insights' Rubik-Kollektor unterstützt jetzt sowohl die traditionelle HTTP-Basisauthentifizierung (Benutzername und Passwort), als auch den Dienst-Account-Ansatz von Rubrik, der einen Benutzernamen + Schlüssel + Organisations-ID erfordert.
+
+
+'''
+
+
 == September 2023
 
 
