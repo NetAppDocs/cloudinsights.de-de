@@ -31,13 +31,13 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 === Modulversuche
 
-Zusätzlich zu Ihrer ersten Testversion von Cloud Insights können Sie von diesen Funktionen profitieren link:/concept_subscribing_to_cloud_insights.html#module-trials["Modulversuche"]. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes in Ihre Umgebung integrieren möchten, können Sie automatisch für eine 30-Tage-Testversion von Kubernetes Observability starten. Ihnen wird am Ende des Testzeitraums nur die Nutzung Ihrer von Kubernetes Observability gemanagten Einheit in Rechnung gestellt.
+Zusätzlich zu Ihrer ersten Testversion von Cloud Insights können Sie von diesen Funktionen profitieren link:concept_subscribing_to_cloud_insights.html#module-trials["Modulversuche"]. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes in Ihre Umgebung integrieren möchten, können Sie automatisch für eine 30-Tage-Testversion von Kubernetes Observability starten. Ihnen wird am Ende des Testzeitraums nur die Nutzung Ihrer von Kubernetes Observability gemanagten Einheit in Rechnung gestellt.
 
 
 
 === Beschränken Sie den Zugriff auf bestimmte Domänen
 
-Administratoren und Kontoinhaber haben jetzt die Möglichkeit, dies zu erreichen link:/concept_user_roles.html#restricting-access-by-domain["Einschränken des Cloud Insights-Zugriffs"] E-Mail-Domänen, die sie angeben. Gehen Sie zu *Admin > User Management* und wählen Sie die Schaltfläche _Domains einschränken_.
+Administratoren und Kontoinhaber haben jetzt die Möglichkeit, dies zu erreichen link:concept_user_roles.html#restricting-access-by-domain["Einschränken des Cloud Insights-Zugriffs"] E-Mail-Domänen, die sie angeben. Gehen Sie zu *Admin > User Management* und wählen Sie die Schaltfläche _Domains einschränken_.
 
 image:Restrict_Domains_Modal.png["Modal Der Domänen Einschränken"]
 
