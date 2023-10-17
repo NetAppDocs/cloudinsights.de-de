@@ -42,7 +42,7 @@ Schritte
  /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 . Dieses Skript erfordert die Installation von _sshapass_ auf dem linux-Rechner. Es gibt zwei Möglichkeiten, es zu installieren:
 +
-.. Führen Sie den Befehl „Fiolwing“ aus:
+.. Führen Sie den folgenden Befehl aus:
 +
  linux_prompt> yum install sshpass
 .. Wenn das nicht funktioniert, laden Sie _sshapass_ aus dem Internet auf den linux-Rechner herunter, und führen Sie den folgenden Befehl aus:
@@ -61,7 +61,7 @@ Jeder ONTAP SVM Data Collector kann einer einzelnen SVM zugeordnet werden. Dies 
 
 Beachten Sie Folgendes:
 
-A) Verwenden Sie diese Tabelle als allgemeinen Leitfaden zur Größenbestimmung:
+A) Verwenden Sie diese Tabelle als allgemeinen Leitfaden zur Größenbemessung. Sie können die Anzahl der Kerne und/oder des Speichers erhöhen, um die Anzahl der unterstützten Datensammler zu erhöhen, bis zu maximal 50 Datensammler:
 
 |===
 
