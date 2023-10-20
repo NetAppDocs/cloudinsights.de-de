@@ -6036,7 +6036,6 @@
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">Sie müssen jedes Child-Konto so konfigurieren, dass eine AWS Rolle zugewiesen wird, die es der Haupt-Account-ID ermöglicht, über das Kinder-Konto auf S3-Details zuzugreifen.</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">Best Practice: Es wird dringend empfohlen, dem S3-Hauptkonto die vordefinierte Richtlinie _AmazonS3ReadOnlyAccess_ zuzuweisen. Außerdem sollte dem in der Datenquelle konfigurierten Benutzer mindestens die vordefinierte Richtlinie _AWSOrganizationsReadOnlyAccess_ zugewiesen sein, um AWS abzufragen.</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">Da Cloud Insights Daten für einen festgelegten Zeitraum (pro Edition) speichert, können Tausende von Datenpunkten verarbeitet werden. Daten können daher vor der Anzeige in Diagrammen und Tabellen in einem Downsampling erfasst werden.</block>
-  <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">Cloud Insights speichert die Daten für einen Zeitraum, der von der aktiven abonnierten Edition festgelegt wurde. Die Datenaufbewahrung wird auch als Time-to-Live oder TTL bezeichnet.</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">Ausgabe</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">Downsampling von Daten</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">*Downsampling* bietet eine statistische Angleichung Ihrer Daten in Diagrammen, so dass Sie einen effizienten Überblick über die Daten erhalten, ohne jeden Datenpunkt anzeigen zu müssen, und gleichzeitig eine genaue Ansicht Ihrer gesammelten Daten erhalten.</block>
@@ -12701,11 +12700,6 @@ Starten Sie Telegraf anschließend neu.</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Vor der Installation oder Aktualisierung des Bedieners</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Installieren des Überwachungsbedieners</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggregationInterval</block>
-  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">Time-to-Live (TTL) - d. h. Datenaufbewahrung und Downsampling werden erläutert</block>
-  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">Datenhaltung und Downsampling von Daten</block>
-  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">Datenaufbewahrung (auch bekannt als Time-to-Live)</block>
-  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90 Tage</block>
-  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">Bei Premium Edition-Abonnements mit mindestens 500 verwalteten Einheiten (Managed Units, Mus) werden Business Intelligence- und Reporting-Daten 13 Monate lang aufbewahrt.</block>
   <block id="fc053bcc2bca8112838f33be578f7479" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
 
 Red hat Enterprise Linux 7.x, 8.x 64-Bit, SELinux
@@ -12766,4 +12760,10 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">Administratoren und Kontoinhaber haben jetzt die Möglichkeit, dies zu erreichen <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> E-Mail-Domänen, die sie angeben. Gehen Sie zu *Admin &gt; User Management* und wählen Sie die Schaltfläche _Domains einschränken_.</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">Rollen und Regeln</block>
   <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">Für diesen Cloud Insights-Collector ist ein ONTAP-Benutzer mit der Rolle _Filesystem-scoped_ erforderlich. Bitte sehen Sie sich die AWS durchsehen <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> Dokumentation für verfügbare Optionen. AWS unterstützt derzeit nur eine Art Benutzerrolle mit Filesystem Scope, nämlich _fsxadmin_. Dies ist die geeignete Rolle, die für den Cloud Insights-Collector verwendet werden soll.</block>
+  <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">Erläuterung der Datenaufbewahrungszeiten und Downsampling</block>
+  <block id="2acd8b96cc968efd569f0e0169390b9b" category="doc">Datenhaltung und Downsampling von Daten</block>
+  <block id="8221571bdb4085e5cf8534456c5e5750" category="paragraph">Cloud Insights speichert die Daten für einen Zeitraum, der von der aktiven abonnierten Edition festgelegt wurde.</block>
+  <block id="025025548582d3777fd0b072c16e2656" category="cell">13 Monaten</block>
+  <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">Editionen und Preise</block>
+  <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Eine vollständige Liste der in jeder Edition verfügbaren Funktionen ist im Cloud Insights verfügbar <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> Seite.</block>
 </blocks>
