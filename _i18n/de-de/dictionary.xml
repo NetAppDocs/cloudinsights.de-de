@@ -12765,4 +12765,6 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">Wählen Sie _Storage_ aus der Dropdown-Liste aus.</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">Klicken Sie auf das Zahnrad und fügen Sie _isActive_ als Spalte hinzu.</block>
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Zeilen, die eine Prüfung anzeigen, sind aktiv. „X“ zeigt inaktive Geräte an.</block>
+  <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Bestandsaufnahme Aktu. Status: Unerwartete Daten abgerufen -Array hat 0 Volumen gemeldet</block>
+  <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">Zeigt in der Regel ein Autorisierungsproblem (nicht die Authentifizierung) an. Stellen Sie sicher, dass Ihre Anmeldeinformationen korrekt sind und dass der Benutzername die Möglichkeit hat, alle Volumes aufzulisten und ihre Attribute anzuzeigen.</block>
 </blocks>

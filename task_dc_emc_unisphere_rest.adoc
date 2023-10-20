@@ -95,5 +95,8 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 
 | Fehler: Benutzerauthentifizierung fehlgeschlagen. | Stellen Sie sicher, dass Ihre Anmeldeinformationen für dieses Gerät korrekt sind. 
+
+
+| Bestandsaufnahme Aktu. Status: Unerwartete Daten abgerufen -Array hat 0 Volumen gemeldet | Zeigt in der Regel ein Autorisierungsproblem (nicht die Authentifizierung) an. Stellen Sie sicher, dass Ihre Anmeldeinformationen korrekt sind und dass der Benutzername die Möglichkeit hat, alle Volumes aufzulisten und ihre Attribute anzuzeigen. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
