@@ -24,11 +24,10 @@ Die Ermittlung der vorhandenen und von wem verwendeten Ressourcen ist entscheide
 Führen Sie die folgenden Schritte aus, um inaktive Assets zu identifizieren.
 
 .Schritte
-. Klicken Sie im Menü Cloud Insights auf *Abfragen > Neue Abfrage*
-. Im `Search For` Wählen Sie im Menü den Asset-Typ aus, den Sie abfragen möchten
-. Klicken Sie Auf *+ > Ist Aktiv*
-. Klicken Sie auf *Any* und ändern Sie es in *Nein*
+* Navigieren Sie zu *Explore -> +New Metric Query*.
+* Wählen Sie _Storage_ aus der Dropdown-Liste aus.
+* Klicken Sie auf das Zahnrad und fügen Sie _isActive_ als Spalte hinzu.
 +
-Das System zeigt eine Liste der inaktiven Assets des ausgewählten Gerätetyps an.
+Zeilen, die eine Prüfung anzeigen, sind aktiv. „X“ zeigt inaktive Geräte an.
 
 
