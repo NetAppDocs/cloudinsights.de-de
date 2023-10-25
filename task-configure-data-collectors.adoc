@@ -32,7 +32,7 @@ Sie konfigurieren Datensammler in Ihrer Cloud Insights-Umgebung, um Daten von Ge
 +
 Das System zeigt die verfügbaren Datensammler an, die nach Hersteller geordnet sind.
 
-. Klicken Sie auf *+ Collector* auf dem gewünschten Anbieter und wählen Sie den zu konfigurierenden Datensammler aus.
+. Klicken Sie auf *+ Collector*, und wählen Sie den zu konfigurierenden Data Collector aus.
 +
 Im Dialogfeld können Sie den Datensammler konfigurieren und eine Erfassungseinheit hinzufügen.
 
