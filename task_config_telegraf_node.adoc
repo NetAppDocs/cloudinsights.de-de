@@ -25,7 +25,7 @@ Cloud Insights sammelt Kennzahlen von dem Knoten, auf dem Sie einen Agent instal
 
 == Installation
 
-. Wählen Sie unter *Admin > Data Collectors* ein Betriebssystem/eine Plattform aus. Beachten Sie, dass durch die Installation eines Datensammlers für die Integration (Kubernetes, Docker, Apache usw.) auch die Erfassung von Node-Daten konfiguriert wird.
+. Wählen Sie unter *Observability > Collectors* ein Betriebssystem/eine Plattform aus. Beachten Sie, dass durch die Installation eines Datensammlers für die Integration (Kubernetes, Docker, Apache usw.) auch die Erfassung von Node-Daten konfiguriert wird.
 . Befolgen Sie die Anweisungen, um den Agenten zu konfigurieren. Die Anweisungen hängen vom Betriebssystem oder der Plattform ab, die Sie zur Datenerfassung verwenden.
 
 

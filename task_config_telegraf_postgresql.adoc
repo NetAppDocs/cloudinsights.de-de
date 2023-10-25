@@ -25,7 +25,7 @@ Cloud Insights verwendet diesen Datensammler, um Metriken aus PostgreSQL zu samm
 
 == Installation
 
-. Klicken Sie in *Admin > Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option PostgreSQL.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option PostgreSQL.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

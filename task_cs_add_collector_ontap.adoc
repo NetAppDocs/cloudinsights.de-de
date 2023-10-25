@@ -32,7 +32,7 @@ Sie benötigen die folgenden Informationen, um diesen Datensammler zu konfigurie
 
 .Schritte zur Konfiguration
 . Melden Sie sich als Administrator oder Account-Inhaber an Ihrer Workload Security-Umgebung an.
-. Klicken Sie Auf *Admin > Datensammler > +Datensammler*
+. Klicken Sie Auf *Observability > Collectors > +Data Collectors*
 +
 Das System zeigt die verfügbaren Datensammler an.
 
@@ -49,7 +49,7 @@ Das System zeigt die Konfigurationsseite Data Collector: ONTAP SVM hinzufügen a
 
 
 .Nachdem Sie fertig sind
-* Klicken Sie auf *Admin > Data Collectors*, um den Status des von Ihnen konfigurierten Collectors zu überprüfen.
+* Klicken Sie auf *Workload Security > Collectors*, um den Status des konfigurierten Collectors zu überprüfen.
 +
 Es liegt normalerweise eine Verzögerung vor der Anzeige des Kollektorstatus vor.
 

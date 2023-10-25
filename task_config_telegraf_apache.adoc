@@ -31,7 +31,7 @@ Dieser Datensammler ermöglicht die Erfassung von Daten von Apache-Servern in Ih
 
 == Installation
 
-. Klicken Sie in *Admin > Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Apache aus.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Apache aus.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

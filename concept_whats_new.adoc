@@ -2623,7 +2623,7 @@ Wenn Sie die folgenden Datensammler konfigurieren, können Sie filtern, virtuell
 
 === Datensammler Zur Massenbearbeitung
 
-* Sie können Informationen für mehrere Datensammler gleichzeitig bearbeiten. Wählen Sie auf der Seite *Admin > Data Collectors* die zu ändernden Datensammler aus, indem Sie das Kästchen links neben jedem aktivieren und auf die Schaltfläche *Massenaktionen* klicken. Wählen Sie *Bearbeiten* und ändern Sie die erforderlichen Felder.
+* Sie können Informationen für mehrere Datensammler gleichzeitig bearbeiten. Wählen Sie auf der Seite *Observability > Collectors* die zu ändernden Datensammler aus, indem Sie das Kontrollkästchen links von jedem aktivieren und auf die Schaltfläche *Massenaktionen* klicken. Wählen Sie *Bearbeiten* und ändern Sie die erforderlichen Felder.
 +
 Die ausgewählten Datensammler müssen derselbe Anbieter und dasselbe Modell sein und sich auf derselben Akquisitionseinheit befinden.
 

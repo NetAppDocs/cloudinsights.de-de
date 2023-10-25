@@ -42,7 +42,7 @@ Hinweis: Ignorieren Sie diesen Schritt, wenn sich alle zugehörigen Kollektoren 
 sudo /opt/netapp/cloudsecure/agent/install/cloudsecure-agent-uninstall.sh
 Uninstall CloudSecure Agent? [y|N]:
 ....
-. Klicken Sie Auf *Admin > Datensammler > Agenten*
+. Klicken Sie Auf *Workload-Sicherheit > Collectors > Agents*
 +
 Das System zeigt die Liste der konfigurierten Agenten an.
 

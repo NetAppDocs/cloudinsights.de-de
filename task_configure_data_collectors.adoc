@@ -40,7 +40,7 @@ Die Daten-Collector-Anmeldeinformationen werden verschlüsselt, wenn sie in Clou
 
 == Konfigurieren des Data Collectors
 
-* Klicken Sie im Menü Cloud Insights auf *Admin > Datensammler* und klicken Sie auf die Schaltfläche *+ Data Collector*. Sie können alle Datensammler anzeigen oder filtern, um nur die Datensammler anzuzeigen, die Ihnen auf Grundlage Ihres Abonnements zur Verfügung stehen.
+* Klicken Sie im Menü Cloud Insights auf *Observability > Collectors* und klicken Sie auf die Schaltfläche *+ Data Collector*. Sie können alle Datensammler anzeigen oder filtern, um nur die Datensammler anzuzeigen, die Ihnen auf Grundlage Ihres Abonnements zur Verfügung stehen.
 
 
 * Je nach gewähltem Datensammlungstyp variieren die Installationsschritte.

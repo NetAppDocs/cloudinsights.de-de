@@ -28,7 +28,7 @@ Sie konfigurieren Datensammler in Ihrer Cloud Insights-Umgebung, um Daten von Ge
 
 
 .Schritte
-. Klicken Sie im Menü Cloud Insights auf *Admin > Datensammler*
+. Klicken Sie im Menü Cloud Insights auf *Observability > Collectors*
 +
 Das System zeigt die verfügbaren Datensammler an, die nach Hersteller geordnet sind.
 

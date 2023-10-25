@@ -25,7 +25,7 @@ Cloud Insights verwendet diesen Datensammler, um Kennzahlen von Kibana zu sammel
 
 == Installation
 
-. Klicken Sie in *Admin > Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Kibana.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Kibana.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

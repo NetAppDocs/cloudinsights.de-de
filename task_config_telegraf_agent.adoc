@@ -43,7 +43,7 @@ Wenn Sie einen Service Data Collector installieren und noch keinen Agent konfigu
 Um einen Agent zu installieren, müssen Sie, unabhängig von der verwendeten Plattform, zunächst die folgenden Schritte ausführen:
 
 . Melden Sie sich beim Host an, den Sie für Ihren Agenten verwenden werden.
-. Melden Sie sich auf Ihrer Cloud Insights-Website an und gehen Sie zu *Admin > Datensammler*.
+. Melden Sie sich in Ihrer Cloud Insights-Umgebung an und navigieren Sie zu *Observability > Collectors*.
 . Klicken Sie auf *+Data Collector* und wählen Sie einen zu installierenden Datensammler aus.
 . Wählen Sie die passende Plattform für Ihren Host (Windows, Linux)
 . Befolgen Sie die verbleibenden Schritte für jede Plattform.

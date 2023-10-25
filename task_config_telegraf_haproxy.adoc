@@ -25,7 +25,7 @@ Cloud Insights verwendet diese Datensammlung, um Kennzahlen von HAProxy zu erfas
 
 == Installation
 
-. Klicken Sie in *Admin > Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option HAProxy.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option HAProxy.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

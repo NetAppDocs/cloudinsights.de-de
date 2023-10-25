@@ -25,7 +25,7 @@ Cloud Insights verwendet diesen Datensammler, um Kennzahlen von RethinkDB zu sam
 
 == Installation
 
-. Klicken Sie in *Admin > Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option RethinkDB.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option RethinkDB.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

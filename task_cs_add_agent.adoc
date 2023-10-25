@@ -37,7 +37,7 @@ NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügb
 == Schritte zum Installieren von Agent
 
 . Melden Sie sich als Administrator oder Account-Inhaber an Ihrer Workload Security-Umgebung an.
-. Wählen Sie im Menü *Sicherheit* die Option *Admin > Data Collectors > Agents > +Agent* aus
+. Wählen Sie *Collectors > Agenten > +Agent*
 +
 Das System zeigt die Seite Agent hinzufügen an:
 

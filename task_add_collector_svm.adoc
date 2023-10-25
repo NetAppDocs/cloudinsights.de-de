@@ -129,7 +129,7 @@ security login create -user-or-group-name csuser -application ontapi -authmethod
 
 .Schritte zur Konfiguration
 . Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Insights-Umgebung an.
-. Klicken Sie Auf *Admin > Datensammler > +Datensammler*
+. Klicken Sie Auf *Observability > Collectors > +Data Collectors*
 +
 Das System zeigt die verfügbaren Datensammler an.
 

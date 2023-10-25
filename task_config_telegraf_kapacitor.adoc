@@ -25,7 +25,7 @@ Cloud Insights verwendet diesen Datensammler, um Metriken von influxdatapacitor 
 
 == Installation
 
-. Klicken Sie in *Admin > Data Collectors* auf *+Data Collector*. Wählen Sie unter *Leistungen* Kapacitor.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Leistungen* Kapacitor.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

@@ -28,7 +28,8 @@ Sie konfigurieren die Workload Security so, dass Benutzerattribute von LDAP Dire
 
 
 .Schritte zum Konfigurieren eines Benutzerverzeichnissammler
-. Klicken Sie im Menü Workload Security auf: *Admin > Data Collectors > User Directory Collectors > + User Directory Collector* und wählen Sie *LDAP Directory Server*
+. Klicken Sie im Menü Workload-Sicherheit auf:
+*Collectors > User Directory Collectors > + User Directory Collector* und wählen Sie *LDAP Directory Server*
 +
 Das System zeigt den Bildschirm Benutzerverzeichnis hinzufügen an.
 

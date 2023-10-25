@@ -363,7 +363,6 @@
   <block id="d3761f3a03696694e546430b624f3542" category="doc">Kapacitor Data Collector</block>
   <block id="1d82355e9a49b0e00b0df8f87a981b73" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken von influxdatapacitor zu sammeln.</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">Installation</block>
-  <block id="83ed2ac7ca6d8bcb30aa864e5274fa97" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Leistungen* Kapacitor.</block>
   <block id="577ef588d3f183c37ef82368a6ff589c" category="paragraph">Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.</block>
   <block id="1be0a2da8f4fd3b263e749ccf7b51da7" category="inline-link-macro">Agenten-Installation</block>
   <block id="16a55be69114dba2ac674b708e441474" category="list-text">Wenn Sie noch keinen Agent für die Sammlung installiert haben oder einen Agent für ein anderes Betriebssystem oder eine andere Plattform installieren möchten, klicken Sie auf _Anweisungen anzeigen_, um das zu erweitern <block ref="f5c63eced10ddc346253829eec79c562" category="inline-link-macro-rx"></block> Anweisungen.</block>
@@ -388,7 +387,6 @@
   <block id="3dc395f34d5747fa5d58e08302ab67fd" category="summary">Nginx-Konfiguration des Datensammlers</block>
   <block id="21a6c8824057335f8e9dc232584c6ea0" category="doc">Nginx Data Collector</block>
   <block id="a04ac927bc32d4712f954795733890da" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken von Nginx zu erfassen.</block>
-  <block id="bd78dc47276d0b2f96cf76b9264e3719" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Nginx.</block>
   <block id="e7e86cae130886a78274ae9b77db6f35" category="inline-image-macro">Linux-Nginx-Konfiguration</block>
   <block id="de93697b48f7103f9289abf65ca587b4" category="paragraph"><block ref="f310f9809260b458b5b99732eb2d720e" category="inline-image-macro-rx" type="image"></block>
 <block ref="884ba5b9c64ace436091d4a7d4619c6c" category="inline-image-macro-rx" type="image"></block></block>
@@ -406,7 +404,6 @@
   <block id="13b9b5c6c0fb1445ca79a2155f4dc602" category="summary">Konfiguration des Hadoop Data Collector</block>
   <block id="38af629ca8cce22e7b7e641b96f8197b" category="doc">Hadoop Data Collector</block>
   <block id="20bacb7d7672e3432126a809496c0ace" category="paragraph">Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus Hadoop.</block>
-  <block id="a21fbfcb9b79178469092d796d580b0c" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Hadoop.</block>
   <block id="e844ff1ebc3eef465aed7960b58160c3" category="inline-image-macro">Hadoop Konfiguration</block>
   <block id="026b451ea6f45b0c92de7f54611efaf2" category="paragraph"><block ref="47353d83abd9981302d8e2ae7057d5b3" category="inline-image-macro-rx" type="image"></block>
 <block ref="7afda35c9e63e32c054b3ad27f5a4ccb" category="inline-image-macro-rx" type="image"></block></block>
@@ -694,7 +691,6 @@
   <block id="83fbc11c171008ea835730f7922a6417" category="summary">Konfiguration des OpenZFS-Datensammlers</block>
   <block id="280698a257edec445fc9d2a3c41f9089" category="doc">OpenZFS Data Collector</block>
   <block id="9109116c1e875f98e978783a131e4466" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken von OpenZFS zu erfassen.</block>
-  <block id="7bc2f3c2ab06e68dd0a06b93dedec7a5" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* OpenZFS.</block>
   <block id="c5ea32057bfe11187d339d524ccea393" category="inline-image-macro">Linux OpenZFS-Konfiguration</block>
   <block id="252ab915aaf37678f2c31259844d9830" category="paragraph"><block ref="252ab915aaf37678f2c31259844d9830" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b016f6d8b58fbc57dff98ba0460cd713" category="inline-link-macro">OpenZFS-Dokumentation</block>
@@ -1052,7 +1048,6 @@
   <block id="3af2b23a1e0e5c8f8f71ba7f0645e753" category="summary">HAProxy Data Collector-Konfiguration</block>
   <block id="d7f6334a8fd2ef6e012df8e7d1bc1840" category="doc">HAProxy Data Collector</block>
   <block id="f43901d1ca245307f30d36ef67a4ef53" category="paragraph">Cloud Insights verwendet diese Datensammlung, um Kennzahlen von HAProxy zu erfassen.</block>
-  <block id="5819bbcb21b285d34fbde739069c0b6d" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option HAProxy.</block>
   <block id="6c1dacdba2adca5cfa22ff19b2d327fe" category="inline-image-macro">HAProxy-Konfiguration</block>
   <block id="00f9d91055267fed1b468bf28bbfbb04" category="paragraph"><block ref="00f9d91055267fed1b468bf28bbfbb04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb69e07b7e1dc3bc5864b07b79bba857" category="paragraph">Telegraf's Plugin für HAProxy setzt auf HAProxy Stats Aktivierung. Diese Konfiguration ist in HAProxy integriert, ist jedoch nicht sofort aktiviert. Wenn HAProxy aktiviert ist, wird ein HTML-Endpunkt angezeigt, der in Ihrem Browser angezeigt werden kann oder für die Extraktion des Status aller HAProxy-Konfigurationen abgekratzt werden kann.</block>
@@ -2316,7 +2311,6 @@
   <block id="0982f7ddf38c72531e91321d3b4e198e" category="summary">Docker Konfiguration für die Datenerfassung</block>
   <block id="d80788e8d22d139775039533ead6bae8" category="doc">Docker Data Collector</block>
   <block id="6e48769f92efb7218705b56e64b2cc22" category="paragraph">Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus Docker.</block>
-  <block id="554a779a5b12eab44643786faec81a00" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Docker aus.</block>
   <block id="90b5256380802f2feaca144a438190c3" category="inline-link-macro">Installieren Sie einen Agenten</block>
   <block id="dc31f8b70f914e6d9f6e9267b53fb552" category="paragraph">Wenn Sie keinen Agenten für die Sammlung konfiguriert haben, werden Sie aufgefordert <block ref="a1b69a79c96be75135c991d76ebf15bb" category="inline-link-macro-rx"></block> Ihrer Umgebung zu unterstützen.</block>
   <block id="bfd9f9769236435b451e6625d2b38cd5" category="paragraph">Wenn Sie bereits einen Agenten konfiguriert haben, wählen Sie das entsprechende Betriebssystem oder die entsprechende Plattform aus, und klicken Sie auf *Weiter*.</block>
@@ -2357,7 +2351,6 @@
   <block id="a1151f371f1db5ddea0adcadbc49738e" category="summary">Konfiguration des PostgreSQL-Datensammlers</block>
   <block id="28279ca1d2fa23440d64e252b10c2f2e" category="doc">PostgreSQL Data Collector</block>
   <block id="45946606e52c951c2b379ff7a77d2b76" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken aus PostgreSQL zu sammeln.</block>
-  <block id="7bd41331ff9ce374fa5ffed7696f0c41" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option PostgreSQL.</block>
   <block id="9efde47a7f6913de0fa15c50384c3916" category="inline-image-macro">PostgreSQL-Konfiguration</block>
   <block id="ee807d599c86ec0cddb65a95252754a9" category="paragraph"><block ref="ee807d599c86ec0cddb65a95252754a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="939acd793e013bec3f238716d1e5a1e9" category="inline-link-macro">PostgreSQL-Dokumentation</block>
@@ -2490,7 +2483,6 @@
   <block id="d500a402a0f4d5ab2dedb2c5a7ec2eaf" category="summary">Konfiguration des memcached Data Collector</block>
   <block id="0f5c57f0abc7ee69be3379cf9f5ede78" category="doc">Memcached Data Collector</block>
   <block id="353f811fa170b612fa3a1340d62d9219" category="paragraph">Cloud Insights verwendet diese Datensammlung, um Kennzahlen aus Memcached zu erfassen.</block>
-  <block id="a622b2ddd943ae801409ac3947b322c2" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Memcached.</block>
   <block id="198cd654ded33685760b4676e579ff66" category="inline-image-macro">Konfiguration mit Memcached</block>
   <block id="a986c1bc689361d60658b48c116b9bda" category="paragraph"><block ref="a986c1bc689361d60658b48c116b9bda" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e26124564f900a300b66ae6ad54d0791" category="inline-link-macro">Wiki mit Memcached</block>
@@ -2776,7 +2768,6 @@
   <block id="3ed1623d8dee972d71ef8f8f97d1e7b7" category="summary">Konfiguration der JVM-Datenerfassung</block>
   <block id="83940d42e25b16f92792429af8696c02" category="doc">JVM Data Collector</block>
   <block id="1df30fc376f79b28898758816aee8108" category="paragraph">Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus JVM.</block>
-  <block id="361e3edbe3bc9b14124c39095c18dd68" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* JVM.</block>
   <block id="cfc15582c99f2d93d641ceef808c0dea" category="inline-image-macro">JVM-Konfiguration</block>
   <block id="a1a11aab15942415d5fa3dbff92e14bd" category="paragraph"><block ref="a1a11aab15942415d5fa3dbff92e14bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d4d54ae01b1b207ad71b19545e065d0" category="inline-link-macro">JVM-Dokumentation</block>
@@ -3036,7 +3027,6 @@
   <block id="16bcb6504859efb370124aaf61c89fb1" category="paragraph">Hinweis: Ignorieren Sie diesen Schritt, wenn sich alle zugehörigen Kollektoren im STATUS „GESTOPPT“ befinden.</block>
   <block id="ab71eb10a75782a66759f743954f1bf4" category="list-title">Schritte zum Löschen eines Agenten:</block>
   <block id="4011c5dae5360156cb9edb8b312334ab" category="list-text">SSH in der Agent VM und führen Sie den folgenden Befehl aus. Wenn Sie dazu aufgefordert werden, geben Sie „y“ ein, um fortzufahren.</block>
-  <block id="b5ba91ff29a00af62e0f8e16efcb41fd" category="list-text">Klicken Sie Auf *Admin &gt; Datensammler &gt; Agenten*</block>
   <block id="3fc177ab7a838f0ae5c224683acf4418" category="paragraph">Das System zeigt die Liste der konfigurierten Agenten an.</block>
   <block id="53d62f54f4323b076c538750bbea9371" category="list-text">Klicken Sie auf das Optionsmenü für den Agenten, den Sie löschen möchten.</block>
   <block id="874db297b2254479eeb702a2d7fa8dab" category="list-text">Klicken Sie Auf *Löschen*.</block>
@@ -3389,7 +3379,6 @@
   <block id="f23d43a2f8827bf71755047f9233d1d7" category="summary">Konfiguration des Datensammlers Flik</block>
   <block id="760f80f90fb384d40bb66a9f0b4823fd" category="doc">Flik Data Collector</block>
   <block id="54387b91997cebc2b9f94c02572ea7c8" category="paragraph">Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus Flink.</block>
-  <block id="6b7484ab321e2bb0cd1b30bf18f6dd76" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Flink.</block>
   <block id="c1a584a645c5a21efa505b7deca25b2b" category="inline-image-macro">Flik-Konfiguration</block>
   <block id="2462dee15f2229ca8b824af60aa5037f" category="paragraph"><block ref="2462dee15f2229ca8b824af60aa5037f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88f3c1a97fbc332ad9adb7ff5179d0f5" category="paragraph">Eine vollständige Flink-Implementierung umfasst die folgenden Komponenten:</block>
@@ -3472,7 +3461,6 @@
   <block id="4c35289465431b7541002dd365bad198" category="summary">Konfiguration des MySQL-Datensammlers</block>
   <block id="d1f43c925400e37adcd15285deaac430" category="doc">MySQL Data Collector</block>
   <block id="5d1d986fa74eaeda0a328a24da34dc8f" category="paragraph">Cloud Insights verwendet diese Datensammlung, um Kennzahlen von MySQL zu sammeln.</block>
-  <block id="ab4bf0a03f41519bbb1301fb38d65e36" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* MySQL.</block>
   <block id="cfe3b09f39613d05db4ca7532b374386" category="inline-image-macro">MySQL-Konfiguration</block>
   <block id="acd86359b435b0d32d73a66fa03be887" category="paragraph"><block ref="acd86359b435b0d32d73a66fa03be887" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0281cf739776a9c6b7c6cb01c1accf40" category="inline-link-macro">MySQL-Dokumentation</block>
@@ -3550,7 +3538,6 @@
   <block id="2214d2294c225c2125b0860b83519fed" category="list-text">Sie müssen eine Erfassungseinheit konfiguriert haben, bevor Sie mit dem Erfassen von Daten beginnen können.</block>
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">Sie benötigen Anmeldedaten für die Geräte, von denen Sie Daten erfassen.</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">Für alle Geräte, von denen Sie Daten erfassen, sind Netzwerkadressen, Kontoinformationen und Passwörter erforderlich.</block>
-  <block id="02c241a8f52ea083e207247048e27655" category="list-text">Klicken Sie im Menü Cloud Insights auf *Admin &gt; Datensammler*</block>
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">Das System zeigt die verfügbaren Datensammler an, die nach Hersteller geordnet sind.</block>
   <block id="98340026125b30253a889a183c2af3e1" category="list-text">Klicken Sie auf *+ Collector* auf dem gewünschten Anbieter und wählen Sie den zu konfigurierenden Datensammler aus.</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">Im Dialogfeld können Sie den Datensammler konfigurieren und eine Erfassungseinheit hinzufügen.</block>
@@ -3602,7 +3589,6 @@
   <block id="f675ac1ea34754aba3279d7f93746721" category="summary">Kibana Data Collector Konfiguration</block>
   <block id="d6678652208f4e26109690d4ab6151e5" category="doc">Kibana Data Collector</block>
   <block id="75ac4fff844290c8b306aced90a6ad0d" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Kennzahlen von Kibana zu sammeln.</block>
-  <block id="87366a70a6d77eeafc26fed79b827515" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Kibana.</block>
   <block id="ed9f8d76b0ccacc02aa67a13d6c1e9a8" category="inline-image-macro">Kibana-Konfiguration</block>
   <block id="18785da9c6be5397773e5c495dcc23f4" category="paragraph"><block ref="18785da9c6be5397773e5c495dcc23f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c84e442bbf213b7d0e5047d09d7aef4" category="inline-link-macro">Kibana Dokumentation</block>
@@ -3800,7 +3786,6 @@
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">Versuchen Sie Dies</block>
   <block id="92232e830756517d2e51d25331f14f25" category="cell">In der Tabelle „Alle Aktivitäten“ in der Spalte ‘Benutzer“ wird der Benutzername wie folgt angezeigt: „ldap:HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” oder LDAP:default:80038003“</block>
   <block id="0c4a0e9a569be65e94908f9222457694" category="inline-link-macro">Fehlerbehebung für Benutzerverzeichnissammler</block>
-  <block id="0b15e5ecfcaabb3952c7992d37b94c97" category="cell">Mögliche Gründe sind: 1. Es wurden noch keine User Directory Collectors konfiguriert. Um einen hinzuzufügen, gehen Sie zu *Admin &gt; Data Collectors &gt; User Directory Collectors* und klicken Sie auf *+User Directory Collector*. Wählen Sie _Active Directory_ oder _LDAP Directory Server_. 2. Ein Benutzerverzeichnissammler wurde konfiguriert, ist jedoch angehalten oder befindet sich im Fehlerzustand. Gehen Sie zu *Admin &gt; Data Collectors &gt; User Directory Collectors* und überprüfen Sie den Status. Siehe <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> Der Dokumentation für Tipps zur Fehlerbehebung. Nach der ordnungsgemäßen Konfiguration wird der Name innerhalb von 24 Stunden automatisch behoben. Wenn die Lösung immer noch nicht behoben wird, überprüfen Sie, ob Sie den korrekten Benutzer-Data Collector hinzugefügt haben. Stellen Sie sicher, dass der Benutzer tatsächlich Teil des hinzugefügten Active Directory/LDAP Directory Servers ist.</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">Einige NFS-Ereignisse werden in der UI nicht angezeigt.</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">Überprüfen Sie Folgendes: 1. Ein Benutzer-Verzeichnis-Collector für AD-Server mit POSIX-Attributen sollte mit dem unixid-Attribut ausgeführt werden, das über UI aktiviert ist. 2. Jeder Benutzer, der NFS-Zugang macht, sollte angezeigt werden, wenn er in der Benutzerseite von UI 3 durchsucht wird. RAW-Ereignisse (Ereignisse, für die der Benutzer noch nicht erkannt wurde) werden für NFS 4 nicht unterstützt. Anonymer Zugriff auf den NFS-Export wird nicht überwacht. 5. Stellen Sie sicher, dass die NFS-Version in weniger als NFS4.1 verwendet wird.</block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">Anhand dieser Informationen können Sie vorhersagen, wann Kubernetes Spaces voraussichtlich voll werden.</block>
@@ -3828,7 +3813,6 @@
   <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">Konfiguration des netstat Datensammlers</block>
   <block id="38fe3e3fc1af1752c621d2c58ca1d537" category="doc">Netstat Data Collector</block>
   <block id="1d90778793975e863bbd8302e8bebf4f" category="paragraph">Cloud Insights verwendet diese Datensammlung, um netstat-Kennzahlen zu sammeln.</block>
-  <block id="96b82a89fa745c35ca3fc3dc50892a3e" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* netstat aus.</block>
   <block id="fbe4c8006ab6084c9caa4749e31a48b2" category="inline-image-macro">Windows Netstat-Konfiguration</block>
   <block id="3b600482a8cf2d80423a46534f251590" category="paragraph"><block ref="3b600482a8cf2d80423a46534f251590" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5640ddf22fd2c345be7dd9bb71023b38" category="cell">Netstat</block>
@@ -3920,7 +3904,6 @@
   <block id="170ac79db4abf3af53c36b5ba23d297a" category="summary">Konfiguration des CouchDB Datensammlers</block>
   <block id="1aa7fb61fdaf60c81a318c790c7e545e" category="doc">CouchDB Data Collector</block>
   <block id="2aa655c0610f5e45884f5257e54d539e" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken von CouchDB zu sammeln.</block>
-  <block id="bd6bf57fa1ccea508d5b9f2b66a2f54d" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* CouchDB.</block>
   <block id="9d3601e78c51a4b184d2fe86128539e4" category="inline-image-macro">Konfiguration von CouchDB</block>
   <block id="61d7e3da551b2e4c1549750fbb518e22" category="paragraph"><block ref="61d7e3da551b2e4c1549750fbb518e22" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8a7006055e2291f0b9e46ee915f0ad0c" category="inline-link-macro">CouchDB-Dokumentation</block>
@@ -3930,7 +3913,6 @@
   <block id="1da80b1336c0c9594d16e3d3dab10d20" category="summary">Konfiguration des Consul-Datensammlers</block>
   <block id="c4079b6998dfb2e5f02a35b303e1acce" category="doc">Consul Data Collector</block>
   <block id="44aa5a1c223b0773b5006801b857966b" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken von Consul zu erfassen.</block>
-  <block id="0ba4d88a843ce3dab96f8e8dce5648fc" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Konsul.</block>
   <block id="bddbdda6ad83151063cda71734d4faf4" category="list-text">Befolgen Sie die Anweisungen auf dem Bildschirm Consul Configuration, um den Datensammler zu konfigurieren. Die Anweisungen hängen vom Betriebssystem oder der Plattform ab, die Sie zur Datenerfassung verwenden.</block>
   <block id="488f9e22c68fcc3e89060d2f5f537744" category="inline-link-macro">Dokumentation für Konsul</block>
   <block id="a47b0fae235ee24589e1075c2fe0daeb" category="paragraph">Informationen finden Sie unter <block ref="209f85ad7011f70864ffdec527911e92" category="inline-link-macro-rx"></block>.</block>
@@ -4391,7 +4373,6 @@
   <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">dcos-Konfiguration</block>
   <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">DC/OS Data Collector</block>
   <block id="54005140701b4d1ac4638683a951ef68" category="paragraph">Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus DC/OS.</block>
-  <block id="08dec1f580b03429f9af42c9b6c5d154" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* *DC/OS*.</block>
   <block id="906f9dd57fb2872473e89e09bf5bf50e" category="list-text">Befolgen Sie die Anweisungen im Bildschirm DC/OS-Konfiguration, um den Datensammler zu konfigurieren. Die Anweisungen hängen vom Betriebssystem oder der Plattform ab, die Sie zur Datenerfassung verwenden.</block>
   <block id="169d74d7790e089aeca58cb836db2fcc" category="inline-link">DC/OS-Dokumentation</block>
   <block id="b0f77e8918eef13e0142c8675b792231" category="paragraph">Informationen zur Einrichtung finden Sie im<block ref="bcf6b27a44ba394f1a86a682cd050dc1" category="inline-link-rx"></block>.</block>
@@ -5043,7 +5024,6 @@
   <block id="aee1b49e2ea5679073623959ef024069" category="summary">HTTP-Datensammler-Konfiguration</block>
   <block id="d5418d1fa8d23d7e5951dbf339c3c5a8" category="doc">ActiveMQ Data Collector</block>
   <block id="123afee47eb477e020c1546a00fd80a1" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken aus ActiveMQ zu erfassen.</block>
-  <block id="19fe91396be7930f3d73bd8df1426ef4" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* ActiveMQ.</block>
   <block id="52e070f5418cead2f633bf0a2288946c" category="inline-image-macro">ActiveMQ-Konfiguration</block>
   <block id="21562149e2176820b6c8d39f6bf47011" category="paragraph"><block ref="21562149e2176820b6c8d39f6bf47011" category="inline-image-macro-rx" type="image"></block></block>
   <block id="16fc9b4d33f552995ec677b1a481fba5" category="inline-link">ActiveMQ-Dokumentation</block>
@@ -5063,7 +5043,6 @@
   <block id="1b6782dde8db0793ddf35a62a6fe9534" category="summary">Tipps zur Fehlerbehebung bei Problemen mit der Erfassungseinheit unter Windows.</block>
   <block id="c80b5682ac138b6ef2cfb66f5871cd6e" category="doc">Fehlerbehebung bei Problemen mit der Erfassungseinheit unter Windows</block>
   <block id="d66261bfe330aaa38171cf0aba38ed5b" category="paragraph">Hier finden Sie Vorschläge zur Fehlerbehebung bei Problemen mit Akquisitionseinheiten auf einem Windows-Server.</block>
-  <block id="a7179f7901a2f6257761977d760a253d" category="cell">AUF der Seite *Admin &gt; Data Collectors* auf der Registerkarte *Acquisition Units* wird „Certificate Expired“ oder „Certificate annuled“ ANGEZEIGT.</block>
   <block id="cade12c2a9fd950d043d94c8ba081663" category="cell">Klicken Sie auf das Menü rechts neben der AU und wählen Sie *Verbindung wiederherstellen*. Befolgen Sie die Anweisungen, um Ihre Erfassungseinheit wiederherzustellen: 1. Beenden Sie den AU-Dienst (Acquisition Unit). Klicken Sie auf die Schaltfläche _Stop-Befehl kopieren_, um den Befehl schnell in die Zwischenablage zu kopieren, und fügen Sie diesen Befehl anschließend in eine Eingabeaufforderung auf dem Erfassungsgerät ein. 2. Erstellen Sie eine Datei namens "Token" im Ordner _c:\Programme\Cloud Insights\Acquisition Unit\conf\_ auf der AU. 3. Klicken Sie auf die Schaltfläche _Token kopieren_ und fügen Sie dieses Token in die von Ihnen erstellte Datei ein. 4. Starten Sie den AU-Service. Klicken Sie auf die Schaltfläche _Copy Restart Command_, und fügen Sie den Befehl in eine Eingabeaufforderung auf der AU ein.</block>
   <block id="f8c1f64e9a97f83b0f209268bdd07bcb" category="cell">Serveranforderungen nicht erfüllt</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">Anforderungen</block>
@@ -5155,7 +5134,6 @@
   <block id="4002c18c39606cdbd9ec7cf8e2a090ad" category="summary">Redis Konfiguration des Datensammlers</block>
   <block id="9d2537f158357c95ae162019d658de08" category="doc">RethinkDB Data Collector</block>
   <block id="86e303e0c497b52b7c3e448d2a739f78" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Kennzahlen von RethinkDB zu sammeln.</block>
-  <block id="195db1a7dc11e7296624dbf54cf9c3cf" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option RethinkDB.</block>
   <block id="10e1e1205ffd97adbe671ede9a7d4f2d" category="inline-image-macro">Konfiguration des RephinkDB Data Collector</block>
   <block id="dd379e6631df8e94fe26188b06220cf7" category="paragraph"><block ref="dd379e6631df8e94fe26188b06220cf7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7fc41d1df644e11b26a2696444f69499" category="inline-link-macro">RetinkDB-Dokumentation</block>
@@ -5361,7 +5339,6 @@
   <block id="09d6123310780f93d8f4d27e5bea4c38" category="summary">Eine Zusammenfassung.</block>
   <block id="d094b5589a83ff9dbfcc2d0e99295078" category="doc">Verwalten von konfigurierten Datensammlern</block>
   <block id="53b9802b3b72e00a64f054ac84f78c11" category="paragraph">Die Seite installierte Datensammler bietet Zugriff auf die für Cloud Insights konfigurierten Datensammler. Auf dieser Seite können Sie vorhandene Datensammler ändern.</block>
-  <block id="697135789f3382f6b269c2eff2c84cef" category="list-text">Klicken Sie im Menü Cloud Insights auf *Admin &gt; Datensammler*</block>
   <block id="b931042a6d27500a3c3952e7af9907a5" category="paragraph">Der Bildschirm Verfügbare Datensammler wird angezeigt.</block>
   <block id="e57a6ec1c32ee71fdeae09f16bf7524f" category="list-text">Klicken Sie Auf *Installierte Datensammler*</block>
   <block id="25d0acec025a9863386eb668b19dff06" category="paragraph">Eine Liste aller installierten Datensammler wird angezeigt. Die Liste enthält den Sammlungsnamen, den Status, die IP-Adresse, auf die der Sammler zugreift, und den Zeitpunkt, zu dem Daten vom Gerät erfasst wurden. Zu den Aktionen, die auf diesem Bildschirm ausgeführt werden können, gehören:</block>
@@ -5376,7 +5353,6 @@
   <block id="2501b8babb695bdec64e66eb11334512" category="section-title">Bearbeiten von Daten-Collector-Informationen</block>
   <block id="0560feeeae310b75cae9ba26f91d59a8" category="paragraph">Sie können vorhandene Daten-Collector-Setup-Informationen bearbeiten.</block>
   <block id="831f0c2e9b0e7c5099cb9031c5dc0385" category="list-title">So bearbeiten Sie einen einzelnen Datensammler:</block>
-  <block id="0ffa9affe1709cdb1b9adec1380e1915" category="list-text">Klicken Sie im Menü Cloud Insights auf *Admin &gt; Datensammler*, um die Liste der installierten Datensammler zu öffnen.</block>
   <block id="77d808925da6d415697912a926fa941f" category="list-text">Klicken Sie im Optionsmenü rechts neben dem Datensammler, den Sie ändern möchten, auf *Bearbeiten*.</block>
   <block id="9792f388566911dc57896cf92d02b576" category="paragraph">Das Dialogfeld Collector bearbeiten wird geöffnet.</block>
   <block id="40b6e8c1a1d818be1bbc1cdb378f09df" category="list-text">Geben Sie die Änderungen ein und klicken Sie auf *Testkonfiguration*, um die neue Konfiguration zu testen, oder klicken Sie auf *Speichern*, um die Konfiguration zu speichern.</block>
@@ -5389,7 +5365,6 @@
   <block id="a282dcc95e28cd045551ecaf5f98025c" category="paragraph">Wenn Sie mehrere Datensammler bearbeiten, steht die Schaltfläche *Testkonfiguration* nicht zur Verfügung.</block>
   <block id="c282617210ff18a52337d5334bd08aed" category="section-title">Klonen von Datensammlern</block>
   <block id="63a478f4e24d6d80d303e7f6b683ff3a" category="paragraph">Mit der Clone Facility können Sie schnell eine Datenquelle hinzufügen, die dieselben Anmeldedaten und Attribute wie eine andere Datenquelle enthält. Klonen ermöglicht Ihnen die einfache Konfiguration mehrerer Instanzen desselben Gerätetyps.</block>
-  <block id="e2d9fabd9d06eb6aaafa33a7e708066c" category="list-text">Klicken Sie im Menü Cloud Insights auf *Admin &gt; Datensammler*.</block>
   <block id="7aa19fe5c61d4c1b3b090b6f97e1abde" category="list-text">Klicken Sie Auf *Installierte Datensammler*.</block>
   <block id="bf7749db4d5b82ac73abb6d90abc9e33" category="list-text">Klicken Sie auf das Kontrollkästchen links neben dem zu kopierenden Datensammler.</block>
   <block id="623a8968bde520b6006d484210fadb03" category="list-text">Klicken Sie im Optionsmenü rechts neben dem ausgewählten Datensammler auf *Clone*.</block>
@@ -5434,7 +5409,6 @@
   <block id="3e647ef93d862cebdd7fa80573f126aa" category="summary">MongoDB Data Collector-Konfiguration</block>
   <block id="53e70a8dd3a918a24f705909a168c35c" category="doc">MongoDB Data Collector</block>
   <block id="5365ec2fc489501ed613b8ad5b954e9c" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken von MongoDB zu erfassen.</block>
-  <block id="79d5a85827de0c0dacd0986e20079d62" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option MongoDB aus.</block>
   <block id="06dc92e8ae707ce9c6046e102df5a214" category="inline-image-macro">MongoDB Konfiguration</block>
   <block id="0f54e55841a24b143c2104aab4935f7b" category="paragraph"><block ref="0f54e55841a24b143c2104aab4935f7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38d4b2dc2b4a57b1ac9fd3ffb91a1e4e" category="inline-link-macro">MongoDB Dokumentation</block>
@@ -5584,7 +5558,6 @@
   <block id="263026a1c82c98e0f26e5963c3c57811" category="cell">Ungefähre Datengröße Durchschnittliche Latenz Ephemeriale Anzahl Max Datei Descriptor Anzahl Max. Latenz Min. Latenz Anzahl Der Alive-Verbindungen Open File Descriptor Count Outstanding Requests Watch Count Znode Count</block>
   <block id="43b4fe530611e0a29d40ae51f1110192" category="doc">Erfassung Von Node-Daten</block>
   <block id="a95bc37c275448ac1c6069158f92b809" category="paragraph">Cloud Insights sammelt Kennzahlen von dem Knoten, auf dem Sie einen Agent installieren.</block>
-  <block id="ce735cbd33ce6bba099eff6991d48cec" category="list-text">Wählen Sie unter *Admin &gt; Data Collectors* ein Betriebssystem/eine Plattform aus. Beachten Sie, dass durch die Installation eines Datensammlers für die Integration (Kubernetes, Docker, Apache usw.) auch die Erfassung von Node-Daten konfiguriert wird.</block>
   <block id="5f6ce12582c69bad9341e28467c0c0d0" category="list-text">Befolgen Sie die Anweisungen, um den Agenten zu konfigurieren. Die Anweisungen hängen vom Betriebssystem oder der Plattform ab, die Sie zur Datenerfassung verwenden.</block>
   <block id="c166791fe89a8eb17ee0a37ad809ba2b" category="paragraph">Die folgenden Objekte und ihre Zähler werden als Node-Kennzahlen erfasst:</block>
   <block id="1f8c535824144ce794fd8ac5fdcfe9f1" category="cell">Knoten Dateisystem</block>
@@ -5745,14 +5718,12 @@
   <block id="95daeb54f7a6f1925add5849715872ad" category="section-title">Hinzufügen einer Linux-Akquisitionseinheit</block>
   <block id="958f097fe9ccbb38e85c88ca82a73170" category="list-text">Wenn Ihr System einen Proxy verwendet, müssen Sie die Proxy-Umgebungsvariablen festlegen, bevor die Erfassungseinheit installiert wird. Weitere Informationen finden Sie unter <block ref="cc8b2258e67f4301c61077ad43e8ce8b" category="inline-xref-macro-rx"></block>.</block>
   <block id="29e4728bd5327820a2862b6f2893f106" category="list-title">Schritte für die Installation der Linux-Erfassungseinheit</block>
-  <block id="f6544337171161f937d7eafd6f3c1c52" category="list-text">Klicken Sie Auf *Admin &gt; Datensammler &gt; Akquisitionseinheiten &gt; +Akquisitionseinheit*</block>
   <block id="c377ddafa0c23753505e4eef0b3150bf" category="paragraph">Das Dialogfeld „_Erfassungseinheit installieren “ wird angezeigt. Wählen Sie Linux.</block>
   <block id="286b058d26c0a3fe2297fea81fdde42c" category="list-text">Vergewissern Sie sich, dass der Server oder die VM, auf dem die Erfassungseinheit gehostet wird, die empfohlenen Systemanforderungen erfüllt.</block>
   <block id="17f57a172683392356db7940747d8fa7" category="list-text">Vergewissern Sie sich, dass auf dem Server eine unterstützte Linux-Version ausgeführt wird. Klicken Sie auf _OS-Versionen supported (i)_, um eine Liste der unterstützten Versionen anzuzeigen.</block>
   <block id="8ee1aa8c453a757e226876f731e9cd26" category="list-text">Kopieren Sie den Befehl Installation snippet im Dialogfeld in ein Terminal-Fenster auf dem Server oder der VM, auf dem die Erfassungseinheit gehostet wird.</block>
   <block id="315fa945ac6eb373152b3ddaf9502ed0" category="list-text">Fügen Sie den Befehl in die Bash-Shell ein und führen Sie ihn aus.</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">Nachdem Sie fertig sind</block>
-  <block id="3d11c2f8fdd0961187e8dda5fc527dea" category="list-text">Klicken Sie auf *Admin &gt; Data Collectors &gt; Acquisition Units*, um den Status der Akquisitionseinheiten zu überprüfen.</block>
   <block id="71f472583171cff49390f4dae43ea6cd" category="list-text">Die Protokolle der Acquisition Unit finden Sie unter /var/log/netapp/nebinsights/acq/acq.log</block>
   <block id="3d2110a2733664229699d6929eef482a" category="list-text">Verwenden Sie das folgende Skript, um die Erfassungseinheit zu steuern:</block>
   <block id="32ccd5ec27f3b1aace6be79d7b494b16" category="list-text">cloudinsights-service.sh (Stopp, Start, Neustart, Status überprüfen)</block>
@@ -5775,7 +5746,6 @@
   <block id="7bb8dc49e894513db639873cb06911d4" category="list-title">Schritte für die Installation der Windows-Erfassungseinheit</block>
   <block id="d859eb4ae30b9eae60ffbcb09db52be6" category="list-text">Melden Sie sich als Benutzer mit Administratorrechten beim Server/der VM der Erfassungseinheit an.</block>
   <block id="3cf3030bbe5a24323447cf60440415e7" category="list-text">Öffnen Sie auf diesem Server ein Browserfenster, und melden Sie sich als Administrator oder Kontoinhaber in Ihrer Cloud Insights-Umgebung an.</block>
-  <block id="7127e1b44efefedfeb8ba08e13767870" category="list-text">Klicken Sie Auf *Admin &gt; Datensammler &gt; Akquisitionseinheiten &gt; +Akquisitionseinheit* .</block>
   <block id="0c3a3bd2ed0dc5c611332312485e427f" category="paragraph">Das Dialogfeld „_Erfassungseinheit installieren “ wird angezeigt. Wählen Sie Windows.</block>
   <block id="ec97136c856287bb07ca7148194c98e6" category="image-alt">Windows AU Installation</block>
   <block id="0ddeb8dc3872cd6d88bd4c549ed99742" category="list-text">Überprüfen Sie, ob auf dem Server eine unterstützte Windows-Version ausgeführt wird. Klicken Sie auf _OS-Versionen supported (i)_, um eine Liste der unterstützten Versionen anzuzeigen.</block>
@@ -5799,10 +5769,8 @@
   <block id="957deaa4b12e9e98b0ee4181b18c7361" category="paragraph">Um eine Erfassungseinheit auf demselben Server/derselben VM neu zu installieren, müssen Sie folgende Schritte ausführen:</block>
   <block id="1405103bcf8e1e217a5c701e0664adf3" category="paragraph">Sie müssen eine temporäre Erfassungseinheit auf einem separaten Server/einer separaten VM konfigurieren, bevor Sie eine Akquisitionseinheit neu installieren.</block>
   <block id="0412a74c6fa998305a965b2e89cdedbf" category="list-text">Melden Sie sich beim Server/VM der Acquisition Unit an und deinstallieren Sie die AU-Software.</block>
-  <block id="fb7df762b91c6b3142717b8f5ae95fe9" category="list-text">Melden Sie sich in Ihrer Cloud Insights-Umgebung an und gehen Sie zu *Admin &gt; Datensammler*.</block>
   <block id="33d249d050a70e456b1fc925b67c58f1" category="list-text">Klicken Sie für jeden Datensammler rechts auf das Menü Optionen, und wählen Sie _Bearbeiten_. Weisen Sie den Datensammler der temporären Erfassungseinheit zu und klicken Sie auf *Speichern*.</block>
   <block id="3005f55cd54d5a821222569df6baf337" category="paragraph">Sie können auch mehrere Datensammler desselben Typs auswählen und auf die Schaltfläche *Massenaktionen* klicken. Wählen Sie _Bearbeiten_ und weisen Sie die Datensammler der temporären Erfassungseinheit zu.</block>
-  <block id="a5d25dc71d1e825652ea199481e35d26" category="list-text">Nachdem alle Datensammler in die temporäre Erfassungseinheit verschoben wurden, gehen Sie zu *Admin &gt; Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.</block>
   <block id="026a58fa6c27be328f43029729806c4b" category="list-text">Klicken Sie auf die Schaltfläche Optionen rechts neben der Erfassungseinheit, die Sie neu installieren möchten, und wählen Sie _Löschen_. Sie können eine Erfassungseinheit nur löschen, wenn ihr keine Datensammler zugewiesen sind.</block>
   <block id="4f529479185a997ea1538b00643e7fd0" category="list-text">Sie können die Software Acquisition Unit jetzt auf dem ursprünglichen Server/VM neu installieren. Klicken Sie auf *+Acquisition Unit*, und befolgen Sie die Anweisungen oben, um die Acquisition Unit zu installieren.</block>
   <block id="5cdf029d7ee5a4116eb823d71cbead39" category="list-text">Sobald die Erfassungseinheit neu installiert wurde, weisen Sie Ihre Datensammler der Akquisitionseinheit zu.</block>
@@ -5954,7 +5922,6 @@
   <block id="f4b59a337513071e6d4843f553d49bc6" category="section-title">Sicherheit Für Anmeldeinformationen</block>
   <block id="4a2fd5083496ddce3be60eef8073b637" category="paragraph">Die Daten-Collector-Anmeldeinformationen werden verschlüsselt, wenn sie in Cloud Insights eingegeben werden. Sie werden zuerst durch den öffentlichen Schlüssel der AU verschlüsselt und dann über HTTPS verschlüsselt an die Acquisition Unit (AU) gesendet. Verschlüsselte Werte werden entschlüsselt, wenn die AU sie zur Kommunikation mit Geräten und Software verwendet.</block>
   <block id="ca28d4c52bb2a654a2678ff8d3dcefa2" category="section-title">Konfigurieren des Data Collectors</block>
-  <block id="50fad681fab3955ee03277012c672831" category="list-text">Klicken Sie im Menü Cloud Insights auf *Admin &gt; Datensammler* und klicken Sie auf die Schaltfläche *+ Data Collector*. Sie können alle Datensammler anzeigen oder filtern, um nur die Datensammler anzuzeigen, die Ihnen auf Grundlage Ihres Abonnements zur Verfügung stehen.</block>
   <block id="c339d1a32a95310d9e4a053f77cad28b" category="list-text">Je nach gewähltem Datensammlungstyp variieren die Installationsschritte.</block>
   <block id="13762a4c9e8fa47d574db722fc1b3fa2" category="section-title">Betriebssysteme:</block>
   <block id="b00d7c7ac92f4aaddc21f00ae51e9ffb" category="paragraph">Sie müssen mindestens einen Cloud Insights Agent installieren, um mit dem Erfassen von Betriebssystem- oder Servicedaten aus Ihrer Umgebung zu beginnen. Sie können so viele Agenten installieren, wie Sie möchten. Jeder Agent kann Daten aus mehreren Services erfassen.</block>
@@ -6418,7 +6385,6 @@
   <block id="8250aff5bf291c0fd6c60d86a94af326" category="summary">Konfiguration des Couchbase Datensammlers</block>
   <block id="c85700224d4de4029d47e8f7419f121a" category="doc">Couchbase Data Collector</block>
   <block id="2cc7a39d9220b0a6ca309f2f84801606" category="paragraph">Cloud Insights verwendet diese Datensammlung, um die Kennzahlen von Couchbase zu erfassen.</block>
-  <block id="876d2d741f04d145a3f8da9d95b50ca9" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Couchbase.</block>
   <block id="d7712cfab308e47f5bb1445e9fbcb070" category="inline-image-macro">Konfiguration von Couchbase</block>
   <block id="64fffda04d6b10150c8c8726100e6239" category="paragraph"><block ref="64fffda04d6b10150c8c8726100e6239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41bdcd289793051395a360769595211c" category="inline-link-macro">Couchbase Dokumentation</block>
@@ -6442,7 +6408,6 @@
   <block id="d41bd76f36789e8fddb867c10a5eca40" category="list-text"><block ref="f0b8d86b1d5e602002cf4f7e7b6c1cac" category="inline-xref-macro-rx"></block></block>
   <block id="4705018fb833a2cd4979b3acd0c3171f" category="paragraph">Um einen Agent zu installieren, müssen Sie, unabhängig von der verwendeten Plattform, zunächst die folgenden Schritte ausführen:</block>
   <block id="60e927136e016a2a126538b1a592e8c5" category="list-text">Melden Sie sich beim Host an, den Sie für Ihren Agenten verwenden werden.</block>
-  <block id="e9604f31aba2ec7275fd08fdb30a45f9" category="list-text">Melden Sie sich auf Ihrer Cloud Insights-Website an und gehen Sie zu *Admin &gt; Datensammler*.</block>
   <block id="212039b527f83b6053ae8fd23bb11e26" category="list-text">Klicken Sie auf *+Data Collector* und wählen Sie einen zu installierenden Datensammler aus.</block>
   <block id="0b5b60f6bf77a0318f6283c5d8ce5be7" category="list-text">Befolgen Sie die verbleibenden Schritte für jede Plattform.</block>
   <block id="09e0466fcc22c337dc6af8a799296033" category="admonition">Sobald Sie einen Agent auf einem Host installiert haben, müssen Sie auf diesem Host keinen Agenten mehr installieren.</block>
@@ -6542,7 +6507,6 @@
   <block id="dc1e65eec84ecdddd9d944665f004c81" category="summary">Konfiguration der Kafka Datensammler</block>
   <block id="20c91ea30ac10f88575658fade0888da" category="doc">Kafka Data Collector</block>
   <block id="2f36f64899c7519b8c8cd9277f2bb502" category="paragraph">Cloud Insights verwendet diese Datensammler, um Metriken aus Kafka zu sammeln.</block>
-  <block id="641a02928125f2cf211e4001ecb0067d" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Kafka.</block>
   <block id="a57380b3846ffa1f0e4bfb5181cdd4cc" category="inline-image-macro">Konfiguration von Kafka</block>
   <block id="581191fc8057a11baa82fdf0c8a4684d" category="paragraph"><block ref="581191fc8057a11baa82fdf0c8a4684d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13369c33358db64680a157cf34f27d9c" category="paragraph">Das Kafka Plugin basiert auf dem telegraf's Jolokia Plugin. Um Informationen aus allen Kafka-Brokern zu sammeln, muss JMX über Jolokia auf allen Komponenten konfiguriert und zugänglich gemacht werden.</block>
@@ -6629,7 +6593,6 @@
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">Einschränkungen</block>
   <block id="001dce6e76a3b3b754db59e538750dd8" category="doc">Redis Data Collector</block>
   <block id="0188f056a49bdb8c4c3a015b2229d13e" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Kennzahlen von Redis zu sammeln. Redis ist ein Open Source, in-Memory Data Structure Store, der als Datenbank-, Cache- und Nachrichten-Broker verwendet wird und die folgenden Datenstrukturen unterstützt: Strings, Hash-Funktionen, Listen, Sätze und mehr.</block>
-  <block id="f7f5396aa94565cefc881e1c6728756d" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Redis.</block>
   <block id="602c395372ffc11185f0cc2291099c7f" category="inline-image-macro">Redis Data Collector Konfiguration</block>
   <block id="5c452c3f36884795da26d34b96db691c" category="paragraph"><block ref="5c452c3f36884795da26d34b96db691c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis-Dokumentation</block>
@@ -6719,7 +6682,6 @@
   <block id="29f2c433c8324679db838494d114ace0" category="summary">Konfiguration der Elasticsearch-Datenerfassung</block>
   <block id="b254328dbad8d7bef169a1d38f1b1bec" category="doc">Elasticsearch Data Collector</block>
   <block id="7ad1c9b2a026e8cd588b98357fc68620" category="paragraph">Cloud Insights verwendet diese Datenerfassung zum Erfassen von Metriken aus Elasticsearch.</block>
-  <block id="59c6bcdf12427f3d11799d143d31e3bb" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Elasticsearch.</block>
   <block id="8dc7af6f97dac4ac46d66b12e0c86974" category="inline-image-macro">Elasticsearch-Konfiguration</block>
   <block id="5b3344ac5bf291f59c070db863943014" category="paragraph"><block ref="5b3344ac5bf291f59c070db863943014" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7423bcb1039be167bcf002d43ee6670e" category="inline-link-macro">Elasticsearch-Dokumentation</block>
@@ -7730,7 +7692,6 @@
   <block id="1565534c3529832edbcb4b0a747b70e6" category="section-title">Verbesserung der UI-Ladezeit</block>
   <block id="57f7d6ec228afeb80fff9d41654bbca4" category="list-text">Die anfängliche Ladezeit für die Cloud Insights-Benutzeroberfläche (UI) wurde deutlich verbessert. Auch die Aktualisierungszeit für die Benutzeroberfläche profitiert von der Verbesserung unter Umständen, wenn Metadaten geladen werden.</block>
   <block id="997b600cf8160cf5b1e3859e2bb60473" category="section-title">Datensammler Zur Massenbearbeitung</block>
-  <block id="b830fc81cf4e90f6b02cca4ead4d3941" category="list-text">Sie können Informationen für mehrere Datensammler gleichzeitig bearbeiten. Wählen Sie auf der Seite *Admin &gt; Data Collectors* die zu ändernden Datensammler aus, indem Sie das Kästchen links neben jedem aktivieren und auf die Schaltfläche *Massenaktionen* klicken. Wählen Sie *Bearbeiten* und ändern Sie die erforderlichen Felder.</block>
   <block id="c3fe0955bd183cc44d168a97c2353942" category="section-title">Während der Einschiffung stehen Support- und Abonnementseiten zur Verfügung</block>
   <block id="e61ce8796090b19c99188c4a47f73495" category="list-text">Während des Onboarding Workflows können Sie zu den Seiten *Hilfe &gt; Support* und *Admin &gt; Abonnement* navigieren. Wenn Sie von diesen Seiten zurückkehren, kehren Sie zum Onboarding-Workflow zurück, sofern Sie die Registerkarte Browser nicht geschlossen haben.</block>
   <block id="a10ba827ae758dee0e50d44366fd3d6d" category="section-title">November 2018</block>
@@ -7770,7 +7731,6 @@
 
 <block ref="e2ee1872ae14f9b079a5e15b45b85992" category="inline-link-macro-rx"></block></block>
   <block id="9a588e9b6b88f5c90c86bde96fc3f0c1" category="inline-link-macro">*Video*: ONTAP SVM Verbindung</block>
-  <block id="edecb6d917822e3e174b7b29c7e80c50" category="cell">Klicken Sie auf *Admin &gt; Datensammler* Klicken Sie auf den Datensammler, den Sie konfigurieren möchten. Weitere Informationen finden Sie im Abschnitt Data Collector Vendor Reference in der Dokumentation.<block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
   <block id="a1d0a98f6922d21edbc391782fbb69e3" category="cell">Erstellen Von Benutzerkonten</block>
   <block id="8e9fceaaf84bd1591dc11726965a5b35" category="inline-link-macro">Benutzerkonten Verwalten</block>
   <block id="a6fe30cef6ad189dc3685c855c858b10" category="cell"><block ref="a6fe30cef6ad189dc3685c855c858b10" category="inline-link-macro-rx"></block></block>
@@ -7908,7 +7868,6 @@
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">Um den neuen Benutzer zu erstellen, melden Sie sich mit dem Benutzernamen/Kennwort des Clustermanagements-Administrators bei ONTAP an, und führen Sie die folgenden Befehle auf dem ONTAP-Server aus. Die folgenden Befehle sollten einfacher in einen Text Editor kopiert und vor der Ausführung der folgenden Befehle auf ONTAP den &lt;vservername&gt; mit Ihrem Vserver-Namen ersetzt werden:</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">Konfigurieren Sie den Datensammler</block>
   <block id="51bdd5739ec46025074c8dd62983fe18" category="list-title">Schritte zur Konfiguration</block>
-  <block id="ec7545874efeb6d35ece424954185bc7" category="list-text">Klicken Sie Auf *Admin &gt; Datensammler &gt; +Datensammler*</block>
   <block id="f740a49ca955ba7a2c53c734ec5644af" category="paragraph">Das System zeigt die verfügbaren Datensammler an.</block>
   <block id="ccae37a4062faaa234bc03e54a73f635" category="list-text">Bewegen Sie den Mauszeiger über die Kachel *NetApp SVM und klicken Sie auf *+Monitor*.</block>
   <block id="4bbcb2378867aa5e0452759f6639206c" category="paragraph">Das System zeigt die Konfigurationsseite der ONTAP SVM an. Geben Sie die erforderlichen Daten für die einzelnen Felder ein.</block>
@@ -7968,7 +7927,6 @@
   <block id="1194c1f585884540788ba8946023cc33" category="list-text">Sie müssen Ihren Apache HTTP Server einrichten und ordnungsgemäß ausführen lassen</block>
   <block id="6b1dbef46026830edbb8a38bb35f7c07" category="list-text">Sie müssen über sudo- oder Administratorberechtigungen auf Ihrem Agent-Host/VM verfügen</block>
   <block id="c16390c8cf2123acd316f38a743628ab" category="list-text">In der Regel ist das Apache _mod_Status_-Modul so konfiguriert, dass eine Seite am Speicherort '/Server-Status?Auto' des Apache-Servers angezeigt wird. Die Option _ExtendedStatus_ muss aktiviert sein, um alle verfügbaren Felder zu erfassen. Informationen zum Konfigurieren des Servers finden Sie in der Apache-Moduldokumentation:<block ref="7174f93683616a9a4040d970e3c6eb19" category="inline-link-rx"></block></block>
-  <block id="f91d09ac9216dbbb2c3095fadb4d31c8" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Apache aus.</block>
   <block id="db3b3ca5f6c31a760f5aa49a9a809802" category="inline-image-macro">Apache-Konfiguration</block>
   <block id="5ec6fd62051ccff5584535e6108b55ba" category="paragraph"><block ref="5ec6fd62051ccff5584535e6108b55ba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed6e8b2146d5bd121cfea083307611f3" category="paragraph">Das Telegraf-Plugin für Apache's HTTP Server setzt auf das 'mod_Status'-Modul, um aktiviert zu werden. Wenn diese Option aktiviert ist, wird Apache HTTP Server einen HTML-Endpunkt anzeigen, der in Ihrem Browser angezeigt oder für die Extraktion des Status aller Apache HTTP Server-Konfigurationen gepatzt werden kann.</block>
@@ -8065,7 +8023,6 @@
   <block id="3adad2012916d4fe2406e6c49b979206" category="list-text">Geben Sie den Benutzernamen für den Zugriff auf die SVM ein</block>
   <block id="7bc230cfdf8694094a44dd4b8ecf760a" category="list-text">Geben Sie das Passwort für den Zugriff auf die SVM ein</block>
   <block id="73d6fcfd5229e0ecee1d38b803bee178" category="list-text">Klicken Sie Auf *+Collector Hinzufügen*</block>
-  <block id="8a785e1472191f0628c391c1a63b6bee" category="list-text">Klicken Sie auf *Admin &gt; Data Collectors*, um den Status des von Ihnen konfigurierten Collectors zu überprüfen.</block>
   <block id="b0506ef14ff473094f5c0bea0c3c41bc" category="paragraph">Es liegt normalerweise eine Verzögerung vor der Anzeige des Kollektorstatus vor.</block>
   <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">Diagramme Für Berichtsschemas</block>
   <block id="6674395fa1826fa5008d38849347faea" category="doc">Cloud Insights-Berichtschemadiagramme</block>
@@ -8253,7 +8210,6 @@
   <block id="4bfbaf73f806e0f2e37658d94bd02b1d" category="summary">Konfiguration des Puppet Datensammlers</block>
   <block id="4f3343312b305965c29f8f14046d895c" category="doc">Puppet Agent Data Collector</block>
   <block id="3fb67cc5cc9f9143457c24db7b7dd502" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken vom Puppet Agent zu erfassen.</block>
-  <block id="1a8476f5506eed4a9be62f6fb0426b2a" category="list-text">Klicken Sie in *Admin &gt; Data Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Puppet.</block>
   <block id="f28ce6829aadfe8650a22f9c6a697a20" category="inline-image-macro">Puppet-Konfiguration</block>
   <block id="f02b842ccd15155934dc65921239d4f0" category="paragraph"><block ref="f02b842ccd15155934dc65921239d4f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c6265f8b688769e31b9b757f9e54749" category="inline-link">Puppet-Dokumentation</block>
@@ -9312,7 +9268,6 @@
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">Ich habe das Installer-Skript auf einer alten Installation ausgeführt und jetzt sendet der Agent keine Daten</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">Deinstallieren Sie den telegraf-Agent und führen Sie dann das Installationsskript erneut aus. Folgen Sie den Schritten *Upgrade the Agent* auf dieser Seite für Ihre entsprechende Plattform.</block>
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">E-Mail-Alarme werden 24 Stunden nach einem Angriff empfangen. In der UI werden die Alarme 24 Stunden vorher angezeigt, wenn die E-Mails von der Cloud Insights-Workload-Sicherheit empfangen werden.</block>
-  <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">Wählen Sie im Menü *Sicherheit* die Option *Admin &gt; Data Collectors &gt; Agents &gt; +Agent* aus</block>
   <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">Rohkapazität: Die Summe aus 2 des gesamten SSD-Speichers, der dem FSX-Dateisystem zugewiesen ist</block>
   <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS – die Summe der IOPS aller Volumes, die in diesem Storage-Pool zugewiesen sind.</block>
   <block id="056a8b3d2b7210d266cc3fdb33710dc2" category="list-text">Durchsatz – der Gesamtdurchsatz aller Volumes, die in diesem Storage-Pool zugewiesen sind.</block>
@@ -9434,7 +9389,6 @@
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">Wenn Sie eine *Windows*-Erfassungseinheit deinstallieren:</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*Nach* die AU deinstallieren:</block>
-  <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">Gehen Sie in Cloud Insights zu *Admin &gt; Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">*Windows und Linux:*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">GET /{Schema}/** - ruft Daten aus der Berichtsdatenbank ab.</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">Dieses Skript kann ausgeführt werden, um die Ereignisrate in der SVM zu prüfen, bevor eine ONTAP SVM DSC installiert wird</block>
@@ -9464,7 +9418,6 @@
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">Auch die Workload-Sicherheit lässt sich in andere Tools integrieren. Beispiel: <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> Bei der Integration mit Splunk:</block>
   <block id="67db66af222a8d458fedb178121497e4" category="summary">Konfigurieren des LDAP-Benutzerverzeichnissammler für die Workload-Sicherheit</block>
   <block id="773b00ecd31fcc8e604b5759c8df2d1e" category="paragraph">Sie konfigurieren die Workload Security so, dass Benutzerattribute von LDAP Directory-Servern erfasst werden.</block>
-  <block id="0769cb17506298e1a0fd45ed42ba3e8d" category="list-text">Klicken Sie im Menü Workload Security auf: *Admin &gt; Data Collectors &gt; User Directory Collectors &gt; + User Directory Collector* und wählen Sie *LDAP Directory Server*</block>
   <block id="d449caeff5b9c80604d3878de0500478" category="list-text">Verwenden Sie den folgenden Befehl, um die Berechtigung für LDAP-Benutzer für die Workload-Sicherheit zu validieren:</block>
   <block id="65c4f6bc3272e61ec3bacf8385c9aca1" category="cell">Die optionalen Attribute des Domänenbenutzers werden auf der Seite „Workload Security User Profile“ nicht angezeigt.</block>
   <block id="44f9e39b6d01a9bb96134d1fa664c4a9" category="cell">Wenn das Verschlüsselungszertifikat (SSL) auf dem Active Directory (AD)-Server aktiviert ist, kann der Workload Security User Directory Collector keine Verbindung zum AD-Server herstellen.</block>
@@ -9506,7 +9459,6 @@
   <block id="9491cdf060c59bf0f883c94db8cfe73d" category="paragraph">Um die Empfänger von Benachrichtigungen für die Workload-Sicherheit zu konfigurieren, klicken Sie auf *Admin &gt; Benachrichtigungen* und geben Sie für jeden Empfänger eine E-Mail-Adresse in die entsprechenden Abschnitte ein.</block>
   <block id="dee5cfb5319806eabd9b28296b26207a" category="summary">Konfigurieren Von Workload Security Active Directory User Directory Collector</block>
   <block id="8dccebe9a8725eed9d49bcce51664895" category="paragraph">Workload Security kann so konfiguriert werden, dass Benutzerattribute von Active Directory-Servern erfasst werden.</block>
-  <block id="68c7fae76dd5832ab65259eca0632822" category="list-text">Klicken Sie im Menü Workload Security auf: *Admin &gt; Data Collectors &gt; User Directory Collectors &gt; + User Directory Collector* und wählen Sie *Active Directory*</block>
   <block id="392b73413f817556c91d974c59c48d26" category="summary">Mit Workload Security können Sie den Benutzerzugriff auch nach vermuteter Sabotage einschränken</block>
   <block id="54fc3d93cd49948e1764882084d106cc" category="paragraph">Sobald ein Angriff erkannt wurde, kann Workload Security den Angriff beenden, indem der Benutzerzugriff auf das Dateisystem blockiert wird. Der Zugriff kann automatisch mithilfe von Automated Response Policies oder manuell über die Alarm- oder Benutzerdetails-Seiten gesperrt werden.</block>
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">Benutzer ist direkt für SMB gesperrt und die IP-Adresse der Host Machines, die den Angriff verursachen, wird für NFS blockiert. Diese Computer-IP-Adressen dürfen nicht auf alle Storage Virtual Machines (SVMs) zugreifen, die durch Workload Security überwacht werden.</block>
@@ -9569,7 +9521,6 @@
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">Konfigurieren Sie in AWS die Maschine, die als Workload Security Agent verwendet werden soll, mit den folgenden Schritten:</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">Konfigurieren Sie die Maschine, die als Workload Security Agent verwendet werden soll, wie folgt:</block>
   <block id="9661d643a1d7bcdfae7260083848fe7c" category="section-title">Installieren Sie den Workload Security Agent</block>
-  <block id="24e9816bffbf8174c3d54d3085dfdebb" category="list-text">Navigieren Sie zu Workload Security *Admin &gt; Data Collectors* und klicken Sie auf die Registerkarte *Agents*.</block>
   <block id="e6827eaa9bdbd78ae7e7018263f370fb" category="list-text">Fügen Sie den Befehl „Agent Installation“ in die RHEL EC2-Instanz ein, bei der Sie angemeldet sind. Dadurch wird der Workload Security Agent installiert, der alle zur Verfügung stellt <block ref="f5706ef9ce891542a2a7f34eef5c175e" category="inline-link-macro-rx"></block> Werden erfüllt.</block>
   <block id="27bdcc1bb00d03f954143a84da9b6cce" category="cell">„Workload-Sicherheit: Fehler beim ermitteln des ONTAP-Typs für Amazon FxSN Datensammler“ Fehler wird vom Data Collector angezeigt. Der Kunde kann den neuen Amazon FSxN Data Collector nicht zur Workload Security hinzufügen. Die Verbindung zum FSxN-Cluster an Port 443 vom Agenten ist zeitabhängig. Für die Kommunikation sind Firewall- und AWS Sicherheitsgruppen die erforderlichen Regeln aktiviert. Ein Agent wurde bereits bereitgestellt und befindet sich auch im selben AWS Konto. Dieser Agent wird verwendet, um die verbleibenden NetApp-Geräte zu verbinden und zu überwachen (und alle funktionieren).</block>
   <block id="e885f70b36e77978775e5bda02528ac9" category="summary">Workload-Sicherheit lässt sich in ONTAP Autonomous Ransomware Protection integrieren, um die Erkennung von Ransomware zu verbessern.</block>
@@ -10336,9 +10287,7 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">Kopieren Sie die _Datenquellen-war-&lt;version&gt;.zip_ in den Arbeitsordner. Beispiel:</block>
   <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">Wechseln Sie in den Download-Ordner, und entpacken Sie die Datei:</block>
   <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">Stellen Sie sicher, dass Benutzer, Gruppe und Berechtigungen für alle Dateien korrekt sind:</block>
-  <block id="a0698382f5e68c4355ea29e32842015d" category="list-text">Hinweis: Wenn Sie AU mit verschiedenen benutzerdefinierten Benutzern verwalten möchten, stellen Sie sicher, dass die Gruppenberechtigungen für Eigentümer und Gruppe auf Lesen und Schreiben eingestellt sind (_chmod 660 …_)</block>
   <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">Starten Sie den AU neu.</block>
-  <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">Navigieren Sie in Cloud Insights zu *Admin &gt; Data Collectors* und wählen Sie die Registerkarte *Acquisition Units* aus. Wählen Sie _Neustart_ aus dem Menü „drei Punkte“ rechts neben der AU.</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">Der <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> Installation und Konfiguration können individuell angepasst werden.</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">Bedieneroptionen Überwachen</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">CPU-Limit für die bereitstellung von kube-State-Metriken</block>
@@ -12767,4 +12716,68 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Zeilen, die eine Prüfung anzeigen, sind aktiv. „X“ zeigt inaktive Geräte an.</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Bestandsaufnahme Aktu. Status: Unerwartete Daten abgerufen -Array hat 0 Volumen gemeldet</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">Zeigt in der Regel ein Autorisierungsproblem (nicht die Authentifizierung) an. Stellen Sie sicher, dass Ihre Anmeldeinformationen korrekt sind und dass der Benutzername die Möglichkeit hat, alle Volumes aufzulisten und ihre Attribute anzuzeigen.</block>
+  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">Klicken Sie auf *AObservability &gt; Collectors &gt; Acquisition Units &gt; +Acquisition Unit*</block>
+  <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">Klicken Sie auf *Observability &gt; Collectors &gt; Acquisition Units*, um den Status von Acquisition Units zu überprüfen.</block>
+  <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">Klicken Sie Auf *Observability &gt; Collectors &gt; Acquisition Units &gt; +Acquisition Unit* .</block>
+  <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">Klicken Sie auf * &gt; Observability &gt; Collectors &gt; Acquisition Units*, um den Status von Acquisition Units zu überprüfen.</block>
+  <block id="b61c07e7a0fb367b275d84c4f406ea62" category="list-text">Gehen Sie in Cloud Insights zu *Observability &gt; Collectors und wählen Sie die Registerkarte *Acquisition Units* aus.</block>
+  <block id="3fca9907aed6b150137f898d0280fff6" category="list-text">Melden Sie sich in Ihrer Cloud Insights-Umgebung an und gehen Sie zu *Observability &gt; Collectors*.</block>
+  <block id="be73cc0144104fdc76d1908fc25c13b8" category="list-text">Nachdem alle Datensammler in die temporäre Erfassungseinheit verschoben wurden, gehen Sie zu *Observability &gt; Collectors* und wählen Sie die Registerkarte *Erfassungseinheiten*.</block>
+  <block id="fa754fd7176d2dbf75086e702bb8e0ba" category="cell">Mögliche Gründe sind:
+1. Es wurden noch keine User Directory Collectors konfiguriert. Um einen hinzuzufügen, gehen Sie zu *Workload Security &gt; Collectors &gt; User Directory Collectors* und klicken Sie auf *+User Directory Collector*. Wählen Sie _Active Directory_ oder _LDAP Directory Server_.
+2. Ein Benutzerverzeichnissammler wurde konfiguriert, ist jedoch angehalten oder befindet sich im Fehlerzustand. Bitte gehen Sie zu *Collectors &gt; User Directory Collectors* und überprüfen Sie den Status. Siehe <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> Der Dokumentation für Tipps zur Fehlerbehebung.
+Nach der ordnungsgemäßen Konfiguration wird der Name innerhalb von 24 Stunden automatisch behoben.
+Wenn die Lösung immer noch nicht behoben wird, überprüfen Sie, ob Sie den korrekten Benutzer-Data Collector hinzugefügt haben. Stellen Sie sicher, dass der Benutzer tatsächlich Teil des hinzugefügten Active Directory/LDAP Directory Servers ist.</block>
+  <block id="43d39371e7465fe75cfe3d390dbe2744" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option RethinkDB.</block>
+  <block id="7ef7f61ee5433c00d6e2bd93b6a72b5f" category="cell">AU-Status auf der Seite *Observability &gt; Collectors* auf der Registerkarte *Acquisition Units* zeigt "Certificate Expired" oder "Certificate Recanned" an.</block>
+  <block id="d6f8e9ba9cfb77dee7f1eacdddd32143" category="list-text">Wählen Sie *Collectors &gt; Agenten &gt; +Agent*</block>
+  <block id="b0bdf1289c168696fcf69f90ddc82ab2" category="cell">Klicken Sie Auf *Workload-Sicherheit &gt; Collectors*
+
+Klicken Sie auf den Datensammler, den Sie konfigurieren möchten.
+
+Weitere Informationen finden Sie im Abschnitt Data Collector Vendor Reference in der Dokumentation.
+
+<block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
+  <block id="0408a4c64dc1f3ab40855164b4b6f38d" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Nginx.</block>
+  <block id="bdb77c4a55fae38966a8493c526d4be0" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Redis.</block>
+  <block id="2652c4ffbd453ec1aefdecf31ada9e0b" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Kafka.</block>
+  <block id="4ee3dacc3b31186e6116102c2ab72d19" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* MySQL.</block>
+  <block id="ebb792d33abbc8326e1a943e8426035a" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Docker aus.</block>
+  <block id="dbc1393b73d772391a52f39c8694a13c" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Kibana.</block>
+  <block id="9db4a00fe92c69a4d0bf878ff50fc95a" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* JVM.</block>
+  <block id="b655d6566293cffcbf9e4e65bb4f042d" category="list-text">Klicken Sie Auf *Observability &gt; Collectors &gt; +Data Collectors*</block>
+  <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">Wählen Sie unter *Observability &gt; Collectors* ein Betriebssystem/eine Plattform aus. Beachten Sie, dass durch die Installation eines Datensammlers für die Integration (Kubernetes, Docker, Apache usw.) auch die Erfassung von Node-Daten konfiguriert wird.</block>
+  <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">Klicken Sie im Menü Workload-Sicherheit auf:
+*Collectors &gt; User Directory Collectors &gt; + User Directory Collector* und wählen Sie *LDAP Directory Server*</block>
+  <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Konsul.</block>
+  <block id="232088b7a66f0b9f18bd94f0ff1ccbd9" category="list-text">Hinweis: Wenn Sie planen, AU mit verschiedenen benutzerdefinierten Benutzern zu verwenden, stellen Sie sicher, dass Gruppenberechtigungen auf Lesen und Schreiben für Eigentümer und Gruppe eingestellt sind (_chmod 660 …_)</block>
+  <block id="d9089236da8f5cf946e4497f9e886125" category="list-text">Navigieren Sie in Cloud Insights zu *Observability &gt; Collectors* und wählen Sie die Registerkarte *Acquisition Units*. Wählen Sie _Neustart_ aus dem Menü „drei Punkte“ rechts neben der AU.</block>
+  <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Apache aus.</block>
+  <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">Sie können Informationen für mehrere Datensammler gleichzeitig bearbeiten. Wählen Sie auf der Seite *Observability &gt; Collectors* die zu ändernden Datensammler aus, indem Sie das Kontrollkästchen links von jedem aktivieren und auf die Schaltfläche *Massenaktionen* klicken. Wählen Sie *Bearbeiten* und ändern Sie die erforderlichen Felder.</block>
+  <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Memcached.</block>
+  <block id="f5d9cddb5529cde22dbbfac64ed116e4" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option MongoDB aus.</block>
+  <block id="601816c89a0810f8802681f16fb50cc5" category="list-text">Klicken Sie im Menü Workload-Sicherheit auf:
+*Collectors &gt; User Directory Collectors &gt; + User Directory Collector* und wählen Sie *Active Directory*</block>
+  <block id="6c9b3e4dd62551cbb0cf3069e831b84b" category="list-text">Klicken Sie im Menü Cloud Insights auf *Observability &gt; Collectors*</block>
+  <block id="2b7c39a8b273585cdba65d37a11b97e0" category="list-text">Klicken Sie im Menü Cloud Insights auf *Observability &gt; Collectors*, um die Liste der installierten Datensammler zu öffnen.</block>
+  <block id="41e52ba1f9b8b7cdf15e151317830ed2" category="list-text">Klicken Sie im Menü Cloud Insights auf *Observability &gt; Collectors*.</block>
+  <block id="f47fcfa022338bb85388c62d011288a2" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option PostgreSQL.</block>
+  <block id="b375a95628217618f913ff0addcb4f8e" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* OpenZFS.</block>
+  <block id="513f11f8d213c209a990a1bb086ea780" category="list-text">Melden Sie sich in Ihrer Cloud Insights-Umgebung an und navigieren Sie zu *Observability &gt; Collectors*.</block>
+  <block id="4b079dc3088a9e53c6c6851870343850" category="list-text">Klicken Sie Auf *Workload-Sicherheit &gt; Collectors &gt; Agents*</block>
+  <block id="f7a71c08cded2c36e48dd402ecadd5ba" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Puppet.</block>
+  <block id="8bcbe1a1fde4e3d96f7aca6694b75230" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Couchbase.</block>
+  <block id="29f60eabcc5e39b67a2b7e9560e07dc6" category="list-text">Klicken Sie im Menü Cloud Insights auf *Observability &gt; Collectors* und klicken Sie auf die Schaltfläche *+ Data Collector*. Sie können alle Datensammler anzeigen oder filtern, um nur die Datensammler anzuzeigen, die Ihnen auf Grundlage Ihres Abonnements zur Verfügung stehen.</block>
+  <block id="fd3211acf4f48156142e8f687cbe6c6b" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Leistungen* Kapacitor.</block>
+  <block id="588c730d062048ef78564e2278564813" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* netstat aus.</block>
+  <block id="e65f7cc9f07286d1ff22f4c88e1d6fdb" category="list-text">Klicken Sie auf *Workload Security &gt; Collectors*, um den Status des konfigurierten Collectors zu überprüfen.</block>
+  <block id="38d938dede033e6fd6e3fba721cdf402" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option HAProxy.</block>
+  <block id="b9e357a2b86f1ae6976d85b140c34304" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* *DC/OS*.</block>
+  <block id="efe524f42d2c837542d4da8626dd93a7" category="list-text">Klicken Sie im Menü Cloud Insights auf *Observability &gt; Collectors*</block>
+  <block id="ec35f90f2dd5badf0a40cb0d12d855be" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* ActiveMQ.</block>
+  <block id="ca888e8799d75a60bf8835194141e443" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Elasticsearch.</block>
+  <block id="f1f3071daba335689c22cb4ecf169b27" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Hadoop.</block>
+  <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* CouchDB.</block>
+  <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Flink.</block>
+  <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">Navigieren Sie zu Workload Security *Collectors* und klicken Sie auf die Registerkarte *Agents*.</block>
 </blocks>

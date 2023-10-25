@@ -28,7 +28,8 @@ Workload Security kann so konfiguriert werden, dass Benutzerattribute von Active
 
 
 .Schritte zum Konfigurieren eines Benutzerverzeichnissammler
-. Klicken Sie im Menü Workload Security auf: *Admin > Data Collectors > User Directory Collectors > + User Directory Collector* und wählen Sie *Active Directory*
+. Klicken Sie im Menü Workload-Sicherheit auf:
+*Collectors > User Directory Collectors > + User Directory Collector* und wählen Sie *Active Directory*
 +
 Das System zeigt den Bildschirm Benutzerverzeichnis hinzufügen an.
 

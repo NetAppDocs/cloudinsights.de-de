@@ -36,7 +36,7 @@ NOTE: Für eine genaue Audit- und Datenberichterstattung wird dringend empfohlen
 
 .Schritte für die Installation der Linux-Erfassungseinheit
 . Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Insights-Umgebung an.
-. Klicken Sie Auf *Admin > Datensammler > Akquisitionseinheiten > +Akquisitionseinheit*
+. Klicken Sie auf *AObservability > Collectors > Acquisition Units > +Acquisition Unit*
 +
 Das Dialogfeld „_Erfassungseinheit installieren “ wird angezeigt. Wählen Sie Linux.
 
@@ -52,7 +52,7 @@ image:NewLinuxAUInstall.png["Anweisungen für Linux AU"]
 
 
 .Nachdem Sie fertig sind
-* Klicken Sie auf *Admin > Data Collectors > Acquisition Units*, um den Status der Akquisitionseinheiten zu überprüfen.
+* Klicken Sie auf *Observability > Collectors > Acquisition Units*, um den Status von Acquisition Units zu überprüfen.
 * Die Protokolle der Acquisition Unit finden Sie unter /var/log/netapp/nebinsights/acq/acq.log
 * Verwenden Sie das folgende Skript, um die Erfassungseinheit zu steuern:
 +
@@ -112,7 +112,7 @@ Wenn Sie Workload Security in Ihrer Umgebung haben, werden auch die konfiguriert
 .Schritte für die Installation der Windows-Erfassungseinheit
 . Melden Sie sich als Benutzer mit Administratorrechten beim Server/der VM der Erfassungseinheit an.
 . Öffnen Sie auf diesem Server ein Browserfenster, und melden Sie sich als Administrator oder Kontoinhaber in Ihrer Cloud Insights-Umgebung an.
-. Klicken Sie Auf *Admin > Datensammler > Akquisitionseinheiten > +Akquisitionseinheit* .
+. Klicken Sie Auf *Observability > Collectors > Acquisition Units > +Acquisition Unit* .
 +
 Das Dialogfeld „_Erfassungseinheit installieren “ wird angezeigt. Wählen Sie Windows.
 
@@ -130,7 +130,7 @@ image::NewWindowsAUInstall.png[Windows AU Installation]
 
 
 .Nachdem Sie fertig sind
-* Klicken Sie auf *Admin > Data Collectors > Acquisition Units*, um den Status der Akquisitionseinheiten zu überprüfen.
+* Klicken Sie auf * > Observability > Collectors > Acquisition Units*, um den Status von Acquisition Units zu überprüfen.
 * Sie können das Protokoll der Erfassungseinheit in <install dir>\Cloud Insights\Acquisition Unit\log\acq.log aufrufen
 * Verwenden Sie das folgende Skript, um den Status der Erfassungseinheit zu beenden, zu starten, neu zu starten oder zu überprüfen:
 +
@@ -194,7 +194,7 @@ Wenn Sie eine *Linux*-Erfassungseinheit deinstallieren:
 
 *Nach* die AU deinstallieren:
 
-. Gehen Sie in Cloud Insights zu *Admin > Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.
+. Gehen Sie in Cloud Insights zu *Observability > Collectors und wählen Sie die Registerkarte *Acquisition Units* aus.
 . Klicken Sie rechts neben der zu deinstallierenden Erfassungseinheit auf die Schaltfläche Optionen, und wählen Sie _Löschen_. Sie können eine Erfassungseinheit nur löschen, wenn ihr keine Datensammler zugewiesen sind.
 
 
@@ -216,12 +216,12 @@ Sie müssen eine temporäre Erfassungseinheit auf einem separaten Server/einer s
 
 .Schritte
 . Melden Sie sich beim Server/VM der Acquisition Unit an und deinstallieren Sie die AU-Software.
-. Melden Sie sich in Ihrer Cloud Insights-Umgebung an und gehen Sie zu *Admin > Datensammler*.
+. Melden Sie sich in Ihrer Cloud Insights-Umgebung an und gehen Sie zu *Observability > Collectors*.
 . Klicken Sie für jeden Datensammler rechts auf das Menü Optionen, und wählen Sie _Bearbeiten_. Weisen Sie den Datensammler der temporären Erfassungseinheit zu und klicken Sie auf *Speichern*.
 +
 Sie können auch mehrere Datensammler desselben Typs auswählen und auf die Schaltfläche *Massenaktionen* klicken. Wählen Sie _Bearbeiten_ und weisen Sie die Datensammler der temporären Erfassungseinheit zu.
 
-. Nachdem alle Datensammler in die temporäre Erfassungseinheit verschoben wurden, gehen Sie zu *Admin > Datensammler* und wählen Sie die Registerkarte *Erfassungseinheiten* aus.
+. Nachdem alle Datensammler in die temporäre Erfassungseinheit verschoben wurden, gehen Sie zu *Observability > Collectors* und wählen Sie die Registerkarte *Erfassungseinheiten*.
 . Klicken Sie auf die Schaltfläche Optionen rechts neben der Erfassungseinheit, die Sie neu installieren möchten, und wählen Sie _Löschen_. Sie können eine Erfassungseinheit nur löschen, wenn ihr keine Datensammler zugewiesen sind.
 . Sie können die Software Acquisition Unit jetzt auf dem ursprünglichen Server/VM neu installieren. Klicken Sie auf *+Acquisition Unit*, und befolgen Sie die Anweisungen oben, um die Acquisition Unit zu installieren.
 . Sobald die Erfassungseinheit neu installiert wurde, weisen Sie Ihre Datensammler der Akquisitionseinheit zu.
