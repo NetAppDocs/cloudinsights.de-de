@@ -27,7 +27,7 @@ Der OpenStack (REST API/KVM) Data Collector erfasst Bestandsdaten für alle Open
 
 * IP-Adresse des OpenStack Controllers
 * Anmeldeinformationen für OpenStack Admin-Rollen und Zugriff auf den Linux-KVM-Hypervisor. Wenn Sie das Administratorkonto oder die entsprechenden Administratorrechte nicht verwenden, müssen Sie die Standardrichtlinien mithilfe von „Trial and Error“ ermitteln, um sich für Ihre Benutzer-ID für Datensammler zu entspannen.
-* Das OpenStack Ceilometer-Modul muss für die Performance-Erfassung installiert und konfiguriert sein. Die Konfiguration des Ceilometers erfolgt durch Bearbeiten der Nova.conf-Datei für jeden Hypervisor und dann durch Neustart des Nova Compute Service auf jedem Hypervisor. Die Optionsnamen ändern sich für verschiedene OpenStack Versionen:
+* Das OpenStack Gnocchi-Modul muss für die Performance-Erfassung installiert und konfiguriert sein. Die Konfiguration von Gnocchi erfolgt durch Bearbeiten der Nova.conf-Datei für jeden Hypervisor und anschließenden Neustart des Nova Compute Service auf jedem Hypervisor. Die Optionsnamen ändern sich für verschiedene OpenStack Versionen:
 +
 ** Icehouse
 ** Juno
@@ -45,7 +45,7 @@ Der OpenStack (REST API/KVM) Data Collector erfasst Bestandsdaten für alle Open
 ** 22 für KVM SSH
 ** 8774 für Nova Compute Service
 ** 8776 für Cinder Block Service
-** 8777 für den Ceilometer Performance Service
+** 8777 für Gnocchi Performance Service
 ** 9292 für Glance Image Service *Hinweis* der Port bindet sich an den spezifischen Dienst, und der Dienst kann auf dem Controller oder einem anderen Host in größeren Umgebungen ausgeführt werden.
 
 
