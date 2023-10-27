@@ -245,6 +245,8 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: Automatisierte Antwortrichtlinien
       url: "/cs_automated_response_policies.html"
+    - title: Richtlinien Für Zulässige Dateitypen
+      url: "/ws_allowed_file_types.html"
     - title: ONTAP – Integration des autonomen Ransomware-Schutzes
       url: "/concept_cs_integration_with_ontap_arp.html"
     - title: Blockieren Des Benutzerzugriffs

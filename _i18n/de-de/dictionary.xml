@@ -12780,4 +12780,12 @@ Weitere Informationen finden Sie im Abschnitt Data Collector Vendor Reference in
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie unter *Services* die Option Flink.</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">Navigieren Sie zu Workload Security *Collectors* und klicken Sie auf die Registerkarte *Agents*.</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">Klicken Sie auf *+ Collector*, und wählen Sie den zu konfigurierenden Data Collector aus.</block>
+  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">Fügen Sie Dateierweiterungen zu einer Whitelist hinzu, um Warnmeldungen zu reduzieren</block>
+  <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">Richtlinien Für Zulässige Dateitypen</block>
+  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">Wenn ein Ransomware-Angriff auf eine bekannte Dateierweiterung erkannt wird und auf dem Bildschirm „Alerts“ Warnmeldungen generiert werden, kann diese Dateiendung auf die Whitelists gesetzt werden, um unnötige Warnmeldungen zu vermeiden.</block>
+  <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">Navigieren Sie zu *Workload-Sicherheit &gt; Richtlinien*, und wechseln Sie zur Registerkarte _allowed File Type Policies_.</block>
+  <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">Nach der Whitelist wird für diesen zulässigen Dateityp keine Warnung vor Ransomware-Angriffen generiert. Beachten Sie, dass die _allowed File Types_-Richtlinie nur für die Ransomware-Erkennung gilt.</block>
+  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">Wenn beispielsweise eine Datei mit dem Namen _Test.txt_ in _Test.txt.abc_ umbenannt wird und Workload Security einen Ransomware-Angriff aufgrund der Erweiterung _.abc_ erkennt, kann die Erweiterung _.abc_ auf ein Whitelist gesetzt werden. Nach der Whitelisting werden Ransomware-Angriffe gegen Dateien mit der Erweiterung _.abc_ nicht mehr generiert.</block>
+  <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">Zulässige Dateitypen sind exakte Übereinstimmungen (z. B. ".abc") oder Ausdrücke (z. B. ".*type", ".type*" oder "*type*"). Ausdrücke der Typen ".a*c", ".p*f" werden nicht unterstützt.</block>
 </blocks>
