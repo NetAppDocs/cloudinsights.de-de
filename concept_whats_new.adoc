@@ -29,6 +29,16 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+=== Verbesserte Workload-Sicherheit
+
+Die Workload-Sicherheit wurde durch folgende Funktionen verbessert:
+
+* *Zugriff verweigert*: Workload-Sicherheit integriert sich in ONTAP, um "Zugriff verweigert" Ereignisse zu empfangen und eine zusätzliche Analyse und automatische Reaktion Ebene.
+* Whitelisting *allowed Dateitypen*: Wenn ein Ransomware-Angriff für eine bekannte Dateierweiterung erkannt wird, kann diese Dateierweiterung auf die Whitelisting gesetzt werden, um unnötige Warnungen zu vermeiden. - link:/ws_allowed_file_types.html["Weitere Informationen"]
+
+
+
+
 === Modulversuche
 
 Zusätzlich zu Ihrer ersten Testversion von Cloud Insights können Sie von diesen Funktionen profitieren link:concept_subscribing_to_cloud_insights.html#module-trials["Modulversuche"]. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes in Ihre Umgebung integrieren möchten, können Sie automatisch für eine 30-Tage-Testversion von Kubernetes Observability starten. Ihnen wird am Ende des Testzeitraums nur die Nutzung Ihrer von Kubernetes Observability gemanagten Einheit in Rechnung gestellt.
