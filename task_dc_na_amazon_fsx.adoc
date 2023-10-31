@@ -120,6 +120,8 @@ Dieser Datensammler sammelt die folgenden erweiterten Metriken aus dem FSX für 
 * Workload_Volume
 
 
+Beachten Sie, dass FSX CLI-Befehle einige Kapazitätswerte abrufen, die FSX über API verbietet. Da Cloud Insights versucht FSX-Daten über API abzurufen, können bestimmte Kapazitätswerte (z. B. für Storage-Pools) in Cloud Insights anders sein als sie auf dem FSX selbst sind. Weitere Informationen erhalten Sie von Ihrem Amazon-Ansprechpartner.
+
 
 
 == Fehlerbehebung
