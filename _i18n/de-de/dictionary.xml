@@ -12588,8 +12588,6 @@ Kubectl get all -n &lt;namespace&gt; (sollte zeigen, dass nichts gefunden wird)<
 ----
 
 • Net-Observer PODs benötigen die Linux Kernel Version mindestens 4.18.0. Überprüfen Sie die Kernel-Version mit dem Befehl „uname -r“ und stellen Sie sicher, dass sie &gt;= 4.18.0 sind</block>
-  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">NET-Observer Pods im NKMO Namespace befinden sich in CrashLoopBackOff in der OpenShift 4 Umgebung</block>
-  <block id="c16b414538506d32ed8a234fa2331767" category="cell">Dies wird derzeit nicht unterstützt. Achten Sie darauf, dass Support in einem zukünftigen Update hinzugefügt wird.</block>
   <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Pods werden in NKMO Namespace ausgeführt (Standard: netapp-Monitoring), es werden jedoch keine Daten in der UI für die Workload-Zuordnung oder Kubernetes-Kennzahlen in Abfragen angezeigt</block>
   <block id="b301a7b156c241fb466de1bca776811c" category="cell">Überprüfen Sie die Zeiteinstellung auf den Knoten des K8S-Clusters. Für eine genaue Prüfung und Datenberichterstattung wird dringend empfohlen, die Zeit auf dem Agent-Rechner mit Network Time Protocol (NTP) oder Simple Network Time Protocol (SNTP) zu synchronisieren.</block>
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">Einige der Net-Observer-Pods im NKMO-Namespace befinden sich im Status „Ausstehend“</block>
@@ -12792,4 +12790,8 @@ Weitere Informationen finden Sie im Abschnitt Data Collector Vendor Reference in
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">Die Workload-Sicherheit wurde durch folgende Funktionen verbessert:</block>
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*Zugriff verweigert*: Workload-Sicherheit integriert sich in ONTAP, um "Zugriff verweigert" Ereignisse zu empfangen und eine zusätzliche Analyse und automatische Reaktion Ebene.</block>
   <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">Whitelisting *allowed Dateitypen*: Wenn ein Ransomware-Angriff für eine bekannte Dateierweiterung erkannt wird, kann diese Dateierweiterung auf die Whitelisting gesetzt werden, um unnötige Warnungen zu vermeiden. - <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
+  <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">Meine kubernetes-Ereignisse berichteten unerwartet nicht mehr an Cloud Insights.</block>
+  <block id="530877d75874db688a349c68f4d664d6" category="cell">Rufen Sie den Namen des Event-Exporteur Pod `kubectl -n netapp-Monitoring get Pods ab</block>
+  <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">Grep Event-Exporteur</block>
+  <block id="60154ad86ed086052b09e30faded046b" category="cell">awk '{Print} 1'</block>
 </blocks>
