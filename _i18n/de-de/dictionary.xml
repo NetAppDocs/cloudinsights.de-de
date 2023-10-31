@@ -12807,4 +12807,8 @@ Es sollte entweder „netapp-CI-Event-Exporteur“ oder „Event-Exporteur“ se
 
 Alternativ kann man auch <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> Und <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> Der Agent.</block>
   <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">Beachten Sie, dass FSX CLI-Befehle einige Kapazitätswerte abrufen, die FSX über API verbietet. Da Cloud Insights versucht FSX-Daten über API abzurufen, können bestimmte Kapazitätswerte (z. B. für Storage-Pools) in Cloud Insights anders sein als sie auf dem FSX selbst sind. Weitere Informationen erhalten Sie von Ihrem Amazon-Ansprechpartner.</block>
+  <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">Bei der Eingabe eines Cognos Report-Zeitplans endet manchmal ein zusätzliches „m“ in der Zeitplanung. Wenn ich die Zeit beispielsweise als „02:15 PM“ eingebe, kann ein zusätzliches Zeichen hinzugefügt werden: „02:15 PMM“ (oder PMM). Wenn ich draußen klicke, ändert es sich zu "2:15 AM".
+
+Ich kann den Bericht speichern, aber wenn ich den gespeicherten Bericht erneut öffne, wird die Zeitplanzeit als AM (d. h. morgens) angezeigt, unabhängig davon, ob ich in der Zeitplanzeit AM oder PM eingegeben habe.</block>
+  <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">Geben Sie die Zeitplanzeit erneut ein. Achten Sie dabei darauf, nicht die vollständigen Zeichen „AM“ oder „PM“ einzugeben. Es reicht aus, „A“ für „AM“ oder „P“ für „PM“ einzugeben. Wenn das zusätzliche Zeichen nicht angezeigt wird, wird die Zeitplanzeit korrekt eingestellt.</block>
 </blocks>
