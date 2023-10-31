@@ -468,9 +468,6 @@ Erfassen oder notieren Sie die Ausgabe der folgenden Befehle, und wenden Sie sic
 • Net-Observer PODs benötigen die Linux Kernel Version mindestens 4.18.0. Überprüfen Sie die Kernel-Version mit dem Befehl „uname -r“ und stellen Sie sicher, dass sie >= 4.18.0 sind 
 
 
-| NET-Observer Pods im NKMO Namespace befinden sich in CrashLoopBackOff in der OpenShift 4 Umgebung | Dies wird derzeit nicht unterstützt. Achten Sie darauf, dass Support in einem zukünftigen Update hinzugefügt wird. 
-
-
 | Pods werden in NKMO Namespace ausgeführt (Standard: netapp-Monitoring), es werden jedoch keine Daten in der UI für die Workload-Zuordnung oder Kubernetes-Kennzahlen in Abfragen angezeigt | Überprüfen Sie die Zeiteinstellung auf den Knoten des K8S-Clusters. Für eine genaue Prüfung und Datenberichterstattung wird dringend empfohlen, die Zeit auf dem Agent-Rechner mit Network Time Protocol (NTP) oder Simple Network Time Protocol (SNTP) zu synchronisieren. 
 
 
