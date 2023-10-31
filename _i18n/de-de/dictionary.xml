@@ -100,7 +100,6 @@
   <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">Data Collector Supportmatrix</block>
   <block id="97d56c15017ad32b1cbc85383d592281" category="summary">ECS-Datensammler konfigurieren.</block>
   <block id="696067539a48ac7ca42724de79fbd051" category="doc">Konfigurieren des EMC ECS-Datensammlers</block>
-  <block id="0dd54ea5de1f0186d88f6171945bf17a" category="paragraph">Dieser Datensammler erfasst Bestands- und Performancedaten von EMC ECS Speichersystemen. Zur Konfiguration benötigt der Datensammler eine IP-Adresse des ECS-Servers und ein Domain-Konto auf Administratorebene.</block>
   <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">Verwaltete Einheit (ME)</block>
   <block id="d157607d4f3b74d5627170cf0c710ee9" category="admonition">Dell EMC ECS wird mit einer anderen Rate von Raw TB zu Managed Units gemessen. Alle 40 TB unformatierte ECS-Kapazität wird als 1 geladen <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>.</block>
   <block id="babd4a2879d509662ea2e8a9168f34ed" category="paragraph">Cloud Insights erwirbt die folgenden Bestandsinformationen vom ECS Datensammler. Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
@@ -110,17 +109,12 @@
   <block id="6252d0571760e3d285e2e41a2b1e7743" category="cell">Mandant</block>
   <block id="30edf70db68aa84f05d3e72326807b0c" category="cell">Eimer</block>
   <block id="27432d6ac14dca995c573c963e1fecd8" category="cell">Internes Volumen</block>
-  <block id="f3d2ef1b407f9dac845144f7222446b0" category="list-text">Eine IP-Adresse der ECS Management Console</block>
-  <block id="d53717de9f42bb927d66332c1b99aa0a" category="list-text">Domain-Konto auf Administratorebene für das ECS-System</block>
-  <block id="b28ad04cb96e374334fe66f0c126a953" category="list-text">Port 443 (HTTPS): Erfordert eine ausgehende Verbindung zum TCP-Port 443 des ECS-Systems.</block>
   <block id="c7ddbb8aa01975e2d488fdf90d356f2e" category="list-text">Für die Leistung können Sie den schreibgeschützten Benutzernamen und das Kennwort für den ssh/scp-Zugriff verwenden.</block>
   <block id="7f493bcc752a7f12df179d4529291e82" category="list-text">Für die Leistung ist Port 22 erforderlich.</block>
   <block id="7a03f89966abe32a9145c5711baac2c6" category="cell">ECS Host</block>
   <block id="60103158e1fa8a921007c1692b656462" category="cell">IP-Adresse oder vollqualifizierter Domain-Name des ECS-Systems</block>
   <block id="2ef0586f8254b68b62f3912e0765fb08" category="cell">ECS-Host-Port</block>
   <block id="55f849af32f2bc9f6a84120627639721" category="cell">Port, der für die Kommunikation mit ECS Host verwendet wird</block>
-  <block id="2e610591aff0a1797343c00ad6a93ae8" category="cell">ECS Anbieter-ID</block>
-  <block id="b523f7997888942f06b8d3a5bcbc4a29" category="cell">Anbieter-ID für ECS</block>
   <block id="0750f8ac8a07b8a8acba23993fc3de34" category="cell">Passwort wird für ECS verwendet</block>
   <block id="2d74084218f04becb882422545c77d5f" category="cell">Der Standardwert ist 360 Minuten.</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">Erstellen von Monitoren, damit bei Performance- oder Bestandsschwellenwerten sowie bei metrischen oder Protokollbedingungen eine Warnmeldung ausgegeben wird</block>
@@ -12794,4 +12788,10 @@ Weitere Informationen finden Sie im Abschnitt Data Collector Vendor Reference in
   <block id="530877d75874db688a349c68f4d664d6" category="cell">Rufen Sie den Namen des Event-Exporteur Pod `kubectl -n netapp-Monitoring get Pods ab</block>
   <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">Grep Event-Exporteur</block>
   <block id="60154ad86ed086052b09e30faded046b" category="cell">awk '{Print} 1'</block>
+  <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">Dieser Datensammler erfasst Bestands- und Performancedaten von EMC ECS Speichersystemen. Für die Konfiguration benötigt der Datensammler eine IP-Adresse oder einen Hostnamen des ECS-Clusters sowie einen Benutzernamen und ein Passwort.</block>
+  <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">Eine IP-Adresse oder ein Hostname des ECS-Clusters</block>
+  <block id="2ed72e68497591d0803bef6bc9c16f79" category="list-text">Benutzername und Passwort für das ECS-System</block>
+  <block id="4b10979e526e6c6ecbe9f247ba883305" category="list-text">Port 4443 (HTTPS).  Erfordert ausgehende Verbindungen zum TCP-Port 4443 auf dem ECS-System.</block>
+  <block id="e3bd341282cc459a09900310d9ce8e73" category="cell">ECS-Benutzer-ID</block>
+  <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">Benutzer-ID für ECS</block>
 </blocks>

@@ -19,7 +19,7 @@ summary: ECS-Datensammler konfigurieren.
 
 
 [role="lead"]
-Dieser Datensammler erfasst Bestands- und Performancedaten von EMC ECS Speichersystemen. Zur Konfiguration benötigt der Datensammler eine IP-Adresse des ECS-Servers und ein Domain-Konto auf Administratorebene.
+Dieser Datensammler erfasst Bestands- und Performancedaten von EMC ECS Speichersystemen. Für die Konfiguration benötigt der Datensammler eine IP-Adresse oder einen Hostnamen des ECS-Clusters sowie einen Benutzernamen und ein Passwort.
 
 
 NOTE: Dell EMC ECS wird mit einer anderen Rate von Raw TB zu Managed Units gemessen. Alle 40 TB unformatierte ECS-Kapazität wird als 1 geladen link:concept_subscribing_to_cloud_insights.html#pricing["Verwaltete Einheit (ME)"].
@@ -52,11 +52,9 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 == Anforderungen
 
-* Eine IP-Adresse der ECS Management Console
-* Domain-Konto auf Administratorebene für das ECS-System
-* Port 443 (HTTPS): Erfordert eine ausgehende Verbindung zum TCP-Port 443 des ECS-Systems.
-* Für die Leistung können Sie den schreibgeschützten Benutzernamen und das Kennwort für den ssh/scp-Zugriff verwenden.
-* Für die Leistung ist Port 22 erforderlich.
+* Eine IP-Adresse oder ein Hostname des ECS-Clusters
+* Benutzername und Passwort für das ECS-System
+* Port 4443 (HTTPS).  Erfordert ausgehende Verbindungen zum TCP-Port 4443 auf dem ECS-System.
 
 
 
@@ -74,7 +72,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 | ECS-Host-Port | Port, der für die Kommunikation mit ECS Host verwendet wird 
 
 
-| ECS Anbieter-ID | Anbieter-ID für ECS 
+| ECS-Benutzer-ID | Benutzer-ID für ECS 
 
 
 | Passwort | Passwort wird für ECS verwendet 
@@ -94,4 +92,31 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 == Fehlerbehebung
 
+Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
+
+
+
+==== Inventar
+
+[cols="2*"]
+|===
+| Problem: | Versuchen Sie dies: 
+
+
+| Fehler: Benutzerauthentifizierung fehlgeschlagen. | Stellen Sie sicher, dass Ihre Anmeldeinformationen für dieses Gerät korrekt sind. 
+|===
+
+
+==== Leistung
+
+[cols="2*"]
+|===
+| Problem: | Versuchen Sie dies: 
+
+
+| Fehler: Es wurden nicht genügend Daten erfasst. | • Prüfen Sie den Zeitstempel der Sammlung in der Protokolldatei und ändern Sie das Abfrageintervall entsprechend • Warten Sie länger 
+
+
+| Fehler: Das Abfrageintervall für die Performance ist zu groß. | Überprüfen Sie den Sammlungs-Zeitstempel in der Protokolldatei €{logfile} und ändern Sie das Abfrageintervall entsprechend 
+|===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
