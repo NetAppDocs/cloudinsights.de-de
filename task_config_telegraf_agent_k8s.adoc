@@ -534,9 +534,12 @@ Starten Sie Telegraf anschließend neu.
 
 Es sollte entweder „netapp-CI-Event-Exporteur“ oder „Event-Exporteur“ sein.  Bearbeiten Sie anschließend den Monitoring-Agent `kubectl -n netapp-monitoring edit agent`, Und legen Sie den Wert für LOG_FILE so fest, dass der entsprechende POD-Name für den Event-Exporter im vorherigen Schritt angezeigt wird.  Genauer gesagt sollte LOG_FILE auf "/var/log/Containers/netapp-CI-Event-exporteur.log" oder "/var/log/Containers/Event-exporteur*.log" gesetzt werden
 
-    - Schlüssel: LOG_FILE
-      Werte:
-      - /Var/log/Containers/netapp-CI-Event-Exporteur*.log
+....
+ - Schlüssel: LOG_FILE
+   Werte:
+   - /Var/log/Containers/netapp-CI-Event-Exporteur*.log
+....
+
 Alternativ kann man auch <<uninstalling,Deinstallieren>> Und <<installing-the-netapp-kubernetes-monitoring-operator,Neu installieren>> Der Agent. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
