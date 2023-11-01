@@ -22,7 +22,7 @@ summary: Amazon FSX für NetApp ONTAP Data Collector
 Dieser Datensammler erfasst Bestands- und Performance-Daten von Amazon FSX für NetApp ONTAP. Dieser Datensammler wird schrittweise in allen Cloud Insights-Servicegebieten zur Verfügung gestellt. Wenden Sie sich an Ihren Vertriebsmitarbeiter, wenn das Symbol für diesen Sammler in Ihrer Cloud Insights-Umgebung nicht angezeigt wird.
 
 
-NOTE: Für diesen Cloud Insights-Collector ist ein ONTAP-Benutzer mit der Rolle _Filesystem-scoped_ erforderlich. Bitte sehen Sie sich die AWS durchsehen link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["Rollen und Regeln"] Dokumentation für verfügbare Optionen. AWS unterstützt derzeit nur eine Art Benutzerrolle mit Filesystem Scope, nämlich _fsxadmin_. Dies ist die geeignete Rolle, die für den Cloud Insights-Collector verwendet werden soll.
+NOTE: Für diesen Cloud Insights-Collector ist ein ONTAP-Benutzer mit der Rolle _Filesystem-scoped_ erforderlich. Bitte sehen Sie sich die AWS durchsehen link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["Rollen und Regeln"] Dokumentation für verfügbare Optionen. AWS unterstützt derzeit nur eine Art Benutzerrolle mit Filesystem Scope, nämlich _fsxadmin_. Dies ist die geeignete Rolle, die für den Cloud Insights-Collector verwendet werden soll. Dem Benutzer sollten auch alle drei dieser Anwendungen zugewiesen sein: http, ontapi, ssh.
 
 
 
@@ -79,9 +79,9 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den FSX-
 
 Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses Datensammlers:
 
-* Sie müssen Zugriff auf ein Administratorkonto haben, das für schreibgeschützte API-Aufrufe konfiguriert ist.
+* Sie müssen Zugriff auf ein Konto mit der Rolle „fsxadmin“ haben, wobei drei Anwendungen zugewiesen sind - ssh, ontapi, http
 * Zu den Kontodetails gehören Benutzername und Passwort.
-* Port-Anforderungen: 80 oder 443
+* Anforderungen an den Hafen: 443
 
 
 
@@ -120,7 +120,7 @@ Dieser Datensammler sammelt die folgenden erweiterten Metriken aus dem FSX für 
 * Workload_Volume
 
 
-Beachten Sie, dass FSX CLI-Befehle einige Kapazitätswerte abrufen, die FSX über API verbietet. Da Cloud Insights versucht FSX-Daten über API abzurufen, können bestimmte Kapazitätswerte (z. B. für Storage-Pools) in Cloud Insights anders sein als sie auf dem FSX selbst sind. Weitere Informationen erhalten Sie von Ihrem Amazon-Ansprechpartner.
+Beachten Sie, dass FSX CLI- und API-Befehle einige Kapazitätswerte abrufen, die Cloud Insights ZAPI nicht sammelt, so dass bestimmte Kapazitätswerte (z. B. für Speicherpools) in Cloud Insights anders sein können als sie auf dem FSX selbst sind.
 
 
 
