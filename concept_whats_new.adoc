@@ -34,7 +34,7 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 Die Workload-Sicherheit wurde durch folgende Funktionen verbessert:
 
 * *Zugriff verweigert*: Workload-Sicherheit integriert sich in ONTAP, um "Zugriff verweigert" Ereignisse zu empfangen und eine zusätzliche Analyse und automatische Reaktion Ebene.
-* Whitelisting *allowed Dateitypen*: Wenn ein Ransomware-Angriff für eine bekannte Dateierweiterung erkannt wird, kann diese Dateierweiterung auf die Whitelisting gesetzt werden, um unnötige Warnungen zu vermeiden. - link:/ws_allowed_file_types.html["Weitere Informationen"]
+* *Zulässige Dateitypen*: Wenn ein Ransomware-Angriff für eine bekannte Dateierweiterung erkannt wird, kann diese Dateierweiterung zu einem hinzugefügt werden link:ws_allowed_file_types.html["Zulässige Dateitypen"] Liste, um unnötige Warnmeldungen zu vermeiden.
 
 
 
