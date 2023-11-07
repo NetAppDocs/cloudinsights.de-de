@@ -12813,5 +12813,5 @@ Ich kann den Bericht speichern, aber wenn ich den gespeicherten Bericht erneut �
   <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">Sie müssen Zugriff auf ein Konto mit der Rolle „fsxadmin“ haben, wobei drei Anwendungen zugewiesen sind - ssh, ontapi, http</block>
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">Anforderungen an den Hafen: 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">Beachten Sie, dass FSX CLI- und API-Befehle einige Kapazitätswerte abrufen, die Cloud Insights ZAPI nicht sammelt, so dass bestimmte Kapazitätswerte (z. B. für Speicherpools) in Cloud Insights anders sein können als sie auf dem FSX selbst sind.</block>
-  <block id="283dda2d69780214459b88b24889f026" category="paragraph">Informationen zur Installation auf Kubernetes finden Sie unter <block ref="795cb2fef65468e8b6a28f3da1c0d62b" category="inline-link-macro-rx"></block>.</block>
+  <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">Informationen zur Installation auf Kubernetes finden Sie unter <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>.</block>
 </blocks>
