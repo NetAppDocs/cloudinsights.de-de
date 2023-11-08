@@ -21,6 +21,9 @@ summary: Cloud Insights unterstützt Telegraf als Agent bei der Erfassung von In
 [role="lead"]
 Cloud Insights bietet die Sammlung *NetApp Kubernetes Monitoring Operator* (NKMO) für Kubernetes an. Wählen Sie beim Hinzufügen eines Datensammlers einfach die Kachel „Kubernetes“.
 
+
+NOTE: Wenn Sie Cloud Insights Federal Edition besitzen, können Ihre Installations- und Konfigurationsanweisungen von den Anweisungen auf dieser Seite abweichen. Befolgen Sie die Anweisungen unter Cloud Insights, um den NetApp Kubernetes Monitoring Operator zu installieren.
+
 image:kubernetes_tile.png["Kubernetes Data Collector"]
 
 

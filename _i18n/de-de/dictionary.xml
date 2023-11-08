@@ -12814,4 +12814,5 @@ Ich kann den Bericht speichern, aber wenn ich den gespeicherten Bericht erneut �
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">Anforderungen an den Hafen: 443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">Beachten Sie, dass FSX CLI- und API-Befehle einige Kapazitätswerte abrufen, die Cloud Insights ZAPI nicht sammelt, so dass bestimmte Kapazitätswerte (z. B. für Speicherpools) in Cloud Insights anders sein können als sie auf dem FSX selbst sind.</block>
   <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">Informationen zur Installation auf Kubernetes finden Sie unter <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>.</block>
+  <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">Wenn Sie Cloud Insights Federal Edition besitzen, können Ihre Installations- und Konfigurationsanweisungen von den Anweisungen auf dieser Seite abweichen. Befolgen Sie die Anweisungen unter Cloud Insights, um den NetApp Kubernetes Monitoring Operator zu installieren.</block>
 </blocks>
