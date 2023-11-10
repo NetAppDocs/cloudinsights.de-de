@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
-keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving 
+keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
 summary: Cloud Insights kann so konfiguriert werden, dass AU-Software manuell aktualisiert werden muss, sodass Sie mehr Kontrolle über die in Ihrer Umgebung installierte Software haben. 
 ---
 = Manuelle Installation Der Acquisition Unit-Software
@@ -27,14 +27,14 @@ Bei Linux und Windows ist der Prozess ähnlich.
 
 
 
-=== Durchführen einer NEUEN AU-Installation unter Linux:
+== Durchführen einer NEUEN AU-Installation unter Linux:
 
 . Erstellen Sie in Cloud Insights ein API-Token.
 +
 .. Navigieren Sie zu *Admin > API Access* und wählen Sie *+API Access Token*.
 +
 ... Legen Sie einen *Namen* und *Beschreibung* fest, der leicht zu identifizieren ist
-... Typ: *Acquisition Unit*
+... Typ: Wählen Sie *Acquisition Unit* und *Data Collection*
 ... Berechtigungen: *Lesen/Schreiben*
 ... Wählen Sie die gewünschten Werte für *expiry* und *Auto-Renew* aus
 
@@ -109,68 +109,90 @@ Hinweis: Wenn Sie keinen benutzerdefinierten Benutzer und keine benutzerdefinier
 
 
 
-Zu diesem Zeitpunkt wird die AU-Software auf dem System installiert und ist für den benutzerdefinierten Benutzer und die Gruppe zugänglich. Sie haben jedoch nicht die Möglichkeit, Datensammler hinzuzufügen. Um dies manuell zu tun, müssen Sie die Datei Datasources.war an den richtigen Speicherort kopieren.
+Zu diesem Zeitpunkt wird die AU-Software auf dem System installiert und ist für den benutzerdefinierten Benutzer und die Gruppe zugänglich. Sie haben jedoch nicht die Möglichkeit, Datensammler hinzuzufügen. Lesen Sie dazu die folgenden Anweisungen. Wenn Sie nur einen Patch installieren möchten, lesen Sie die <<downloading-a-patch,Patch>> Abschnitt unten.
 
-. Navigieren Sie zum Quellspeicherort für Datasources.war, und überprüfen Sie dort die ZIP-Datei:
-+
-....
-cd /opt/netapp/cloudinsights/acq
-ls -al
-…
--rw-rw----  1 test-user1 test-group1 282103053 Mar 12 12:27 datasources-war-<version>>.zip
-…
-....
-. Beachten Sie die Berechtigungen für den Standardordner Datasources.war:
-+
-....
-ls -al /var/lib/netapp/cloudinsights/acq/
-…
-drwxrwx--- 2 test-user1 test-group-1  4096 Feb 16 10:10 datasources.war
-…
-....
+
+
+== Manuelles Installieren Von Data Collectors
+
+Laden Sie die neuesten Datenquellen.war über die API /Collector/Patch/Datasourceswar/latest herunter:
+
+image:API_Manual_Download_datasources.png["API zum Abrufen der neuesten Datenquellen.war"]
+
+Hinweis: Wenn Sie nicht die neueste Version herunterladen, bestätigen Sie mit NetApp die Version, die zum Download angegeben werden soll.
+
+Klicken Sie Auf Datei Herunterladen. Wenn Sie diese Schritte auf einem anderen System als dem AU-System ausführen, kopieren Sie das heruntergeladene ZIP-Paket Datasources.war auf das AU-System.
+
+Stellen Sie sicher, dass das zip-Bundle Datasources.war in das folgende Verzeichnis kopiert wird: /Var/lib/netapp/cloudinsights/acq/download
+
+Navigieren Sie zum Verzeichnis /var/lib/netapp/cloudinsights/acq/download für Datasources.war und überprüfen Sie dort die zip-Datei:
+
 . Für die nächsten Schritte müssen Sie zum Benutzer root wechseln (oder sich abmelden und mit anmelden).
 +
  su <custom user>
 +
-.. Hinweis: Wenn Sie den Standard „cisys“-Benutzer und die Standardgruppe verwenden, müssen Sie diesen Schritt nicht ausführen.
-.. Hinweis: Benutzerdefinierter Benutzer kann jeder Benutzer sein, der Mitglied einer benutzerdefinierten Gruppe ist, die Sie cloudinsights-install.sh während der AU-Installation bereitgestellt haben, und kann der gleiche oder andere Benutzer sein als der benutzerdefinierte Benutzer, den Sie während der AU-Installation angegeben haben.
+Hinweis: Wenn Sie den Standard „cisys“-Benutzer und die Standardgruppe verwenden, müssen Sie diesen Schritt nicht ausführen.
 
++
+Hinweis: Benutzerdefinierter Benutzer kann jeder Benutzer sein, der Mitglied einer benutzerdefinierten Gruppe ist, die Sie cloudinsights-install.sh während der AU-Installation bereitgestellt haben, und kann der gleiche oder andere Benutzer sein als der benutzerdefinierte Benutzer, den Sie während der AU-Installation angegeben haben.
 
-. Erstellen Sie einen Arbeitsordner, und passen Sie ihn an die gleichen Berechtigungen an:
+. Führen Sie Folgendes aus:
 +
 ....
-mkdir /var/lib/netapp/cloudinsights/acq/download
-chmod 770 /var/lib/netapp/cloudinsights/acq/download
-ls -al /var/lib/netapp/cloudinsights/acq
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/datasources-war-<version>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
 …
-drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources.war
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version>.zip
 …
 ....
 +
-.. Hinweis: Wenn Sie den Benutzer und die Gruppe „cisys“ verwenden, werden diese in der obigen Ausgabe angezeigt.
+Hinweis: Wenn Sie den Benutzer und die Gruppe „cisys“ verwenden, werden diese in der obigen Ausgabe angezeigt.
+
++
+Hinweis: Wenn Sie die Installation mit verschiedenen benutzerdefinierten Benutzern planen, stellen Sie sicher, dass die Gruppenberechtigungen für Eigentümer und Gruppe auf Lesen und Schreiben eingestellt sind (chmod 660 …).
+
+. Starten Sie den AU neu. Navigieren Sie in Cloud Insights zu Observability > Collectors, und wählen Sie die Registerkarte Acquisition Units aus. Wählen Sie aus dem Menü „drei Punkte“ rechts neben der AU „Neu starten“.
 
 
-. Kopieren Sie die _Datenquellen-war-<version>.zip_ in den Arbeitsordner. Beispiel:
+
+
+== Herunterladen eines Patches
+
+Laden Sie den Patch über die API /Collector/Patch/file/{Version} herunter:
+
+image:API_Manual_Download_patch.png["API zum Abrufen des Patches"]
+
+Hinweis: Bestätigen Sie mit NetApp die Version, die zum Download angegeben werden soll.
+
+Klicken Sie Auf Datei Herunterladen. Wenn Sie diese Schritte auf einem anderen System als dem AU-System ausführen, kopieren Sie das heruntergeladene Patch-ZIP-Paket auf das AU-System.
+
+Stellen Sie sicher, dass Patch zip Bundle in das folgende Verzeichnis kopiert wird : /var/lib/netapp/Cloudinsights/acq/download
+
+Navigieren Sie zum Verzeichnis /var/lib/netapp/cloudinsights/acq/download für den Patch und überprüfen Sie dort die .zip-Datei:
+
+. Für die nächsten Schritte müssen Sie zum Benutzer root wechseln (oder sich abmelden und mit anmelden).
 +
- cp /opt/netapp/cloudinsights/acq/ TBD/var/lib/netapp/cloudinsights/acq/download
-. Wechseln Sie in den Download-Ordner, und entpacken Sie die Datei:
+ su <custom user>
 +
- cd /var/lib/netapp/cloudinsights/acq/download
+Hinweis: Wenn Sie den Standard „cisys“-Benutzer und die Standardgruppe verwenden, müssen Sie diesen Schritt nicht ausführen.
+
++
+Hinweis: Benutzerdefinierter Benutzer kann jeder Benutzer sein, der Mitglied einer benutzerdefinierten Gruppe ist, die Sie cloudinsights-install.sh während der AU-Installation bereitgestellt haben, und kann der gleiche oder andere Benutzer sein als der benutzerdefinierte Benutzer, den Sie während der AU-Installation angegeben haben.
+
+. Führen Sie Folgendes aus:
 +
 ....
-unzip datasources-war-<version>.zip -d /var/lib/netapp/cloudinsights/acq/datasources.war/
-ls -al /var/lib/netapp/cloudinsights/acq/datasources.war
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/<patch_file_name>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
+…
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
+…
 ....
 +
-.. Stellen Sie sicher, dass Benutzer, Gruppe und Berechtigungen für alle Dateien korrekt sind:
+Hinweis: Wenn Sie den Benutzer und die Gruppe „cisys“ verwenden, werden diese in der obigen Ausgabe angezeigt.
+
 +
- -rw-rw---- 1 test-user2 test-group1  3420067 Mar 10 17:20 netapp_ontap.jar
+Hinweis: Wenn Sie die Installation mit verschiedenen benutzerdefinierten Benutzern planen, stellen Sie sicher, dass die Gruppenberechtigungen für Eigentümer und Gruppe auf Lesen und Schreiben eingestellt sind (chmod 660 …).
 
-
-. Hinweis: Wenn Sie planen, AU mit verschiedenen benutzerdefinierten Benutzern zu verwenden, stellen Sie sicher, dass Gruppenberechtigungen auf Lesen und Schreiben für Eigentümer und Gruppe eingestellt sind (_chmod 660 …_)
-. Starten Sie den AU neu.
-+
-.. Navigieren Sie in Cloud Insights zu *Observability > Collectors* und wählen Sie die Registerkarte *Acquisition Units*. Wählen Sie _Neustart_ aus dem Menü „drei Punkte“ rechts neben der AU.
-
-
+. Starten Sie den AU neu. Navigieren Sie in Cloud Insights zu Observability > Collectors, und wählen Sie die Registerkarte Acquisition Units aus. Wählen Sie aus dem Menü „drei Punkte“ rechts neben der AU „Neu starten“.
 
