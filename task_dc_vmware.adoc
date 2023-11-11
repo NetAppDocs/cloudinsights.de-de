@@ -136,6 +136,21 @@ Aktivieren Sie im Bildschirm Erweiterte Konfiguration die Option *VM Performance
 |===
 
 
+== Zuordnen von VMware-Tags zu Cloud Insights-Annotationen
+
+Der VMware Datensammler ermöglicht das Befüllen von Cloud Insights Annotationen mit Tags, die auf VMware konfiguriert sind. Die Annotationen müssen genau mit den VMware Tags benannt werden. Cloud Insights wird immer die gleichen Textanmerkungen mit dem gleichen Namen ausfüllen und versucht, Anmerkungen anderer Typen (Nummer, boolescher Wert usw.) am besten auszufüllen. Wenn Ihre Anmerkung einen anderen Typ hat und der Datensammler sie nicht füllt, kann es erforderlich sein, die Anmerkung zu entfernen und sie als Texttyp neu zu erstellen.
+
+Beachten Sie, dass bei VMware Tags die Groß-/Kleinschreibung beachtet werden muss, während bei Cloud Insights Tags die Groß-/Kleinschreibung nicht beachtet wird. Wenn Sie also eine Annotation mit dem Namen „BESITZER“ in Cloud Insights und Tags mit den Namen „Eigentümer“, „Eigentümer“ und „Eigentümer“ in VMware erstellen, würden alle diese Variationen von „EIGENTÜMER“ in der Annotation von Cloud Insight zum „EIGENTÜMER“ abbilden.
+
+Beachten Sie Folgendes:
+
+* Cloud Insights veröffentlicht derzeit nur automatisch Supportinformationen für NetApp-Geräte.
+* Da diese Support-Informationen in Anmerkungsform gespeichert sind, können Sie sie abfragen oder in Dashboards verwenden.
+* Wenn ein Benutzer den Anmerkungswert überschreibt oder leert, wird der Wert beim Aktualisieren von Cloud Insights-Anmerkungen, die er einmal täglich tut, erneut automatisch gefräst.
+
+
+
+
 == Fehlerbehebung
 
 Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:

@@ -113,7 +113,7 @@ Der Preis für Cloud Insights ist pro *verwaltete Einheit*. Die Nutzung Ihrer ve
 
 * 1 Managed Unit = 2 Hosts (jede virtuelle oder physische Maschine)
 * 1 Managed Unit = 4 tib unformatierte Kapazität physischer oder virtueller Festplatten
-* 1 Managed Unit = 40 tib unformatierte Kapazität ausgewählter sekundärer Speicher: AWS S3, Cohesity SmartFiles, Dell EMC Data Domain, Dell EMC ECS, Hitachi Content Platform, IBM Cleversafe, NetApp StorageGRID.
+* 1 Managed Unit = 40 tib unformatierte Kapazität ausgewählter sekundärer Speicher: AWS S3, Cohesity SmartFiles, Dell EMC Data Domain, Dell EMC ECS, Hitachi Content Platform, IBM Cleversafe, NetApp StorageGRID, Rubrik:
 * 1 Managed Unit = 4 vCPUs von Uberentes
 
 

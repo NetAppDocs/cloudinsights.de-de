@@ -25,6 +25,33 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== November 2023
+
+
+
+=== Support-Informationen Zum Storage-Node
+
+Auf einer Landing Page des Storage-Node finden Sie im Abschnitt _User Data_ auf einen Blick Informationen zu Ihrem Supportangebot, dem aktuellen Status, dem Support-Status und dem Enddatum der Garantie. Beachten Sie, dass Cloud Insights diese Informationen derzeit nur automatisch für NetApp-Geräte veröffentlicht. Beachten Sie auch, dass diese Support-Felder Anmerkungen sind, sodass sie in Abfragen und Dashboards verwendet werden können.
+
+image:StorageNodeSupportData.png["Support-Informationen Zum Storage-Node"]
+
+
+
+=== Zuordnen von VMware-Tags zu Cloud Insights-Annotationen
+
+Der link:task_dc_vmware.html#mapping-vmware-tags-to-cloud-insights-annotations["VMware"] Mithilfe des Datensammlers können Sie Cloud Insights Textanmerkungen mit Tags mit demselben Namen ausfüllen, die auf VMware konfiguriert sind.
+
+
+
+=== Verbesserungen der Brocade CLI-Collector-Zuverlässigkeit für FOS 9.1.1c und höhere Firmware
+
+Bei einigen Brocade Fibre-Channel-Switches, auf denen die Firmware 9.1.1c ausgeführt wird, kann die Ausgabe bestimmter CLI-Befehle mit dem „motd“-Anmeldebannertext oder Warnungen für Benutzer, die Standardpasswörter ändern, vorangestellt werden. Der Brocade CLI-Collector wurde verbessert, um diese beiden Arten von überflüssigen Text zu ignorieren.
+
+Vor dieser Verbesserung waren bei diesem Collector-Typ wahrscheinlich nur FOS 9.1.1c-Switches ohne vorhandene Virtual Fabrics erkennbar.
+
+'''
+
+
 == Oktober 2023
 
 
