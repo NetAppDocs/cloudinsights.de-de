@@ -408,24 +408,10 @@ Der Download-Only-Befehl lädt alle erforderlichen Artefakte vom Cloud Insights 
 * Ein Installationsskript
 * Einer Umgebungsdatei
 * YAML-Dateien
-* Eine signierte Prüfsummendatei (endet in shar256.signierte oder sha256.ps1)
-* Eine PEM-Datei (netapp_cert.pem) zur Signaturverifizierung
+* Eine Prüfsummendatei (endet mit sha256.signed oder sha256.ps1)
 
 
 Das Installationsskript, die Umgebungsdatei und die YAML-Dateien können mittels Sichtprüfung verifiziert werden.
-
-Die PEM-Datei kann durch Bestätigung des Fingerabdrucks wie folgt verifiziert werden:
-
- 1A918038E8E127BB5C87A202DF173B97A05B4996
-Genauer gesagt,
-
-* Nicht Windows:
-+
- openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
-* Windows:
-+
- Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
-
 
 
 
@@ -443,24 +429,18 @@ Um den Prüfsummenwert zu generieren, führen Sie für die entsprechende Plattfo
 
 
 
-=== Überprüfen Sie die Prüfsumme mithilfe der PEM-Datei
+=== Überprüfen Sie die Prüfsumme
 
-Die signierte Prüfsummendatei kann mit der PEM-Datei verifiziert werden:
+Extrahieren Sie die erwartete Prüfsumme aus der Prüfsummendatei
 
 * Nicht Windows:
++
+ openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any -nosigs -noverify
+* Windows:
++
+ (Get-Content telegraf.zip.sha256.ps1 -First 1).toUpper()
 
 
- openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any
-* Windows (nach der Installation des Zertifikats über Import-Zertifikat oben):
-
-
-....
-Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$signer = $result.SignerCertificate
-Add-Type -Assembly System.Security
-[Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
-....
 
 
 === Installieren Sie das heruntergeladene Paket
