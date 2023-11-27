@@ -51,6 +51,12 @@ Lesen Sie diese Informationen, bevor Sie den NetApp Kubernetes Monitoring Operat
 * Der NetApp Kubernetes Monitoring Operator installiert seine eigenen kube-State-Metriken, um Konflikte mit anderen Instanzen zu vermeiden. Für eine genaue Prüfung und Datenberichterstattung wird dringend empfohlen, die Zeit auf dem Agent-Rechner mit Network Time Protocol (NTP) oder Simple Network Time Protocol (SNTP) zu synchronisieren.
 * Wenn Sie den Operator neu bereitstellen (d. h. aktualisieren oder ersetzen), müssen Sie kein _New_ API-Token erstellen; Sie können das vorherige Token erneut verwenden.
 * Beachten Sie außerdem, dass ablaufende Token automatisch durch neue/aktualisierte API-Zugriffs-Tokens ersetzt werden, wenn Sie kürzlich einen NetApp Kubernetes Monitoring Operator installiert haben und ein erneuerbares API-Zugriffs-Token verwenden.
+* Netzwerküberwachung:
++
+** Erfordert Linux Kernel Version 4.18.0 und höher
+** Photon OS wird nicht unterstützt.
+
+
 
 
 

@@ -3866,7 +3866,6 @@
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2 CPU-Kerne</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">Gleich</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GB RAM</block>
-  <block id="474b549bf76599f904f9c951a609a127" category="cell">50 GB bei Linux sollte auf diese Weise Speicherplatz zugeteilt werden: /Opt/netapp 10 GB /var/log/netapp 40 GB/tmp mindestens 1 GB während der Installation zur Verfügung stehen</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="inline-link-macro">Data Collector</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">Hier</block>
@@ -12901,4 +12900,12 @@ Public Key Format - PEM, DER-encoded X.509 SubjectPublicKeyInfo RFC 5280</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Passwort für die Anmeldung beim ScaleIO/PowerFlex-Gerät</block>
   <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_
 Darüber hinaus ist eine schreibgeschützte Domänenberechtigung erforderlich.</block>
+  <block id="dada9839975856f2fd06228d265fea07" category="list-text">Netzwerküberwachung:</block>
+  <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Erfordert Linux Kernel Version 4.18.0 und höher</block>
+  <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">Photon OS wird nicht unterstützt.</block>
+  <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 GB (100 GB empfohlen)
+Bei Linux sollte der Speicherplatz folgendermaßen zugewiesen werden:
+/Opt/netapp 10 GB (20 GB für große Umgebungen)
+/Var/log/netapp 40 GB (80 GB für große Umgebungen)
+/Tmp mindestens 1 GB während der Installation verfügbar</block>
 </blocks>

@@ -49,7 +49,11 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
 | Speicher | 8 GB RAM | Gleich 
 
 
-| Verfügbarer Festplattenspeicher | 50 GB bei Linux sollte auf diese Weise Speicherplatz zugeteilt werden: /Opt/netapp 10 GB /var/log/netapp 40 GB/tmp mindestens 1 GB während der Installation zur Verfügung stehen | 50 GB 
+| Verfügbarer Festplattenspeicher | 50 GB (100 GB empfohlen)
+Bei Linux sollte der Speicherplatz folgendermaßen zugewiesen werden:
+/Opt/netapp 10 GB (20 GB für große Umgebungen)
+/Var/log/netapp 40 GB (80 GB für große Umgebungen)
+/Tmp mindestens 1 GB während der Installation verfügbar | 50 GB 
 
 
 | Netzwerk | 100 Mbit/s/1 Gbit/s Ethernet-Verbindung, statische IP-Adresse und Port 80 oder 443-Konnektivität von Acquisition Unit zu *.cloudinsights.netapp.com oder Ihrer Cloud Insights-Umgebung (d. h. \https://<environment_id>.c01.cloudinsights.netapp.com) erforderlich. Informationen zu Anforderungen zwischen Erfassungseinheit und jedem Data Collector finden Sie in der Anleitung für link:data_collector_list.html["Data Collector"]. Wenn Ihr Unternehmen Proxy-Nutzung für den Internet-Zugriff erfordert, müssen Sie möglicherweise das Proxy-Verhalten Ihrer Organisation verstehen und bestimmte Ausnahmen für Cloud Insights zu arbeiten suchen. Blockiert Ihr Unternehmen beispielsweise standardmäßig den Zugriff und gewährt ausnahmsweise nur Zugriff auf bestimmte Websites/Domänen? In diesem Fall müssen Sie die folgende Domain zur Ausnahmeliste hinzugefügt bekommen: *.cloudinsights.netapp.com für weitere Informationen, bereit über Proxys link:task_troubleshooting_linux_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["Hier"] Oder link:task_troubleshooting_windows_acquisition_unit_problems.html#considerations-about-proxies-and-firewalls["Hier"]. | Gleich 
