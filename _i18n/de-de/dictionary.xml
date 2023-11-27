@@ -1794,7 +1794,6 @@
   <block id="592b09bd3291d67037bc036b0c714470" category="cell">Waldname</block>
   <block id="7d29f1962bf2529a2067967e962ee3dd" category="cell">Gesamtebene der Verzeichnisstruktur. Forest Name ermöglicht beide Formate: _X. y.y.z_ =&gt; direkter Domainname, wie Sie ihn auf Ihrer SVM haben. [Beispiel: hq.companyname.com] _DC=x,DC=y,DC=z_ =&gt; relative Distinguished Names [Beispiel: DC=hq,DC= commeryname,DC=com] oder Sie können wie folgt angeben: _OU=Engineering,DC=hq,DC= commeryname,DC=com_ [nach spezifischer OU-Technik filtern] _CN=username,OU=Engineering,DC=comcompyname, DC=netapp, DC=com_ [um nur bestimmte Benutzer mit &lt;username&gt; von OU &lt;Engineering&gt; zu erhalten] _CN=Acrobat Nutzer,CN=Benutzer,DC=hq,DC=commeryname,DC=alle Benutzer innerhalb von Boston, die innerhalb der Organisation unterstützt werden.</block>
   <block id="58384d924f3205aaac5f4a09d3b33801" category="cell">DN binden</block>
-  <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_</block>
   <block id="7066ea6d497311d6e3c4be6a9523999c" category="cell">Kennwort BINDEN</block>
   <block id="0d91a6f24e197b2dbd20b358e4f84785" category="cell">Kennwort des Verzeichnisservers (d. h. Kennwort für in Bind DN verwendeten Benutzernamen)</block>
   <block id="aebd636047453941f5450b96d44c3195" category="cell">ldap, ldaps, ldap-Start-tls</block>
@@ -12900,4 +12899,6 @@ Public Key Format - PEM, DER-encoded X.509 SubjectPublicKeyInfo RFC 5280</block>
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">IP-Adressen oder FQDNs von ScaleIO/PowerFlex Gateways, getrennt durch Komma (,) oder Semikolon (;)</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Admin-Benutzername für die Anmeldung beim ScaleIO/PowerFlex-Gerät</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Passwort für die Anmeldung beim ScaleIO/PowerFlex-Gerät</block>
+  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_
+Darüber hinaus ist eine schreibgeschützte Domänenberechtigung erforderlich.</block>
 </blocks>

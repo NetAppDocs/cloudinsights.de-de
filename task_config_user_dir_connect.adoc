@@ -56,7 +56,8 @@ Konfigurieren Sie den User Directory Collector, indem Sie die erforderlichen Dat
 | Waldname | Gesamtebene der Verzeichnisstruktur. Forest Name ermöglicht beide Formate: _X. y.y.z_ => direkter Domainname, wie Sie ihn auf Ihrer SVM haben. [Beispiel: hq.companyname.com] _DC=x,DC=y,DC=z_ => relative Distinguished Names [Beispiel: DC=hq,DC= commeryname,DC=com] oder Sie können wie folgt angeben: _OU=Engineering,DC=hq,DC= commeryname,DC=com_ [nach spezifischer OU-Technik filtern] _CN=username,OU=Engineering,DC=comcompyname, DC=netapp, DC=com_ [um nur bestimmte Benutzer mit <username> von OU <Engineering> zu erhalten] _CN=Acrobat Nutzer,CN=Benutzer,DC=hq,DC=commeryname,DC=alle Benutzer innerhalb von Boston, die innerhalb der Organisation unterstützt werden. 
 
 
-| DN binden | Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_ 
+| DN binden | Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_
+Darüber hinaus ist eine schreibgeschützte Domänenberechtigung erforderlich. 
 
 
 | Kennwort BINDEN | Kennwort des Verzeichnisservers (d. h. Kennwort für in Bind DN verwendeten Benutzernamen) 
