@@ -2388,19 +2388,10 @@
   <block id="9dfe195610055e64617d7d9b41cc93dc" category="paragraph">Die Fehlerdetails enthalten den Text der Fehlermeldung, die wahrscheinlichsten Ursachen, die verwendeten Informationen und Vorschläge, was versucht werden kann, das Problem zu beheben.</block>
   <block id="a066cf88d3ac386328bc0eab3ea533db" category="list-text">Im Bereich Geräte, die von diesem Data Collector gemeldet werden, können Sie die Liste filtern, um nur Geräte von Interesse anzuzeigen. Sie können dann auf den verknüpften *Name* eines Geräts klicken, um die Asset-Seite für dieses Gerät anzuzeigen.</block>
   <block id="6fa72091f5d00eef42431f7879f3fa4b" category="list-text">Wenn Sie zur Übersichtsseite des Datensammlers zurückkehren, überprüfen Sie im Bereich *Letzte Änderungen anzeigen* unten auf der Seite, um zu sehen, ob die letzten Änderungen das Problem verursacht haben könnten.</block>
-  <block id="cf38d319bc1b083afe717ce8be4a0e2a" category="summary">KONFIGURIEREN DES DELL EMC ScaleIO-Datensammlers.</block>
-  <block id="a502d590a35b78e5a42f13e7f79aefd5" category="doc">DELL EMC ScaleIO Datensammler</block>
-  <block id="c502d2755afbc827d0b78e7bf29a63c3" category="paragraph">Der ScaleIO Datensammler erfasst Inventarinformationen aus dem ScaleIO Storage. Für die Konfiguration benötigt dieser Datensammler die ScaleIO Gateway-Adresse und einen Admin-Benutzernamen und ein Passwort.</block>
-  <block id="0711dbe30737a04c398a5d6577ea7fb6" category="paragraph">Cloud Insights erhält die folgenden Bestandsinformationen vom ScaleIO Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
   <block id="d84428ff629eae2252af86f5b0c68597" category="cell">MDM-Cluster (Meta Data Manager</block>
-  <block id="32de3bca35dcedbe5dd77438efe818cd" category="cell">SDS (ScaleIO Data Server)</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">Gerät</block>
   <block id="9bc4ba1e74d4345d8fb67c1039e8ee31" category="list-text">Schreibgeschützter Zugriff auf das Admin-Benutzerkonto</block>
   <block id="0e75d3cb4ff238983ed93446b3df10b4" category="list-text">Port-Anforderung: HTTPS-Port 443</block>
-  <block id="b598786f418563a6288a22d6b801761e" category="cell">ScaleIO Gateway(s)</block>
-  <block id="7f1dace1c2447400ca7e254d9f7c680d" category="cell">IP-Adressen oder FQDNs von ScaleIO-Gateways, getrennt durch Komma (,) oder Semikolon (;)</block>
-  <block id="d44a2e308ec90ea99344ff3ca9a81883" category="cell">Administratorbenutzername zur Anmeldung beim ScaleIO-Gerät</block>
-  <block id="358e9f4d894beeefdde1369e74db160f" category="cell">Passwort zur Anmeldung beim ScaleIO-Gerät</block>
   <block id="fd4515531c9ce1d6eae38a306629e6eb" category="paragraph">Klicken Sie auf das Kontrollkästchen Inventar, um die Bestandssammlung zu aktivieren.</block>
   <block id="f7130526f999ef4eed4ac1dbf86a0a03" category="cell">HTTPS-Port</block>
   <block id="5fdb13066473bd6f58da638bc9c08a77" category="cell">Der Standardwert ist 60.</block>
@@ -3963,8 +3954,6 @@
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">Dell EMC RecoverPoint</block>
   <block id="32f16e66f82b765e2355b037f437f0d6" category="cell"><block ref="32f16e66f82b765e2355b037f437f0d6" category="inline-link-macro-rx"></block></block>
-  <block id="9e41c813bafe9260d22ac12ca1d86d6b" category="inline-link-macro">Dell EMC ScaleIO</block>
-  <block id="e05a976ebc9a4cca05ffe391dc9aea64" category="cell"><block ref="e05a976ebc9a4cca05ffe391dc9aea64" category="inline-link-macro-rx"></block></block>
   <block id="42658796d03fcc8216277518ea2d5203" category="inline-link-macro">Dell EMC Unity</block>
   <block id="7d4fe4e454bc9f68e87ed3a86244c35a" category="cell"><block ref="7d4fe4e454bc9f68e87ed3a86244c35a" category="inline-link-macro-rx"></block></block>
   <block id="20efc9aa81289aa30cb8621f0a4eadf8" category="inline-link-macro">Dell EMC VMAX/PowerMax Produktfamilie</block>
@@ -12900,4 +12889,15 @@ Public Key Format - PEM, DER-encoded X.509 SubjectPublicKeyInfo RFC 5280</block>
   <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">Eine Prüfsummendatei (endet mit sha256.signed oder sha256.ps1)</block>
   <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">Überprüfen Sie die Prüfsumme</block>
   <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">Extrahieren Sie die erwartete Prüfsumme aus der Prüfsummendatei</block>
+  <block id="e399d76f82d333fa1c49eb069522e8ac" category="inline-link-macro">Dell EMC ScaleIO/PowerFlex </block>
+  <block id="f7ee83c5589aae26abcd6b7c1b853e5a" category="cell"><block ref="f7ee83c5589aae26abcd6b7c1b853e5a" category="inline-link-macro-rx"></block></block>
+  <block id="e3628e8ad35243dc8938a2b601a40729" category="summary">Konfigurieren des DELL EMC ScaleIO/PowerFlex-Datensammlers.</block>
+  <block id="b7cfbf9d7104ab3206a9e36e4f1cfed8" category="doc">DELL EMC ScaleIO/PowerFlex-Datensammler</block>
+  <block id="eb2970c74f4003234e24b8bb86f7f1b1" category="paragraph">Der Datensammler ScaleIO/PowerFlex erfasst Bestandsdaten aus ScaleIO und PowerFlex-Speicher. Für die Konfiguration benötigt dieser Datensammler die ScaleIO/PowerFlex-Gateway-Adresse sowie einen Admin-Benutzernamen und ein Passwort.</block>
+  <block id="0605f6ce75ae8707c23e729bfc341dd5" category="paragraph">Cloud Insights erfasst die folgenden Bestandsinformationen aus dem Datensammler ScaleIO/PowerFlex. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
+  <block id="1504819ba5c6757e9100d77628a826a2" category="cell">SDS (ScaleIO/PowerFlex Data Server)</block>
+  <block id="52775d60a5ff510b7b7db324e92a528a" category="cell">ScaleIO/PowerFlex-Gateway(s)</block>
+  <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">IP-Adressen oder FQDNs von ScaleIO/PowerFlex Gateways, getrennt durch Komma (,) oder Semikolon (;)</block>
+  <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Admin-Benutzername für die Anmeldung beim ScaleIO/PowerFlex-Gerät</block>
+  <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Passwort für die Anmeldung beim ScaleIO/PowerFlex-Gerät</block>
 </blocks>

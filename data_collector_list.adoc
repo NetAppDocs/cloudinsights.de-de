@@ -94,7 +94,7 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_dc_emc_recoverpoint.html["Dell EMC RecoverPoint"] | Infrastruktur 
 
 
-| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO"] | Infrastruktur 
+| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO/PowerFlex "] | Infrastruktur 
 
 
 | link:task_dc_emc_unity.html["Dell EMC Unity"] | Infrastruktur 
