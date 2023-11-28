@@ -31,7 +31,7 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 === Workload-Sicherheit: Anhalten/Fortsetzen eines Collectors
 
-In Workload Security können Sie einen Data Collector anhalten, wenn sich der Collector im Status „_Running_“ oder „_Error_“ befindet. Öffnen Sie das Menü „drei Punkte“ für den Collector und wählen Sie PAUSE. Während der Collector angehalten wird, werden keine Daten von ONTAP erfasst und keine Daten vom Collector an ONTAP gesendet. Wählen Sie Fortsetzen, um die Erfassung erneut zu starten.
+In Workload Security können Sie einen Data Collector anhalten, wenn sich der Collector im Status „_Running_“ befindet. Öffnen Sie das Menü „drei Punkte“ für den Collector und wählen Sie PAUSE. Während der Collector angehalten wird, werden keine Daten von ONTAP erfasst und keine Daten vom Collector an ONTAP gesendet. Wählen Sie Fortsetzen, um die Erfassung erneut zu starten.
 
 
 

@@ -214,7 +214,7 @@ In Versionen von ONTAP vor 9.9 muss _Data-fpolicy-Client_ nicht gesetzt werden.
 
 2 neue Operationen werden jetzt auf dem Kebab-Menü des Sammlers angezeigt (PAUSE und WIEDERAUFNAHME).
 
-Wenn sich der Data Collector im Status _Running_ oder _Error_ befindet, können Sie die Sammlung anhalten. Öffnen Sie das Menü „drei Punkte“ für den Collector und wählen Sie PAUSE. Während der Collector angehalten wird, werden keine Daten von ONTAP erfasst und keine Daten vom Collector an ONTAP gesendet. Dies bedeutet, dass keine FPolicy-Ereignisse vom ONTAP zum Datensammler und von dort zum Cloud Insights fließen.
+Wenn sich der Data Collector im Status _Running_ befindet, können Sie die Erfassung anhalten. Öffnen Sie das Menü „drei Punkte“ für den Collector und wählen Sie PAUSE. Während der Collector angehalten wird, werden keine Daten von ONTAP erfasst und keine Daten vom Collector an ONTAP gesendet. Dies bedeutet, dass keine FPolicy-Ereignisse vom ONTAP zum Datensammler und von dort zum Cloud Insights fließen.
 
 Wenn neue Volumes usw. auf ONTAP erstellt werden, während der Collector angehalten ist, erfasst Workload Security die Daten nicht, und diese Volumes usw. werden nicht in Dashboards oder Tabellen angezeigt.
 

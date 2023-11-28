@@ -137,7 +137,11 @@ Nachdem ein Ransomware-Angriff für einen Benutzer generiert wurde, wechseln Sie
 
 == Dateien programmatisch erstellen
 
-Bevor Sie die Dateien erstellen, müssen Sie zunächst die Verarbeitung des Datensammlers beenden. Führen Sie die folgenden Schritte aus, bevor Sie den Datensammler zum Agenten hinzufügen. Wenn Sie den Datensammler bereits hinzugefügt haben, bearbeiten Sie einfach den Datensammler, geben Sie ein ungültiges Kennwort ein und speichern Sie es. Dadurch wird der Datensammler vorübergehend in einen Fehlerzustand versetzt. HINWEIS: Achten Sie darauf, dass Sie das ursprüngliche Passwort beachten!
+Bevor Sie die Dateien erstellen, müssen Sie zunächst die Verarbeitung des Datensammlers anhalten oder anhalten.
+Führen Sie die folgenden Schritte aus, bevor Sie den Datensammler zum Agenten hinzufügen. Wenn Sie den Datensammler bereits hinzugefügt haben, bearbeiten Sie einfach den Datensammler, geben Sie ein ungültiges Kennwort ein und speichern Sie es. Dadurch wird der Datensammler vorübergehend in einen Fehlerzustand versetzt. HINWEIS: Achten Sie darauf, dass Sie das ursprüngliche Passwort beachten!
+
+
+NOTE: Die empfohlene Option ist to link:task_add_collector_svm.html#play-pause-data-collector["Unterbrechen Sie den Collector"] Bevor Sie Ihre Dateien erstellen.]
 
 Bevor Sie die Simulation ausführen, müssen Sie zuerst Dateien hinzufügen, die verschlüsselt werden sollen. Sie können die zu verschlüsselenden Dateien entweder manuell in den Zielordner kopieren oder die Dateien mithilfe eines Skripts (siehe Beispiel unten) programmatisch erstellen. Kopieren Sie mindestens 1,000 Dateien, unabhängig von der verwendeten Methode.
 
@@ -169,4 +173,5 @@ Im aktuellen Ordner werden 1000 Dateien erstellt.
 +
 Wenn Sie den Datensammler in Schritt 1 deaktiviert haben, bearbeiten Sie den Datensammler, geben Sie das richtige Passwort ein, und speichern Sie es. Stellen Sie sicher, dass der Datensammler wieder in Betrieb ist.
 
+. Wenn Sie den Collector iangehalten haben, bevor Sie diese Schritte ausführen, müssen Sie Folgendes tun link:task_add_collector_svm.html#play-pause-data-collector["Nehmen Sie die Sammlung wieder auf"].
 
