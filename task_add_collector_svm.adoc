@@ -220,30 +220,15 @@ Wenn neue Volumes usw. auf ONTAP erstellt werden, während der Collector angehal
 
 Beachten Sie Folgendes:
 
-|===
-| # | Verhalten Des Sammlers Angehalten 
+* Das Löschen von Snapshots geschieht nicht gemäß den Einstellungen, die auf einem angehaltenen Collector konfiguriert wurden.
+* EMS-Ereignisse (wie ONTAP ARP) werden nicht auf einem angehaltenen Collector verarbeitet. Das heißt, wenn ONTAP einen Ransomware-Angriff identifiziert, kann Cloud Insights-Workload-Sicherheit dieses Ereignis nicht erfassen.
+* Für einen angehaltenen Collector werden KEINE Integritätsbenachrichtigungen-E-Mails gesendet.
+* Manuelle oder automatische Aktionen (wie Snapshot oder Benutzerblockierung) werden auf einem angehaltenen Collector nicht unterstützt.
+* Bei Agent- oder Collector-Upgrades, Neustart/Neustart der Agent-VM oder Neustart des Agent-Dienstes bleibt ein angehaltener Collector im Status „_Paused_“.
+* Wenn sich der Datensammler im Status _Error_ befindet, kann der Collector nicht in den Status _Paused_ geändert werden. Die Schaltfläche Pause wird nur aktiviert, wenn der Status des Collectors _Running_ lautet.
+* Wenn die Verbindung zum Agenten unterbrochen wird, kann der Collector nicht in den Status _Paused_ geändert werden. Der Collector geht in den Status _stopped_ und die Schaltfläche Pause wird deaktiviert.
 
 
-| 1 | Das Löschen von Snapshots geschieht nicht gemäß den Einstellungen, die auf einem angehaltenen Collector konfiguriert wurden. 
-
-
-| 2 | EMS-Ereignisse (wie ONTAP ARP) werden nicht auf einem angehaltenen Collector verarbeitet. Das heißt, wenn ONTAP einen Ransomware-Angriff identifiziert, kann Cloud Insights-Workload-Sicherheit dieses Ereignis nicht erfassen. 
-
-
-| 3 | Für einen angehaltenen Collector werden KEINE Integritätsbenachrichtigungen-E-Mails gesendet. 
-
-
-| 4 | Manuelle oder automatische Aktionen (wie Snapshot oder Benutzerblockierung) werden auf einem angehaltenen Collector nicht unterstützt. 
-
-
-| 5 | Bei Agent- oder Collector-Upgrades, Neustart/Neustart der Agent-VM oder Neustart des Agent-Dienstes bleibt ein angehaltener Collector im Status „_Paused_“. 
-
-
-| 6 | Wenn sich der Datensammler im Status _Error_ befindet, kann der Collector nicht in den Status _Paused_ geändert werden. Die Schaltfläche Pause wird nur aktiviert, wenn der Status des Collectors _Running_ lautet. 
-
-
-| 7 | Wenn die Verbindung zum Agenten unterbrochen wird, kann der Collector nicht in den Status _Paused_ geändert werden. Der Collector geht in den Status _stopped_ und die Schaltfläche Pause wird deaktiviert. 
-|===
 
 
 == Fehlerbehebung
