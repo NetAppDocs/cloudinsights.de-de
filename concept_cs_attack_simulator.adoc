@@ -173,5 +173,5 @@ Im aktuellen Ordner werden 1000 Dateien erstellt.
 +
 Wenn Sie den Datensammler in Schritt 1 deaktiviert haben, bearbeiten Sie den Datensammler, geben Sie das richtige Passwort ein, und speichern Sie es. Stellen Sie sicher, dass der Datensammler wieder in Betrieb ist.
 
-. Wenn Sie den Collector iangehalten haben, bevor Sie diese Schritte ausführen, müssen Sie Folgendes tun link:task_add_collector_svm.html#play-pause-data-collector["Nehmen Sie die Sammlung wieder auf"].
+. Wenn Sie den Collector angehalten haben, bevor Sie diese Schritte ausführen, müssen Sie Folgendes tun link:task_add_collector_svm.html#play-pause-data-collector["Nehmen Sie die Sammlung wieder auf"].
 
