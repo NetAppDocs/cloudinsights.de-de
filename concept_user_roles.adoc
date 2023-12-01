@@ -104,7 +104,10 @@ In der folgenden Tabelle sind die Cloud Insights-Berechtigungen aufgeführt, die
 | Datensammler: Hinzufügen/Ändern/Poll/Löschen | Y | N | N 
 
 
-| Benachrichtigungen: Anzeigen/Ändern | Y | N | N 
+| Benachrichtigungen: Anzeigen | Y | Y | Y 
+
+
+| Benachrichtigungen: Ändern | Y | N | N 
 
 
 | Abfragen: Erstellen/Ändern/Löschen | Y | Y | N 
