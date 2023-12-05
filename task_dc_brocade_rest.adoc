@@ -60,8 +60,8 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 == Anforderungen
 
-* Für alle Switches in der Fabric muss eine IP-Konnektivität vorhanden sein. Wenn Sie das Kontrollkästchen _Discover all Switches in the Fabric_ aktivieren, identifiziert Cloud Insights alle Switches in der Fabric; es benötigt jedoch IP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.
-* Weltweit ist dasselbe Konto über alle Switches in der Fabric erforderlich. Sie können PuTTY (Open Source Terminal Emulator) verwenden, um den Zugriff zu bestätigen.
+* Es muss eine TCP-Verbindung zu allen Switches in der Fabric vorhanden sein. Dieser Datensammlertyp versucht nahtlos sowohl HTTP als auch HTTPS für jedes Gerät in der Fabric. Wenn Sie das Kontrollkästchen _Discover all Switches in the Fabric_ aktivieren, identifiziert Cloud Insights alle Switches in der Fabric; es benötigt jedoch TCP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.
+* Weltweit ist dasselbe Konto über alle Switches in der Fabric erforderlich. Sie können den Zugriff über die Webschnittstelle des Geräts bestätigen.
 
 
 
@@ -73,7 +73,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 | Feld | Beschreibung 
 
 
-| Switch-IP | IP-Adresse oder vollqualifizierter Domänenname des EFC-Servers 
+| Switch-IP | IP-Adresse oder vollständig qualifizierter Domänenname des FOS-Switches 
 
 
 | Benutzername | Benutzername für den Switch 
@@ -90,7 +90,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 | Feld | Beschreibung 
 
 
-| Ausgeschlossene Geräte | Kommagetrennte Liste der Geräte-IDs, die von der Abfrage ausgeschlossen werden sollen. 
+| Ausgeschlossene Geräte | Kommagetrennte Liste der Geräte-IPv4-Adressen, die von der Abfrage ausgeschlossen werden sollen. 
 
 
 | Abfrageintervall für Bestand (min) | Intervall zwischen Bestandsabstimmungen Der Standardwert ist 60. 
@@ -105,10 +105,10 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 | Verbindungstyp | HTTP oder HTTPS. 
 
 
-| TCP-Port überschreiben | Geben Sie einen Port an, wenn der Standardwert nicht verwendet wird. 
+| Beachten Sie, dass diese Einstellung nur ändert, welches Protokoll-CI zuerst pro Gerät verwendet. CI versucht automatisch, das andere Protokoll zu verwenden, wenn die Standardeinstellung fehlschlägt | TCP-Port überschreiben 
 
 
-| Leistungsintervall (Sek.) | Intervall zwischen Performance-Abstimmungen Der Standardwert ist 300. 
+| Geben Sie einen Port an, wenn der Standardwert nicht verwendet wird. | Leistungsintervall (Sek.) 
 |===
 
 
@@ -125,7 +125,7 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Problem: | Versuchen Sie dies: 
 
 
-| Die Bestandsaufnahme der Brocade Datenquelle schlägt mit dem Fehler fehl: <date> <time> ERROR [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Fehler 2 von 2: <datasource Name> [Interner Fehler] - das Modell für das Gerät konnte nicht generiert werden <IP>. Fehler beim Erkennen der Eingabeaufforderung ([Gerätename <Name>]: Fehler beim Generieren des Modells für Gerät <IP> nicht möglich. Fehler beim Erkennen der Eingabeaufforderung) | Das Problem kann verursacht werden, wenn der Brocade Switch mit einer Eingabeaufforderung zu lange zurückgibt und damit die Standardzeitüberschreitung von 5 Sekunden überschreitet. Versuchen Sie in den Einstellungen für die erweiterte Konfiguration des Datensammlers in Cloud Insights, die Zeitüberschreitung „_SSH Banner Wait Timeout“ (sec)_ auf einen höheren Wert zu erhöhen. 
+| Die Testfunktion warnt mich, dass ein Protokoll nicht zugänglich ist | Ein bestimmtes Brocade FOS 8.2+ Gerät will nur über HTTP oder HTTPS sprechen - wenn ein Switch ein digitales Zertifikat installiert hat, wirft der Switch HTTP-Fehler auf, wenn man versucht, mit unverschlüsseltem HTTP gegen HTTPS zu kommunizieren. Die Testfunktion versucht die Kommunikation mit HTTP und HTTPS - wenn der Test Ihnen mitteilt, dass ein Protokoll erfolgreich ist, können Sie den Collector sicher speichern und sich keine Sorgen machen, dass das andere Protokoll nicht erfolgreich war - der Collector versucht beide Protokolle während der Sammlung und schlägt nur fehl, wenn keines funktioniert. 
 
 
 | Fehler: „Cloud Insights hat ungültige Gehäuserolle erhalten“ | Vergewissern Sie sich, dass dem in dieser Datenquelle konfigurierten Benutzer die Berechtigung für die Gehäuserolle erteilt wurde. 

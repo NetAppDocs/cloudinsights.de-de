@@ -4039,8 +4039,6 @@
   <block id="3d569988d784be7b4a432df70e13153d" category="cell"><block ref="3d569988d784be7b4a432df70e13153d" category="inline-link-macro-rx"></block></block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">NetApp Cloud Connection für ONTAP 9.9 oder höher</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
-  <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">NetApp Config Advisor</block>
-  <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
   <block id="995d9995da501d3734932d95524f1a35" category="inline-link-macro">NetApp Data ONTAP 7-Mode</block>
   <block id="2e59af567907cf6ad1ae87c0cac8e6dd" category="cell"><block ref="2e59af567907cf6ad1ae87c0cac8e6dd" category="inline-link-macro-rx"></block></block>
   <block id="0311befd4f8a4eb64d5f02957a8b1d99" category="inline-link-macro">NetApp E-Series</block>
@@ -5054,62 +5052,6 @@
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link-macro">NetApp Knowledge Base</block>
   <block id="b4bfb3ce4e8b9e9d62106cb32011d02d" category="paragraph">Weitere Tipps zur Fehlerbehebung finden Sie im <block ref="15447e468ec3e05469147de69518b15c" category="inline-link-macro-rx"></block> (Support-Anmeldung erforderlich).</block>
   <block id="aae5f077ba03e56d1d16eaba111b41fa" category="paragraph">Weitere Support-Informationen sind im Cloud Insights erhältlich <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Seite.</block>
-  <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">NetApp Config Advisor Data Collector</block>
-  <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">NetApp Config Advisor Datensammler</block>
-  <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">Dieser Datensammler erfasst Konfigurationsdaten von Storage-Systemen, auf denen ONTAP ausgeführt wird, und verbundene Switches mit schreibgeschützten Anrufen. Dieser Datensammler führt außerdem Konfigurationsänderungen und Zustandsprüfungen auf dem gesamten Stack der ONTAP Cluster-Konfiguration durch, um Kabel-, Konfigurations-, Resiliency-, Verfügbarkeits- und Sicherheitsprobleme zu identifizieren.</block>
-  <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">Cloud Insights erfasst Konfigurationsdaten von ONTAP und Switches mit dem Config Advisor Data Collector. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
-  <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">Dropdown-Liste mit dem Kennzahlenschild für configAdvisor</block>
-  <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">Beachten Sie außerdem, dass die Config Advisor-Kennzahlen über das _netapp_ontap.configAdvisor_-Tag im Dashboard und anderen Anfragen zur Verfügung stehen.<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="24b9e08fd1f7ee3ff738c574a84a91af" category="section-title">Config Advisor-Terminologie</block>
-  <block id="06d58427354787f0e6d7c893fe2243bc" category="paragraph">Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf Config Advisor Dashboards finden können.</block>
-  <block id="30c7128fd20d47795972c28c056858e9" category="section-title">Zusammenfassung Des Geräts</block>
-  <block id="744d9871512feec9f51d65f3dd1c47ab" category="list-text">Gerätetyp/Typ – Typ des Geräts in der Datenquelle – Storage Controller/Switch</block>
-  <block id="624932da51cedff9d7ac173a91c610a1" category="list-text">Anbieter/Untertyp – derselbe Anbietername, den Sie sehen würden, ob Sie eine neue Datenquelle konfigurieren würden.</block>
-  <block id="7d43a6f99fa2a91e1af6d7d2c7c18f13" category="list-text">Hostname: Hostname(s) wie in der Datenquelle konfiguriert.</block>
-  <block id="cb46dd80b8d9a5b9d45de5e217aaa9df" category="list-text">Version – Version des Betriebssystems oder der Firmware.</block>
-  <block id="b1fa038342539dd3908a11c162ea4c27" category="section-title">Regelergebnisse</block>
-  <block id="36dce5e2b74a110ae5a36da007cf06f5" category="list-text">Regel – eine Prüfung, die mit dem System ausgeführt wird, die Abweichungen der Konfiguration von empfohlenen Methoden analysiert oder bekannte Probleme identifiziert.</block>
-  <block id="7f571e862fdd40095520423d149828d8" category="list-text">Regelname – Kurzname für die Regel oder Prüfung, die ausgeführt wird.</block>
-  <block id="f742f640bcdf429ec002619c5b306bfb" category="list-text">Regel-ID – Kennung für die Regel.</block>
-  <block id="d5f2db6c184f1d03095ebed8fab38f6d" category="list-text">Ziel – Komponente, auf die die Regel angewendet wird. Es handelt sich hierbei um einen Cluster-Namen, einen Node-Namen oder einen Switch-Namen.</block>
-  <block id="07e9e3b11dbfe13fae2d6a989de1722c" category="list-text">Auswirkungen – Auswirkungen des Risikos auf das System. Die Wirkungsgrade werden wie unten aufgeführt</block>
-  <block id="f9465122ea451d5ec730ea7884c2879f" category="list-text">Hohe Auswirkungen: Potenzielle Verluste beim Datenzugriff oder längerer Verlust von Node-Redundanz</block>
-  <block id="59917e42806fa2d873b1567e2fab2ed8" category="list-text">Mittlere Auswirkungen: Performance-Verschlechterung oder kurzfristiger Verlust von Node-Redundanz</block>
-  <block id="0296cc1b8c1bba2993b2bf444d65e226" category="list-text">Low Impact: Szenarien mit geringen Auswirkungen</block>
-  <block id="35c28fe615929955e070ca34eea74a58" category="list-text">Best Practice: Abweichungen von dokumentierten Best Practices</block>
-  <block id="da671d02becd0b448278c88d7cae5f0c" category="list-text">Beschreibung – kurze Beschreibung des Fehlers.</block>
-  <block id="4684fb2fabd191161c08c96564158dfa" category="list-text">Details – ausführliche Beschreibung des Fehlers, der die betroffenen Komponenten auflistet</block>
-  <block id="107a9bd1e11fd68e05b0eca047c2d0a3" category="list-text">Empfehlungen – Links zu KB-Artikeln oder zur NetApp Dokumentation mit zusätzlichen Details zum Risiko oder zur Problembehebung</block>
-  <block id="32e0e75cce51d9a86e3d9548e662cad3" category="list-text">Sie müssen Zugriff auf ein Administratorkonto haben, das für schreibgeschützten Zugriff für SSH- und ONTAPi-Anrufe auf ONTAP konfiguriert ist.</block>
-  <block id="0a51523b7b104781f9276319d7728e78" category="list-text">Sie müssen Zugriff auf ein Administratorkonto haben, das für schreibgeschützten Zugriff auf SSH-Anrufe auf Switches konfiguriert ist, wenn diese Teil der Sammlung sind</block>
-  <block id="905f005d189dfca41c588dfb3a86c577" category="list-text">Zu den Kontodetails gehören Benutzername und Passwort. Optional kann der private SSH-Schlüssel übergeben werden, wenn ONTAP für die SSH-Schlüsselauthentifizierung oder Multi-Faktor-Authentifizierung (MFA) konfiguriert ist</block>
-  <block id="ccdc4e4e1923b0b16ce7eea299ea4163" category="list-text">Port-Anforderungen: 22, 80 oder 443</block>
-  <block id="6598e142ccb1746c77267497f22d951b" category="list-text">Lesen Sie den einzigen Rollennamen in ssh oder/und ontapi-Anwendung auf den Standard-Vserver</block>
-  <block id="3b8258085ea914c50770f05a8c8040cf" category="list-text">Administratorkonto mit mindestens schreibgeschütztem Zugriff auf Switches</block>
-  <block id="881e28667d3bfa6ea28cdd40ef5acdb4" category="cell">Aktivieren Sie MFA für ONTAP</block>
-  <block id="892219065257846dd04f00fcdffe9e12" category="cell">Aktivieren Sie diese Option, um die Multi-Faktor-Authentifizierung bei ONTAP zu aktivieren</block>
-  <block id="fab1bac8f68d0e85c7d853e7cc89dee8" category="cell">Privater SSH-Schlüssel</block>
-  <block id="b243383d42c261781fda74277075a9bf" category="cell">Fügen Sie den Inhalt des privaten SSH-Schlüssels ein, wenn ONTAP eine SSH-Schlüsselauthentifizierung oder MFA verwendet</block>
-  <block id="1ad2c997667844425cb79936e5d49437" category="cell">ONTAP SSH-Port</block>
-  <block id="043854f925a3ddec09321e61f0796cb1" category="cell">Ermöglicht die Angabe eines benutzerdefinierten SSH-Ports für die ONTAP-Verbindung</block>
-  <block id="1e5fb47b2115f5fd80852bf2d19f9931" category="cell">Switch-SSH-Port</block>
-  <block id="3d56802b24eb9202180b8a5869ee4f5a" category="cell">Ermöglicht die Angabe eines benutzerdefinierten SSH-Ports für die Switch-Verbindung</block>
-  <block id="dfdfdc8cf35c1a03b11bc6b5c58e09f8" category="cell">Abfrageintervall (min)</block>
-  <block id="a0c828f2046ae9b82d4a8bcdc9c02147" category="cell">Der Standardwert ist 1440 Minuten oder 24 Stunden. Kann mindestens 60 Minuten einstellen</block>
-  <block id="6cc75295aec583ed79034eb36a15cdae" category="section-title">Unterstützte Betriebssysteme</block>
-  <block id="3c4d9416409219cf9622042be0436a75" category="paragraph">Config Advisor kann auf folgenden Betriebssystemen ausgeführt werden. Wenn Collector auf einer Erfassungseinheit installiert ist, in der das Betriebssystem nicht in dieser Liste enthalten ist, würden Sammlungen fehlschlagen.</block>
-  <block id="1c9b42d9cdad3e650c7fc63dfa544dd3" category="list-text">Windows 10 (64 Bit)</block>
-  <block id="f943cc21622ce70821e7210ca18fa6dd" category="list-text">Windows 2012 R2 Server (64 Bit)</block>
-  <block id="d58eb715e810c3f2ac46575a5aacd90b" category="list-text">Windows 2016 Server (64 Bit)</block>
-  <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows 2019 Server (64 Bit)</block>
-  <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red hat Enterprise Linux (RHEL) 7.7 und höher (64 Bit)</block>
-  <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 14.0 und höher</block>
-  <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">Support und Video</block>
-  <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">In den folgenden Videos erfahren Sie, wie Sie den Data Collector installieren und mithilfe von Dashboards Config Advisor in Cloud Insights optimal nutzen.</block>
-  <block id="e66d50cebc6c93b253c97ae0dec229f2" category="section-title">Installieren und Konfigurieren des Datensammlers:</block>
-  <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">Erstellen eines Config Advisor Dashboards:</block>
-  <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">Anderer Support</block>
-  <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">Öffnen Sie bei anderen Fragen im Zusammenhang mit Config Advisor über das Config Advisor-Tool ein Ticket, indem Sie auf Hilfe -&gt; Support-Ticket öffnen klicken.</block>
   <block id="4002c18c39606cdbd9ec7cf8e2a090ad" category="summary">Redis Konfiguration des Datensammlers</block>
   <block id="9d2537f158357c95ae162019d658de08" category="doc">RethinkDB Data Collector</block>
   <block id="86e303e0c497b52b7c3e448d2a739f78" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Kennzahlen von RethinkDB zu sammeln.</block>
@@ -8383,7 +8325,6 @@
   <block id="c5865855c43d734069987786177edd98" category="sidebar">Hyper-V</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="b81efc5684c71c82d1f7592812e5af66" category="sidebar">Cloud Volumes Services für AWS</block>
-  <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
   <block id="9c58e11f96200548fd2f5932b391509a" category="sidebar">ONTAP Data Management-Software</block>
   <block id="7bb16842baaba3fd3ce157e27d9652f3" category="sidebar">Data ONTAP 7-Mode</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="sidebar">E-Series</block>
@@ -12920,10 +12861,15 @@ Führen Sie die folgenden Schritte aus, bevor Sie den Datensammler zum Agenten h
   <block id="78803855559e90468b9778e0cfe3fb9d" category="paragraph">Cloud Insights verwendet den Brocade FOS REST Collector, um Bestand und Performance für Brocade-Switch-Geräte mit FabricOS (FOS)-Firmware 8.2 und höher zu ermitteln.</block>
   <block id="2a8ee44741d591b5a5bbaeb9a53b8601" category="paragraph">Standardmäßig versucht dieser Collector, alle FOS-Geräte zu ermitteln, die Teil aller Fabrics sind, zu denen der Switch gehört.</block>
   <block id="632dd9f1c3d874c126028ed203b0dd9f" category="paragraph">Cloud Insights erwirbt die folgenden Bestandsinformationen vom Brocade FOS REST-Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
-  <block id="de498d77f85838129d5e5e0244f3218d" category="list-text">Für alle Switches in der Fabric muss eine IP-Konnektivität vorhanden sein. Wenn Sie das Kontrollkästchen _Discover all Switches in the Fabric_ aktivieren, identifiziert Cloud Insights alle Switches in der Fabric; es benötigt jedoch IP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.</block>
-  <block id="52ee9cef67200578c869ec0a47f47d75" category="cell">Kommagetrennte Liste der Geräte-IDs, die von der Abfrage ausgeschlossen werden sollen.</block>
   <block id="809ecc8a9a52f55bd82e3c640ecb9190" category="cell">Wählen Sie diese Option aus, um alle Switches in der Fabric zu ermitteln.</block>
   <block id="5ed56420d721e3c99ed9cd5fe2bb84c1" category="cell">Wählen Sie aus, ob HBA- oder Zonenaliase bevorzugt werden sollen.</block>
   <block id="42bf55c2417a1711c1eea84d1c100c52" category="cell">HTTP oder HTTPS.</block>
   <block id="fd2660e8af5b6a90d0b853f19433e552" category="cell">Geben Sie einen Port an, wenn der Standardwert nicht verwendet wird.</block>
+  <block id="fa54865ee3e5060e95de2db0939bb141" category="list-text">Es muss eine TCP-Verbindung zu allen Switches in der Fabric vorhanden sein. Dieser Datensammlertyp versucht nahtlos sowohl HTTP als auch HTTPS für jedes Gerät in der Fabric. Wenn Sie das Kontrollkästchen _Discover all Switches in the Fabric_ aktivieren, identifiziert Cloud Insights alle Switches in der Fabric; es benötigt jedoch TCP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.</block>
+  <block id="0c5002d65cc5f10f6e18141ac2704b54" category="list-text">Weltweit ist dasselbe Konto über alle Switches in der Fabric erforderlich. Sie können den Zugriff über die Webschnittstelle des Geräts bestätigen.</block>
+  <block id="bf05c9a08b659ee97017024af4c9309f" category="cell">IP-Adresse oder vollständig qualifizierter Domänenname des FOS-Switches</block>
+  <block id="e22e1a04d650adc7ca588d795e7461c2" category="cell">Kommagetrennte Liste der Geräte-IPv4-Adressen, die von der Abfrage ausgeschlossen werden sollen.</block>
+  <block id="7339b2d54f0d972dcd8f403df7ed08df" category="cell">Beachten Sie, dass diese Einstellung nur ändert, welches Protokoll-CI zuerst pro Gerät verwendet. CI versucht automatisch, das andere Protokoll zu verwenden, wenn die Standardeinstellung fehlschlägt</block>
+  <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">Die Testfunktion warnt mich, dass ein Protokoll nicht zugänglich ist</block>
+  <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">Ein bestimmtes Brocade FOS 8.2+ Gerät will nur über HTTP oder HTTPS sprechen - wenn ein Switch ein digitales Zertifikat installiert hat, wirft der Switch HTTP-Fehler auf, wenn man versucht, mit unverschlüsseltem HTTP gegen HTTPS zu kommunizieren. Die Testfunktion versucht die Kommunikation mit HTTP und HTTPS - wenn der Test Ihnen mitteilt, dass ein Protokoll erfolgreich ist, können Sie den Collector sicher speichern und sich keine Sorgen machen, dass das andere Protokoll nicht erfolgreich war - der Collector versucht beide Protokolle während der Sammlung und schlägt nur fehl, wenn keines funktioniert.</block>
 </blocks>
