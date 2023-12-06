@@ -217,7 +217,7 @@ Warnungen werden angezeigt, wenn die Nutzung der verwalteten Einheiten 80 %, 90 
 
 == Melden Sie sich direkt an und überspringen Sie die Testversion
 
-Sie können Cloud Insights auch direkt über den abonnieren link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["AWS Marketplace"], Ohne zuerst eine Versuchsumgebung zu schaffen. Sobald Ihr Abonnement abgeschlossen und Ihre Umgebung eingerichtet ist, werden Sie umgehend abonniert.
+Sie können Cloud Insights auch direkt über den abonnieren https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"], Ohne zuerst eine Versuchsumgebung zu schaffen. Sobald Ihr Abonnement abgeschlossen und Ihre Umgebung eingerichtet ist, werden Sie umgehend abonniert.
 
 
 
