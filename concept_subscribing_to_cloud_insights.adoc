@@ -151,7 +151,7 @@ Sie müssen Ihren NetApp Vertriebsmitarbeiter Ihre Cloud Insights *Seriennummer*
 
 NOTE: Sie müssen ein Kontoinhaber oder Administrator sein, um ein AWS Marketplace-Abonnement auf Ihrem bestehenden Cloud Insights Testkonto anzuwenden. Zusätzlich ist ein Amazon Web Services (AWS) Konto erforderlich.
 
-Durch Klicken auf den Link Amazon Marketplace wird das AWS geöffnet link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Einblicke in die Cloud"] Abonnementseite, auf der Sie Ihr Abonnement abschließen können. Beachten Sie, dass die Werte, die Sie im Rechner eingegeben haben, nicht auf der AWS-Abonnementseite ausgefüllt sind. Sie müssen auf dieser Seite die Gesamtzahl der verwalteten Einheiten eingeben.
+Durch Klicken auf den Link Amazon Marketplace wird das AWS geöffnet https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Einblicke in die Cloud"] Abonnementseite, auf der Sie Ihr Abonnement abschließen können. Beachten Sie, dass die Werte, die Sie im Rechner eingegeben haben, nicht auf der AWS-Abonnementseite ausgefüllt sind. Sie müssen auf dieser Seite die Gesamtzahl der verwalteten Einheiten eingeben.
 
 Nachdem Sie die Gesamtzahl der verwalteten Einheiten eingegeben und entweder 12 Monate oder 36 Monate Abonnement-Laufzeit gewählt haben, klicken Sie auf *Konto einrichten*, um den Abonnementprozess abzuschließen.
 
