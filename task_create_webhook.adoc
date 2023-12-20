@@ -84,6 +84,12 @@ In diesem Abschnitt können Sie benutzerdefinierte Parameter und/oder Geheimniss
 
 
 
+=== Seite „Webhooks List“
+
+Auf der Listenseite Webhooks werden der Name, erstellt von, erstellt am, Status, sicher, und zuletzt gemeldete Felder.
+
+
+
 == Wählen Sie Webhook Notification in einem Monitor
 
 So wählen Sie die Webhook-Benachrichtigung in a aus link:task_create_monitor.html#creating-a-monitor["Überwachen"]Gehen Sie zu *Alerts > Monitor verwalten* und wählen Sie den gewünschten Monitor aus, oder fügen Sie einen neuen Monitor hinzu. Wählen Sie im Abschnitt „ Team notifications_ einrichten“ die Option „_Webhook_“ als Bereitstellungsmethode aus. Wählen Sie die Alarmstufen (kritisch, Warnung, gelöst), und wählen Sie dann den gewünschten Webhook.

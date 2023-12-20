@@ -12922,4 +12922,6 @@ Führen Sie die folgenden Schritte aus, bevor Sie den Datensammler zum Agenten h
   <block id="48a3bc3cb899a72fd89e65ce93812a1b" category="inline-image-macro">Fenster „Details Zum Bereitstellen Von Fehlern“</block>
   <block id="14414cf8ddb2977c5888a488317daa8d" category="paragraph"><block ref="14414cf8ddb2977c5888a488317daa8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">Durch die Auswahl einer Warnmeldung erhalten Sie ebenfalls Details zur Warnmeldung, einschließlich des Monitors, der die Warnmeldung ausgelöst hat, sowie ein Diagramm mit einer visuellen Zeitleiste für die Warnmeldung.</block>
+  <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Seite „Webhooks List“</block>
+  <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Auf der Listenseite Webhooks werden der Name, erstellt von, erstellt am, Status, sicher, und zuletzt gemeldete Felder.</block>
 </blocks>
