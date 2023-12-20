@@ -12151,16 +12151,6 @@ V9.2.4.2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">Cloud Insights erleichtert das Anzeigen und Auffinden von Daten-Collector-Informationen:</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*Die Verarbeitung von Datensammlerlisten* ist effizienter, was bedeutet, dass die Zeit, die benötigt wird, um diese Listen anzuzeigen und zu navigieren, stark reduziert wird. Wenn Sie eine große Umgebung mit vielen Datensammlern haben, werden Sie eine deutliche Verbesserung bei der Auflistung Ihrer Datensammler sehen.</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">Die *Data Collector Support Matrix* ist von einer .PDF-Datei auf eine .HTML-basierte Seite umgestiegen, schneller zu navigieren und einfacher zu warten. Schauen Sie sich die neue Matrix hier an:<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
-  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
-
-* CentOS (64-bit): 7.2 bis 7.9, Stream 8, Stream 9
-* Debian (64-bit): 9 und 10
-* Oracle Enterprise Linux (64 Bit): 7.5 bis 7.9, 8.1 bis 8.4
-* Red hat Enterprise Linux (64 Bit): 7.2 bis 7.9, 8.1 bis 8.7, 9.1
-* Rocky 9.0, 9.1
-* Ubuntu Server: 18.04 und 20.04 LTS
-
-Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.</block>
   <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">NET-Observer-l4-ds zusätzliche Toleranzen.</block>
   <block id="5549e3ded48b31ecc7b00b810fa6b7ea" category="cell">Korrekturmaßnahmen</block>
   <block id="dacff74646dd80517d0cffd123266041" category="cell">Schweregrad/Schwellenwert</block>
@@ -12924,4 +12914,22 @@ Führen Sie die folgenden Schritte aus, bevor Sie den Datensammler zum Agenten h
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">Durch die Auswahl einer Warnmeldung erhalten Sie ebenfalls Details zur Warnmeldung, einschließlich des Monitors, der die Warnmeldung ausgelöst hat, sowie ein Diagramm mit einer visuellen Zeitleiste für die Warnmeldung.</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">Seite „Webhooks List“</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">Auf der Listenseite Webhooks werden der Name, erstellt von, erstellt am, Status, sicher, und zuletzt gemeldete Felder.</block>
+  <block id="160f07c3cffd1000365e042aeeaeb427" category="cell">Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
+
+* CentOS (64-bit): 7.2 bis 7.9, Stream 8, Stream 9
+* Debian (64-bit): 9 und 10
+* Oracle Enterprise Linux (64 Bit): 7.5 bis 7.9, 8.1 bis 8.4
+* Red hat Enterprise Linux (64 Bit): 7.2 bis 7.9, 8.1 bis 8.7, 9.1
+* Rocky 9.0, 9.1
+* Ubuntu Server: 18.04 und 20.04 LTS
+
+Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; SELinux
+Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erfassungseinheitssystem auszuführen:
+
+ _Sudo semanage fcontext -a -t usr_t "/opt/netapp/Cloudinsights(/.*)?“_
+ _Sudo restorecon -R /opt/netapp/Cloud Insights_
+======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Hauptteil</block>
 </blocks>
