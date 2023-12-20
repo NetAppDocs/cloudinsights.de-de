@@ -42,13 +42,10 @@ Sie müssen eine Acquisition Unit (AU) installieren, um Informationen aus Ihren 
 
 Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen.
 
-<<<<<<< SELinux
 Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erfassungseinheitssystem auszuführen:
 
- _Sudo semanage fcontext -a -t usr_t "/opt/netapp/Cloudinsights(/.*)?“_
- _Sudo restorecon -R /opt/netapp/Cloud Insights_
-======
->>>>>>>> Hauptteil | Ein Computer mit einer lizenzierten Version von einer der folgenden Komponenten: * Microsoft Windows 10 64-Bit * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen. 
+ Sudo semanage fcontext -a -t usr_t "/opt/netapp/Cloudinsights(/.*)?“
+ Sudo restorecon -R /opt/netapp/Cloud Insights | Ein Computer mit einer lizenzierten Version von einer der folgenden Komponenten: * Microsoft Windows 10 64-Bit * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11 auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt werden. Es wird ein dedizierter Server empfohlen. 
 
 
 | CPU | 2 CPU-Kerne | Gleich 
