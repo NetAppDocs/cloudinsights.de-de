@@ -34,9 +34,6 @@ image:Webhooks_Slack_Create_Webhook.png["Slack Webhook Erstellen"]
 
 * Gehen Sie zu eingehenden Webhooks, klicken Sie auf _eingehende Webhooks aktivieren_, Anforderung an _Neuen Webhook hinzufügen_, und wählen Sie den Kanal aus, auf dem Sie den Posten erhalten möchten.
 * Kopieren Sie die Webhook-URL. Sie müssen diese in die Cloud Insights Webhook-Konfiguration einfügen.
-+
-image:Webhook_Slack_Config.jpg["Slack Webhook-URL"]
-
 
 
 
