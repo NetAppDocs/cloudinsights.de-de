@@ -30,6 +30,7 @@ NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügb
 
 * Die sudo-Berechtigung ist für die Installation, das Ausführen von Skripten und die Deinstallation erforderlich.
 * Während der Installation des Agenten werden ein lokaler Benutzer _cssys_ und eine lokale Gruppe _cssys_ auf dem Computer erstellt. Wenn die Berechtigungseinstellungen die Erstellung eines lokalen Benutzers nicht zulassen und stattdessen Active Directory benötigen, muss im Active Directory-Server ein Benutzer mit dem Benutzernamen _csys_ erstellt werden.
+* Hier erfahren Sie mehr über Cloud Insights-Sicherheit link:security_overview.html["Hier"].
 
 
 

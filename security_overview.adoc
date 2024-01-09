@@ -108,3 +108,9 @@ Alle Cloud Insights Mitarbeiter durchlaufen Sicherheitstrainings, die für indiv
 === Compliance
 
 Cloud Insights führt unabhängige Audits und Validierungen vom externen lizenzierten CPA-Unternehmen für seine Sicherheit, Prozesse und Services durch, einschließlich der Durchführung des SOC 2-Audits.
+
+
+
+=== NetApp-Sicherheitsempfehlungen
+
+Sehen Sie sich die verfügbaren Sicherheitsempfehlungen von NetApp an link:https://security.netapp.com/advisory/["Hier"].

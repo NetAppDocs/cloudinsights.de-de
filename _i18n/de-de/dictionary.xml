@@ -3808,8 +3808,6 @@
   <block id="6d850c1b8745f8f15a5216d868cd9cd7" category="inline-image-macro">Slack Webhook Erstellen</block>
   <block id="1718403f08c32585848d7d3c2dcf311b" category="paragraph"><block ref="1718403f08c32585848d7d3c2dcf311b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad8a37e07ad3b700a99d9565d7a44843" category="list-text">Gehen Sie zu eingehenden Webhooks, klicken Sie auf _eingehende Webhooks aktivieren_, Anforderung an _Neuen Webhook hinzufügen_, und wählen Sie den Kanal aus, auf dem Sie den Posten erhalten möchten.</block>
-  <block id="55077038253242c2be9a96af7725a814" category="inline-image-macro">Slack Webhook-URL</block>
-  <block id="0c818f35934ac007c89967d7ee8faa3c" category="paragraph"><block ref="0c818f35934ac007c89967d7ee8faa3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="703a2fff4ffc0a10f86335937d4af331" category="list-text">Gib dem Webhook einen aussagekräftigen Namen, wie "Slack Webhook".</block>
   <block id="82097f3f5575ce3befccf2d55fab468d" category="list-text">Wählen Sie im Drop-down_Template Type_ *Slack* aus.</block>
   <block id="b8be5d787d20404395e80ce1c1614ddb" category="inline-image-macro">Slack Webhook-Vorlage</block>
@@ -12929,4 +12927,8 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
  Sudo semanage fcontext -a -t usr_t "/opt/netapp/Cloudinsights(/.*)?“
  Sudo restorecon -R /opt/netapp/Cloud Insights</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB-Protokollversion 3.1 und früher.</block>
+  <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">Hier erfahren Sie mehr über Cloud Insights-Sicherheit <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>.</block>
+  <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">Erfahren Sie mehr über Cloud Insights Sicherheit <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>.</block>
+  <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp-Sicherheitsempfehlungen</block>
+  <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">Sehen Sie sich die verfügbaren Sicherheitsempfehlungen von NetApp an <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>.</block>
 </blocks>

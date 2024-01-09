@@ -26,6 +26,8 @@ In diesem Thema wird beschrieben, wie Sie Akquisitionseinheiten hinzufügen und 
 
 NOTE: Für eine genaue Audit- und Datenberichterstattung wird dringend empfohlen, die Zeit auf dem Acquisition Unit-Rechner mit *Network Time Protocol (NTP)* oder *Simple Network Time Protocol (SNTP)* zu synchronisieren.
 
+Erfahren Sie mehr über Cloud Insights Sicherheit link:security_overview.html["Hier"].
+
 
 
 == Hinzufügen einer Linux-Akquisitionseinheit
