@@ -89,12 +89,8 @@ Wenn Sie den Cluster Management Administrator-Benutzer nicht verwenden können, 
 
 Um den neuen Benutzer zu erstellen, melden Sie sich mit dem Benutzernamen/Kennwort des Clustermanagements-Administrators bei ONTAP an, und führen Sie die folgenden Befehle auf dem ONTAP-Server aus:
 
+ security login role create -role csrole -cmddirname DEFAULT -access readonly
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
-security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
-security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
 security login role create -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -role csrole -cmddirname "volume snapshot" -access all -query "-snapshot cloudsecure_*"
 security login role create -role csrole -cmddirname "event catalog" -access all
@@ -102,6 +98,8 @@ security login role create -role csrole -cmddirname "event filter" -access all
 security login role create -role csrole -cmddirname "event notification destination" -access all
 security login role create -role csrole -cmddirname "event notification" -access all
 security login role create -role csrole -cmddirname "security certificate" -access all
+....
+....
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
@@ -113,12 +111,19 @@ Wenn Sie den Cluster Management Administrator-Benutzer nicht verwenden können, 
 
 Um den neuen Benutzer zu erstellen, melden Sie sich mit dem Benutzernamen/Kennwort des Clustermanagements-Administrators bei ONTAP an, und führen Sie die folgenden Befehle auf dem ONTAP-Server aus. Die folgenden Befehle sollten einfacher in einen Text Editor kopiert und vor der Ausführung der folgenden Befehle auf ONTAP den <vservername> mit Ihrem Vserver-Namen ersetzt werden:
 
+ security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access none
 ....
-security login role create -vserver <vservername> -role csrole -cmddirname DEFAULT -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname "network interface" -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname version -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname volume -access readonly
+security login role create -vserver <vservername> -role csrole -cmddirname vserver -access readonly
+....
+....
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 ....
+Sicherheits-Login create -user-or-Group-Name csuser -Application ontapi -authmethod password -role csrole -vserver <vservername>
+
 
 
 == Konfigurieren Sie den Datensammler

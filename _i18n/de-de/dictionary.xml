@@ -12931,4 +12931,5 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">Erfahren Sie mehr über Cloud Insights Sicherheit <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>.</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp-Sicherheitsempfehlungen</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">Sehen Sie sich die verfügbaren Sicherheitsempfehlungen von NetApp an <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>.</block>
+  <block id="5d0efaff5017b27ebd557fe6acfbf979" category="paragraph">Sicherheits-Login create -user-or-Group-Name csuser -Application ontapi -authmethod password -role csrole -vserver &lt;vservername&gt;</block>
 </blocks>
