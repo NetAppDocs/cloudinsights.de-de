@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: Sie erstellen Anmerkungsregeln, mit denen Anmerkungen automatisch auf mehrere Assets angewendet werden können, basierend auf den von Ihnen definierten Kriterien. 
+summary: Sie definieren Anwendungen, die Sie dann je nach Bedarf auf Assets in Ihrer Umgebung anwenden. 
 keywords: application, create application, 
 ---
 = Anwendungen Werden Erstellt
