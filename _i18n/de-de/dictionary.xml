@@ -12680,19 +12680,6 @@ Weitere Informationen finden Sie im Abschnitt Data Collector Vendor Reference in
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">Benutzer-ID für ECS</block>
   <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">Deinstallieren</block>
   <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">Neu installieren</block>
-  <block id="6491871b517e6620a9b0675a45a5322a" category="cell">Rufen Sie den Namen des POD für den Event-Exporter ab:
-
-<block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
-
-Es sollte entweder „netapp-CI-Event-Exporteur“ oder „Event-Exporteur“ sein.  Bearbeiten Sie anschließend den Monitoring-Agent<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Und legen Sie den Wert für LOG_FILE so fest, dass der entsprechende POD-Name für den Event-Exporter im vorherigen Schritt angezeigt wird.  Genauer gesagt sollte LOG_FILE auf "/var/log/Containers/netapp-CI-Event-exporteur.log" oder "/var/log/Containers/Event-exporteur*.log" gesetzt werden
-
-....
- - Schlüssel: LOG_FILE
-   Werte:
-   - /Var/log/Containers/netapp-CI-Event-Exporteur*.log
-....
-
-Alternativ kann man auch <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> Und <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> Der Agent.</block>
   <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">Bei der Eingabe eines Cognos Report-Zeitplans endet manchmal ein zusätzliches „m“ in der Zeitplanung. Wenn ich die Zeit beispielsweise als „02:15 PM“ eingebe, kann ein zusätzliches Zeichen hinzugefügt werden: „02:15 PMM“ (oder PMM). Wenn ich draußen klicke, ändert es sich zu "2:15 AM".
 
 Ich kann den Bericht speichern, aber wenn ich den gespeicherten Bericht erneut öffne, wird die Zeitplanzeit als AM (d. h. morgens) angezeigt, unabhängig davon, ob ich in der Zeitplanzeit AM oder PM eingegeben habe.</block>
@@ -12931,4 +12918,9 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp-Sicherheitsempfehlungen</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">Sehen Sie sich die verfügbaren Sicherheitsempfehlungen von NetApp an <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>.</block>
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">Sie definieren Anwendungen, die Sie dann je nach Bedarf auf Assets in Ihrer Umgebung anwenden.</block>
+  <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">Rufen Sie den Namen des POD für den Event-Exporter ab:</block>
+  <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">Es sollte entweder „netapp-CI-Event-Exporteur“ oder „Event-Exporteur“ sein.  Bearbeiten Sie anschließend den Monitoring-Agent<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>, Und legen Sie den Wert für LOG_FILE so fest, dass der entsprechende POD-Name für den Event-Exporter im vorherigen Schritt angezeigt wird.  Genauer gesagt sollte LOG_FILE auf "/var/log/Containers/netapp-CI-Event-exporteur.log" oder "/var/log/Containers/Event-exporteur*.log" gesetzt werden</block>
+  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">Alternativ kann man auch <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> Und <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> Der Agent.</block>
+  <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">Ich sehe POD(s), die von dem NetApp-Kubernetes-Monitoring-Operator aufgrund von unzureichenden Ressourcen bereitgestellt werden.</block>
+  <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">Weitere Informationen finden Sie im NetApp Kubernetes Monitoring Operator <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> Um die CPU- und/oder Speichergrenzen je nach Bedarf zu erhöhen.</block>
 </blocks>

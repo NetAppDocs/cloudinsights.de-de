@@ -534,18 +534,26 @@ Starten Sie Telegraf anschließend neu.
 | Wieso werden zwei Monitoring Operator Pods ausgeführt, einer mit dem Namen netapp-CI-Monitoring-Operator-<pod> und der andere mit dem Namen Monitoring-Operator-<pod>? | Ab dem 12. Oktober 2023 hat Cloud Insights den Betreiber refaktorisiert, um unseren Nutzern besser zu dienen. Damit diese Änderungen vollständig übernommen werden, müssen Sie dies tun <<uninstalling,Entfernen Sie den alten Bediener>> Und <<installing-the-netapp-kubernetes-monitoring-operator,Installieren Sie den neuen>>. 
 
 
-| Meine kubernetes-Ereignisse berichteten unerwartet nicht mehr an Cloud Insights. | Rufen Sie den Namen des POD für den Event-Exporter ab:
+| Meine kubernetes-Ereignisse berichteten unerwartet nicht mehr an Cloud Insights.  a| 
+Rufen Sie den Namen des POD für den Event-Exporter ab:
 
  `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/`
-
 Es sollte entweder „netapp-CI-Event-Exporteur“ oder „Event-Exporteur“ sein.  Bearbeiten Sie anschließend den Monitoring-Agent `kubectl -n netapp-monitoring edit agent`, Und legen Sie den Wert für LOG_FILE so fest, dass der entsprechende POD-Name für den Event-Exporter im vorherigen Schritt angezeigt wird.  Genauer gesagt sollte LOG_FILE auf "/var/log/Containers/netapp-CI-Event-exporteur.log" oder "/var/log/Containers/Event-exporteur*.log" gesetzt werden
 
 ....
- - Schlüssel: LOG_FILE
-   Werte:
-   - /Var/log/Containers/netapp-CI-Event-Exporteur*.log
+fluent-bit:
+...
+- name: event-exporter-ci
+  substitutions:
+  - key: LOG_FILE
+    values:
+    - /var/log/containers/netapp-ci-event-exporter*.log
+...
 ....
+Alternativ kann man auch <<uninstalling,Deinstallieren>> Und <<installing-the-netapp-kubernetes-monitoring-operator,Neu installieren>> Der Agent.
 
-Alternativ kann man auch <<uninstalling,Deinstallieren>> Und <<installing-the-netapp-kubernetes-monitoring-operator,Neu installieren>> Der Agent. 
+
+
+| Ich sehe POD(s), die von dem NetApp-Kubernetes-Monitoring-Operator aufgrund von unzureichenden Ressourcen bereitgestellt werden. | Weitere Informationen finden Sie im NetApp Kubernetes Monitoring Operator link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"] Um die CPU- und/oder Speichergrenzen je nach Bedarf zu erhöhen. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
