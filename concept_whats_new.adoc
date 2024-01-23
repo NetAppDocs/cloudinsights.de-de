@@ -25,6 +25,21 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== Januar 2024
+
+
+
+=== Verbesserte Workload-Sicherheit
+
+Die Workload-Sicherheit umfasst folgende Verbesserungen:
+
+* Die Erkennungsalgorithmen wurden verbessert, um die Anzahl der falsch positiven Warnungen zu reduzieren.
+* Die Leistung der Benutzeroberfläche wurde beim Laden, Anzeigen und Scrollen von Forensik-Seiten verbessert.
+
+
+'''
+
+
 == Dezember 2023
 
 

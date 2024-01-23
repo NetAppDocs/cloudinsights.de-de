@@ -12927,4 +12927,9 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">Löschen Sie die folgenden Ressourcen aus der Datei _Operator-Setup.yaml_, um die Berechtigung für den NetApp-Kubernetes-Überwachungsoperator zu entfernen, um die Geheimnisse im gesamten Cluster anzuzeigen:</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">Wenn es sich um ein Upgrade handelt, löschen Sie auch die Ressourcen aus Ihrem Cluster:</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">Wenn die Änderungsanalyse aktiviert ist, ändern Sie die Optionen _AgentConfiguration_ oder _Operator-config.yaml_, um den Änderungsmanagementabschnitt zu entkommentieren und _kindsToIgnoreFromWatch: '"Secrets"_ im Bereich Change-Management aufzunehmen. Notieren Sie sich das Vorhandensein und die Position von einfachen und doppelten Anführungszeichen in dieser Zeile.</block>
+  <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">Januar 2024</block>
+  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">Verbesserte Workload-Sicherheit</block>
+  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">Die Workload-Sicherheit umfasst folgende Verbesserungen:</block>
+  <block id="39d95be3c95b6807c34781066d955324" category="list-text">Die Erkennungsalgorithmen wurden verbessert, um die Anzahl der falsch positiven Warnungen zu reduzieren.</block>
+  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">Die Leistung der Benutzeroberfläche wurde beim Laden, Anzeigen und Scrollen von Forensik-Seiten verbessert.</block>
 </blocks>
