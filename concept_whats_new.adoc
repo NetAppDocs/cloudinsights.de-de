@@ -29,6 +29,45 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+=== Testen Sie die Cloud Insights Funktionen, die Sie noch nicht verwendet haben
+
+Zusätzlich zu Ihrer ersten Testversion von Cloud Insights können Sie von diesen Funktionen profitieren link:/concept_subscribing_to_cloud_insights.html#module-trials["Modulversuche"]. Wenn Sie beispielsweise Cloud Insights abonniert haben und schon Storage und Virtual Machines überwacht haben, können Sie, wenn Sie Ihrer Umgebung Kubernetes hinzufügen, automatisch eine 30-Tage-Testversion von Kubernetes Observability starten. Die Nutzung der gemanagten Kubernetes Observability-Einheit wird erst nach Ende des Testzeitraums mit Ihren abonnierten Berechtigungen gerechnet.
+
+
+
+=== Wie gut sind meine Workloads?
+
+Der Workload-Status ist auf der Seite *Kubernetes > Explore > Workloads* auf einen Blick verfügbar. So können Sie schnell erkennen, welche Workloads eine gute Performance aufweisen und welche Unterstützung benötigen.
+
+image:WorkloadHealth.png["Workload-Status auf einen Blick"]
+
+
+
+=== Updates Für Data Collector
+
+
+
+==== Data Domain-Identifizierung
+
+Der Data Domain Collector wurde verbessert, um HA-Systeme für die Haltbarkeit bei Failover-Ereignissen besser zu identifizieren. Diese Änderung führt zu einer * einmaligen * Neuidentifikation von Data Domain-Appliances in HA-Systemen, was in der Folge dazu führt, dass alle Anmerkungen zu diesen Assets entfernt werden (da diese Arrays neu identifiziert werden). Sie müssen Anmerkungen erneut an Ihre Data Domain-Objekte anhängen.
+
+
+
+=== Verbesserte Workload-Sicherheit
+
+Die Workload-Sicherheit umfasst folgende Verbesserungen:
+
+* Die Erkennungsalgorithmen wurden verbessert, um die Anzahl der falsch positiven Warnungen zu reduzieren.
+* Die Leistung der Benutzeroberfläche wurde beim Laden, Anzeigen und Scrollen von Forensik-Seiten verbessert.
+
+
+'''
+
+
+== Januar 2024
+
+
+
 === Verbesserte Workload-Sicherheit
 
 Die Workload-Sicherheit umfasst folgende Verbesserungen:
