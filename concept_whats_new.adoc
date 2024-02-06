@@ -29,6 +29,12 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+=== Workload-Sicherheits-API
+
+Für das Management von Data Collectors (Add/Update/delete) und Agents stehen neue Workload Security APIs zur Verfügung. Navigieren Sie zu *Admin > API Access > API Documentation*, und wählen Sie den API-Typ _Workload Security_ aus, um weitere Informationen zu erhalten.
+
+
+
 === Testen Sie die Cloud Insights Funktionen, die Sie noch nicht verwendet haben
 
 Zusätzlich zu Ihrer ersten Testversion von Cloud Insights können Sie von diesen Funktionen profitieren link:concept_subscribing_to_cloud_insights.html#module-trials["Modulversuche"]. Wenn Sie beispielsweise Cloud Insights abonniert haben und schon Storage und Virtual Machines überwacht haben, können Sie, wenn Sie Ihrer Umgebung Kubernetes hinzufügen, automatisch eine 30-Tage-Testversion von Kubernetes Observability starten. Die Nutzung der gemanagten Kubernetes Observability-Einheit wird erst nach Ende des Testzeitraums mit Ihren abonnierten Berechtigungen gerechnet.
