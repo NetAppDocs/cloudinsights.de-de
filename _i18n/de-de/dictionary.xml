@@ -12599,7 +12599,6 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">Zeilen, die eine Prüfung anzeigen, sind aktiv. „X“ zeigt inaktive Geräte an.</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Bestandsaufnahme Aktu. Status: Unerwartete Daten abgerufen -Array hat 0 Volumen gemeldet</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">Zeigt in der Regel ein Autorisierungsproblem (nicht die Authentifizierung) an. Stellen Sie sicher, dass Ihre Anmeldeinformationen korrekt sind und dass der Benutzername die Möglichkeit hat, alle Volumes aufzulisten und ihre Attribute anzuzeigen.</block>
-  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">Klicken Sie auf *AObservability &gt; Collectors &gt; Acquisition Units &gt; +Acquisition Unit*</block>
   <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">Klicken Sie auf *Observability &gt; Collectors &gt; Acquisition Units*, um den Status von Acquisition Units zu überprüfen.</block>
   <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">Klicken Sie Auf *Observability &gt; Collectors &gt; Acquisition Units &gt; +Acquisition Unit* .</block>
   <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">Klicken Sie auf * &gt; Observability &gt; Collectors &gt; Acquisition Units*, um den Status von Acquisition Units zu überprüfen.</block>
@@ -12957,4 +12956,5 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">Sobald Ereignisse vom ONTAP-System erfasst wurden, werden auf der Seite Forensik für Workload-Sicherheit Ereignisse mit Zugriffsverweigerung angezeigt. Zusätzlich zu den angezeigten Informationen können Sie die fehlenden Benutzerberechtigungen für eine bestimmte Operation anzeigen, indem Sie die Spalte _gewünschte Aktivität_ aus dem Zahnradsymbol zur Tabelle hinzufügen.</block>
   <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">Beispiel Für Ereignis „Zugriff Verweigert“</block>
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">Klicken Sie Auf *Observability &gt; Collectors &gt; Acquisition Units &gt; +Acquisition Unit*</block>
 </blocks>

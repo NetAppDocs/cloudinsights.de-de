@@ -38,7 +38,7 @@ Erfahren Sie mehr über Cloud Insights Sicherheit link:security_overview.html["H
 
 .Schritte für die Installation der Linux-Erfassungseinheit
 . Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Insights-Umgebung an.
-. Klicken Sie auf *AObservability > Collectors > Acquisition Units > +Acquisition Unit*
+. Klicken Sie Auf *Observability > Collectors > Acquisition Units > +Acquisition Unit*
 +
 Das Dialogfeld „_Erfassungseinheit installieren “ wird angezeigt. Wählen Sie Linux.
 
