@@ -25,13 +25,18 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
-== Januar 2024
+== Februar 2024
 
 
 
 === Workload-Sicherheits-API
 
 Für das Management von Data Collectors (Add/Update/delete) und Agents stehen neue Workload Security APIs zur Verfügung. Navigieren Sie zu *Admin > API Access > API Documentation*, und wählen Sie den API-Typ _Workload Security_ aus, um weitere Informationen zu erhalten.
+
+'''
+
+
+== Januar 2024
 
 
 
