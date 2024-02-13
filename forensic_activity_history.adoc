@@ -232,4 +232,7 @@ Beispiel: Verwenden Sie den String _testvolume*_ anstatt _*testvolume_ oder _*Te
 
 Verwenden Sie eine präfixbasierte Suche, um alle Aktivitäten unterhalb eines bestimmten Ordners rekursiv anzuzeigen (hierarchische Suche). Z.B. _/path1/path2/path3_ oder _“/path1/path2/path3“_ listet alle Aktivitäten rekursiv unter _/path1/path2/path3_ auf.
 Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerkarte „Alle Aktivitäten“ verwenden. 
+
+
+| Bei der Verwendung eines Pfadfilters tritt ein Fehler „Anfrage fehlgeschlagen mit Statuscode 500/503“ auf. | Versuchen Sie, einen kleineren Datumsbereich zum Filtern von Datensätzen zu verwenden. 
 |===

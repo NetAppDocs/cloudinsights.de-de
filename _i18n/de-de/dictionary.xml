@@ -12944,4 +12944,6 @@ telegraf:
   <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">Bearbeiten Sie den Abschnitt telegraf in _AgentConfiguration_, und setzen Sie _dockerMetricCollectionEnabled_ auf false. Weitere Informationen finden Sie im Abschnitt des Bedieners  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
   <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">„Zugriff verweigert“-Ereignisse</block>
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*Zugriff verweigert*: Workload-Sicherheit integriert sich in ONTAP um zu empfangen <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> Und bieten eine zusätzliche Schicht für Analysen und automatische Reaktionen.</block>
+  <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">Bei der Verwendung eines Pfadfilters tritt ein Fehler „Anfrage fehlgeschlagen mit Statuscode 500/503“ auf.</block>
+  <block id="62ce499553ccf0270c3a01cc146e46fd" category="cell">Versuchen Sie, einen kleineren Datumsbereich zum Filtern von Datensätzen zu verwenden.</block>
 </blocks>
