@@ -29,9 +29,9 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
-=== Workload-Sicherheits-API
+=== Workload Security Data Collector API
 
-Für das Management von Data Collectors (Add/Update/delete) und Agents stehen neue Workload Security APIs zur Verfügung. Navigieren Sie zu *Admin > API Access > API Documentation*, und wählen Sie den API-Typ _Workload Security_ aus, um weitere Informationen zu erhalten.
+In großen Umgebungen können Sie die Erstellung von Workload Security Collectors mithilfe der neuen Data Collectors API automatisieren. Navigieren Sie zu *Admin > API Access > API Documentation*, und wählen Sie den API-Typ _Workload Security_ aus, um weitere Informationen zu erhalten.
 
 '''
 
@@ -64,13 +64,11 @@ Der Data Domain Collector wurde verbessert, um HA-Systeme für die Haltbarkeit b
 
 
 
-=== Verbesserte Workload-Sicherheit
+=== Verbesserter ML-Algorithmus zur Erkennung von Ransomware
 
-Die Workload-Sicherheit umfasst folgende Verbesserungen:
+Workload Security umfasst einen neuen ML-Algorithmus zur Ransomware-Erkennung der zweiten Generation, der die anspruchsvollsten Angriffe schneller und exakter erkennt.
 
-* Die Erkennungsalgorithmen wurden verbessert, um die Anzahl der falsch positiven Warnungen zu reduzieren.
-* Die Leistung der Benutzeroberfläche wurde beim Laden, Anzeigen und Scrollen von Forensik-Seiten verbessert.
-
+„Saisonalität“ von Verhaltensweisen: Das Verhalten am Wochenende kann sich an verschiedenen Mustern des Wochentags oder des morgendlichen Verhaltens vom Nachmittag anpassen. Bei Workload-Sicherheits-Algorithmen wird diese Saisonabhängigkeit berücksichtigt.
 
 '''
 
