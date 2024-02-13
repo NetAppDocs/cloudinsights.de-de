@@ -160,7 +160,7 @@ Vor dieser Verbesserung waren bei diesem Collector-Typ wahrscheinlich nur FOS 9.
 
 Die Workload-Sicherheit wurde durch folgende Funktionen verbessert:
 
-* *Zugriff verweigert*: Workload-Sicherheit integriert sich in ONTAP, um "Zugriff verweigert" Ereignisse zu empfangen und eine zusätzliche Analyse und automatische Reaktion Ebene.
+* *Zugriff verweigert*: Workload-Sicherheit integriert sich in ONTAP um zu empfangen link:concept_ws_integration_with_ontap_access_denied.html["„Zugriff verweigert“-Ereignisse"] Und bieten eine zusätzliche Schicht für Analysen und automatische Reaktionen.
 * *Zulässige Dateitypen*: Wenn ein Ransomware-Angriff für eine bekannte Dateierweiterung erkannt wird, kann diese Dateierweiterung zu einem hinzugefügt werden link:ws_allowed_file_types.html["Zulässige Dateitypen"] Liste, um unnötige Warnmeldungen zu vermeiden.
 
 
