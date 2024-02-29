@@ -79,7 +79,7 @@ Wenn die Meldung „Fehler vom Server (notfound)“ angezeigt wird, muss Ihr Bed
 
 Wenn Sie mit einem laufen <<configuring-proxy-support,Proxy>>, Haben Sie eine <<using-a-custom-or-private-docker-repository,Benutzerdefiniertes Repository>>, Oder verwenden <<openshift-instructions,OpenShift>>, Lesen Sie die folgenden Abschnitte sorgfältig.
 
-Lesen Sie auch darüber <<permissions,Berechtigungen>>.
+Lesen Sie auch darüber <<Berechtigungen,Berechtigungen>>.
 
 Wenn Sie ein Upgrade von einer früheren Installation durchführen, lesen Sie die <<Aktualisierung,Aktualisierung>> Informationsdaten.
 

@@ -245,10 +245,6 @@
   <block id="0ade426b7e1a3e1144acea01619d6f74" category="list-text">Wählen Sie die gewünschten Spalten aus und wählen Sie „Text“ für das Spaltendatenformat.</block>
   <block id="7968f043139de8ff0e5df4451c437426" category="list-text">Klicken Sie Auf Fertig Stellen.</block>
   <block id="88ebf387522ed298e000e5bc3d66e604" category="paragraph">Ihre Objekte sollten in Excel im richtigen Format angezeigt werden.</block>
-  <block id="ce090ea7bc89bd5ec37a141c636c69de" category="summary">Dieses Thema ist noch nicht bereit.</block>
-  <block id="4a00b82df023b0f0fb303ec1d7a1ebfc" category="doc">Dieses Thema wird derzeit in Bau sein</block>
-  <block id="27871ea7cd2bc4814101455654163190" category="paragraph">Verzeihen Sie unseren Auftritt während des Cloud Insights Vorschaufens. Viele Themen sind noch im Bau, und das scheint einer von ihnen zu sein. Bitte tragen Sie bei uns und schauen Sie regelmäßig nach Aktualisierungen der Dokumentation.</block>
-  <block id="ba94b4c8120f35a3763a9a410b2b6647" category="image-alt">Im Bau</block>
   <block id="ab1a799b59da23d814c72a092a7fe64b" category="summary">Konfiguration des HDS Command Suite Device Manager-Datensammlers</block>
   <block id="e8edaf73f46645ebe0b82e61c249fa18" category="doc">Datensammler der Hitachi Vantara Command Suite</block>
   <block id="cb36e7dd16b232ba49f1c27de2be559b" category="paragraph">Der Datensammler der Hitachi Vantara Command Suite unterstützt den HiCommand Device Manager-Server. Cloud Insights kommuniziert mit dem HiCommand Device Manager-Server über die standardmäßige HiCommand API.</block>
@@ -12947,4 +12943,32 @@ telegraf:
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">Workload Security umfasst einen neuen ML-Algorithmus zur Ransomware-Erkennung der zweiten Generation, der die anspruchsvollsten Angriffe schneller und exakter erkennt.</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">„Saisonalität“ von Verhaltensweisen: Das Verhalten am Wochenende kann sich an verschiedenen Mustern des Wochentags oder des morgendlichen Verhaltens vom Nachmittag anpassen. Bei Workload-Sicherheits-Algorithmen wird diese Saisonabhängigkeit berücksichtigt.</block>
   <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP Zugriff verweigert Integration</block>
+  <block id="2b954573bdfbf3e6f7cd041ebd3f3682" category="section-title">Höhere Benutzerfreundlichkeit</block>
+  <block id="dd02e3f2ac2d39316775658f3f6fef9c" category="paragraph">Speichern Sie einen *Snapshot* Ihres aktuellen Dashboards, indem Sie in der Dropdown-Liste rechts _als Bild exportieren_ auswählen. Cloud Insights erstellt eine .PNG-Datei der aktuellen Widget-Status.</block>
+  <block id="d53957f8a1aee068b3b3326766554570" category="inline-image-macro">Als Bild exportieren</block>
+  <block id="37cada8c4f46b21c02df2939356a5c89" category="paragraph"><block ref="37cada8c4f46b21c02df2939356a5c89" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d2a24755cf47ed77e9e34a1df4ef815" category="paragraph">*Objekt- und Metrikauswahl* ist einfacher denn je für Widgets, Monitore, etc. Wählen Sie den gewünschten Objekttyp aus, und wählen Sie dann im separaten Dropdown-Menü eine für dieses Objekt relevante Metrik aus.</block>
+  <block id="2f4107aef619081a1d89d75c6a93321e" category="inline-image-macro">Objekt- und Metrikselektoren trennen sich voneinander</block>
+  <block id="ea67434ac421e1de9d939a1647e74e51" category="paragraph"><block ref="ea67434ac421e1de9d939a1647e74e51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cda669774eba29c91f639af08adb1a4a" category="paragraph">*Export Data Collector and Acquisition Unit* listet auf .CSV durch Auswahl des Symbols am oberen Rand dieser Seiten.</block>
+  <block id="6be2ffb5d4b79f5272ab1074fc6603b6" category="inline-image-macro">DC- und AU-Listen in .csv exportieren</block>
+  <block id="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="paragraph"><block ref="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d480fd0b5ff9d58e0bc8785e82c7eb5b" category="paragraph">Wir haben die Hilfe &gt; Support* Seite neu organisiert, damit es einfacher ist, das zu finden, wonach Sie suchen, und weil Sie danach gefragt haben, haben wir auf dieser Seite direkte Links zu *API Swagger* und Benutzerdokumentation hinzugefügt.</block>
+  <block id="6b2eef8adc0e95db95014a8b08724379" category="inline-image-macro">API-Links auf der Hilfe- &amp;gt; Support-Seite</block>
+  <block id="4c976a75386e11bb66ac24e8ee6af999" category="paragraph"><block ref="e8dee020306df51938caf982452d1304" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95489108ef80ef1f702494f344d95ea2" category="paragraph">*Links* in der Spalte „triggeredOn“ auf der Seite Alerts list wird zur entsprechenden Landing Page navigieren, sofern für dieses Objekt eine Landing Page verfügbar ist.</block>
+  <block id="c032f8e7ba44d91d7b9c57d652e0a033" category="inline-image-macro">Links im Alarmfeld TriggeredOn</block>
+  <block id="fffe3fe21c35b168a145c010bce26160" category="paragraph"><block ref="fffe3fe21c35b168a145c010bce26160" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="139836acf897f8ef3c4fb19d21c35155" category="section-title">Sehen Sie alle Änderungen in Ihrem Namespace</block>
+  <block id="9143a0f1ce37b1e53b957a49833f9322" category="paragraph">Mit der Kubernetes-Änderungsanalyse können Sie jetzt einen Überblick über die Änderungen bei der Auswahl von Cluster und Namespace erhalten. Zuvor muss auch Workload ausgewählt worden sein.  Beim Filtern nach Cluster und Namespace wird die Chronik aller Workload-Änderungen in diesem Namespace auf einer Zeile angezeigt.</block>
+  <block id="5ed610ab86efcfb43954fb9ef0b7a72e" category="inline-image-macro">Namespace-Zeitleiste</block>
+  <block id="0b0562ef30238191f797d9225f3024c0" category="paragraph"><block ref="0b0562ef30238191f797d9225f3024c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c91be2a24e6b73c8e2a2275adc2bef10" category="section-title">Verwandte Protokolle für Warnmeldungen</block>
+  <block id="5c5683919f4c326b9a4d4e83bff8dd91" category="paragraph">Beim Anzeigen einer Protokollwarnung werden die zugehörigen Protokolleinträge in einer neuen Tabelle angezeigt.  Ein Protokolleintrag hängt zusammen, wenn er in derselben Quelle und demselben Zeitrahmen wie die Warnmeldung auftritt, und unterliegt denselben Bedingungen. Wählen Sie „Protokolle analysieren“, um weitere Informationen zu erhalten.</block>
+  <block id="cf7dab299bf1390e2d44ac5a3f5aef74" category="inline-image-macro">Zugehörige Protokolle auf einer Landing Page für Protokollwarnungsmeldung</block>
+  <block id="29869d564dea811db493659e276c4afb" category="paragraph"><block ref="29869d564dea811db493659e276c4afb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c15484a80236e65cd94c3fa859c0aca2" category="section-title">ONTAP-Switch-Daten erfassen</block>
+  <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">Switch-Informationen</block>
+  <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">Berechtigungen</block>
+  <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insights kann Daten von den Back-End-Switches des ONTAP Systems erfassen; aktivieren Sie einfach die Erfassung im Abschnitt „_Advanced Configuration_ “ des Datensammlers und stellen Sie sicher, dass das ONTAP-System so konfiguriert ist, dass es bereitgestellt wird <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> Und hat das entsprechende <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> Einstellen.</block>
 </blocks>

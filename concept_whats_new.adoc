@@ -5,17 +5,14 @@ summary: Neue Funktionen in Cloud Insights verfügbar
 keywords: features 
 ---
 = Neuerungen bei Cloud Insights
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige der neuesten Features und Funktionalitäten, die in den kommerziellen Editionen von Cloud Insights verfügbar sind.
@@ -26,6 +23,52 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 == Februar 2024
+
+
+
+=== Höhere Benutzerfreundlichkeit
+
+Speichern Sie einen *Snapshot* Ihres aktuellen Dashboards, indem Sie in der Dropdown-Liste rechts _als Bild exportieren_ auswählen. Cloud Insights erstellt eine .PNG-Datei der aktuellen Widget-Status.
+
+image:ExportAsImage.png["Als Bild exportieren"]
+
+*Objekt- und Metrikauswahl* ist einfacher denn je für Widgets, Monitore, etc. Wählen Sie den gewünschten Objekttyp aus, und wählen Sie dann im separaten Dropdown-Menü eine für dieses Objekt relevante Metrik aus.
+
+image:ObjectAndMetricSelection.png["Objekt- und Metrikselektoren trennen sich voneinander"]
+
+*Export Data Collector and Acquisition Unit* listet auf .CSV durch Auswahl des Symbols am oberen Rand dieser Seiten.
+
+image:ExportDCList.png["DC- und AU-Listen in .csv exportieren"]
+
+Wir haben die Hilfe > Support* Seite neu organisiert, damit es einfacher ist, das zu finden, wonach Sie suchen, und weil Sie danach gefragt haben, haben wir auf dieser Seite direkte Links zu *API Swagger* und Benutzerdokumentation hinzugefügt.
+
+image:Support_APIAccess.png["API-Links auf der Hilfe- > Support-Seite"]
+
+*Links* in der Spalte „triggeredOn“ auf der Seite Alerts list wird zur entsprechenden Landing Page navigieren, sofern für dieses Objekt eine Landing Page verfügbar ist.
+
+image:TriggeredOnLink.png["Links im Alarmfeld TriggeredOn"]
+
+
+
+=== Sehen Sie alle Änderungen in Ihrem Namespace
+
+Mit der Kubernetes-Änderungsanalyse können Sie jetzt einen Überblick über die Änderungen bei der Auswahl von Cluster und Namespace erhalten. Zuvor muss auch Workload ausgewählt worden sein.  Beim Filtern nach Cluster und Namespace wird die Chronik aller Workload-Änderungen in diesem Namespace auf einer Zeile angezeigt.
+
+image:NamespaceTimeline.png["Namespace-Zeitleiste"]
+
+
+
+=== Verwandte Protokolle für Warnmeldungen
+
+Beim Anzeigen einer Protokollwarnung werden die zugehörigen Protokolleinträge in einer neuen Tabelle angezeigt.  Ein Protokolleintrag hängt zusammen, wenn er in derselben Quelle und demselben Zeitrahmen wie die Warnmeldung auftritt, und unterliegt denselben Bedingungen. Wählen Sie „Protokolle analysieren“, um weitere Informationen zu erhalten.
+
+image:RelatedLogsTable.png["Zugehörige Protokolle auf einer Landing Page für Protokollwarnungsmeldung"]
+
+
+
+=== ONTAP-Switch-Daten erfassen
+
+Cloud Insights kann Daten von den Back-End-Switches des ONTAP Systems erfassen; aktivieren Sie einfach die Erfassung im Abschnitt „_Advanced Configuration_ “ des Datensammlers und stellen Sie sicher, dass das ONTAP-System so konfiguriert ist, dass es bereitgestellt wird link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["Switch-Informationen"] Und hat das entsprechende link:["Berechtigungen"] Einstellen.
 
 
 
