@@ -182,6 +182,9 @@ Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses 
 
 
 | Erweiterte Zähldatensammlung | ONTAP Integration aktivieren. Wählen Sie diese Option aus, um ONTAP Advanced Counter-Daten in Umfragen einzubeziehen. Wählen Sie die gewünschten Zähler aus der Liste aus. 
+
+
+| Kennzahlen Für Cluster-Switch | Zulassen, dass Cloud Insights Cluster-Switch-Daten erfasst. Beachten Sie, dass Sie das ONTAP-System nicht nur auf der Cloud Insights-Seite aktivieren, sondern auch so konfigurieren müssen, dass es bereitgestellt wird link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["Switch-Informationen"]Und sorgen Sie für die richtige <<a-note-about-permissions,Berechtigungen>> Werden eingestellt, um die Switch-Daten an Cloud Insights senden zu können. Siehe „Ein Hinweis zu Berechtigungen“ weiter unten. 
 |===
 
 
@@ -250,6 +253,9 @@ security login role create -role ci_readonly -access all -cmddirname {cluster ap
 Wenn AD/LDAP-Konto verwendet wird, sollte der Befehl sein
 
  security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+Wenn Sie Cluster-Switch-Daten erfassen:
+
+ security login rest-role create -role ci_readonly -api /api/network/ethernet -access readonly
 Die daraus resultierende Rolle und Benutzeranmeldung sieht folgendermaßen aus: Die tatsächliche Ausgabe kann variieren:
 
 ....
@@ -267,6 +273,9 @@ UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
 ci_user     ontapi      password    ci_readonly   no
 ....
+
+NOTE: Wenn die ONTAP-Zugriffssteuerung nicht korrekt eingestellt ist, können Cloud Insights-REST-Anrufe fehlschlagen, was zu Datenlücken für das Gerät führt.  Wenn Sie sie beispielsweise auf dem Cloud Insights Collector aktiviert haben, die Berechtigungen jedoch nicht auf dem ONTAP konfiguriert haben, schlägt die Akquisition fehl.  Wenn die Rolle zuvor auf der ONTAP definiert ist und Sie die Rest-API-Fähigkeiten hinzufügen, stellen Sie außerdem sicher, dass _http_ der Rolle hinzugefügt wird.
+
 
 
 == Fehlerbehebung
