@@ -39,23 +39,19 @@ Wenn der Data Collector mithilfe der Anmeldeinformationen für die Clusteradmini
 
 Wenn der Collector mithilfe eines benutzerdefinierten Benutzers (z. B. _csuser_) mit den Berechtigungen für den Benutzer hinzugefügt wird, führen Sie die folgenden Schritte aus, um Workload Security die erforderliche Berechtigung zur Registrierung für Ereignisse mit Zugangsverweigerung bei ONTAP zu erteilen.
 
-Führen Sie für csuser mit _Cluster_-Anmeldeinformationen die folgenden Befehle über die ONTAP-Befehlszeile aus. Beachten Sie, dass _csrole_ eine benutzerdefinierte Rolle ist und _csuser_ ein benutzerdefinierter ONTAP-Benutzer ist.
+Führen Sie für csuser mit _Cluster_-Anmeldeinformationen die folgenden Befehle über die ONTAP-Befehlszeile aus. Beachten Sie, dass _csrestrole_ eine benutzerdefinierte Rolle ist und _csuser_ ein benutzerdefinierter ONTAP-Benutzer ist.
 
 [listing]
 ----
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
-
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
 ----
 Führen Sie für csuser mit _SVM_-Anmeldeinformationen die folgenden Befehle über die ONTAP-Befehlszeile aus:
 
 [listing]
 ----
-security login rest-role create -role csrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-
-security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
-security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
-security login create -user-or-group-name csuser -application http -authmethod password -role csrole
+ security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
+ security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
 
 

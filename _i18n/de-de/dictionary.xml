@@ -12906,7 +12906,6 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="6e0dfd81ddc34b1c1736fb0d236a55db" category="paragraph"><block ref="6e0dfd81ddc34b1c1736fb0d236a55db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e590479d69be0679e0d2b7c5a78d3ab" category="paragraph">Wenn der Data Collector mithilfe der Anmeldeinformationen für die Clusteradministration hinzugefügt wird, sind keine neuen Berechtigungen erforderlich.</block>
   <block id="a3fef797358352dd57f209719f4590ca" category="paragraph">Wenn der Collector mithilfe eines benutzerdefinierten Benutzers (z. B. _csuser_) mit den Berechtigungen für den Benutzer hinzugefügt wird, führen Sie die folgenden Schritte aus, um Workload Security die erforderliche Berechtigung zur Registrierung für Ereignisse mit Zugangsverweigerung bei ONTAP zu erteilen.</block>
-  <block id="04b888e98eb37f7a0061538c4af0da8a" category="paragraph">Führen Sie für csuser mit _Cluster_-Anmeldeinformationen die folgenden Befehle über die ONTAP-Befehlszeile aus. Beachten Sie, dass _csrole_ eine benutzerdefinierte Rolle ist und _csuser_ ein benutzerdefinierter ONTAP-Benutzer ist.</block>
   <block id="7a1aa4b5b013e91e379aedbfb6a633f3" category="paragraph">Führen Sie für csuser mit _SVM_-Anmeldeinformationen die folgenden Befehle über die ONTAP-Befehlszeile aus:</block>
   <block id="6b112db6b76b4a3d519b727558f34cb6" category="section-title">Zugriff verweigert Ereignisse</block>
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">Sobald Ereignisse vom ONTAP-System erfasst wurden, werden auf der Seite Forensik für Workload-Sicherheit Ereignisse mit Zugriffsverweigerung angezeigt. Zusätzlich zu den angezeigten Informationen können Sie die fehlenden Benutzerberechtigungen für eine bestimmte Operation anzeigen, indem Sie die Spalte _gewünschte Aktivität_ aus dem Zahnradsymbol zur Tabelle hinzufügen.</block>
@@ -12983,4 +12982,5 @@ Wenn Ihr Unternehmen Proxy-Nutzung für den Internet-Zugriff erfordert, müssen 
 *.cloudinsights.netapp.com
 
 Weitere Informationen finden Sie unter Proxys <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> Oder <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>.</block>
+  <block id="b30a6e7a75eaf5af9f2106e8d96d324b" category="paragraph">Führen Sie für csuser mit _Cluster_-Anmeldeinformationen die folgenden Befehle über die ONTAP-Befehlszeile aus. Beachten Sie, dass _csrestrole_ eine benutzerdefinierte Rolle ist und _csuser_ ein benutzerdefinierter ONTAP-Benutzer ist.</block>
 </blocks>
