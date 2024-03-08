@@ -22,6 +22,31 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== März 2024
+
+
+
+=== Details Zum Workload Security Agent
+
+Jeder Ihrer Workload Security Agents verfügt über eine eigene Landing Page, auf der Sie leicht zusammenfassende Informationen über den Agenten sowie die mit diesem Agent verbundenen installierten Daten- und Benutzerverzeichnissammler sehen können.
+
+image:Agent_Detail_Page.png["Beispiel für die Landing Page „Agent-Details“"]
+
+
+
+=== Schneller mehr Daten darstellen
+
+Beim Analysieren von Daten auf der Landing Page eines Assets ist das Hinzufügen zusätzlicher Daten zu den Diagrammen der Expert View ein Kinderspiel. Wenn ein Objekttyp über relevante Daten verfügt, bewegen Sie den Mauszeiger für jede Tabelle auf der Landing Page über dieses Objekt, um das Symbol „zur Expertenansicht hinzufügen“ anzuzeigen. Durch Auswahl dieses Symbols wird das Objekt zu den zusätzlichen Ressourcen hinzugefügt und in den Diagrammen der Expertenansicht angezeigt.
+
+image:AddToChartIcon.png["Tabellendaten zur Expertenansicht hinzufügen"]
+
+Oder vielleicht möchten Sie die Daten einer Landing Page-Tabelle in einem eigenen Diagramm sehen. Wählen Sie einfach das _Diagramm anzeigen_ -Symbol, um das Diagramm unter der Tabelle zu öffnen:
+
+image:LPTableShowChartIcon.png["Diagrammsymbol anzeigen"]
+
+'''
+
+
 == Februar 2024
 
 
@@ -68,7 +93,7 @@ image:RelatedLogsTable.png["Zugehörige Protokolle auf einer Landing Page für P
 
 === ONTAP-Switch-Daten erfassen
 
-Cloud Insights kann Daten von den Back-End-Switches des ONTAP Systems erfassen; aktivieren Sie einfach die Erfassung im Abschnitt „_Advanced Configuration_ “ des Datensammlers und stellen Sie sicher, dass das ONTAP-System so konfiguriert ist, dass es bereitgestellt wird link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["Switch-Informationen"] Und hat das entsprechende link:["Berechtigungen"] Einstellen.
+Cloud Insights kann Daten von den Back-End-Switches des ONTAP Systems erfassen; aktivieren Sie einfach die Erfassung im Abschnitt „_Advanced Configuration_ “ des Datensammlers und stellen Sie sicher, dass das ONTAP-System so konfiguriert ist, dass es bereitgestellt wird link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["Switch-Informationen"] Und hat das entsprechende <<a-note-about-permissions,Berechtigungen>> Einstellen.
 
 
 
