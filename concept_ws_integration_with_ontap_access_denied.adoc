@@ -53,6 +53,8 @@ Führen Sie für csuser mit _SVM_-Anmeldeinformationen die folgenden Befehle üb
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
+Weitere Informationen zur Konfiguration anderer <<task_add_collector_svm.html,ONTAP-Berechtigungen>>.
+
 
 
 == Zugriff verweigert Ereignisse
