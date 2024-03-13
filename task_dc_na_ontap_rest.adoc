@@ -1,0 +1,278 @@
+---
+sidebar: sidebar 
+permalink: task_dc_na_ontap_rest.html 
+keywords: data collector, ontap, ontap, CDOT, REST 
+summary: ONTAP REST Data Collector 
+---
+= NetApp ONTAP REST-Datensammler
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dieser Datensammler erfasst Inventar- und Performance-Daten von Storage-Systemen, auf denen ONTAP ausgeführt wird, und verwendet schreibgeschützte REST-API-Aufrufe von einem ONTAP-Konto. Dieser Datensammler erstellt auch einen Datensatz in der Cluster-Anwendungsregistrierung, um den Support zu beschleunigen.
+
+
+
+== Terminologie
+
+Cloud Insights erfasst Bestands- und Performancedaten des ONTAP Datensammlers. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+
+[cols="2*"]
+|===
+| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+
+
+| Festplatte | Festplatte 
+
+
+| Raid-Gruppe | Festplattengruppe 
+
+
+| Cluster | Storage 
+
+
+| Knoten | Storage-Node 
+
+
+| Aggregat | Storage-Pool 
+
+
+| LUN | Datenmenge 
+
+
+| Datenmenge | Internes Volumen 
+|===
+
+
+== Terminologie für ONTAP Datenmanagement
+
+Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Landing Pages für ONTAP Storage-Assets finden können. Viele dieser Bedingungen gelten auch für andere Datensammler.
+
+
+
+=== Storage
+
+* Modell – Eine durch Komma getrennte Liste der eindeutigen Node-Modellnamen in diesem Cluster. Wenn alle Nodes in den Clustern denselben Modelltyp aufweisen, wird nur ein Modellname angezeigt.
+* Anbieter – derselbe Anbietername, den Sie sehen würden, wenn Sie eine neue Datenquelle konfigurieren würden.
+* Seriennummer: Die Seriennummer des Arrays. Bei Cluster-Architektur Storage-Systemen wie ONTAP Datenmanagement, ist diese Seriennummer möglicherweise weniger nützlich als die einzelnen Seriennummern der Storage-Nodes.
+* IP: In der Regel werden die in der Datenquelle konfigurierten IP(s) oder Hostnamen(s) verwendet.
+* Microcode-Version – Firmware.
+* Rohkapazität – Basis-2-Zusammenfassung aller physischen Laufwerke im System, unabhängig von ihrer Rolle.
+* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise beziehen Cloud Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Anstelle des Arrays, die dies anbieten, führt Cloud Insights in der Regel eine IOPS-gewichtete Berechnung durch, die aus den Statistiken der einzelnen internen Volumen abgeleitet wird.
+* Durchsatz: Aggregiert aus internen Volumes. Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Erstellung programmgesteuert durch die Cloud Insights Datenquelle im Rahmen der Bestandsberichterstattung.
+
+
+
+
+=== Storage-Pool
+
+* Storage – auf welchem Storage-Array dieser Pool lebt. Obligatorisch.
+* Typ – ein beschreibenden Wert aus einer Liste mit einer Aufzählung der Möglichkeiten. Am häufigsten wird „Aggregat“ oder „RAID-Gruppe“ sein.
+* Node – Wenn die Architektur dieses Speicherarrays so ist, dass Pools zu einem bestimmten Speicherknoten gehören, wird sein Name hier als Hyperlink zu seiner eigenen Landing Page angezeigt.
+* Verwendet Flash Pool – Ja/kein Wert: Verfügen in diesem SATA/SAS-basierten Pool über SSDs zur Caching-Beschleunigung?
+* Redundanz: RAID-Level oder Schutzschema. RAID_DP ist Dual-Parity, RAID_TP ist die dreifache Parität.
+* Kapazität – die Werte hier sind die logische genutzte, nutzbare Kapazität und die logische Gesamtkapazität sowie der dafür genutzte Prozentsatz.
+* Überprovisionierung der Kapazität – Wenn Sie durch den Einsatz von Effizienztechnologien eine Summe der Volume- oder internen Volume-Kapazitäten zugewiesen haben, die größer sind als die logische Kapazität des Speicherpools, wird der Prozentwert hier größer als 0 % sein.
+* Snapshot – verwendete und insgesamt Snapshot-Kapazitäten, wenn Ihre Storage Pool-Architektur einem Teil ihrer Kapazität dedizierte Bereiche für Snapshots widmet. ONTAP in MetroCluster Konfigurationen zeigen dies wahrscheinlich, während andere ONTAP Konfigurationen weniger sind.
+* Auslastung – ein Prozentwert, der den höchsten ausgelastet anteil der Festplatte anzeigt, die zur Kapazität dieses Speicherpools beiträgt. Die Festplattenauslastung ist nicht unbedingt mit der Array-Performance korreliert – die Auslastung kann aufgrund von Festplattenwiederherstellungen, Deduplizierungsaktivitäten usw. bei Abwesenheit von Host-gestützten Workloads sehr hoch sein. Auch viele Arrays Replikationsimplementierungen können die Festplattenauslastung steigern, während sie nicht als internes Volume oder Volume-Workload angezeigt werden.
+* IOPS – die Summe der IOPS aller Festplatten, die Kapazität in diesem Storage-Pool beitragen. Durchsatz – der Gesamtdurchsatz aller Festplatten, die Kapazität zu diesem Speicherpool beitragen.
+
+
+
+
+=== Storage-Node
+
+* Storage – welches Storage-Array gehört zu diesem Node? Obligatorisch.
+* HA-Partner: Auf Plattformen, auf denen ein Node auf einen und nur einen anderen Node Failover ausgeführt wird, ist er allgemein zu sehen.
+* Status: Systemzustand des Node. Nur verfügbar, wenn das Array ordnungsgemäß genug ist, um von einer Datenquelle inventarisiert zu werden.
+* Modell: Modellname des Knotens
+* Version – Versionsname des Geräts.
+* Seriennummer: Die Seriennummer des Node.
+* Speicher: Sockel 2 Speicher, falls verfügbar.
+* Auslastung – bei ONTAP handelt es sich um einen Controller-Stressindex aus einem proprietären Algorithmus. Bei jeder Performance-Umfrage wird anhand einer Zahl zwischen 0 und 100 % angegeben, die der höhere Wert bei WAFL-Festplattenkonflikten oder der durchschnittlichen CPU-Auslastung ist. Wenn Sie nachhaltige Werte > 50 % beobachten, deutet dies auf eine Unterdimensionierung hin – möglicherweise ist ein Controller/Node nicht groß genug oder nicht genug rotierende Festplatten, um den Schreib-Workload abzufangen.
+* IOPS – direkt von ONTAP-REST-Aufrufen des Node-Objekts abgeleitet.
+* Latenz – wird direkt von ONTAP-REST-Aufrufen des Node-Objekts abgeleitet.
+* Durchsatz – wird direkt von ONTAP-REST-Aufrufen des Node-Objekts abgeleitet.
+* Prozessoren: Anzahl der CPUs
+
+
+
+
+== Anforderungen
+
+Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses Datensammlers:
+
+* Sie müssen Zugriff auf ein Administratorkonto haben, das für schreibgeschützte REST-API-Aufrufe konfiguriert ist.
+* Zu den Kontodetails gehören Benutzername und Passwort.
+* Port-Anforderungen: 80 oder 443
+* Kontoberechtigungen:
++
+** Nur den Rollennamen in der ontapi-Anwendung auf den Standard-Vserver lesen
+** Möglicherweise benötigen Sie zusätzliche optionale Schreibberechtigungen. Siehe Hinweis über Berechtigungen unten.
+
+
+* ONTAP Lizenzanforderungen:
++
+** FCP-Lizenz und zugeordnete/maskierte Volumes sind für die Fibre-Channel-Erkennung erforderlich
+
+
+
+
+
+
+== Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| ONTAP-Management-IP-Adresse | IP-Adresse oder vollqualifizierter Domain-Name des NetApp Clusters 
+
+
+| ONTAP REST-Benutzername | Benutzername für NetApp Cluster 
+
+
+| ONTAP REST-Kennwort | Passwort für NetApp Cluster 
+|===
+
+
+== Erweiterte Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| Abfrageintervall für Bestand (min) | Der Standardwert ist 60 Minuten. 
+
+
+| Leistungsintervall (Sek.) | Der Standardwert ist 60 Sekunden. 
+
+
+| Erweiterte Zähldatensammlung | Wählen Sie diese Option aus, um ONTAP Advanced Counter-Daten in Umfragen einzubeziehen. 
+
+
+| Aktivieren Sie die EMS-Ereigniserfassung | Wählen Sie diese Option aus, um die Ereignisdaten des ONTAP-EMS-Protokolls einzuschließen. 
+
+
+| EMS-Abfrageintervall (s) | Der Standardwert ist 60 Sekunden. 
+|===
+
+
+== ONTAP-Leistungskennzahlen
+
+Mehrere ONTAP Modelle bieten Strommetriken für Cloud Insights, die für Monitoring- oder Alarmfunktionen verwendet werden können. Die unten aufgeführten Listen unterstützter und nicht unterstützter Modelle sind nicht umfassend, sollten jedoch einige Hinweise enthalten. Wenn ein Modell in der gleichen Familie wie ein Modell auf der Liste ist, sollte der Support identisch sein.
+
+Unterstützte Modelle:
+
+A200
+A220
+A250
+A300
+A320
+A400
+A700
+A700s
+A800
+A900
+C190
+FAS2240-4
+FAS2552
+FAS2650
+FAS2720
+FAS2750
+FAS8200
+FAS8300
+FAS8700
+FAS9000
+
+Nicht Unterstützte Modelle:
+
+FAS2620
+FAS3250
+FAS3270
+FAS500f
+FAS6280
+FAS/ALL FLASH FAS 8020
+FAS/ALL FLASH FAS 8040
+FAS/ALL FLASH FAS 8060
+FAS/ALL FLASH FAS 8080
+
+
+
+== Ein Hinweis zu Berechtigungen
+
+Da eine Reihe von Cloud Insights ONTAP Dashboards auf erweiterte ONTAP-Zähler angewiesen sind, müssen Sie im Abschnitt Data Collector Advanced Configuration *Advanced Counter Data Collection* aktivieren.
+
+Sie sollten außerdem sicherstellen, dass die Schreibberechtigung für die ONTAP REST-API aktiviert ist. Dafür ist in der Regel ein Konto auf Cluster-Ebene mit den erforderlichen Berechtigungen erforderlich.
+
+Um ein lokales Konto für Cloud Insights auf Cluster-Ebene zu erstellen, melden Sie sich mit dem Cluster Management Administrator-Benutzernamen/Passwort bei ONTAP an, und führen Sie die folgenden Befehle auf dem ONTAP-Server aus:
+
+. Bevor Sie beginnen, müssen Sie mit einem _Administrator_-Konto bei ONTAP angemeldet sein und die Befehle _diagnoseebene_ müssen aktiviert sein.
+. Erstellen Sie eine Rolle mit den folgenden Befehlen:
+
+
+Sicherheits-Login Rest-role create -role} Rollenname {-API /API -Access schreibgeschützt
+Sicherheits-Login Rest-role create -role} Rollenname {-API /API/Cluster/Agents -Access all
+
+vserver Services Webzugriff create -Name spi -role} role Name {-vserver} Name from above Command {
+Sicherheitsanmeldung create -user-or-Group-Name {username} -Application http -Authentication-method password -role {role Name}
+
+....
+ ////
+security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
+ security login role create -role ci_readonly -cmddirname security -access readonly
+ security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
+ ////
+....
+. Erstellen Sie den schreibgeschützten Benutzer mit dem folgenden Befehl. Sobald Sie den Befehl create ausgeführt haben, werden Sie aufgefordert, ein Passwort für diesen Benutzer einzugeben.
++
+ security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
+
+
+Wenn AD/LDAP-Konto verwendet wird, sollte der Befehl sein
+
+ security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+Die daraus resultierende Rolle und Benutzeranmeldung sieht folgendermaßen aus: Die tatsächliche Ausgabe kann variieren:
+
+....
+Role Command/ Access
+Vserver Name Directory Query Level
+---------- ------------- --------- ------------------ --------
+cluster1 ci_readonly DEFAULT read only
+cluster1 ci_readonly security readonly
+....
+....
+cluster1::security login> show
+Vserver: cluster1
+Authentication Acct
+UserName    Application   Method      Role Name      Locked
+---------   -------      ----------- -------------- --------
+ci_user     ontapi      password    ci_readonly   no
+....
+
+
+== Fehlerbehebung
+
+Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
+
+[cols="2*"]
+|===
+| Problem: | Versuchen Sie dies: 
+
+
+| Beim Versuch, einen ONTAP-REST-Datensammler zu erstellen, wird ein Fehler wie der folgende angezeigt:
+Konfiguration: 10.193.70.14: ONTAP Rest API bei 10.193.70.14 ist nicht verfügbar: 10.193.70.14 Fehler beim ABRUFEN VON /API/Cluster: 400 Ungültige Anforderung | Dies liegt wahrscheinlich an einem Oldeer ONTAP-Array), z. B. ONTAP 9.6), das keine REST-API-Funktionen hat. ONTAP 9.14.1 ist die minimale ONTAP-Version, die vom ONTAP REST Collector unterstützt wird. Bei den ONTAP-Versionen vor dem REST sind die Antworten auf „400 schlechte Anfragen“ zu erwarten.
+
+Für ONTAP-Versionen, die REST unterstützen, aber nicht 9.14.1 oder höher sind, können Sie die folgende ähnliche Meldung sehen:
+Konfiguration: 10.193.98.84: ONTAP Rest API bei 10.193.98.84 ist nicht verfügbar: 10.193.98.84: ONTAP Rest API bei 10.193.98.84 ist verfügbar: Cheryl5-Cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 ist aber nicht von der Mindestversion 9.14.1. 
+|===
+Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
