@@ -16,13 +16,13 @@ summary: ONTAP REST Data Collector
 
 
 [role="lead"]
-Dieser Datensammler erfasst Inventar- und Performance-Daten von Storage-Systemen, auf denen ONTAP ausgeführt wird, und verwendet schreibgeschützte REST-API-Aufrufe von einem ONTAP-Konto. Dieser Datensammler erstellt auch einen Datensatz in der Cluster-Anwendungsregistrierung, um den Support zu beschleunigen.
+Dieser Datensammler erfasst mithilfe von REST-API-Aufrufen Bestände, EMS-Protokolle und Performance-Daten von Speichersystemen mit ONTAP 9.14.1 und höher. Verwenden Sie für ONTAP-Systeme mit früheren Versionen den ZAPI-basierten Collector-Typ „NetApp ONTAP-Datenverwaltungssoftware“.
 
 
 
 == Terminologie
 
-Cloud Insights erfasst Bestands- und Performancedaten des ONTAP Datensammlers. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Cloud Insights erfasst Bestands-, Protokoll- und Performance-Daten aus dem ONTAP Datensammler. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
@@ -61,7 +61,7 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Land
 
 * Modell – Eine durch Komma getrennte Liste der eindeutigen Node-Modellnamen in diesem Cluster. Wenn alle Nodes in den Clustern denselben Modelltyp aufweisen, wird nur ein Modellname angezeigt.
 * Anbieter – derselbe Anbietername, den Sie sehen würden, wenn Sie eine neue Datenquelle konfigurieren würden.
-* Seriennummer: Die Seriennummer des Arrays. Bei Cluster-Architektur Storage-Systemen wie ONTAP Datenmanagement, ist diese Seriennummer möglicherweise weniger nützlich als die einzelnen Seriennummern der Storage-Nodes.
+* Seriennummer – die Array-UUID
 * IP: In der Regel werden die in der Datenquelle konfigurierten IP(s) oder Hostnamen(s) verwendet.
 * Microcode-Version – Firmware.
 * Rohkapazität – Basis-2-Zusammenfassung aller physischen Laufwerke im System, unabhängig von ihrer Rolle.
@@ -109,18 +109,12 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Land
 
 Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses Datensammlers:
 
-* Sie müssen Zugriff auf ein Administratorkonto haben, das für schreibgeschützte REST-API-Aufrufe konfiguriert ist.
+* Sie müssen Zugriff auf ein Benutzerkonto mit der erforderlichen Zugriffsebene haben
 * Zu den Kontodetails gehören Benutzername und Passwort.
-* Port-Anforderungen: 80 oder 443
+* Anforderungen an den Hafen: 443
 * Kontoberechtigungen:
 +
-** Nur den Rollennamen in der ontapi-Anwendung auf den Standard-Vserver lesen
-** Möglicherweise benötigen Sie zusätzliche optionale Schreibberechtigungen. Siehe Hinweis über Berechtigungen unten.
-
-
-* ONTAP Lizenzanforderungen:
-+
-** FCP-Lizenz und zugeordnete/maskierte Volumes sind für die Fibre-Channel-Erkennung erforderlich
+** Cloud Insights stellt Leseanforderungen, aber für die Registrierung beim ONTAP-Array sind einige Schreibberechtigungen erforderlich. Siehe Hinweis über Berechtigungen unten.
 
 
 
@@ -210,9 +204,7 @@ FAS/ALL FLASH FAS 8080
 
 == Ein Hinweis zu Berechtigungen
 
-Da eine Reihe von Cloud Insights ONTAP Dashboards auf erweiterte ONTAP-Zähler angewiesen sind, müssen Sie im Abschnitt Data Collector Advanced Configuration *Advanced Counter Data Collection* aktivieren.
-
-Sie sollten außerdem sicherstellen, dass die Schreibberechtigung für die ONTAP REST-API aktiviert ist. Dafür ist in der Regel ein Konto auf Cluster-Ebene mit den erforderlichen Berechtigungen erforderlich.
+Da eine Reihe von Cloud Insights ONTAP Dashboards auf erweiterten ONTAP-Zählern basieren, sollten Sie *Enable Advanced Counter Data Collection* im Abschnitt Data Collector Advanced Configuration aktivieren.
 
 Um ein lokales Konto für Cloud Insights auf Cluster-Ebene zu erstellen, melden Sie sich mit dem Cluster Management Administrator-Benutzernamen/Passwort bei ONTAP an, und führen Sie die folgenden Befehle auf dem ONTAP-Server aus:
 
