@@ -12975,9 +12975,7 @@ Weitere Informationen finden Sie unter Proxys <block ref="05c875968683001fc59f20
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP REST-Benutzername</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP REST-Kennwort</block>
   <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">Der Standardwert ist 60 Sekunden.</block>
-  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">Wählen Sie diese Option aus, um ONTAP Advanced Counter-Daten in Umfragen einzubeziehen.</block>
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">Aktivieren Sie die EMS-Ereigniserfassung</block>
-  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">Wählen Sie diese Option aus, um die Ereignisdaten des ONTAP-EMS-Protokolls einzuschließen.</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS-Abfrageintervall (s)</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">Erstellen Sie eine Rolle mit den folgenden Befehlen:</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">Sicherheits-Login Rest-role create -role} Rollenname {-API /API -Access schreibgeschützt
@@ -12993,7 +12991,10 @@ Konfiguration: 10.193.98.84: ONTAP Rest API bei 10.193.98.84 ist nicht verfügba
   <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">Dieser Datensammler erfasst mithilfe von REST-API-Aufrufen Bestände, EMS-Protokolle und Performance-Daten von Speichersystemen mit ONTAP 9.14.1 und höher. Verwenden Sie für ONTAP-Systeme mit früheren Versionen den ZAPI-basierten Collector-Typ „NetApp ONTAP-Datenverwaltungssoftware“.</block>
   <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insights erfasst Bestands-, Protokoll- und Performance-Daten aus dem ONTAP Datensammler. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:</block>
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">Seriennummer – die Array-UUID</block>
-  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">Sie müssen Zugriff auf ein Benutzerkonto mit der erforderlichen Zugriffsebene haben</block>
-  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">Cloud Insights stellt Leseanforderungen, aber für die Registrierung beim ONTAP-Array sind einige Schreibberechtigungen erforderlich. Siehe Hinweis über Berechtigungen unten.</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">Da eine Reihe von Cloud Insights ONTAP Dashboards auf erweiterten ONTAP-Zählern basieren, sollten Sie *Enable Advanced Counter Data Collection* im Abschnitt Data Collector Advanced Configuration aktivieren.</block>
+  <block id="992ec6f152c405f64da205561d5810c3" category="list-text">Sie müssen Zugriff auf ein Benutzerkonto mit der erforderlichen Zugriffsebene haben. Beachten Sie, dass Administratorberechtigungen erforderlich sind, wenn Sie einen neuen REST-Benutzer/eine neue REST-Rolle erstellen.</block>
+  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">Hinweis Zu Berechtigungen</block>
+  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">Cloud Insights stellt Leseanforderungen, einige Schreibberechtigungen sind jedoch erforderlich, damit Cloud Insights sich beim ONTAP-Array registrieren kann. Siehe <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> Unten.</block>
+  <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">Wählen Sie diese Option aus, um ONTAP Advanced Counter-Daten in Umfragen einzubeziehen. Standardmäßig aktiviert.</block>
+  <block id="19decc8950209e44f521507a99ab0792" category="cell">Wählen Sie diese Option aus, um die Ereignisdaten des ONTAP-EMS-Protokolls einzuschließen. Standardmäßig aktiviert.</block>
 </blocks>

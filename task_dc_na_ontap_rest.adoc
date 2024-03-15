@@ -109,12 +109,12 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Land
 
 Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses Datensammlers:
 
-* Sie müssen Zugriff auf ein Benutzerkonto mit der erforderlichen Zugriffsebene haben
+* Sie müssen Zugriff auf ein Benutzerkonto mit der erforderlichen Zugriffsebene haben. Beachten Sie, dass Administratorberechtigungen erforderlich sind, wenn Sie einen neuen REST-Benutzer/eine neue REST-Rolle erstellen.
 * Zu den Kontodetails gehören Benutzername und Passwort.
 * Anforderungen an den Hafen: 443
 * Kontoberechtigungen:
 +
-** Cloud Insights stellt Leseanforderungen, aber für die Registrierung beim ONTAP-Array sind einige Schreibberechtigungen erforderlich. Siehe Hinweis über Berechtigungen unten.
+** Cloud Insights stellt Leseanforderungen, einige Schreibberechtigungen sind jedoch erforderlich, damit Cloud Insights sich beim ONTAP-Array registrieren kann. Siehe <<a-note-about-permissions,Hinweis Zu Berechtigungen>> Unten.
 
 
 
@@ -151,10 +151,10 @@ Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses 
 | Leistungsintervall (Sek.) | Der Standardwert ist 60 Sekunden. 
 
 
-| Erweiterte Zähldatensammlung | Wählen Sie diese Option aus, um ONTAP Advanced Counter-Daten in Umfragen einzubeziehen. 
+| Erweiterte Zähldatensammlung | Wählen Sie diese Option aus, um ONTAP Advanced Counter-Daten in Umfragen einzubeziehen. Standardmäßig aktiviert. 
 
 
-| Aktivieren Sie die EMS-Ereigniserfassung | Wählen Sie diese Option aus, um die Ereignisdaten des ONTAP-EMS-Protokolls einzuschließen. 
+| Aktivieren Sie die EMS-Ereigniserfassung | Wählen Sie diese Option aus, um die Ereignisdaten des ONTAP-EMS-Protokolls einzuschließen. Standardmäßig aktiviert. 
 
 
 | EMS-Abfrageintervall (s) | Der Standardwert ist 60 Sekunden. 
@@ -239,8 +239,8 @@ Die daraus resultierende Rolle und Benutzeranmeldung sieht folgendermaßen aus: 
 Role Command/ Access
 Vserver Name Directory Query Level
 ---------- ------------- --------- ------------------ --------
-cluster1 ci_readonly DEFAULT read only
-cluster1 ci_readonly security readonly
+cluster1   ci_readonly   DEFAULT   read only
+cluster1   ci_readonly   security  read only
 ....
 ....
 cluster1::security login> show
@@ -248,7 +248,7 @@ Vserver: cluster1
 Authentication Acct
 UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
-ci_user     ontapi      password    ci_readonly   no
+ci_user     ontapi       password    ci_readonly    no
 ....
 
 
