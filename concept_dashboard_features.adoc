@@ -407,7 +407,7 @@ image::SecondaryAxisExplained.png[Beispiel für die sekundäre Achse]
 
 == Ausdrücke in Widgets
 
-In einem Dashboard können Sie jedes Zeitreihungs-Widget (Linie, Spline, Bereich, gestapelter Bereich), einen Wert, Oder Widget messen ermöglicht es Ihnen, Ausdrücke aus ausgewählten Metriken zu erstellen und das Ergebnis dieser Ausdrücke in einem einzigen Diagramm anzuzeigen. Die folgenden Beispiele verwenden Ausdrücke, um bestimmte Probleme zu lösen. Im ersten Beispiel möchten wir den IOPS-Wert für alle Storage Assets in unserer Umgebung als Prozentsatz von IOPS insgesamt darstellen. Das zweite Beispiel gibt Einblick in die in Ihrer Umgebung auftretenden IOPS des „Systems“ oder „Overhead“ - jene IOPS, die nicht direkt vom Lesen oder Schreiben von Daten stammen.
+In einem Dashboard können Sie mit einem Widget für Zeitreihen (Linie, Spline, Bereich, gestapelter Bereich), einem Balkendiagramm, einem Säulendiagramm, einem Kreisdiagramm oder einem Widget für Tabellen Ausdrücke aus von Ihnen ausgewählten Metriken erstellen und das Ergebnis dieser Ausdrücke in einem einzigen Diagramm (oder einer Spalte im Fall des) anzeigen <<expressions-in-a-table-widget,Widget „Tabelle“>>). Die folgenden Beispiele verwenden Ausdrücke, um bestimmte Probleme zu lösen. Im ersten Beispiel möchten wir den IOPS-Wert für alle Storage Assets in unserer Umgebung als Prozentsatz von IOPS insgesamt darstellen. Das zweite Beispiel gibt Einblick in die in Ihrer Umgebung auftretenden IOPS des „Systems“ oder „Overhead“ - jene IOPS, die nicht direkt vom Lesen oder Schreiben von Daten stammen.
 
 Sie können Variablen in Ausdrücken verwenden (z. B. _ € Var1 * 100_)
 
@@ -446,9 +446,6 @@ Sie können insgesamt fünf alphabetische Variablen für Ihren Ausdruck hinzufü
 Das Diagramm zeigt den prozentualen IOPS-Leseanteil im Zeitverlauf für die ausgewählten Speichergeräte an. Auf Wunsch können Sie einen Filter einstellen oder eine andere Rollup-Methode auswählen. Beachten Sie, dass wenn Sie als Rollup-Methode Summe auswählen, alle Prozentwerte zusammen hinzugefügt werden, die möglicherweise über 100 % liegen können.
 
 . Klicken Sie auf *Speichern*, um das Diagramm auf Ihrem Dashboard zu speichern.
-+
-Sie können auch Ausdrücke in den Widgets Liniendiagramm, Spline-Diagramm oder gestapelte Flächendiagramme verwenden.
-
 
 
 
@@ -499,6 +496,14 @@ Im Diagramm wird die IOPS insgesamt als Liniendiagramm angezeigt. In einem Fläc
 
 
 Um eine Variable in einem Ausdruck zu verwenden, geben Sie einfach den Variablennamen ein, z. B. _ € var1 * 100_. Nur numerische Variablen können in Ausdrücken verwendet werden.
+
+
+
+=== Ausdrücke in einem TabellenWidget
+
+Tabellen-Widgets behandeln Ausdrücke etwas anders. Sie können bis zu fünf Ausdrücke in einem einzelnen Tabellen-Widget haben, von denen jeder als neue Spalte zur Tabelle hinzugefügt wird. Jeder Ausdruck kann bis zu fünf Werte enthalten, auf denen die Berechnung durchgeführt werden soll. Sie können die Spalte einfach etwas Sinnvolles benennen.
+
+image:Expression Example.png["Ausdruck in einem TabellenWidget"]
 
 
 
