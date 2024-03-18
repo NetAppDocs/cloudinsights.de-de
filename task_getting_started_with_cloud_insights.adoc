@@ -26,7 +26,7 @@ Datensammler erkennen Informationen aus Ihren Datenquellen, wie Speichergeräte,
 Cloud Insights bietet drei Arten von Datensammlern an:
 
 * Infrastruktur (Storage-Geräte, Netzwerk-Switches, Computing-Infrastruktur)
-* Betriebssysteme (z. B. VMware oder Windows)
+* Betriebssysteme (wie VMware oder Windows)
 * Services (wie Kafka)
 
 

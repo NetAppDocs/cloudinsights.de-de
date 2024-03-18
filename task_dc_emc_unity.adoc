@@ -56,7 +56,7 @@ Cloud Insights erwirbt die folgenden Bestandsinformationen vom Datensammler Unit
 | Storage-Pool | Storage-Pool 
 
 
-| Allgemeine iSCSI-Block-Informationen, VMware VMFS | Share 
+| Allgemeine Informationen zu iSCSI Block, VMware VMFS | Share 
 
 
 | Remote-Replikationssystem | Synchronisierung 

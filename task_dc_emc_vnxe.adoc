@@ -57,7 +57,7 @@ Cloud Insights erfasst die folgenden Bestandsinformationen vom VNXe-Datensammler
 | Storage-Pool | Storage-Pool 
 
 
-| Allgemeine iSCSI-Block-Informationen, VMware VMFS | Share 
+| Allgemeine Informationen zu iSCSI Block, VMware VMFS | Share 
 
 
 | Remote-Replikationssystem | Synchronisierung 
