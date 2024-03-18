@@ -50,8 +50,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == Wie wird die Funktion aktiviert?
 
-* Navigieren Sie unter Workload Security zu *Admin > Automated Response Policies > Response Policy Settings > Block User Access*.
-* Legen Sie „Benutzerzugriff sperren aktivieren“ auf „_Enabled_“ fest.
+* Navigieren Sie in Workload Security zu *Workload Security > Policies > Automated Response Policies*.  Wählen Sie *+Angriffsrichtlinie*.
+* Wählen Sie _Benutzerdateizugriff blockieren_.
 
 
 
@@ -93,8 +93,8 @@ Auf der Seite Warnungsdetails und Benutzerdetails im Bedienfeld können Sie eine
 
 Sie können die Funktion jederzeit deaktivieren. Wenn es eingeschränkte Benutzer im System gibt, müssen Sie zuerst den Zugriff wiederherstellen.
 
-* Navigieren Sie unter Workload Security zu *Admin > Automated Response Policies > Response Policy Settings > Block User Access*
-* Deaktivieren Sie die Option „Benutzerzugriff blockieren aktivieren“.
+* Navigieren Sie in Workload Security zu *Workload Security > Policies > Automated Response Policies*.  Wählen Sie *+Angriffsrichtlinie*.
+* Deaktivieren Sie die Option _Benutzerdateizugriff blockieren_.
 
 
 Die Funktion wird von allen Seiten ausgeblendet.

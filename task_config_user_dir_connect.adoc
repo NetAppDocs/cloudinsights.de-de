@@ -57,7 +57,8 @@ Konfigurieren Sie den User Directory Collector, indem Sie die erforderlichen Dat
 
 
 | DN binden | Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_
-Darüber hinaus ist eine schreibgeschützte Domänenberechtigung erforderlich. 
+Darüber hinaus ist eine schreibgeschützte Domänenberechtigung erforderlich.
+Der Benutzer muss Mitglied der Sicherheitsgruppe _Read-Only Domain Controller_ sein. 
 
 
 | Kennwort BINDEN | Kennwort des Verzeichnisservers (d. h. Kennwort für in Bind DN verwendeten Benutzernamen) 

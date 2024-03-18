@@ -5147,7 +5147,6 @@
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">Wenn Sie Anmeldedaten für die Cluster-Administration verwenden, sind keine neuen Berechtigungen erforderlich.</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">Führen Sie für CSuser mit Cluster-Anmeldedaten die folgenden Schritte in der ONTAP-Befehlszeile aus:</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">Wie wird die Funktion aktiviert?</block>
-  <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">Legen Sie „Benutzerzugriff sperren aktivieren“ auf „_Enabled_“ fest.</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">Wie richten Sie die automatische Sperrung des Benutzerzugriffs ein?</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">Erstellen Sie eine neue Angriffsrichtlinie oder bearbeiten Sie eine vorhandene Angriffsrichtlinie.</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">Wählen Sie die SVMs aus, auf denen die Angriffsrichtlinie überwacht werden soll.</block>
@@ -5165,7 +5164,6 @@
   <block id="b030dc666e324798ee9403442dd23eb1" category="paragraph">Auf der Seite Warnungsdetails und Benutzerdetails im Bedienfeld können Sie eine Prüfung des Zugriffsbegrenzungsverlaufs des Benutzers anzeigen: Zeit, Aktion (Blockieren, Entsperren), Dauer, Aktion ausgeführt von, Manuelle/automatische und betroffene IPs für NFS.</block>
   <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">Wie wird die Funktion deaktiviert?</block>
   <block id="6efa4058becdd76841666397b456b8bc" category="paragraph">Sie können die Funktion jederzeit deaktivieren. Wenn es eingeschränkte Benutzer im System gibt, müssen Sie zuerst den Zugriff wiederherstellen.</block>
-  <block id="01aa451dc1421e1b9d5fe5148ef31be7" category="list-text">Deaktivieren Sie die Option „Benutzerzugriff blockieren aktivieren“.</block>
   <block id="d62cebbd54827b8db7ecf72f7e55fa9a" category="paragraph">Die Funktion wird von allen Seiten ausgeblendet.</block>
   <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">Manuelle Wiederherstellung der IPs für NFS</block>
   <block id="6dbbd623c3a6977270c54a9833844b28" category="list-text">Listen Sie alle Exportrichtlinien auf einer SVM auf.</block>
@@ -9330,8 +9328,6 @@
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">Benutzer ist direkt für SMB gesperrt und die IP-Adresse der Host Machines, die den Angriff verursachen, wird für NFS blockiert. Diese Computer-IP-Adressen dürfen nicht auf alle Storage Virtual Machines (SVMs) zugreifen, die durch Workload Security überwacht werden.</block>
   <block id="f19379ce165a902f81548ae9d7b2e07c" category="paragraph">Zum Beispiel, sagen wir, Workload Security verwaltet 10 SVMs und die automatische Antwortrichtlinie ist für vier dieser SVMs konfiguriert. Wenn der Angriff in einer der vier SVMs stammt, wird der Zugriff des Benutzers in allen 10 SVMs blockiert. Auf der ursprünglichen SVM wird noch ein Snapshot erstellt.</block>
   <block id="4965f6590d5121fa73cf823f64ef219b" category="paragraph">Wenn Sie einen benutzerdefinierten Benutzer (z. B. _cscuser_) mit den dem Benutzer angegebenen Berechtigungen verwenden, führen Sie die folgenden Schritte aus, um Workload Security-Berechtigungen zum Blockieren des Benutzers zu erteilen.</block>
-  <block id="8e0c9f34f42be5c07c87ecae239a8823" category="list-text">Navigieren Sie unter Workload Security zu *Admin &gt; Automated Response Policies &gt; Response Policy Settings &gt; Block User Access*.</block>
-  <block id="d9c1a964d322cb7ed68da85eaa8a06b0" category="list-text">Navigieren Sie unter Workload Security zu *Admin &gt; Automated Response Policies &gt; Response Policy Settings &gt; Block User Access*</block>
   <block id="ef3c0a55c240483a8b3ffe2b395d514d" category="paragraph">Führen Sie die folgenden Schritte aus, um IP-Adressen von ONTAP manuell wiederherzustellen, wenn Ihre Workload-Sicherheitsstudie abläuft oder wenn der Agent/Collector nicht verfügbar ist.</block>
   <block id="1b0bdf15231b05a92c86cf44b6c5280e" category="list-text">Löschen Sie die Regeln über alle Richtlinien auf der SVM, die als Client Match „cloudSecure_rule“ haben, indem Sie den entsprechenden RegelIndex angeben. Workload-Sicherheitsregel liegt in der Regel bei 1.</block>
   <block id="a117ae2a490977bedd4a55878386b06c" category="list-text">Stellen Sie sicher, dass die Sicherheitsregel für Workloads gelöscht wird (optionaler Schritt zur Bestätigung).</block>
@@ -12721,8 +12717,6 @@ Public Key Format - PEM, DER-encoded X.509 SubjectPublicKeyInfo RFC 5280</block>
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">IP-Adressen oder FQDNs von ScaleIO/PowerFlex Gateways, getrennt durch Komma (,) oder Semikolon (;)</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">Admin-Benutzername für die Anmeldung beim ScaleIO/PowerFlex-Gerät</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">Passwort für die Anmeldung beim ScaleIO/PowerFlex-Gerät</block>
-  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_
-Darüber hinaus ist eine schreibgeschützte Domänenberechtigung erforderlich.</block>
   <block id="dada9839975856f2fd06228d265fea07" category="list-text">Netzwerküberwachung:</block>
   <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">Erfordert Linux Kernel Version 4.18.0 und höher</block>
   <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">Photon OS wird nicht unterstützt.</block>
@@ -13001,4 +12995,11 @@ Konfiguration: 10.193.98.84: ONTAP Rest API bei 10.193.98.84 ist nicht verfügba
   <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">Tabellen-Widgets behandeln Ausdrücke etwas anders. Sie können bis zu fünf Ausdrücke in einem einzelnen Tabellen-Widget haben, von denen jeder als neue Spalte zur Tabelle hinzugefügt wird. Jeder Ausdruck kann bis zu fünf Werte enthalten, auf denen die Berechnung durchgeführt werden soll. Sie können die Spalte einfach etwas Sinnvolles benennen.</block>
   <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">Ausdruck in einem TabellenWidget</block>
   <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">Benutzer erlaubt, das Verzeichnis zu durchsuchen. Beispiel: _username@companyname.com_ oder _username@domainname.com_
+Darüber hinaus ist eine schreibgeschützte Domänenberechtigung erforderlich.
+Der Benutzer muss Mitglied der Sicherheitsgruppe _Read-Only Domain Controller_ sein.</block>
+  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">Link: task_dc_brocade_rest.html</block>
+  <block id="690b59689f385d15b45ee131216725c7" category="list-text">Navigieren Sie in Workload Security zu *Workload Security &gt; Policies &gt; Automated Response Policies*.  Wählen Sie *+Angriffsrichtlinie*.</block>
+  <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">Wählen Sie _Benutzerdateizugriff blockieren_.</block>
+  <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">Deaktivieren Sie die Option _Benutzerdateizugriff blockieren_.</block>
 </blocks>
