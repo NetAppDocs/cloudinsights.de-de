@@ -170,7 +170,7 @@ Weitere Informationen finden Sie unter link:concept_ws_integration_with_ontap_ac
 
 .Schritte zur Konfiguration
 . Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Insights-Umgebung an.
-. Klicken Sie Auf *Observability > Collectors > +Data Collectors*
+. Klicken Sie Auf *Workload Security > Collectors > +Data Collectors*
 +
 Das System zeigt die verfügbaren Datensammler an.
 
