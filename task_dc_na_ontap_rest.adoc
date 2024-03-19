@@ -19,6 +19,9 @@ summary: ONTAP REST Data Collector
 Dieser Datensammler erfasst mithilfe von REST-API-Aufrufen Bestände, EMS-Protokolle und Performance-Daten von Speichersystemen mit ONTAP 9.14.1 und höher. Verwenden Sie für ONTAP-Systeme mit früheren Versionen den ZAPI-basierten Collector-Typ „NetApp ONTAP-Datenverwaltungssoftware“.
 
 
+NOTE: Der ONTAP REST Collector kann als Ersatz für den früheren ONTAPI-basierten Collector verwendet werden. Daher kann es bei den gesammelten oder berichteten Metriken zu Unterschieden kommen. Weitere Informationen zu den Unterschieden zwischen ONTAPI und REST finden Sie im link:https://docs.netapp.com/us-en/ontap-restmap-9141/index.html["ONTAP 9.14.1 ONTAPI-to-REST-Zuordnung"] Dokumentation.
+
+
 
 == Terminologie
 
@@ -210,21 +213,15 @@ Um ein lokales Konto für Cloud Insights auf Cluster-Ebene zu erstellen, melden 
 
 . Bevor Sie beginnen, müssen Sie mit einem _Administrator_-Konto bei ONTAP angemeldet sein und die Befehle _diagnoseebene_ müssen aktiviert sein.
 . Erstellen Sie eine Rolle mit den folgenden Befehlen:
-
-
-Sicherheits-Login Rest-role create -role} Rollenname {-API /API -Access schreibgeschützt
-Sicherheits-Login Rest-role create -role} Rollenname {-API /API/Cluster/Agents -Access all
-
-vserver Services Webzugriff create -Name spi -role} role Name {-vserver} Name from above Command {
-Sicherheitsanmeldung create -user-or-Group-Name {username} -Application http -Authentication-method password -role {role Name}
-
++
 ....
- ////
-security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
- security login role create -role ci_readonly -cmddirname security -access readonly
- security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
- ////
+security login rest-role create -role {role name} -api /api -access readonly
+security login rest-role create -role {role name} -api /api/cluster/agents -access all
+vserver services web access create -name spi -role {role name} -vserver {name from above command}
+security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 ....
+
+
 . Erstellen Sie den schreibgeschützten Benutzer mit dem folgenden Befehl. Sobald Sie den Befehl create ausgeführt haben, werden Sie aufgefordert, ein Passwort für diesen Benutzer einzugeben.
 +
  security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
