@@ -77,37 +77,37 @@ Für * US-basierte * -Sicherheitsumgebungen:
 
 [cols="5*"]
 |===
-| Protokoll | Port | Ziel | Richtung | Beschreibung 
+| Protokoll | Port | Quelle | Ziel | Beschreibung 
 
 
-| TCP | 443 | <site_Name>.cs01.cloudinsights.netapp.com <site_Name>.c01.cloudinsights.netapp.com <site_Name>.c02.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Cloud Insights 
+| TCP | 443 | Workload Security Agent | <site_Name>.cs01.cloudinsights.netapp.com <site_Name>.c01.cloudinsights.netapp.com <site_Name>.c02.cloudinsights.netapp.com | Zugriff auf Cloud Insights 
 
 
-| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Authentifizierungsservices 
+| TCP | 443 | Workload Security Agent | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | Zugriff auf Authentifizierungsservices 
 |===
 Für *Europa-basierte* Arbeitslastsicherheitsumgebungen:
 
 [cols="5*"]
 |===
-| Protokoll | Port | Ziel | Richtung | Beschreibung 
+| Protokoll | Port | Quelle | Ziel | Beschreibung 
 
 
-| TCP | 443 | <site_Name>.cs01-eu-1.cloudinsights.netapp.com <site_Name>.c01-eu-1.cloudinsights.netapp.com <site_Name>.c02-eu-1.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Cloud Insights 
+| TCP | 443 | Workload Security Agent | <site_Name>.cs01-eu-1.cloudinsights.netapp.com <site_Name>.c01-eu-1.cloudinsights.netapp.com <site_Name>.c02-eu-1.cloudinsights.netapp.com | Zugriff auf Cloud Insights 
 
 
-| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Authentifizierungsservices 
+| TCP | 443 | Workload Security Agent | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | Zugriff auf Authentifizierungsservices 
 |===
 Für * APAC-basierte * -Arbeitsumgebungen:
 
 [cols="5*"]
 |===
-| Protokoll | Port | Ziel | Richtung | Beschreibung 
+| Protokoll | Port | Quelle | Ziel | Beschreibung 
 
 
-| TCP | 443 | <site_Name>.cs01-ap-1.cloudinsights.netapp.com <site_Name>.c01-ap-1.cloudinsights.netapp.com <site_Name>.c02-ap-1.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Cloud Insights 
+| TCP | 443 | Workload Security Agent | <site_Name>.cs01-ap-1.cloudinsights.netapp.com <site_Name>.c01-ap-1.cloudinsights.netapp.com <site_Name>.c02-ap-1.cloudinsights.netapp.com | Zugriff auf Cloud Insights 
 
 
-| TCP | 443 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | Abgehender Anruf | Zugriff auf Authentifizierungsservices 
+| TCP | 443 | Workload Security Agent | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | Zugriff auf Authentifizierungsservices 
 |===
 
 
@@ -117,22 +117,22 @@ Beachten Sie, dass beim Hinzufügen von _link:task_add_collector_svm.html#permis
 
 [cols="5*"]
 |===
-| Protokoll | Port | Ziel | Richtung | Beschreibung 
+| Protokoll | Port | Quelle | Ziel | Beschreibung 
 
 
-| TCP | 389 (LDAP) 636 (LDAPS/Start-tls) | LDAP-Server-URL | Abgehender Anruf | Mit LDAP verbinden 
+| TCP | 389 (LDAP) 636 (LDAPS/Start-tls) | Workload Security Agent | LDAP-Server-URL | Mit LDAP verbinden 
 
 
-| TCP | 443 | Cluster- oder SVM-Management-IP-Adresse (abhängig von der SVM-Collector-Konfiguration) | Abgehender Anruf | API-Kommunikation mit ONTAP 
+| TCP | 443 | Workload Security Agent | Cluster- oder SVM-Management-IP-Adresse (abhängig von der SVM-Collector-Konfiguration) | API-Kommunikation mit ONTAP 
 
 
-| TCP | 35000 - 55000 | SVM-Daten-LIF-IP-Adressen | Eingehend | Kommunikation mit ONTAP bei FPolicy-Ereignissen 
+| TCP | 35000 - 55000 | SVM-Daten-LIF-IP-Adressen | Workload Security Agent | Kommunikation mit ONTAP bei FPolicy-Ereignissen 
 
 
-| TCP | 7 | SVM-Daten-LIF-IP-Adressen | Abgehender Anruf | Unidirektional zwischen ONTAP und Workload-Sicherheit. Agent pingt die SVM-LIFs an. 
+| TCP | 7 | Workload Security Agent | SVM-Daten-LIF-IP-Adressen | Unidirektional zwischen ONTAP und Workload-Sicherheit. Agent pingt die SVM-LIFs an. 
 
 
-| SSH | 22 | Cluster-Management | Abgehender Anruf | Erforderlich für das Blockieren von CIFS/SMB-Benutzern. 
+| SSH | 22 | Workload Security Agent | Cluster-Management | Erforderlich für das Blockieren von CIFS/SMB-Benutzern. 
 |===
 
 
