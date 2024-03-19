@@ -50,7 +50,13 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
 | Speicher | 16 GB RAM 
 
 
-| Verfügbarer Festplattenspeicher | Speicherplatz sollte auf diese Weise zugewiesen werden: /Opt/netapp 35 GB (Minimum) Wenn /opt ein gemounteter Ordner aus einem NAS-Speicher ist, stellen Sie sicher, dass lokale Benutzer Zugriff auf diesen Ordner haben. Agent oder Data Collector können nicht installiert werden, wenn lokale Benutzer nicht über die Berechtigung zu diesem Ordner verfügen. Siehe link:task_cs_add_agent.html#troubleshooting-agent-errors["Fehlerbehebung"] Weitere Informationen finden Sie in diesem Abschnitt. 
+| Verfügbarer Festplattenspeicher | Der Festplattenspeicher sollte folgendermaßen zugewiesen werden:
+/Opt/netapp 35 GB (mindestens)
+
+Hinweis: Es wird empfohlen, etwas zusätzlichen Speicherplatz zuzuweisen, um die Erstellung des Dateisystems zu ermöglichen. Stellen Sie sicher, dass mindestens 35 GB freier Speicherplatz im Dateisystem vorhanden ist.
+
+
+Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie sicher, dass lokale Benutzer Zugriff auf diesen Ordner haben. Agent oder Data Collector können nicht installiert werden, wenn lokale Benutzer nicht über die Berechtigung zu diesem Ordner verfügen. Siehe link:task_cs_add_agent.html#troubleshooting-agent-errors["Fehlerbehebung"] Weitere Informationen finden Sie in diesem Abschnitt. 
 
 
 | Netzwerk | 100 Mbit/s bis 1 Gbit/s Ethernet-Verbindung, statische IP-Adresse, IP-Konnektivität zu allen Geräten und ein erforderlicher Port zur Workload Security-Instanz (80 oder 443). 
