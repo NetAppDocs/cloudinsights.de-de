@@ -79,6 +79,27 @@ Siehe link:concept_cs_agent_requirements.html["Anforderungen an den Agenten"] F�
 
 
 
+== Voraussetzungen f체r die Sperrung des Benutzerzugriffs
+
+Beachten Sie f체r Folgendes link:/cloudinsights/cs_restrict_user_access.html["Sperrung Des Benutzerzugriffs"]:
+
+F체r diese Funktion sind Anmeldedaten auf Cluster-Ebene erforderlich.
+
+Wenn Sie Anmeldedaten f체r die Cluster-Administration verwenden, sind keine neuen Berechtigungen erforderlich.
+
+Wenn Sie einen benutzerdefinierten Benutzer (z. B. _cscuser_) mit den dem Benutzer angegebenen Berechtigungen verwenden, f체hren Sie die folgenden Schritte aus, um Workload Security-Berechtigungen zum Blockieren des Benutzers zu erteilen.
+
+F체hren Sie f체r CSuser mit Cluster-Anmeldedaten die folgenden Schritte in der ONTAP-Befehlszeile aus:
+
+....
+security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+security login role create -role csrole -cmddirname set -access all
+security login role create -role csrole -cmddirname "vserver cifs session" -access all
+security login role create -role csrole -cmddirname "vserver services access-check authentication translate" -access all
+security login role create -role csrole -cmddirname "vserver name-mapping" -access all
+....
+
+
 == Ein Hinweis zu Berechtigungen
 
 
