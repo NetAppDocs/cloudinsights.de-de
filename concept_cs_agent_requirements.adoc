@@ -132,10 +132,10 @@ Beachten Sie, dass beim Hinzufügen von _link:task_add_collector_svm.html#permis
 | TCP | 443 | Workload Security Agent | Cluster- oder SVM-Management-IP-Adresse (abhängig von der SVM-Collector-Konfiguration) | API-Kommunikation mit ONTAP 
 
 
-| TCP | 35000 - 55000 | SVM-Daten-LIF-IP-Adressen | Workload Security Agent | Kommunikation mit ONTAP für FPolicy-Ereignisse. Diese Ports müssen gegenüber dem Workload Security Agent geöffnet werden, damit ONTAP Ereignisse an ihn senden kann, einschließlich jeglicher Firewall auf dem Workload Security Agent selbst (falls vorhanden). 
+| TCP | 35000 - 55000 | SVM-Daten-LIF-IP-Adressen | Workload Security Agent | Kommunikation von ONTAP zum Workload Security Agent für FPolicy-Ereignisse.  Diese Ports müssen gegenüber dem Workload Security Agent geöffnet werden, damit ONTAP Ereignisse an ihn senden kann, einschließlich jeglicher Firewall auf dem Workload Security Agent selbst (falls vorhanden). 
 
 
-| TCP | 7 | Workload Security Agent | SVM-Daten-LIF-IP-Adressen | Unidirektional zwischen ONTAP und Workload-Sicherheit. Agent pingt die SVM-LIFs an. 
+| TCP | 7 | Workload Security Agent | SVM-Daten-LIF-IP-Adressen | Echo vom Agent zu SVM-Daten-LIFs 
 
 
 | SSH | 22 | Workload Security Agent | Cluster-Management | Erforderlich für das Blockieren von CIFS/SMB-Benutzern. 
