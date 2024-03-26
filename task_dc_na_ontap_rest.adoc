@@ -27,7 +27,7 @@ NOTE: Der ONTAP REST Collector kann als Ersatz für den früheren ONTAPI-basiert
 
 Gehen Sie wie folgt vor, um von einem früheren ONTAP (ontapi)-Datensammler zum neueren ONTAP-REST-Collector zu migrieren:
 
-. Fügen Sie REST Collector hinzu, und geben Sie alle gleichen Benutzer/Berechtigungen/usw. ein Sie hatten für den vorherigen Sammler.
+. Fügen Sie den REST-Collector hinzu, und geben Sie den gleichen Benutzer/die gleichen Berechtigungen usw. ein Sie hatten für den vorherigen Sammler.
 . Anhalten der vorherigen Sammlung.
 . Lassen Sie das System Daten für ~30 Minuten sammeln. Ignorieren Sie während dieser Zeit Datenmerkwürdigkeiten.
 . Nach der Ruhezeit sehen Sie eine stabile Fortsetzung der Daten auf dem REST-Kollektor.
