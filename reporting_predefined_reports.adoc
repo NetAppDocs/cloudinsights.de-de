@@ -30,8 +30,6 @@ In den vordefinierten Berichten werden Ihr Inventar, Storage-Kapazität, Kostenz
 
 Sie können Berichte in verschiedenen Formaten generieren, darunter HTML, PDF, CSV, XML, Und Excel.
 
-Cloud Insights erlaubt die Berichterstellung über mehrere Mandanten, da Sie Benutzer den entsprechenden Geschäftseinheiten zuordnen können. Mit dieser Funktion können Administratoren Daten oder Berichte nach den Attributen eines Benutzers oder seiner Zugehörigkeit trennen.
-
 
 
 == Navigieren zu vordefinierten Berichten
