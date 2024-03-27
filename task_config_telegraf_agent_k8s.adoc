@@ -260,16 +260,16 @@ Führen Sie das „Image Pull Snippet“ aus der NetApp Monitoring Operator Inst
 Core Operator-Funktionalität und Kubernetes Monitoring
 
 * netapp Monitoring
-* kube-rbac-Proxy
-* status-Kennzahlen von kube
-* telegraf
+* ci-kube-rbac-Proxy
+* ci-ksm
+* ci-telegraf
 * Distroless-root-user
 
 
 Ereignisprotokoll
 
-* Fluent-Bit
-* kubernetes Event Exporter
+* ci-Fluent-Bit
+* ci-kubernetes-Event-Exporteur
 
 
 Netzwerkleistung und -Zuordnung
@@ -282,7 +282,7 @@ Netzwerkleistung und -Zuordnung
 Bearbeiten Sie die Bereitstellung des Monitoring-Operators in Operator-Deployment.yaml, und ändern Sie alle Bildverweise, um Ihr privates Docker-Repository zu verwenden.
 
 ....
-image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<ci-kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
 Bearbeiten Sie die AgentConfiguration in Operator-config.yaml, um die neue Position des Docker-Repo zu berücksichtigen. Erstellen Sie ein neues imagePullSecret für Ihr privates Repository. Weitere Informationen finden Sie unter _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
