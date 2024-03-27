@@ -12968,8 +12968,6 @@ Konfiguration: 10.193.98.84: ONTAP Rest API bei 10.193.98.84 ist nicht verfügba
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">Seriennummer – die Array-UUID</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">Da eine Reihe von Cloud Insights ONTAP Dashboards auf erweiterten ONTAP-Zählern basieren, sollten Sie *Enable Advanced Counter Data Collection* im Abschnitt Data Collector Advanced Configuration aktivieren.</block>
   <block id="992ec6f152c405f64da205561d5810c3" category="list-text">Sie müssen Zugriff auf ein Benutzerkonto mit der erforderlichen Zugriffsebene haben. Beachten Sie, dass Administratorberechtigungen erforderlich sind, wenn Sie einen neuen REST-Benutzer/eine neue REST-Rolle erstellen.</block>
-  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">Hinweis Zu Berechtigungen</block>
-  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">Cloud Insights stellt Leseanforderungen, einige Schreibberechtigungen sind jedoch erforderlich, damit Cloud Insights sich beim ONTAP-Array registrieren kann. Siehe <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> Unten.</block>
   <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">Wählen Sie diese Option aus, um ONTAP Advanced Counter-Daten in Umfragen einzubeziehen. Standardmäßig aktiviert.</block>
   <block id="19decc8950209e44f521507a99ab0792" category="cell">Wählen Sie diese Option aus, um die Ereignisdaten des ONTAP-EMS-Protokolls einzuschließen. Standardmäßig aktiviert.</block>
   <block id="b8da12392eaf9647590629afc8e5e321" category="inline-xref">Widget „Tabelle“</block>
@@ -13027,9 +13025,6 @@ Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie siche
   <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">Überprüfen Sie unbedingt den Abschnitt Berechtigungen der <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> Zu.</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">Migration</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">Gehen Sie wie folgt vor, um von einem früheren ONTAP (ontapi)-Datensammler zum neueren ONTAP-REST-Collector zu migrieren:</block>
-  <block id="7aa31458c5152c5d27f8fbb18c369015" category="list-text">Anhalten der vorherigen Sammlung.</block>
-  <block id="36c201f32e3f02bd95c1dd1ccdbc73dc" category="list-text">Lassen Sie das System Daten für ~30 Minuten sammeln. Ignorieren Sie während dieser Zeit Datenmerkwürdigkeiten.</block>
-  <block id="dede93f696efdb5fb1be1cde69b231cb" category="list-text">Nach der Ruhezeit sehen Sie eine stabile Fortsetzung der Daten auf dem REST-Kollektor.</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual Machine/Vserver</block>
   <block id="40a9aa8d8be93bdef25a488011f71fcb" category="cell">Storage Virtual Machine</block>
   <block id="b34043f2adcaed7afb95502f8e304bd7" category="list-text">ONTAP Version 9.14.1 oder höher.</block>
@@ -13037,7 +13032,6 @@ Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie siche
   <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">Rufen Sie den Namen des vservers vom Typ _admin_ ab. Sie werden diesen Namen in nachfolgenden Befehlen verwenden.</block>
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">Ich sehe leere oder „0“ Metriken, wo der ONTAP ontapi Collector Daten anzeigt.</block>
   <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST enthält keine Kennzahlen, die nur intern auf dem ONTAP System verwendet werden. Systemaggregate werden beispielsweise nicht von ONTAP REST erfasst, sondern nur SVM vom Typ „Daten“.</block>
-  <block id="93411b670be12318c5a6613f3fca054f" category="list-text">Fügen Sie den REST-Collector hinzu, und geben Sie den gleichen Benutzer/die gleichen Berechtigungen usw. ein Sie hatten für den vorherigen Sammler.</block>
   <block id="7e0b2932c814704a91b543d4f713d658" category="cell">Kommunikation von ONTAP zum Workload Security Agent für FPolicy-Ereignisse.  Diese Ports müssen gegenüber dem Workload Security Agent geöffnet werden, damit ONTAP Ereignisse an ihn senden kann, einschließlich jeglicher Firewall auf dem Workload Security Agent selbst (falls vorhanden).</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">Echo vom Agent zu SVM-Daten-LIFs</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">Die DemonSets _netapp-CI-telegraf-ds_, _netapp-CI-Fluent-Bit-ds_ und _netapp-CI-net-Observer-l4-ds_ müssen für jeden Node im Cluster einen Pod planen, damit Daten auf allen Nodes korrekt erfasst werden. Der Operator wurde so konfiguriert, dass er einige bekannte *Fehler* toleriert. Wenn Sie auf Ihren Nodes benutzerdefinierte Taints konfiguriert haben und damit verhindern, dass Pods auf jedem Knoten ausgeführt werden, können Sie für diese Taints eine *Toleration* erstellen <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>. Wenn Sie auf alle Nodes im Cluster benutzerdefinierte Taints angewendet haben, müssen Sie der Operator-Bereitstellung auch die erforderlichen Toleranzen hinzufügen, damit der Operator-Pod geplant und ausgeführt werden kann.</block>
@@ -13046,4 +13040,10 @@ Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie siche
   <block id="217b41d0f229477b95c3b46b9905e8a6" category="list-text">ci-telegraf</block>
   <block id="7357e4ce1b613c72370aa11b8881c327" category="list-text">ci-Fluent-Bit</block>
   <block id="fe05143e1e28d056a7092a13c7ef1fda" category="list-text">ci-kubernetes-Event-Exporteur</block>
+  <block id="b13ab503ee5934c2c0407ff674faaeb8" category="list-text">Cloud Insights stellt hauptsächlich Leseanforderungen. Für die Cloud Insights Registrierung beim ONTAP-Array sind jedoch einige Schreibberechtigungen erforderlich. Siehe _Hinweis zu Berechtigungen_ direkt unten.</block>
+  <block id="de9f71590e427b6d3c16175ce4dda19f" category="list-text">Fügen Sie den REST Collector hinzu. Es wird empfohlen, Informationen für einen anderen Benutzer einzugeben als für den vorherigen Collector konfiguriert. Verwenden Sie zum Beispiel den Benutzer, der im Abschnitt Berechtigungen oben angegeben ist.</block>
+  <block id="46788dbd82cfe187cc4603bdb4760c26" category="list-text">Unterbrechen Sie den vorherigen Collector, damit er nicht weiter Daten sammelt.</block>
+  <block id="5b006d79d014a1860daf684ecea7e093" category="list-text">Lassen Sie den neuen REST-Collector Daten für mindestens 30 Minuten erfassen. Ignorieren Sie während dieser Zeit alle Daten, die nicht „normal“ angezeigt werden.</block>
+  <block id="6e81cdef5dd14e3cf193147eefe83cc4" category="list-text">Nach der Ruhezeit sollten Sie Ihre Daten stabilisieren sehen, während der REST-Collector weiterhin zu erfassen.</block>
+  <block id="d2098b0b84e989c49759cf70450a78d8" category="paragraph">Sie können diesen Vorgang verwenden, um zum vorherigen Collector zurückzukehren, wenn Sie möchten.</block>
 </blocks>
