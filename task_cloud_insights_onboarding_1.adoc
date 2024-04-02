@@ -38,7 +38,7 @@ Erste Schritte mit NetApp Cloud-Services finden Sie unter https://cloud.netapp.c
 
 
 
-=== Was ist, wenn ich bereits einen NetApp Cloud Login habe?
+=== Was ist, wenn ich bereits über einen NetApp BlueXP Login spreche?
 
 Sobald Sie über einen NetApp BlueXP Account verfügen, wählen Sie *Anmelden* auf der https://cloud.netapp.com["*NetApp BlueXP*"^] Portalseite.
 
@@ -78,7 +78,7 @@ Wenn Sie sich zum ersten Mal in einer neuen Umgebung anmelden, werden Sie durch 
 
 == Abmelden
 
-Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum Anmeldefenster von BlueXP angezeigt.
+Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum geführt link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["BlueXP Anmeldung"] Bildschirm.
 
 
 NOTE: Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.

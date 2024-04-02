@@ -1710,7 +1710,6 @@
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">Geben Sie eine gültige geschäftliche E-Mail-Adresse ein und wählen Sie ein Passwort.</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">Geben Sie Ihren Firmennamen und Ihren vollständigen Namen ein.</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Wählen Sie Cloud Insights.</block>
-  <block id="136e3fa9a2b8381149c5e720a65374fa" category="section-title">Was ist, wenn ich bereits einen NetApp Cloud Login habe?</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">Geben Sie Ihre E-Mail-Adresse und Ihr Kennwort ein. Anschließend gelangen Sie zu den Cloud-Angeboten von NetApp.</block>
   <block id="b1d39b97c6fe789fe5e7963f078e112d" category="section-title">Starten Sie Ihren Cloud Insights kostenlosen Test</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">Starten Sie Ihr Abonnement</block>
@@ -13042,8 +13041,10 @@ Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie siche
   <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">Nachdem Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach beim NetApp BlueXP Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.</block>
   <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">Die URL wird auch in die Einladungs-E-Mail jedes Benutzers für einfachen Zugriff und Lesezeichen enthalten. Wenn der Benutzer noch nicht bei BlueXP angemeldet ist, wird er zur Anmeldung aufgefordert.</block>
   <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">Neue Benutzer müssen sich nach wie vor für den Zugriff auf BlueXP registrieren, bevor sie auf die URL ihrer Umgebung zugreifen können.</block>
-  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum Anmeldefenster von BlueXP angezeigt.</block>
-  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.</block>
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">Zeitüberschreitung Bei Inaktivität</block>
   <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">BlueXP meldet einen Benutzer standardmäßig ab, wenn sechs Stunden (360 Minuten) keine Aktivitäten bestehen. Unabhängig von der Aktivität werden Benutzer nach sieben Tagen abgemeldet.</block>
+  <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">Was ist, wenn ich bereits über einen NetApp BlueXP Login spreche?</block>
+  <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXP Anmeldung</block>
+  <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum geführt <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> Bildschirm.</block>
+  <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.</block>
 </blocks>
