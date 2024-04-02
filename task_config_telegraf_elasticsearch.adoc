@@ -21,7 +21,7 @@ summary: Konfiguration der Elasticsearch-Datenerfassung
 [role="lead"]
 Cloud Insights verwendet diese Datenerfassung zum Erfassen von Metriken aus Elasticsearch.
 
-. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Elasticsearch.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie Elasticsearch.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

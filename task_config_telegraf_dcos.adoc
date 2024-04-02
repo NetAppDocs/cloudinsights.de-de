@@ -25,7 +25,7 @@ Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus DC
 
 == Installation
 
-. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* *DC/OS*.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie *DC/OS*.
 +
 Wenn Sie keinen Agenten für die Sammlung konfiguriert haben, werden Sie aufgefordert link:task_config_telegraf_agent.html["Installieren Sie einen Agenten"] Ihrer Umgebung zu unterstützen.
 

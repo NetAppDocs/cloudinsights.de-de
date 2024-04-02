@@ -25,7 +25,7 @@ Cloud Insights verwendet diesen Datensammler, um Metriken von OpenZFS zu erfasse
 
 == Installation
 
-. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* OpenZFS.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie OpenZFS.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

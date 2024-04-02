@@ -25,7 +25,7 @@ Cloud Insights verwendet diese Datensammler, um Metriken aus Kafka zu sammeln.
 
 == Installation
 
-. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Kafka.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie Kafka.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

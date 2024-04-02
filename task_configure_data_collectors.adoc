@@ -40,11 +40,45 @@ Die Daten-Collector-Anmeldeinformationen werden verschlüsselt, wenn sie in Clou
 
 == Konfigurieren des Data Collectors
 
-* Klicken Sie im Menü Cloud Insights auf *Observability > Collectors* und klicken Sie auf die Schaltfläche *+ Data Collector*. Sie können alle Datensammler anzeigen oder filtern, um nur die Datensammler anzuzeigen, die Ihnen auf Grundlage Ihres Abonnements zur Verfügung stehen.
-
-
+* Klicken Sie im Menü Cloud Insights auf *Observability > Collectors* und klicken Sie auf die Schaltfläche *+ Data Collector*.
 * Je nach gewähltem Datensammlungstyp variieren die Installationsschritte.
 
+
+
+
+=== Infrastruktur:
+
+Infrastrukturdatensammler umfassen beispielsweise Storage oder Switches.
+
+.Bevor Sie beginnen
+* Sie müssen mindestens eine Erfassungseinheit konfiguriert haben, um mit dem Erfassen von Infrastrukturdaten zu beginnen.
++
+.. Klicken Sie auf einen Infrastructure Data Collector.
+.. Geben Sie einen Namen für den Datensammler ein. Namen dürfen die folgenden Zeichen enthalten:
+
+
+* Buchstabe (a-z)
+* Zahl (0-9)
+* Bindestrich (-)
+* Unterstrich (_)
+* Periode (.)
+* Leerzeichen ( )
++
+Namen dürfen nicht mit Leerzeichen, Punkt oder Bindestrich beginnen oder enden.
+
++
+.. Geben Sie die Erfassungseinheit ein, die diesem Datensammler zugeordnet werden soll.
+.. Geben Sie die erforderlichen Felder im Konfigurationsbildschirm ein.
+.. Klicken Sie auf *Erweiterte Konfiguration*, um weitere Konfigurationsfelder einzugeben. Nicht alle Datensammler benötigen erweiterte Konfiguration.
+.. Klicken Sie auf *Testkonfiguration*, um zu überprüfen, ob der Datensammler ordnungsgemäß konfiguriert ist.
+.. Klicken Sie anschließend auf *Collector hinzufügen*.
+
+
+
+
+Hilfe zum Hinzufügen einer neuen Erfassungseinheit finden Sie unter link:task_configure_acquisition_unit.html["Konfigurieren von Akquisitionseinheiten"]
+
++ Es kann bis zu zwei Abfrageperioden dauern, bevor Daten aus der Umgebung in Dashboards angezeigt oder zur Abfrage verfügbar sind.
 
 
 
@@ -86,39 +120,3 @@ Es kann bis zu zwei Abfrageperioden dauern, bis die Daten aus dem Dienst in Dash
 
 
 
-
-
-
-=== Infrastruktur:
-
-Infrastrukturdatensammler umfassen beispielsweise Storage oder Switches.
-
-.Bevor Sie beginnen
-* Sie müssen mindestens eine Erfassungseinheit konfiguriert haben, um mit dem Erfassen von Infrastrukturdaten zu beginnen.
-+
-.. Klicken Sie auf einen Infrastructure Data Collector.
-.. Geben Sie einen Namen für den Datensammler ein. Namen dürfen die folgenden Zeichen enthalten:
-
-
-* Buchstabe (a-z)
-* Zahl (0-9)
-* Bindestrich (-)
-* Unterstrich (_)
-* Periode (.)
-* Leerzeichen ( )
-+
-Namen dürfen nicht mit Leerzeichen, Punkt oder Bindestrich beginnen oder enden.
-
-+
-.. Geben Sie die Erfassungseinheit ein, die diesem Datensammler zugeordnet werden soll.
-.. Geben Sie die erforderlichen Felder im Konfigurationsbildschirm ein.
-.. Klicken Sie auf *Erweiterte Konfiguration*, um weitere Konfigurationsfelder einzugeben. Nicht alle Datensammler benötigen erweiterte Konfiguration.
-.. Klicken Sie auf *Testkonfiguration*, um zu überprüfen, ob der Datensammler ordnungsgemäß konfiguriert ist.
-.. Klicken Sie anschließend auf *Collector hinzufügen*.
-
-
-
-
-Hilfe zum Hinzufügen einer neuen Erfassungseinheit finden Sie unter link:task_configure_acquisition_unit.html["Konfigurieren von Akquisitionseinheiten"]
-
-+ Es kann bis zu zwei Abfrageperioden dauern, bevor Daten aus der Umgebung in Dashboards angezeigt oder zur Abfrage verfügbar sind.

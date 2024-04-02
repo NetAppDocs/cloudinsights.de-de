@@ -25,7 +25,7 @@ Cloud Insights verwendet diese Datensammlung, um Kennzahlen aus Memcached zu erf
 
 == Installation
 
-. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* Memcached.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie Memcached.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 

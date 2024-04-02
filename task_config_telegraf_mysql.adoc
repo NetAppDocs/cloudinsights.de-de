@@ -25,7 +25,7 @@ Cloud Insights verwendet diese Datensammlung, um Kennzahlen von MySQL zu sammeln
 
 == Installation
 
-. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie unter *Services* MySQL.
+. Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie MySQL.
 +
 Wählen Sie das Betriebssystem oder die Plattform aus, auf dem der Telegraf-Agent installiert ist.
 
