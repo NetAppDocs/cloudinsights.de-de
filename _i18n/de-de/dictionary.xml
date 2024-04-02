@@ -1707,7 +1707,6 @@
   <block id="4a7b46f5ae3d121fb437f8755e468f60" category="paragraph"><block ref="4a7b46f5ae3d121fb437f8755e468f60" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">Melden Sie sich für Cloud Insights an und erstellen Sie Ihre Umgebung.</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">Cloud Insights-Onboarding</block>
-  <block id="25866b1c01dcfb4e4ba435720ed78045" category="section-title">Erstellen Ihres NetApp Cloud Central Kontos</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">Geben Sie eine gültige geschäftliche E-Mail-Adresse ein und wählen Sie ein Passwort.</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">Geben Sie Ihren Firmennamen und Ihren vollständigen Namen ein.</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">Wählen Sie Cloud Insights.</block>
@@ -1718,13 +1717,9 @@
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">Während der kostenlosen Testversion können Sie dies gerne <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> Cloud Insights zu jeder Zeit. Wenn Sie abonniert haben, können Sie die Cloud Insights-Funktionen auf Grundlage Ihrer aktuellen Subscription verwenden.</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">Melden Sie sich an und gehen Sie</block>
   <block id="8dac70c4541c93f0deed8b8bd734a673" category="paragraph">Sie können einen Browser auch direkt auf Ihrer URL für die Cloud Insights-Umgebung öffnen, beispielsweise:</block>
-  <block id="0e15f0ff9eb552105028ff08fc92e09f" category="paragraph">Die URL wird auch in die Einladungs-E-Mail jedes Benutzers für einfachen Zugriff und Lesezeichen enthalten. Wenn der Benutzer nicht bereits bei Cloud Central angemeldet ist, werden diese zur Anmeldung aufgefordert.</block>
-  <block id="0df3e25ccf83cd4779234f7f928bebb5" category="admonition">Neue Benutzer müssen sich trotzdem für den Zugriff auf Cloud Central anmelden, bevor sie auf ihre Umgebung-URL zugreifen können.</block>
   <block id="da115c4fc9cae6fc87764395ef9ff331" category="inline-link-macro">*Datensammlung beginnen*</block>
   <block id="8308d29f13c3d3cc69f506dfead0a733" category="paragraph">Wenn Sie sich zum ersten Mal in einer neuen Umgebung anmelden, werden Sie durch die Einrichtung bis geleitet <block ref="2949f1254245e371c2d697f481723a7e" category="inline-link-macro-rx"></block>.</block>
   <block id="cc580c5eecd9c28053db6de1830561ee" category="section-title">Abmelden</block>
-  <block id="5f5052459ed746a225d85b63238531d1" category="paragraph">Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie gelangen zurück zum Anmeldebildschirm von Cloud Central.</block>
-  <block id="21648aceb436779ee1938a15ced12e7e" category="admonition">Wenn Sie sich von Cloud Insights abmelden, melden Sie sich von Cloud Central ab. Außerdem werden Sie von anderen NetApp Cloud-Services abgemeldet, die das Cloud Central-Anmeldezeichen verwenden.</block>
   <block id="b11938f62b1381c70d7c54a31443f412" category="summary">Konfigurieren des Datensammlers von Brocade FC Switches.</block>
   <block id="dd95e4c7a837d3b569bf8739a342756b" category="doc">Datensammler Brocade FC Switch</block>
   <block id="371bcf524307344dd6166c1f092ba8ee" category="paragraph">Cloud Insights verwendet die Brocade FC Switch (SSH) Datenquelle, um Inventar für Brocade oder umbenannte Switch-Geräte zu ermitteln, auf denen FOS-Firmware (FOS) 4.2 und höher ausgeführt wird. Geräte werden sowohl im FC-Switch- als auch im Access Gateway-Modus unterstützt.</block>
@@ -9116,7 +9111,6 @@
   <block id="bd4968db059d70adcf0b67815d5ba188" category="list-text">Eine IP-Adresse/ein vollständig qualifizierter Domain-Name des Unisphere-Servers</block>
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">Benutzername und Passwort</block>
   <block id="4723d1b438a15598881f85467c0b7be8" category="cell">Intervall zwischen Performance-Abstimmungen</block>
-  <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">Sobald Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach im NetApp Cloud Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.</block>
   <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">Die installierte Telegraf-Version ist veraltet. Befolgen Sie die Schritte auf dieser Seite, um *Upgrade the Agent* für Ihre entsprechende Plattform.</block>
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">Nach der Konfiguration eines neuen Plugins und dem Neustart von Telegraf startet Telegraf Telegraf nicht. Die Protokolle zeigen an, dass ein Fehler wie folgt auftritt: "[telegraf] Fehler laufende Agent: Fehler beim Laden der Konfigurationsdatei /etc/telegraf/telegraf.d/cloudinsights-default.conf: Plugin Outputs.http: Line &lt;linenumber&gt;: Configuration specified the fields ["use_System_Proxy"], they were't used"</block>
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">Ich habe das Installer-Skript auf einer alten Installation ausgeführt und jetzt sendet der Agent keine Daten</block>
@@ -9452,7 +9446,6 @@
   <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">Sofort beheben</block>
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Optionen Für Die Alarmauflösung</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">Bevor Sie mit der Nutzung von Cloud Insights beginnen können, müssen Sie sich über das Portal *NetApp BlueXP* (ehemals Cloud Central) anmelden. Wenn Sie bereits über eine Anmeldung bei NetApp Cloud Central verfügen, können Sie mit wenigen schnellen Schritten eine kostenlose Testversion von Cloud Insights starten.</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">*NetApp BlueXP*</block>
   <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">Erste Schritte mit NetApp Cloud-Services finden Sie unter<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> Und klicken Sie auf *erste Schritte*.</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">Wenn Sie sich noch nicht angemeldet haben, wählen Sie *Anmelden*</block>
@@ -9463,7 +9456,6 @@
   <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">Cloud Insights kostenlos für BlueXP testen</block>
   <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights zeigt Ihnen, wie Sie Ihre Unternehmensumgebung gestalten.</block>
-  <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">Sobald die Erstellung Ihrer Umgebung abgeschlossen ist, können Sie sich mit Ihren Zugangsdaten für Cloud Central anmelden und die kostenlose 30-Tage-Testversion von Cloud Insights starten. Während dieser Testversion können Sie sich mit den Features von Cloud Insights beschäftigen.</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Cluster-Management</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Erforderlich für das Blockieren von CIFS/SMB-Benutzern.</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">Wenn Sie *Storage Manager Dashboard* aus Team Content auswählen, erhalten Sie mehrere Berichte, die Informationen über Ihren Datenverkehr und Ihren Speicher enthalten.</block>
@@ -13044,4 +13036,14 @@ Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie siche
   <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">Klicken Sie im Menü Cloud Insights auf *Observability &gt; Collectors* und klicken Sie auf die Schaltfläche *+ Data Collector*.</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie Kibana.</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">Klicken Sie unter *Observability &gt; Collectors* auf *+Data Collector*. Wählen Sie MongoDB.</block>
+  <block id="2e95a4622d16ffb729672b5838f5732b" category="paragraph">Bevor Sie mit Cloud Insights arbeiten können, müssen Sie sich im Portal *NetApp BlueXP* anmelden. Wenn Sie bereits über ein BlueXP Login verfügen, können Sie Cloud Insights in wenigen schnellen Schritten kostenlos testen.</block>
+  <block id="5bff30d13ce98c505187872963af1f25" category="section-title">Sie erstellen Ihr NetApp BlueXP Konto</block>
+  <block id="f21c4669cdc7c8b69bb7b9e4f65412b9" category="paragraph">Sobald die Erstellung Ihrer Umgebung abgeschlossen ist, können Sie Ihre BlueXP Zugangsdaten verwenden, um sich anzumelden und Ihre kostenlose 30-Tage-Testversion von Cloud Insights zu starten. Während dieser Testversion können Sie sich mit den Features von Cloud Insights beschäftigen.</block>
+  <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">Nachdem Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach beim NetApp BlueXP Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.</block>
+  <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">Die URL wird auch in die Einladungs-E-Mail jedes Benutzers für einfachen Zugriff und Lesezeichen enthalten. Wenn der Benutzer noch nicht bei BlueXP angemeldet ist, wird er zur Anmeldung aufgefordert.</block>
+  <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">Neue Benutzer müssen sich nach wie vor für den Zugriff auf BlueXP registrieren, bevor sie auf die URL ihrer Umgebung zugreifen können.</block>
+  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum Anmeldefenster von BlueXP angezeigt.</block>
+  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.</block>
+  <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">Zeitüberschreitung Bei Inaktivität</block>
+  <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">BlueXP meldet einen Benutzer standardmäßig ab, wenn sechs Stunden (360 Minuten) keine Aktivitäten bestehen. Unabhängig von der Aktivität werden Benutzer nach sieben Tagen abgemeldet.</block>
 </blocks>

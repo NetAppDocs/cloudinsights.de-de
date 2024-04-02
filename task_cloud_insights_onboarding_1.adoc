@@ -19,13 +19,13 @@ summary: Melden Sie sich für Cloud Insights an und erstellen Sie Ihre Umgebung.
 
 
 [role="lead"]
-Bevor Sie mit der Nutzung von Cloud Insights beginnen können, müssen Sie sich über das Portal *NetApp BlueXP* (ehemals Cloud Central) anmelden. Wenn Sie bereits über eine Anmeldung bei NetApp Cloud Central verfügen, können Sie mit wenigen schnellen Schritten eine kostenlose Testversion von Cloud Insights starten.
+Bevor Sie mit Cloud Insights arbeiten können, müssen Sie sich im Portal *NetApp BlueXP* anmelden. Wenn Sie bereits über ein BlueXP Login verfügen, können Sie Cloud Insights in wenigen schnellen Schritten kostenlos testen.
 
 
 toc::[]
 
 
-== Erstellen Ihres NetApp Cloud Central Kontos
+== Sie erstellen Ihr NetApp BlueXP Konto
 
 Erste Schritte mit NetApp Cloud-Services finden Sie unter https://cloud.netapp.com["*NetApp BlueXP*"^] Und klicken Sie auf *erste Schritte*.
 
@@ -54,7 +54,7 @@ image:BlueXP_CloudInsights.png["Cloud Insights kostenlos für BlueXP testen"]
 
 Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights zeigt Ihnen, wie Sie Ihre Unternehmensumgebung gestalten.
 
-Sobald die Erstellung Ihrer Umgebung abgeschlossen ist, können Sie sich mit Ihren Zugangsdaten für Cloud Central anmelden und die kostenlose 30-Tage-Testversion von Cloud Insights starten. Während dieser Testversion können Sie sich mit den Features von Cloud Insights beschäftigen.
+Sobald die Erstellung Ihrer Umgebung abgeschlossen ist, können Sie Ihre BlueXP Zugangsdaten verwenden, um sich anzumelden und Ihre kostenlose 30-Tage-Testversion von Cloud Insights zu starten. Während dieser Testversion können Sie sich mit den Features von Cloud Insights beschäftigen.
 
 Während der kostenlosen Testversion können Sie dies gerne link:concept_subscribing_to_cloud_insights.html["Starten Sie Ihr Abonnement"] Cloud Insights zu jeder Zeit. Wenn Sie abonniert haben, können Sie die Cloud Insights-Funktionen auf Grundlage Ihrer aktuellen Subscription verwenden.
 
@@ -62,15 +62,15 @@ Während der kostenlosen Testversion können Sie dies gerne link:concept_subscri
 
 == Melden Sie sich an und gehen Sie
 
-Sobald Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach im NetApp Cloud Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.
+Nachdem Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach beim NetApp BlueXP Portal anmelden und auf *Gehe zu Cloud Insights* klicken. Sie werden direkt in Ihre Cloud Insights Umgebung gebracht.
 
 Sie können einen Browser auch direkt auf Ihrer URL für die Cloud Insights-Umgebung öffnen, beispielsweise:
 
  https://<environment-prefix>.c01.cloudinsights.netapp.com/
-Die URL wird auch in die Einladungs-E-Mail jedes Benutzers für einfachen Zugriff und Lesezeichen enthalten. Wenn der Benutzer nicht bereits bei Cloud Central angemeldet ist, werden diese zur Anmeldung aufgefordert.
+Die URL wird auch in die Einladungs-E-Mail jedes Benutzers für einfachen Zugriff und Lesezeichen enthalten. Wenn der Benutzer noch nicht bei BlueXP angemeldet ist, wird er zur Anmeldung aufgefordert.
 
 
-NOTE: Neue Benutzer müssen sich trotzdem für den Zugriff auf Cloud Central anmelden, bevor sie auf ihre Umgebung-URL zugreifen können.
+NOTE: Neue Benutzer müssen sich nach wie vor für den Zugriff auf BlueXP registrieren, bevor sie auf die URL ihrer Umgebung zugreifen können.
 
 Wenn Sie sich zum ersten Mal in einer neuen Umgebung anmelden, werden Sie durch die Einrichtung bis geleitet link:task_getting_started_with_cloud_insights.html["*Datensammlung beginnen*"].
 
@@ -78,7 +78,13 @@ Wenn Sie sich zum ersten Mal in einer neuen Umgebung anmelden, werden Sie durch 
 
 == Abmelden
 
-Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie gelangen zurück zum Anmeldebildschirm von Cloud Central.
+Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum Anmeldefenster von BlueXP angezeigt.
 
 
-NOTE: Wenn Sie sich von Cloud Insights abmelden, melden Sie sich von Cloud Central ab. Außerdem werden Sie von anderen NetApp Cloud-Services abgemeldet, die das Cloud Central-Anmeldezeichen verwenden.
+NOTE: Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.
+
+
+
+=== Zeitüberschreitung Bei Inaktivität
+
+BlueXP meldet einen Benutzer standardmäßig ab, wenn sechs Stunden (360 Minuten) keine Aktivitäten bestehen. Unabhängig von der Aktivität werden Benutzer nach sieben Tagen abgemeldet.
