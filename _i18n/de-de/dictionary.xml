@@ -9805,7 +9805,6 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">EnableDNSLookup</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">True/false, DNS-Suche aktivieren</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">Beispieldatei für AgentConfiguration</block>
-  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">Unten finden Sie eine Beispieldatei für AgentConfiguration. Beachten Sie, dass hier nicht alle Optionen erfasst werden:</block>
   <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">Wenn Sie ein benutzerdefiniertes oder privates Docker-Repository verwenden, befolgen Sie die Anweisungen im Abschnitt Verwenden eines benutzerdefinierten oder privaten Docker-Repository</block>
   <block id="64cf739e279a21fbfd5a0a55d9453e9d" category="list-text">Ab August 2022 unterstützt der NetApp Kubernetes Monitoring Operator Pod Security Policy (PSP). Wenn in der Umgebung PSP eingesetzt wird, müssen Sie auf den neuesten NetApp Kubernetes Monitoring Operator aktualisieren.</block>
   <block id="324c304c8e53f41411f3a55226c16d14" category="list-text">Wenn Sie OpenShift 4.6 oder höher verwenden, müssen Sie zusätzlich zur Erfüllung dieser Voraussetzungen die folgenden OpenShift-Anweisungen befolgen.</block>
@@ -13047,4 +13046,6 @@ Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie siche
   <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXP Anmeldung</block>
   <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum geführt <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> Bildschirm.</block>
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.</block>
+  <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">True/false - Setzen Sie runPrivileged auf true, wenn SELinux auf Ihren Kubernetes-Knoten aktiviert ist.</block>
+  <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">Unten finden Sie eine Beispieldatei für AgentConfiguration.</block>
 </blocks>
