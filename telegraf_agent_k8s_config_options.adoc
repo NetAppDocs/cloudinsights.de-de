@@ -40,7 +40,21 @@ In der folgenden Tabelle sind die möglichen Optionen für die AgentConfiguratio
 |  | ClusterName | Freitextfeld, das einen Cluster über alle Kundencluster eindeutig identifiziert. Diese sollte bei einem Cloud Insights-Mandanten eindeutig sein. Der Standardwert ist das, was der Kunde in die Benutzeroberfläche für das Feld „Cluster Name“ eingibt 
 
 
-|  | Proxy Format: Proxy: Server: Port: Benutzername: Passwort: Noproxy: IsTelegrafProxyEnabled: IsAuProxyEnabled: IsFluentbitProxyEnabled: IsCollectorProxyEnabled: | Optional für den Kunden zum Festlegen des Proxys. Dies ist in der Regel Kunden Corporate Proxy. 
+|  | Proxy
+
+Format:
+
+Proxy:
+
+  Server:
+  Anschluss:
+  Benutzername:
+  Kennwort:
+  Noproxy:
+  IsTelegrafProxyEnabled:
+  IsAuProxyEnabled:
+  IsFluentbitProxyEnabled:
+  IsCollectorProxyEnabled: | Optional zum Festlegen des Proxys. Dies ist in der Regel der Unternehmensvertreter des Kunden. 
 
 
 | telegraf |  | Konfigurationsoptionen, mit denen die telegraf-Installation des Bedieners angepasst werden kann 
@@ -193,6 +207,47 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
 
 
 |  | RunPrivileged | True/false - Setzen Sie runPrivileged auf true, wenn SELinux auf Ihren Kubernetes-Knoten aktiviert ist. 
+
+
+| Änderungsmanagement |  | Konfigurationsoptionen für das Kubernetes Change Management und die Analyse 
+
+
+|  | CpuLimit | CPU-Limit für Change-Observer-watch-rs 
+
+
+|  | MemLimit | MEM Limit für Change-Observer-Watch-rs 
+
+
+|  | CpuRequest | CPU-Anforderung für Change-Observer-watch-rs 
+
+
+|  | MemRequest | MEM-Anforderung für Change-Observer-Watch-rs 
+
+
+|  | AusfallerklärungIntervalMins | Intervall in Minuten, nach dem eine nicht erfolgreiche Bereitstellung eines Workloads als fehlgeschlagen markiert wird 
+
+
+|  | EinsatzAggrIntervalSekunden | Häufigkeit, mit der Ereignisse zur laufenden Workload-Bereitstellung gesendet werden 
+
+
+|  | Nicht-WorkloadAggrIntervalSekunden | Häufigkeit der Kombination und des Sendeens von nicht-Workload-Implementierungen 
+
+
+|  | TermsToAkt | Ein Satz von regulären Ausdrücken, die in Env-Namen und Datenkarten verwendet werden, deren Wert bearbeitet wird
+Beispielbegriffe:„pwd“, „Passwort“, „Token“, „apikey“, „API-key“, „jwt“ 
+
+
+|  | Zusätzlich KindsToWatch | Eine kommagetrennte Liste mit weiteren Arten, die von den vom Sammler überwachten Standardtypen überwacht werden sollen 
+
+
+|  | KindsToIgnoreFromWatch | Eine kommagetrennte Liste von Arten, die ignoriert werden sollen, wenn sie von den vom Sammler überwachten Standardtypen überwacht werden 
+
+
+|  | LogRecordAggrIntervalSekunden | Häufigkeit, mit der Protokolldatensätze vom Collector an CI gesendet werden 
+
+
+|  | Überwachen von Toleranzen | Change-Observer-watch-ds zusätzliche Toleranzen. Nur abgekürztes Einzelzeilenformat.
+Beispiel: '{key: Taint1, Operator: Existiert, Effekt: NoSchedule},{key: Taint2, Operator: Existiert, Effekt: NoExecute}' 
 |===
 
 
