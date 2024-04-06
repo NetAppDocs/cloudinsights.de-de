@@ -22,6 +22,30 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
+== April 2024
+
+
+
+=== ISCSI-Volume-Latenz
+
+Metriken für die iSCSI-Volume-Latenz stehen in Dashboards, Warnmeldungen und mehr zur Verfügung. Um iSCSI-Latenzmetriken zu erfassen, aktivieren Sie _Network Performance and Map_ über den Menüpunkt „Bereitstellung ändern“ des Kubernetes Collectors.
+
+
+
+=== Betriebssystemunterstützung
+
+Zusätzlich zu diesen werden die folgenden Betriebssysteme mit Cloud Insights Acquisition Units unterstützt link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["Unterstützung bereits vorhanden"]:
+
+* Oracle Enterprise Linux 8.8
+* Red Hat Enterprise Linux 8.8
+* Rocky 9.3
+* OpenSUSE Leap 15.1 bis 15.5
+* SUSE Enterprise Linux Server 15, 15 SP2 bis 15 SP5
+
+
+'''
+
+
 == März 2024
 
 
@@ -93,7 +117,7 @@ image:RelatedLogsTable.png["Zugehörige Protokolle auf einer Landing Page für P
 
 === ONTAP-Switch-Daten erfassen
 
-Cloud Insights kann Daten von den Back-End-Switches des ONTAP Systems erfassen; aktivieren Sie einfach die Erfassung im Abschnitt „_Advanced Configuration_ “ des Datensammlers und stellen Sie sicher, dass das ONTAP-System so konfiguriert ist, dass es bereitgestellt wird link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["Switch-Informationen"] Und hat das entsprechende <<a-note-about-permissions,Berechtigungen>> Einstellen.
+Cloud Insights kann Daten von den Back-End-Switches des ONTAP Systems erfassen; aktivieren Sie einfach die Erfassung im Abschnitt „_Advanced Configuration_ “ des Datensammlers und stellen Sie sicher, dass das ONTAP-System so konfiguriert ist, dass es bereitgestellt wird link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["Switch-Informationen"] Und hat das entsprechende link:task_dc_na_cdot.html#a-note-about-permissions["Berechtigungen"] Einstellen.
 
 
 
@@ -116,7 +140,7 @@ Zusätzlich zu Ihrer ersten Testversion von Cloud Insights können Sie von diese
 
 === Wie gut sind meine Workloads?
 
-Der Workload-Status ist auf der Seite *Kubernetes > Explore > Workloads* auf einen Blick verfügbar. So können Sie schnell erkennen, welche Workloads eine gute Performance aufweisen und welche Unterstützung benötigen.
+Der Workload-Status ist auf der Seite *Kubernetes > Explore > Workloads* auf einen Blick verfügbar. So können Sie schnell erkennen, welche Workloads eine gute Performance aufweisen und welche Unterstützung benötigen. Erkennen Sie auf einfache Weise, ob das Integritätsproblem mit Infrastruktur-, Netzwerk- oder Konfigurationsänderungen zusammenhängt, und analysieren Sie die Ursache im Detail.
 
 image:WorkloadHealth.png["Workload-Status auf einen Blick"]
 
