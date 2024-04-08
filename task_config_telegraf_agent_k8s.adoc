@@ -1,21 +1,18 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
-keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
+keywords: kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
 summary: Der NetApp Kubernetes Monitoring Operator erfasst Kubernetes-Daten zur Verwendung in Cloud Insights. 
 ---
-= Konfiguration des NetApp Kubernetes Monitoring Operator
-:toc: macro
+= Installation und Konfiguration des Kubernetes Monitoring Operator
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :toclevels: 2
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -35,7 +32,7 @@ Der Betreiber und die Datensammler werden von der Cloud Insights Docker Registry
 == Vor der Installation des NetApp Kubernetes Monitoring Operator
 
 
-IMPORTANT: Lesen Sie die link:pre-requisites_for_k8s_operator.html["*Vor der Installation oder Aktualisierung*"] Dokumentation vor der Installation oder dem Upgrade des NetApp Kubernetes Monitoring Operator.
+IMPORTANT: Lesen Sie die link:pre-requisites_for_k8s_operator.html["*Vor der Installation oder Aktualisierung*"] Dokumentation der Voraussetzungen, bevor Sie den NetApp Kubernetes Monitoring Operator installieren oder aktualisieren.
 
 
 

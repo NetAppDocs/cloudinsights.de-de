@@ -2492,7 +2492,6 @@
   <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights stellt neue Features und Funktionen auf _Preview_ Weise vor. Die Vorschaufunktionen werden in begrenzten Umgebungen oder mit begrenzter Kapazität verfügbar gemacht.</block>
   <block id="2240ee7d4e56b8ba7ac49b14311cdeed" category="inline-link-macro">NetApp Vertriebsteam</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">Wenn Sie eine oder mehrere dieser Funktionen anzeigen möchten, wenden Sie sich an Ihren <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
-  <block id="ccb06b64aa7e8cb6a869d22deb1de8bd" category="summary">Kubernetes-Konfiguration für den Data Collector</block>
   <block id="5c7f848c8021f50b6420b0c983ceafd0" category="doc">Kubernetes Data Collector</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">Cloud Insights verwendet diese Datensammler, um Kubernetes Pod, Node und Container-Kennzahlen zu erfassen.</block>
   <block id="9a3185d3dd699a74f8c315584250a80c" category="inline-link-macro">Agenteninstallation</block>
@@ -5278,7 +5277,6 @@
   <block id="53de6191c5a3773a175198e9140b6c2b" category="cell">Name der Namespace-Hostname-Datenbank</block>
   <block id="d5712dd84650ff1cb4915da1c121ffbb" category="paragraph">Informationen können im gefunden werden <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> Seite.</block>
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights unterstützt Telegraf als Agent bei der Erfassung von Integrationsdaten in Kubernetes.</block>
-  <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">Konfiguration des NetApp Kubernetes Monitoring Operator</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights bietet die Sammlung *NetApp Kubernetes Monitoring Operator* (NKMO) für Kubernetes an. Wählen Sie beim Hinzufügen eines Datensammlers einfach die Kachel „Kubernetes“.</block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">Vor der Installation des NetApp Kubernetes Monitoring Operator</block>
@@ -12434,7 +12432,6 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
   <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">Bearbeiten Sie _Operator-additional-permissions.yaml_ vor der Installation oder nach der Installation bearbeiten Sie die Ressource _ClusterRole/&lt;namespace&gt;-additional-permissions_</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">Erstellen Sie eine neue Regel für die gewünschten apiGroups und Ressourcen mit den Verben ["get", "watch", "list"]. Siehe \https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">Übernehmen Sie die Änderungen auf das Cluster</block>
-  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">Lesen Sie die <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Dokumentation vor der Installation oder dem Upgrade des NetApp Kubernetes Monitoring Operator.</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">Ich vermisse _involvedobject_ Daten für einige Event Logs.</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">Stellen Sie sicher, dass Sie die Schritte im befolgt haben <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> Abschnitt oben.</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">Modulversuche</block>
@@ -13097,4 +13094,8 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">Informationen zur Installation auf Kubernetes finden Sie im <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> Seite.</block>
   <block id="ed300e62408d01715c593931df6a2352" category="paragraph">Eine Anleitung zur Kubernetes Installation finden Sie im <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> Seite.</block>
   <block id="9475d89ab72707a841c177322d6462fa" category="summary">Der NetApp Kubernetes Monitoring Operator erfasst Kubernetes-Daten zur Verwendung in Cloud Insights.</block>
+  <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">Datensammler für Kubernetes</block>
+  <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector: Kubernetes</block>
+  <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Installation und Konfiguration des Kubernetes Monitoring Operator</block>
+  <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">Lesen Sie die <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Dokumentation der Voraussetzungen, bevor Sie den NetApp Kubernetes Monitoring Operator installieren oder aktualisieren.</block>
 </blocks>
