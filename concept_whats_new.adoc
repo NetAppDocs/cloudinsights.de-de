@@ -26,9 +26,12 @@ NOTE: Einige dieser Funktionen sind möglicherweise nicht in der Cloud Insights 
 
 
 
-=== ISCSI-Volume-Latenz
+=== ISCSI SAN-Unterstützung für Kubernetes-Netzwerkzuordnung
 
-Metriken für die iSCSI-Volume-Latenz stehen in Dashboards, Warnmeldungen und mehr zur Verfügung. Um iSCSI-Latenzmetriken zu erfassen, aktivieren Sie _Network Performance and Map_ über den Menüpunkt „Bereitstellung ändern“ des Kubernetes Collectors.
+Ermitteln Sie die zugrunde liegenden Kubernetes Storage-Abhängigkeiten für NFS und jetzt auch iSCSI.
+Beschleunigen Sie die Problemlösung, indem Sie Einblicke in die Storage-Netzwerkaktivitäten der Kubernetes-Applikation und in nicht abgegrenzte Storage-Kennzahlen gewinnen. Informieren Sie sich darüber, wie die Kubernetes-Applikation die Storage-Infrastruktur für Chargeback- und Showback-Berichte nutzt.
+
+image:pod-to-storage.png["Beispiel: Pod-zu-Storage"]
 
 
 

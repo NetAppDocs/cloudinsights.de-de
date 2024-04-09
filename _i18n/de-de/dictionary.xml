@@ -13082,8 +13082,6 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
  Sudo semanage fcontext -a -t usr_t "/opt/netapp/Cloudinsights(/.*)?“
  Sudo restorecon -R /opt/netapp/Cloud Insights</block>
   <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">April 2024</block>
-  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">ISCSI-Volume-Latenz</block>
-  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">Metriken für die iSCSI-Volume-Latenz stehen in Dashboards, Warnmeldungen und mehr zur Verfügung. Um iSCSI-Latenzmetriken zu erfassen, aktivieren Sie _Network Performance and Map_ über den Menüpunkt „Bereitstellung ändern“ des Kubernetes Collectors.</block>
   <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
   <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
   <block id="c3571084e6793888922121d12a2dca13" category="list-text">Rocky 9.3</block>
@@ -13098,4 +13096,9 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector: Kubernetes</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Installation und Konfiguration des Kubernetes Monitoring Operator</block>
   <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">Lesen Sie die <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> Dokumentation der Voraussetzungen, bevor Sie den NetApp Kubernetes Monitoring Operator installieren oder aktualisieren.</block>
+  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">ISCSI SAN-Unterstützung für Kubernetes-Netzwerkzuordnung</block>
+  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">Ermitteln Sie die zugrunde liegenden Kubernetes Storage-Abhängigkeiten für NFS und jetzt auch iSCSI.
+Beschleunigen Sie die Problemlösung, indem Sie Einblicke in die Storage-Netzwerkaktivitäten der Kubernetes-Applikation und in nicht abgegrenzte Storage-Kennzahlen gewinnen. Informieren Sie sich darüber, wie die Kubernetes-Applikation die Storage-Infrastruktur für Chargeback- und Showback-Berichte nutzt.</block>
+  <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">Beispiel: Pod-zu-Storage</block>
+  <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
