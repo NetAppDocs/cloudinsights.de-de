@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_kubernetes_network_monitoring_and_map.html 
-keywords: service map, workloads, Kubernetes, 
+keywords: service map, workloads, 
 summary: Präsentiert Abhängigkeiten und Datenflüsse von Kubernetes-Workloads und hebt Netzwerk- und Performance-Probleme hervor 
 ---
 = Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks
@@ -19,10 +19,8 @@ summary: Präsentiert Abhängigkeiten und Datenflüsse von Kubernetes-Workloads 
 
 
 [role="lead"]
-Die Kubernetes Funktion zur Überwachung und Zuordnung der Netzwerk-Performance vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Kubernetes-Services (auch Workloads genannt). Es bietet Echtzeiteinblicke in Latenzen und Anomalien bei der Kubernetes-Netzwerk-Performance, um Performance-Probleme zu identifizieren, bevor sie sich auf die Benutzer auswirken. Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
-
-
-NOTE: Die Performance-Überwachung und -Zuordnung des Kubernetes-Netzwerks ist eine link:concept_preview_features.html["Vorschau"] Und kann sich ändern.
+Die Kubernetes Network Performance Monitoring and Map Funktion vereinfacht die Fehlerbehebung durch die Zuordnung von Abhängigkeiten zwischen Services (auch Workloads genannt). Sie bietet Echtzeiteinblick in Latenzen und Anomalien bei der Netzwerk-Performance. So können Performance-Probleme erkannt werden, bevor sie sich auf die Benutzer auswirken.
+Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traffic-Flows die Gesamtkosten zu senken.
 
 Die wichtigsten Funktionen • die Workload-Map präsentiert Kubernetes-Workload-Abhängigkeiten und -Abläufe und hebt Netzwerk- und Performance-Probleme hervor. • Monitoring des Netzwerkverkehrs zwischen Kubernetes-Pods, Workloads und Nodes; Ermittlung der Quelle von Traffic- und Latenzproblemen • Senkung der Gesamtkosten durch Analyse des Ingress-, Egress-, Regions- und zonenübergreifenden Netzwerk-Traffics.
 
