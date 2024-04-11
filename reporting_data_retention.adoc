@@ -51,7 +51,7 @@ Cloud Insights speichert Verlaufsdaten für die Verwendung in Berichten basieren
 | Performance Marts | Storage-Node | Täglich | 13 Monaten 
 
 
-| Performance Marts | VM-Performance | Stündlich | 35 Tage 
+| Performance Marts | VM-Performance | Stündlich | 14 Tage 
 
 
 | Performance Marts | VM-Performance | Täglich | 13 Monaten 
