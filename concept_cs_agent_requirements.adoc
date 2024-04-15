@@ -119,8 +119,6 @@ Für * APAC-basierte * -Arbeitsumgebungen:
 
 == Netzwerkregeln
 
-Beachten Sie, dass beim Hinzufügen von _link:task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip["CSuser"]_, dieser Benutzer benötigt SSH-Zugriff auf die ONTAP Management-LIF.
-
 [cols="5*"]
 |===
 | Protokoll | Port | Quelle | Ziel | Beschreibung 
