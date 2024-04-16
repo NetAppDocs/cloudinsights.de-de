@@ -8392,8 +8392,6 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">Bei Verwendung der Service-Policy aus ONTAP Version 9.9.1, um eine Verbindung zum Datenquellensammler herzustellen, ist der Dienst _Data-fpolicy-Client_ zusammen mit dem Datendienst _Data-nfs_ und/oder _Data-cifs_ erforderlich.</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">In Versionen von ONTAP vor 9.9 muss _Data-fpolicy-Client_ nicht gesetzt werden.</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">Hinweis: Wenn Sie die neueste Installation von NetApp Kubernetes Monitoring Operator und ein erneuerbares API-Zugriffstoken verwenden, werden auslaufende Tokens automatisch durch neue/aktualisierte API-Zugriffs-Tokens ersetzt. Die unten aufgeführten manuellen Schritte müssen nicht ausgeführt werden.</block>
-  <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">CSuser</block>
-  <block id="a8f52a9563e47eb33fbdc4c48dfcf8f5" category="paragraph">Beachten Sie, dass beim Hinzufügen von _<block ref="d95c3cfe38a15370491721a373f38df2" category="inline-link-macro-rx"></block>_, dieser Benutzer benötigt SSH-Zugriff auf die ONTAP Management-LIF.</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">Dell EMC Unisphere REST Data Collector konfigurieren.</block>
   <block id="35c1883b40d011465b36533e553b9174" category="doc">Konfigurieren des Dell EMC Unisphere REST-Datensammlers</block>
   <block id="0dd81cc00ee33beff836edf2f63e0184" category="list-text">Port 8443:</block>
@@ -13101,4 +13099,8 @@ Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traf
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Der Kubernetes Monitoring Operator erfasst Kubernetes-Daten zur Verwendung in Cloud Insights.</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">Der Kubernetes Operator und die Datensammler werden von der Cloud Insights Docker Registry heruntergeladen. Nach der Installation verwaltet der Operator dann alle Operator-kompatiblen Kollektoren, die in den Kubernetes-Cluster-Knoten bereitgestellt werden, um Daten zu erfassen, einschließlich der Verwaltung des Lebenszyklus dieser Kollektoren. Nach dieser Kette werden die Daten von den Sammlern erfasst und an Cloud Insights gesendet.</block>
   <block id="99caa80e6c446108c367beb2add705b3" category="list-text">In mandantenfähigen Umgebungen können Ausfälle aufgrund falsch konfigurierter Änderungen auftreten. In sehr dynamischen Umgebungen ist Cloud Insights Change Analytics möglicherweise nicht in der Lage, alle Änderungen ordnungsgemäß zu verfolgen.</block>
+  <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">Berechtigungen für ONTAP ARP-Integration:</block>
+  <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">Berechtigungen für ONTAP-Zugriff verweigert:</block>
+  <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">Hinweis: Wenn eine Rest-Rolle bereits hinzugefügt wurde ---- entweder _arwrole_ oder _csrestrole_--, muss keine zweite Rest-Rolle hinzugefügt werden. Sie können die API-Berechtigungen einfach hinzufügen, wie im Beispiel unten gezeigt.</block>
+  <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">Beispiel: _Csrestrole_ ist bereits vorhanden, daher müssen wir nur den Anti-Ransomware-Schutz aktivieren und API-Berechtigungen an die bestehende _csrestrole_ vergeben:</block>
 </blocks>
