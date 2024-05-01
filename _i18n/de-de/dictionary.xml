@@ -13106,4 +13106,11 @@ Diese Funktion hilft Unternehmen, durch Analyse und Prüfung des Kubernetes-Traf
   <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">Ich sehe die Meldung „Heartbeat Error:“</block>
   <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">Bei der Neuinstallation der Acquisition Unit sehe ich „ValueError: Dateikontext für /opt/netapp/Cloudinsights(/.*)? Bereits definiert“.</block>
   <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">Auf einem System mit SELinux wird möglicherweise nach dieser Fehlermeldung angezeigt<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> Wurde ausgeführt und die Erfassungseinheit muss neu installiert werden. Ausführen des Befehls<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> Sollte das Problem beheben und die Meldung entfernen.</block>
+  <block id="ae2e91be06ba70b73fa6c74eeeb93115" category="section-title">Veraltete Funktionalität</block>
+  <block id="4b19ce62e1686c6b02dce6a6a618fab8" category="paragraph">Gelegentlich ist die Funktionalität veraltet, wenn sich Funktionen entwickeln. Hier sind einige der Features und Funktionalitäten, die in Cloud Insights veraltet sind:</block>
+  <block id="f10826ff9826bc53b76b340699d7486c" category="section-title">Workload Secure REST cloudSecure_forensics.activities.v1 API ist veraltet</block>
+  <block id="22e1977c2373212d5a86d5500fb987b6" category="paragraph">Die _cloudSecure_forensics.activities.v1_ API ist veraltet. Diese API gibt Informationen zu Aktivitäten zurück, die mit Entitäten in der Storage Workload Security-Umgebung verknüpft sind. Diese API wurde durch cloudSecure_forensics.activities ersetzt.*v2*_.</block>
+  <block id="2f536f055cc49f30b2b045622c25fdbc" category="paragraph">GET für diese API hat zuvor Folgendes zurückgegeben:</block>
+  <block id="4d50bab3a705e7ae04c75813a7d22ad2" category="paragraph">Diese API gibt jetzt Folgendes zurück:</block>
+  <block id="c124771302bfe76ccd178d7854d906f5" category="paragraph">Weitere Informationen finden Sie in der Dokumentation von Swagger unter „Admin &gt; API-Zugriff &gt; API-Dokumentation &gt; Workload-Sicherheit“.</block>
 </blocks>
