@@ -60,7 +60,10 @@ Hier finden Sie Vorschläge zur Fehlerbehebung bei Problemen mit Akquisitionsein
 | Status: Herzschlag Fehlgeschlagen | Die Acquisition Unit (AU) sendet alle 60 Sekunden einen Herzschlag an Cloud Insights, um den Mietvertrag zu verlängern. Wenn der Heartbeat-Anruf aufgrund eines Netzwerkproblems oder aufgrund von nicht reagierenden Cloud Insights fehlschlägt, wird die Leasing-Zeit der AU nicht aktualisiert. Wenn die Leasingzeit der AU abläuft, zeigt Cloud Insights den Status „Heartbeat failed“ an. Schritte zur Fehlerbehebung: Prüfen Sie die Netzwerkverbindung zwischen dem Server der Akquisitionseinheit und CloudInsights. Prüfen Sie, ob der Dienst für die Erfassungseinheit ausgeführt wird. Wenn der Dienst nicht ausgeführt wird, starten Sie den Dienst. Überprüfen Sie im Log der Acquisition Unit (/var/log/netapp/nebinsights/acq/acq.log), ob Fehler aufgetreten sind. 
 
 
-| Ich sehe eine Meldung „Heartbeat Error:“ | Dieser Fehler kann auftreten, wenn eine Netzwerkunterbrechung vorliegt, die dazu führt, dass die Kommunikation zwischen der Erfassungseinheit und der Cloud Insights-Umgebung länger als eine Minute unterbrochen wird. Stellen Sie sicher, dass die Verbindung zwischen AU und Cloud Insights stabil und aktiv ist. 
+| Ich sehe die Meldung „Heartbeat Error:“ | Dieser Fehler kann auftreten, wenn eine Netzwerkunterbrechung vorliegt, die dazu führt, dass die Kommunikation zwischen der Erfassungseinheit und der Cloud Insights-Umgebung länger als eine Minute unterbrochen wird. Stellen Sie sicher, dass die Verbindung zwischen AU und Cloud Insights stabil und aktiv ist. 
+
+
+| Bei der Neuinstallation der Acquisition Unit sehe ich „ValueError: Dateikontext für /opt/netapp/Cloudinsights(/.*)? Bereits definiert“. | Auf einem System mit SELinux wird möglicherweise nach dieser Fehlermeldung angezeigt `cloudinsights-uninstall.sh -p` Wurde ausgeführt und die Erfassungseinheit muss neu installiert werden. Ausführen des Befehls `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"` Sollte das Problem beheben und die Meldung entfernen. 
 |===
 
 
