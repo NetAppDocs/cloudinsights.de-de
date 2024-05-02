@@ -247,6 +247,9 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_dc_na_cdot.html["NetApp ONTAP Datenmanagement-Software"] | Infrastruktur 
 
 
+| link:task_dc_na_ontap_rest.html["NetApp ONTAP-REST-Kollektor "] | Infrastruktur 
+
+
 | link:task_dc_na_cdot.html["NetApp ONTAP Select"] | Infrastruktur 
 
 
