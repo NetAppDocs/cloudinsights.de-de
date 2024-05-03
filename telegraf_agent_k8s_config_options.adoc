@@ -179,6 +179,9 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
 |  | Ereignis-Exporteur-Tolerationen | Ereignis-Exporteur zusätzliche Toleranzen. 
 
 
+|  | Event-Exporteur-maxEventAgeSeconds | Ereignis-Exporteur max. Ereignisalter.  Siehe https://github.com/jkroepke/resmoio-kubernetes-event-exporter[] 
+
+
 | Workload-Zuordnung |  | Konfigurationsoptionen, mit denen die Erfassung der Workload-Zuordnung und die Installation des Operators angepasst werden können 
 
 
@@ -391,6 +394,10 @@ spec:
     # # Example: '{key: taint1, operator: Exists, effect: NoSchedule},{key: taint2, operator: Exists, effect: NoExecute}'
     # fluent-bit-tolerations: ''
     # event-exporter-tolerations: ''
+
+    # # event-exporter max event age.
+    # # See https://github.com/jkroepke/resmoio-kubernetes-event-exporter
+    # event-exporter-maxEventAgeSeconds: '10'
 
   # # Settings for the Network Performance and Map feature.
   # workload-map:
