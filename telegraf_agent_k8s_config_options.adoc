@@ -87,15 +87,6 @@ Proxy:
 |  | RsMemRequest | Speicheranforderung für telegraf rs 
 
 
-|  | DockerMountPoint | Eine Überschreibung für dockerMountPoint-Pfad. Dies gilt für nicht standardmäßige Docker-Installationen auf K8s-Plattformen wie Cloud Foundry 
-
-
-|  | DockerUnixSocket | Eine Überschreibung für dockerUnixSocket-Pfad. Dies gilt für nicht standardmäßige Docker-Installationen auf K8s-Plattformen wie Cloud Foundry. 
-
-
-|  | CrioSockPath | Eine Überschreibung für crioSockPath-Pfad. Dies gilt für nicht standardmäßige Docker-Installationen auf K8s-Plattformen wie Cloud Foundry. 
-
-
 |  | RunPrivileged | Führen Sie den telegraf Container im privilegierten Modus aus. Setzen Sie diese Einstellung auf TRUE, wenn SELinux auf Ihren K8s-Knoten aktiviert ist 
 
 
@@ -121,9 +112,6 @@ Proxy:
 
 
 |  | AusgabeTimeout | Siehe link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf-Konfigurationsdokumentation"] 
-
-
-|  | DockerMetricCollectionEnabled | Erfassen von Docker-Kennzahlen Standardmäßig ist dieser Wert auf „true“ gesetzt, und Docker-Kennzahlen werden für lokale, Docker-basierte K8s-Bereitstellungen erfasst. Um die Erfassung der Docker-Metrik zu deaktivieren, setzen Sie diese auf FALSE. 
 
 
 |  | DsToleranzen | telegraf-ds zusätzliche Toleranzen. 
