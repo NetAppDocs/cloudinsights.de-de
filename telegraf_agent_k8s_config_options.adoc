@@ -4,7 +4,7 @@ permalink: telegraf_agent_k8s_config_options.html
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s, options, configuration 
 summary: Der NetApp Kubernetes Monitoring Operator verfügt über eine Reihe konfigurierbarer Optionen. 
 ---
-= Konfigurationsoptionen für NetApp Kubernetes Monitoring Operator
+= Konfigurationsoptionen Für Kubernetes Monitoring Operator
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,9 +19,9 @@ summary: Der NetApp Kubernetes Monitoring Operator verfügt über eine Reihe kon
 
 
 [role="lead"]
-Der link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] Installation und Konfiguration können individuell angepasst werden.
+Der link:task_config_telegraf_agent_k8s.html#configuringcustomizing-the-operator["Kubernetes Monitoring Operator"] Die Konfiguration kann angepasst werden.
 
-In der folgenden Tabelle sind die möglichen Optionen für die AgentConfiguration-Datei aufgeführt:
+In der folgenden Tabelle sind die möglichen Optionen für die _AgentConfiguration_-Datei aufgeführt:
 
 [cols="1,1,2"]
 |===
@@ -244,7 +244,7 @@ Beispiel: '{key: Taint1, Operator: Existiert, Effekt: NoSchedule},{key: Taint2, 
 
 == Beispieldatei für AgentConfiguration
 
-Unten finden Sie eine Beispieldatei für AgentConfiguration.
+Unten finden Sie eine _AgentConfiguration_-Beispieldatei.
 
 [listing]
 ----

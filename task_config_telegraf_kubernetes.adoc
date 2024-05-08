@@ -26,41 +26,29 @@ Eine Anleitung zur Kubernetes Installation finden Sie im link:task_config_telegr
 
 
 
-== Objekte und Zähler
+== Über Kube-State-Metrics
 
-Folgende Objekte und ihre Zähler werden gesammelt:
-
-[cols="<.<,<.<,<.<,<.<"]
-|===
-| Objekt: | Kennungen: | Attribute: | Datenpunkte: 
+Der Kubernetes Monitoring Operator installiert kube-State-Metriken automatisch. Es ist keine Benutzerinteraktion erforderlich.
 
 
-| Kubernetes Container | Namespace Pod Container-Cluster | Kubernetes Node Node Name Node OS Node UUID Node IP | CPU-Nanosekunden CPU-Nutzung Nanocores Speicher Hauptfehler Speichergröße (RSS) Arbeitsspeicher Arbeitsdatensatz Fehler Speichernutzung Root-Dateisystem verwendetes Root-Dateisystem-Root-Root-Dateisystem 
+
+=== kube-State-Metrics Counters
+
+Verwenden Sie die folgenden Links, um auf Informationen zu diesen kube State-Metriken zuzugreifen:
+
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["Kennzahlen für die Konfigmap"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet Metrics"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["Implementierungsmetriken"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["Ingress Metrics"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["Namespace-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["Node-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["Persistente Volume-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["Kenngrößen Für Die Forderung Im Persistenten Volume"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Pod-Metriken"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["Kennzahlen für ReplicaSet"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["Geheimkennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["Service-Kennzahlen"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatfulSet-Kennzahlen"]
 
 
-| Kubernetes Node | Kubernetes Node-Cluster | Node Name Node OS Node UUID Node IP | CPU-Nutzung Nanozores CPU-Nutzung Nanosekunden Dateisystem verfügbares Dateisystem verwendeter Speicher verfügbarer Speicher Hauptfehler Speicherseite Fehler Speicher Resident Set Größe (RSS) Arbeitsspeicher Arbeitsdatensatz Netzwerk RX-Fehler (pro Sekunde) Netzwerk RX Bytes (pro Sekunde) Netzwerk TX-Fehler (pro Sekunde) Netzwerk TX Bytes (Per sec) Runtime Image Filesystem Available Runtime Image Filesystem used Runtime Image Filesystem Capacity 
-
-
-| Kubernetes Pod | Namespace Pod Cluster | Kubernetes Node Node Name Node-IP Node OS Node UUID | Netzwerk-TX Bytes (pro s) Netzwerk-TX-Fehler (pro Sek.) Netzwerk RX-Fehler (pro Sek.) Netzwerk RX-Fehler (pro Sek.) 
-
-
-| Kubernetes Pod Volume | Volume Pod Cluster Namespace | Kubernetes Node Node Name Node UUID Node IP Node OS | Genutzte Verfügbare Kapazität 
-
-
-| Kubernetes System-Container | System-Container-Kubernetes Node-Cluster | Node Name Node-IP Node-OS-Node-UUID | CPU-Nutzung Nanozores CPU-Nutzung Kern-Nanosekunden Speicher Hauptfehler Speicherseite Fehler Speicher Resident Set Größe (RSS) Speichernutzung Arbeitsspeicher Arbeitsdatensatz Satz Root-Dateisystem verfügbar Root-Dateisystem Kapazität Logs Dateisystem Verfügbare Protokolle Dateisystem-Kapazität 
-|===
-
-
-== Fehlerbehebung
-
-[cols="2*"]
-|===
-| Problem: | Versuchen Sie dies: 
-
-
-| Ich habe den Kubernetes Agent Installer-Befehl ausgeführt, aber ich sehe keinen Telegraf Agent POD unter: Sudo kubectl --Namespace CI-Monitoring get Pods | Prüfen Sie, ob bei der Bereitstellung des DemonSet Fehler aufgetreten sind: Sudo kubectl --Namespace CI-Monitoring Beschreiben ds telegraf-ds Wenn es Fehler mit SecurityContextConstraint gibt, gehen Sie folgendermaßen vor: 1. Telegraf DemonSet YAML sudo kubectl --Namespace CI-Monitoring get ds telegraf-ds -o yaml > /tmp/telegraf-ds.yaml 2. Stop the Telegraf Service sudo kubectl --Namespace CI-Monitoring delete ds telegraf-ds 3. Erstellen Sie die erforderliche SicherheitContextConstraint (siehe Abschnitt „Agent für die Datenermittlung konfigurieren“) 4. Erstellen Sie das Telegraf DemonSet erneut 
-
-
-| Ich habe Telegraf so konfiguriert, dass er Informationen über meinen Kubernetes Cluster erhält, aber in Cloud Insights sind keine Informationen zu finden. Ich sehe „Ungültige Header field value“ Fehler in der Telegraf log Datei, die sich auf das kubernetes Input Plugin beziehen, das ich konfiguriert habe. | Stellen Sie sicher, dass die referenzierte Inhabertoken-Datei keine nachgestellte Newline hat. Führen Sie zum Überprüfen den folgenden Befehl aus, und bestätigen Sie, dass er 0: Tail -c1 <Bearer_Token_file> zurückgibt 
-|===
-Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Seite.
+'''
