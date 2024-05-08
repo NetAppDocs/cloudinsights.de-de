@@ -21,10 +21,10 @@ summary: Das Verfolgen von Kubernetes-Änderungen ist einfacher denn je.
 [role="lead"]
 Kubernetes Change Analytics bietet Ihnen einen All-in-One-Überblick über die letzten Änderungen an Ihrer K8s-Umgebung. Warnmeldungen und Bereitstellungsstatus stehen Ihnen jederzeit zur Verfügung. Mit Change Analytics lassen sich jede Implementierungs- und Konfigurationsänderung nachverfolgen und mit dem Zustand und der Performance von Kubernetes-Services, Infrastruktur und Clustern korrelieren.
 
-Beachten Sie Folgendes:
+Wie hilft die Änderungsanalyse?
 
-* In mandantenfähigen Umgebungen können Ausfälle aufgrund falsch konfigurierter Änderungen auftreten. In sehr dynamischen Umgebungen ist Cloud Insights Change Analytics möglicherweise nicht in der Lage, alle Änderungen ordnungsgemäß zu verfolgen.
-* Change Analytics bietet ein zentrales Fenster zum Anzeigen und Korrelieren des Zustands von Workloads und Konfigurationsänderungen. Dies kann bei der Fehlerbehebung in dynamischen Umgebungen hilfreich sein.
+* In mandantenfähigen Kubernetes-Umgebungen können Ausfälle aufgrund falsch konfigurierter Änderungen auftreten. In sehr dynamischen Umgebungen ist die Überwachung der Cloud Insights-Infrastruktur möglicherweise nicht in der Lage, alle Änderungen ordnungsgemäß zu verfolgen.
+* Change Analytics unterstützt dies durch die Bereitstellung eines zentralen Fensters zur Ansicht und Korrelation des Systemzustands von Workloads und Konfigurationsänderungen. Dies kann bei der Fehlerbehebung in dynamischen Kubernetes-Umgebungen helfen.
 
 
 Um Kubernetes Change Analytics anzuzeigen, navigieren Sie zu *Kubernetes > Change Analysis*.
