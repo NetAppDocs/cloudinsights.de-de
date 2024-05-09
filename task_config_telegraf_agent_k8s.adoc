@@ -165,7 +165,11 @@ Informationen über Kube-State-Metrics finden Sie unter link:task_config_telegra
 
 Diese Abschnitte enthalten Informationen zur Anpassung Ihrer Bedienerkonfiguration, zur Arbeit mit Proxy, zur Verwendung eines benutzerdefinierten oder privaten Docker-Repositorys oder zur Arbeit mit OpenShift.
 
-In neueren Versionen des Operators können die am häufigsten geänderten Einstellungen in der benutzerdefinierten Ressource _AgentConfiguration_ konfiguriert werden. Sie können diese Ressource bearbeiten, bevor Sie den Operator bereitstellen, indem Sie die Datei _Operator-config.yaml_ bearbeiten. Diese Datei enthält kommentierte Beispiele für Einstellungen. Siehe Liste von link:telegraf_agent_k8s_config_options.html["Verfügbare Einstellungen"] Für die neueste Version des Bedieners.
+
+
+=== Konfigurationsoptionen
+
+Die am häufigsten geänderten Einstellungen können in der benutzerdefinierten Ressource _AgentConfiguration_ konfiguriert werden. Sie können diese Ressource bearbeiten, bevor Sie den Operator bereitstellen, indem Sie die Datei _Operator-config.yaml_ bearbeiten. Diese Datei enthält kommentierte Beispiele für Einstellungen. Siehe Liste von link:telegraf_agent_k8s_config_options.html["Verfügbare Einstellungen"] Für die neueste Version des Bedieners.
 
 Sie können diese Ressource auch bearbeiten, nachdem der Operator bereitgestellt wurde, indem Sie den folgenden Befehl verwenden:
 
