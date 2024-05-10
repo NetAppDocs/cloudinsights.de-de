@@ -130,6 +130,12 @@ Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses 
 
 
 
+=== Berechtigungsanforderungen für das Sammeln von ONTAP-Switch-Metriken
+
+Cloud Insights kann ONTAP-Cluster-Switch-Daten als Option in den Collectors erfassen <<advanced-configuration,Erweiterte Konfiguration>> Einstellungen. Zusätzlich zur Aktivierung auf dem Cloud Insights-Collector müssen Sie auch *das ONTAP-System* selbst konfigurieren, um diese bereitzustellen link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["Switch-Informationen"]Und sorgen Sie für die richtige <<a-note-about-permissions,Berechtigungen>> Werden eingestellt, um die Switch-Daten an Cloud Insights senden zu können.
+
+
+
 == Konfiguration
 
 [cols="2*"]
