@@ -51,6 +51,8 @@ Zur Konfiguration dieses Datensammlers sind folgende Voraussetzungen erforderlic
 * Die Cloud Insights-Erfassungseinheit initiiert Verbindungen zum TCP-Port 443 zum Cluster Rubrik. Ein Collector pro Cluster.
 * IP-Adresse des Rubrik Clusters.
 * Benutzername und Passwort für das Cluster.
+* Rubrik Cluster IP-Adresse oder Hostname.
+* Für die Basisauthentifizierung müssen ein Benutzername und ein Passwort für das Cluster eingegeben werden. Wenn Sie die Service Account-basierte Authentifizierung bevorzugen, benötigen Sie ein Dienstkonto, einen geheimen Schlüssel und eine Unternehmens-ID
 * Port-Anforderung: HTTPS 443
 
 
