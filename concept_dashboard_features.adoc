@@ -29,7 +29,7 @@ toc::[]
 
 Widgets werden automatisch auf der Grundlage des für die erste Widget-Abfrage ausgewählten Objekts, der Metrik oder des Attributs benannt. Wenn Sie auch eine Gruppierung für das Widget auswählen, werden die Attribute „Gruppieren nach“ in die automatische Benennung (Aggregationsmethode und Metrik) aufgenommen.
 
-image:WidgetNameExample.png["Beispiel Für Die Benennung Von Widget"]
+image:WidgetNamingExample-C.png["Beispiel Für Die Benennung Von Widget"]
 
 Durch Auswahl eines neuen Objekts oder Gruppierungsattributs wird der automatische Name aktualisiert.
 
@@ -231,7 +231,7 @@ Die in einem Widget angezeigten Daten werden aus den zugrunde liegenden Datenpun
 * *Maximum*: Zeigt jede Zeile als _Maximum_ der zugrunde liegenden Daten an.
 * *Minimum*: Zeigt jede Zeile als _minimum_ der zugrunde liegenden Daten an.
 * *Sum*: Zeigt jede Zeile als die _Summe_ der zugrunde liegenden Daten an.
-* *Anzahl*: Zeigt eine _Anzahl_ von Objekten an, die Daten innerhalb des angegebenen Zeitrahmens gemeldet haben. Sie können das „_gesamte Zeitfenster_“ auswählen, das durch den Zeitbereich des Dashboards bestimmt wird (oder den Zeitbereich des Widgets, wenn die Dashboard-Zeit außer Kraft gesetzt wird), oder ein „_Custom Time Window_“, das Sie auswählen.
+* *Anzahl*: Zeigt eine _Anzahl_ von Objekten an, die Daten innerhalb des angegebenen Zeitrahmens gemeldet haben. Sie können das _gesamte Zeitfenster_ gemäß dem Zeitbereich des Dashboards auswählen.
 
 
 .Schritte
@@ -369,11 +369,13 @@ Im benutzerdefinierten Zeitbereich können Sie bis zu 31 aufeinander folgende Ta
 
 Sie können die Einstellung für den Hauptzeitbereich des Dashboards in den einzelnen Widgets überschreiben. Diese Widgets zeigen Daten basierend auf dem eingestellten Zeitrahmen an, nicht auf dem Zeitrahmen des Dashboards.
 
-Um die Dashboard-Zeit zu überschreiben und ein Widget zu zwingen, seinen eigenen Zeitrahmen zu verwenden, setzen Sie im Bearbeitungsmodus des Widgets die *Dashboard-Zeit überschreiben* auf *ein* (markieren Sie das Kästchen) und wählen Sie einen Zeitbereich für das Widget aus. * Speichern* das Widget auf dem Dashboard.
+Um die Dashboard-Zeit außer Kraft zu setzen und ein Widget dazu zu zwingen, seinen eigenen Zeitrahmen zu verwenden, wählen Sie im Bearbeitungsmodus des Widgets den deisired Zeitbereich aus, und speichern Sie das Widget im Dashboard.
 
 Das Widget zeigt seine Daten entsprechend dem dafür eingestellten Zeitrahmen an, unabhängig vom ausgewählten Zeitrahmen auf dem Dashboard selbst.
 
 Der Zeitrahmen, den Sie für ein Widget festlegen, hat keine Auswirkungen auf andere Widgets auf dem Dashboard.
+
+image:OverrideTimeOnWidget.png["Überschreiben des Dashboard-Zeitbereichs für ein Widget"]
 
 
 
@@ -748,7 +750,7 @@ Die folgende Tabelle zeigt alle verfügbaren Einheiten nach Kategorie.
 
 == TV-Modus und automatische Aktualisierung
 
-Die Daten in Widgets auf Dashboards und Asset Landing Pages werden automatisch aktualisiert, und zwar gemäß einem Aktualisierungsintervall, das durch den ausgewählten Zeitbereich des Dashboards bestimmt wird (oder wenn der Widget-Zeitbereich die Dashboard-Zeit außer Kraft setzt). Das Aktualisierungsintervall hängt davon ab, ob es sich bei dem Widget um Zeitreihen (Linie, Spline, Bereich, gestapelte Flächendiagramme) oder nicht-Zeitreihen (alle anderen Diagramme) handelt.
+Daten in Widgets auf Dashboards und Landing Pages von Assets werden automatisch aktualisiert, wenn ein Aktualisierungsintervall festgelegt wird, das vom ausgewählten Dashboard-Zeitbereich bestimmt wird. Das Aktualisierungsintervall hängt davon ab, ob es sich bei dem Widget um Zeitreihen (Linie, Spline, Bereich, gestapelte Flächendiagramme) oder nicht-Zeitreihen (alle anderen Diagramme) handelt.
 
 |===
 
