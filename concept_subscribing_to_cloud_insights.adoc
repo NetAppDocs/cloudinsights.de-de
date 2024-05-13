@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: Sie können Cloud Insights zu jedem Zeitpunkt während Ihrer kostenlosen Testversion abonnieren. 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
 ---
 = Abonnieren von Cloud Insights
 :toc: macro
@@ -69,27 +69,25 @@ Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Clo
 
 
 
-== Modulversuche
+== Modulbewertung
 
-Demnächst Hier!
-
-
-NOTE: Modultest gilt als Vorschau-Funktion und kann daher geändert werden.
-
-Zusätzlich zu Ihrer ersten Cloud Insights-Testversion können Sie auch *Modulversuche* nutzen. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes zu Ihrer Umgebung hinzufügen, können Sie automatisch eine 30-Tage-Testversion von Kubernetes Observability starten, sobald Sie den NetApp Kubernetes Monitoring Operator installieren. Ihnen wird am Ende des Testzeitraums nur die Nutzung Ihrer von Kubernetes Observability gemanagten Einheit in Rechnung gestellt.
+Sie können auch von *Module Evaluations* profitieren. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes zu Ihrer Umgebung hinzufügen, erhalten Sie automatisch eine 30-Tage-Evaluierung von Kubernetes Observability, beginnend mit der Installation des NetApp Kubernetes Monitoring Operator. Ihnen wird am Ende des Evaluierungszeitraums nur die Nutzung Ihrer Kubernetes Observability-gemanagten Einheit in Rechnung gestellt.
 
 
-NOTE: Denken Sie daran, dass Ihnen nach dem Testzeitraum eine Gebühr für die Nutzung neuer verwalteter Einheiten (Managed Unit, MU) berechnet wird. Planen Sie daher entsprechend. Wenn Ihre Modulversuchs beendet ist, werden Sie benachrichtigt, wenn Sie weitere Mus hinzufügen müssen, um Serviceunterbrechungen zu vermeiden.
+NOTE: Denken Sie daran, dass Ihnen nach der Bewertung die Kosten für die Verwendung neuer verwalteter Einheiten (Managed Unit, MU) in Rechnung gestellt werden. Planen Sie daher entsprechend. Wenn Ihre Modulbewertung beendet ist, werden Sie benachrichtigt, wenn Sie weitere Mus hinzufügen müssen, um Serviceunterbrechungen zu vermeiden.
 
 Sie können die Nutzung Ihrer verwalteten Einheit auf der Seite *Admin > Abonnement* auf der Registerkarte *Nutzung* überwachen.
 
 image:Module_Trials_UsageTab.png["Bildschirm „ME-Nutzung“"]
 
 
+NOTE: A _Module Evaluation_ ist kein _Trial_ - wir verwenden den Begriff Trial, wenn wir unseren Kunden eine kostenlose Testphase zur Nutzung des CI-Dienstes zur Bestätigung der Eignung und zum Aktivieren des Kaufs anbieten. Eine Modulbewertung ist anders. Hier können Kunden, die eine Zahlung erhalten haben, ein Modul von Cloud Insights ausprobieren, das sie in den letzten Monaten ihres bezahlten Abonnements nicht genutzt haben. Wenn die Evaluierung aktiv ist, werden die Kosten für das neu konfigurierte Modul aufgehoben. Die Arbeitsumgebung des Kunden ist noch nicht abonniert und hat sich nicht auf kostenlose Testversion zurückgesetzt. Das Abonnement hat sich nicht geändert.
+
+
 
 === Kalkulator
 
-Während einer Modulversuchs wird die ME-Nutzung für Ressourcen, die für das Modul verbraucht werden, nicht geändert. aber Sie können den *Estimator* (auf der _Summary_ Registerkarte) öffnen, um zu sehen, wie Mus nach der Testversion geladen werden, sowie mit "Was wäre wenn"-Szenarien mit der Anzahl der Mus spielen, die Sie in Zukunft benötigen. Setzen Sie die Zahlen zurück, indem Sie den Kalkulator beenden.
+Während einer Modulbewertung wird die ME-Auslastung für Ressourcen, die für das Modul verbraucht werden, nicht geändert. aber Sie können den *Estimator* (auf der _Summary_ Registerkarte) öffnen, um zu sehen, wie MUs nach der Auswertung berechnet werden, sowie mit "Was wäre wenn"-Szenarien mit der Anzahl der Mus spielen, die Sie in Zukunft benötigen. Setzen Sie die Zahlen zurück, indem Sie den Kalkulator beenden.
 
 image:Module_Trials_Estimator.png["Kalkulator"]
 
@@ -97,7 +95,7 @@ Aktivieren Sie das Kontrollkästchen neben einem Modul, um die gesamten ME des M
 
 Mit dem Kalkulator können Sie außerdem sehen, wie die Zahlen für ein Add-On, bei dem Sie Ihre aktuelle Abonnementdauer beibehalten und die Anzahl der lizenzierten verwalteten Einheiten erhöhen, oder für ein Verlängerungsabonnement, das Sie beim Kauf Ihres aktuellen Abonnements erwerben würden, gestapelt werden Laufzeit endet.
 
-Beachten Sie, dass Kunden nur einmal pro Abonnement für eine Modulversion berechtigt sind.
+Beachten Sie, dass Kunden nur einmal pro Abonnement für eine Modulbewertung berechtigt sind.
 
 
 
