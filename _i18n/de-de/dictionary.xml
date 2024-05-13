@@ -5615,7 +5615,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">Fehlerbehebung Bei Problemen Mit Der Linux-Erfassungseinheit</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">Fehlerbehebung Bei Problemen Mit Der Windows-Erfassungseinheit</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">Siehe auch <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> Und <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>.</block>
-  <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights meldet sich alle 5 Minuten ab</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp Support</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">Ich habe zu Cloud Insights eingeladen, erhalte aber eine „nicht autorisierte“ Nachricht.</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">Ich wurde nach einigen Tagen automatisch abgemeldet.</block>
@@ -13100,16 +13099,6 @@ Sie können auch eine Änderung in der Darstellung von Diagrammen bemerken, die 
   <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">Wenn Sie die URL für den Speicherort abfragen, werden die gleichen Header zurückgegeben, wenn die Antwort noch nicht bereit ist, oder wenn die Antwort bereit ist, wird sie mit dem Status 200 zurückgegeben. Der Antwortinhalt ist vom Typ Text und enthält den http-Status der ursprünglichen Abfrage sowie einige Metadaten, gefolgt von den Ergebnissen der ursprünglichen Abfrage.</block>
   <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">Um eine Liste aller asynchronen Abfragen zu sehen und welche davon bereit sind, verwenden Sie den folgenden Befehl:</block>
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">Die Antwort hat das folgende Format:</block>
-  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">Aktivieren Sie die Zustimmung von Dritten zu den erforderlichen NetApp und auth0-Cookies.
-
-Beispiel:
-In Chrome, geben Sie "Chrom://Einstellungen/Cookies" in der Browser-URL.
-
-Wählen Sie die Option „Alle Cookies zulassen“.
-*ODER*
-Wählen Sie „Cookies von Drittanbietern blockieren“ und fügen Sie Ausnahmen für [\*.]auth0.com und [*.]netapp.com hinzu.
-
-Hinweis: Achten Sie darauf, bei der Erstellung einer Ausnahme die Option „Cookies von Drittanbietern auf dieser Website einschl.“ auszuwählen.</block>
   <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">Ich habe ein BlueXP Konto, kann mich aber nicht bei BlueXP anmelden.</block>
   <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">Öffnen Sie ein Ticket von<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>. Wählen Sie die Kategorie „blueXP.netapp.com &gt; Probleme mit Account/Login“ oder „bluexp.netapp.com &gt; Probleme mit der Federation“ aus.  Diese betreffen speziell Probleme oder Fragen zu BlueXP.
 Bei allen anderen technischen Support-Problemen mit Cloud Insights wenden Sie sich an <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>.</block>
@@ -13126,4 +13115,17 @@ Stellen Sie sicher, dass Ihre BlueXP Profil-E-Mail-Adresse mit der E-Mail-Adress
   <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.</block>
   <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">Beispiel: _User *Tony Lavoie* angemeldet von *10.1.120.15*, User Agent *Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/85.0.4183.121 Safari/537.36*, Login-Methode(en) *BlueXP Portal Login_*</block>
   <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">Verwaltung und andere Aufgaben</block>
+  <block id="c0662b30d3408e55d4ca86a4556ab305" category="cell">Cloud Insights meldet sich automatisch alle 6 Stunden ab</block>
+  <block id="125d2f260a38158435c7e7d5900894da" category="cell">Dies ist auf deaktivierte Browser-Cookies von Drittanbietern zurückzuführen. Benutzer können ihren Browser so konfigurieren, dass alle Drittanbieter-Cookies aktiviert sind, oder eine engere Ausnahmeliste verwenden, um nur die für Cloud Insights zu aktivieren.
+
+Beispiel:
+Öffnen Sie die Einstellungen Ihres Browsers
+
+Wählen Sie die Option „Alle Cookies zulassen“.
+*ODER*
+Wählen Sie „Cookies von Drittanbietern blockieren“ und fügen Sie Ausnahmen für _[\*.]auth0.com_ und _[*.]netapp.com_ hinzu.
+
+Microsoft Edge follows das gleiche Format für Ausnahmen wie Chrome.
+
+In Firefox werden Cookie-Ausnahmen einfach als _auth0.com_ und _netapp.com_ bezeichnet.</block>
 </blocks>

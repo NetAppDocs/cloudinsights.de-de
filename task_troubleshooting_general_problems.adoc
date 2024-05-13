@@ -31,16 +31,18 @@ Siehe auch link:task_troubleshooting_linux_acquisition_unit_problems.html["Fehle
 | *Problem:* | *Teste das:* 
 
 
-| Cloud Insights meldet sich alle 5 Minuten ab | Aktivieren Sie die Zustimmung von Dritten zu den erforderlichen NetApp und auth0-Cookies.
+| Cloud Insights meldet sich automatisch alle 6 Stunden ab | Dies ist auf deaktivierte Browser-Cookies von Drittanbietern zurückzuführen. Benutzer können ihren Browser so konfigurieren, dass alle Drittanbieter-Cookies aktiviert sind, oder eine engere Ausnahmeliste verwenden, um nur die für Cloud Insights zu aktivieren.
 
 Beispiel:
-In Chrome, geben Sie "Chrom://Einstellungen/Cookies" in der Browser-URL.
+Öffnen Sie die Einstellungen Ihres Browsers
 
 Wählen Sie die Option „Alle Cookies zulassen“.
 *ODER*
-Wählen Sie „Cookies von Drittanbietern blockieren“ und fügen Sie Ausnahmen für [\*.]auth0.com und [*.]netapp.com hinzu.
+Wählen Sie „Cookies von Drittanbietern blockieren“ und fügen Sie Ausnahmen für _[\*.]auth0.com_ und _[*.]netapp.com_ hinzu.
 
-Hinweis: Achten Sie darauf, bei der Erstellung einer Ausnahme die Option „Cookies von Drittanbietern auf dieser Website einschl.“ auszuwählen. 
+Microsoft Edge follows das gleiche Format für Ausnahmen wie Chrome.
+
+In Firefox werden Cookie-Ausnahmen einfach als _auth0.com_ und _netapp.com_ bezeichnet. 
 
 
 | Ich habe ein BlueXP Konto, kann mich aber nicht bei BlueXP anmelden. | Öffnen Sie ein Ticket von https://mysupport.netapp.com/site/help[]. Wählen Sie die Kategorie „blueXP.netapp.com > Probleme mit Account/Login“ oder „bluexp.netapp.com > Probleme mit der Federation“ aus.  Diese betreffen speziell Probleme oder Fragen zu BlueXP.
