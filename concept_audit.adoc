@@ -95,7 +95,7 @@ Die von Cloud Insights auditierten Ereignisse und Maßnahmen können in die folg
 
 * *Benutzerkonto*: Anmelden, Abmelden, Rollenänderung, etc
 +
-5a3b3866ed7beab8b728614f1d33c0b5
+Beispiel: _User *Tony Lavoie* angemeldet von *10.1.120.15*, User Agent *Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, wie Gecko) Chrome/85.0.4183.121 Safari/537.36*, Login-Methode(en) *BlueXP Portal Login_*
 
 * *Erfassungseinheit*: Erstellen, löschen usw.
 +
