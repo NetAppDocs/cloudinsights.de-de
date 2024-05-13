@@ -798,7 +798,7 @@ Die automatische Aktualisierung ist für den benutzerdefinierten Zeitbereich des
 In Kombination mit *TV-Modus* ermöglicht die automatische Aktualisierung die Anzeige von Daten auf einem Dashboard oder einer Asset-Seite nahezu in Echtzeit. Der TV-Modus bietet ein übersichtliches Display. Das Navigationsmenü ist ausgeblendet und bietet so mehr Platz für Ihre Datenanzeige, wie die Schaltfläche Bearbeiten. Der TV-Modus ignoriert typische Cloud Insights-Timeouts und lässt das Display so lange in Betrieb, bis es manuell oder automatisch durch Autorisierungsprotokolle abgemeldet wird.
 
 
-NOTE: Da NetApp BlueXP über eine eigene Zeitüberschreitung für die Benutzeranmeldung von 7 Tagen verfügt, muss sich Cloud Insights auch bei diesem Ereignis abmelden. Sie können sich einfach erneut anmelden und Ihr Dashboard wird weiterhin angezeigt.
+NOTE: 9fd11a00d0217c79c8723171888d8b89
 
 * Um den TV-Modus zu aktivieren, klicken Sie auf image:ActivateTVMode.png["TV-Modus"] Schaltfläche.
 * Um den TV-Modus zu deaktivieren, klicken Sie oben links auf dem Bildschirm auf die Schaltfläche *Beenden*. image:ExitTVMode.png["Schaltfläche Exit"]

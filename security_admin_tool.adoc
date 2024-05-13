@@ -268,31 +268,3 @@ image:SecurityAdmin_Encrypt_Key_Swagger_API.png["API zur Datenerfassung"]
 Wenn Sie die Option _preEncrypted_ auf _true_ setzen, wird jedes Passwort, das Sie über den API-Befehl übergeben, als *bereits verschlüsselt* behandelt; die API verschlüsselt das/die Passwort(e) nicht neu. Wenn Sie Ihre API erstellen, fügen Sie einfach das zuvor verschlüsselte Passwort an der entsprechenden Stelle ein.
 
 image:SecurityAdmin_Encrypt_Key_API_Example.png["API-Beispiel, width=600"]
-
-
-
-== Verschlüsseln eines Kennworts für die Verwendung in API
-
-Mit Option 8 können Sie ein Passwort verschlüsseln, das Sie dann per API an einen Datensammler weiterleiten können.
-
-Starten Sie das SecurityAdmin-Tool im interaktiven Modus und wählen Sie Option 8: _Encrypt Password_.
-
- securityadmin.sh -i
-Sie werden aufgefordert, das Kennwort einzugeben, das Sie verschlüsseln möchten. Beachten Sie, dass die von Ihnen eingegebenen Zeichen nicht auf dem Bildschirm angezeigt werden.  Geben Sie das Passwort erneut ein, wenn Sie dazu aufgefordert werden.
-
-Wenn Sie den Befehl in einem Skript verwenden, verwenden Sie alternativ auf einer Befehlszeile _securityadmin.sh_ mit dem Parameter "-enc" und geben Ihr unverschlüsseltes Passwort ein:
-
- securityadmin -enc mypassword
-image:SecurityAdmin_Encrypt_Key_API_CLI_Example.png["Beispiel für CLI"]
-
-Das verschlüsselte Passwort wird auf dem Bildschirm angezeigt. Kopieren Sie die gesamte Zeichenfolge einschließlich aller führenden oder nachgestellten Symbole.
-
-image:SecurityAdmin_Encrypt_Key_1.png["Interaktiver Modus Kennwort verschlüsseln, Breite=640"]
-
-Um das verschlüsselte Passwort an einen Datensammler zu senden, können Sie die Data Collection API verwenden. Der Swagger für diese API ist unter *Admin > API Access* zu finden und auf den Link "API Documentation" zu klicken. Wählen Sie den API-Typ „Data Collection“ aus.  Wählen Sie unter der Überschrift _Data_Collection.Data_Collector_ die API _/Collector/Datasources_ POST für dieses Beispiel aus.
-
-image:SecurityAdmin_Encrypt_Key_Swagger_API.png["API zur Datenerfassung"]
-
-Wenn Sie die Option _preEncrypted_ auf _true_ setzen, wird jedes Passwort, das Sie über den API-Befehl übergeben, als *bereits verschlüsselt* behandelt; die API verschlüsselt das/die Passwort(e) nicht neu. Wenn Sie Ihre API erstellen, fügen Sie einfach das zuvor verschlüsselte Passwort an der entsprechenden Stelle ein.
-
-image:SecurityAdmin_Encrypt_Key_API_Example.png["API-Beispiel, width=600"]

@@ -49,7 +49,7 @@ Gehen Sie zum Generieren eines API-Schlüssels wie folgt vor:
 * Klicken Sie auf „Speichern“, dann kopieren Sie den Schlüssel und speichern Sie ihn* irgendwo sicher. Sie können später nicht auf den vollständigen Schlüssel zugreifen.
 
 
-APIkeys sind gut für <<synchronous-or-asynchronous,_Sync_ oder _Async_>>.
+a60abfe03b8079f9f0eac07879fdf93b
 
 
 
@@ -135,43 +135,3 @@ Zusätzlich:
 
 
 Der API-Schlüssel ist spezifisch für Ihre Cloud Insights-Umgebung.
-
-
-
-== Synchron oder asynchron?
-
-Standardmäßig wird ein API-Befehl im _synchronen_-Modus ausgeführt, d. h., Sie senden die Anforderung und die Antwort wird sofort zurückgegeben. Manchmal kann die Ausführung einer Abfrage jedoch lange dauern, was zu einer Zeitüberschreitung der Anfrage führen kann. Um dies zu umgehen, können Sie eine Anfrage _asynchron_ ausführen. Im asynchronen Modus gibt die Anforderung eine URL zurück, über die die Ausführung überwacht werden kann. Die URL gibt das Ergebnis zurück, wenn sie fertig ist.
-
-Um eine Abfrage im asynchronen Modus auszuführen, fügen Sie den Header hinzu `*Prefer: respond-async*` Auf die Anfrage. Nach erfolgreicher Ausführung enthält die Antwort die folgenden Kopfzeilen:
-
-....
-Status Code: 202 (which means ACCEPTED)
-preference-applied: respond-async
-location: https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
-....
-Wenn Sie die URL für den Speicherort abfragen, werden die gleichen Header zurückgegeben, wenn die Antwort noch nicht bereit ist, oder wenn die Antwort bereit ist, wird sie mit dem Status 200 zurückgegeben. Der Antwortinhalt ist vom Typ Text und enthält den http-Status der ursprünglichen Abfrage sowie einige Metadaten, gefolgt von den Ergebnissen der ursprünglichen Abfrage.
-
-....
-HTTP/1.1 200 OK
- OData-Version: 4.0
- Content-Type: application/json;odata.metadata=minimal
- oDataResponseSizeCounted: true
-
- { <JSON_RESPONSE> }
-....
-Um eine Liste aller asynchronen Abfragen zu sehen und welche davon bereit sind, verwenden Sie den folgenden Befehl:
-
- GET https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
-Die Antwort hat das folgende Format:
-
-....
-{
-   "queries" : [
-       {
-           "Query": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
-           "Location": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
-           "Finished": false
-       }
-   ]
-}
-....
