@@ -287,6 +287,15 @@ Für ONTAP-Versionen, die REST unterstützen, aber nicht 9.14.1 oder höher sind
 Konfiguration: 10.193.98.84: ONTAP Rest API bei 10.193.98.84 ist nicht verfügbar: 10.193.98.84: ONTAP Rest API bei 10.193.98.84 ist verfügbar: Cheryl5-Cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7 ist aber nicht von der Mindestversion 9.14.1. 
 
 
-| Ich sehe leere oder „0“ Metriken, wo der ONTAP ontapi Collector Daten anzeigt. | ONTAP REST enthält keine Kennzahlen, die nur intern auf dem ONTAP System verwendet werden. Systemaggregate werden beispielsweise nicht von ONTAP REST erfasst, sondern nur SVM vom Typ „Daten“. 
+| Ich sehe leere oder „0“ Metriken, wo der ONTAP ontapi Collector Daten anzeigt. | ONTAP REST enthält keine Kennzahlen, die nur intern auf dem ONTAP System verwendet werden. Systemaggregate werden beispielsweise nicht von ONTAP REST erfasst, sondern nur SVM vom Typ „Daten“.
+
+Weitere Beispiele für ONTAP REST-Kennzahlen, bei denen keine oder leere Daten gemeldet werden können:
+
+InternalVolumes: REST meldet nicht mehr vol0.
+Aggregate: REST meldet nicht mehr aggr0.
+Storage: Die meisten Metriken sind eine Auflutung der Kennzahlen für das interne Volume und werden von den oben genannten Auswirkungen beeinflusst.
+Storage Virtual Machines: REST meldet keine anderen SVM-Typen als „Daten“ (z. B. „Cluster“, „gmt“, „Node“).
+
+Sie können auch eine Änderung in der Darstellung von Diagrammen bemerken, die Daten enthalten, aufgrund der Änderung des standardmäßigen Performance-Abfragezeitraums von 15 Minuten auf 5 Minuten.  Häufigere Abfragen bedeuten mehr Datenpunkte zum Plotten. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

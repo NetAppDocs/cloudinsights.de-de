@@ -55,32 +55,134 @@ sidebar:
     url: "/data_collector_list.html"
   - title: Abonnieren von Cloud Insights
     url: "/concept_subscribing_to_cloud_insights.html"
-  - title: Automatische Geräteauflösung
+  - title: Beobachtbarkeit
     entries:
-    - title: Übersicht Über Die Geräteauflösung
-      url: "/concept_device_resolution_overview.html"
-    - title: Regeln Zur Geräterauflösung
-      url: "/task_device_resolution_rules.html"
-    - title: Fibre Channel-Geräteauflösung
-      url: "/task_device_resolution_fibre_channel.html"
-    - title: IP-Geräteauflösung
-      url: "/task_device_resolution_ip.html"
-    - title: Einstellen Der Einstellungen Für Die Geräteauflösung
-      url: "/task_device_resolution_preferences.html"
-    - title: Beispiele für reguläre Ausdrücke
-      url: "/concept_device_resolution_regex_examples.html"
-  - title: Dashboards Werden Erstellt
-    entries:
-    - title: Dashboard-Übersicht
-      url: "/concept_dashboards_overview.html"
-    - title: Funktionen von Dashboards
-      url: "/concept_dashboard_features.html"
-    - title: Beispiele Für Dashboards
+    - title: Dashboards Werden Erstellt
       entries:
-      - title: Performance Von Virtual Machines
-        url: "/task_dashboard_example_VM_performance.html"
-    - title: Dashboard-Best Practices
-      url: "/concept_dashboard_best_practices.html"
+      - title: Dashboard-Übersicht
+        url: "/concept_dashboards_overview.html"
+      - title: Funktionen von Dashboards
+        url: "/concept_dashboard_features.html"
+      - title: Beispiele Für Dashboards
+        entries:
+        - title: Performance Von Virtual Machines
+          url: "/task_dashboard_example_VM_performance.html"
+      - title: Dashboard-Best Practices
+        url: "/concept_dashboard_best_practices.html"
+    - title: Arbeiten mit Abfragen
+      entries:
+      - title: Abfragen Von Assets
+        url: "/concept_querying_assets.html"
+      - title: Erstellen einer Abfrage
+        url: "/task_create_query.html"
+      - title: Anzeigen Verfügbarer Abfragen
+        url: "/task_view_queries.html"
+      - title: Abfrageergebnisse werden in .CSV exportiert
+        url: "/task_export_query_results.html"
+      - title: Eine Abfrage ändern oder löschen
+        url: "/task_modify_delete_query.html"
+      - title: Zuweisen mehrerer Anwendungen/Anmerkungen zu Objekten
+        url: "/task_query_assign_multiple_applicationss.html"
+      - title: Tabellenwerte werden in die Zwischenablage kopiert
+        url: "/task_query_copy_table_values.html"
+      - title: Abfragen Von Protokollen
+        url: "/concept_log_explorer.html"
+    - title: Einblick
+      entries:
+      - title: Überblick
+        url: "/insights_overview.html"
+      - title: Unter Stress Abbauen
+        url: "/insights_shared_resources_under_stress.html"
+      - title: Kubernetes Namespaces sind nicht mehr platzsparend
+        url: "/insights_k8s_namespaces_running_out_of_space.html"
+      - title: Rückgewinnung von ONTAP Cold Storage
+        url: "/insights_reclaim_ontap_cold_storage.html"
+    - title: Monitore und Alarme
+      entries:
+      - title: Erstellen Von Monitoren
+        url: "/task_create_monitor.html"
+      - title: Anzeigen und Verwalten von Warnungen
+        url: "/task_view_and_manage_alerts.html"
+      - title: Benachrichtigungsempfänger Werden Konfiguriert
+        url: "/concept_notifications_email.html"
+      - title: Systemdefinierte Monitore
+        url: "/task_system_monitors.html"
+      - title: Webhook-Benachrichtigung
+        url: "/task_create_webhook.html"
+    - title: Arbeiten mit Anmerkungen
+      entries:
+      - title: Anmerkungen Definieren
+        url: "/task_defining_annotations.html"
+      - title: Verwenden Von Anmerkungen
+        url: "/task_create_annotation.html"
+      - title: Anmerkungsregeln Werden Verwendet
+        url: "/task_create_annotation_rules.html"
+      - title: Anmerkungen mit API importieren
+        url: "/task_annotation_import.html"
+    - title: Arbeiten mit Anwendungen
+      entries:
+      - title: Anwendungskonzepte
+        url: "/concept_about_applications.html"
+      - title: Anwendungen Werden Konfiguriert
+        url: "/task_create_application.html"
+    - title: Automatische Geräteauflösung
+      entries:
+      - title: Übersicht Über Die Geräteauflösung
+        url: "/concept_device_resolution_overview.html"
+      - title: Regeln Zur Geräterauflösung
+        url: "/task_device_resolution_rules.html"
+      - title: Fibre Channel-Geräteauflösung
+        url: "/task_device_resolution_fibre_channel.html"
+      - title: IP-Geräteauflösung
+        url: "/task_device_resolution_ip.html"
+      - title: Einstellen Der Einstellungen Für Die Geräteauflösung
+        url: "/task_device_resolution_preferences.html"
+      - title: Beispiele für reguläre Ausdrücke
+        url: "/concept_device_resolution_regex_examples.html"
+    - title: Informationen Zur Asset-Seite
+      entries:
+      - title: Übersicht Über Die Asset-Seite
+        url: "/concept_asset_page_overview.html"
+      - title: Kontextabhängige Filterung nach Objekten
+        url: "/concept_in_context_filters.html"
+      - title: Abschnitte Mit Zusammenfassung Der Topologie
+        url: "/concept_asset_summary_section.html"
+      - title: Abschnitt „Experten“
+        url: "/concept_asset_expert_view_section.html"
+      - title: Abschnitt „Benutzerdaten“
+        url: "/concept_asset_user_data_section.html"
+      - title: Abschnitt „Verwandte Warnmeldungen“
+        url: "/concept_asset_alerts_section.html"
+      - title: Storage-Virtualisierung
+        url: "/concept_storage_virtualization.html"
+      - title: Tipps und Tricks für die Suche nach Ressourcen
+        url: "/concept_searching_assets.html"
+    - title: Berichterstellung
+      entries:
+      - title: Berichterstellung – Übersicht
+        url: "/reporting_overview.html"
+      - title: Benutzerrollen Melden
+        url: "/reporting_user_roles.html"
+      - title: Verwenden Von Vordefinierten Berichten
+        url: "/reporting_predefined_reports.html"
+      - title: Storage Manager Dashboard
+        url: "/reporting_storage_manager_dashboard.html"
+      - title: Erstellen eines Beispielberichts
+        url: "/reporting_create_example.html"
+      - title: Verwalten Von Berichten
+        url: "/reporting_managing_reports.html"
+      - title: Benutzerdefinierte Berichte
+        url: "/reporting_creating_custom_reports.html"
+      - title: Datenmodelle
+        url: "/reporting_creating_custom_reports.html#reporting-data-models"
+      - title: Reporting-Datenbank-API
+        url: "/reporting_querying_database.html"
+      - title: Datenhaltung
+        url: "/reporting_data_retention.html"
+      - title: Schemabdiagramme
+        url: "/reporting_schema_diagrams.html"
+      - title: Schematabellen
+        url: "/reference_schemas.html"
   - title: Kubernetes
     entries:
     - title: Kubernetes Übersichtsseite
@@ -97,116 +199,20 @@ sidebar:
       url: "/concept_kubernetes_network_monitoring_and_map.html"
     - title: Analyse Ändern
       url: "/kubernetes_change_analytics.html"
-  - title: Einblick
-    entries:
-    - title: Überblick
-      url: "/insights_overview.html"
-    - title: Unter Stress Abbauen
-      url: "/insights_shared_resources_under_stress.html"
-    - title: Kubernetes Namespaces sind nicht mehr platzsparend
-      url: "/insights_k8s_namespaces_running_out_of_space.html"
-    - title: Rückgewinnung von ONTAP Cold Storage
-      url: "/insights_reclaim_ontap_cold_storage.html"
   - title: ONTAP Essentials
     url: "/concept_ontap_essentials.html"
-  - title: Arbeiten mit Abfragen
+  - title: Verwaltung und andere Aufgaben
     entries:
-    - title: Abfragen Von Assets
-      url: "/concept_querying_assets.html"
-    - title: Erstellen einer Abfrage
-      url: "/task_create_query.html"
-    - title: Anzeigen Verfügbarer Abfragen
-      url: "/task_view_queries.html"
-    - title: Abfrageergebnisse werden in .CSV exportiert
-      url: "/task_export_query_results.html"
-    - title: Eine Abfrage ändern oder löschen
-      url: "/task_modify_delete_query.html"
-    - title: Zuweisen mehrerer Anwendungen/Anmerkungen zu Objekten
-      url: "/task_query_assign_multiple_applicationss.html"
-    - title: Tabellenwerte werden in die Zwischenablage kopiert
-      url: "/task_query_copy_table_values.html"
-    - title: Abfragen Von Protokollen
-      url: "/concept_log_explorer.html"
-  - title: Arbeiten mit Anmerkungen
-    entries:
-    - title: Anmerkungen Definieren
-      url: "/task_defining_annotations.html"
-    - title: Verwenden Von Anmerkungen
-      url: "/task_create_annotation.html"
-    - title: Anmerkungsregeln Werden Verwendet
-      url: "/task_create_annotation_rules.html"
-    - title: Anmerkungen mit API importieren
-      url: "/task_annotation_import.html"
-  - title: Arbeiten mit Anwendungen
-    entries:
-    - title: Anwendungskonzepte
-      url: "/concept_about_applications.html"
-    - title: Anwendungen Werden Konfiguriert
-      url: "/task_create_application.html"
-  - title: Monitore und Alarme
-    entries:
-    - title: Erstellen Von Monitoren
-      url: "/task_create_monitor.html"
-    - title: Anzeigen und Verwalten von Warnungen
-      url: "/task_view_and_manage_alerts.html"
-    - title: Benachrichtigungsempfänger Werden Konfiguriert
-      url: "/concept_notifications_email.html"
-    - title: Systemdefinierte Monitore
-      url: "/task_system_monitors.html"
-  - title: Arbeiten mit APIs
-    url: "/API_Overview.html"
-  - title: Webhook-Benachrichtigung
-    url: "/task_create_webhook.html"
-  - title: Monitoring Ihrer Umgebung
-    entries:
-    - title: Auditing Von Ereignissen
-      url: "/concept_audit.html"
-    - title: TTL und Downsampling
-      url: concept_ttl_and_downsampling.html
-  - title: Informationen Zur Asset-Seite
-    entries:
-    - title: Übersicht Über Die Asset-Seite
-      url: "/concept_asset_page_overview.html"
-    - title: Kontextabhängige Filterung nach Objekten
-      url: "/concept_in_context_filters.html"
-    - title: Abschnitte Mit Zusammenfassung Der Topologie
-      url: "/concept_asset_summary_section.html"
-    - title: Abschnitt „Experten“
-      url: "/concept_asset_expert_view_section.html"
-    - title: Abschnitt „Benutzerdaten“
-      url: "/concept_asset_user_data_section.html"
-    - title: Abschnitt „Verwandte Warnmeldungen“
-      url: "/concept_asset_alerts_section.html"
-    - title: Storage-Virtualisierung
-      url: "/concept_storage_virtualization.html"
-    - title: Tipps und Tricks für die Suche nach Ressourcen
-      url: "/concept_searching_assets.html"
-  - title: Berichterstellung
-    entries:
-    - title: Berichterstellung – Übersicht
-      url: "/reporting_overview.html"
-    - title: Benutzerrollen Melden
-      url: "/reporting_user_roles.html"
-    - title: Verwenden Von Vordefinierten Berichten
-      url: "/reporting_predefined_reports.html"
-    - title: Storage Manager Dashboard
-      url: "/reporting_storage_manager_dashboard.html"
-    - title: Erstellen eines Beispielberichts
-      url: "/reporting_create_example.html"
-    - title: Verwalten Von Berichten
-      url: "/reporting_managing_reports.html"
-    - title: Benutzerdefinierte Berichte
-      url: "/reporting_creating_custom_reports.html"
-    - title: Datenmodelle
-      url: "/reporting_creating_custom_reports.html#reporting-data-models"
-    - title: Reporting-Datenbank-API
-      url: "/reporting_querying_database.html"
-    - title: Datenhaltung
-      url: "/reporting_data_retention.html"
-    - title: Schemabdiagramme
-      url: "/reporting_schema_diagrams.html"
-    - title: Schematabellen
-      url: "/reference_schemas.html"
+    - title: Arbeiten mit APIs
+      url: "/API_Overview.html"
+    - title: Monitoring Ihrer Umgebung
+      entries:
+      - title: Auditing Von Ereignissen
+        url: "/concept_audit.html"
+      - title: TTL und Downsampling
+        url: concept_ttl_and_downsampling.html
+      - title: Active IQ
+        url: "/concept_activeiq.html"
   - title: Workload-Sicherheit
     entries:
     - title: Allgemeines Zur Workload-Sicherheit
@@ -259,8 +265,6 @@ sidebar:
       url: "/cs_notifications_email.html"
     - title: Workload-Sicherheits-API
       url: "/concept_cs_api.html"
-  - title: Active IQ
-    url: "/concept_activeiq.html"
   - title: Fehlerbehebung
     entries:
     - title: Allgemeine Fehlerbehebung

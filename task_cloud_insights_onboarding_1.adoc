@@ -4,22 +4,19 @@ permalink: task_cloud_insights_onboarding_1.html
 summary: Melden Sie sich für Cloud Insights an und erstellen Sie Ihre Umgebung. 
 ---
 = Cloud Insights-Onboarding
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
 :keywords: Cloud Insights, documentation, help, onboarding, getting started,
-:toc-position: content
 
 
 [role="lead"]
-Bevor Sie mit Cloud Insights arbeiten können, müssen Sie sich im Portal *NetApp BlueXP* anmelden. Wenn Sie bereits über ein BlueXP Login verfügen, können Sie Cloud Insights in wenigen schnellen Schritten kostenlos testen.
+Bevor Sie mit Cloud Insights arbeiten können, müssen Sie sich im Portal *NetApp BlueXP* anmelden. Wenn Sie bereits über einen NetApp BlueXP Login verfügen, können Sie Cloud Insights in wenigen schnellen Schritten kostenlos testen.
 
 
 toc::[]
@@ -78,7 +75,7 @@ Wenn Sie sich zum ersten Mal in einer neuen Umgebung anmelden, werden Sie durch 
 
 == Abmelden
 
-Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum geführt link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["BlueXP Anmeldung"] Bildschirm.
+Um sich von Cloud Insights abzumelden, klicken Sie auf Ihren *Benutzername* und wählen *Abmelden*. Sie werden zurück zum Anmeldefenster von BlueXP angezeigt.
 
 
 NOTE: Wenn Sie sich bei Cloud Insights abmelden, melden Sie sich bei BlueXP an. Sie werden außerdem von anderen NetApp-Cloud-Services, die die BlueXP-Anmeldung verwenden, abgemeldet.

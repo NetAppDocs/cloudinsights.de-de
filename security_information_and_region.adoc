@@ -49,7 +49,7 @@ Diese Daten werden durch die Bereitstellung des Cloud Data Service durch NetApp 
 
 * Benutzerdaten
 +
-Authentifizierung und Zugriffsinformationen, mit denen NetApp Cloud Central mit regionalen Cloud Insights-Standorten kommunizieren kann, einschließlich Daten, die sich auf die Benutzerautorisierung beziehen.
+Authentifizierungs- und Zugriffsinformationen, die NetApp BlueXP ermöglichen, mit regionalen Cloud Insights Sites zu kommunizieren, einschließlich Daten zur Benutzerautorisierung.
 
 * Sicherheitsdaten Des Benutzerverzeichnisses Für Storage-Workloads
 +
@@ -85,7 +85,7 @@ Folgende Informationen werden in der Host-Region gespeichert:
 Die folgenden Informationen befinden sich in den USA, unabhängig davon, in welcher Region Sie Ihre Cloud Insights-Umgebung hosten:
 
 * Angaben zum Umgebungsstandort (manchmal auch „Mandant“ genannt), z. B. Standort-/Kontoinhaber.
-* Informationen, über die NetApp Cloud Central mit regionalen Cloud Insights-Standorten kommunizieren kann, einschließlich Hinweisen zur Benutzerautorisierung.
+* Informationen, die es NetApp BlueXP ermöglichen, mit regionalen Cloud Insights Sites zu kommunizieren, einschließlich aller Vorgänge im Hinblick auf die Benutzerautorisierung.
 * Informationen in Bezug auf die Beziehung zwischen dem Cloud Insights-Benutzer und dem Mandanten.
 
 

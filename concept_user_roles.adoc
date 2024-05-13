@@ -19,7 +19,7 @@ summary: Cloud Insights stellt mehrere Benutzerkonten mit unterschiedlichen Bere
 
 
 [role="lead"]
-Cloud Insights bietet bis zu vier Benutzerkontorollen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen, wie in der folgenden Tabelle angegeben. Es sind auch Benutzer link:#creating-accounts-by-inviting-users["Eingeladen"] Cloud Insights zugewiesen und eine bestimmte Rolle zugewiesen, oder kann über anmelden link:#single-sign-on-sso-accounts["SSO-Autorisierung (Single Sign On)"] Mit einer Standardrolle. Die SSO-Autorisierung ist als Funktion in der Cloud Insights Premium Edition verfügbar.
+Cloud Insights bietet bis zu vier Benutzerkontorollen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen, wie in der folgenden Tabelle angegeben.  Es sind auch Benutzer link:#creating-accounts-by-inviting-users["Eingeladen"] Cloud Insights zugewiesen und eine bestimmte Rolle zugewiesen, oder kann über anmelden link:#single-sign-on-sso-and-identity-federation["SSO-Autorisierung (Single Sign On)"] Mit einer Standardrolle. Die SSO-Autorisierung ist als Funktion in der Cloud Insights Premium Edition verfügbar.
 
 
 NOTE: Benutzeranmeldungen in der Cloud Insights Bundesausgabe sind auf konfigurierte Identitätsanbieter (mit den angegebenen E-Mail-Domains) beschränkt. Wenn ein neuer Benutzer in eine Cloud Insights-Umgebung eingeladen wird, muss seine E-Mail-Adresse mit der für diese Umgebung konfigurierten Domäne übereinstimmen.
@@ -136,7 +136,7 @@ In der folgenden Tabelle sind die Cloud Insights-Berechtigungen aufgeführt, die
 
 == Erstellen von Konten durch Einladen von Benutzern
 
-Das Erstellen eines neuen Benutzerkontos wird durch Cloud Central realisiert. Ein Benutzer kann auf die per E-Mail gesendete Einladung antworten. Wenn der Benutzer jedoch kein Konto bei Cloud Central hat, muss er sich bei Cloud Central anmelden, damit er die Einladung annehmen kann.
+Die Erstellung eines neuen Benutzerkontos erfolgt über BlueXP. Ein Benutzer kann auf die per E-Mail gesendete Einladung antworten. Wenn der Benutzer jedoch kein Konto bei BlueXP hat, muss er sich bei BlueXP registrieren, damit er die Einladung annehmen kann.
 
 .Bevor Sie beginnen
 * Der Benutzername ist die E-Mail-Adresse der Einladung.
@@ -216,31 +216,40 @@ Beachten Sie, dass alle vom Benutzer erstellten Dashboards, Abfragen usw. auch n
 
 
 
-=== Aktivierung der Identity Federation für SSO in Cloud Insights
+=== Was ist Identity Federation?
 
 Mit Identity Federation:
 
 * Die Authentifizierung wird an das Identitätsmanagement-System des Kunden unter Verwendung der Anmeldeinformationen des Kunden aus Ihrem Firmenverzeichnis und der Automatisierungsrichtlinien wie Multi-Faktor Authentication (MFA) delegiert.
-* Benutzer melden sich einmal bei allen NetApp Cloud Services (Single Sign On) an.
+* Benutzer melden sich einmalig bei allen NetApp BlueXP Services an (Single Sign On).
 
 
-Benutzerkonten werden in NetApp Cloud Central für alle Cloud Services gemanagt. Standardmäßig wird die Authentifizierung mithilfe des lokalen Cloud Central-Benutzerprofils durchgeführt. Im Folgenden finden Sie eine vereinfachte Übersicht über diesen Prozess:
+Benutzerkonten werden für alle Cloud-Services in NetApp BlueXP gemanagt. Standardmäßig erfolgt die Authentifizierung über ein lokales BlueXP Benutzerprofil. Im Folgenden finden Sie eine vereinfachte Übersicht über diesen Prozess:
 
-image:CloudCentralAuthentication.png["Zentrale Cloud-Authentifizierung"]
+image:BlueXP_Authentication_Local.png["BlueXP Authentifizierung mittels lokaler Authentifizierung"]
 
-Einige Kunden würden jedoch gerne ihren eigenen Identitäts-Provider nutzen, um ihre Benutzer für Cloud Insights und ihre anderen NetApp Cloud Central Services zu authentifizieren. Bei Identity Federation werden NetApp Cloud Central-Konten anhand der Zugangsdaten aus dem Unternehmensverzeichnis authentifiziert.
+Einige Kunden würden jedoch gerne ihren eigenen Identitätsanbieter verwenden, um Benutzer für Cloud Insights und ihre anderen NetApp BlueXP Services zu authentifizieren. NetApp BlueXP Konten werden mithilfe von Zugangsdaten aus Ihrem Unternehmensverzeichnis authentifiziert.
 
 Im Folgenden finden Sie ein vereinfachtes Beispiel für diesen Prozess:
 
-image:IdentityFederationDiagram-2.png["Identitätsföderation Dargestellt"]
+image:BlueXP_Authentication_Federated.png["BlueXP Authentifizierung mittels Federation"]
 
 Im obigen Diagramm, wenn ein Benutzer auf Cloud Insights zugreift, wird dieser Benutzer zur Authentifizierung an das Identitätsmanagementsystem des Kunden weitergeleitet. Sobald das Konto authentifiziert wurde, wird der Benutzer an die Cloud Insights-Mandanten-URL weitergeleitet.
 
-Cloud Central implementiert mithilfe von Auth0 Identity Federation und kann in Dienste wie Active Directory Federation Services (ADFS) und Microsoft Azure Active Directory (AD) integriert werden. Weitere Informationen zur Einrichtung und Konfiguration von Identitätsföderation finden Sie in der Dokumentation zu Cloud Central auf link:https://services.cloud.netapp.com/misc/federation-support["Identitätsföderation"].
 
-Es ist wichtig zu wissen, dass die Änderung der Identitätsföderation in Cloud Central nicht nur für Cloud Insights, sondern auch für alle NetApp Cloud Services gilt. Der Kunde sollte diese Änderung mit dem NetApp Team jedes Cloud Central Produkts besprechen, das er besitzt, um sicherzustellen, dass die verwendete Konfiguration in Verbindung mit Identity Federation funktioniert oder ob bei Konten Anpassungen vorgenommen werden müssen. Der Kunde muss auch sein internes SSO-Team an die Änderung der Identitätsföderation einbinden.
 
-Es ist auch wichtig zu erkennen, dass, sobald die Identitätsföderation aktiviert ist, dass alle Änderungen an der Identitätsanbieter des Unternehmens (z. B. der Wechsel von SAML zu Microsoft AD) wahrscheinlich die Fehlerbehebung / Änderungen / Aufmerksamkeit in Cloud Central erfordern, um die Profile der Benutzer zu aktualisieren.
+=== Aktivieren Der Identitätsföderation
+
+BlueXP verwendet Auth0 für die Implementierung der Identity Federation und die Integration in Services wie Active Directory Federation Services (ADFS) und Microsoft Azure Active Directory (AD). Informationen zum Konfigurieren der Identity Federation finden Sie im link:https://services.cloud.netapp.com/misc/federation-support["Anweisungen zur BlueXP Federation"].
+
+
+NOTE: Bevor Sie SSO mit Cloud Insights verwenden können, müssen Sie die BlueXP Identitätsföderation konfigurieren.
+
+Es ist wichtig zu wissen, dass die sich ändernde Identitätsföderation in BlueXP nicht nur für Cloud Insights, sondern auch für alle NetApp BlueXP Services gilt. Der Kunde sollte diese Änderung mit dem NetApp Team für jedes seiner BlueXP Produkte besprechen, um sicherzustellen, dass die von ihm verwendete Konfiguration mit der Identity Federation funktioniert oder wenn Kundenkonten angepasst werden müssen. Der Kunde muss auch sein internes SSO-Team an die Änderung der Identitätsföderation einbinden.
+
+Zudem ist zu beachten, dass nach Aktivierung des Identitätsverbunds für Änderungen am Identitätsanbieter des Unternehmens (beispielsweise beim Wechsel von SAML zu Microsoft AD) wahrscheinlich eine Fehlerbehebung/Änderung/Aufmerksamkeit in BlueXP erforderlich ist, um die Benutzerprofile zu aktualisieren.
+
+Für dieses oder andere Verbundprobleme können Sie ein Support-Ticket unter öffnen https://mysupport.netapp.com/site/help[] Und wählen Sie die Kategorie "bluexp.netapp.com > Federation Ausgaben".
 
 
 
@@ -249,9 +258,9 @@ Es ist auch wichtig zu erkennen, dass, sobald die Identitätsföderation aktivie
 Neben der Einladung von Benutzern können Administratoren für alle Benutzer in ihrer Unternehmensdomäne *Single Sign-On (SSO)-Benutzerautomatisch-Provisioning*-Zugriff auf Cloud Insights aktivieren, ohne sie einzeln einladen zu müssen. Wenn SSO aktiviert ist, kann sich jeder Benutzer mit derselben Domänen-E-Mail-Adresse mithilfe seiner Unternehmensdaten bei Cloud Insights anmelden.
 
 
-NOTE: _SSO-Benutzerautomatische Bereitstellung_ ist in der Cloud Insights Premium Edition verfügbar und muss konfiguriert werden, bevor sie für Cloud Insights aktiviert werden kann. Die Konfiguration für die automatische Bearbeitung von SSO-Benutzern umfasst Folgendes link:https://services.cloud.netapp.com/misc/federation-support["Identitätsföderation"] Durch NetApp Cloud Central, wie im obigen Abschnitt beschrieben. Mit der Federation können Single-Sign-On-Benutzer über die Zugangsdaten aus dem Unternehmensverzeichnis auf Ihre NetApp Cloud Central-Konten zugreifen. Dabei werden offene Standards wie Security Assertion Markup Language 2.0 (SAML) und OpenID Connect (OIDC) verwendet.
+NOTE: _SSO-Benutzerautomatische Bereitstellung_ ist in der Cloud Insights Premium Edition verfügbar und muss konfiguriert werden, bevor sie für Cloud Insights aktiviert werden kann. Die SSO-Benutzer-Auto-Provisioning-Konfiguration umfasst link:https://services.cloud.netapp.com/misc/federation-support["Identitätsföderation"] Sie verwenden NetApp BlueXP, wie im Abschnitt oben beschrieben. Verbund ermöglicht Benutzern mit einfacher Anmeldung den Zugriff auf Ihre NetApp BlueXP Konten mithilfe von Anmeldeinformationen aus Ihrem Unternehmensverzeichnis unter Verwendung offener Standards wie Security Assertion Markup Language 2.0 (SAML) und OpenID Connect (OIDC).
 
-Um _SSO User Auto-Provisioning_ zu konfigurieren, klicken Sie auf der Seite *Admin > Benutzerverwaltung* auf die Schaltfläche *Anforderungsföderation*. Nach der Konfiguration können Administratoren dann die SSO-Benutzeranmeldung aktivieren. Wenn ein Administrator _SSO User Auto-Provisioning_ aktiviert, wählen er eine Standardrolle für alle SSO-Benutzer (z. B. Gast oder Benutzer) aus. Benutzer, die sich über SSO anmelden, verfügen über diese Standardrolle.
+Um _SSO User Auto-Provisioning_ auf der Seite *Admin > User Management* zu konfigurieren, müssen Sie zunächst BlueXP Identity Federation eingerichtet haben. Wählen Sie den Link *Verbindung einrichten* im Banner aus, um zur BlueXP Federation zu gelangen. Sobald diese Konfiguration abgeschlossen ist, können Cloud Insights-Administratoren die SSO-Benutzeranmeldung aktivieren. Wenn ein Administrator _SSO User Auto-Provisioning_ aktiviert, wählen er eine Standardrolle für alle SSO-Benutzer (z. B. Gast oder Benutzer) aus. Benutzer, die sich über SSO anmelden, verfügen über diese Standardrolle.
 
 image:Roles_federation_Banner.png["Benutzerverwaltung mit Federation"]
 
