@@ -168,14 +168,20 @@ Wenn ein Problem auftritt und der Abonnementprozess nicht korrekt abgeschlossen 
 
 Sobald Ihr Abonnement aktiv ist, können Sie Ihren Abonnementstatus und die Nutzung der verwalteten Einheit über die Seite *Admin > Abonnement* anzeigen.
 
-Auf der Registerkarte „Subscription Summary“ wird Folgendes angezeigt:
+Auf der Registerkarte Subscription *Summary* werden folgende Elemente angezeigt:
 
 * Aktuelle Ausgabe
 * Seriennummer Des Abonnements
-* Aktuelle ME-Nutzung und „Was wäre, wenn?“ Kostenkalkulation
-* Links, um Ihr Abonnement zu ändern
-* Ansichten der Managed Unit-Nutzung
+* Aktuelle ME-Berechtigung
 
+
+Die Registerkarte *Usage* zeigt Ihnen Ihre aktuelle MU-Nutzung und wie diese Nutzung nach Datensammler unterteilt wird.
+
+image:SubscriptionUsageByModule.png["MU-Nutzung nach Modul"]
+
+Die Registerkarte *Verlauf* gibt Ihnen einen Einblick in Ihre MU-Nutzung in den letzten 7 bis 90 Tagen. Wenn Sie den Mauszeiger über eine Spalte im Diagramm halten, werden Sie nach Modul aufgeschlüsselt (z. B. Observability, Kubernetes).
+
+image:Subscription_Usage_History.png["MU-Nutzungsverlauf"]
 
 
 
