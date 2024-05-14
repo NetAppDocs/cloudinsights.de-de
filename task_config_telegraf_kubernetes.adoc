@@ -22,7 +22,7 @@ Cloud Insights verwendet diese Datensammler, um Kubernetes Pod, Node und Contain
 
 == Installation
 
-Eine Anleitung zur Kubernetes Installation finden Sie im link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes Monitoring Operator"] Seite.
+Eine Anleitung zur Kubernetes Installation finden Sie im link:task_config_telegraf_agent_k8s.html["Kubernetes Monitoring Operator"] Seite.
 
 
 

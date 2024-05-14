@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_query_assign_multiple_applicationss.html 
+permalink: task_query_assign_multiple_applications.html 
 summary: Verwenden Sie eine Abfrage, um mehreren Anwendungen oder Anmerkungen zuzuweisen oder mehrere Anwendungen oder Anmerkungen aus Objekten zu entfernen. 
 keywords: query, queries, application, annotation, multiple 
 ---

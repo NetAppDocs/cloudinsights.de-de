@@ -17593,7 +17593,7 @@ Von diesem Datensammler unterstützte Produkte:
 | Typ | Lücke | HTTPS |  
 
 
-.4+| Performance | Qtree.1+ | Storage | Fehlerhafte Festplatten | Implementiert | HTTPS 
+.4+| Leistung | Qtree | Storage | Fehlerhafte Festplatten | Implementiert | HTTPS 
 
 
 |  .3+| Storage-Node | Cache-Trefferverhältnis Insgesamt | Implementiert | HTTPS 
