@@ -13,6 +13,7 @@ summary: Benutzerdetails über forensische Benutzer
 :imagesdir: ./media/
 
 
+[role="lead"]
 Informationen zu jedem Benutzer finden Sie in der Benutzerübersicht. Verwenden Sie diese Ansichten, um Benutzereigenschaften, zugehörige Einheiten und aktuelle Aktivitäten zu verstehen.
 
 

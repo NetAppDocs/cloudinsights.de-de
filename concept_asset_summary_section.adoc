@@ -23,7 +23,7 @@ Im Abschnitt Zusammenfassung einer Asset-Seite werden allgemeine Informationen z
 
 Die Informationen in der Zusammenfassung sowie in beliebigen Tabellen oder benutzerdefinierten Widgets auf der Bestandsseite werden automatisch auf Basis des ausgewählten Zeitbereichs aktualisiert. Sie können die aktuelle Aktualisierungsrate in der oberen rechten Ecke des Abschnitts Zusammenfassung, den Tabellen und beliebigen benutzerdefinierten Widgets anzeigen.
 
-image:Summary_Section_Example.png[""]
+image:Summary_Section_Example.png["Beispiel für einen Abschnitt mit der Zusammenfassung der Landing Page"]
 
 Hinweis: Die im Abschnitt Zusammenfassung angezeigten Informationen variieren je nach Art des anzuzeigenden Assets.
 
@@ -56,4 +56,4 @@ Die Topologie ist für die folgenden Asset-Typen verfügbar:
 * Datenmenge
 
 
-image:TopologyExample.png[""]
+image:TopologyExample.png["Beispiel für einen Abschnitt „Topologie der Startseite“"]

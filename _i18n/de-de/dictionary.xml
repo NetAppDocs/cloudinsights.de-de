@@ -285,7 +285,6 @@
   <block id="2ed84ae72ff3e01616900184c1d0f692" category="list-text">Port-Anforderungen: 2001 (http) oder 2443 (https)</block>
   <block id="a5141f9b03e4d6eb2d3f9b1aec49d49d" category="list-text">Melden Sie sich mit Benutzernamen und Kennwort bei der HiCommand Device Manager-Software an</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
-  <block id="45ad2fd383f9501acfd6c1c71d85cf35" category="list-text">Überprüfen Sie den Zugriff auf HiCommand Device Manager<block ref="7090750cd79fe50b73b5b343db7f1ba7" category="inline-link-rx"></block></block>
   <block id="fdfceedcfadaa8fc4e641a9271ff7595" category="section-title">Performance-Anforderungen erfüllt</block>
   <block id="8f2fd5a7846dd234e704c033378310ab" category="paragraph">Zur Erfassung von Leistungsdaten müssen die folgenden Anforderungen erfüllt sein:</block>
   <block id="ea7b21fc8f4e748fa1970360adc14288" category="list-text">HDS USP, USP V und VSP Performance</block>
@@ -2033,7 +2032,6 @@
   <block id="07d8a20311bb7ef0fdd0a319b9667a65" category="summary">Überblick über den Abschnitt „Übersicht der Assets“ in Cloud Insights.</block>
   <block id="29128cb5215fb2e80e1ee7a20fe86126" category="doc">Abschnitt „Ressourcen-Seite-Übersicht“</block>
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">Im Abschnitt Zusammenfassung einer Asset-Seite werden allgemeine Informationen zu einem Asset angezeigt, einschließlich der Frage, ob Kennzahlen oder Leistungsrichtlinien für Bedenken sorgen. Potenzielle Problembereiche werden durch einen roten Kreis gekennzeichnet.</block>
-  <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ce7951793151a0f69487b414bdd8b498" category="paragraph">Hinweis: Die im Abschnitt Zusammenfassung angezeigten Informationen variieren je nach Art des anzuzeigenden Assets.</block>
   <block id="77e5be94869a677b15024b30a6f71dbd" category="paragraph">Sie können auf einen der Asset-Links klicken, um die Asset-Seiten anzuzeigen. Wenn Sie beispielsweise einen Speicherknoten anzeigen, können Sie auf einen Link klicken, um die Asset-Seite des zugehörigen Speichers anzuzeigen.</block>
   <block id="74202c0b51dce91cb2d7ff8a3db7b041" category="paragraph">Sie können die Metriken anzeigen, die mit der Ressource verknüpft sind. Ein roter Kreis neben einer Metrik zeigt an, dass Sie mögliche Probleme diagnostizieren und lösen müssen.</block>
@@ -2042,7 +2040,6 @@
   <block id="99571eecaa5c5d622bb0d1f855752d5f" category="section-title">Topologie</block>
   <block id="aa2a179e15d11223c669195106a7e555" category="paragraph">Auf bestimmten Asset-Seiten enthält der Abschnitt Zusammenfassung einen Link, um die Topologie des Assets und dessen Verbindungen anzuzeigen.</block>
   <block id="575c9466566e751977f9292115eb4416" category="paragraph">Die Topologie ist für die folgenden Asset-Typen verfügbar:</block>
-  <block id="52e59638e3e7203a9a8c3071303759c9" category="paragraph"><block ref="52e59638e3e7203a9a8c3071303759c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0507fa02ffd6a1be1f4496a833b194eb" category="summary">Konfiguration von Red hat Virtualization Data Collector</block>
   <block id="6609776175436f74c8fb3530cfff6f27" category="doc">Datensammler Red hat Virtualization</block>
   <block id="d1624931d9106f77a0559ab662680b12" category="paragraph">Cloud Insights verwendet den Red hat Virtualization Data Collector, um Bestandsdaten von virtualisierten Linux- und Microsoft Windows-Workloads zu erfassen.</block>
@@ -2696,7 +2693,6 @@
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">Während der Installation des Agenten werden ein lokaler Benutzer _cssys_ und eine lokale Gruppe _cssys_ auf dem Computer erstellt. Wenn die Berechtigungseinstellungen die Erstellung eines lokalen Benutzers nicht zulassen und stattdessen Active Directory benötigen, muss im Active Directory-Server ein Benutzer mit dem Benutzernamen _csys_ erstellt werden.</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">Schritte zum Installieren von Agent</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">Das System zeigt die Seite Agent hinzufügen an:</block>
-  <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">Agenten 1 hinzufügen</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">Vergewissern Sie sich, dass der Agent-Server die Mindestsystemanforderungen erfüllt.</block>
   <block id="3214e3b147ee224c2ddc92c7445e5bd4" category="list-text">Um zu überprüfen, ob auf dem Agent-Server eine unterstützte Version von Linux ausgeführt wird, klicken Sie auf _Version supported (i)_.</block>
   <block id="8bb9382589d54088894314b485b4650a" category="list-text">Wenn Ihr Netzwerk Proxy-Server verwendet, legen Sie die Proxy-Server-Details fest. Befolgen Sie dazu die Anweisungen im Proxy-Abschnitt.</block>
@@ -2705,7 +2701,6 @@
   <block id="7a10e2f227e4fcc6978cfba86486a764" category="list-text">Klicken Sie auf das Symbol in Zwischenablage kopieren, um den Installationsbefehl zu kopieren.</block>
   <block id="635c6559744a9cbe13ef48ca6179175e" category="list-text">Führen Sie den Installationsbefehl in einem Terminalfenster aus.</block>
   <block id="80f1bbe9e042c14f0ea154b144e49635" category="list-text">Das System zeigt die folgende Meldung an, wenn die Installation erfolgreich abgeschlossen wurde:</block>
-  <block id="b1740e3ac3c505fcca225cbec7f2d4c1" category="image-alt">Erkennung eines neuen Agenten</block>
   <block id="580afeaa1b1ac5a8f6d1db7819e9a5df" category="list-title">Nach Dem Beenden</block>
   <block id="04d29c3c4604f72fc55618d9d893779a" category="inline-link-macro">Benutzerverzeichnissammler</block>
   <block id="efb42161e6d534718356bdb292677612" category="list-text">Sie müssen ein konfigurieren <block ref="a207b7d2a96200a9b4b411f4896b3d1d" category="inline-link-macro-rx"></block>.</block>
@@ -3693,9 +3688,6 @@
   <block id="501f2f9df98b83cc872cd59f0493d08d" category="inline-image-macro">Zusätzliche Kapazität für die Rückkehr in die 60-Tage-TTF</block>
   <block id="1349caff32af26b4b92540943cbbecc2" category="paragraph"><block ref="1349caff32af26b4b92540943cbbecc2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="103ede5225263a5f8e396b6adb9b4898" category="paragraph">Hier können Sie auch einen bequemen Link zu dieser Insight kopieren, die Seite als Lesezeichen hinzufügen oder sie ganz einfach mit Ihrem Team teilen.</block>
-  <block id="f92acc2ebbef6e6ab56943465d44e66d" category="summary">Fehlerbehebung bei Fehlern in der Datenerfassung.</block>
-  <block id="1f4094c2de648308d5fc49072a6bf149" category="doc">Fehlerbehebung bei Fehlern in der Datenerfassung</block>
-  <block id="d4908b1e39cc61772e5d74e5fb77d241" category="section-title">NOCH AUSSTEHEND</block>
   <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">Konfiguration des netstat Datensammlers</block>
   <block id="38fe3e3fc1af1752c621d2c58ca1d537" category="doc">Netstat Data Collector</block>
   <block id="1d90778793975e863bbd8302e8bebf4f" category="paragraph">Cloud Insights verwendet diese Datensammlung, um netstat-Kennzahlen zu sammeln.</block>
@@ -4126,7 +4118,6 @@
   <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">Standard</block>
   <block id="8d5e7e72f12067991186cdf3cb7d5d9d" category="cell">Premium</block>
   <block id="7afd7da52e07dd7febdaa6f50c36644d" category="cell">Erfassungseinheit</block>
-  <block id="136e04472fbaee9e921166f5e324d322" category="cell"><block ref="136e04472fbaee9e921166f5e324d322" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8ab2a0cac3ada71ce8c170ef7fd84b5" category="cell">Datenerfassung</block>
   <block id="9aedeaf1f77b8642abe528503b8c5de8" category="cell">Ressourcen</block>
   <block id="7779f407557df710ab784b39afcce151" category="cell">Datenaufnahme</block>
@@ -5617,7 +5608,6 @@
   <block id="d208bc48ca9e6fe4b4936dce12add557" category="paragraph">Wenn Sie eine IP-Geräte-ID in eine CSV-Datei exportieren, enthält die Datei die folgenden Informationen in der angezeigten Reihenfolge:</block>
   <block id="47e5e39b3cac687a3b73edfe98c861de" category="list-text">Wählen Sie die Registerkarte * IP Address Identify* aus.</block>
   <block id="43a4485688412a4e4e4fab069e3e9921" category="list-text">Wählen Sie das IP-Gerät oder die Geräte aus, deren Kennung Sie exportieren möchten.</block>
-  <block id="1831b018233352e80cd4ae41174733e5" category="list-text">Klicken Sie auf die Option *Export* <block ref="5a6850cb7f51e9dfd8e09198487d79d2" category="inline-image-macro-rx" type="image"></block> Schaltfläche.</block>
   <block id="72e518a27a4c3f4be36166b3d74723b8" category="paragraph">Wählen Sie aus, ob die .CSV-Datei geöffnet oder die Datei gespeichert werden soll.</block>
   <block id="46d0b067f3ba692193c0773f225a42f2" category="inline-link-macro">Fibre Channel-Geräteauflösung</block>
   <block id="ab9ecb106589bb37422c33e81b2e5e08" category="paragraph">Verwandte Themen:<block ref="280bfa8feb63e3ce80ec4f66b259f852" category="inline-link-macro-rx"></block>
@@ -5663,7 +5653,6 @@
   <block id="0787e82546099bff5ac87c0c5d9ce7a3" category="cell">TCP-Port für die Verbindung mit dem XtremIO Management Server. Der Standardwert ist 443.</block>
   <block id="6e043661fa5856f26501d44b41838596" category="summary">Konfigurieren Sie Datensammler</block>
   <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">Wählen Sie einen Agent-Zugriffsschlüssel aus.</block>
-  <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">Es kann bis zu zwei Abfrageperioden dauern, bis die Daten aus dem Dienst in Dashboards angezeigt oder für die Abfrage verfügbar sind.</block>
   <block id="cda933c18fbb578a3f0d2e4907aaa572" category="summary">AWS S3 als Storage Data Collector konfigurieren.</block>
   <block id="77420e0a789b610e7581918e246f925d" category="doc">AWS S3 als Storage Data Collector konfigurieren</block>
   <block id="2401a330264ccc83db4e7dcb1d2a3800" category="paragraph">Cloud Insights verwendet AWS S3 als Storage Data Collector, um Bestands- und Performance-Daten aus AWS S3 Instanzen zu erfassen.</block>
@@ -6499,7 +6488,6 @@
   <block id="848e162feda2cd9dcd4c3740e6440441" category="list-text">Beginnen wir mit dem Hinzufügen unserer Widgets. Klicken Sie bei Bedarf auf das Symbol *Bearbeiten*, um den Bearbeitungsmodus zu aktivieren.</block>
   <block id="73e63333d34d675df97db3ad7c445e97" category="list-text">Klicken Sie auf das Symbol * Widget hinzufügen* und wählen Sie *Tabelle*, um dem Dashboard ein neues TabellenWidget hinzuzufügen.</block>
   <block id="255e309e4ef25e1a494f4aec136025e6" category="paragraph">Das Dialogfeld Widget bearbeiten wird geöffnet. Die angezeigten Standarddaten sind für alle Speicher in Ihrer Umgebung.</block>
-  <block id="731dfd723b554eaf8151475f0d88546b" category="paragraph"><block ref="731dfd723b554eaf8151475f0d88546b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e879f4d912b34f5a466e0863317b1663" category="list-text">Wir können dieses Widget anpassen. Löschen Sie im Feld Name oben „Widget 1“ und geben Sie „Virtual Machine Performance table“ ein.</block>
   <block id="27e593a944a7198c37ca7fca40d69371" category="list-text">Klicken Sie auf das Dropdown-Menü Asset type und ändern Sie _Storage_ zu _Virtual Machine_.</block>
   <block id="e6fca2bd269fb78cc3ef024756280bef" category="paragraph">Die Änderungen an den Tabellendaten werden angezeigt, wenn alle Virtual Machines in Ihrer Umgebung angezeigt werden.</block>
@@ -6509,7 +6497,6 @@
   <block id="1630a608b6b7648ad37e46b029924aee" category="paragraph">Die Tabelle zeigt jetzt nur VMs mit insgesamt 10 IOPS oder mehr.</block>
   <block id="f28509ea18ff15960817dc6d0eadec87" category="list-text">Wir können die Tabelle weiter reduzieren, indem wir Ergebnisse gruppieren. Klicken Sie auf die Schaltfläche *[+]* neben *Group by* und wählen Sie ein Feld aus, nach dem Sie gruppieren möchten, z. B. _Application_ oder _Hypervisor Name_. Gruppierung wird automatisch angewendet.</block>
   <block id="ccdd47122d87f6d80edce5290dfecc00" category="paragraph">Die Tabellenzeilen werden nun entsprechend Ihrer Einstellung gruppiert. Sie können die Gruppen nach Bedarf erweitern und reduzieren. Gruppierte Zeilen zeigen gerollte Daten für jede der Spalten an. In einigen Spalten können Sie die Aufrollmethode für diese Spalte auswählen.</block>
-  <block id="963b71ea25e0f4ac13e33745dc71f9ca" category="paragraph"><block ref="963b71ea25e0f4ac13e33745dc71f9ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e841905e785227685e1d25c190838b2" category="list-text">Wenn Sie das TabellenWidget auf Ihre Zufriedenheit angepasst haben, klicken Sie auf die Schaltfläche *[Save]*.</block>
   <block id="60a2c40bda2512f24e50cf4d723ca018" category="paragraph">Das TabellenWidget wird im Dashboard gespeichert.</block>
   <block id="3e4bc5fc68a2a8701b0de86c9e89059d" category="paragraph">Sie können die Größe des Widgets auf dem Dashboard ändern, indem Sie die untere rechte Ecke ziehen. Machen Sie das Widget breiter, um alle Spalten deutlich anzuzeigen. Klicken Sie auf *Speichern*, um das aktuelle Dashboard zu speichern.</block>
@@ -6520,7 +6507,6 @@
   <block id="43adcf63c14ee1ceacc1093f2b713ad2" category="list-text">Wählen Sie *Virtual Machine* und wählen Sie _Latenz - Max_. Stellen Sie alle gewünschten Filter ein, oder lassen Sie *Filter durch* leer. Für *Roll Up* wählen Sie _sum_ by _All_. Diese Daten als _Liniendiagramm_ anzeigen und _Y-Achse_ als _Primär_ verlassen.</block>
   <block id="fcd3d23ed6fbd29d4387a16fcae59460" category="list-text">Klicken Sie auf die Schaltfläche *[+Query]*, um eine zweite Datenzeile hinzuzufügen. Wählen Sie in dieser Zeile _VMDK_ und _Latenz - Max_ aus. Stellen Sie alle gewünschten Filter ein, oder lassen Sie *Filter durch* leer. Für *Roll Up* wählen Sie _sum_ by _All_. Diese Daten als _Liniendiagramm_ anzeigen und _Y-Achse_ als _Primär_ verlassen.</block>
   <block id="b520f92d1a3f5a11af3dce0ec85a100b" category="list-text">Klicken Sie auf *[Speichern]*, um dieses Widget zum Dashboard hinzuzufügen.</block>
-  <block id="08bfe1563394caca311bcf6aea8b2ac2" category="paragraph"><block ref="08bfe1563394caca311bcf6aea8b2ac2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baf9ee37915fbb747d9ef5b4d110868b" category="paragraph">Als nächstes fügen wir ein Diagramm mit den IOPS „Lesen“, „Schreiben“ und „Gesamt“ in einem einzelnen Diagramm ein.</block>
   <block id="82f304226dbde3ec59773ae390f5c0ff" category="list-text">Klicken Sie auf das Symbol *[Widget hinzufügen]* und wählen Sie _Flächendiagramm_, um dem Dashboard ein neues Widget mit einem Flächendiagramm hinzuzufügen.</block>
   <block id="bb3193917b080c5371689d0ba8cdbfc9" category="list-text">Das Dialogfeld Widget bearbeiten wird geöffnet. Benennen Sie dieses Widget „VM IOPS“ (VM-IOPS).</block>
@@ -6528,7 +6514,6 @@
   <block id="784aade0c3e697e38ea636fb4ecc7838" category="list-text">Klicken Sie auf die Schaltfläche *[+Query]*, um eine zweite Datenzeile hinzuzufügen. Wählen Sie für diese Zeile *Virtual Machine* und dann _IOPS - Read_.</block>
   <block id="44c6e401ff3de1e9bb3b9bbcadb1ac6c" category="list-text">Klicken Sie auf die Schaltfläche *[+Query]*, um eine dritte Datenzeile hinzuzufügen. Wählen Sie für diese Zeile *Virtual Machine* aus und wählen Sie _IOPS - Write_.</block>
   <block id="e3b7cbf62999250ac5a349afdde63d52" category="list-text">Klicken Sie auf *Legende anzeigen*, um eine Legende für dieses Widget auf dem Dashboard anzuzeigen.</block>
-  <block id="4bdd47da43cd2f2c9f78fffc1ff8de13" category="paragraph"><block ref="4bdd47da43cd2f2c9f78fffc1ff8de13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4795fc6f6e8d075051a908449a8b433" category="paragraph">Danach fügen wir ein Diagramm hinzu, das den VM-Durchsatz für jede mit der VM verbundene Applikation anzeigt. Dafür nutzen wir die Roll-Up-Funktion.</block>
   <block id="06164225a98f1bbe40c8e5ee609b3a04" category="list-text">Das Dialogfeld Widget bearbeiten wird geöffnet. Benennen Sie dieses Widget „VM-Durchsatz nach Applikation“ (nach Applikation).</block>
   <block id="fa7d4670dcaed9a91e90d1c7bcea7028" category="list-text">Wählen Sie Virtual Machine aus, und wählen Sie „Durchsatz – Gesamt“. Stellen Sie alle gewünschten Filter ein, oder lassen Sie den Filter leer. Wählen Sie bei Roll Up „Max“ und wählen Sie „Anwendung“ oder „Name“ aus. Zeigt die 10 besten Anwendungen an. Diese Daten als Liniendiagramm anzeigen und die Y-Achse als Primär belassen.</block>
@@ -6536,7 +6521,6 @@
   <block id="76d4e0908cbfa58636b2811ed2ba47aa" category="paragraph">Sie können die Größe von Widgets ändern, indem Sie die untere rechte Ecke ziehen.</block>
   <block id="9681b8ede5c132930da76a11a12ee1e0" category="paragraph">Achten Sie darauf, *[Speichern]* das Dashboard zu verwenden, nachdem Sie Ihre Änderungen vorgenommen haben.</block>
   <block id="ca1b516707306a7db85b8ed1c44a3272" category="paragraph">Ihr letztes VM Performance Dashboard sieht so aus:</block>
-  <block id="8b8c0577487afb0f8113ae70ab69f902" category="paragraph"><block ref="8b8c0577487afb0f8113ae70ab69f902" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Neue Funktionen in Cloud Insights verfügbar</block>
   <block id="01a314c1b9df8a1e936aee8eb0691f89" category="section-title">November 2022</block>
   <block id="1213554c7911deac461074eac67a0744" category="section-title">Mehr als 40 neue Sicherheits-, Datenerfassungs- und CVO-Monitore!</block>
@@ -6761,8 +6745,6 @@
   <block id="fa2e624f267fd72536c09f1bb81ca72e" category="paragraph">_Neue Variablen für Attribute und die Fähigkeit, Variablen in Widgets_ zu verwenden.</block>
   <block id="87cd8b8808600624d8c590cfc2e6e94b" category="inline-link-macro">Variablen</block>
   <block id="b9d6ed474c251dd95442fcafec00806b" category="paragraph">Dashboards sind jetzt leistungsfähiger und flexibler als je zuvor. Erstellen Sie adaptive Dashboards mit Attributvariablen, um Dashboards schnell im laufenden Betrieb zu filtern. Mit diesen und anderen bereits vorhandenen <block ref="1f4728a3536b8e2cc43013fb8f17db6c" category="inline-link-macro-rx"></block> Sie können jetzt ein Dashboard erstellen, das Kennzahlen für Ihre gesamte Umgebung anzeigt und reibungslos nach Ressourcenname, Typ, Standort usw. gefiltert wird. Verwenden Sie Zahlenvariablen in Widgets, um Rohdaten mit Kosten zu verknüpfen, z. B. Kosten pro GB für Speicher als Service.</block>
-  <block id="3063e25af4e9f3b6080b388ac1aad070" category="paragraph"><block ref="3d859cfde5726d14af67cb7dbeb9e18a" category="inline-image-macro-rx" type="image"></block>
-<block ref="d1f7027beb3d94ad8ba6281c876e2b8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db974238714ca8de634a7ce1d083a14f" category="inline-link-macro">API</block>
   <block id="252b86cd65deaa141a3f516e7ef483bd" category="paragraph">Verbesserte Funktionen zur Integration in Berichterstellungs-, ITSM- und Automatisierungs-Tools von Drittanbietern – leistungsstarke Cloud Insights <block ref="9591c9ad7e66434ec5fdd8eaa821cdd2" category="inline-link-macro-rx"></block> Ermöglicht Benutzern, die Cloud Insights-Berichtsdatenbank direkt abzufragen, ohne die Cognos-Berichtsumgebung zu durchlaufen.</block>
   <block id="6b492909f89fdcefb2c45d261f5ea471" category="section-title">Pod-Tabellen auf der VM Landing Page</block>
@@ -7565,7 +7547,6 @@
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">Legt die Größe des ONTAP FPolicy-Sendepuffers fest. Wenn eine ONTAP-Version vor 9.8p7 verwendet wird und Performance-Problem auftritt, kann die Puffergröße des ONTAP send geändert werden, um die ONTAP-Leistung zu verbessern. Wenden Sie sich an den NetApp Support, wenn diese Option nicht angezeigt wird und Sie sie erkunden möchten.</block>
   <block id="82d21a2ba2528e048a25848fe767072e" category="list-text">Auf der Seite installierte Datensammler können Sie den Datensammler über das Optionsmenü rechts neben jedem Collector bearbeiten. Sie können den Datensammler neu starten oder die Konfigurationsattribute des Datensammlers bearbeiten.</block>
   <block id="4b3fbac9b531aa2660d41834f330998e" category="paragraph">Im Fehlerfall klicken Sie in der Spalte _Status_ auf _more Detail_, um Details zum Fehler zu erhalten.</block>
-  <block id="a03d26ec6344587e2e2eea990dc74c04" category="paragraph"><block ref="a03d26ec6344587e2e2eea990dc74c04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7a4e713cb63e4db8a2b51e171793fb0" category="cell">Data Collector wird einige Zeit ausgeführt und stoppt nach einer zufälligen Zeit, schlägt fehl mit: "Fehlermeldung: Connector befindet sich im Fehlerzustand. Dienstname: Audit. Grund für Fehler: Externer fpolicy-Server überlastet.“</block>
   <block id="6b6d7f0bb3be3abde199877bf4398807" category="cell">Die Ereignisrate von ONTAP war weit höher als die, die das Feld Agent verarbeiten kann. Damit wurde die Verbindung beendet. Überprüfen Sie den Peak Traffic in CloudSecure, wenn die Verbindung unterbrochen wurde. Dies können Sie auf der Seite *CloudSecure &gt; Aktivitätsforensics &gt; Alle Aktivitäten* überprüfen. Wenn der maximale aggregierte Datenverkehr höher ist als der, was die Agent Box verarbeiten kann, lesen Sie die Seite Event Rate Checker zur Dimensionierung der Collector-Bereitstellung in einer Agent-Box. Wenn der Agent vor dem 4. März 2021 in der Agent-Box installiert wurde, führen Sie die folgenden Befehle in der Agent-Box aus: Echo 'net.Core.rmem_max=8388608' &gt;&gt; /etc/sysctl.conf Echo 'net.ipv4.tcp_rmem = 4096 2097152 8388608' &gt;&gt; /etc/sysctl.conf sysctl -p Neustart des Sammlers von der UI nach der Größenänderung.</block>
   <block id="7dc1f3b50a6e66da2ae31d89467342c4" category="cell">Collector meldet Fehlermeldung: „Keine lokale IP-Adresse auf dem Anschluss gefunden, die die Datenschnittstellen der SVM erreichen kann“.</block>
@@ -7700,70 +7681,40 @@
   <block id="4cd8c7a0a81af63c6cf9cab90cbb2336" category="paragraph">Dieses Dokument enthält die Schemadiagramme für die Berichtsdatenbank. Sie können auch eine Datei mit der herunterladen <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>.</block>
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">Inventory Datamart</block>
   <block id="4ee2fd4b3ba41c46dcb5c95f5ab3c98c" category="paragraph">Die folgenden Bilder beschreiben das Inventurdatamart.</block>
-  <block id="3e2f25b47c543aeccbef9b6b89e4e5b9" category="paragraph"><block ref="3e2f25b47c543aeccbef9b6b89e4e5b9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9918d51dd05a83e7bd33f0ccf00de8a" category="paragraph"><block ref="f9918d51dd05a83e7bd33f0ccf00de8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5bab0780005928c1dbfdbb00ea1df4a6" category="section-title">SAN-Fabric</block>
-  <block id="d73c5fce2101d5a56bc456e6dcc553ae" category="paragraph"><block ref="d73c5fce2101d5a56bc456e6dcc553ae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cfe27cbd0a5a77107c6dfcf07d2629c" category="section-title">Port-Konnektivität</block>
-  <block id="5962edd92cfd8a93acedc6b7e7e7a7c2" category="paragraph"><block ref="5962edd92cfd8a93acedc6b7e7e7a7c2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d63c4d97992264f467c4b6d954ffe048" category="paragraph"><block ref="d63c4d97992264f467c4b6d954ffe048" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="section-title">NAS</block>
-  <block id="d605d34c925dcf2288b4a9e58160a98f" category="paragraph"><block ref="d605d34c925dcf2288b4a9e58160a98f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d42905511528df6765f3f1a7c04b865" category="section-title">Pfade und Verstöße</block>
-  <block id="db0ca9f97ed2f67290608cf211194459" category="paragraph"><block ref="db0ca9f97ed2f67290608cf211194459" category="inline-image-macro-rx" type="image"></block></block>
   <block id="933e469cb306a0ea9faabd3e4235d3be" category="section-title">Anmerkungen</block>
-  <block id="06d49fce248546c7d82b8c1954d88572" category="paragraph"><block ref="06d49fce248546c7d82b8c1954d88572" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="754e09a84049d3a4b6cb4cf33780e715" category="paragraph"><block ref="754e09a84049d3a4b6cb4cf33780e715" category="inline-image-macro-rx" type="image"></block></block>
   <block id="72ef24c018bdda1f94bc3f159a543c04" category="section-title">Kapazität im Storage- und Speicherpool</block>
-  <block id="f3b797f67d469dd37ce40731bcd8be54" category="paragraph"><block ref="f3b797f67d469dd37ce40731bcd8be54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69ba447dc5e9ab1619f330f106eabbf3" category="section-title">Volume-Kapazität</block>
-  <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c407084b02a56538766fb242db0b4450" category="section-title">VM-Kapazität</block>
-  <block id="68e6551a1f63bb301cc7fca6362929c5" category="paragraph"><block ref="68e6551a1f63bb301cc7fca6362929c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca2219979432d21faba231a579345d08" category="section-title">Kapazität Des Internen Volumes</block>
-  <block id="f4e5ca88f8ce548d1f5ffb1bca3de78d" category="paragraph"><block ref="f4e5ca88f8ce548d1f5ffb1bca3de78d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38f9518fc5a08755d8726dd013507ff6" category="section-title">Qtree-Kapazität</block>
-  <block id="586421980190a076a9b06514831910b5" category="paragraph"><block ref="586421980190a076a9b06514831910b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e0ba81e0831c363ed8d29ad89590f535" category="section-title">Storage-Kapazitätseffizienz</block>
-  <block id="b1d500efdc2ccce9c1ea2de0f8d0ffb0" category="paragraph"><block ref="b1d500efdc2ccce9c1ea2de0f8d0ffb0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87aaa09aa3753a95331c644c7b301566" category="section-title">Auslastung Des Filesystems</block>
-  <block id="dc297a03f873852760b7ef869c38a64d" category="paragraph"><block ref="dc297a03f873852760b7ef869c38a64d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d024c12213e71ea6a55252fbd3311782" category="section-title">Port-Kapazität</block>
-  <block id="4e0bf17868ca0bb7a19261cd6c03ca03" category="paragraph"><block ref="4e0bf17868ca0bb7a19261cd6c03ca03" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="11ff75cde151f2a83f17a32413e20d93" category="paragraph"><block ref="11ff75cde151f2a83f17a32413e20d93" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec1d23d46d47071826c25c1be457754c" category="section-title">Kapazität Der Festplattengruppe</block>
-  <block id="e7166983d9d7cf17f7993ea13645ddc8" category="paragraph"><block ref="e7166983d9d7cf17f7993ea13645ddc8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5a0f3d3aca1daf0fc15bc8c06641d58" category="section-title">Performance Datamart</block>
   <block id="4b0a396c135d61ae9a60a4baa44adf59" category="paragraph">Die folgenden Bilder beschreiben das Performance-Datum.</block>
   <block id="b4cc8db8c41365008f6c83a7edd0c3f9" category="section-title">Stündliche Performance Des Applikations-Volumes</block>
   <block id="8ed77ce1d723e3b9eb45d36731ab5125" category="section-title">Stündliche Performance Des Internen Volumes</block>
   <block id="35a2f98661106a51b803c7959dd0906f" category="section-title">Tägliche Performance Des Internen Volumes</block>
   <block id="cb25875b45e4c1358cd431cc09ff89fb" category="section-title">Stündliche Volume-Performance</block>
-  <block id="1f8eb1c7e0259ec622bd786d5407e1fd" category="paragraph"><block ref="1f8eb1c7e0259ec622bd786d5407e1fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="735b6ed9b0069fd73dd0986ba5ad4bf2" category="section-title">Tägliche Volume Performance</block>
   <block id="05a9ced33983772db161394893a94d72" category="section-title">Tägliche Qtree Performance</block>
-  <block id="ee8dd1c2940aea920797eeaffe912342" category="paragraph"><block ref="ee8dd1c2940aea920797eeaffe912342" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b49234362b48d766a5b0b1863f7c92c" category="section-title">Wechseln Sie die stündliche Performance für den Host</block>
-  <block id="75e0e6e560181f10490dbe7ecec89c64" category="paragraph"><block ref="75e0e6e560181f10490dbe7ecec89c64" category="inline-image-macro-rx" type="image"></block></block>
   <block id="186dbcc03644e55957a9b1b52609c7d9" category="section-title">Wechseln Sie die stündliche Leistung für den Port</block>
-  <block id="bfbcecf2dc0e6f38f8ade49f74a5d02a" category="paragraph"><block ref="bfbcecf2dc0e6f38f8ade49f74a5d02a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="341ebe0d593f6e0dec63405ce23a76e1" category="section-title">Stündliche Wechsel der Performance für Storage erforderlich</block>
-  <block id="5c78788c89f2721b1c5e92135d1b9aa6" category="paragraph"><block ref="5c78788c89f2721b1c5e92135d1b9aa6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94b56d759d5921c506e923eefdbe62b8" category="section-title">Stündliche Wechsel der Performance für Tape möglich</block>
-  <block id="c709717967cf19240c0231f69694d044" category="paragraph"><block ref="c709717967cf19240c0231f69694d044" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5020b90850e754bc38486e80ef1e9292" category="section-title">VM Performance</block>
-  <block id="dc956c7fbb9b4a36aa283dd84a33bab4" category="paragraph"><block ref="dc956c7fbb9b4a36aa283dd84a33bab4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148a0a1a0c4f5f645a32c02dd12e0313" category="section-title">VM tägliche Performance für Host</block>
-  <block id="76c8bbc18b3829ee501ea6dc371355c4" category="paragraph"><block ref="76c8bbc18b3829ee501ea6dc371355c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c1dd9d7823c16fea64885fdb5ac184" category="section-title">VM stündliche Performance für Host</block>
   <block id="638d0e4f76718f4d82d0bdfd3b4c5425" category="section-title">VMDK tägliche Performance</block>
-  <block id="501e2d2f999e9804fedf30b741f600e1" category="paragraph"><block ref="501e2d2f999e9804fedf30b741f600e1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="520ab7e34819995ee389e0b0acd6042e" category="section-title">Stündliche VMDK-Performance</block>
   <block id="ee5d6febefb6ed5a889b193c7b9f70d7" category="section-title">Stündliche Storage-Node-Performance</block>
   <block id="1dcdf4799c1661b5732a356dad0691d0" category="section-title">Tägliche Festplatten-Performance</block>
-  <block id="b382c057368550009cb6adaf6db9feaf" category="paragraph"><block ref="b382c057368550009cb6adaf6db9feaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f86c571e203a9013f990c064f0b41d7a" category="section-title">Stündliche Festplatten-Performance</block>
-  <block id="f553d3656eb144d0d97045c1f9b2a3c0" category="paragraph"><block ref="f553d3656eb144d0d97045c1f9b2a3c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cd83da6b8675e2660027f1d689252b6f" category="summary">Die Data Collector Support Matrix enthält detaillierte Informationen zu unterstützten Datensammlern.</block>
   <block id="e8488ef49f6dab9af961495fc93e60c3" category="summary">Auf der Landing Page des Kubernetes-Namespace wird erläutert</block>
@@ -8138,7 +8089,6 @@
   <block id="b39c055166e1e8cfc2de8f74b7b76640" category="paragraph-title">Typ-zu-Suche:</block>
   <block id="be62e4fb0ce75ae1c87237e1a5947368" category="section-title">Ändern der Rolle eines vorhandenen Benutzers</block>
   <block id="04f239d51d6f6978df84a2372f6abdb2" category="section-title">Berechtigungen beim Hinzufügen über *Cluster Management IP*:</block>
-  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">Berechtigungen beim Hinzufügen über *Vserver Management IP*:</block>
   <block id="cc327506f222e6ab4e0ec6a024dcbe7b" category="section-title">Was kann ich tun, wenn mir der Platz knapp wird?</block>
   <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">_Snapshot_ Aktion durchführen</block>
   <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">Systemgröße</block>
@@ -9261,15 +9211,11 @@
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">Optionen Für Die Alarmauflösung</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">*NetApp BlueXP*</block>
-  <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">Erste Schritte mit NetApp Cloud-Services finden Sie unter<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> Und klicken Sie auf *erste Schritte*.</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">Wenn Sie sich noch nicht angemeldet haben, wählen Sie *Anmelden*</block>
   <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">Akzeptieren Sie die Geschäftsbedingungen und wählen Sie *Weiter*.</block>
   <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXP zeigt Ihnen die ersten Schritte auf.</block>
-  <block id="263bd04f886f846996f5ed624502bf8f" category="inline-link">*NetApp BlueXP*</block>
-  <block id="361b2969b0cdb055eb84b98514758bea" category="paragraph">Sobald Sie über einen NetApp BlueXP Account verfügen, wählen Sie *Anmelden* auf der<block ref="87139ca7d238418aa56c6f30bb2cbebf" category="inline-link-rx"></block> Portalseite.</block>
   <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">Cloud Insights kostenlos für BlueXP testen</block>
   <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights zeigt Ihnen, wie Sie Ihre Unternehmensumgebung gestalten.</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Cluster-Management</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">Erforderlich für das Blockieren von CIFS/SMB-Benutzern.</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">Wenn Sie *Storage Manager Dashboard* aus Team Content auswählen, erhalten Sie mehrere Berichte, die Informationen über Ihren Datenverkehr und Ihren Speicher enthalten.</block>
@@ -9620,8 +9566,6 @@
   <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository. Stellen Sie sicher, dass die Bild-Tags und Verzeichnispfade zu diesen Bildern in Ihrem Repository mit denen im Cloud Insights-Repository übereinstimmen.</block>
   <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">Bearbeiten Sie die AgentConfiguration in Operator-config.yaml, um die neue Position des Docker-Repo zu berücksichtigen. Erstellen Sie ein neues imagePullSecret für Ihr privates Repository. Weitere Informationen finden Sie unter _https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">Wenn Sie OpenShift 4.6 oder höher ausführen, müssen Sie die AgentConfiguration in _Operator-config.yaml_ bearbeiten, um die Einstellung _runPrivileged_ zu aktivieren:</block>
-  <block id="e6955fda6db57ce036906d2f15519731" category="paragraph"><block ref="0ac387629bcb7a9ba3f6f8e72a2f2cd7" category="inline-image-macro-rx" type="image"></block>
-<block ref="6ba665c891b77a3a5dfb5c061b6e2ba3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="14acb12fc5baee38469b462494a56a68" category="list-text">Sobald diese eingegeben wurden, können Sie den Download-Befehl-Snippet in die Zwischenablage kopieren.</block>
   <block id="492eb11b2ab5e4b044176b40a2eebeac" category="list-text">Fügen Sie das Snippet in ein _bash_ Fenster ein und führen Sie es aus. Die Installationsdateien des Bedieners werden heruntergeladen. Beachten Sie, dass das Snippet einen eindeutigen Schlüssel hat und für 24 Stunden gültig ist.</block>
   <block id="aa976aff83a7c1132e171f3598f5502c" category="list-text">Wenn Sie ein benutzerdefiniertes oder privates Repository haben, kopieren Sie das optionale Bild-Pull-Snippet, fügen Sie es in eine _bash_-Shell ein und führen Sie es aus. Nachdem die Bilder gezogen wurden, kopieren Sie sie in Ihr privates Repository. Stellen Sie sicher, dass Sie dieselben Tags und Ordnerstrukturen beibehalten. Aktualisieren Sie die Pfade in _Operator-Deployment.yaml_ sowie die Einstellungen des Docker-Repository in _Operator-config.yaml_.</block>
@@ -9689,19 +9633,9 @@
   <block id="d260e141887ca1a59da8973861299709" category="section-title">Kapazitätsdatamart</block>
   <block id="9ad5c20e0121bd52bd3fcef56f73d00d" category="paragraph">Die folgenden Bilder beschreiben die Datenkapazität.</block>
   <block id="d7e27f6a5d216572cc692811c6530f82" category="section-title">Kubernetes PV-Kapazität</block>
-  <block id="629604d8234527b8f55ed9a4f1119cc9" category="paragraph"><block ref="629604d8234527b8f55ed9a4f1119cc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="955630f91d989ab6e44388b92dc3ec42" category="section-title">Kapazität Des Storage-Nodes</block>
-  <block id="c99969b26ce76580fac3132d1addc9bd" category="paragraph"><block ref="c99969b26ce76580fac3132d1addc9bd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="23f05aab2c347892b769f3ccf77b61ab" category="paragraph"><block ref="23f05aab2c347892b769f3ccf77b61ab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3176895f7b0fd7802579ef7f42a2c642" category="section-title">Stündliche Host-Performance</block>
-  <block id="98c76a8e012a3b0335dadc45e22612b3" category="paragraph"><block ref="98c76a8e012a3b0335dadc45e22612b3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2995061fb96ddb9884cf89bb2a0a4eba" category="paragraph"><block ref="2995061fb96ddb9884cf89bb2a0a4eba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c5acdb673581325ace1afb429eff665" category="paragraph"><block ref="8c5acdb673581325ace1afb429eff665" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b73d87facce72dbc09974de7a801e6" category="section-title">Tägliche Storage-Node-Performance</block>
-  <block id="73ff8710d68388c0f16d396727e1bb29" category="paragraph"><block ref="73ff8710d68388c0f16d396727e1bb29" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd8a3856de3da0db088a741e7cd81e16" category="section-title">Bearbeiten von Benachrichtigungen für ONTAP</block>
   <block id="82ade85625dc6ecdc6fabebd2e345d19" category="paragraph">Sie können Benachrichtigungen für ONTAP-Cluster ändern, indem Sie in der oberen rechten Dropdown-Liste auf einer Storage-Landing-Page „_Benachrichtigungen bearbeiten“ auswählen.</block>
   <block id="8328b360704f8cf7f0beb073b0b83137" category="inline-image-macro">ONTAP Benachrichtigungen bearbeiten</block>
@@ -9856,13 +9790,11 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">Berechtigungen: *Lesen/Schreiben*</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">Wählen Sie die gewünschten Werte für *expiry* und *Auto-Renew* aus</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">Kopieren Sie das generierte API-Zugriffstoken. Dieser Schritt muss durchgeführt werden, bevor Sie das Fenster schließen können.</block>
-  <block id="c53a7287de20acd49117a565baa3a38a" category="paragraph"><block ref="c53a7287de20acd49117a565baa3a38a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">Verwenden Sie in Swagger (Admin &gt; API-Zugriff &gt; API-Dokumentation) das Token, um Cloud Insights-APIs zu autorisieren</block>
   <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">Klicken Sie oben rechts im Swagger-Bildschirm auf _autorisieren_</block>
   <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">Fügen Sie das kopierte Token von oben in das Feld „Kunden-APIKey“ ein</block>
   <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">Klicken Sie Auf *Autorisieren*</block>
   <block id="e90cef1e648cb27fd619c6f8c92f8f4d" category="list-text">Schließen Sie das Fenster</block>
-  <block id="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="paragraph"><block ref="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cae2725952c883826876920381ecb59" category="list-text">Laden Sie das AU-Installationsprogramm mithilfe der _/au/Installers/{Platform}/latest_ oder _/au/Installers/{Platform}/{Version}_ API herunter:</block>
   <block id="88eb9a112ead77fb26b1599f4f223fc1" category="list-text">Plattform: *linux*</block>
   <block id="52205a46ef276687ee5647ea8fe6eb0b" category="list-text">Version: *&lt;version&gt;* (neueste oder angegebene)</block>
@@ -9875,8 +9807,6 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">Die nächsten Schritte erfordern die Verwendung eines temporären Tokens. Verwenden Sie nicht das oben erstellte API Access-Token.</block>
   <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">Erstellen Sie im Cloud Insights-API-Swagger mithilfe der _/au/oneTimeToken_-API ein einmaliger Token.</block>
   <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">Kopieren Sie das resultierende einmalige Token.</block>
-  <block id="c7a15bab2443e9ad4efdb034095ab235" category="paragraph"><block ref="100d1787d5f8172a57c3e18a398e0c17" category="inline-image-macro-rx" type="image"></block>
-<block ref="0b1cbf7e91a826bb9e4ce0091ddf900c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">Navigieren Sie auf dem Computer, auf dem die AU installiert werden soll, zu dem Ordner, der die heruntergeladene Installationsdatei enthält. Für die folgenden Befehle muss der Benutzer über Root-Berechtigungen verfügen.</block>
   <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">Entpacken Sie die Installationsdatei</block>
   <block id="f0aa130be42df30dfb32287298a294dc" category="list-text">Ändern Sie das Verzeichnis in den resultierenden Installationsordner</block>
@@ -12033,34 +11963,18 @@ Die Cluster-CPU-Sättigung wird als Summe der CPU-Auslastung berechnet, geteilt 
   <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">Führen Sie jeden der folgenden Befehle in der Reihenfolge aus. Abhängig von Ihrer aktuellen Installation können einige dieser Befehle Nachrichten ‘object not found’ zurückgeben. Diese Meldungen können sicher ignoriert werden.</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">Wenn zuvor eine Sicherheitskontextbeschränkung erstellt wurde:</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">Über Kube-State-Metrics</block>
-  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">kube-State-Metrics Counters</block>
-  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">Verwenden Sie die folgenden Links, um auf Informationen zu diesen kube State-Metriken zuzugreifen:</block>
   <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">Kennzahlen für die Konfigmap</block>
-  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
   <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">DemonSet Metrics</block>
-  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
   <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">Implementierungsmetriken</block>
-  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
   <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">Ingress Metrics</block>
-  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
   <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">Namespace-Kennzahlen</block>
-  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
   <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">Node-Kennzahlen</block>
-  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
   <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">Persistente Volume-Kennzahlen</block>
-  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
-  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">Kenngrößen Für Die Forderung Im Persistenten Volume</block>
-  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
   <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">Pod-Metriken</block>
-  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
   <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">Kennzahlen für ReplicaSet</block>
-  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
   <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">Geheimkennzahlen</block>
-  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
   <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">Service-Kennzahlen</block>
-  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">StatfulSet-Kennzahlen</block>
-  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">Überprüfen Von Kubernetes Prüfsummen</block>
   <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">Das Cloud Insights Agent-Installationsprogramm führt Integritätsprüfungen durch. Einige Benutzer müssen jedoch vor der Installation oder Anwendung heruntergeladener Artefakte möglicherweise ihre eigenen Überprüfungen durchführen. Um einen nur-Download-Vorgang durchzuführen (im Gegensatz zum Standard-Download-and-install), können diese Benutzer den Agent-Installation Befehl erhalten von der UI und entfernen Sie die nachhängbare "Installation" Option.</block>
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">Entfernen Sie den nachfolgenden „--install“ aus dem Befehl.</block>
@@ -12139,9 +12053,6 @@ Bearbeiten Sie beispielsweise das ReplicaSet...
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">Diese Meldung wird normalerweise nur angezeigt, wenn ein neuer Operator installiert ist und der Pod „_telegraf-rs_“ vor dem Einschalten des Pod „_ksm_“ steht. Diese Meldungen sollten beendet werden, sobald alle Pods ausgeführt werden.</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">Ich sehe keine Kennzahlen für die Kubernetes-Kronjobs, die in meinem Cluster vorhanden sind, erfasst.</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">Nach der Installation des Bedieners geben die telegraf-ds-Pods CrashLoopBackOff ein und die POD-Protokolle zeigen „su: Authentication failure“ an.</block>
-  <block id="9de497f607f8a73311408d3d7b337399" category="cell">Ich sehe wiederholte Fehlermeldungen wie die folgenden in meinen Telegraf-Protokollen:
-
- E! [Agent] Fehler beim Schreiben in Outputs.http: Post <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> Kontext-Deadline überschritten (Client.Timeout beim Warten auf Header überschritten)</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">Vor der Installation oder Aktualisierung des Bedieners</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">Installieren des Überwachungsbedieners</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">MetricAggregationInterval</block>
@@ -12173,7 +12084,6 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
   <block id="1851aec30e57598577c5ea29624fe8f4" category="list-text">Keine Einschränkungen: Cloud Insights bleibt Benutzern unabhängig von ihrer Domain zugänglich.</block>
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">Beschränken Sie den Zugriff auf Standarddomänen: Standarddomänen sind die, die von Ihren Cloud Insights-Umgebungs-Kontoeigentümern verwendet werden. Diese Domains sind immer zugänglich.</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">Beschränken Sie den Zugriff auf die von Ihnen angegebenen Standardwerte und Domänen. Führen Sie alle Domänen auf, die Sie Zugriff auf Ihre Cloud Insights-Umgebung haben möchten, zusätzlich zu den Standarddomänen.</block>
-  <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="section-title">Oktober 2023</block>
   <block id="e76d326e7377a93bd9d473077ecdd257" category="section-title">Beschränken Sie den Zugriff auf bestimmte Domänen</block>
   <block id="e391d7f1ca15dcf0f9409952796c6e9f" category="inline-link-macro">Einschränken des Cloud Insights-Zugriffs</block>
@@ -12514,7 +12424,6 @@ telegraf:
                 Wert: unix:///run/Docker.Sock
     ...
 ...</block>
-  <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">Bearbeiten Sie den Abschnitt telegraf in _AgentConfiguration_, und setzen Sie _dockerMetricCollectionEnabled_ auf false. Weitere Informationen finden Sie im Abschnitt des Bedieners  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
   <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">„Zugriff verweigert“-Ereignisse</block>
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*Zugriff verweigert*: Workload-Sicherheit integriert sich in ONTAP um zu empfangen <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> Und bieten eine zusätzliche Schicht für Analysen und automatische Reaktionen.</block>
   <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">Bei der Verwendung eines Pfadfilters tritt ein Fehler „Anfrage fehlgeschlagen mit Statuscode 500/503“ auf.</block>
@@ -12579,7 +12488,6 @@ Weitere Informationen finden Sie unter Proxys <block ref="05c875968683001fc59f20
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">Diagrammsymbol anzeigen</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP-Berechtigungen</block>
-  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">Berechtigungen für autonomen ONTAP Ransomware-Schutz</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">Berechtigungen für ONTAP-Zugriff verweigert</block>
   <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">Weitere Informationen zur Konfiguration anderer <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>.</block>
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 und höher. Verwenden Sie für die beste Performance eine Data ONTAP-Version über 9.13.1.</block>
@@ -13050,4 +12958,125 @@ In Firefox werden Cookie-Ausnahmen einfach als _auth0.com_ und _netapp.com_ beze
 
 [inputs.prometheus] Fehler im Plugin: Fehler beim Erstellen einer HTTP-Anforderung an \http://kube-state-metrics.&lt;namespace&gt;.svc.Cluster.local:8080/metrics: Get \http://kube-state-metrics.&lt;namespace&gt;.svc.Cluster.local:8080/metrics: Dial tcp: Lookup kube-State-metrics.&lt;namespace&gt;.svc.Cluster.local: Kein solcher Host</block>
   <block id="079771aecc679d555303419cd98137ca" category="paragraph">Eine Anleitung zur Kubernetes Installation finden Sie im <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> Seite.</block>
+  <block id="9be87f9e8e8a3d18f170d8e28fbce953" category="section-title">Kube-State-metrics-Zähler</block>
+  <block id="f4154b752e8569289468086cbe4e4e9b" category="paragraph">Der NetApp-Kubernetes-Überwachungsoperator extrahiert die unten aufgeführten Kennzahlen für den kube-Status. Weitere Details zu den einzelnen Zählerwidersetzen finden Sie unter:<block ref="79bd6f84686ecc7b61be15b7d2f69e33" category="inline-link-rx"></block>.</block>
+  <block id="7e75de4210a4f75b62291d2c27cdf70b" category="list-text">Persistent Volume Claim Metrics</block>
+  <block id="84b98a8d4559f5d46404a919d1040a3e" category="inline-image-macro">Tooltip zum Einschränken von Domänen</block>
+  <block id="2e2c905356717112e73ba7de2413a7c9" category="paragraph"><block ref="2e2c905356717112e73ba7de2413a7c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="823fea947b864c91d6e752501473c559" category="paragraph"><block ref="823fea947b864c91d6e752501473c559" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d33bf75d5e80061b9367f195f05e3eeb" category="paragraph"><block ref="d33bf75d5e80061b9367f195f05e3eeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b9d04cd47823420fa061075ba05345de" category="inline-image-macro">nas</block>
+  <block id="3b4e5c73809e6994ed3212bb7ddf9c8b" category="paragraph"><block ref="3b4e5c73809e6994ed3212bb7ddf9c8b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1f873037143ad09d4539dd078099e6d" category="inline-image-macro">Pfade und Verstöße</block>
+  <block id="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="paragraph"><block ref="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f4214df4af946e8a7615e82db28d116" category="inline-image-macro">Port-Konnektivität</block>
+  <block id="1206ab321eae7286620a3018bfb95cb2" category="paragraph"><block ref="1206ab321eae7286620a3018bfb95cb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="242ecb7731cc20f39e1540965229f1ce" category="inline-image-macro">San Fabric</block>
+  <block id="08d595e0713ed1ea1c5bfbf317cfada7" category="paragraph"><block ref="08d595e0713ed1ea1c5bfbf317cfada7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ddecebdea58b5f264d27f1f7909bab74" category="inline-image-macro">Storage</block>
+  <block id="51c14a87b4fa40df1324284a1bb28911" category="paragraph"><block ref="51c14a87b4fa40df1324284a1bb28911" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1af4d8d1e27060818e9c85e97a69ce95" category="inline-image-macro">Storage-Node</block>
+  <block id="8fa6c5e8edf99771f8bff4748cd4437a" category="paragraph"><block ref="8fa6c5e8edf99771f8bff4748cd4437a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd723ed383c1d461e38f7569ed30e7fd" category="inline-image-macro">Virtual Machine</block>
+  <block id="fe82a552e413503d4121ee6fd50f63e5" category="paragraph"><block ref="fe82a552e413503d4121ee6fd50f63e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c5ca8dd445f709cb9110e451b4898f71" category="inline-image-macro">Kostenzuordnung</block>
+  <block id="e764fd818e8a60f10a76ae77381bfaf8" category="paragraph"><block ref="e764fd818e8a60f10a76ae77381bfaf8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="859e0945a15fa9fabbbf016a602a42fc" category="paragraph"><block ref="859e0945a15fa9fabbbf016a602a42fc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f72ed0193c9f6e827b093b9ccb5692c" category="paragraph"><block ref="0f72ed0193c9f6e827b093b9ccb5692c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6bcd4ec60a2f1f010ce8992ba7f4c165" category="paragraph"><block ref="6bcd4ec60a2f1f010ce8992ba7f4c165" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="paragraph"><block ref="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="05ee109bb6a61c05a6e9a540d3d31c3f" category="paragraph"><block ref="05ee109bb6a61c05a6e9a540d3d31c3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="85275511fdcd60f9afc50a8dc99e4bc5" category="paragraph"><block ref="85275511fdcd60f9afc50a8dc99e4bc5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="721aede41f047426f957ff682629e9a3" category="paragraph"><block ref="721aede41f047426f957ff682629e9a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bffc4627852bfd98c5194d770bc8a0c7" category="paragraph"><block ref="bffc4627852bfd98c5194d770bc8a0c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb9ac9276d68505110a2f855e0584167" category="paragraph"><block ref="cb9ac9276d68505110a2f855e0584167" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="83b9739ec081b938c1167a09ed5eb70f" category="paragraph"><block ref="83b9739ec081b938c1167a09ed5eb70f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="84afe34b86a51d01fbe9bc82f5546c35" category="paragraph"><block ref="84afe34b86a51d01fbe9bc82f5546c35" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9938cac46b49a5874f9aae8c12197356" category="paragraph"><block ref="9938cac46b49a5874f9aae8c12197356" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c61d5ee86f360bfb37d65d25b92d8b69" category="paragraph"><block ref="c61d5ee86f360bfb37d65d25b92d8b69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3dbb3b6e21eea031050b31060313c408" category="paragraph"><block ref="3dbb3b6e21eea031050b31060313c408" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52e6f974dc77751f36293cd0a12c42a1" category="paragraph"><block ref="52e6f974dc77751f36293cd0a12c42a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e9d346d6a7cb0b43af0243fd94dce848" category="paragraph"><block ref="e9d346d6a7cb0b43af0243fd94dce848" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="176adbc6b6bf8de89cf7f7afe5c28cf3" category="paragraph"><block ref="176adbc6b6bf8de89cf7f7afe5c28cf3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5798c65ea98d63c3c2d1ab932e8c3bbc" category="paragraph"><block ref="5798c65ea98d63c3c2d1ab932e8c3bbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="681deee752c2eeeedda4bc3077015d16" category="paragraph"><block ref="681deee752c2eeeedda4bc3077015d16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cc06e501d2313afc8a5354ed8cbebe3" category="paragraph"><block ref="3cc06e501d2313afc8a5354ed8cbebe3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="632590b38845e06be878069588e6e5c7" category="paragraph"><block ref="632590b38845e06be878069588e6e5c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56d66efcaf566eea795a6ebd02d2fa6e" category="paragraph"><block ref="56d66efcaf566eea795a6ebd02d2fa6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a00a08416d4e3d2841e9c44cb8d9f65b" category="paragraph"><block ref="a00a08416d4e3d2841e9c44cb8d9f65b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7d4c86213113e6498b04a4e0c5b3d897" category="paragraph"><block ref="7d4c86213113e6498b04a4e0c5b3d897" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fce52c04340881c99fd21c228440c1bf" category="paragraph"><block ref="fce52c04340881c99fd21c228440c1bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dbc6c5b7146bafe40a30fc92b0cdaf2b" category="paragraph"><block ref="dbc6c5b7146bafe40a30fc92b0cdaf2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4e5b033da78fbd177925f9a50abab298" category="paragraph"><block ref="4e5b033da78fbd177925f9a50abab298" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0c8df8e69e71a378baf617f3ff985afc" category="paragraph"><block ref="0c8df8e69e71a378baf617f3ff985afc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="17b8e5d1c10542a4c25ad27c290eb108" category="paragraph"><block ref="17b8e5d1c10542a4c25ad27c290eb108" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b32116d8eca48b62ed2e18d3ce0a898" category="paragraph"><block ref="9b32116d8eca48b62ed2e18d3ce0a898" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5eb8a99093a69e48aa26443ea1c211ed" category="paragraph"><block ref="5eb8a99093a69e48aa26443ea1c211ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="7c3057c4ee146bbbf479dd984bac7872" category="inline-image-macro">Anweisungen Für Den Bediener Der Überwachung</block>
+  <block id="07f70080e556bb9b826d89cf6ff09947" category="paragraph"><block ref="de36a053cf630e2894fa310d38b2b180" category="inline-image-macro-rx" type="image"></block>
+<block ref="7bc6d42c5d890df69a3f5fb8b991519a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="802997bcb8e9581226b3000b8b611b1c" category="cell">Ich sehe wiederholte Fehlermeldungen wie die folgenden in meinen Telegraf-Protokollen:
+
+ E! [Agent] Fehler beim Schreiben in Outputs.http: Post "\https://&lt;tenant_url&gt;/Rest/v1/Lake/ingest/influxdb": Kontext-Deadline überschritten (Client. Zeitüberschreitung beim Warten auf Header überschritten)</block>
+  <block id="5a581223d2fea6c45a7ac1278334f8c1" category="cell">Bearbeiten Sie den Abschnitt telegraf in _AgentConfiguration_, und erhöhen Sie _outputTimeout_ auf 10s. Weitere Informationen finden Sie im Abschnitt des Bedieners <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>.</block>
+  <block id="732ce6294370d77834ecc9c30e5bfc82" category="image-alt">Hinzufügen eines Workload Security Agent</block>
+  <block id="f488844908bcd6752dde5e2291a4a5b8" category="image-alt">Meldung für erfolgreiche Agenteninstallation</block>
+  <block id="49b8daebcc43b2c12992a3b23060a794" category="inline-image-macro">Dropdown-Anmerkungen in einer Variablen</block>
+  <block id="46736c19ce0a9a9cd8d068df66c14a29" category="inline-image-macro">Attributfilter in einer Variablen</block>
+  <block id="5ab787adbf028819ba79cab284beffef" category="paragraph"><block ref="9d10b6a06536dc9085d80fdf43f5eadb" category="inline-image-macro-rx" type="image"></block>
+<block ref="8baccdcbf74be733d4f8068fceb4563a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="61d927a1aed666979cd431fa1e2acade" category="inline-image-macro">Aktivieren Sie das Kontrollkästchen</block>
+  <block id="66fab3ef4e4b1b406a7d7a7d64a34f5f" category="cell"><block ref="66fab3ef4e4b1b406a7d7a7d64a34f5f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3e3fbe658c59d92b9974e5edb4e74bb" category="list-text">Überprüfen Sie den Zugriff auf HiCommand Device Manager \http://&lt;HiCommand_Device_Manager_IP&gt;:2001/Service/StorageManager</block>
+  <block id="ba290115002f208a04ca127b0e17c6be" category="inline-image-macro">Widget „Tabelle bearbeiten“</block>
+  <block id="5e1cbcf5ef12edbfe8322ecead535dd5" category="paragraph"><block ref="5e1cbcf5ef12edbfe8322ecead535dd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15a8b2e76636c71ff01c1fa4acba5796" category="inline-image-macro">Beispiel für die Gruppierung von Tabellen-Widgets</block>
+  <block id="8a4191b4e2d4351048760e7beb244dba" category="paragraph"><block ref="8a4191b4e2d4351048760e7beb244dba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79ff0115b286a1b0ae8ff29c8f5240e1" category="inline-image-macro">Liniendiagramm mit Latenzdaten</block>
+  <block id="56f09862e7018b4ae795f1f94a6d6281" category="paragraph"><block ref="56f09862e7018b4ae795f1f94a6d6281" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8c9005dfe195826080e733ddb908cc6" category="inline-image-macro">Flächendiagramm mit VM-IOPS</block>
+  <block id="fbac94cddfcb7945065a320f6e7feafd" category="paragraph"><block ref="fbac94cddfcb7945065a320f6e7feafd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="401fed57c814eb5c6cee47d79b354f59" category="inline-image-macro">VM Dashboard vollständiges Beispiel, das alle Widgets anzeigt</block>
+  <block id="00c340d0d431c9fa05836d10d9d9cee7" category="paragraph"><block ref="00c340d0d431c9fa05836d10d9d9cee7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97d8e9a07abc13937635fa4d8bfc72e4" category="list-text">Klicken Sie auf die Option *Export* <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> Schaltfläche.</block>
+  <block id="697dfb9b235783676b63d2f1ed07cad5" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt; KOPF</block>
+  <block id="3aa39f9c69e0586976520ec48d9ad3c6" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; B8087143154c7dd9f5d1d3f33ee1bdf97a7c9d1
+=== Berechtigungen beim Hinzufügen über *vServer Management IP*:</block>
+  <block id="dd1d0dc7a37fe63b5e2c257349aa6532" category="paragraph">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; B8087143154c7dd9f5d1d3f33ee1bdf97a7c9d1
+=== Berechtigungen für den autonomen ONTAP-Ransomware-Schutz</block>
+  <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">Workload Security Collector Error Mehr Detail Link</block>
+  <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="05245c9c713dbc0e818edff595a4246c" category="inline-image-macro">Beispiel für einen Abschnitt mit der Zusammenfassung der Landing Page</block>
+  <block id="65ef2d3ac9b8dfdd7b17c10af9a602da" category="paragraph"><block ref="65ef2d3ac9b8dfdd7b17c10af9a602da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3e588c8b8cdde417ea31ee3bbefd9a9" category="inline-image-macro">Beispiel für einen Abschnitt „Topologie der Startseite“</block>
+  <block id="3cb6e63269aa6edf3cc66859826feb7d" category="paragraph"><block ref="3cb6e63269aa6edf3cc66859826feb7d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="609716a86af2f9467366b90e750be49d" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt; KOPF
+. Klicken Sie auf *Erweiterte Konfiguration*, um weitere Konfigurationsfelder hinzuzufügen. (Nicht alle Datensammler benötigen erweiterte Konfiguration.)
+. Klicken Sie auf *Testkonfiguration*, um zu überprüfen, ob der Datensammler ordnungsgemäß konfiguriert ist.
+. Klicken Sie auf *Collector hinzufügen*, um die Konfiguration zu speichern und den Datensammler zu Ihrem Cloud Insights-Mandanten hinzuzufügen.</block>
+  <block id="599f97fbfc2fc945eb562d68c9aca1a8" category="paragraph">Es kann bis zu zwei Abfrageperioden dauern, bis die Daten aus dem Dienst in Dashboards angezeigt oder für die Abfrage verfügbar sind.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; B8087143154c7dd9f5d1d3f33ee1bdf97a7c9d1</block>
+  <block id="67dd8a9c7300c7a68539b856568b643c" category="inline-image-macro">Schaltfläche Exportieren</block>
+  <block id="e075c22a2e254de2972fc152e1c02118" category="list-text">Klicken Sie auf die Option *Export* <block ref="3b91e5b29194b7fd2b5cb067b5b3e811" category="inline-image-macro-rx" type="image"></block> Schaltfläche.</block>
+  <block id="b73a83fb453d4638343c31abb0f03dfc" category="paragraph">Erste Schritte mit NetApp Cloud-Services finden Sie unter <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> Und klicken Sie auf *erste Schritte*.</block>
+  <block id="71292a4043ee880f4b2810b42954372c" category="paragraph">Sobald Sie über einen NetApp BlueXP Account verfügen, wählen Sie *Anmelden* auf der <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> Portalseite.</block>
+  <block id="4145d4f2ee1e46d7c8be56e8de04d6ad" category="paragraph">Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights führt Sie durch den Aufbau Ihrer Unternehmensumgebung und zeigt Ihnen dabei auch die Region an, in der Ihre Umgebung ansässig sein soll.</block>
+  <block id="36ea7ac79a19ee180028b3bfed6a7d9d" category="inline-image-macro">Auswahl der Region, in der die Cloud Insights-Umgebung gehostet werden soll</block>
+  <block id="6d8a4061d9933ffda18b9027252d037a" category="paragraph"><block ref="6d8a4061d9933ffda18b9027252d037a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f04c88c9abdcf0f7616d53af7878ffe" category="inline-image-macro">API-Token erstellen</block>
+  <block id="92ad7a2e8e52adc61ae1c672917b0a1b" category="paragraph"><block ref="92ad7a2e8e52adc61ae1c672917b0a1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1ccf6bac1d198cd3bf6c54076f17148" category="inline-image-macro">Autorisieren Sie das API-Token</block>
+  <block id="ca268cb1b1c68d2d9ff1bb1fadd9a98d" category="paragraph"><block ref="ca268cb1b1c68d2d9ff1bb1fadd9a98d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="444d350efa5c1aec48178823f7b07394" category="inline-image-macro">Erstellen Sie ein API-Token mit einmaliger Verwendung</block>
+  <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">Antwort für ein Beispiel für eine einmalige Verwendung von API-Token</block>
+  <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
+<block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

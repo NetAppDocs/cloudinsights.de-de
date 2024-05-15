@@ -124,6 +124,10 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
+<<<<<<< KOPF
+
+[]
+====
 Berechtigungen für ONTAP ARP-Integration:
 
 ....
@@ -145,9 +149,8 @@ Beispiel: _Csrestrole_ ist bereits vorhanden, daher müssen wir nur den Anti-Ran
 security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
 security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
 ....
-
-
-=== Berechtigungen beim Hinzufügen über *Vserver Management IP*:
+>>>>>>>> B8087143154c7dd9f5d1d3f33ee1bdf97a7c9d1
+=== Berechtigungen beim Hinzufügen über *vServer Management IP*:
 
 Wenn Sie den Cluster Management Administrator-Benutzer nicht verwenden können, um Workload Security den Zugriff auf den ONTAP SVM-Datensammler zu erlauben, können Sie einen neuen Benutzer namens „cscuser“ mit den Rollen erstellen, wie in den Befehlen unten gezeigt. Verwenden Sie den Benutzernamen „CSuser“ und das Passwort für „cscuser“, wenn Sie den Workload Security Data Collector für die Verwendung von Vserver Management IP konfigurieren.
 
@@ -165,15 +168,17 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
+<<<<<<< KOPF
+
+====
 Berechtigungen für ONTAP-Zugriff verweigert:
 
 ....
 security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
 security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ....
-
-
-=== Berechtigungen für autonomen ONTAP Ransomware-Schutz
+>>>>>>>> B8087143154c7dd9f5d1d3f33ee1bdf97a7c9d1
+=== Berechtigungen für den autonomen ONTAP-Ransomware-Schutz
 
 Wenn Sie Anmeldedaten für die Cluster-Administration verwenden, sind keine neuen Berechtigungen erforderlich.
 
@@ -334,7 +339,7 @@ Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.
 
 Im Fehlerfall klicken Sie in der Spalte _Status_ auf _more Detail_, um Details zum Fehler zu erhalten.
 
-image:CS_Data_Collector_Error.png[""]
+image:CS_Data_Collector_Error.png["Workload Security Collector Error Mehr Detail Link"]
 
 [cols="2*"]
 |===

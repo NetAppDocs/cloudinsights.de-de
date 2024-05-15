@@ -30,8 +30,8 @@ Siehe link:pre-requisites_for_k8s_operator.html["Voraussetzungen"] Dokumentation
 
 == Installieren des Kubernetes Monitoring Operator
 
-image:NKMO-Instructions-1.png[""]
-image:NKMO-Instructions-2.png[""]
+image:NKMO-Instructions-1.png["Anweisungen Für Den Bediener Der Überwachung"]
+image:NKMO-Instructions-2.png["Anweisungen Für Den Bediener Der Überwachung"]
 
 .Schritte zum Installieren des Kubernetes Monitoring Operator Agent auf Kubernetes:
 . Geben Sie einen eindeutigen Cluster-Namen und einen eindeutigen Namespace ein. Wenn Sie es sind <<Aktualisierung,Aktualisierung>> Verwenden Sie aus einem früheren Kubernetes-Operator den gleichen Cluster-Namen und Namespace.
@@ -532,7 +532,7 @@ telegraf:
 
 | Ich sehe wiederholte Fehlermeldungen wie die folgenden in meinen Telegraf-Protokollen:
 
- E! [Agent] Fehler beim Schreiben in Outputs.http: Post "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] Kontext-Deadline überschritten (Client.Timeout beim Warten auf Header überschritten) | Bearbeiten Sie den Abschnitt telegraf in _AgentConfiguration_, und setzen Sie _dockerMetricCollectionEnabled_ auf false. Weitere Informationen finden Sie im Abschnitt des Bedieners  link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"]. 
+ E! [Agent] Fehler beim Schreiben in Outputs.http: Post "\https://<tenant_url>/Rest/v1/Lake/ingest/influxdb": Kontext-Deadline überschritten (Client. Zeitüberschreitung beim Warten auf Header überschritten) | Bearbeiten Sie den Abschnitt telegraf in _AgentConfiguration_, und erhöhen Sie _outputTimeout_ auf 10s. Weitere Informationen finden Sie im Abschnitt des Bedieners link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"]. 
 
 
 | Ich vermisse _involvedobject_ Daten für einige Event Logs. | Stellen Sie sicher, dass Sie die Schritte im befolgt haben link:pre-requisites_for_k8s_operator.html["Berechtigungen"] Abschnitt oben. 

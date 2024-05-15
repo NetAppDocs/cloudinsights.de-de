@@ -156,7 +156,6 @@ Wie lange Cloud Insights Audit-Daten aufbewahrt, hängt von Ihrer Edition ab:
 
 == Fehlerbehebung
 
-[role="lead"]
 Hier finden Sie Vorschläge zur Fehlerbehebung bei Audit-Problemen.
 
 |===

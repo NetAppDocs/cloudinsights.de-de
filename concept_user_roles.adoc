@@ -291,4 +291,4 @@ Ihnen werden folgende Auswahlmöglichkeiten angezeigt:
 * Beschränken Sie den Zugriff auf die von Ihnen angegebenen Standardwerte und Domänen. Führen Sie alle Domänen auf, die Sie Zugriff auf Ihre Cloud Insights-Umgebung haben möchten, zusätzlich zu den Standarddomänen.
 
 
-image:Restrict_Domains_Tooltip.png[""]
+image:Restrict_Domains_Tooltip.png["Tooltip zum Einschränken von Domänen"]

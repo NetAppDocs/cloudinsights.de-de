@@ -28,22 +28,22 @@ Beachten Sie, dass Cloud Insights APIs entsprechend Ihrer aktuellen Ausgabe verf
 | API-Typ | Basic | Standard | Premium 
 
 
-| Erfassungseinheit | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Erfassungseinheit | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Datenerfassung | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Datenerfassung | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Meldungen |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Meldungen |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Ressourcen |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ressourcen |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Datenaufnahme |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Datenaufnahme |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Aufnahme Protokollieren |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Aufnahme Protokollieren |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 |===
 Darüber hinaus Ihr Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["Funktionsgruppe Rolle"] Bestimmt, auf welche APIs Sie zugreifen können. Benutzer- und Gastrollen haben weniger Berechtigungen als Administratorrolle. Wenn Sie z. B. in Überwachen und Optimieren eine Administratorrolle haben, die Rolle Benutzer jedoch in Reporting verwendet wird, können Sie alle API-Typen außer Data Warehouse verwalten.
 

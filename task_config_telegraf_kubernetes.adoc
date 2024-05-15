@@ -32,23 +32,21 @@ Der Kubernetes Monitoring Operator installiert kube-State-Metriken automatisch. 
 
 
 
-=== kube-State-Metrics Counters
+=== Kube-State-metrics-Zähler
 
-Verwenden Sie die folgenden Links, um auf Informationen zu diesen kube State-Metriken zuzugreifen:
+Der NetApp-Kubernetes-Überwachungsoperator extrahiert die unten aufgeführten Kennzahlen für den kube-Status. Weitere Details zu den einzelnen Zählerwidersetzen finden Sie unter: https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[].
 
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["Kennzahlen für die Konfigmap"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet Metrics"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["Implementierungsmetriken"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["Ingress Metrics"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["Namespace-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["Node-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["Persistente Volume-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["Kenngrößen Für Die Forderung Im Persistenten Volume"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["Pod-Metriken"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["Kennzahlen für ReplicaSet"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["Geheimkennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["Service-Kennzahlen"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatfulSet-Kennzahlen"]
+. Kennzahlen für die Konfigmap
+. DemonSet Metrics
+. Implementierungsmetriken
+. Ingress Metrics
+. Namespace-Kennzahlen
+. Node-Kennzahlen
+. Persistente Volume-Kennzahlen
+. Persistent Volume Claim Metrics
+. Pod-Metriken
+. Kennzahlen für ReplicaSet
+. Geheimkennzahlen
+. Service-Kennzahlen
+. StatfulSet-Kennzahlen
 
-
-'''

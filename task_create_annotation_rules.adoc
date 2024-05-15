@@ -2,6 +2,7 @@
 sidebar: sidebar 
 permalink: task_create_annotation_rules.html 
 summary: Sie erstellen Anmerkungsregeln, um Anmerkungen automatisch auf mehrere Assets anzuwenden. 
+keywords: annotate, annotation, rules 
 ---
 = Anmerkungsregeln werden erstellt
 :toc: macro

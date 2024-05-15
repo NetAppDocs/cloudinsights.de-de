@@ -45,7 +45,7 @@ Bei Linux und Windows ist der Prozess ähnlich.
 
 
 
-image:Manual_AU_Create_API_Token.png[""]
+image:Manual_AU_Create_API_Token.png["API-Token erstellen"]
 
 . Verwenden Sie in Swagger (Admin > API-Zugriff > API-Dokumentation) das Token, um Cloud Insights-APIs zu autorisieren
 +
@@ -57,7 +57,7 @@ image:Manual_AU_Create_API_Token.png[""]
 
 
 
-image:Manual_AU_Authorization.png[""]
+image:Manual_AU_Authorization.png["Autorisieren Sie das API-Token"]
 
 . Laden Sie das AU-Installationsprogramm mithilfe der _/au/Installers/{Platform}/latest_ oder _/au/Installers/{Platform}/{Version}_ API herunter:
 +
@@ -89,8 +89,8 @@ IMPORTANT: Die nächsten Schritte erfordern die Verwendung eines temporären Tok
 
 
 
-image:Manual_AU_one_time_token.png[""]
-image:Manual_AU_one_time_token_response.png[""]
+image:Manual_AU_one_time_token.png["Erstellen Sie ein API-Token mit einmaliger Verwendung"]
+image:Manual_AU_one_time_token_response.png["Antwort für ein Beispiel für eine einmalige Verwendung von API-Token"]
 
 . Navigieren Sie auf dem Computer, auf dem die AU installiert werden soll, zu dem Ordner, der die heruntergeladene Installationsdatei enthält. Für die folgenden Befehle muss der Benutzer über Root-Berechtigungen verfügen.
 +

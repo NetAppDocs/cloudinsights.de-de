@@ -43,7 +43,7 @@ NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügb
 Das System zeigt die Seite Agent hinzufügen an:
 
 +
-image::Add-agent-1.png[Agenten 1 hinzufügen]
+image::Add-agent-1.png[Hinzufügen eines Workload Security Agent]
 
 . Vergewissern Sie sich, dass der Agent-Server die Mindestsystemanforderungen erfüllt.
 . Um zu überprüfen, ob auf dem Agent-Server eine unterstützte Version von Linux ausgeführt wird, klicken Sie auf _Version supported (i)_.
@@ -55,7 +55,7 @@ image:CloudSecureAgentWithProxy_Instructions.png["Agent-Installation mit Proxy-H
 . Führen Sie den Installationsbefehl in einem Terminalfenster aus.
 . Das System zeigt die folgende Meldung an, wenn die Installation erfolgreich abgeschlossen wurde:
 +
-image::new-agent-detect.png[Erkennung eines neuen Agenten]
+image::new-agent-detect.png[Meldung für erfolgreiche Agenteninstallation]
 
 
 

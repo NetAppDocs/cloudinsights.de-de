@@ -91,7 +91,7 @@ Wenn Sie eine IP-Geräte-ID in eine CSV-Datei exportieren, enthält die Datei di
 . Klicken Sie Auf *Verwalten > Geräteauflösung*
 . Wählen Sie die Registerkarte * IP Address Identify* aus.
 . Wählen Sie das IP-Gerät oder die Geräte aus, deren Kennung Sie exportieren möchten.
-. Klicken Sie auf die Option *Export* image:ExportButton.png[""] Schaltfläche.
+. Klicken Sie auf die Option *Export* image:ExportButton.png["Schaltfläche Exportieren"] Schaltfläche.
 +
 Wählen Sie aus, ob die .CSV-Datei geöffnet oder die Datei gespeichert werden soll.
 

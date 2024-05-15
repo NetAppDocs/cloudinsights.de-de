@@ -18,6 +18,7 @@ summary: Daten zu forensischen Benutzeraktivitäten
 :toc-position: content
 
 
+[role="lead"]
 Die Seite Benutzeraktivität hilft Ihnen, die Aktionen zu verstehen, die von Benutzern für Einheiten durchgeführt werden.
 
 Die auf dieser Seite verfügbaren Daten beschreiben:

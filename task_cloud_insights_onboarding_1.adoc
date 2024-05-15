@@ -2,6 +2,7 @@
 sidebar: sidebar 
 permalink: task_cloud_insights_onboarding_1.html 
 summary: Melden Sie sich für Cloud Insights an und erstellen Sie Ihre Umgebung. 
+keywords: onboarding, new user 
 ---
 = Cloud Insights-Onboarding
 :hardbreaks:
@@ -24,7 +25,7 @@ toc::[]
 
 == Sie erstellen Ihr NetApp BlueXP Konto
 
-Erste Schritte mit NetApp Cloud-Services finden Sie unter https://cloud.netapp.com["*NetApp BlueXP*"^] Und klicken Sie auf *erste Schritte*.
+Erste Schritte mit NetApp Cloud-Services finden Sie unter link:https://cloud.netapp.com["*NetApp BlueXP*"^] Und klicken Sie auf *erste Schritte*.
 
 * Wenn Sie sich noch nicht angemeldet haben, wählen Sie *Anmelden*
 * Geben Sie eine gültige geschäftliche E-Mail-Adresse ein und wählen Sie ein Passwort.
@@ -37,7 +38,7 @@ Erste Schritte mit NetApp Cloud-Services finden Sie unter https://cloud.netapp.c
 
 === Was ist, wenn ich bereits über einen NetApp BlueXP Login spreche?
 
-Sobald Sie über einen NetApp BlueXP Account verfügen, wählen Sie *Anmelden* auf der https://cloud.netapp.com["*NetApp BlueXP*"^] Portalseite.
+Sobald Sie über einen NetApp BlueXP Account verfügen, wählen Sie *Anmelden* auf der link:https://cloud.netapp.com["*NetApp BlueXP*"^] Portalseite.
 
 Geben Sie Ihre E-Mail-Adresse und Ihr Kennwort ein. Anschließend gelangen Sie zu den Cloud-Angeboten von NetApp.
 
@@ -49,7 +50,9 @@ image:BlueXP_CloudInsights.png["Cloud Insights kostenlos für BlueXP testen"]
 
 == Starten Sie Ihren Cloud Insights kostenlosen Test
 
-Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights zeigt Ihnen, wie Sie Ihre Unternehmensumgebung gestalten.
+Wenn Sie sich zum ersten Mal bei Cloud Insights anmelden, klicken Sie unter dem Cloud Insights-Angebot auf *Kostenlose Testversion starten*. Cloud Insights führt Sie durch den Aufbau Ihrer Unternehmensumgebung und zeigt Ihnen dabei auch die Region an, in der Ihre Umgebung ansässig sein soll.
+
+image:trial_region_selector.png["Auswahl der Region, in der die Cloud Insights-Umgebung gehostet werden soll"]
 
 Sobald die Erstellung Ihrer Umgebung abgeschlossen ist, können Sie Ihre BlueXP Zugangsdaten verwenden, um sich anzumelden und Ihre kostenlose 30-Tage-Testversion von Cloud Insights zu starten. Während dieser Testversion können Sie sich mit den Features von Cloud Insights beschäftigen.
 
@@ -63,7 +66,7 @@ Nachdem Ihre Umgebung erstellt wurde, können Sie sich jederzeit einfach beim Ne
 
 Sie können einen Browser auch direkt auf Ihrer URL für die Cloud Insights-Umgebung öffnen, beispielsweise:
 
- https://<environment-prefix>.c01.cloudinsights.netapp.com/
+ \https://<environment-prefix>.c01.cloudinsights.netapp.com/
 Die URL wird auch in die Einladungs-E-Mail jedes Benutzers für einfachen Zugriff und Lesezeichen enthalten. Wenn der Benutzer noch nicht bei BlueXP angemeldet ist, wird er zur Anmeldung aufgefordert.
 
 

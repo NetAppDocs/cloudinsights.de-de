@@ -15,6 +15,7 @@ keywords: features
 :imagesdir: ./media/
 
 
+[role="lead"]
 NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige der neuesten Features und Funktionalitäten, die in den kommerziellen Editionen von Cloud Insights verfügbar sind.
 
 
@@ -1418,8 +1419,8 @@ _Neue Variablen für Attribute und die Fähigkeit, Variablen in Widgets_ zu verw
 
 Dashboards sind jetzt leistungsfähiger und flexibler als je zuvor. Erstellen Sie adaptive Dashboards mit Attributvariablen, um Dashboards schnell im laufenden Betrieb zu filtern. Mit diesen und anderen bereits vorhandenen link:concept_dashboard_features.html#variables["Variablen"] Sie können jetzt ein Dashboard erstellen, das Kennzahlen für Ihre gesamte Umgebung anzeigt und reibungslos nach Ressourcenname, Typ, Standort usw. gefiltert wird. Verwenden Sie Zahlenvariablen in Widgets, um Rohdaten mit Kosten zu verknüpfen, z. B. Kosten pro GB für Speicher als Service.
 
-image:Variables_Drop_Down_Showing_Annotations.png[""]
-image:Variables_Attribute_Filtering.png[""]
+image:Variables_Drop_Down_Showing_Annotations.png["Dropdown-Anmerkungen in einer Variablen"]
+image:Variables_Attribute_Filtering.png["Attributfilter in einer Variablen"]
 
 
 
@@ -1594,19 +1595,19 @@ Die leistungsstarken APIs von Cloud Insights sind besser zugänglich als je zuvo
 | API-Kategorie | Basic | Standard | Premium 
 
 
-| Erfassungseinheit | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Erfassungseinheit | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Datenerfassung | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Datenerfassung | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Meldungen |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Meldungen |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Ressourcen |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ressourcen |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Datenaufnahme |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Datenaufnahme |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 |===
 
 
@@ -1688,19 +1689,19 @@ API-Zugriff ist jetzt in allen Editionen von Cloud Insights verfügbar. Benutzer
 | API-Kategorie | Basic | Standard | Premium 
 
 
-| Erfassungseinheit | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Erfassungseinheit | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Datenerfassung | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Datenerfassung | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Ressourcen |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Ressourcen |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Datenaufnahme |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| Datenaufnahme |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 
 
-| Data Warehouse |  |  | image:SmallCheckMark.png[""] 
+| Data Warehouse |  |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
 |===
 Details zur API-Verwendung finden Sie im link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API-Dokumentation"].
 
