@@ -260,6 +260,13 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Fehler: Konfigurationsfehler: Speicher-Array wird vom Inventory nicht gemeldet | Überprüfen Sie, ob Speicher-Array in Frage im HiCommand-Server konfiguriert ist 
 
 
-| Fehler: * Kein Array ist beim Speicher Navigator Modular 2 CLI registriert * Array ist nicht bei der Speicher Navigator Modular 2 CLI registriert * Konfigurationsfehler: Speicher-Array nicht bei StorageNavigator Modular CLI registriert | * Eingabeaufforderung öffnen und Verzeichnis auf den konfigurierten Pfad ändern * Ausführen des Befehls „set=STONAVM_HOME=.“ * Ausführen des Befehls „auunitref“ * Bestätigen Sie, dass die Befehlsausgabe Details des Arrays mit IP * enthält. Wenn die Ausgabe nicht die Array-Details enthält, registrieren Sie das Array mit Storage Navigator CLI: - Eingabeaufforderung öffnen und Verzeichnis auf den konfigurierten Pfad ändern - Befehl „set=STONAVM_HOME= ausführen.“ - Ausführen des Befehls „auunitaddAuto -ip €{ip}“. Ersetzen Sie{ip} durch echtes IP 
+| Fehler: * Kein Array ist beim Speicher Navigator Modular 2 CLI registriert * Array ist nicht bei der Speicher Navigator Modular 2 CLI registriert * Konfigurationsfehler: Speicher-Array nicht bei StorageNavigator Modular CLI registriert | * Öffnen Sie Eingabeaufforderung und ändern Sie das Verzeichnis auf den konfigurierten Pfad
+* Führen Sie den Befehl „set=STONAVM_HOME=“ aus.
+* Führen Sie den Befehl „auunitref“ aus
+* Bestätigen Sie, dass die Befehlsausgabe Details des Arrays mit IP enthält
+* Wenn die Ausgabe keine Array-Details enthält, registrieren Sie das Array mit Storage Navigator CLI:
+    - Öffnen Sie die Eingabeaufforderung und ändern Sie das Verzeichnis auf den konfigurierten Pfad
+    - Führen Sie den Befehl „set=STONAVM_HOME=“ aus.
+    - Führen Sie den Befehl „auunitaddauto -ip <ip>“ aus. Ersetzen Sie <ip> durch die richtige IP. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

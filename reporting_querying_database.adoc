@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, API
 Mit der leistungsstarken API von Cloud Insights können Benutzer die Cloud Insights Reporting-Datenbank direkt abfragen, ohne über die Cognos Reporting-Umgebung zu gehen.
 
 
-NOTE: Diese Dokumentation bezieht sich auf die Cloud Insights-Berichtsfunktion, die im verfügbar ist link:/concept_subscribing_to_cloud_insights.html#editions["Premium Edition"].
+NOTE: Diese Dokumentation bezieht sich auf die Cloud Insights-Berichtsfunktion, die in der Cloud Insights Premium Edition verfügbar ist.
 
 
 

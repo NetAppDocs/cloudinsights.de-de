@@ -23,8 +23,7 @@ Kubernetes Change Analytics bietet Ihnen einen All-in-One-Überblick über die l
 
 Wie hilft die Änderungsanalyse?
 
-* In mandantenfähigen Kubernetes-Umgebungen können Ausfälle aufgrund falsch konfigurierter Änderungen auftreten. In sehr dynamischen Umgebungen ist die Überwachung der Cloud Insights-Infrastruktur möglicherweise nicht in der Lage, alle Änderungen ordnungsgemäß zu verfolgen.
-* Change Analytics unterstützt dies durch die Bereitstellung eines zentralen Fensters zur Ansicht und Korrelation des Systemzustands von Workloads und Konfigurationsänderungen. Dies kann bei der Fehlerbehebung in dynamischen Kubernetes-Umgebungen helfen.
+* In mandantenfähigen Kubernetes-Umgebungen können Ausfälle aufgrund falsch konfigurierter Änderungen auftreten. Change Analytics unterstützt dies durch die Bereitstellung eines zentralen Fensters zur Ansicht und Korrelation des Systemzustands von Workloads und Konfigurationsänderungen. Dies kann bei der Fehlerbehebung in dynamischen Kubernetes-Umgebungen helfen.
 
 
 Um Kubernetes Change Analytics anzuzeigen, navigieren Sie zu *Kubernetes > Change Analysis*.

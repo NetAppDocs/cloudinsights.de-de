@@ -54,7 +54,7 @@ Geben Sie die Daten in die Felder des Datensammlers gemäß der folgenden Tabell
 | AWS Region | Wählen Sie die Region AWS 
 
 
-| IAM-Rolle | Nur zur Verwendung bei Übernahme auf einer AU in AWS. Siehe unten für weitere Informationen über link:task_dc_amazon_ec2.html#iam-roles["IAM-Rollen"]. 
+| IAM-Rolle | Nur zur Verwendung bei Übernahme auf einer AU in AWS. Siehe unten für weitere Informationen über <<iam-role,IAM-Rolle>>. 
 
 
 | AWS IAM Access Key-ID | Geben Sie die AWS IAM-Zugriffsschlüssel-ID ein. Erforderlich, wenn Sie die IAM-Rolle nicht verwenden. 

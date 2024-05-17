@@ -276,7 +276,7 @@ Bearbeiten Sie die AgentConfiguration in Operator-config.yaml, um die neue Posit
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation link here: link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name
@@ -434,7 +434,7 @@ Okt. 11 14:23:41 ip-172-31-39-47 telegraf[1827]: 2021-10-11T14:23:41Z i! Telegra
 
 
 | Auf Kubernetes berichten meine Telegraf POD(s) die folgende Fehlermeldung:
-"Fehler bei der Verarbeitung von mountstats-Info: Mountstats-Datei konnte nicht geöffnet werden: /Hostfs/proc/1/mountstats, Fehler: Open /hostfs/proc/1/mountstats: Berechtigung verweigert" | Wenn SELinux aktiviert und durchgesetzt wird, wird wahrscheinlich verhindert, dass die Telegraf PODs auf die Datei /proc/1/mountstats auf dem Kubernetes-Knoten zugreifen. Um diese Einschränkung zu überwinden, bearbeiten Sie die Agentkonfiguration und aktivieren Sie die runPrivileged-Einstellung. Weitere Informationen finden Sie unter: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]. 
+"Fehler bei der Verarbeitung von mountstats-Info: Mountstats-Datei konnte nicht geöffnet werden: /Hostfs/proc/1/mountstats, Fehler: Open /hostfs/proc/1/mountstats: Berechtigung verweigert" | Wenn SELinux aktiviert und durchgesetzt wird, wird wahrscheinlich verhindert, dass die Telegraf PODs auf die Datei /proc/1/mountstats auf dem Kubernetes-Knoten zugreifen. Um diese Einschränkung zu überwinden, bearbeiten Sie die Agentkonfiguration und aktivieren Sie die runPrivileged-Einstellung. Weitere Informationen finden Sie im link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift-Anweisungen"]. 
 
 
 | Auf Kubernetes meldet mein Telegraf ReplicaSet POD den folgenden Fehler:

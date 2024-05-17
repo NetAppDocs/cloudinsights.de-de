@@ -133,7 +133,13 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Fehler: Speicherpools melden keine Festplatten auf dem Serviceprozessor bei der konfigurierten IP-Adresse | Konfigurieren Sie den Datensammler mit beiden Service-Prozessor-IPs, getrennt durch Komma 
 
 
-| Fehler: Fehler bei nicht übereinstimmender Revision | • Dies wird in der Regel durch die Aktualisierung der Firmware auf dem VNX-Block-Speicher-Gerät verursacht, aber nicht die Aktualisierung der Installation von NaviCLI.exe. Dies kann auch dadurch verursacht werden, dass verschiedene Geräte mit unterschiedlichen Firmwares installiert sind, aber nur eine CLI (mit einer anderen Firmware-Version). • Stellen Sie sicher, dass das Gerät und der Host beide identische Versionen der Software ausführen: - Öffnen Sie von der Cloud Insights-Erfassungseinheit ein Befehlszeilenfenster - Ändern Sie das Verzeichnis in das konfigurierte Installationsverzeichnis - Verbinden Sie mit dem CLARiiON-Gerät, indem Sie “navicli -h €{ip} getagent“ eingeben - suchen Sie nach der Versionsnummer auf den ersten paar Zeilen. Beispiel: „Agent Rev: 6.16.2 (0.1)“ - Suche nach und vergleiche die Version in der ersten Zeile. Beispiel: „Navisphere CLI Revision 6.07.00.04.07“ 
+| Fehler: Fehler bei nicht übereinstimmender Revision | • Dies wird normalerweise durch die Aktualisierung der Firmware auf dem VNX-Blockspeichergerät verursacht, aber nicht durch die Aktualisierung der Installation von NaviCLI.exe. Dies kann auch dadurch verursacht werden, dass verschiedene Geräte mit unterschiedlichen Firmwares installiert sind, aber nur eine CLI (mit einer anderen Firmware-Version).
+• Überprüfen Sie, ob sowohl das Gerät als auch der Host identische Versionen der Software ausführen:
+    - Öffnen Sie von der Cloud Insights-Erfassungseinheit aus ein Befehlszeilen-Fenster
+    - Ändern Sie das Verzeichnis in das konfigurierte Installationsverzeichnis
+    - Herstellen einer Verbindung mit dem CLARiiON-Gerät durch Eingabe von „navicli -h <ip> getagent“
+    - Auf den ersten Zeilen nach der Versionsnummer suchen. Beispiel: „Agent Rev: 6.16.2 (0.1)“
+    - Suche und vergleiche die Version in der ersten Zeile. Beispiel: „Navisphere CLI Revision 6.07.00.04.07“ 
 
 
 | Fehler: Nicht Unterstützte Konfiguration - Keine Fibre-Channel-Ports | Das Gerät ist nicht mit Fibre-Channel-Ports konfiguriert. Aktuell werden nur FC-Konfigurationen unterstützt. Überprüfen Sie, ob diese Version/Firmware unterstützt wird. 

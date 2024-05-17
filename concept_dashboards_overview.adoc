@@ -74,7 +74,7 @@ image:Time-Series Charts.png["Bereich, Gestapelte Fläche, Linie, Spline-Diagram
 +
 image:Single-Value Widgets.png["Single-Value Widgets mit und ohne Formatierung"]
 
-* *Widget messen*: Zeigt Daten mit einem einzigen Wert in einem herkömmlichen (festen) Manometer oder einer Kugel an, mit Farben, die auf "Warnung" oder "kritische" Werte basieren link:concept_dashboard_features.adoc#formatting-gauge-widgets["Anpassen"].
+* *Widget messen*: Zeigt Daten mit einem einzigen Wert in einem herkömmlichen (festen) Manometer oder einer Kugel an, mit Farben, die auf "Warnung" oder "kritische" Werte basieren link:concept_dashboard_features.html#formatting-gauge-widgets["Anpassen"].
 +
 image:Gauge Widgets.png["Einzelwert mit Formatierung, traditionelle Messanzeige, Leuchtanzeige"]
 

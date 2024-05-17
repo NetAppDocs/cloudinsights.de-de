@@ -24,7 +24,7 @@ Die Seite Benutzeraktivität hilft Ihnen, die Aktionen zu verstehen, die von Ben
 Die auf dieser Seite verfügbaren Daten beschreiben:
 
 * Zugriffszeit für die Einheit, einschließlich Monat, Tag, Jahr und Zeit.
-* Der Benutzer, der auf das Element mit einem Link zum zugegriffen hat link:<forensic_user_detail>.html["Benutzerdaten"].
+* Der Benutzer, der auf das Element mit einem Link zum zugegriffen hat link:forensic_user_detail.html["Benutzerdaten"].
 * Die Aktivität, die der Benutzer durchgeführt hat:
 +
 ** Schreiben
@@ -32,7 +32,7 @@ Die auf dieser Seite verfügbaren Daten beschreiben:
 ** Zugreifen Auf Metadaten
 
 
-* Der Pfad zu der Einheit mit einem Link zum link:<forensic_entity_detail>.html["Entity Detail-Daten"]
+* Der Pfad zu der Einheit mit einem Link zum link:forensic_entity_detail.html["Entity Detail-Daten"]
 * Der Entitätstyp:
 +
 ** Datei

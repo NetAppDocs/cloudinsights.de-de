@@ -31,7 +31,7 @@ image:SupportPageWithLearningCenter.png["Support-Seite"]
 
 == Aktivieren der Supportberechtigung
 
-Cloud Insights bietet Self-Service und E-Mail-Support bei Ausführung im Testmodus. Sobald Sie den Service abonniert haben, wird dringend empfohlen, den Supportanspruch zu aktivieren. Durch die Aktivierung der Supportberechtigung können Sie über den Online-Chat, das Web-Ticketing-System und das Telefon auf den technischen Support zugreifen. Der Standard-Support-Modus ist bis zum Abschluss der Registrierung Self-Service. Siehe link:#obtaining-support-information["Details"] Unten.
+Cloud Insights bietet Self-Service und E-Mail-Support bei Ausführung im Testmodus. Sobald Sie den Service abonniert haben, wird dringend empfohlen, den Supportanspruch zu aktivieren. Durch die Aktivierung der Supportberechtigung können Sie über den Online-Chat, das Web-Ticketing-System und das Telefon auf den technischen Support zugreifen. Der Standard-Support-Modus ist bis zum Abschluss der Registrierung Self-Service. Siehe <<obtaining-support-information,Details>> Unten.
 
 Während des ersten Abonnementvorgangs generiert Ihre Cloud Insights Instanz eine 20-stellige NetApp Seriennummer ab der „950“. Diese NetApp Seriennummer steht für das Cloud Insights Abonnement Ihres Kontos. Sie müssen die NetApp Seriennummer registrieren, um die Support-Berechtigung zu aktivieren. Wir bieten zwei Optionen für die Support-Registrierung:
 
