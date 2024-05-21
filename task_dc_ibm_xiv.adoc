@@ -63,7 +63,7 @@ Im Folgenden sind Anforderungen für die Performance-Erfassung aufgeführt:
 * Für den Cimserver muss eine Benutzeranmeldung bereitgestellt werden. Die Anmeldung muss vollständigen Lesezugriff auf die Arraykonfiguration und -Eigenschaften haben.
 * SMI-S-Namespace. Der Standardwert ist root/ibm. Dies ist im Cimserver konfigurierbar.
 * Port-Anforderungen: 5988 für HTTP, 5989 für HTTPS.
-* Unter folgendem Link finden Sie Informationen zur Erstellung eines Kontos für die SMI-S-Performance-Sammlung: http://publib.boulder.ibm.com/infocenter/tivihelp/v4r1/index.jsp?topic=%2Fcom.ibm.tpc_V41.doc%2Ffqz0_t_adding_cim_agent.html[]
+* Unter folgendem Link finden Sie Informationen zur Erstellung eines Kontos für die SMI-S-Performance-Sammlung: https://www.ibm.com/docs/en/products?topic=/com.ibm.tpc_V41.doc/fqz0_t_adding_cim_agent.html[]
 
 
 

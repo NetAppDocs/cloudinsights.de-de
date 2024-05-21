@@ -202,7 +202,7 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_config_telegraf_kibana.html["Kibana"] | Service 
 
 
-| link:https:task_config_telegraf_agent_k8s.html["Kubernetes"] | Service 
+| link:task_config_telegraf_agent_k8s.html["Kubernetes"] | Service 
 
 
 | link:task_dc_lenovo.html["Lenovo HX-Serie"] | Infrastruktur 

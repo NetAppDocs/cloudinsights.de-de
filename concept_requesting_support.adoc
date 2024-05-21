@@ -95,13 +95,11 @@ Diese Support-Optionen sind im Testmodus verfügbar und stehen rund um die Uhr k
 +
 Wenn Sie auf die Links in diesem Abschnitt klicken, gelangen Sie zur NetApp Knowledgebase, in der Sie relevante Artikel und Anleitungen durchsuchen können.
 
-
-
 * *link:https://docs.netapp.com/us-en/cloudinsights/["Dokumentation"]*
 +
 Durch Klicken auf den Link Dokumentation gelangen Sie zu diesem Dokumentationszentrum.
 
-* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Support_Community&filter=%28content_type%3D%3D%22community%22;product%3D%3D%22Cloud%20Insights%22%29["Community"]*
+* *link:https://community.netapp.com/t5/Cloud-Insights/bd-p/CloudInsights["Community"]*
 +
 Wenn Sie auf den Community-Link klicken, gelangen Sie zur NetApp Cloud Insights Community, in der sich mit Kollegen und Experten austauschen können.
 
@@ -116,7 +114,7 @@ Es gibt auch einen Link zur Verfügung zu stellen link:mailto:ng-cloudinsights-c
 Wenn Sie über ein Cloud Insights-Abonnement oder einen bezahlten Support für überwachte NetApp Produkte oder Services verfügen, können Sie sich mit einem NetApp Support-Techniker an die oben genannten Self-Support-Optionen wenden, um Ihr Problem zu lösen.
 
 
-NOTE: Sie müssen sich registrieren, um <<Activating support entitlement and accessing support,Aktivieren Sie den Support>> Für NetApp Cloud-Produkte. Registrieren Sie sich unter NetApp link:https://register.netapp.com["Support-Registrierung Für Cloud-Datenservices"].
+NOTE: Sie müssen sich registrieren, um <<activating-support-entitlement,Aktivieren Sie den Support>> Für NetApp Cloud-Produkte. Registrieren Sie sich unter NetApp link:https://register.netapp.com["Support-Registrierung Für Cloud-Datenservices"].
 
 Es wird dringend empfohlen, dieses Kontrollkästchen zu aktivieren, damit ein NetApp Support Engineer während Ihrer Support-Sitzung auf Ihre Cloud Insights Umgebung zugreifen kann. So kann der Techniker das Problem beheben und es schnell beheben. Wenn Ihr Problem behoben ist oder Ihre Support-Sitzung beendet wurde, können Sie das Kontrollkästchen deaktivieren.
 

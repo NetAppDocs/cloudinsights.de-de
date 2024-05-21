@@ -46,10 +46,11 @@ Cloud Insights bietet Hybrid-Multi-Cloud-Monitoring und ermöglicht die Beobacht
 * Wie kann ich link:task_cloud_insights_onboarding_1.html["*Start*"] Mit Cloud Insights?
 * Ich bin angemeldet. Was mache ich nun?link:task_getting_started_with_cloud_insights.html["Erfassen Von Daten"]
 link:concept_user_roles.html["Benutzer einrichten"]
-* Genial! Nächste Schrittelink:task_defining_annotations.html["Vorbereiten Von Ressourcen: Anmerkungen"]
+* Genial! Nächste Schritte
+link:task_defining_annotations.html["Vorbereiten Von Ressourcen: Anmerkungen"]
 link:concept_querying_assets.html["Suchen der gewünschten Assets: Abfragen"]
 link:concept_dashboards_overview.html["Anzeigen der gewünschten Daten: Dashboards"]
-link:https:task_create_monitor.html["Monitoring und Alarme"]
-link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["Sicherheit Der Daten"]
+link:task_create_monitor.html["Monitoring und Alarme"]
+link:task_cs_getting_started.html["Sicherheit Der Daten"]
 * Das ist tolle Sache! Ich bin bereit link:concept_subscribing_to_cloud_insights.html["*Anmeldung*"].
 

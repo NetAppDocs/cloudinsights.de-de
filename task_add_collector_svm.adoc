@@ -81,7 +81,7 @@ Siehe link:concept_cs_agent_requirements.html["Anforderungen an den Agenten"] F�
 
 == Voraussetzungen für die Sperrung des Benutzerzugriffs
 
-Beachten Sie für Folgendes link:/cloudinsights/cs_restrict_user_access.html["Sperrung Des Benutzerzugriffs"]:
+Beachten Sie für Folgendes link:cs_restrict_user_access.html["Sperrung Des Benutzerzugriffs"]:
 
 Für diese Funktion sind Anmeldedaten auf Cluster-Ebene erforderlich.
 

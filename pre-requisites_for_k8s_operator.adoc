@@ -70,8 +70,6 @@ Wenn Sie mit einem laufen <<configuring-proxy-support,Proxy>>, Haben Sie eine <<
 
 Lesen Sie auch darüber <<Berechtigungen,Berechtigungen>>.
 
-Wenn Sie ein Upgrade von einer früheren Installation durchführen, lesen Sie die <<Aktualisierung,Aktualisierung>> Informationsdaten.
-
 
 
 === Proxy-Unterstützung Wird Konfiguriert

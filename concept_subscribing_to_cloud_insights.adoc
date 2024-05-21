@@ -22,7 +22,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 [role="lead"]
 Die ersten Schritte mit Cloud Insights sind in drei einfachen Schritten ganz einfach:
 
-* Melden Sie sich für ein Konto bei an link:https://https://bluexp.netapp.com//["*NetApp BlueXP*"] Zugang zu allen Cloud-Angeboten von NetApp.
+* Melden Sie sich für ein Konto bei an link:https://bluexp.netapp.com//["*NetApp BlueXP*"] Zugang zu allen Cloud-Angeboten von NetApp.
 * Für A registrieren link:https://cloud.netapp.com/cloud-insights["*Kostenlose Testversion*"] Von Cloud Insights, um die verfügbaren Funktionen zu erkunden.
 * *Abonnieren* bei Cloud Insights für kontinuierlichen, unterbrechungsfreien Zugriff auf Ihre Daten über link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp Vertrieb"] Direkt oder link:https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"].
 
@@ -133,7 +133,7 @@ image:Subscription_Cost_Calculators.png["Abonnementseite mit Kostenkalkulationsr
 
 == Wie kann ich mich anmelden?
 
-Wenn die Anzahl Ihrer Managed Units kleiner als 1,000 ist, können Sie sich auch über den NetApp Vertrieb anmelden oder <<self-subscribe-via-aws-marketplace,Self-Subscribe>> Über AWS Marketplace:
+Wenn die Anzahl Ihrer Managed Units kleiner als 1,000 ist, können Sie sich auch über den NetApp Vertrieb anmelden oder <<self-subscribe-through-aws-marketplace,Self-Subscribe>> Über AWS Marketplace:
 
 
 
