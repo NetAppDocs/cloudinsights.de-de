@@ -51,7 +51,7 @@ Auf diesem Computer sollte keine andere Software auf Anwendungsebene ausgeführt
 
 
 | Verfügbarer Festplattenspeicher | Der Festplattenspeicher sollte folgendermaßen zugewiesen werden:
-/Opt/netapp 35 GB (mindestens)
+/Opt/netapp 36 GB (mindestens 35 GB freier Speicherplatz nach der Dateisystemerstellung)
 
 Hinweis: Es wird empfohlen, etwas zusätzlichen Speicherplatz zuzuweisen, um die Erstellung des Dateisystems zu ermöglichen. Stellen Sie sicher, dass mindestens 35 GB freier Speicherplatz im Dateisystem vorhanden ist.
 

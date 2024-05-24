@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task_dc_na_eseries.html 
-keywords: data collector, ontap, clustered ontap, e-series, santricity 
-summary: NetApp E-Series Data Collector konfigurieren. 
+permalink: task_dc_na_eseries_rest.html 
+keywords: data collector, ontap, clustered ontap, REST 
+summary: Konfiguration des REST-Datensammlers der NetApp E-Series 
 ---
-= Datensammler für die NetApp E-Series ältere SANtricity API
+= NetApp E-Series REST-Datensammler
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ summary: NetApp E-Series Data Collector konfigurieren.
 
 
 [role="lead"]
-Der Datensammler für die ältere SANtricity-API der NetApp E-Series erfasst Inventar- und Performance-Daten. Der Collector unterstützt die Firmware 7.x+ unter Verwendung derselben Konfigurationen und meldet dieselben Daten.
+Der REST-Datensammler der NetApp E-Series erfasst Inventar- und Performance-Daten. Der Collector unterstützt die Firmware 7.x+ unter Verwendung derselben Konfigurationen und meldet dieselben Daten. Der REST Collector überwacht den Verschlüsselungsstatus von Speicherpools sowie den Verschlüsselungsstatus zugehöriger Festplatten und Volumes und bietet CPU-Auslastung von Speicherknoten als Performance-Zähler - Funktionalität, die nicht im älteren Collector der SANtricity E-Series bereitgestellt wird.
 
 
 
 == Terminologie
 
-Cloud Insight erfasst die folgenden Bestandsinformationen aus dem NetApp E-Series Data Collector. Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Cloud Insight erfasst mithilfe von REST die folgenden Inventarinformationen der NetApp E-Series: Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
@@ -51,6 +51,41 @@ Cloud Insight erfasst die folgenden Bestandsinformationen aus dem NetApp E-Serie
 |===
 Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Diese stellen für diesen Datensammler möglicherweise nicht alle Fälle dar.
 
+
+
+== Anforderungen
+
+* Die IP-Adresse jedes Controllers im Array
+* Dieser Collector unterstützt nur Arrays mit E-Series-Modellen mit *nativen REST-API-Funktionen*. Die E-Series Organisation liefert eine Array-externe, installierbare REST API-Distribution für ältere E-Series Arrays, die dieses Szenario nicht unterstützt. Benutzer mit älteren Arrays sollten weiterhin Cloud Insights verwenden. link:task_dc_na_eseries.html["E-Series SANtricity API"] Kollektor.
+* Das Feld „E-Series Controller IP-Adressen“ unterstützt eine durch Kommas getrennte Zeichenfolge von 2 IP/Hostnamen. Der Collector versucht intelligent, den zweiten IP/Hostnamen zu verwenden, wenn der erste nicht zugänglich ist.
+* HTTPS-Port: Der Standardwert ist 8443.
+
+
+
+
+== Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| IP-Adressen der E-Series Controller | Kommagetrennte IP-Adressen und/oder vollständig qualifizierte Domänennamen für die Array-Controller 
+|===
+
+
+== Erweiterte Konfiguration
+
+[cols="2*"]
+|===
+| Feld | Beschreibung 
+
+
+| Abfrageintervall für Bestand (min) | Der Standardwert ist 30 Minuten 
+
+
+| Leistungsintervall bis zu 3600 Sekunden | Der Standardwert ist 300 Sekunden 
+|===
 
 
 == Terminologie der E-Series (Landing Page)
@@ -107,39 +142,6 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Asse
 * Prozessoren: Anzahl der CPUs
 
 
-
-
-== Anforderungen
-
-* Die IP-Adresse jedes Controllers im Array
-* Port-Anforderung 2463
-
-
-
-
-== Konfiguration
-
-[cols="2*"]
-|===
-| Feld | Beschreibung 
-
-
-| Kommagetrennte Liste der Array-SANtricity-Controller-IPs | IP-Adressen und/oder vollqualifizierte Domain-Namen für die Array Controller 
-|===
-
-
-== Erweiterte Konfiguration
-
-[cols="2*"]
-|===
-| Feld | Beschreibung 
-
-
-| Abfrageintervall für Bestand (min) | Der Standardwert ist 30 Minuten 
-
-
-| Leistungsintervall bis zu 3600 Sekunden | Der Standardwert ist 300 Sekunden 
-|===
 
 
 == Fehlerbehebung
