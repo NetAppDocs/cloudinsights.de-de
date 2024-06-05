@@ -13119,4 +13119,7 @@ Hinweis: Es wird empfohlen, etwas zusätzlichen Speicherplatz zuzuweisen, um die
 
 
 Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie sicher, dass lokale Benutzer Zugriff auf diesen Ordner haben. Agent oder Data Collector können nicht installiert werden, wenn lokale Benutzer nicht über die Berechtigung zu diesem Ordner verfügen. Siehe <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> Weitere Informationen finden Sie in diesem Abschnitt.</block>
+  <block id="8fd194517d64c215a9c8b5e2b8d0f67e" category="inline-link-macro">NetApp E-Series REST </block>
+  <block id="015094a403d71d47872c1d0819be899a" category="cell"><block ref="015094a403d71d47872c1d0819be899a" category="inline-link-macro-rx"></block></block>
+  <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E-Series REST</block>
 </blocks>

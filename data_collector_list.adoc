@@ -238,6 +238,9 @@ Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
 | link:task_dc_na_eseries.html["NetApp E-Series"] | Infrastruktur 
 
 
+| link:task_dc_netapp_eseries_rest.html["NetApp E-Series REST "] | Infrastruktur 
+
+
 | link:task_dc_na_amazon_fsx.html["Amazon FSX für NetApp ONTAP"] | Infrastruktur 
 
 
