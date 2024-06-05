@@ -565,5 +565,8 @@ Alternativ kann man auch <<uninstalling,Deinstallieren>> Und <<installing-the-ku
 
 
 | Durch ein fehlendes Image oder eine ungültige Konfiguration wurden die netapp-CI-kube-State-metrics Pods nicht gestartet oder nicht einsatzbereit gemacht. Jetzt bleibt StatefulSet stecken und Konfigurationsänderungen werden nicht auf die Pods mit den netapp-CI-kube-State-Metriken angewendet. | Das StatefulSet befindet sich in A link:https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback["Defekt"] Bundesland. Nachdem Sie Konfigurationsprobleme behoben haben, springen die netapp-CI-kube-State-metrics-Pods an. 
+
+
+| Pods mit netapp-CI-kube-Status-Metriken können nicht gestartet werden, nachdem ein Kubernetes Operator Upgrade ausgeführt wurde. Es wird ErrImagePull geworfen (es konnte nicht das Image entfernt werden). | Versuchen Sie, die Pods manuell zurückzusetzen. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
