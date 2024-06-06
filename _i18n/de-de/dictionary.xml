@@ -13124,4 +13124,6 @@ Wenn /opt ein eingebrachter Ordner aus einem NAS-Speicher ist, stellen Sie siche
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E-Series REST</block>
   <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">Pods mit netapp-CI-kube-Status-Metriken können nicht gestartet werden, nachdem ein Kubernetes Operator Upgrade ausgeführt wurde. Es wird ErrImagePull geworfen (es konnte nicht das Image entfernt werden).</block>
   <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">Versuchen Sie, die Pods manuell zurückzusetzen.</block>
+  <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">„Event disorded as being alder then maxEventAgeSeconds“ Meldungen werden für meinen Kubernetes Cluster unter Log Analysis beobachtet.</block>
+  <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">Ändern Sie den Operator _agentkonfiguration_, und erhöhen Sie die Erweiterung _Event-exporteur-maxEventAgeSeconds_ (d. h. auf 60s), _Event-exporteur-kubeQPS_ (d. h. auf 100) und _Event-exporteur-kubeBurst_ (d. h. auf 500). Weitere Informationen zu diesen Konfigurationsoptionen finden Sie im <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> Seite.</block>
 </blocks>
