@@ -20,6 +20,21 @@ NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige d
 
 
 
+== Juni 2024
+
+
+
+=== Betriebssystemunterstützung
+
+Zusätzlich zu diesen werden die folgenden Betriebssysteme mit Cloud Insights Acquisition Units unterstützt link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["Unterstützung bereits vorhanden"]:
+
+* Red Hat Enterprise Linux 8.9, 8.10, 9.4
+* Rocky 9.4
+* AlmaLinux 9.3 und 9.4
+
+
+
+
 == Mai 2024
 
 

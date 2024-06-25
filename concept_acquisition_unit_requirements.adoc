@@ -34,11 +34,12 @@ Sie müssen eine Acquisition Unit (AU) installieren, um Informationen aus Ihren 
 | Betriebssystem | Ein Computer, auf dem eine lizenzierte Version einer der folgenden Versionen ausgeführt wird:
 
 * CentOS (64 Bit): 7.2 bis 7.9, 8.1 bis 8.4, Stream 8, Stream 9
+* AlmaLinux 9.3 und 9.4
 * Debian (64-bit): 9 und 10
 * OpenSUSE Leap 15.1 bis 15.5
 * Oracle Enterprise Linux (64 Bit): 7.5 bis 7.9, 8.1 bis 8.8
-* Red hat Enterprise Linux (64 Bit): 7.2 bis 7.9, 8.1 bis 8.8, 9.1, 9.2
-* Rocky 9.0, 9.1, 9.3
+* Red hat Enterprise Linux (64 Bit): 7.2 bis 7.9, 8.1 bis 8.10, 9.1 bis 9.4
+* Rocky 9.0 bis 9.4
 * SUSE Enterprise Linux Server 15, 15 SP2 bis 15 SP5
 * Ubuntu Server: 18.04, 20.04, 22.04 LTS
 * SELinux auf den oben genannten Plattformen
