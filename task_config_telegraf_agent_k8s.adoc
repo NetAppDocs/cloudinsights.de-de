@@ -571,5 +571,8 @@ Alternativ kann man auch <<uninstalling,Deinstallieren>> Und <<installing-the-ku
 
 
 | „Event disorded as being alder then maxEventAgeSeconds“ Meldungen werden für meinen Kubernetes Cluster unter Log Analysis beobachtet. | Ändern Sie den Operator _agentkonfiguration_, und erhöhen Sie die Erweiterung _Event-exporteur-maxEventAgeSeconds_ (d. h. auf 60s), _Event-exporteur-kubeQPS_ (d. h. auf 100) und _Event-exporteur-kubeBurst_ (d. h. auf 500). Weitere Informationen zu diesen Konfigurationsoptionen finden Sie im link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"] Seite. 
+
+
+| Telegraf möchte (oder stürzt wegen) nicht genügend abschließbaren Speicher. | Versuchen Sie, die Grenze des abschließbaren Speichers für Telegraf im zugrunde liegenden Betriebssystem/Knoten zu erhöhen. Wenn eine Erhöhung des Limits keine Option ist, ändern Sie die NKMO-Agentkonfiguration und setzen Sie _Unprotected_ auf _true_.  Dadurch wird Telegraf angewiesen, keine gesperrten Speicherseiten zu reservieren. Dies kann zwar ein Sicherheitsrisiko darstellen, da entschlüsselte Geheimnisse möglicherweise auf die Festplatte ausgetauscht werden, ermöglicht aber die Ausführung in Umgebungen, in denen das Reservieren von gesperrtem Speicher nicht möglich ist. Weitere Informationen zu den Konfigurationsoptionen _Unprotected_ finden Sie im link:telegraf_agent_k8s_config_options.html["Konfigurationsoptionen"] Seite. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
