@@ -38,6 +38,7 @@ Workload Security verwendet Datensammler, um Datei- und Benutzerzugriffsdaten vo
 * SVM hat mehrere Untertypen. Davon werden nur _default_, _Sync_source_ und _Sync_Destination_ unterstützt.
 * Ein Agent link:task_cs_add_agent.html["Muss konfiguriert sein"] Bevor Sie Datensammler konfigurieren können.
 * Stellen Sie sicher, dass Sie über einen richtig konfigurierten User Directory Connector verfügen, sonst werden bei Ereignissen kodierte Benutzernamen und nicht der tatsächliche Name des Benutzers (wie in Active Directory gespeichert) auf der Seite „Activity Forensics“ angezeigt.
+* • ONTAP persistenter Speicher wird von 9.15.1 unterstützt.
 * Um eine optimale Performance zu erzielen, sollten Sie den FPolicy-Server so konfigurieren, dass er sich im gleichen Subnetz wie das Storage-System befindet.
 
 
@@ -297,6 +298,8 @@ Beachten Sie Folgendes:
 * Bei Agent- oder Collector-Upgrades, Neustart/Neustart der Agent-VM oder Neustart des Agent-Dienstes bleibt ein angehaltener Collector im Status „_Paused_“.
 * Wenn sich der Datensammler im Status _Error_ befindet, kann der Collector nicht in den Status _Paused_ geändert werden. Die Schaltfläche Pause wird nur aktiviert, wenn der Status des Collectors _Running_ lautet.
 * Wenn die Verbindung zum Agenten unterbrochen wird, kann der Collector nicht in den Status _Paused_ geändert werden. Der Collector geht in den Status _stopped_ und die Schaltfläche Pause wird deaktiviert.
+* Ein angehaltener Data Collector kann nicht gelöscht werden.
+* Während der Pause sind die fpolicy-Einstellungen in ONTAP deaktiviert, aber nicht gelöscht. Bei der Wiederaufnahme werden die fpolicy-Einstellungen in ONTAP wieder aktiviert.
 
 
 
@@ -398,5 +401,8 @@ Der Data Collector wird neu gestartet, und der Fehler sollte behoben werden.
 Wenn es mehr als 20 ist, erhöhen Sie die CPU- und RAM-Kapazität des Agent-Rechners.
 Sobald die CPU und der RAM erhöht sind, werden die DSCs in die Initialisierung und dann automatisch in den laufenden Zustand versetzt.
 Schauen Sie sich den Leitfaden zur Größenanpassung an link:concept_cs_event_rate_checker.html["Auf dieser Seite"]. 
+
+
+| Der Data Collector wird beim Auswählen des SVM-Modus fehlgesetzt. | Wenn beim Herstellen einer Verbindung im SVM-Modus die Cluster-Management-IP verwendet wird, um eine Verbindung anstelle der SVM-Management-IP herzustellen, wird die Verbindung getrennt. Stellen Sie sicher, dass die richtige SVM-IP verwendet wird. 
 |===
 Wenn Sie immer noch Probleme haben, wenden Sie sich an die auf der Seite * Hilfe > Support* genannten Support-Links.

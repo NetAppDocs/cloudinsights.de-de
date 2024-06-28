@@ -13281,4 +13281,24 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2. Unberechtigter Fehler</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">Dieser Fehler wird angezeigt, wenn ein API-Zugriffstoken generiert wird, ohne alle erforderlichen API-Kategorien auszuwählen. Generieren Sie ein neues API-Zugriffstoken, indem Sie alle erforderlichen API-Kategorien auswählen.</block>
+  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Details zum Skript finden Sie in der Infodatei an dieser Stelle.</block>
+  <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">Die forensische Benutzeroberfläche lädt Daten langsam, wenn der _PATH_-Filter verwendet wird.</block>
+  <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">Wenn der Pfad _/AAA/BBB/CCC/DDD_ lautet, dann suchen Sie nicht nach:
+
+Aaa/Bbb/Ccc*
+
+ODER
+
+AAA/BBB/C*
+
+Suchen Sie nach:
+
+Aaa/Bbb/Ccc/*
+
+Diese Suche sollte es ermöglichen, die Daten schneller zu laden.</block>
+  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">• ONTAP persistenter Speicher wird von 9.15.1 unterstützt.</block>
+  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">Ein angehaltener Data Collector kann nicht gelöscht werden.</block>
+  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">Während der Pause sind die fpolicy-Einstellungen in ONTAP deaktiviert, aber nicht gelöscht. Bei der Wiederaufnahme werden die fpolicy-Einstellungen in ONTAP wieder aktiviert.</block>
+  <block id="f4635255d83c947a8f5c0873878fce73" category="cell">Der Data Collector wird beim Auswählen des SVM-Modus fehlgesetzt.</block>
+  <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">Wenn beim Herstellen einer Verbindung im SVM-Modus die Cluster-Management-IP verwendet wird, um eine Verbindung anstelle der SVM-Management-IP herzustellen, wird die Verbindung getrennt. Stellen Sie sicher, dass die richtige SVM-IP verwendet wird.</block>
 </blocks>

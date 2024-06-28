@@ -127,6 +127,8 @@ Sie können Vorgangshistorie-Daten nach_Time, User, Source IP, Activity, Path_ u
 
 Sie können den Vorgangsverlauf in eine CSV-Datei exportieren, indem Sie über der Tabelle „Vorgangsverlauf“ auf die Schaltfläche „_Export_“ klicken. Beachten Sie, dass nur die 100,000 wichtigsten Datensätze exportiert werden. Je nach Datenmenge kann es einige Sekunden bis zu mehreren Minuten dauern, bis der Export abgeschlossen ist.
 
+Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Details zum Skript finden Sie in der Infodatei an dieser Stelle.
+
 
 
 == Spaltenauswahl für Alle Aktivitäten
@@ -235,4 +237,19 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
 
 
 | Bei der Verwendung eines Pfadfilters tritt ein Fehler „Anfrage fehlgeschlagen mit Statuscode 500/503“ auf. | Versuchen Sie, einen kleineren Datumsbereich zum Filtern von Datensätzen zu verwenden. 
+
+
+| Die forensische Benutzeroberfläche lädt Daten langsam, wenn der _PATH_-Filter verwendet wird. | Wenn der Pfad _/AAA/BBB/CCC/DDD_ lautet, dann suchen Sie nicht nach:
+
+Aaa/Bbb/Ccc*
+
+ODER
+
+AAA/BBB/C*
+
+Suchen Sie nach:
+
+Aaa/Bbb/Ccc/*
+
+Diese Suche sollte es ermöglichen, die Daten schneller zu laden. 
 |===
