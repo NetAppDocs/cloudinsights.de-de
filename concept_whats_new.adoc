@@ -20,6 +20,31 @@ NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige d
 
 
 
+== Juli 2024
+
+
+
+=== Einfachere Dashboard-Navigation
+
+Mit dieser Funktion wollen Sie Ihre betrieblichen Workflows optimieren und die Zusammenarbeit zwischen den Teams vereinfachen.
+
+Durch die Gruppierung Ihrer Dashboards können Sie schnell die benötigten Informationen abrufen. Mit dem neuen Navigationsmenü können Sie zwischen verschiedenen Dashboards wechseln, ohne dabei Ihren Platz zu verlieren. So können Sie Ihre Infrastruktur einfach erkunden und managen. Richten Sie Dashboard-Gruppen an Ihren Runbooks aus, um Ihre Benutzererfahrung weiter zu verbessern.
+
+image:Dashboard_Nav_Group_Dropdown.png["Dropdown-Liste, um ein anderes Dashboard in derselben Gruppe(n) wie das aktuelle Dashboard auszuwählen"]
+
+
+
+=== Symbole Für Neue Objekte
+
+Cloud Insights verfügt jetzt über eine aktualisierte Objekt-Ikonographie, wodurch die Gesamtvarianz der auf den verschiedenen Cloud Insights-Seiten verwendeten Symbole reduziert und ähnliche Objekte gruppiert werden (z. B. Volume-bezogene Objekte). Frühere „Letter-basierte“ Symbole werden durch bildbasierte Grafiken ersetzt, wodurch Cloud Insights-Bildschirme benutzerfreundlicher und zugänglicher werden.
+
+Unsicher, was ein Symbol bedeutet? Die Tabelle unten (auch auf der Seite verfügbar link:reference_object_icons.html["Objekt Symbol Referenz"] ) erklärt sie alle.
+
+image:Icons_2024.png["„Abbildung mit allen Objektsymbolen in Cloud Insights, gruppiert unter „Storage, Networking, Computing, Integrationen (einschließlich Kubernetes)“ und „Weitere“"]
+
+'''
+
+
 == Juni 2024
 
 
