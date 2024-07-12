@@ -1884,14 +1884,10 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Rechtliche Hinweise ermöglichen den Zugriff auf Copyright-Erklärungen, Marken, Patente und mehr.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Urheberrecht</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marken</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, das NETAPP Logo und die auf der NetApp Markenseite aufgeführten Marken sind Marken von NetApp Inc. Andere Firmen- und Produktnamen können Marken der jeweiligen Eigentümer sein.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Eine aktuelle Liste der NetApp Patente finden Sie unter:</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Datenschutzrichtlinie</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open Source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Hinweis für Cloud Insights</block>
@@ -5162,8 +5158,6 @@
   <block id="8d9c681869c01295953453519607171e" category="list-text">Klicken Sie im Menü Cloud Insights auf *Verwalten &gt; Anmerkungen*</block>
   <block id="f65b484d944bbb5696490852b2d2c6d0" category="list-text">Geben Sie eine Beschreibung der Anmerkung ein: *Root-Aggregat aus dem Bericht "hohe I/O-Dichte" entfernen*</block>
   <block id="e4731b310642ca51f9042d77c31a36cc" category="paragraph">Alternativ zum manuellen Anwenden von Anmerkungen auf einzelne Assets können Sie mithilfe von Anmerkungsregeln automatisch Anmerkungen auf mehrere Assets anwenden. Anmerkungsregeln basieren auf Abfragen, die Sie erstellen, und wenn sie auf dem System ausgeführt werden, fügen sie vorhandenen Assets neue Assets hinzu. Wenn diese Vermögenswerte von einem Bericht ausgeschlossen werden, werden auch die neuen Vermögenswerte automatisch ausgeschlossen.</block>
-  <block id="066dd3116632d178996fcf4d32b30c70" category="paragraph">Sie müssen eine Abfrage erstellt und gespeichert haben, die die NetApp Root-Aggregate identifiziert, die Sie in Ihrer Umgebung identifiziert haben. . Schritte . Klicken Sie in der Symbolleiste Cloud Insights auf *Verwalten &gt; Anmerkungsregeln* . Klicken Sie Auf *Hinzufügen*</block>
-  <block id="5a4064cefa68bcf6be0e69870c969e3d" category="paragraph">+ das Dialogfeld Regel hinzufügen wird angezeigt: .. Geben Sie im Feld Name einen eindeutigen Namen ein, der die Regel beschreibt: *"RootAggrExclude"* .. Klicken Sie auf Abfrage und wählen Sie die Frage aus, die Insight verwenden soll, um die Anmerkungsregel auf: *„Aggregate0“* anzuwenden.. Klicken Sie auf Anmerkung und wählen Sie: *"Root agg exclude"* .. Klicken Sie auf *Wert* und geben Sie *true* ein</block>
   <block id="3e647ef93d862cebdd7fa80573f126aa" category="summary">MongoDB Data Collector-Konfiguration</block>
   <block id="53e70a8dd3a918a24f705909a168c35c" category="doc">MongoDB Data Collector</block>
   <block id="5365ec2fc489501ed613b8ad5b954e9c" category="paragraph">Cloud Insights verwendet diesen Datensammler, um Metriken von MongoDB zu erfassen.</block>
@@ -7720,7 +7714,6 @@
   <block id="ac2ddb56e922acac513828fc77bc85f6" category="cell">„Konfigurationsfehler“ mit Fehlermeldung „REST Service ist deaktiviert“</block>
   <block id="8c2e7ed091a4f8575b17f8af2bb59449" category="cell">Vergewissern Sie sich, dass DER REST-Dienst auf diesem Gerät aktiviert ist.</block>
   <block id="8bf875173a6afe9bba37e4713c91c421" category="cell">„Konfigurationsfehler“ mit Fehlermeldung „Benutzer nicht autorisiert für Befehl“</block>
-  <block id="be63a0599db0a9d29e7d2b328c74dc03" category="cell">Wahrscheinlich aufgrund bestimmter Rollen (z. B. 'Advanced_Analytics') sind für den konfigurierten Benutzer &lt;username&gt; nicht enthalten. Mögliche Lösung: * Korrigieren Sie den Umfang der Analyse (Statistik) für den Benutzer €{user} mit der nur lesenden Rolle: - Aus dem Bildschirm Konfiguration -&gt; Benutzer, legen Sie Ihre Maus über die Rolle und doppelklicken Sie, um das Bearbeiten zu ermöglichen - Wählen Sie "Analyse" aus dem Dropdown-Menü Bereich. Eine Liste der möglichen Eigenschaften wird angezeigt. - Klicken Sie am häufigsten auf das Kontrollkästchen, und es wird alle drei Eigenschaften auswählen. - Klicken Sie auf die Schaltfläche Hinzufügen auf der rechten Seite. - Klicken Sie oben rechts im Popup-Fenster auf die Schaltfläche Übernehmen. Das Popup-Fenster wird geschlossen.</block>
   <block id="5194ac07f0578fb108df17cc52b75ccc" category="summary">Pure Storage Data Collector wird konfiguriert.</block>
   <block id="4d05f9f9aae283a43131d72fd410500e" category="doc">Datensammler Pure Storage FlashArray</block>
   <block id="4803e12533cf1a9835839a2e3730efdf" category="paragraph">Cloud Insights erfasst mithilfe des Datensammlers Pure Storage FlashArray Bestands- und Performance-Daten.</block>
@@ -9426,8 +9419,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Storage Workload Security ist in der Cloud Insights Bundesausgabe nicht verfügbar.</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">Viele Systemmonitore befinden sich standardmäßig im Status „_Paused_“. Sie können einen Systemmonitor aktivieren, indem Sie die Option „_Fortsetzen_“ für den Monitor auswählen. Stellen Sie sicher, dass _Advanced Counter Data Collection_ und _enable ONTAP EMS Log Collection_ im Data Collector aktiviert sind. Diese Optionen finden Sie im ONTAP Data Collector unter _Erweiterte Konfiguration_:<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">Sie können den Vorgangsverlauf in eine CSV-Datei exportieren, indem Sie über der Tabelle „Vorgangsverlauf“ auf die Schaltfläche „_Export_“ klicken. Beachten Sie, dass nur die 100,000 wichtigsten Datensätze exportiert werden. Je nach Datenmenge kann es einige Sekunden bis zu mehreren Minuten dauern, bis der Export abgeschlossen ist.</block>
   <block id="75089fe944982f39be6142328f8b77cf" category="paragraph">Sie haben uns gebeten, Ihnen während der Installation des Agenten für Windows und Linux Prüfsummenwerte bereitzustellen, und wir denken, dass das eine tolle Idee ist. Hier sind sie also:</block>
   <block id="89be6ffd9cf2244c68503bbda41ae112" category="summary">Cloud Insights unterstützt Telegraf als Agent für die Erfassung von Integrationsdaten und kann unter Windows oder Linux konfiguriert werden.</block>
@@ -13326,10 +13317,24 @@ Diese Suche sollte es ermöglichen, die Daten schneller zu laden.</block>
   <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">Durch die Gruppierung Ihrer Dashboards können Sie schnell die benötigten Informationen abrufen. Mit dem neuen Navigationsmenü können Sie zwischen verschiedenen Dashboards wechseln, ohne dabei Ihren Platz zu verlieren. So können Sie Ihre Infrastruktur einfach erkunden und managen. Richten Sie Dashboard-Gruppen an Ihren Runbooks aus, um Ihre Benutzererfahrung weiter zu verbessern.</block>
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">Dropdown-Liste, um ein anderes Dashboard in derselben Gruppe(n) wie das aktuelle Dashboard auszuwählen</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf85d02f145fd398f6b83e53e7eae578" category="section-title">Symbole Für Neue Objekte</block>
-  <block id="e1146db7650c421537a792eef24c30b4" category="paragraph">Cloud Insights verfügt jetzt über eine aktualisierte Objekt-Ikonographie, wodurch die Gesamtvarianz der auf den verschiedenen Cloud Insights-Seiten verwendeten Symbole reduziert und ähnliche Objekte gruppiert werden (z. B. Volume-bezogene Objekte). Frühere „Letter-basierte“ Symbole werden durch bildbasierte Grafiken ersetzt, wodurch Cloud Insights-Bildschirme benutzerfreundlicher und zugänglicher werden.</block>
-  <block id="f8064c9450e605d5bbbf34b0cea86cf7" category="paragraph">Unsicher, was ein Symbol bedeutet? Die Tabelle unten (auch auf der Seite verfügbar <block ref="77ae8c6d870a7e114fd79dc75e0e0c29" category="inline-link-macro-rx"></block> ) erklärt sie alle.</block>
-  <block id="6668a5009a3cd3a27f3cb362ac89ff43" category="inline-image-macro">„Abbildung mit allen Objektsymbolen in Cloud Insights, gruppiert unter „Storage, Networking, Computing, Integrationen (einschließlich Kubernetes)“ und „Weitere“</block>
-  <block id="f45804d947a7b131eecbbbf3efb0603f" category="paragraph"><block ref="f45804d947a7b131eecbbbf3efb0603f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">In Cloud Insights verwendete Objektsymbole.</block>
+  <block id="f1d16f360380bc347a5a9e8768937aa7" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block></block>
+  <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">Infrastruktursymbole:</block>
+  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">Infrastruktursymbol Referenz</block>
+  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="736b641409d5a49654659a490becb9df" category="section-title">Kubernetes-Symbole:</block>
+  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetes-Symbol-Referenz, width=180</block>
+  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Symbole für die Kubernetes-Netzwerkleistungsüberwachung und -Zuordnung:</block>
+  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Performance-Monitoring und -Zuordnung des Kubernetes-Netzwerks, Breite=640</block>
+  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f206f600866607637821c713ae2b63cc" category="cell">Dieser Fehler ist wahrscheinlich darauf zurückzuführen, dass bestimmte Rollen (z. B. „Advanced_Analytics“) für den konfigurierten Benutzer nicht enthalten sind. Durch die Anwendung des Analysebereichs für den Benutzer mit schreibgeschützter Rolle kann der Fehler behoben werden. Führen Sie folgende Schritte aus: 1. Bewegen Sie auf dem ZFS-System im Bildschirm Konfiguration -&gt; Benutzer die Maus über die Rolle und doppelklicken Sie, um die Bearbeitung zu ermöglichen 2. Wählen Sie im Dropdown-Menü „Bereich“ die Option „Analyse“ aus. Eine Liste der möglichen Eigenschaften wird angezeigt. 3. Klicken Sie auf das Kontrollkästchen am oberen Ende, um alle drei Eigenschaften auszuwählen. 4. Klicken Sie auf der rechten Seite auf die Schaltfläche Hinzufügen. 5. Klicken Sie oben rechts im Popup-Fenster auf die Schaltfläche Übernehmen. Das Popup-Fenster wird geschlossen.</block>
+  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">Sie müssen eine Abfrage erstellt und gespeichert haben, die die NetApp Root-Aggregate identifiziert, die Sie in Ihrer Umgebung identifiziert haben.</block>
+  <block id="67820097ebadd10933dfa2562494a60e" category="list-text">Klicken Sie in der Cloud Insights-Symbolleiste auf *Verwalten &gt; Anmerkungsregeln*.</block>
+  <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">Klicken Sie Auf *Hinzufügen*. Das Dialogfeld Regel hinzufügen wird angezeigt.</block>
+  <block id="37826f4028925f8d7c2568e9a34fb119" category="list-text">Geben Sie im Feld Name einen eindeutigen Namen ein, der die Regel *"RootAggrExclude"* beschreibt</block>
+  <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">Klicken Sie auf Query und wählen Sie die Abfrage aus, die Insight verwenden soll, um die Annotationsregel auf: *„Aggregate0“* anzuwenden</block>
+  <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">Klicken Sie auf Anmerkung und wählen Sie *"Root agg exclude"*</block>
+  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">Klicken Sie auf *Wert* und geben Sie *true* ein</block>
 </blocks>

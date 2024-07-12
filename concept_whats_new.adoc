@@ -32,16 +32,6 @@ Durch die Gruppierung Ihrer Dashboards können Sie schnell die benötigten Infor
 
 image:Dashboard_Nav_Group_Dropdown.png["Dropdown-Liste, um ein anderes Dashboard in derselben Gruppe(n) wie das aktuelle Dashboard auszuwählen"]
 
-
-
-=== Symbole Für Neue Objekte
-
-Cloud Insights verfügt jetzt über eine aktualisierte Objekt-Ikonographie, wodurch die Gesamtvarianz der auf den verschiedenen Cloud Insights-Seiten verwendeten Symbole reduziert und ähnliche Objekte gruppiert werden (z. B. Volume-bezogene Objekte). Frühere „Letter-basierte“ Symbole werden durch bildbasierte Grafiken ersetzt, wodurch Cloud Insights-Bildschirme benutzerfreundlicher und zugänglicher werden.
-
-Unsicher, was ein Symbol bedeutet? Die Tabelle unten (auch auf der Seite verfügbar link:reference_object_icons.html["Objekt Symbol Referenz"] ) erklärt sie alle.
-
-image:Icons_2024.png["„Abbildung mit allen Objektsymbolen in Cloud Insights, gruppiert unter „Storage, Networking, Computing, Integrationen (einschließlich Kubernetes)“ und „Weitere“"]
-
 '''
 
 
