@@ -38,12 +38,18 @@ Die in diesem Leitfaden aufgeführten Schritte können auch auf Storage-Systeme 
 
 Abfragen ermöglichen die Suche auf granularer Ebene, basierend auf vom Benutzer ausgewählten Kriterien. Mit einer Abfrage können Sie nach internen Volumes in Ihrer Umgebung suchen, die das NetApp Root-Aggregat enthalten.
 
-. Schritte
+.Schritte
 . Erstellen Sie eine Anfrage, um NetApp Root-Aggregate in Ihrer Umgebung zu identifizieren: Klicken Sie auf *Abfragen > Neue Abfrage > Ressourcentyp auswählen* (?)
 . Klicken Sie auf *Speicherpool*
 . Geben Sie den Namen für das Root-Aggregat ein
 +
-Dieses Beispiel verwendet für den Namen „aggr0“. Bei der Erstellung eines Aggregats müssen nur die folgenden Anforderungen für den Namen beachtet werden: .. Er muss entweder mit einem Buchstaben oder einem Unterstrich (_) beginnen. .. Er darf nur Buchstaben, Ziffern und Unterstriche enthalten. .. Sie kann maximal 250 Zeichen umfassen. In den meisten Fällen ist das Aggregat der Name aggr0, aggr_0, oder etwas ähnliches. Es könnte einen iterativen Prozess erfordern, um alle NetApp Root-Aggregate in Ihrer Umgebung zu identifizieren.
+Dieses Beispiel verwendet für den Namen „aggr0“. Beim Erstellen eines Aggregats müssen nur die folgenden Anforderungen für den Namen erfüllt werden:
+
++
+.. Er muss entweder mit einem Buchstaben oder einem Unterstrich (_) beginnen.
+.. Er darf nur Buchstaben, Ziffern und Unterstriche enthalten.
+.. Sie kann maximal 250 Zeichen umfassen. In den meisten Fällen ist das Aggregat der Name aggr0, aggr_0, oder etwas ähnliches. Es könnte einen iterativen Prozess erfordern, um alle NetApp Root-Aggregate in Ihrer Umgebung zu identifizieren.
+
 
 . Klicken Sie auf *Speichern* und geben Sie einen Namen für die neue Abfrage ein.
 +

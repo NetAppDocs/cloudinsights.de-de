@@ -19900,55 +19900,70 @@ Von diesem Datensammler unterstützte Produkte:
 | Objekte Gesamt | Implementiert |  |  
 
 
-| Qtree.4+ | Storage | Fehlerhafte Bruttokapazität | Implementiert |  
+.5+| Qtree | Genutzte Kapazität | Implementiert |  |  
 
 
-|  | Freie Rohkapazität | Implementiert |  | RAW capapCity of Spare Disks (Summe aller freien Festplatten) 
+| IOPS insgesamt | Implementiert |  |  
 
 
-| Storage Pools: Kapazität | Implementiert |  |  | Bruttokapazität 
+| Endgültiges Limit Für Kapazitätskontingente | Implementiert |  |  
 
 
-| Implementiert |  |  .8+| Storage-Node | Kapazitätsauslastung Des Node Erlaubte Metadaten 
+| Weiches Kapazitätskontingent-Limit | Implementiert |  |  
 
 
-| Implementiert |  |  | Kapazitätsauslastung Des Nodes Insgesamt 
+| Anzahl Der Dateien | Implementiert |  |  
 
 
-| Implementiert |  |  | Nutzbare Node-Kapazitätsauslastung 
+.4+| Storage | Fehlerhafte Bruttokapazität | Implementiert |  |  
 
 
-| Implementiert |  |  | Verwendete Node-Kapazitätsauslastung 
+| Freie Rohkapazität | Implementiert |  | RAW capapCity of Spare Disks (Summe aller freien Festplatten) 
 
 
-| Implementiert |  |  | Node-Kapazitätsauslastung Verwendete Metadaten 
+| Storage Pools: Kapazität | Implementiert |  |  
 
 
-| Implementiert |  |  | Durchsatz Beim Lesen 
+| Bruttokapazität | Implementiert |  |  
 
 
-| Implementiert |  |  | Gesamtdurchsatz 
+.8+| Storage-Node | Kapazitätsauslastung Des Node Erlaubte Metadaten | Implementiert |  |  
 
 
-| Implementiert |  | Durchschnittliche Gesamtrate der Festplatte (Lese- und Schreibvorgänge auf allen Festplatten) in MB/s | Durchsatz Schreiben 
+| Kapazitätsauslastung Des Nodes Insgesamt | Implementiert |  |  
 
 
-| Implementiert |  |  .6+| Storage Pool Festplatte | Bereitgestellte Kapazität 
+| Nutzbare Node-Kapazitätsauslastung | Implementiert |  |  
 
 
-| Implementiert |  |  | Bruttokapazität 
+| Verwendete Node-Kapazitätsauslastung | Implementiert |  |  
 
 
-| Implementiert |  |  | Gesamtkapazität 
+| Node-Kapazitätsauslastung Verwendete Metadaten | Implementiert |  |  
 
 
-| Implementiert |  |  | Genutzte Kapazität 
+| Durchsatz Beim Lesen | Implementiert |  |  
 
 
-| Implementiert |  |  | Kapazitätsverhältnis Zu Hoch Festsetzen 
+| Gesamtdurchsatz | Implementiert |  | Durchschnittliche Gesamtrate der Festplatte (Lese- und Schreibvorgänge auf allen Festplatten) in MB/s 
 
 
-| Implementiert |  | Als Zeitreihe gemeldet | Verhältnis Der Verwendeten Kapazität 
+| Durchsatz Schreiben | Implementiert |  |  
+
+
+.6+| Storage Pool Festplatte | Bereitgestellte Kapazität | Implementiert |  |  
+
+
+| Bruttokapazität | Implementiert |  |  | Gesamtkapazität 
+
+
+| Implementiert |  |  | Genutzte Kapazität | Implementiert 
+
+
+|  |  | Kapazitätsverhältnis Zu Hoch Festsetzen | Implementiert |  
+
+
+| Als Zeitreihe gemeldet | Verhältnis Der Verwendeten Kapazität | Implementiert |  |  
 |===
 Von diesem Datensammler verwendete Management-APIs:
 

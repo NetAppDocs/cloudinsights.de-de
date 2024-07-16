@@ -127,17 +127,38 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 
 === Inventar
 
-[cols="2*"]
+[cols="2a, 2a"]
 |===
 | Problem: | Versuchen Sie dies: 
 
 
-| „Ungültige Anmeldeinformationen“ | ZFS-Benutzerkonto und -Passwort validieren 
+ a| 
+„Ungültige Anmeldeinformationen“
+ a| 
+ZFS-Benutzerkonto und -Passwort validieren
 
 
-| „Konfigurationsfehler“ mit Fehlermeldung „REST Service ist deaktiviert“ | Vergewissern Sie sich, dass DER REST-Dienst auf diesem Gerät aktiviert ist. 
+
+ a| 
+„Konfigurationsfehler“ mit Fehlermeldung „REST Service ist deaktiviert“
+ a| 
+Vergewissern Sie sich, dass DER REST-Dienst auf diesem Gerät aktiviert ist.
 
 
-| „Konfigurationsfehler“ mit Fehlermeldung „Benutzer nicht autorisiert für Befehl“ | Dieser Fehler ist wahrscheinlich darauf zurückzuführen, dass bestimmte Rollen (z. B. „Advanced_Analytics“) für den konfigurierten Benutzer nicht enthalten sind. Durch die Anwendung des Analysebereichs für den Benutzer mit schreibgeschützter Rolle kann der Fehler behoben werden. Führen Sie folgende Schritte aus: 1. Bewegen Sie auf dem ZFS-System im Bildschirm Konfiguration -> Benutzer die Maus über die Rolle und doppelklicken Sie, um die Bearbeitung zu ermöglichen 2. Wählen Sie im Dropdown-Menü „Bereich“ die Option „Analyse“ aus. Eine Liste der möglichen Eigenschaften wird angezeigt. 3. Klicken Sie auf das Kontrollkästchen am oberen Ende, um alle drei Eigenschaften auszuwählen. 4. Klicken Sie auf der rechten Seite auf die Schaltfläche Hinzufügen. 5. Klicken Sie oben rechts im Popup-Fenster auf die Schaltfläche Übernehmen. Das Popup-Fenster wird geschlossen. 
+
+ a| 
+„Konfigurationsfehler“ mit Fehlermeldung „Benutzer nicht autorisiert für Befehl“
+ a| 
+Dieser Fehler ist wahrscheinlich darauf zurückzuführen, dass bestimmte Rollen (z. B. „Advanced_Analytics“) für den konfigurierten Benutzer nicht enthalten sind.
+
+Durch die Anwendung des Analysebereichs für den Benutzer mit schreibgeschützter Rolle kann der Fehler behoben werden. Führen Sie hierzu folgende Schritte aus:
+
+. Bewegen Sie auf dem ZFS-System im Bildschirm Konfiguration -> Benutzer die Maus über die Rolle und doppelklicken Sie, um die Bearbeitung zu ermöglichen
+. Wählen Sie im Dropdown-Menü „Bereich“ die Option „Analyse“ aus. Eine Liste der möglichen Eigenschaften wird angezeigt.
+. Klicken Sie auf das Kontrollkästchen am oberen Ende, um alle drei Eigenschaften auszuwählen.
+. Klicken Sie auf der rechten Seite auf die Schaltfläche Hinzufügen.
+. Klicken Sie oben rechts im Popup-Fenster auf die Schaltfläche Übernehmen. Das Popup-Fenster wird geschlossen.
+
+
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

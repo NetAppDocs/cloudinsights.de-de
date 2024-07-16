@@ -37,17 +37,12 @@ Das System zeigt die verfügbaren Datensammler an, die nach Hersteller geordnet 
 Im Dialogfeld können Sie den Datensammler konfigurieren und eine Erfassungseinheit hinzufügen.
 
 . Geben Sie einen Namen für den Datensammler ein.
-
-
-<<<<<<< KOPF
 . Klicken Sie auf *Erweiterte Konfiguration*, um weitere Konfigurationsfelder hinzuzufügen. (Nicht alle Datensammler benötigen erweiterte Konfiguration.)
 . Klicken Sie auf *Testkonfiguration*, um zu überprüfen, ob der Datensammler ordnungsgemäß konfiguriert ist.
 . Klicken Sie auf *Collector hinzufügen*, um die Konfiguration zu speichern und den Datensammler zu Ihrem Cloud Insights-Mandanten hinzuzufügen.
 
-[]
-====
+
 Es kann bis zu zwei Abfrageperioden dauern, bis die Daten aus dem Dienst in Dashboards angezeigt oder für die Abfrage verfügbar sind.
->>>>>>>> B8087143154c7dd9f5d1d3f33ee1bdf97a7c9d1
 
 * 1. Bestandsabfrage: Sofort
 * Erste Leistungsdatenabfrage, um eine Basislinie zu erstellen: Unmittelbar nach Bestandsabfrage
@@ -55,5 +50,3 @@ Es kann bis zu zwei Abfrageperioden dauern, bis die Daten aus dem Dienst in Dash
 
 
 Die Abfrage erfolgt dann nach den konfigurierten Abfrageintervallen für Bestand und Leistung.
-
-====
