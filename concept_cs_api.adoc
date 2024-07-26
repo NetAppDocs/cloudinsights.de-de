@@ -16,9 +16,6 @@ summary: Workload Security umfasst eine leistungsstarke API zur Integration in a
 [role="lead"]
 Die Workload-Sicherheits-API ermöglicht NetApp Kunden und unabhängigen Software-Anbietern (ISVs) die Integration der Workload-Sicherheit in andere Applikationen wie CMDB- oder andere Ticketsysteme.
 
-
-NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
-
 Anforderungen für API-Zugriff:
 
 * Ein API-Zugriffstoken-Modell wird verwendet, um den Zugriff zu gewähren.
@@ -30,6 +27,9 @@ Anforderungen für API-Zugriff:
 == API-Dokumentation (Swagger)
 
 Die neuesten API-Informationen finden Sie, indem Sie sich bei Workload Security anmelden und zu *Admin > API Access* navigieren. Klicken Sie auf den Link *API Documentation*. Die API-Dokumentation ist Swagger-basiert, die eine kurze Beschreibung und Verwendungsinformationen für die API enthält und Sie können es in Ihrer Umgebung ausprobieren.
+
+
+NOTE: Wenn Sie die Forensics Activity API aufrufen, verwenden Sie die API cloudSecure_forensics.activities.*v2*. Wenn Sie mehrere Aufrufe zu dieser API ausführen, stellen Sie sicher, dass die Aufrufe nacheinander und nicht parallel erfolgen. Mehrere parallele Aufrufe können dazu führen, dass die API-Zeit abgeht.
 
 
 

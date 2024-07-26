@@ -3473,7 +3473,6 @@
   <block id="374616a0b786e9bffadc7f28e68d6c59" category="cell">7 Tage</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">Single Sign On (SSO)</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">Vorhängeschloss</block>
-  <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">Wenn bei der Verwendung von Cloud Insights ein Schloss-Symbol angezeigt wird <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>, Es bedeutet, dass die Funktion nicht in Ihrer aktuellen Edition verfügbar ist, oder ist in einer begrenzten Form. Upgrade für vollständigen Zugriff auf die Funktion.</block>
   <block id="564722cf2b61356d50f1ce28203b167b" category="inline-link-macro">*Produktsupport*</block>
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">Sie können sich während Ihres Testzeitraums jederzeit für Cloud Insights anmelden. Mit dem Abonnieren von Cloud Insights sichern Sie unterbrechungsfreien Zugriff auf Ihre Daten und können darüber hinaus erweitert werden <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> Optionen:</block>
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">Wenn Sie zusätzliche Zeit benötigen, um Cloud Insights zu testen. Ihre Testversion läuft in maximal 4 Tagen ab, können Sie die Testversion um weitere 30 Tage verlängern. Sie können die Testversion nur einmal verlängern. Sie können nicht verlängern, wenn Ihre Testversion abgelaufen ist.</block>
@@ -3483,15 +3482,12 @@
   <block id="03742c91392961db83c5540550a3500a" category="section-title">Was ist, wenn meine Testversion abgelaufen ist?</block>
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Cloud Insights angemeldet haben, haben Sie bis zur Anmeldung nur begrenzte Funktionen.</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">Abonnementoptionen</block>
-  <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">Preisgestaltung</block>
-  <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Der Preis für Cloud Insights ist pro *verwaltete Einheit*. Die Nutzung Ihrer verwalteten Einheiten wird anhand der Anzahl der *Hosts oder virtuellen Maschinen* und der Menge der *unformatierten Kapazität* berechnet, die in Ihrer Infrastrukturumgebung verwaltet wird.</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 Managed Unit = 2 Hosts (jede virtuelle oder physische Maschine)</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 Managed Unit = 4 tib unformatierte Kapazität physischer oder virtueller Festplatten</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi Content Platform</block>
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
   <block id="6cede1cfde12fc6d88ad1d8b6636a977" category="inline-xref">Unten</block>
   <block id="d8be2988f45df4b59f1cfe2e32869556" category="paragraph">Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder erwartet werden, haben Sie Anspruch auf *Volumenrabatte* und werden dazu aufgefordert, sich an den NetApp Vertrieb zu wenden. Siehe <block ref="e38bca6fb8f053d6cea5cce9993ed45c" category="inline-xref-macro-rx"></block> Entnehmen.</block>
-  <block id="bbf59ac32c05b550772acb1ca3799847" category="section-title">Schätzen Sie Ihre Abonnementkosten Ein</block>
   <block id="c015ba02347af3d8c00ede570637622a" category="section-title">Wie kann ich mich anmelden?</block>
   <block id="99d34ca2583ae7363bd4e07f9b2d98cc" category="inline-xref">Self-Subscribe</block>
   <block id="61951f38f686ce7c31ccc7f65173062c" category="section-title">Abonnieren Sie NetApp Sales Direct</block>
@@ -3518,11 +3514,6 @@
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">*100%*</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">Melden Sie sich direkt an und überspringen Sie die Testversion</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
-  <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">Hinzufügen einer Berechtigungs-ID</block>
-  <block id="860cea525f63406af55925d01de59c97" category="paragraph">Wenn Sie ein gültiges NetApp Produkt im Paket mit Cloud Insights besitzen, können Sie diese Produktseriennummer Ihrem bestehenden Cloud Insights Abonnement hinzufügen. Wenn Sie beispielsweise ein NetApp Astra Control Center erworben haben, können Sie mit der Lizenzseriennummer des Astra Control Centers das Abonnement in Cloud Insights ermitteln. Cloud Insights bezeichnet dies als „_Berechtigungs-ID_“.</block>
-  <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">Um Ihrem Cloud Insights-Abonnement eine Berechtigungs-ID hinzuzufügen, klicken Sie auf der Seite *Admin &gt; Abonnement* auf _+Berechtigungskennung_.</block>
-  <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">Fügen Sie eine Berechtigungs-ID zu Ihrem Abonnement hinzu</block>
-  <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e7136d23b0fd79f1bfd83b357b92d160" category="summary">Ändern oder Löschen einer Abfrage</block>
   <block id="e7c09d456b9277f7cac0ab083d8e5272" category="doc">Eine Abfrage ändern oder löschen</block>
   <block id="5943bffb29d3b91de57cf4e3be5f6a9d" category="section-title">Ändern einer Abfrage</block>
@@ -7452,7 +7443,6 @@
   <block id="aca759ec023e2e4c6156b1c2ced1b16b" category="summary">Hinzufügen von Datensammlern</block>
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">Konfiguration des ONTAP SVM Data Collector</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">Dieser Datensammler wird unterstützt durch:</block>
-  <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS-Protokoll Version 4.0 und früher</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">FlexGroup wird von ONTAP 9.4 und höheren Versionen unterstützt</block>
   <block id="1b1cd01c54254af639999400741a0b75" category="list-text">ONTAP Select wird unterstützt</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">Es werden nur SVMs vom Datentyp unterstützt. SVMs mit Infinite Volumes werden nicht unterstützt.</block>
@@ -9671,26 +9661,16 @@
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">Sie können Richtlinien für bestimmte Geräte oder alle Geräte festlegen. Um eine Antwortrichtlinie festzulegen, wählen Sie *Admin &gt; Automatische Antwortrichtlinien* aus und klicken Sie auf die entsprechende Schaltfläche *+Policy*. Sie können Richtlinien für Angriffe oder Warnungen erstellen.</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">*Abonnieren* bei Cloud Insights für kontinuierlichen, unterbrechungsfreien Zugriff auf Ihre Daten über <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> Direkt oder <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>.</block>
-  <block id="7895749038d1aa7c4c74721d3ee829e7" category="admonition">Sofern nicht anders angegeben, gelten die Informationen auf dieser Seite in der Regel für Cloud Insights Commercial Editions. Die Bundesausgabe von Cloud Insights enthält möglicherweise nicht einige der auf dieser Seite beschriebenen Funktionen.</block>
   <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insights-Preisgestaltung</block>
   <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">Einen vollständigen Vergleich der in der Cloud Insights Basic und Premium Edition verfügbaren Funktionen finden Sie im <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> Seite.</block>
   <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">Testversion</block>
   <block id="011273891e0a49f42abc1a209e58868a" category="paragraph">Cloud Insights zeigt ein Banner an, wenn sich Ihre kostenlose Testversion dem Ende nähert Innerhalb dieses Banners befindet sich ein _View Subscription_ Link, der die Seite *Admin -&gt; Abonnement* öffnet. Nicht-Admin-Benutzer sehen das Banner, können aber nicht zur Abonnementseite gehen.</block>
-  <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">Sie können sich zudem über den AWS Marketplace für eine kostenlose Testversion anmelden. Mit der kostenlosen Testversion von AWS Marketplace haben Sie 33 Tage lang Zugriff auf Cloud Insights, maximal 499 Tage <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> (Mus).</block>
   <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">Die kostenlose Testversion von AWS Marketplace kann nicht erweitert werden. Sie können jederzeit während der Testversion auf ein Cloud Insights-Abonnement für die Basisversion herunterstufen oder auf ein kostenpflichtiges Cloud Insights-Abonnement wechseln, indem Sie die Seite *Admin -&gt; Abonnement* aufrufen.</block>
-  <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">Um sich zu registrieren, gehen Sie zu *Admin -&gt; Abonnement*. Zusätzlich zu den Schaltflächen *Abonnieren* können Sie Ihre installierten Datensammler sehen und Ihre geschätzten Preise berechnen. In einer typischen Umgebung können Sie auf die Schaltfläche Self-Service AWS Marketplace klicken. Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder davon erwartet werden, haben Sie ein Anrecht auf Volume Pricing.</block>
-  <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">Ihre geschätzten Listenkosten ändern sich abhängig von Ihrem Abonnementzeitraum.
-HINWEIS: Die Rechner dienen nur zur Schätzung. Die genaue Preisgestaltung wird bei der Anmeldung festgelegt.</block>
-  <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">Abonnementseite mit Kostenkalkulationsrechnern für Infrastruktur und Kubernetes</block>
-  <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">Sobald der AWS-Abonnementprozess abgeschlossen ist, werden Sie zurück in Ihre Cloud Insights-Umgebung gebracht. Wenn die Umgebung nicht mehr aktiv ist (Sie haben sich z. B. abgemeldet), werden Sie zur Anmeldeseite von NetApp BlueXP weitergeleitet. Wenn Sie sich erneut bei Cloud Insights anmelden, ist Ihr Abonnement aktiv.</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">Aktuelle Ausgabe</block>
   <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">Seriennummer Des Abonnements</block>
   <block id="d3d856c02816952b24a5110171a09834" category="paragraph">Auf der Registerkarte Usage Management wird eine Übersicht über die Auslastung der verwalteten Einheiten sowie Registerkarten angezeigt, die den Verbrauch der verwalteten Einheiten nach Collector oder Kubernetes Cluster aufschlüsselung.</block>
   <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">Falls sich Ihre Nutzung dem abonnierten Betrag nähert oder diesen überschreitet, können Sie die Nutzung verringern, indem Sie Datensammler löschen oder die Überwachung von Kubernetes-Clustern stoppen. Löschen Sie einen Eintrag in dieser Liste, indem Sie auf das Menü „drei Punkte“ klicken und _Löschen_ wählen.</block>
-  <block id="718a66b23c9ea5a577883d447f892296" category="cell">Ein Fehlerbanner wird angezeigt, und Sie haben nur begrenzte Funktionen, bis Sie eine der folgenden Aktionen ausführen:
-* Entfernen Sie Data Collectors, so dass Ihre Managed Unit Nutzung ist auf oder unter Ihrem abonnierten Betrag
-* Ändern Sie Ihr Abonnement, um die Anzahl der abonnierten verwalteten Einheiten zu erhöhen</block>
   <block id="411d690288852abddc39378b2989bfda" category="section-title">Juni 2023</block>
   <block id="291a655a304c4b76742b53402a12bbc9" category="section-title">Überprüfen Sie Ihre Nutzung</block>
   <block id="0086a587e865c983a5de9f9b4d992e51" category="paragraph">Ab Juni 2023 bietet Cloud Insights eine Aufschlüsselung der Auslastung der verwalteten Einheiten basierend auf dem Funktionssatz. Sie können jetzt die Managed Unit (MU)-Nutzung für Ihre Infrastruktur sowie die MU-Nutzung in Verbindung mit Kubernetes schnell anzeigen und überwachen.</block>
@@ -9767,8 +9747,6 @@ Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerk
   <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">MEM-Limit für die implementierung von kube-State-Metriken</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">Löschen Sie die Daten nach Ablauf der Aufbewahrungsfrist (Details finden Sie auf der Seite „Editionen“). Beachten Sie, dass der Monitor keine Auflösungsbedingung per Definition hat. Daher bleibt eine Warnung _aktiv_ und unterdrückt alle nachfolgenden Warnungen mit übereinstimmenden _Group_by_, die von diesem Monitor erstellt wurden, bis die Aufbewahrungsfrist für Daten abgelaufen ist.</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">Auflösen anhand von Protokolleingaben: Warnung auflösen, wenn die Protokollzeile wie in der folgenden Definition beschrieben erkannt wird, oder nach Ablauf der Aufbewahrungsfrist löschen.</block>
-  <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1 Managed Unit = 4 vCPUs von Uberentes</block>
-  <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">Mithilfe der Abonnementrechner können Sie Ihre Cloud Insights-Abonnementkosten anhand der Anzahl der benötigten verwalteten Einheiten abschätzen. Die aktuellen Werte sind bereits ausgefüllt, und Sie können diese Werte anpassen, um Sie bei der Planung des geschätzten zukünftigen Wachstums zu unterstützen. Sie können die Werte für Infrastruktur, Kubernetes oder beides anpassen.</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">Bearbeiten eines vorhandenen Berichts</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">Beachten Sie, dass die Bearbeitung von Dateien am Standardspeicherort das Risiko birgt, dass diese Berichte bei der nächsten Aktualisierung des Berichtkatalogs überschrieben werden. Es wird empfohlen, den bearbeiteten Bericht unter einem neuen Namen zu speichern oder an einem nicht standardmäßigen Speicherort zu speichern.</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">Nachdem Sie einige Buchstaben mit einem Platzhalterzeichen wie Sternchen (*) in die Filter auf den Seiten Forensics _All Activity_ oder _entities_ eingegeben haben, werden die Seiten sehr langsam geladen.</block>
@@ -11860,16 +11838,13 @@ Die Cluster-CPU-Sättigung wird als Summe der CPU-Auslastung berechnet, geteilt 
   <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">Führen Sie jeden der folgenden Befehle in der Reihenfolge aus. Abhängig von Ihrer aktuellen Installation können einige dieser Befehle Nachrichten ‘object not found’ zurückgeben. Diese Meldungen können sicher ignoriert werden.</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">Wenn zuvor eine Sicherheitskontextbeschränkung erstellt wurde:</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">Über Kube-State-Metrics</block>
-  <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">Kennzahlen für die Konfigmap</block>
   <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">DemonSet Metrics</block>
   <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">Implementierungsmetriken</block>
-  <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">Ingress Metrics</block>
   <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">Namespace-Kennzahlen</block>
   <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">Node-Kennzahlen</block>
   <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">Persistente Volume-Kennzahlen</block>
   <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">Pod-Metriken</block>
   <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">Kennzahlen für ReplicaSet</block>
-  <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">Geheimkennzahlen</block>
   <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">Service-Kennzahlen</block>
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">StatfulSet-Kennzahlen</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">Überprüfen Von Kubernetes Prüfsummen</block>
@@ -12370,10 +12345,8 @@ Weitere Informationen finden Sie unter Proxys <block ref="05c875968683001fc59f20
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">Diagrammsymbol anzeigen</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP-Berechtigungen</block>
-  <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">Berechtigungen für ONTAP-Zugriff verweigert</block>
   <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">Weitere Informationen zur Konfiguration anderer <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>.</block>
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 und höher. Verwenden Sie für die beste Performance eine Data ONTAP-Version über 9.13.1.</block>
-  <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">Weitere Informationen finden Sie unter <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">Weitere Informationen finden Sie unter <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
   <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP REST Data Collector</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST-Datensammler</block>
@@ -12452,7 +12425,6 @@ Der Benutzer muss Mitglied der Sicherheitsgruppe _Read-Only Domain Controller_ s
   <block id="90c88d106e5c777681ffd00809e3e11f" category="cell">Die IP-Adresse oder der vollständig qualifizierte Domänenname des NetApp-Clusters. Muss Cluster-Management-IP/FQDN sein.</block>
   <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">Rufen Sie den Namen des vservers vom Typ _admin_ ab. Sie werden diesen Namen in nachfolgenden Befehlen verwenden.</block>
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">Ich sehe leere oder „0“ Metriken, wo der ONTAP ontapi Collector Daten anzeigt.</block>
-  <block id="7e0b2932c814704a91b543d4f713d658" category="cell">Kommunikation von ONTAP zum Workload Security Agent für FPolicy-Ereignisse.  Diese Ports müssen gegenüber dem Workload Security Agent geöffnet werden, damit ONTAP Ereignisse an ihn senden kann, einschließlich jeglicher Firewall auf dem Workload Security Agent selbst (falls vorhanden).</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">Echo vom Agent zu SVM-Daten-LIFs</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">Die DemonSets _netapp-CI-telegraf-ds_, _netapp-CI-Fluent-Bit-ds_ und _netapp-CI-net-Observer-l4-ds_ müssen für jeden Node im Cluster einen Pod planen, damit Daten auf allen Nodes korrekt erfasst werden. Der Operator wurde so konfiguriert, dass er einige bekannte *Fehler* toleriert. Wenn Sie auf Ihren Nodes benutzerdefinierte Taints konfiguriert haben und damit verhindern, dass Pods auf jedem Knoten ausgeführt werden, können Sie für diese Taints eine *Toleration* erstellen <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>. Wenn Sie auf alle Nodes im Cluster benutzerdefinierte Taints angewendet haben, müssen Sie der Operator-Bereitstellung auch die erforderlichen Toleranzen hinzufügen, damit der Operator-Pod geplant und ausgeführt werden kann.</block>
   <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">ci-kube-rbac-Proxy</block>
@@ -12752,7 +12724,6 @@ In Firefox werden Cookie-Ausnahmen einfach als _auth0.com_ und _netapp.com_ beze
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">Modulbewertung</block>
   <block id="76064df620f99261dce25de296d7e769" category="paragraph">Sie können auch von *Module Evaluations* profitieren. Wenn Sie beispielsweise bereits Infrastruktur-Observability abonniert haben, aber Kubernetes zu Ihrer Umgebung hinzufügen, erhalten Sie automatisch eine 30-Tage-Evaluierung von Kubernetes Observability, beginnend mit der Installation des NetApp Kubernetes Monitoring Operator. Ihnen wird am Ende des Evaluierungszeitraums nur die Nutzung Ihrer Kubernetes Observability-gemanagten Einheit in Rechnung gestellt.</block>
   <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">Denken Sie daran, dass Ihnen nach der Bewertung die Kosten für die Verwendung neuer verwalteter Einheiten (Managed Unit, MU) in Rechnung gestellt werden. Planen Sie daher entsprechend. Wenn Ihre Modulbewertung beendet ist, werden Sie benachrichtigt, wenn Sie weitere Mus hinzufügen müssen, um Serviceunterbrechungen zu vermeiden.</block>
-  <block id="9c420799ef765483eddc7865804e6371" category="admonition">A _Module Evaluation_ ist kein _Trial_ - wir verwenden den Begriff Trial, wenn wir unseren Kunden eine kostenlose Testphase zur Nutzung des CI-Dienstes zur Bestätigung der Eignung und zum Aktivieren des Kaufs anbieten. Eine Modulbewertung ist anders. Hier können Kunden, die eine Zahlung erhalten haben, ein Modul von Cloud Insights ausprobieren, das sie in den letzten Monaten ihres bezahlten Abonnements nicht genutzt haben. Wenn die Evaluierung aktiv ist, werden die Kosten für das neu konfigurierte Modul aufgehoben. Die Arbeitsumgebung des Kunden ist noch nicht abonniert und hat sich nicht auf kostenlose Testversion zurückgesetzt. Das Abonnement hat sich nicht geändert.</block>
   <block id="8fe818ace86e2479958161998bd57015" category="paragraph">Während einer Modulbewertung wird die ME-Auslastung für Ressourcen, die für das Modul verbraucht werden, nicht geändert. aber Sie können den *Estimator* (auf der _Summary_ Registerkarte) öffnen, um zu sehen, wie MUs nach der Auswertung berechnet werden, sowie mit "Was wäre wenn"-Szenarien mit der Anzahl der Mus spielen, die Sie in Zukunft benötigen. Setzen Sie die Zahlen zurück, indem Sie den Kalkulator beenden.</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">Beachten Sie, dass Kunden nur einmal pro Abonnement für eine Modulbewertung berechtigt sind.</block>
   <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
@@ -12921,7 +12892,6 @@ Für genaue Audit- und Datenberichte synchronisieren Sie die Zeit auf dem Agent-
   <block id="bc47800fe62365013d4adf7232c1c738" category="paragraph">Überprüfen Sie unbedingt den Abschnitt Berechtigungen der <block ref="c5b253e6d28e76aaaf37feb5e0119ce8" category="inline-link-macro-rx"></block> Zu.</block>
   <block id="63d71c9c8919be72ed5d5d19a3aea524" category="list-text">Wenn Sie den vollständigen Administrator-Benutzernamen und -Kennwort für Cluster-/SVM-Management nicht verwenden können oder nicht bereit sind, können Sie einen benutzerdefinierten Benutzer mit geringeren Berechtigungen erstellen, wie im erwähnt <block ref="00e97c40bcd2b78ce8600bf90267e3e7" category="inline-xref-macro-rx"></block> Abschnitt unten. Dieser benutzerdefinierte Benutzer kann für einen SVM- oder Cluster-Zugriff erstellt werden.</block>
   <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">Berechtigungen beim Hinzufügen über *Vserver Management IP*:</block>
-  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">Berechtigungen für autonomen ONTAP Ransomware-Schutz</block>
   <block id="ce2c442b24aec5c08788260869132fdd" category="cell">Dies ist sehr wahrscheinlich auf der Seite des ONTAP-Netzwerks zurückzuführen. Bitte befolgen Sie diese Schritte:
 
 1. Stellen Sie sicher, dass es keine Firewalls auf den SVM-Daten-LIF oder das Management-LIF gibt, die die Verbindung von der SVM blockieren.
@@ -13204,7 +13174,6 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">Dieser Fehler tritt auf, wenn die Collector-Installer-Datei nicht im Verzeichnis „/tmp/Collectors“ vorhanden ist oder nicht zugänglich ist. Stellen Sie sicher, dass die Installer-Datei heruntergeladen wird und das Verzeichnis „Collectors“ und Installer zip-Datei im Besitz von cssys:cssys ist und starten Sie Agent-Dienst – „systemctl restart cloudsecure-agent.service”</block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2. Unberechtigter Fehler</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">Dieser Fehler wird angezeigt, wenn ein API-Zugriffstoken generiert wird, ohne alle erforderlichen API-Kategorien auszuwählen. Generieren Sie ein neues API-Zugriffstoken, indem Sie alle erforderlichen API-Kategorien auswählen.</block>
-  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Details zum Skript finden Sie in der Infodatei an dieser Stelle.</block>
   <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">Die forensische Benutzeroberfläche lädt Daten langsam, wenn der _PATH_-Filter verwendet wird.</block>
   <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">Wenn der Pfad _/AAA/BBB/CCC/DDD_ lautet, dann suchen Sie nicht nach:
 
@@ -13221,7 +13190,6 @@ Aaa/Bbb/Ccc/*
 Diese Suche sollte es ermöglichen, die Daten schneller zu laden.</block>
   <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">• ONTAP persistenter Speicher wird von 9.15.1 unterstützt.</block>
   <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">Ein angehaltener Data Collector kann nicht gelöscht werden.</block>
-  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">Während der Pause sind die fpolicy-Einstellungen in ONTAP deaktiviert, aber nicht gelöscht. Bei der Wiederaufnahme werden die fpolicy-Einstellungen in ONTAP wieder aktiviert.</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">Der Data Collector wird beim Auswählen des SVM-Modus fehlgesetzt.</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">Wenn beim Herstellen einer Verbindung im SVM-Modus die Cluster-Management-IP verwendet wird, um eine Verbindung anstelle der SVM-Management-IP herzustellen, wird die Verbindung getrennt. Stellen Sie sicher, dass die richtige SVM-IP verwendet wird.</block>
   <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">Manuelle Installation von APIs</block>
@@ -13353,4 +13321,50 @@ Diese Suche sollte es ermöglichen, die Daten schneller zu laden.</block>
   <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Datensammler Pure Storage FlashBlade</block>
   <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insights verwendet den Pure Storage FlashBlade Datensammler zur Erfassung von Bestands- und Performance-Daten.</block>
   <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">FlashBlade Host-IP-Adresse</block>
+  <block id="5ba53e5a2add537346e5d283255d419a" category="cell">Kommunikation von ONTAP zum Workload Security Agent für FPolicy-Ereignisse. Diese Ports müssen gegenüber dem Workload Security Agent geöffnet werden, damit ONTAP Ereignisse an ihn senden kann, einschließlich jeglicher Firewall auf dem Workload Security Agent selbst (falls vorhanden). BEACHTEN SIE, dass Sie nicht *all* dieser Ports reservieren müssen, aber die Ports, die Sie dafür reservieren, müssen innerhalb dieses Bereichs liegen. Es wird empfohlen, mit der Reservierung von ~100 Ports zu beginnen, und bei Bedarf zu erhöhen.</block>
+  <block id="fd6114e047225ac69533d6082b3f731b" category="admonition">Wenn Sie die Forensics Activity API aufrufen, verwenden Sie die API cloudSecure_forensics.activities.*v2*. Wenn Sie mehrere Aufrufe zu dieser API ausführen, stellen Sie sicher, dass die Aufrufe nacheinander und nicht parallel erfolgen. Mehrere parallele Aufrufe können dazu führen, dass die API-Zeit abgeht.</block>
+  <block id="5649187108c4f32ee74dd6b5543c6f73" category="paragraph">Wenn Sie bei der Verwendung von Cloud Insights ein Vorhängeschloss-Symbol sehen <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>, bedeutet dies, dass die Funktion in Ihrem aktuellen Abonnement nicht verfügbar ist oder in begrenzter Form verfügbar ist. Abonnieren Sie diese Funktion, um vollen Zugriff zu erhalten. Einige Funktionen sind vor dem Abonnieren als verfügbar <block ref="7f89ca2c071a1700db286ba62f9d3c95" category="inline-xref-macro-rx"></block> .</block>
+  <block id="09b74e911376515159253ee372fe044b" category="paragraph">Sie können sich zudem über den AWS Marketplace für eine kostenlose Testversion anmelden. Mit der kostenlosen Testversion von AWS Marketplace haben Sie 33 Tage lang Zugriff auf Cloud Insights und können bis zu 499 (Mus) testen. <block ref="74100db5c6c154a5b13e17b29feeccc3" category="inline-xref-macro-rx"></block></block>
+  <block id="b8af84dbd472dd10145b90235b35bb6b" category="admonition">Eine _Modulbewertung_ ist keine _Testversion_ - wir verwenden den Begriff Testversion, wenn wir Kunden eine kostenlose Testphase zur Nutzung des Cloud Insights-Service zur Bestätigung der Eignung und Aktivierung des Kaufs zur Verfügung stellen. Eine Modulbewertung ist anders. Hier können Kunden, die eine Zahlung erhalten haben, ein Modul von Cloud Insights ausprobieren, das sie in den letzten Monaten ihres bezahlten Abonnements nicht genutzt haben. Wenn die Evaluierung aktiv ist, werden die Kosten für das neu konfigurierte Modul aufgehoben. Die Arbeitsumgebung des Kunden ist noch nicht abonniert und hat sich nicht auf kostenlose Testversion zurückgesetzt. Das Abonnement hat sich nicht geändert.</block>
+  <block id="b5ddfc508b0b9510d47c505df23b6a45" category="paragraph">Um sich zu registrieren, gehen Sie zu *Admin -&gt; Abonnement*. Zusätzlich zu den *Abonnieren* Buttons können Sie Ihre installierten Datensammler sehen und Ihre geschätzte Zählung berechnen. In einer typischen Umgebung können Sie auf die Schaltfläche Self-Service AWS Marketplace klicken. Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder davon erwartet werden, haben Sie ein Anrecht auf Volume Pricing.</block>
+  <block id="b5c16ff734c99fe07b51b9c660dfc912" category="section-title">Observability-Messung</block>
+  <block id="92cab4ee09c983b6dbf1ec4c00c04076" category="paragraph">Die Beobachtbarkeit von Cloud Insights Infrastrukturen und Kubernetes Observability werden pro *gemanagter Einheit* gemessen. Die Nutzung Ihrer verwalteten Einheiten wird anhand der Anzahl der *Hosts oder virtuellen Maschinen* und der Menge der *unformatierten Kapazität* berechnet, die in Ihrer Infrastrukturumgebung verwaltet wird.</block>
+  <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1 Managed Unit = 4 vCPUs von Uberentes.</block>
+  <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1 Managed Unit K8s Adjustment = 2 Nodes oder Hosts, die auch von der Infrastruktur überwacht werden.</block>
+  <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">Messung Der Workload-Sicherheit</block>
+  <block id="b5dbf3908d3c6b22dae178d413d4ce4e" category="paragraph">Die Messung der Workload-Sicherheit richtet sich danach, ob die verwendeten Nodes High-End-, Midrange- oder Entry-Level-Nodes mit der folgenden MU-Anzahl (Managed Unit) sind:</block>
+  <block id="9deac637ce81c2ff5c02dd677114b046" category="cell">Knotentyp:</block>
+  <block id="5c6b02f3e1e66cf6bc61770896381c0c" category="cell">Beispielmodelle:</block>
+  <block id="36f40ed2512ba28c547d66d7d491162f" category="cell">Messung:</block>
+  <block id="6e01164f2c9cb0a5194189abb25109bd" category="cell">1 High-End-Knoten</block>
+  <block id="170a94d41c76a81a1b946d250f220856" category="cell">700, 800, 900, 9xxx</block>
+  <block id="e590a5366379c2508c4a67e27f2113df" category="cell">80 Verwaltete Einheiten</block>
+  <block id="12382b0c1437be6dd1acc8bc87687420" category="cell">1 Midrange-Knoten</block>
+  <block id="683af03ee72fbf8b08496a0ce7512c64" category="cell">300, 400, 500, 8x00</block>
+  <block id="5d7e414148bc2dc4fe724922baf5c29c" category="cell">40 Verwaltete Einheiten</block>
+  <block id="4d163b200e42b8b9ca12ceb09cf806e4" category="cell">1 Einstiegsknoten</block>
+  <block id="1dfa056fe0e2fe2064a0a2d6557b6f51" category="cell">1xx, 2xx UND 2xxx</block>
+  <block id="55e705ba2a458ac1ceaac25be1541fdc" category="cell">20 Verwaltete Einheiten</block>
+  <block id="c348d250ed74551e60d0bbe9cf4411cf" category="cell">1 Software-ONTAP</block>
+  <block id="e9b32f06458a1207182046e76c5b5de8" category="cell">CVO/FSX</block>
+  <block id="27c5cf27d09e53151bd6502189ffb375" category="cell">10 Verwaltete Einheiten</block>
+  <block id="0c57b1acf3284a22d04607fb0452db54" category="cell">1 Unbekannter Knoten</block>
+  <block id="3943920606f23b23925f15408e26cae2" category="paragraph">Sie können Ihre Workload Security-Nutzung auf der Seite *Admin &gt; Abonnement* auf der Registerkarte *Workload Security* anzeigen.</block>
+  <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">„Admin &amp;gt; Subscription &amp;gt; Workload Security“-Registerkarte mit High-End-, Midrange- und Entry-Level-Node-Anzahl“</block>
+  <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="019ede2125ee965dbf8adb0346c58f55" category="admonition">Bei bestehenden Workload Security-Abonnements wird die MU-Nutzung angepasst, sodass die Node-Nutzung keine verwalteten Einheiten verbraucht. Verwendung von Cloud Insights-Messgeräten zur Gewährleistung der Compliance mit lizenzierter Nutzung.</block>
+  <block id="48eb2e3cd501957838ba5a76d243edf2" category="paragraph">Ein Fehlerbanner wird angezeigt, bis Sie einen der folgenden Schritte ausführen:</block>
+  <block id="eaeeb5a6079506171dcd917d7b71a8a3" category="list-text">Entfernen Sie Data Collectors, damit Ihre Managed Unit-Nutzung Ihren abonnierten Betrag erreicht oder darunter liegt</block>
+  <block id="92ba817bcf69387f3ad0bdb24161ab8e" category="list-text">Ändern Sie Ihr Abonnement, um die Anzahl der abonnierten verwalteten Einheiten zu erhöhen</block>
+  <block id="667677d8bd1877e973ea57e00d3810db" category="section-title">Verbesserungen Bei Der Workload-Sicherheit</block>
+  <block id="5918f5af03cf64b439fa77e65a5e7850" category="paragraph">*Unterstützung für NFS 4.1*</block>
+  <block id="ccecb67a3f8de46bc8414046f6069d3d" category="paragraph">Der SVM Data Collector unterstützt jetzt NFS-Versionen bis einschließlich *NFS 4.1*.</block>
+  <block id="04bcd65528979db2a56f4aa0e2aa03d7" category="paragraph">*Neue Forensics Activity API*</block>
+  <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">Die forensische Aktivität <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> hat eine neue Version. Wenn Sie die API für Forensics Activity aufrufen, verwenden Sie die API *cloudSecure_forensics.activities._v2_*.</block>
+  <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">Wenn Sie mehrere Aufrufe an dieser API durchführen, stellen Sie für optimale Ergebnisse sicher, dass die Aufrufe nacheinander statt parallel stattfinden. Mehrere parallele Aufrufe können dazu führen, dass die API-Zeit abgeht.</block>
+  <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Informationen zum Skript finden Sie in der Infodatei an dieser Stelle.</block>
+  <block id="e440db99ab8972afb639115c16f2426c" category="list-text">NFS-Protokoll Version 4.1 und früher</block>
+  <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">Berechtigungen für autonomen ONTAP-Ransomware-Schutz und ONTAP-Zugriff verweigert</block>
+  <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">Und <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
+  <block id="243b99ee952c73f66e7461d943f01834" category="list-text">Während der Pause sind die fpolicy-Einstellungen in ONTAP deaktiviert, aber nicht gelöscht. Bei der Wiederaufnahme werden die fpolicy-Einstellungen in ONTAP wieder aktiviert.</block>
 </blocks>

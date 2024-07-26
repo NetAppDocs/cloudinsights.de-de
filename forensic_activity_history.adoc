@@ -127,7 +127,7 @@ Sie können Vorgangshistorie-Daten nach_Time, User, Source IP, Activity, Path_ u
 
 Sie können den Vorgangsverlauf in eine CSV-Datei exportieren, indem Sie über der Tabelle „Vorgangsverlauf“ auf die Schaltfläche „_Export_“ klicken. Beachten Sie, dass nur die 100,000 wichtigsten Datensätze exportiert werden. Je nach Datenmenge kann es einige Sekunden bis zu mehreren Minuten dauern, bis der Export abgeschlossen ist.
 
-Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Details zum Skript finden Sie in der Infodatei an dieser Stelle.
+Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Informationen zum Skript finden Sie in der Infodatei an dieser Stelle.
 
 
 
