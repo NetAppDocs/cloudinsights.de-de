@@ -36,17 +36,14 @@ Der Kubernetes Monitoring Operator installiert kube-State-Metriken automatisch. 
 
 Der NetApp-Kubernetes-Überwachungsoperator extrahiert die unten aufgeführten Kennzahlen für den kube-Status. Weitere Details zu den einzelnen Zählerwidersetzen finden Sie unter: https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[].
 
-. Kennzahlen für die Konfigmap
 . DemonSet Metrics
 . Implementierungsmetriken
-. Ingress Metrics
 . Namespace-Kennzahlen
 . Node-Kennzahlen
 . Persistente Volume-Kennzahlen
 . Persistent Volume Claim Metrics
 . Pod-Metriken
 . Kennzahlen für ReplicaSet
-. Geheimkennzahlen
 . Service-Kennzahlen
 . StatfulSet-Kennzahlen
 
