@@ -28,7 +28,7 @@ NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige d
 
 *Unterstützung für NFS 4.1*
 
-Der SVM Data Collector unterstützt jetzt NFS-Versionen bis einschließlich *NFS 4.1*.
+Der SVM Data Collector unterstützt jetzt NFS-Versionen bis einschließlich *NFS 4.1* mit ONTAP 9.15.1 oder höher.
 
 *Neue Forensics Activity API*
 
