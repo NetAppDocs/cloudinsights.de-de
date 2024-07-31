@@ -24,6 +24,20 @@ NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige d
 
 
 
+=== AIOPs: Anomalieerkennung
+
+Cloud Insights nutzt Machine Learning, um unerwartete Änderungen in den Datenmustern in einer Kundenumgebung zu erkennen und proaktive Warnmeldungen zu erstellen, damit Probleme frühzeitig erkannt werden.
+
+Ein Rechenzentrum verhält sich zu verschiedenen Tageszeiten und an verschiedenen Wochentagen unterschiedlich. Cloud Insights verwendet wöchentliche Saisonabhängigkeit, um das historische Verhalten für jeden Tag und jede Uhrzeit zu vergleichen.
+
+Überwachung der Anomalieerkennung kann Warnungen für Situationen bereitstellen, z. B. wenn die Definition von „normal“ unklar ist, wenn sich das Verhalten im Laufe der Zeit ändert oder wenn mit großen Datenmengen gearbeitet wird, bei denen die manuelle Festlegung von Schwellenwerten unpraktisch ist.
+
+Neue link:concept_anomaly_detection.html["Überwachung Der Anomalieerkennung"] Warnmeldung bei Anomalien wie dieser bei ausgewählten Objektkennzahlen.
+
+image:anomaly_detection_expert_view.png["Diagramm mit einer erkannten Anomalie"]
+
+
+
 === Verbesserungen Bei Der Workload-Sicherheit
 
 *Unterstützung für NFS 4.1*

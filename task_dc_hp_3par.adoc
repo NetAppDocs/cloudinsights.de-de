@@ -52,7 +52,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 == Anforderungen
 
-Zur Konfiguration dieses Datenkolletors sind folgende Voraussetzungen erforderlich:
+Zur Konfiguration dieses Datensammlers sind folgende Voraussetzungen erforderlich:
 
 * IP-Adresse oder FQDN des InServ-Clusters
 * Für den Bestand können Sie den schreibgeschützten Benutzernamen und das Kennwort für den StoreServ Server verwenden
