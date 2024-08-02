@@ -22,28 +22,25 @@ summary: Cloud Insights stellt mehrere Benutzerkonten mit unterschiedlichen Bere
 Cloud Insights bietet bis zu vier Benutzerkontorollen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen, wie in der folgenden Tabelle angegeben.  Es sind auch Benutzer link:#creating-accounts-by-inviting-users["Eingeladen"] Cloud Insights zugewiesen und eine bestimmte Rolle zugewiesen, oder kann über anmelden link:#single-sign-on-sso-and-identity-federation["SSO-Autorisierung (Single Sign On)"] Mit einer Standardrolle. Die SSO-Autorisierung ist als Funktion in der Cloud Insights Premium Edition verfügbar.
 
 
-NOTE: Benutzeranmeldungen in der Cloud Insights Bundesausgabe sind auf konfigurierte Identitätsanbieter (mit den angegebenen E-Mail-Domains) beschränkt. Wenn ein neuer Benutzer in eine Cloud Insights-Umgebung eingeladen wird, muss seine E-Mail-Adresse mit der für diese Umgebung konfigurierten Domäne übereinstimmen.
-
-
 
 == Berechtigungsstufen
 
 Sie verwenden ein Konto mit Administratorrechten zum Erstellen oder Ändern von Benutzerkonten. Jedem Benutzerkonto wird über die folgenden Berechtigungsebenen eine Rolle für jede Cloud Insights-Funktion zugewiesen.
 
 |===
-| Rolle | Beobachtbarkeit | Workload-Sicherheit | Berichterstellung 
+| Rolle | Beobachtbarkeit | Workload-Sicherheit | Berichterstellung | Admin 
 
 
-| Kontoinhaber 3+| Es können Abonnements geändert, Rechnungs- und Nutzungsinformationen angezeigt und alle Administratorfunktionen für Beobachtbarkeit, Sicherheit und Reporting ausgeführt werden. Eigentümer können außerdem Benutzer einladen und verwalten sowie Einstellungen für SSO Authentifizierung und Identitätsföderation verwalten. Der erste Kontoinhaber wird bei der Registrierung für Cloud Insights erstellt. Es wird dringend empfohlen, für jede Cloud Insights-Umgebung mindestens zwei Account-Inhaber zu haben.  
+| Kontoinhaber | Wie Administrator | Wie Administrator | Wie Administrator | Wie Administrator, sowie Verwaltung der SSO-Authentifizierung und der Identity Federation-Konfiguration. Kann auch weitere Eigentümer zuweisen. 
 
 
-| Verwalter | Es können alle Beobachtungsfunktionen, alle Benutzerfunktionen und das Management von Datensammlern, Beobachtungs-API-Tokens und Benachrichtigungen durchgeführt werden. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Beobachtungs-Rollen zuweisen. | Alle Sicherheitsfunktionen, einschließlich der Funktionen für Alarme, Forensics, Datensammler, automatisierte Antwortrichtlinien und API Tokens für Sicherheit, sind möglich. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Sicherheitsrollen zuweisen. | Alle Benutzer-/Author-Funktionen, einschließlich der Verwaltung von Reporting-API-Tokens, sowie alle administrativen Aufgaben wie die Konfiguration von Berichten und das Herunterfahren und Neustarten von Reporting-Aufgaben ausführen. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Berichtsrollen zuweisen. 
+| Verwalter | Kann alle Observability-Funktionen und das Management von Datensammlern ausführen | Alle Sicherheitsfunktionen, einschließlich der Funktionen für Alarme, Forensics, Datensammler, automatisierte Antwortrichtlinien und API Tokens für Sicherheit, sind möglich. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Sicherheitsrollen zuweisen. | Alle Benutzer-/Author-Funktionen, einschließlich der Verwaltung von Reporting-API-Tokens, sowie alle administrativen Aufgaben wie die Konfiguration von Berichten und das Herunterfahren und Neustarten von Reporting-Aufgaben ausführen. Ein Administrator kann auch andere Benutzer einladen, kann aber nur Berichtsrollen zuweisen. | Kann andere Benutzer einladen, kann aber nur Observability-Rollen zuweisen. SSO-Konfiguration kann angezeigt, aber nicht geändert werden. Kann API-Zugriffstoken erstellen und verwalten. Kann Audit-Informationen anzeigen. Kann Abonnementinformationen, Nutzung und Verlauf anzeigen. Globale Benachrichtigungen und Empfängerlisten für Abonnementbenachrichtigungen können verwaltet werden. 
 
 
-| Benutzer | Kann Dashboards, Abfragen, Warnmeldungen, Anmerkungen, Anmerkungsregeln anzeigen und ändern. Und Applikationen managen, und die Geräterauflösung managen. | Kann Warnungen anzeigen und verwalten und Forensik anzeigen. Benutzer können den Meldungsstatus ändern, Notizen hinzufügen, Snapshots manuell erstellen und den Benutzerzugriff einschränken. | Kann alle Gast-/Consumer-Funktionen ausführen sowie Berichte und Dashboards erstellen und verwalten. 
+| Benutzer | Kann Dashboards, Abfragen, Warnmeldungen, Anmerkungen, Anmerkungsregeln anzeigen und ändern. Und Applikationen managen, und die Geräterauflösung managen. | Kann Warnungen anzeigen und verwalten und Forensik anzeigen. Benutzer können den Meldungsstatus ändern, Notizen hinzufügen, Snapshots manuell erstellen und den Benutzerzugriff einschränken. | Kann alle Gast-/Consumer-Funktionen ausführen sowie Berichte und Dashboards erstellen und verwalten. | Nicht verfügbar 
 
 
-| Gast | Schreibgeschützter Zugriff auf Asset-Seiten, Dashboards, Warnmeldungen und Abfragen können angezeigt und ausgeführt werden. | Kann Warnungen und Forensik anzeigen. Gastrolle kann den Alarmstatus nicht ändern, Notizen hinzufügen, Snapshots manuell erstellen oder den Benutzerzugriff einschränken. | Es können Berichte angezeigt, geplant und erstellt sowie persönliche Einstellungen wie z. B. für Sprachen und Zeitzonen festgelegt werden. Gäste/Verbraucher können keine Berichte erstellen oder administrative Aufgaben ausführen. 
+| Gast | Schreibgeschützter Zugriff auf Asset-Seiten, Dashboards, Warnmeldungen und Abfragen können angezeigt und ausgeführt werden. | Kann Warnungen und Forensik anzeigen. Gastrolle kann den Alarmstatus nicht ändern, Notizen hinzufügen, Snapshots manuell erstellen oder den Benutzerzugriff einschränken. | Es können Berichte angezeigt, geplant und erstellt sowie persönliche Einstellungen wie z. B. für Sprachen und Zeitzonen festgelegt werden. Gäste/Verbraucher können keine Berichte erstellen oder administrative Aufgaben ausführen. | Nicht verfügbar 
 |===
 Die beste Vorgehensweise besteht darin, die Anzahl der Benutzer mit Administratorberechtigungen zu begrenzen. Die größte Anzahl von Konten sollte Benutzer- oder Gastkonten sein.
 
