@@ -19,7 +19,7 @@ summary: Pure Storage Data Collector wird konfiguriert.
 
 
 [role="lead"]
-Cloud Insights verwendet den Pure Storage FlashBlade Datensammler zur Erfassung von Bestands- und Performance-Daten.
+Cloud Insights verwendet den Datensammler Pure Storage FlashBlade, um Inventar- und Performance-Daten von FlashBlade-Clustern zu erfassen, die Version 2 ihrer REST-API offenlegen
 
 
 
@@ -38,13 +38,13 @@ Für jeden von Cloud Insights erfassten Asset-Typ wird die am häufigsten für d
 | Array Erledigen | Storage 
 
 
-| Controller | Storage-Node 
+| Klinge | Storage-Node 
 
 
-| Datenmenge | Datenmenge 
+| File-System | Internes Volumen 
 
 
-| LUN-Zuordnung | Volume-Zuordnung 
+| Objekt-Storage-Bucket | Qtree 
 
 
 | Initiator, Ziel | Volume-Maske 
@@ -55,9 +55,9 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 == Anforderungen
 
-* IP-Adresse des Storage-Systems
-* Benutzername und Kennwort für das Administratorkonto des Pure Storage-Systems.
-* Port-Anforderung: HTTP/HTTPS 80/443
+* IP-Adresse des Speichersystems oder vollständig qualifizierter Domänenname
+* API-Token, ideal mit einer unendlichen Lebensdauer. Ein Benutzer der schreibgeschützten Ebene sollte ausreichen.
+* Port-Anforderung: HTTPS 443
 
 
 
@@ -72,10 +72,10 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 | FlashBlade Host-IP-Adresse | IP-Adresse des Storage-Systems 
 
 
-| Benutzername | Benutzername mit Administratorrechten 
+| Benutzername | Benutzername, der Cloud Insights-Administratoren hilft, sich zu merken, zu welchem Benutzer ihr API-Token gehört 
 
 
-| Passwort für das Administratorkonto | Passwort 
+| API-Token | API-Token 
 |===
 
 

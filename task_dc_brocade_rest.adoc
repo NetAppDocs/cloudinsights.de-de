@@ -21,6 +21,14 @@ summary: Konfigurieren des Brocade FOS REST-Datensammlers
 [role="lead"]
 Cloud Insights verwendet den Brocade FOS REST Collector, um Bestand und Performance für Brocade-Switch-Geräte mit FabricOS (FOS)-Firmware 8.2 und höher zu ermitteln.
 
+Bitte beachten Sie: FOS' Standard "user" Ebene ist nicht ausreichend leistungsstark für Cloud Insights, um alle logischen Aspekte eines Geräts zu sehen - wir benötigen ein Benutzerkonto mit aktivierter "Chassis Role" sowie Berechtigungen für alle auf einem Switch konfigurierten virtuellen Fabrics.
+
+Hier ist ein Beispiel dafür, wie Sie ein Benutzerkonto mit den geringsten Berechtigungen für die Verwendung von Cloud Insights in einer SSH-Sitzung auf einem FOS-Gerät erstellen können:
+
+UserConfig --add NetAppCIUser -r user -l 1-128 -c user -p Qwerty!
+
+Dadurch wird ein User „NetAppCIUser“ mit einem Passwort von „Qwerty!“ eingerichtet. Dieser Benutzer hat die „user“-Rolle (-r) für alle 128 möglichen virtuellen Fabrics ( -l ). Dieser Benutzer verfügt zusätzlich über die erforderliche „Chassis“-Rolle ( -c) mit zugewiesenem Zugriff auf Benutzerebene.
+
 Standardmäßig versucht dieser Collector, alle FOS-Geräte zu ermitteln, die Teil aller Fabrics sind, zu denen der Switch gehört.
 
 
@@ -47,9 +55,6 @@ Cloud Insights erwirbt die folgenden Bestandsinformationen vom Brocade FOS REST-
 
 
 | Logischer Switch | Logischer Switch 
-
-
-| Virtual Volume | Datenmenge 
 
 
 | LSAN-Zone zu erreichen | IVR-Zone 
@@ -134,9 +139,6 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Fehler: „IP-Adresse des Gehäuses nicht stimmt überein“ | Ändern Sie die Konfiguration der Datenquelle, um die Gehäuse-IP-Adresse zu verwenden. 
 
 
-| Sie erhalten eine Meldung, dass mehr als 1 Knoten am Access Gateway-Port angemeldet ist | Überprüfen Sie, ob das NPV-Gerät ordnungsgemäß funktioniert und dass alle verbundenen WWNs erwartet werden. Erwerben Sie das NPV-Gerät nicht direkt. Stattdessen erfasst die Akquisition des Core Fabric Switch die NPV Geräte-Daten. 
-
-
-| Performance-Erfassung schlägt mit „Timeout beim Senden der SNMP-Anforderung“ fehl. | Je nach Abfragevariablen und Switch-Konfiguration können einige Abfragen das Standard-Timeout überschreiten.  link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Insights/Cloud_Insight_Brocade_data_source_fails_performance_collection_with_a_timeout_due_to_default_SNMP_configuration["Weitere Informationen"]. 
+| Die Inventur schlägt mit einer 403 Verbotenen fehl | Dies kann einfach schlechte Anmeldeinformationen sein, oder es kann bezeichnend sein, dass Sie versuchen, eine nicht ausreichend leistungsstarke Rolle zu verwenden - denken Sie daran, dass Benutzer auf Benutzerebene nicht über das erforderliche Recht auf „Gehäuserolle“ verfügen oder den Zugriff auf nicht standardmäßige virtuelle Fabrics anzeigen. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].
