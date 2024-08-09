@@ -61,9 +61,20 @@ Die kostenlose Testversion von AWS Marketplace kann nicht erweitert werden. Sie 
 
 
 
-==== Was ist, wenn meine Testversion abgelaufen ist?
+=== Was ist, wenn meine Testversion abgelaufen ist?
 
-Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Cloud Insights angemeldet haben, haben Sie bis zur Anmeldung nur begrenzte Funktionen.
+Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Cloud Insights angemeldet haben, haben Sie bis zur Anmeldung nur begrenzte Funktionen. Die Datenaufnahme kann eingestellt werden, und nach einigen Wochen werden Ihre Daten gemäß unserer Datenaufbewahrungsrichtlinie gelöscht.
+
+
+
+== Was passiert, wenn mein Abonnement abgelaufen ist?
+
+Wenn Sie ein Abonnement von Cloud Insights haben, dieses Abonnement aber abgelaufen ist, haben Sie eine Kulanzzeit von fünf Tagen, um Ihr Abonnement zu verlängern. Alle Cloud Insights Funktionen bleiben während dieser Gnadenfrist aktiv.
+
+Nach Ablauf der Gnadenfrist wird die Cloud Insights Funktion bis zur Verlängerung ausgesetzt. Informationen zur Verlängerung finden Sie auf der Seite *Admin > Abonnement*, oder wenden Sie sich an den NetApp-Vertrieb.
+
+
+NOTE: Ihre Cloud Insights-Daten, die Sie bis zum Ende der Gnadenfrist gesammelt haben, bleiben nach der Gnadenfrist 30 Tage lang intakt. Wenn Sie Ihr Abonnement innerhalb dieser Zeit verlängern, stehen Ihnen alle Ihre Daten bis zu der verstrichenen Kulanzzeit zur Verfügung.
 
 
 
@@ -123,28 +134,8 @@ Wenn in Ihrer Umgebung 1,000 oder mehr Managed Units enthalten sind oder erwarte
 
 === Messung Der Workload-Sicherheit
 
-Die Messung der Workload-Sicherheit richtet sich danach, ob die verwendeten Nodes High-End-, Midrange- oder Entry-Level-Nodes mit der folgenden MU-Anzahl (Managed Unit) sind:
+Die Workload-Sicherheit wird nach Cluster gemessen und verwendet denselben Ansatz wie die Observability-Messung.
 
-|===
-
-
-| Knotentyp: | Beispielmodelle: | Messung: 
-
-
-| 1 High-End-Knoten | 700, 800, 900, 9xxx | 80 Verwaltete Einheiten 
-
-
-| 1 Midrange-Knoten | 300, 400, 500, 8x00 | 40 Verwaltete Einheiten 
-
-
-| 1 Einstiegsknoten | 1xx, 2xx UND 2xxx | 20 Verwaltete Einheiten 
-
-
-| 1 Software-ONTAP | CVO/FSX | 10 Verwaltete Einheiten 
-
-
-| 1 Unbekannter Knoten |  | 80 Verwaltete Einheiten 
-|===
 Sie können Ihre Workload Security-Nutzung auf der Seite *Admin > Abonnement* auf der Registerkarte *Workload Security* anzeigen.
 
 image:ws_metering_example_page.png["„Admin > Subscription > Workload Security“-Registerkarte mit High-End-, Midrange- und Entry-Level-Node-Anzahl“"]

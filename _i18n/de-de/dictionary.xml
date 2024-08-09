@@ -3477,7 +3477,6 @@
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">Verwaltete Einheiten</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">Hinweis: Wenn Sie mehr als 499 MUs konfigurieren, geben Sie den Status „missachtet“ ein. Während Ihre Testversion in einem nicht autorisierten Zustand ist, verlieren Sie den Zugriff auf einige Cloud Insights-Funktionen, bis die Sicherheitsverletzung behoben ist, entweder durch Verringerung der Anzahl der konfigurierten MUs oder durch das Abonnieren von Cloud Insights.</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">Was ist, wenn meine Testversion abgelaufen ist?</block>
-  <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Cloud Insights angemeldet haben, haben Sie bis zur Anmeldung nur begrenzte Funktionen.</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">Abonnementoptionen</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 Managed Unit = 2 Hosts (jede virtuelle oder physische Maschine)</block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 Managed Unit = 4 tib unformatierte Kapazität physischer oder virtueller Festplatten</block>
@@ -13325,23 +13324,6 @@ Diese Suche sollte es ermöglichen, die Daten schneller zu laden.</block>
   <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1 Managed Unit = 4 vCPUs von Uberentes.</block>
   <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1 Managed Unit K8s Adjustment = 2 Nodes oder Hosts, die auch von der Infrastruktur überwacht werden.</block>
   <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">Messung Der Workload-Sicherheit</block>
-  <block id="b5dbf3908d3c6b22dae178d413d4ce4e" category="paragraph">Die Messung der Workload-Sicherheit richtet sich danach, ob die verwendeten Nodes High-End-, Midrange- oder Entry-Level-Nodes mit der folgenden MU-Anzahl (Managed Unit) sind:</block>
-  <block id="9deac637ce81c2ff5c02dd677114b046" category="cell">Knotentyp:</block>
-  <block id="5c6b02f3e1e66cf6bc61770896381c0c" category="cell">Beispielmodelle:</block>
-  <block id="36f40ed2512ba28c547d66d7d491162f" category="cell">Messung:</block>
-  <block id="6e01164f2c9cb0a5194189abb25109bd" category="cell">1 High-End-Knoten</block>
-  <block id="170a94d41c76a81a1b946d250f220856" category="cell">700, 800, 900, 9xxx</block>
-  <block id="e590a5366379c2508c4a67e27f2113df" category="cell">80 Verwaltete Einheiten</block>
-  <block id="12382b0c1437be6dd1acc8bc87687420" category="cell">1 Midrange-Knoten</block>
-  <block id="683af03ee72fbf8b08496a0ce7512c64" category="cell">300, 400, 500, 8x00</block>
-  <block id="5d7e414148bc2dc4fe724922baf5c29c" category="cell">40 Verwaltete Einheiten</block>
-  <block id="4d163b200e42b8b9ca12ceb09cf806e4" category="cell">1 Einstiegsknoten</block>
-  <block id="1dfa056fe0e2fe2064a0a2d6557b6f51" category="cell">1xx, 2xx UND 2xxx</block>
-  <block id="55e705ba2a458ac1ceaac25be1541fdc" category="cell">20 Verwaltete Einheiten</block>
-  <block id="c348d250ed74551e60d0bbe9cf4411cf" category="cell">1 Software-ONTAP</block>
-  <block id="e9b32f06458a1207182046e76c5b5de8" category="cell">CVO/FSX</block>
-  <block id="27c5cf27d09e53151bd6502189ffb375" category="cell">10 Verwaltete Einheiten</block>
-  <block id="0c57b1acf3284a22d04607fb0452db54" category="cell">1 Unbekannter Knoten</block>
   <block id="3943920606f23b23925f15408e26cae2" category="paragraph">Sie können Ihre Workload Security-Nutzung auf der Seite *Admin &gt; Abonnement* auf der Registerkarte *Workload Security* anzeigen.</block>
   <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">„Admin &amp;gt; Subscription &amp;gt; Workload Security“-Registerkarte mit High-End-, Midrange- und Entry-Level-Node-Anzahl“</block>
   <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
@@ -13436,4 +13418,10 @@ Diese Suche sollte es ermöglichen, die Daten schneller zu laden.</block>
   <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">API-Token, ideal mit einer unendlichen Lebensdauer. Ein Benutzer der schreibgeschützten Ebene sollte ausreichen.</block>
   <block id="a4f4fd88594a0ac02050f5e403bde903" category="cell">Benutzername, der Cloud Insights-Administratoren hilft, sich zu merken, zu welchem Benutzer ihr API-Token gehört</block>
   <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API-Token</block>
+  <block id="72fb59b13b553d470d4daf5fafe5e2ea" category="paragraph">Wenn Ihre kostenlose Testversion abgelaufen ist und Sie sich noch nicht für Cloud Insights angemeldet haben, haben Sie bis zur Anmeldung nur begrenzte Funktionen. Die Datenaufnahme kann eingestellt werden, und nach einigen Wochen werden Ihre Daten gemäß unserer Datenaufbewahrungsrichtlinie gelöscht.</block>
+  <block id="b3aa21e2b7855df7d2d86e0bcb7a55d9" category="section-title">Was passiert, wenn mein Abonnement abgelaufen ist?</block>
+  <block id="be739afed3708aea5b887ed48586b187" category="paragraph">Wenn Sie ein Abonnement von Cloud Insights haben, dieses Abonnement aber abgelaufen ist, haben Sie eine Kulanzzeit von fünf Tagen, um Ihr Abonnement zu verlängern. Alle Cloud Insights Funktionen bleiben während dieser Gnadenfrist aktiv.</block>
+  <block id="1f679308dcaa1cf09288bcb2c3cdaabc" category="paragraph">Nach Ablauf der Gnadenfrist wird die Cloud Insights Funktion bis zur Verlängerung ausgesetzt. Informationen zur Verlängerung finden Sie auf der Seite *Admin &gt; Abonnement*, oder wenden Sie sich an den NetApp-Vertrieb.</block>
+  <block id="0a20fc316ac6795053a9cfbf1a2cdb5b" category="admonition">Ihre Cloud Insights-Daten, die Sie bis zum Ende der Gnadenfrist gesammelt haben, bleiben nach der Gnadenfrist 30 Tage lang intakt. Wenn Sie Ihr Abonnement innerhalb dieser Zeit verlängern, stehen Ihnen alle Ihre Daten bis zu der verstrichenen Kulanzzeit zur Verfügung.</block>
+  <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">Die Workload-Sicherheit wird nach Cluster gemessen und verwendet denselben Ansatz wie die Observability-Messung.</block>
 </blocks>
