@@ -43,13 +43,9 @@ Ein *Konflikt* tritt auf, wenn IOPS bestimmt werden, die sich auf andere Ressour
 
 === Anspruchsvolle Workloads
 
-Klicken Sie im Cloud Insights-Menü auf *Dashboards > High-Intensive Workloads*, um sich einen Blick auf effektive und betroffene Workloads in Ihren gemeinsam genutzten Ressourcen anzusehen.
+Alle von Cloud Insights erkannten hochintensiven Workloads werden in den _gemeinsam genutzten Ressourcen unter „Stress_ Insight“ angezeigt. Rufen Sie *Observability > Infrastructure Insights* auf, um diese Einblicke anzuzeigen.
 
-image:Impacts_Workloads_Menu.png["Menü „hohe Auslastung“"]
-
-Cloud Insights zeigt eine Liste aller Workloads an, bei denen eine Sättigung erkannt wurde. Klicken Sie auf einen Workload, um das Workload-Dashboard zu öffnen.
-
-image:Impacts_High_Consuming_Workloads.png["Liste Der Workloads"]
+image:Impacts_Workloads_Menu.png["Gemeinsame Nutzung Von Ressourcen"]
 
 Klicken Sie auf einen Workload, um die Detailseite anzuzeigen. Das obere Diagramm zeigt die Aktivität auf der gemeinsam genutzten Ressource (z. B. einen Storage-Pool), in dem Konflikte auftreten.
 
