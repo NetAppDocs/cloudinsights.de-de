@@ -20,6 +20,47 @@ NetApp verbessert seine Produkte und Services kontinuierlich. Hier sind einige d
 
 
 
+== August 2024
+
+
+
+=== Anzeigen von Daten, die für Ihren Zeitbereich spezifisch sind
+
+Sie suchen eine Meldung? Auf einem Diagramm vergrößert? Diese Aktionen ändern den Zeitbereich für diese Seiten. Jetzt können Sie diesen Zeitraum sperren, zu anderen Cloud Insights-Seiten navigieren und Daten anzeigen, die für diesen gesperrten Zeitraum spezifisch sind. Die Untersuchung und Fehlerbehebung ist jetzt viel einfacher!
+
+image:timerange_lock.png["QuickInfo mit dem Hinweis, auf das Symbol zu klicken, um den Zeitbereich für die Verwendung auf anderen Seiten zu sperren"]
+
+
+
+=== Analyse der Änderungs- und Änderungsquote (%)
+
+Mithilfe von Zeitaggregationen für das Change-Ratio können Sie signifikante Änderungen und Trends in metrischen Werten im Laufe der Zeit erkennen. Diese Erkenntnisse sind der Schlüssel zum Verständnis der Veränderungen, wie zum Beispiel ein beträchtliches Kapazitätswachstum für einen bestimmten Zeitraum oder eine Änderung der Leistung eines einzelnen Ports.
+
+* *Änderung* - Beobachten Sie die Änderung in einer Metrik zwischen zwei Punkten innerhalb eines ausgewählten Zeitraums.
+* *Veränderungsverhältnis* - Beobachten Sie die proportionale Veränderung in einer Metrik zwischen zwei Punkten, bezogen auf den Anfangspunkt, innerhalb eines ausgewählten Zeitraums.
+
+
+image:change_and_change_ratio_bar_chart.png["Beispiel für ein Balkendiagramm, in dem die Auswahl der Aggregation von Änderungen und Änderungen dargestellt wird"]
+
+
+
+=== Protokollabfrageergebnisse in .CSV exportieren
+
+Beim Anzeigen der Protokollabfrageergebnisse können Sie problemlos bis zu 10,000 Zeilen in .CSV exportieren, indem Sie auf die neue Schaltfläche „Exportieren“ klicken. Auf diese Weise wird die Datenverfügbarkeit verbessert, die Datenanalyse und die Berichterstellung vereinfacht und die nahtlose Integration in andere Data Processing-Tools ermöglicht.
+
+image:csv_export_button.png["Schaltfläche „in CSV exportieren“ auf einer Protokollabfrageseite"]
+
+
+
+=== Lösen Sie Warnmeldungen nach Zeit
+
+Mit Cloud Insights haben Sie jetzt die Möglichkeit, eine Warnmeldung zu beheben, wenn die überwachte Kennzahl für einen bestimmten Zeitraum im zulässigen Bereich bleibt. So können Sie sich auf echte Probleme konzentrieren und die Störungen reduzieren, die mit der wiederholten Überschreitung definierter Schwellenwerte durch die Konsolidierung mehrerer Warnmeldungen zu einem verbunden sind.
+
+image:resolve_alert_by_time_dropdown.png["Zeitbasiertes Lösen einer Meldung"]
+
+'''
+
+
 == Juli 2024
 
 
