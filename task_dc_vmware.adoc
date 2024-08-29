@@ -19,7 +19,7 @@ summary: VMware Data Collector wird konfiguriert.
 
 
 [role="lead"]
-Der Datensammler für VMware vSphere sammelt ESX Host-Informationen und benötigt schreibgeschützte Berechtigungen auf allen Objekten im Virtual Center.
+Der Datensammler für VMware vSphere erfasst Performance- und Konfigurationsinformationen für die VM-Gast- und ESXi Hosts und erfordert schreibgeschützte Privileges für alle Objekte in vSphere. Ab August 2024 werden bei vSphere Collector zusätzlich Protokollmeldungen aus vSphere-Umgebungen und einige VMware-spezifische Kennzahlen integriert. Beachten Sie bitte, dass Cloud Insights nur Informationen zu VMware-Protokollen aus Umgebungen ab vSphere 8.0.1 abrufen kann. Ebenso werden die anbieterspezifischen Metriken nur für vSphere 7+-Umgebungen unterstützt. Daher können Sie das Kontrollkästchen Protokolle und/oder anbieterspezifische Metriken für einen bestimmten Collector deaktivieren, wenn auf eine ältere vSphere-Instanz verwiesen wird.
 
 
 
