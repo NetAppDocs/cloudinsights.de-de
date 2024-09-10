@@ -95,6 +95,24 @@ Probenausgabe:
  35000-55000/tcp
 
 
+== „Pinning“ an einen Agenten in der aktuellen Version
+
+Standardmäßig aktualisiert Cloud Insights Workload Security die Agenten automatisch. Einige Kunden möchten die automatische Aktualisierung anhalten, sodass ein Agent die aktuelle Version verwendet, bis eine der folgenden Aktionen durchgeführt wird:
+
+* Der Kunde nimmt die automatischen Agentenaktualisierungen wieder auf.
+* 30 Tage sind vergangen. Beachten Sie, dass die 30 Tage am Tag der letzten Agentenaktualisierung beginnen, nicht an dem Tag, an dem der Agent angehalten wurde.
+
+
+In jedem dieser Fälle wird der Agent bei der nächsten Aktualisierung der Workload-Sicherheit aktualisiert. Um automatische Agentenaktualisierungen anzuhalten oder fortzusetzen, verwenden Sie die APIs _cloudSecure_config.Agents_:
+
+image:ws_pin_agent_apis.png["WS-PIN-Agent-APIs"]
+
+Beachten Sie, dass es bis zu fünf Minuten dauern kann, bis die Aktion Pause oder Wiederaufnahme wirksam wird. Sie können Ihre aktuellen Agentenversionen auf der Seite Workload Security > Collectors auf der Registerkarte Agents anzeigen.
+
+image:ws_agent_version.png["WS Agent-Versionen"]
+
+
+
 == Fehlerbehebung Bei Agentenfehlern
 
 Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.
@@ -104,7 +122,7 @@ Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.
 | Problem: | Auflösung: 
 
 
-| Bei der Installation des Agenten wird der Ordner /opt/netapp/cloudSecure/Agent/logs/agent.log nicht erstellt, und die Datei install.log enthält keine relevanten Informationen. | Dieser Fehler tritt beim Bootstrapping des Agenten auf. Der Fehler wird nicht in Protokolldateien protokolliert, da er vor der Initialisierung des Loggers auftritt. Der Fehler wird auf die Standardausgabe umgeleitet und ist über den im Service-Protokoll sichtbar `journalctl -u cloudsecure-agent.service` Befehl. Dieser Befehl kann zur weiteren Fehlerbehebung verwendet werden. 
+| Bei der Installation des Agenten wird der Ordner /opt/netapp/cloudSecure/Agent/logs/agent.log nicht erstellt, und die Datei install.log enthält keine relevanten Informationen. | Dieser Fehler tritt beim Bootstrapping des Agenten auf. Der Fehler wird nicht in Protokolldateien protokolliert, da er vor der Initialisierung des Loggers auftritt. Der Fehler wird an die Standardausgabe umgeleitet und ist mit dem `journalctl -u cloudsecure-agent.service` Befehl im Service-Protokoll sichtbar. Dieser Befehl kann zur weiteren Problembehandlung verwendet werden. est 
 
 
 | Agent-Installation schlägt fehl mit ‘Diese linux-Distribution wird nicht unterstützt. Beenden der Installation“. | Dieser Fehler wird angezeigt, wenn Sie versuchen, den Agent auf einem nicht unterstützten System zu installieren. Siehe link:concept_cs_agent_requirements.html["Anforderungen An Den Agenten"]. 
