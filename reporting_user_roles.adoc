@@ -92,14 +92,6 @@ NOTE: Wenn Sie Ihre Benutzer-E-Mail-Einstellungen innerhalb von Cloud Insights R
 
 
 
-== Wichtiger Hinweis für Bestandskunden
-
-Neue Berichte bei Cloud Insights Es gibt nichts mehr, was Sie tun müssen, um die Berichterstattung zu genießen.
-
-Wenn Sie bereits Premium Edition-Kunde sind, ist SSO für Ihre Umgebung nicht automatisch aktiviert. Wenn Sie SSO aktivieren, existiert der Administrator-Benutzer für das Berichtsportal (Cognos) nicht mehr. Das bedeutet, dass alle Berichte, die sich im Ordner _My Content_ befinden, entfernt werden und in _Team Content_ neu installiert oder neu erstellt werden müssen. Darüber hinaus müssen nach Aktivierung von SSO geplante Berichte konfiguriert werden.
-
-
-
 === Welche Schritte sollte ich Unternehmen, um meine vorhandene Umgebung auf die Aktivierung von SSO vorzubereiten?
 
 Um sicherzustellen, dass Ihre Berichte erhalten bleiben, migrieren Sie alle Berichte von _My Content_ zu _Team Content_. Gehen Sie dabei wie folgt vor. Vor der Aktivierung von SSO in Ihrer Umgebung sind folgende Schritte erforderlich:
