@@ -210,6 +210,19 @@ Suchergebnisse mit und ohne / werden unterschiedlich sein
 |===
 
 
+== Lokale Root-SVM-Benutzeraktivitäten ändern sich
+
+Wenn ein lokaler Root-SVM-Benutzer eine Aktivität ausführt, wird die IP des Clients, auf dem die NFS-Freigabe gemountet ist, im Benutzernamen berücksichtigt. Dieser wird auf den Seiten für forensische Aktivitäten und Benutzeraktivitäten als _root@<ip-address-of-the-client>_ angezeigt.
+
+Beispiel:
+
+* Wenn SVM-1 von Workload Security überwacht wird und der Root-Benutzer dieser SVM die Freigabe auf einem Client mit der IP-Adresse 10.197.12.40 mountet, lautet der auf der Seite für forensische Aktivitäten angezeigte Benutzername _root@10.197.12.40_.
+* Wenn dieselbe SVM-1 in einen anderen Client mit der IP-Adresse 10.197.12.41 eingebunden wird, lautet der auf der Seite für forensische Aktivitäten angezeigte Benutzername _root@10.197.12.41_.
+* Dies wird getan, um die Aktivität des NFS-Root-Benutzers nach IP-Adresse zu trennen. Zuvor wurde die gesamte Aktivität als vom _root_-Benutzer durchgeführt betrachtet, ohne IP-Unterscheidung.
+
+
+
+
 == Fehlerbehebung
 
 |===
