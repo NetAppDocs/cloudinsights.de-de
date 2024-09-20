@@ -141,6 +141,7 @@ Cloud Insights unterstützt die Erfassung von untergeordneten Konten für AWS in
 * Sie müssen jedes Child-Konto so konfigurieren, dass eine AWS Rolle zugewiesen wird, die es der Haupt-Account-ID ermöglicht, über das Children-Konto auf EC2 Details zuzugreifen.
 * Für jedes untergeordnete Konto muss der Rollenname mit demselben String konfiguriert sein.
 * Geben Sie diese Zeichenfolge für den Rollennamen im Abschnitt Cloud Insights AWS Data Collector *Erweiterte Konfiguration* im Feld * Kontotrole* ein.
+* Das Konto, auf dem der Collector installiert ist, muss über _Delegate Access Administrator_ Privileges verfügen. link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["AWS-Dokumentation"]Weitere Informationen finden Sie im.
 
 
 Best Practice: Es wird dringend empfohlen, dem EC2-Hauptkonto die vordefinierte Richtlinie _AmazonEC2ReadOnlyAccess_ zuzuweisen. Außerdem sollte dem in der Datenquelle konfigurierten Benutzer mindestens die vordefinierte Richtlinie _AWSOrganizationsReadOnlyAccess_ zugewiesen sein, um AWS abzufragen.
