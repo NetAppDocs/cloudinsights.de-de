@@ -19,17 +19,17 @@ summary: Konfigurieren des HP Enterprise Command View-Datensammlers.
 
 
 [role="lead"]
-Der HP Enterprise Command View Advanced Edition Data Collector unterstützt die Erkennung von XP- und P9500-Arrays über den Command View Advanced Edition-Server (CVAE). Cloud Insights kommuniziert mit CVAE über die standardmäßige Command View API, um Bestands- und Performance-Daten zu erfassen.
+Der HP Enterprise Command View Advanced Edition Data Collector unterstützt die Erkennung von XP- und P9500-Arrays über den Command View Advanced Edition-Server (CVAE). Data Infrastructure Insights kommuniziert über die standardmäßige Command View API mit CVAE, um Inventar- und Performance-Daten zu erfassen.
 
 
 
 == Terminologie
 
-Cloud Insights erfasst die folgenden Bestandsinformationen vom Datensammler HP Enterprise Command View. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dem HP Enterprise Command View-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | PDEV | Festplatte 
@@ -72,14 +72,14 @@ Zur Erfassung von Leistungsdaten müssen die folgenden Anforderungen erfüllt se
 +
 ** Performance Monitor muss lizenziert sein.
 ** Überwachungsschalter muss aktiviert sein.
-** Das Exportwerkzeug (Export.exe) muss in die Cloud Insights AU kopiert und an einen Speicherort extrahiert werden. Stellen Sie unter CI Linux aus sicher, dass „cisys“ Berechtigungen gelesen und ausgeführt hat.
+** Das Export-Tool (Export.exe) muss in die Data Infrastructure Insights AU kopiert und an einen Speicherort extrahiert werden. Stellen Sie unter CI Linux aus sicher, dass „cisys“ Berechtigungen gelesen und ausgeführt hat.
 ** Die Version des Exportwerkzeugs muss mit der Microcode-Version des Ziel-Arrays übereinstimmen.
 
 
 * AMS-Leistung:
 +
 ** Performance Monitor muss lizenziert sein.
-** Das CLI-Dienstprogramm Storage Navigator Modular 2 (SNM2) wird auf der Cloud Insights AU installiert.
+** Das CLI-Dienstprogramm Storage Navigator Modular 2 (SNM2) wird auf der Data Infrastructure Insights AU installiert.
 
 
 * Netzwerkanforderungen
@@ -191,13 +191,13 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Problem: | Versuchen Sie dies: 
 
 
-| Fehler: * Fehler beim Ausführen des Exportdienstprogramms * Fehler beim Ausführen des externen Befehls | * Bestätigen Sie, dass Exportdienstprogramm auf der Cloud Insights-Erfassungseinheit installiert ist * Bestätigen Sie, dass der Speicherort des Exportdienstprogramms in der Konfiguration des Datensammlers korrekt ist * Bestätigen Sie, dass die IP des USP/R600-Arrays in der Konfiguration des Datensammlers korrekt ist. * Bestätigen Sie den Benutzernamen Und das Passwort ist in der Konfiguration des Datensammlers korrekt. * Bestätigen Sie, dass die Version des Exportdienstprogramms mit der Microcode-Version des Speicherarrays * von der Cloud Insights-Erfassungseinheit kompatibel ist, öffnen Sie eine CMD-Eingabeaufforderung und gehen Sie wie folgt vor: - Ändern Sie das Verzeichnis in das konfigurierte Installationsverzeichnis - Versuchen Sie, eine Verbindung mit dem konfigurierten Speicher-Array herzustellen, indem Sie die Batch-Datei runWin.bat ausführen 
+| Fehler: * Fehler beim Ausführen des Exportdienstprogramms * Fehler beim Ausführen des externen Befehls | * Bestätigen Sie, dass das Exportdienstprogramm auf der Data Infrastructure Insights Acquisition Unit installiert ist * Bestätigen Sie, dass der Speicherort des Exportdienstprogramms in der Data Collector-Konfiguration korrekt ist * Bestätigen Sie, dass die IP des USP/R600-Arrays in der Konfiguration des Data Collectors korrekt ist * Öffnen Sie einen CMD und das Kennwort in der Konfiguration des Data Collectors * Bestätigen Sie, dass die Export Utility-Version mit der Speicher-Microcode-Version kompatibel ist * aus der Data Infrastructure Insights Acquisition Unit, öffnen Sie eine CMD - Aufforderung zur Installation mit dem folgenden Ordner konfigurieren: runWin.bat 
 
 
 | Fehler: Export Tool-Anmeldung für Ziel-IP fehlgeschlagen | * Bestätigen Sie, dass Benutzername/Passwort korrekt ist * Erstellen Sie eine Benutzer-ID hauptsächlich für diesen HDS-Datensammler * Bestätigen Sie, dass keine anderen Datensammler für die Erfassung dieses Arrays konfiguriert sind 
 
 
-| Fehler: Exportwerkzeuge protokolliert "Zeitbereich für Überwachung nicht abrufen". | * Bestätigung der Leistungsüberwachung auf dem Array ist aktiviert. * Versuchen Sie, die Exportwerkzeuge außerhalb von Cloud Insights zu aktivieren, um zu bestätigen, dass das Problem außerhalb von Cloud Insights liegt. 
+| Fehler: Exportwerkzeuge protokolliert "Zeitbereich für Überwachung nicht abrufen". | * Bestätigung der Leistungsüberwachung auf dem Array ist aktiviert. * Versuchen Sie, die Exportwerkzeuge außerhalb von Data Infrastructure Insights aufzurufen, um zu bestätigen, dass das Problem außerhalb von Data Infrastructure Insights liegt. 
 
 
 | Fehler: * Konfigurationsfehler: Speicher-Array wird vom Exportdienstprogramm nicht unterstützt * Konfigurationsfehler: Speicher-Array wird nicht von Speicher-Navigator Modular CLI unterstützt | * Nur unterstützte Storage-Arrays konfigurieren. * Verwenden Sie „Filter Device List“, um nicht unterstützte Speicher-Arrays auszuschließen. 
@@ -206,7 +206,7 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Fehler: * Fehler beim Ausführen des externen Befehls * Konfigurationsfehler: Speicher-Array nicht gemeldet von Inventory * Konfigurationsfehler:Exportordner enthält keine JAR-Dateien | * Überprüfen Sie den Speicherort des Exportdienstprogramms. * Prüfen Sie, ob Speicher-Array in Frage in Command View Server konfiguriert ist * Festlegen des Performance-Abfrageintervalls als mehrere 60 Sekunden. 
 
 
-| Fehler: * Fehler Storage Navigator CLI * Fehler beim Ausführen von auPerform Befehl * Fehler beim Ausführen des externen Befehls | * Bestätigen Sie, dass Speicher-Navigator Modular CLI auf der Cloud Insights-Erfassungseinheit installiert ist * Bestätigen Sie, dass der modulare Speicher-CLI-Standort in der Datenerfassungs-Konfiguration korrekt ist * Bestätigen Sie, dass die IP des WMS/SMS/SMS-Arrays in der Konfiguration des Datensammlers korrekt ist * Bestätigen Dass Speicher-Navigator Modular CLI-Version mit einer Mikrocode-Version des Speicherarrays kompatibel ist, die im Datensammler * von der Cloud Insights-Erfassungseinheit konfiguriert ist, öffnen Sie eine CMD-Eingabeaufforderung und gehen Sie wie folgt vor: - Ändern Sie das Verzeichnis in das konfigurierte Installationsverzeichnis - Versuchen Sie, eine Verbindung mit dem konfigurierten Speicher-Array herzustellen, indem Sie den folgenden Befehl „auunitref.exe“ ausführen. 
+| Fehler: * Fehler Storage Navigator CLI * Fehler beim Ausführen von auPerform Befehl * Fehler beim Ausführen des externen Befehls | * Bestätigen Sie, dass Storage Navigator Modular CLI auf der Data Infrastructure Insights Acquisition Unit installiert ist * Bestätigen Sie, dass Storage Navigator Modular CLI-Speicherort in der Data Collector-Konfiguration korrekt ist * Bestätigen Sie, dass die IP des WMS/SMS/SMS-Arrays in der Konfiguration des Data Collectors korrekt ist * Bestätigen Sie, dass Storage Navigator Modular CLI-Version kompatibel ist mit Microcode-Version des Speicher-Arrays konfiguriert im Data Collector * von der Data Infrastructure Insights Acquisition Unit, öffnen Sie eine CMD-Eingabeaufforderung und führen Sie den folgenden Befehl aus: 
 
 
 | Fehler: Konfigurationsfehler: Speicher-Array wird vom Inventory nicht gemeldet | Überprüfen Sie, ob Speicher-Array in Frage im Command View-Server konfiguriert ist 

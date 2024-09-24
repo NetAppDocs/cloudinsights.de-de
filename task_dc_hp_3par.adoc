@@ -19,13 +19,13 @@ summary: 'Konfiguration des Datensammlers HP Enterprise Alletra 9000 / Primera (
 
 
 [role="lead"]
-Cloud Insights verwendet den Datensammler HP Enterprise Alletra 9000/HP Enterprise Primera (zuvor 3PAR), um Inventar und Performance zu ermitteln.
+Data Infrastructure Insights verwendet den Datensammler HP Enterprise Alletra 9000 / HP Enterprise Primera (ehemals 3PAR) zur Ermittlung von Bestand und Leistung.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen von diesem Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus diesem Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
@@ -136,6 +136,6 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Der konfigurierte SMI-S-Benutzer verfügt über keine Domäne | Gewähren Sie dem konfigurierten SMI-S-Benutzer entsprechende Domänenberechtigungen 
 
 
-| Laut Cloud Insights kann die Verbindung zum SMI-S-Dienst nicht hergestellt/angemeldet werden. | Vergewissern Sie sich, dass es keine Firewall zwischen der CI AU und dem Array gibt, die die CI AU daran versperren würde, TCP-Verbindungen zu 5988 oder 5989 zu machen. Sobald das geschehen ist, und wenn Sie bestätigt haben, dass es keine Firewall gibt, sollten Sie SSH auf das Array, und verwenden Sie den "showcim" Befehl zu bestätigen. Überprüfen Sie, dass: * Dienst aktiviert ist * HTTPS-Port sollte 5989 sein. Wenn alle diese sind, können Sie versuchen, „stopcim“ und dann ein „startcim“, um den CIM neu zu starten (d.h. SMI-S-Service). 
+| Data Infrastructure Insights gibt an, dass keine Verbindung zum SMI-S-Service hergestellt bzw. angemeldet werden kann. | Vergewissern Sie sich, dass es keine Firewall zwischen der CI AU und dem Array gibt, die die CI AU daran versperren würde, TCP-Verbindungen zu 5988 oder 5989 zu machen. Sobald das geschehen ist, und wenn Sie bestätigt haben, dass es keine Firewall gibt, sollten Sie SSH auf das Array, und verwenden Sie den "showcim" Befehl zu bestätigen. Überprüfen Sie, dass: * Dienst aktiviert ist * HTTPS-Port sollte 5989 sein. Wenn alle diese sind, können Sie versuchen, „stopcim“ und dann ein „startcim“, um den CIM neu zu starten (d.h. SMI-S-Service). 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

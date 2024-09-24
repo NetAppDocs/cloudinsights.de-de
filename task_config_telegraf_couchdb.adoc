@@ -19,7 +19,7 @@ summary: Konfiguration des CouchDB Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Metriken von CouchDB zu sammeln.
+Data Infrastructure Insights nutzt diesen Datensammler, um Metriken von CouchDB zu sammeln.
 
 
 

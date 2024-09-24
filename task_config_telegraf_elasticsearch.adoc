@@ -19,7 +19,7 @@ summary: Konfiguration der Elasticsearch-Datenerfassung
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datenerfassung zum Erfassen von Metriken aus Elasticsearch.
+Data Infrastructure Insights verwendet diesen Datensammler zum Erfassen von Kennzahlen aus Elasticsearch.
 
 . Klicken Sie unter *Observability > Collectors* auf *+Data Collector*. Wählen Sie Elasticsearch.
 +

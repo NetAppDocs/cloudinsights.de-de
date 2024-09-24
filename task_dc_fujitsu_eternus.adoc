@@ -25,11 +25,11 @@ Der Fujitsu ETERNUS-Datensammler erfasst Bestandsdaten über administrativen Zug
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom Fujitsu ETERNUS Storage. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights bezieht die folgenden Bestandsinformationen aus dem Fujitsu ETERNUS Storage. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplatte | Festplatte 

@@ -25,11 +25,11 @@ Dieser Datensammler erfasst Bestandsinformationen vom VNX File Storage System. F
 
 == Terminologie
 
-Cloud Insights erfasst die folgenden Bestandsinformationen vom VNX File Data Collector. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dem VNX File Data Collector. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Celerra Network Server/Celerra Storage-Pool | Storage-Pool 

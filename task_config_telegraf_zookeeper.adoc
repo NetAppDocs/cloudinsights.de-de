@@ -19,7 +19,7 @@ summary: Konfiguration des Apache Zookeeper Data Collector
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammlung, um Kennzahlen von Apache Zookeeper zu erfassen.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen von Apache Zookeeper zu sammeln.
 
 
 

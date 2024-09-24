@@ -21,17 +21,17 @@ summary: Konfiguration des Datensammlers der DS8000-Serie
 [role="lead"]
 Der IBM DS (CLI) Datensammler unterstützt die Erfassung von Bestands- und Performancedaten für DS6xxx- und DS8xxx-Geräte.
 
-DS3xxx-, DS4xxx- und DS5xxx-Geräte werden von unterstützt link:task_dc_na_eseries.html["NetApp E-Series Datensammler"]. Sie finden in der Cloud Insights Supportmatrix weitere Informationen zu unterstützten Modellen und Firmware-Versionen.
+DS3xxx-, DS4xxx- und DS5xxx-Geräte werden vom unterstütztlink:task_dc_na_eseries.html["NetApp E-Series Datensammler"]. Unterstützte Modelle und Firmware-Versionen finden Sie in der Data Infrastructure Insights Supportmatrix.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom IBM DS Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dem IBM DS-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplattenmodul | Festplatte 
@@ -58,7 +58,7 @@ Sie benötigen Folgendes, um diesen Datensammler zu konfigurieren:
 
 * IP-Adresse jedes DS-Arrays
 * Schreibgeschützter Benutzername und Kennwort auf jedem DS-Array
-* Auf der Cloud Insights AU installierte Software von Drittanbietern: IBM _dscli_
+* Software von Drittanbietern, die auf der Data Infrastructure Insights AU installiert ist: IBM _dscli_
 * Zugriffsvalidierung: Führen Sie die Befehle _dscli_ mit dem Benutzernamen und Passwort aus
 * Port-Anforderungen: 80, 443 und 1750
 
@@ -128,6 +128,6 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 * Versuchen Sie, mit dem Array über die Web-Management-Konsole \https://<ip>:8452/DS8000/Console zu kommunizieren.  Ersetzen Sie <ip> durch konfigurierte IP-Adresse für den Data Collector. 
 
 
-| Fehler: * Programm kann nicht ausgeführt werden * Fehler beim Ausführen des Befehls | * Von der Cloud Insights-Erfassungseinheit Öffnen Sie eine CMD * Öffnen Sie CLI.CFG-Datei im Home Directory/lib von CLI und überprüfen Sie die Eigenschaft JAVA_INSTALL, bearbeiten Sie den Wert entsprechend Ihrer Umgebung * Anzeigen Sie die auf diesem Computer installierte Java-Version, und geben Sie Folgendes ein: „java -Version“ * Ping die IP-Adresse des im CLI-Befehl angegebenen IBM-Speichergeräts wurde ausgegeben. * Wenn alle oben genannten gut funktioniert haben, dann führen Sie manuell einen CLI-Befehl aus 
+| Fehler: * Programm kann nicht ausgeführt werden * Fehler beim Ausführen des Befehls | * Aus Data Infrastructure Insights Acquisition Unit Öffnen Sie eine CMD * Open CLI.CFG-Datei in CLI's Home dir/lib und überprüfen Sie die Eigenschaft Java_INSTALL, bearbeiten Sie den Wert, der Ihrer Umgebung entspricht * Java-Version auf diesem Rechner anzeigen, indem Sie "java -Version" eingeben * Ping die IP-Adresse des IBM-Speichergeräts, das im CLI-Befehl ausgegeben wurde. * Wenn alle oben genannten gut funktioniert haben, dann führen Sie manuell einen CLI-Befehl aus 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

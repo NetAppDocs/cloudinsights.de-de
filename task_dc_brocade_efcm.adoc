@@ -19,7 +19,7 @@ summary: Konfigurieren des Brocade Datensammlers.
 
 
 [role="lead"]
-Cloud Insights ermittelt mithilfe des Datensammlers Brocade Enterprise Fabric Connectivity Manager (EFCM) den Bestand an Brocade EFCM-Switches. Cloud Insights unterstützt die EFCM-Versionen 9.5, 9.6 und 9.7.
+Data Infrastructure Insights verwendet den EFCM-Datensammler (Enterprise Fabric Connectivity Manager) von Brocade zur Bestandsaufnahme von Brocade EFCM-Switches. Data Infrastructure Insights unterstützt EFCM-Versionen 9.5, 9.6 und 9.7.
 
 
 
@@ -29,7 +29,7 @@ Cloud Insights ermittelt mithilfe des Datensammlers Brocade Enterprise Fabric Co
 * EFCM-Version muss 9.5, 9.6 oder 9.7 sein
 * IP-Adresse des EFCM-Servers
 * Schreibgeschützter Benutzername und Kennwort für den EFCM-Server
-* Validierter Zugriff auf den Connectrix-Switch über Telnet vom Cloud Insights-Server mit dem schreibgeschützten Benutzernamen und Passwort über Port 51512
+* Validierter Zugriff auf den Connectrix-Switch über Telnet vom Data Infrastructure Insights-Server unter Verwendung des schreibgeschützten Benutzernamens und des Kennworts über Port 51512
 
 
 
@@ -82,7 +82,7 @@ Cloud Insights ermittelt mithilfe des Datensammlers Brocade Enterprise Fabric Co
 | Geräte Ausschließen | Kommagetrennte Liste von Einheitennamen, die ein- oder ausgeschlossen werden sollen 
 
 
-| Verwenden Sie den EFCM-Switch-Spitznamen als Switch-Name | Wählen Sie diese Option aus, um den Spitznamen des EFCM-Switches als Cloud Insights-Switch-Name zu verwenden. 
+| Verwenden Sie den EFCM-Switch-Spitznamen als Switch-Name | Wählen Sie diese Option aus, um den Spitznamen des EFCM-Switches als Namen des Data Infrastructure Insights-Switches zu verwenden. 
 
 
 | Leistungsintervall (Sek.) | Intervall zwischen Performance-Abstimmungen Der Standardwert beträgt 300 Sekunden. 

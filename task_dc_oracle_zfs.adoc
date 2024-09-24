@@ -19,17 +19,17 @@ summary: Oracle ZFS-Datensammler konfigurieren.
 
 
 [role="lead"]
-Cloud Insights verwendet den Datensammler der Oracle ZFS Storage Appliance, um Bestands- und Performance-Daten zu erfassen.
+Data Infrastructure Insights verwendet den Datensammler der Oracle ZFS Storage Appliance zur Erfassung von Bestands- und Leistungsdaten.
 
 
 
 == Terminologie
 
-Cloud Insights erfasst Bestandsinformationen mit dem Oracle ZFS Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst Bestandsinformationen mit dem Oracle ZFS-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplatte (SSD) | Festplatte 
@@ -67,7 +67,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. In d
 
 == Erforderliche Performance-Metriken
 
-Oracle ZFS Appliances stellen Storage-Verwaltungen große Flexibilität zur Erfassung von Performance-Statistiken zur Verfügung. Cloud Insights erwartet, dass Sie jeden_-Controller in einem Hochverfügbarkeitspaar konfiguriert haben, um die folgenden Metriken zu erfassen:
+Oracle ZFS Appliances stellen Storage-Verwaltungen große Flexibilität zur Erfassung von Performance-Statistiken zur Verfügung. Data Infrastructure Insights erwartet, dass Sie in einem Hochverfügbarkeitspaar _each_ Controller konfiguriert haben, um die folgenden Kennzahlen zu erfassen:
 
 * smb2.OPS[Freigabe]
 * nfs3.OPS[Freigabe]
@@ -75,7 +75,7 @@ Oracle ZFS Appliances stellen Storage-Verwaltungen große Flexibilität zur Erfa
 * nfs4-1.OPS[Share]
 
 
-Wenn der Controller nicht oder alle diese erfasst werden, führt dies wahrscheinlich dazu, dass Cloud Insights den Workload auf den „internen Volumes“ nicht oder nur unzureichend meldet.
+Wird ein Controller diese oder alle Funktionen nicht erfassen, führt dies wahrscheinlich dazu, dass Data Infrastructure Insights den Workload auf den „internen Volumes“ nicht oder nur unzureichend meldet.
 
 
 

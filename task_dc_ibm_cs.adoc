@@ -19,17 +19,17 @@ summary: IBM CS Data Collector wird konfiguriert.
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammlung, um Bestands- und Performance-Daten für IBM CS Storage-Systeme zu ermitteln.
+Data Infrastructure Insights nutzt diesen Datensammler zur Ermittlung von Bestands- und Leistungsdaten für IBM CS-Speichersysteme.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom IBM CS Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Inventarinformationen aus dem IBM CS-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Storage-Pool | Storage-Pool 

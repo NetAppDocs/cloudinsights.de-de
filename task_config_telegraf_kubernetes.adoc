@@ -16,7 +16,7 @@ summary: Datensammler für Kubernetes
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammler, um Kubernetes Pod, Node und Container-Kennzahlen zu erfassen.
+Data Infrastructure Insights nutzt diesen Datensammler, um Kennzahlen zu Kubernetes Pod, Node und Container zu sammeln.
 
 
 

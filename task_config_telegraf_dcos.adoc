@@ -19,7 +19,7 @@ summary: dcos-Konfiguration
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus DC/OS.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen aus dem DC/OS zu sammeln.
 
 
 

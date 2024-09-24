@@ -19,7 +19,7 @@ summary: VNXe-Datensammler wird konfiguriert.
 
 
 [role="lead"]
-DER DELL EMC VNXe Data Collector bietet Bestandsunterstützung für VNXe Unified Storage-Arrays. Cloud Insights unterstützt derzeit iSCSI- und NAS-Protokolle.
+DER DELL EMC VNXe Data Collector bietet Bestandsunterstützung für VNXe Unified Storage-Arrays. Data Infrastructure Insights unterstützt derzeit iSCSI- und NAS-Protokolle.
 
 
 
@@ -31,18 +31,18 @@ DER DELL EMC VNXe Data Collector bietet Bestandsunterstützung für VNXe Unified
 * Sie müssen mindestens einen schreibgeschützten Benutzer zur Verwendung durch den Datensammler haben.
 * IP-Adresse des Managing Solutions Enabler Servers.
 * HTTPS am Port 443 ist erforderlich
-* Der EMC VNXe Data Collector bietet NAS- und iSCSI-Unterstützung für die Inventarisierung. Fibre Channel-Volumes werden erkannt, Cloud Insights erstellt jedoch keine Berichte zu FC-Mapping, Maskierung oder Storage-Ports.
+* Der EMC VNXe Data Collector bietet NAS- und iSCSI-Unterstützung für die Bestandsaufnahme. Fibre-Channel-Volumes werden erkannt, Data Infrastructure Insights jedoch keine Berichte zu FC-Mapping-, Maskierungs- oder Speicherports.
 
 
 
 
 == Terminologie
 
-Cloud Insights erfasst die folgenden Bestandsinformationen vom VNXe-Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dem VNXe-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplatte | Festplatte 
@@ -119,6 +119,6 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Problem: | Versuchen Sie dies: 
 
 
-| „Externes Dienstprogramm konnte nicht ausgeführt werden“ mit Fehlermeldungen „Unisphere executable uemcli konnte nicht gefunden werden“ | * Überprüfen Sie die korrekte IP-Adresse, den Benutzernamen und das Kennwort * Bestätigen Sie, dass Unisphere CLI auf der Cloud Insights-Erfassungseinheit installiert ist * Bestätigen Sie, dass das Installationsverzeichnis der Unisphere CLI in der Datasource-Konfiguration korrekt ist. * Bestätigen Sie, dass die IP-Adresse der VNXe in der Konfiguration der Datenquelle korrekt ist. Öffnen Sie in der Cloud Insights Acquisition Unit einen CMD, und wechseln Sie in das konfigurierte Installationsverzeichnis: €{INSTALLDIR. Versuchen Sie, eine Verbindung zum VNXe-Gerät herzustellen, indem Sie Folgendes eingeben: Uemcli -d <Ihre IP> -U <Ihre ID> /sys/General show 
+| „Externes Dienstprogramm konnte nicht ausgeführt werden“ mit Fehlermeldungen „Unisphere executable uemcli konnte nicht gefunden werden“ | * Korrekte IP-Adresse, Benutzername und Kennwort überprüfen * Bestätigen Sie, dass Unisphere CLI auf der Data Infrastructure Insights Acquisition Unit installiert ist * Bestätigen Sie, dass das Unisphere CLI-Installationsverzeichnis in der Datenquelle korrekt ist * Bestätigen Sie, dass die IP-Adresse der VNXe in der Konfiguration der Datenquelle korrekt ist. Öffnen Sie in der Data Infrastructure Insights Acquisition Unit eine CMD und wechseln Sie in das konfigurierte Installationsverzeichnis: €{INSTALLDIR. Versuchen Sie, eine Verbindung zum VNXe-Gerät herzustellen, indem Sie Folgendes eingeben: Uemcli -d <Ihre IP> -U <Ihre ID> /sys/General show 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Oder auf der link:reference_data_collector_support_matrix.html["Data Collector Supportmatrix"].

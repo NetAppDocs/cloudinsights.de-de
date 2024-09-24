@@ -19,17 +19,17 @@ summary: Konfigurieren des Rubrik CDM-Datensammlers.
 
 
 [role="lead"]
-Cloud Insights erfasst mithilfe des Rubrik Datensammlers Inventar- und Performance-Daten von Rubrik Storage Appliances.
+Data Infrastructure Insights erfasst mithilfe des Rubrik Datensammlers Inventar- und Performance-Daten von Rubrik Storage Appliances.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom Rubrik Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Inventarinformationen aus dem Datensammler Rubrik. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Cluster | Storage, Storage-Pool 
@@ -48,7 +48,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. In d
 
 Zur Konfiguration dieses Datensammlers sind folgende Voraussetzungen erforderlich:
 
-* Die Cloud Insights-Erfassungseinheit initiiert Verbindungen zum TCP-Port 443 zum Cluster Rubrik. Ein Collector pro Cluster.
+* Die Data Infrastructure Insights Acquisition Unit initiiert Verbindungen zum TCP-Port 443 zum Cluster Rubrik. Ein Collector pro Cluster.
 * IP-Adresse des Rubrik Clusters.
 * Benutzername und Passwort für das Cluster.
 * Rubrik Cluster IP-Adresse oder Hostname.

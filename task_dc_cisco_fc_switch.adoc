@@ -19,7 +19,7 @@ summary: Konfiguration des Datensammlers Cisco MDS Fablic Switch
 
 
 [role="lead"]
-Cloud Insights verwendet den Datensammler der Cisco MDS Fabric Switches, um Inventar für Cisco MDS Fabric Switches sowie eine Vielzahl von Cisco Nexus FCoE Switches zu ermitteln, auf denen der FC-Service aktiviert ist.
+Data Infrastructure Insights verwendet den Data Collector der Cisco MDS-Fabric-Switches zur Bestandsaufnahme von Cisco MDS-Fabric-Switches sowie einer Vielzahl von Cisco Nexus FCoE-Switches, auf denen der FC-Service aktiviert ist.
 
 Darüber hinaus können Sie mit diesem Datensammler viele Modelle von Cisco-Geräten im NPV-Modus entdecken.
 
@@ -27,11 +27,11 @@ Darüber hinaus können Sie mit diesem Datensammler viele Modelle von Cisco-Ger�
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom Datensammler des Cisco FC Switch. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dem Cisco FC Switch-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Switch | Switch 
@@ -169,7 +169,7 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Fehler: Gerät ist kein Cisco MDS Switch | • Vergewissern Sie sich, dass die für das Gerät konfigurierte IP-Adresse der Datenquelle richtig ist • Melden Sie sich über die Cisco Device Manager-GUI am Gerät an • Melden Sie sich über die CLI an 
 
 
-| Fehler: Cloud Insights ist nicht in der Lage, den WWN des Switches zu erhalten. | Hierbei handelt es sich möglicherweise nicht um einen FC- oder FCoE-Switch, dessen Unterstützung möglicherweise nicht möglich ist. Stellen Sie sicher, dass der in der Datenquelle konfigurierte IP/FQDN wirklich ein FC/FCoE-Switch ist. 
+| Fehler: Data Infrastructure Insights kann den WWN des Switches nicht abrufen. | Hierbei handelt es sich möglicherweise nicht um einen FC- oder FCoE-Switch, dessen Unterstützung möglicherweise nicht möglich ist. Stellen Sie sicher, dass der in der Datenquelle konfigurierte IP/FQDN wirklich ein FC/FCoE-Switch ist. 
 
 
 | Fehler: Es wurden mehrere Knoten gefunden, die beim NPV Switch Port angemeldet sind | Deaktivieren Sie die direkte Akquisition des NPV-Schalters 

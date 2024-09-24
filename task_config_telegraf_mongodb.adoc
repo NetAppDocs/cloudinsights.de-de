@@ -19,7 +19,7 @@ summary: MongoDB Data Collector-Konfiguration
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Metriken von MongoDB zu erfassen.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen von MongoDB zu sammeln.
 
 
 

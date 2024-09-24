@@ -19,7 +19,7 @@ summary: Konfiguration des Couchbase Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammlung, um die Kennzahlen von Couchbase zu erfassen.
+Data Infrastructure Insights nutzt diesen Datensammler zur Erfassung von Kennzahlen aus Couchbase.
 
 
 

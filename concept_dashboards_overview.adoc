@@ -68,35 +68,35 @@ image:TableWidgetPerformanceData.png["Tabellenwidget"]
 
 * *Linie, Spline, Bereich, gestapelte Flächendiagramme*: Dies sind Zeitreihenkarten-Widgets, auf denen Sie Leistung und andere Daten über die Zeit anzeigen können.
 +
-image:Time-Series Charts.png["Bereich, Gestapelte Fläche, Linie, Spline-Diagramme"]
+image:Time-SeriesCharts.png["Bereich, Gestapelte Fläche, Linie, Spline-Diagramme"]
 
 * *Single Value Widget*: Ein Widget, mit dem Sie einen einzelnen Wert anzeigen können, der entweder direkt von einem Zähler abgeleitet oder mithilfe einer Abfrage oder eines Ausdrucks berechnet werden kann. Sie können Schwellenwerte für die Farbformatierung definieren, um anzuzeigen, ob der Wert in „erwartet“, „Warnung“ oder „kritischer Bereich“ liegt.
 +
-image:Single-Value Widgets.png["Single-Value Widgets mit und ohne Formatierung"]
+image:Single-ValueWidgets.png["Single-Value Widgets mit und ohne Formatierung"]
 
 * *Widget messen*: Zeigt Daten mit einem einzigen Wert in einem herkömmlichen (festen) Manometer oder einer Kugel an, mit Farben, die auf "Warnung" oder "kritische" Werte basieren link:concept_dashboard_features.html#formatting-gauge-widgets["Anpassen"].
 +
-image:Gauge Widgets.png["Einzelwert mit Formatierung, traditionelle Messanzeige, Leuchtanzeige"]
+image:GaugeWidgets.png["Einzelwert mit Formatierung, traditionelle Messanzeige, Leuchtanzeige"]
 
 * *Balken, Spaltendiagramme*: Zeigt die oberen oder unteren N-Werte an, z. B. die Top 10-Storage nach Kapazität oder die unteren 5-Volumes nach IOPS.
 +
-image:Bar and Column Charts.png["Balken- und Spaltendiagramme"]
+image:BarandColumnCharts.png["Balken- und Spaltendiagramme"]
 
 * *Box Plot Chart*: Eine Darstellung des min., max., Median und des Bereichs zwischen dem unteren und dem oberen Quartil der Daten in einem einzigen Diagramm.
 +
-image:Box Plot.png["Box-Darstellung"]
+image:BoxPlot.png["Box-Darstellung"]
 
 * *Scatter Plot Chart*: Zeichnet verwandte Daten als Punkte, zum Beispiel IOPS und Latenz. In diesem Beispiel sind Assets mit hohem Durchsatz und niedrigen IOPS schnell zu finden.
 +
-image:Scatter Plot.png["Streudiagramm"]
+image:ScatterPlot.png["Streudiagramm"]
 
 * *Pie Chart*: Ein traditionelles Kreisdiagramm, um Daten als Teil der Gesamtmenge anzuzeigen.
 +
-image:Pie Chart.png["Kreisdiagramm"]
+image:PieChart.png["Kreisdiagramm"]
 
 * *Widgets Anmerkung*: Bis zu 1000 Zeichen Freitext.
 +
-image:Note Widget.png["Notizwidget"]
+image:NoteWidget.png["Notizwidget"]
 
 * *Warnungstabelle*: Zeigt bis zu den letzten 1,000 Warnungen an.
 

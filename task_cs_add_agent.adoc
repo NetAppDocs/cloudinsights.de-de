@@ -103,13 +103,17 @@ Standardmäßig aktualisiert Cloud Insights Workload Security die Agenten automa
 * 30 Tage sind vergangen. Beachten Sie, dass die 30 Tage am Tag der letzten Agentenaktualisierung beginnen, nicht an dem Tag, an dem der Agent angehalten wurde.
 
 
-In jedem dieser Fälle wird der Agent bei der nächsten Aktualisierung der Workload-Sicherheit aktualisiert. Um automatische Agentenaktualisierungen anzuhalten oder fortzusetzen, verwenden Sie die APIs _cloudSecure_config.Agents_:
+In jedem dieser Fälle wird der Agent bei der nächsten Aktualisierung der Workload-Sicherheit aktualisiert.
 
-image:ws_pin_agent_apis.png["WS-PIN-Agent-APIs"]
+Um automatische Agentenaktualisierungen anzuhalten oder fortzusetzen, verwenden Sie die APIs _cloudSecure_config.Agents_:
 
-Beachten Sie, dass es bis zu fünf Minuten dauern kann, bis die Aktion Pause oder Wiederaufnahme wirksam wird. Sie können Ihre aktuellen Agentenversionen auf der Seite Workload Security > Collectors auf der Registerkarte Agents anzeigen.
+image:ws_pin_agent_apis.png["CloudSecure Agent-APIs zum Anheften und Entheften von Agenten"]
 
-image:ws_agent_version.png["WS Agent-Versionen"]
+Beachten Sie, dass es bis zu fünf Minuten dauern kann, bis die Aktion Pause oder Wiederaufnahme wirksam wird.
+
+Sie können Ihre aktuellen Agentenversionen auf der Seite *Workload Security > Collectors* auf der Registerkarte *Agents* anzeigen.
+
+image:ws_agent_version.png["WS Agent-Versionen in der Tabelle „Agenten“ angezeigt"]
 
 
 

@@ -19,11 +19,11 @@ summary: Konfigurieren des Brocade FOS REST-Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet den Brocade FOS REST Collector, um Bestand und Performance für Brocade-Switch-Geräte mit FabricOS (FOS)-Firmware 8.2 und höher zu ermitteln.
+Data Infrastructure Insights verwendet den Brocade FOS REST Collector, um Bestand und Performance für Brocade-Switch-Geräte mit FabricOS (FOS) Firmware 8.2 und höher zu ermitteln.
 
-Bitte beachten Sie: FOS' Standard "user" Ebene ist nicht ausreichend leistungsstark für Cloud Insights, um alle logischen Aspekte eines Geräts zu sehen - wir benötigen ein Benutzerkonto mit aktivierter "Chassis Role" sowie Berechtigungen für alle auf einem Switch konfigurierten virtuellen Fabrics.
+Bitte beachten Sie: FOS' Standard "user"-Ebene ist nicht ausreichend leistungsfähig, damit Data Infrastructure Insights alle logischen Aspekte eines Geräts anzeigen kann - wir benötigen ein Benutzerkonto mit aktivierter "Chassis Role" sowie Berechtigungen für alle auf einem Switch konfigurierten virtuellen Fabrics.
 
-Hier ist ein Beispiel dafür, wie Sie ein Benutzerkonto mit den geringsten Berechtigungen für die Verwendung von Cloud Insights in einer SSH-Sitzung auf einem FOS-Gerät erstellen können:
+Hier ist ein Beispiel dafür, wie Sie ein Benutzerkonto mit den geringsten Berechtigungen für die Verwendung von Data Infrastructure Insights in einer SSH-Sitzung auf einem FOS-Gerät erstellen können:
 
 UserConfig --add NetAppCIUser -r user -l 1-128 -c user -p Qwerty!
 
@@ -35,11 +35,11 @@ Standardmäßig versucht dieser Collector, alle FOS-Geräte zu ermitteln, die Te
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom Brocade FOS REST-Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dem Brocade FOS REST Data Collector. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Switch | Switch 
@@ -65,7 +65,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 == Anforderungen
 
-* Es muss eine TCP-Verbindung zu allen Switches in der Fabric vorhanden sein. Dieser Datensammlertyp versucht nahtlos sowohl HTTP als auch HTTPS für jedes Gerät in der Fabric. Wenn Sie das Kontrollkästchen _Discover all Switches in the Fabric_ aktivieren, identifiziert Cloud Insights alle Switches in der Fabric; es benötigt jedoch TCP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.
+* Es muss eine TCP-Verbindung zu allen Switches in der Fabric vorhanden sein. Dieser Datensammlertyp versucht nahtlos sowohl HTTP als auch HTTPS für jedes Gerät in der Fabric. Wenn Sie das Kontrollkästchen _Discover all Switches in the Fabric_ aktivieren, identifiziert Data Infrastructure Insights alle Switches in der Fabric; es benötigt jedoch TCP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.
 * Weltweit ist dasselbe Konto über alle Switches in der Fabric erforderlich. Sie können den Zugriff über die Webschnittstelle des Geräts bestätigen.
 
 
@@ -133,7 +133,7 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Die Testfunktion warnt mich, dass ein Protokoll nicht zugänglich ist | Ein bestimmtes Brocade FOS 8.2+ Gerät will nur über HTTP oder HTTPS sprechen - wenn ein Switch ein digitales Zertifikat installiert hat, wirft der Switch HTTP-Fehler auf, wenn man versucht, mit unverschlüsseltem HTTP gegen HTTPS zu kommunizieren. Die Testfunktion versucht die Kommunikation mit HTTP und HTTPS - wenn der Test Ihnen mitteilt, dass ein Protokoll erfolgreich ist, können Sie den Collector sicher speichern und sich keine Sorgen machen, dass das andere Protokoll nicht erfolgreich war - der Collector versucht beide Protokolle während der Sammlung und schlägt nur fehl, wenn keines funktioniert. 
 
 
-| Fehler: „Cloud Insights hat ungültige Gehäuserolle erhalten“ | Vergewissern Sie sich, dass dem in dieser Datenquelle konfigurierten Benutzer die Berechtigung für die Gehäuserolle erteilt wurde. 
+| Fehler: „Data Infrastructure Insights received invalid Chassis role“ | Vergewissern Sie sich, dass dem in dieser Datenquelle konfigurierten Benutzer die Berechtigung für die Gehäuserolle erteilt wurde. 
 
 
 | Fehler: „IP-Adresse des Gehäuses nicht stimmt überein“ | Ändern Sie die Konfiguration der Datenquelle, um die Gehäuse-IP-Adresse zu verwenden. 

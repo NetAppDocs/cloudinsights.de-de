@@ -19,17 +19,17 @@ summary: Konfigurieren des Datensammlers von Brocade FC Switches.
 
 
 [role="lead"]
-Cloud Insights verwendet die Brocade FC Switch (SSH) Datenquelle, um Inventar für Brocade oder umbenannte Switch-Geräte zu ermitteln, auf denen FOS-Firmware (FOS) 4.2 und höher ausgeführt wird. Geräte werden sowohl im FC-Switch- als auch im Access Gateway-Modus unterstützt.
+Dateninfrastruktur Insights verwendet die SSH-Datenquelle (Brocade FC Switch), um eine Bestandsaufnahme für Brocade- oder umbenannte Switch-Geräte zu erkennen, auf denen die Firmware des Factsored Operating System (FOS) 4.2 und höher ausgeführt wird. Geräte werden sowohl im FC-Switch- als auch im Access Gateway-Modus unterstützt.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom Datensammler des Brocade FC Switch. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dem Brocade FC Switch-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Switch | Switch 
@@ -58,8 +58,8 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 == Anforderungen
 
-* Die Cloud Insights Acquisition Unit (AU) leitet Verbindungen zum TCP-Port 22 auf Brocade Switches ein, um Bestandsdaten zu erfassen. Die AU wird auch Verbindungen zu UDP Port 161 für die Sammlung von Leistungsdaten initiieren.
-* Für alle Switches in der Fabric muss eine IP-Konnektivität vorhanden sein. Wenn Sie das Kontrollkästchen Alle Switches in der Fabric erkennen auswählen, erkennt Cloud Insights alle Switches in der Fabric. Für die Erkennung ist jedoch eine IP-Konnektivität für diese zusätzlichen Switches erforderlich.
+* Die Data Infrastructure Insights Acquisition Unit (AU) initiiert Verbindungen zu TCP-Port 22 auf Brocade-Switches, um Bestandsdaten zu sammeln. Die AU wird auch Verbindungen zu UDP Port 161 für die Sammlung von Leistungsdaten initiieren.
+* Es muss eine IP-Verbindung zu allen Switches in der Fabric vorhanden sein. Wenn Sie das Kontrollkästchen Alle Switches in der Fabric ermitteln aktivieren, identifiziert Data Infrastructure Insights alle Switches in der Fabric, benötigt jedoch IP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.
 * Weltweit ist dasselbe Konto über alle Switches in der Fabric erforderlich. Sie können PuTTY (Open Source Terminal Emulator) verwenden, um den Zugriff zu bestätigen.
 * Die Ports 161 und 162 müssen offen sein für alle Switches im Fabric für SNMP-Performance-Abfragen.
 * SNMP Read-Only Community String
@@ -156,10 +156,10 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Problem: | Versuchen Sie dies: 
 
 
-| Die Bestandsaufnahme der Brocade Datenquelle schlägt mit dem Fehler fehl: <date> <time> ERROR [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Fehler 2 von 2: <datasource Name> [Interner Fehler] - das Modell für das Gerät konnte nicht generiert werden <IP>. Fehler beim Erkennen der Eingabeaufforderung ([Gerätename <Name>]: Fehler beim Generieren des Modells für Gerät <IP> nicht möglich. Fehler beim Erkennen der Eingabeaufforderung) | Das Problem kann verursacht werden, wenn der Brocade Switch mit einer Eingabeaufforderung zu lange zurückgibt und damit die Standardzeitüberschreitung von 5 Sekunden überschreitet. Versuchen Sie in den Einstellungen für die erweiterte Konfiguration des Datensammlers in Cloud Insights, die Zeitüberschreitung „_SSH Banner Wait Timeout“ (sec)_ auf einen höheren Wert zu erhöhen. 
+| Die Bestandsaufnahme der Brocade Datenquelle schlägt mit dem Fehler fehl: <date> <time> ERROR [com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Fehler 2 von 2: <datasource Name> [Interner Fehler] - das Modell für das Gerät konnte nicht generiert werden <IP>. Fehler beim Erkennen der Eingabeaufforderung ([Gerätename <Name>]: Fehler beim Generieren des Modells für Gerät <IP> nicht möglich. Fehler beim Erkennen der Eingabeaufforderung) | Das Problem kann verursacht werden, wenn der Brocade Switch mit einer Eingabeaufforderung zu lange zurückgibt und damit die Standardzeitüberschreitung von 5 Sekunden überschreitet. Versuchen Sie in den Einstellungen für die erweiterte Konfiguration des Datensammlers in Data Infrastructure Insights, das _SSH Banner Wait Timeout (sec)_ auf einen höheren Wert zu erhöhen. 
 
 
-| Fehler: „Cloud Insights hat ungültige Gehäuserolle erhalten“ | Vergewissern Sie sich, dass dem in dieser Datenquelle konfigurierten Benutzer die Berechtigung für die Gehäuserolle erteilt wurde. 
+| Fehler: „Data Infrastructure Insights received invalid Chassis role“ | Vergewissern Sie sich, dass dem in dieser Datenquelle konfigurierten Benutzer die Berechtigung für die Gehäuserolle erteilt wurde. 
 
 
 | Fehler: „IP-Adresse des Gehäuses nicht stimmt überein“ | Ändern Sie die Konfiguration der Datenquelle, um die Gehäuse-IP-Adresse zu verwenden. 

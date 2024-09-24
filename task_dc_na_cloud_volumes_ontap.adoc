@@ -80,7 +80,7 @@ Dieser Datensammler unterstützt die Bestandserfassung aus Cloud Volumes ONTAP-K
 | Performance-Threads Anzahl | Anzahl der gleichzeitigen Threads. 
 
 
-| Erweiterte Zähldatensammlung | Überprüfen Sie, ob Cloud Insights die erweiterten Metriken aus der folgenden Liste erfasst. 
+| Erweiterte Zähldatensammlung | Aktivieren Sie diese Option, damit Data Infrastructure Insights die erweiterten Metriken aus der folgenden Liste erfasst. 
 |===
 
 

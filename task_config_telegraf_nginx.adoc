@@ -19,7 +19,7 @@ summary: Nginx-Konfiguration des Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Metriken von Nginx zu erfassen.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen von Nginx zu sammeln.
 
 
 

@@ -26,7 +26,7 @@ Es gibt zwei Methoden, mit denen Sie Werte aus Tabellen kopieren oder Ergebnisse
 
 .Schritte
 . Methode 1: Markieren Sie den gewünschten Text mit der Maus, kopieren Sie ihn und fügen Sie ihn in Suchfelder oder andere Anwendungen ein.
-. Methode 2: Bewegen Sie den Mauszeiger über das Feld, und klicken Sie auf das Clipboard-Symbol image:ClipboardIcon.png["Zwischenablage"] Das erscheint. Der Wert wird zur Verwendung in Suchfeldern oder anderen Anwendungen in die Zwischenablage kopiert.
+. Methode 2: Bei Einzelwertfeldern bewegen Sie den Mauszeiger über das Feld und klicken auf das Symbol der Zwischenablage, das angezeigt wird. Der Wert wird zur Verwendung in Suchfeldern oder anderen Anwendungen in die Zwischenablage kopiert.
 +
 Beachten Sie, dass nur Werte, die Verknüpfungen zu Assets sind, mit dieser Methode kopiert werden können. Nur Felder, die einzelne Werte enthalten (d. h. nicht-Listen), haben das Kopiensymbol.
 

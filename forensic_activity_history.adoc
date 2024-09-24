@@ -34,7 +34,7 @@ Sie können das Diagramm vergrößern, indem Sie ein Rechteck im Diagramm heraus
 * Eine Liste der Daten „_Alle Aktivitäten_“
 
 
-Die Tabelle _*Alle Aktivitäten*_ enthält die folgenden Informationen. Beachten Sie, dass standardmäßig nicht alle dieser Spalten angezeigt werden. Sie können die anzuzeigenden Spalten auswählen, indem Sie auf das Zahnrad-Symbol klicken image:GearIcon.png["Zahnrad-Symbol"].
+Die Tabelle _*Alle Aktivitäten*_ enthält die folgenden Informationen. Beachten Sie, dass standardmäßig nicht alle dieser Spalten angezeigt werden. Sie können Spalten auswählen, die angezeigt werden sollen, indem Sie auf das Zahnradsymbol klicken.
 
 * Die *Zeit*, auf die ein Unternehmen zugegriffen wurde, einschließlich Jahr, Monat, Tag und Uhrzeit des letzten Zugriffs.
 * Der * Benutzer*, der mit einem Link auf das Entity zugegriffen hat link:forensic_user_overview.html["Benutzerinformationen"].
@@ -212,14 +212,15 @@ Suchergebnisse mit und ohne / werden unterschiedlich sein
 
 == Lokale Root-SVM-Benutzeraktivitäten ändern sich
 
-Wenn ein lokaler Root-SVM-Benutzer eine Aktivität ausführt, wird die IP des Clients, auf dem die NFS-Freigabe gemountet ist, im Benutzernamen berücksichtigt. Dieser wird auf den Seiten für forensische Aktivitäten und Benutzeraktivitäten als _root@<ip-address-of-the-client>_ angezeigt.
+Wenn ein lokaler Root-SVM-Benutzer eine Aktivität ausführt, wird die IP des Clients, auf dem die NFS-Freigabe gemountet ist, jetzt im Benutzernamen berücksichtigt, der sowohl auf forensischen Aktivitäten als auch auf Benutzeraktivitäts-Seiten als Root@<ip-address-of-the-client> angezeigt wird.
 
 Beispiel:
 
 * Wenn SVM-1 von Workload Security überwacht wird und der Root-Benutzer dieser SVM die Freigabe auf einem Client mit der IP-Adresse 10.197.12.40 mountet, lautet der auf der Seite für forensische Aktivitäten angezeigte Benutzername _root@10.197.12.40_.
 * Wenn dieselbe SVM-1 in einen anderen Client mit der IP-Adresse 10.197.12.41 eingebunden wird, lautet der auf der Seite für forensische Aktivitäten angezeigte Benutzername _root@10.197.12.41_.
-* Dies wird getan, um die Aktivität des NFS-Root-Benutzers nach IP-Adresse zu trennen. Zuvor wurde die gesamte Aktivität als vom _root_-Benutzer durchgeführt betrachtet, ohne IP-Unterscheidung.
 
+
+*• Dies wird getan, um NFS-Root-Benutzeraktivität durch IP-Adresse zu trennen. Zuvor wurde die gesamte Aktivität als vom _root_-Benutzer durchgeführt betrachtet, ohne IP-Unterscheidung.
 
 
 

@@ -21,17 +21,17 @@ summary: Konfigurieren des IBM SAN-Volume-Controller-Datensammlers.
 [role="lead"]
 Der IBM SAN Volume Controller (SVC)-Datensammler sammelt Bestands- und Performancedaten mithilfe von SSH und unterstützt eine Vielzahl von Geräten, auf denen das SVC-Betriebssystem ausgeführt wird.
 
-Die Liste der unterstützten Geräte umfasst Modelle wie SVC, v7000, v5000 und v3700. In der Cloud Insights Supportmatrix finden Sie weitere Informationen zu unterstützten Modellen und Firmware-Versionen.
+Die Liste der unterstützten Geräte umfasst Modelle wie SVC, v7000, v5000 und v3700. Unterstützte Modelle und Firmware-Versionen finden Sie in der Data Infrastructure Insights Supportmatrix.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom IBM SVC Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Inventarinformationen aus dem IBM SVC-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Laufwerk | Festplatte 

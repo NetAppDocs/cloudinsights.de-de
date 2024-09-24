@@ -25,14 +25,14 @@ Bei Storage-Systemen mit Data ONTAP Software im 7-Mode verwenden Sie den 7-Mode 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom NetApp 7-Mode Data Collector. Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Inventarinformationen aus dem Data Collector von NetApp 7-Mode. Für jeden erfassten Asset-Typ wird die am häufigsten für dieses Dokument verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 
 NOTE: Dieser Datensammler ist link:task_getting_started_with_cloud_insights.html#useful-definitions["Veraltet"].
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplatte | Festplatte 
@@ -138,12 +138,12 @@ Storage-Systeme werden beim Erwerb der Haupt-Filer erworben.
 
 * Mit den folgenden Befehlen werden die Fähigkeiten der Benutzerrolle definiert:
 +
-** „api-*“: Nutzen Sie diese, um Cloud Insights die Ausführung aller NetApp Storage-API-Befehle zu ermöglichen.
+** „api-*“: Damit kann Dateninfrastruktur Insights alle NetApp Storage API-Befehle ausführen.
 +
 Dieser Befehl ist erforderlich, um das ZAPI zu verwenden.
 
-** „login-http-admin“: Hiermit kann Cloud Insights über HTTP eine Verbindung mit dem NetApp Storage herstellen. Dieser Befehl ist erforderlich, um das ZAPI zu verwenden.
-** „Security-API-vfiler“: Nutzen Sie dies, um Cloud Insights zu ermöglichen, NetApp Storage API Befehle auszuführen, um vFiler Einheitsinformationen abzurufen.
+** „login-http-admin“: Hiermit können Dateninfrastruktureinblicke über HTTP eine Verbindung zum NetApp-Speicher herstellen. Dieser Befehl ist erforderlich, um das ZAPI zu verwenden.
+** Security-API-vfiler: Verwenden Sie diese, damit Dateninfrastruktur Insights NetApp Storage API-Befehle ausführen kann, um Informationen über die vFiler Einheit abzurufen.
 ** „cli-Opes“: Zum Befehl „Opes“, der für Partner-IP und aktivierte Lizenzen verwendet wird.
 ** „cli-lun“: Greifen Sie auf diesen Befehl zum Verwalten von LUNs zu. Zeigt den Status (LUN-Pfad, Größe, Online/Offline-Zustand und Shared-Zustand) der angegebenen LUN oder Klasse von LUNs an.
 ** „cli-df“: Für „df -s“, „df -r“, „df -A -r“ und für die Anzeige des freien Speicherplatzes
@@ -181,7 +181,7 @@ Einige Dinge zu versuchen, wenn Sie Probleme mit diesem Datensammler stoßen:
 | Erhalten Sie 401 HTTP-Antwort oder 13003 ZAPI-Fehlercode und ZAPI gibt „unzureichende Berechtigungen“ oder „nicht autorisiert für diesen Befehl“ zurück | Benutzernamen und Kennwort sowie Benutzerrechte/Berechtigungen überprüfen. 
 
 
-| Fehler „Befehl konnte nicht ausgeführt werden“ | Prüfen Sie, ob der Benutzer über die folgende Berechtigung auf dem Gerät verfügt: • API-* • cli-date • cli-df • cli-ifconfig • cli-lun • cli-Operations • cli-rdfile • cli-Snap • Login-http-admin • Security-API-vfiler prüfen Sie auch, ob die ONTAP-Version von Cloud Insights unterstützt wird und überprüfen Sie, ob die verwendeten Anmeldedaten mit den Geräteanmeldeinformationen übereinstimmen 
+| Fehler „Befehl konnte nicht ausgeführt werden“ | Prüfen Sie, ob der Benutzer auf dem Gerät über die folgenden Berechtigungen verfügt: • API-* • cli-date • cli-df • cli-ifconfig • cli-lun • cli-Operations • cli-rdfile • cli-Snap • Login-http-admin • Security-API-vfiler überprüfen Sie auch, ob die ONTAP-Version von Data Infrastructure Insights unterstützt wird, und überprüfen Sie, ob die verwendeten Anmeldeinformationen mit den Geräteanmeldeinformationen übereinstimmen 
 
 
 | Cluster-Version ist < 8.1 | Die unterstützte Version für das Cluster-Minimum ist 8.1. Upgrade auf die unterstützte Mindestversion. 

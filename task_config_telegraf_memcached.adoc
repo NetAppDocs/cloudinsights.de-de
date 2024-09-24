@@ -19,7 +19,7 @@ summary: Konfiguration des memcached Data Collector
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammlung, um Kennzahlen aus Memcached zu erfassen.
+Data Infrastructure Insights nutzt diesen Datensammler, um Kennzahlen aus Memcached zu sammeln.
 
 
 

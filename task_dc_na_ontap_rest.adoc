@@ -29,7 +29,7 @@ Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses 
 
 * Sie müssen Zugriff auf ein Benutzerkonto mit der erforderlichen Zugriffsebene haben. Beachten Sie, dass Administratorberechtigungen erforderlich sind, wenn Sie einen neuen REST-Benutzer/eine neue REST-Rolle erstellen.
 +
-** Cloud Insights stellt hauptsächlich Leseanforderungen. Für die Cloud Insights Registrierung beim ONTAP-Array sind jedoch einige Schreibberechtigungen erforderlich. Siehe _Hinweis zu Berechtigungen_ direkt unten.
+** Zu ihren Funktionen gehören in erster Linie Leseanforderungen. Für die Registrierung im ONTAP Array sind jedoch einige Schreibberechtigungen erforderlich, damit sich Dateninfrastruktur Insights registrieren kann. Siehe _Hinweis zu Berechtigungen_ direkt unten.
 
 
 * ONTAP Version 9.14.1 oder höher.
@@ -40,9 +40,9 @@ Die folgenden Anforderungen gelten für die Konfiguration und Verwendung dieses 
 
 == Ein Hinweis zu Berechtigungen
 
-Da eine Reihe von Cloud Insights ONTAP Dashboards auf erweiterten ONTAP-Zählern basieren, sollten Sie *Enable Advanced Counter Data Collection* im Abschnitt Data Collector Advanced Configuration aktivieren.
+Da eine Reihe von ONTAP-Dashboards von Data Infrastructure Insights auf erweiterten ONTAP-Zählern basieren, sollten Sie *Enable Advanced Counter Data Collection* im Abschnitt Data Collector Advanced Configuration aktivieren.
 
-Um ein lokales Konto für Cloud Insights auf Cluster-Ebene zu erstellen, melden Sie sich mit dem Cluster Management Administrator-Benutzernamen/Passwort bei ONTAP an, und führen Sie die folgenden Befehle auf dem ONTAP-Server aus:
+Um ein lokales Konto für Dateninfrastrukturanalysen auf Cluster-Ebene zu erstellen, melden Sie sich mit dem Benutzernamen/Kennwort des Clusterverwaltungsadministrators bei ONTAP an, und führen Sie die folgenden Befehle auf dem ONTAP-Server aus:
 
 . Bevor Sie beginnen, müssen Sie mit einem _Administrator_-Konto bei ONTAP angemeldet sein und die Befehle _diagnoseebene_ müssen aktiviert sein.
 . Rufen Sie den Namen des vservers vom Typ _admin_ ab. Sie werden diesen Namen in nachfolgenden Befehlen verwenden.
@@ -144,11 +144,11 @@ Sie können diesen Vorgang verwenden, um zum vorherigen Collector zurückzukehre
 
 == Terminologie
 
-Cloud Insights erfasst Bestands-, Protokoll- und Performance-Daten aus dem ONTAP Datensammler. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst Inventar-, Protokoll- und Performance-Daten aus dem ONTAP Datensammler. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplatte | Festplatte 
@@ -190,8 +190,8 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Land
 * IP: In der Regel werden die in der Datenquelle konfigurierten IP(s) oder Hostnamen(s) verwendet.
 * Microcode-Version – Firmware.
 * Rohkapazität – Basis-2-Zusammenfassung aller physischen Laufwerke im System, unabhängig von ihrer Rolle.
-* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise beziehen Cloud Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Anstelle des Arrays, die dies anbieten, führt Cloud Insights in der Regel eine IOPS-gewichtete Berechnung durch, die aus den Statistiken der einzelnen internen Volumen abgeleitet wird.
-* Durchsatz: Aggregiert aus internen Volumes. Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Erstellung programmgesteuert durch die Cloud Insights Datenquelle im Rahmen der Bestandsberichterstattung.
+* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise bezieht Data Infrastructure Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Statt dieses Array in Betracht zu ziehen, führt Data Infrastructure Insights in der Regel eine IOPS-gewichtete Berechnung aus den Statistiken der einzelnen internen Volumes durch.
+* Durchsatz: Aggregiert aus internen Volumes. Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Programmgesteuert erstellt von der Datenquelle „Data Infrastructure Insights“ als Teil der Bestandsberichterstattung.
 
 
 
@@ -232,7 +232,7 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Land
 
 == ONTAP-Leistungskennzahlen
 
-Mehrere ONTAP Modelle bieten Strommetriken für Cloud Insights, die für Monitoring- oder Alarmfunktionen verwendet werden können. Die unten aufgeführten Listen unterstützter und nicht unterstützter Modelle sind nicht umfassend, sollten jedoch einige Hinweise enthalten. Wenn ein Modell in der gleichen Familie wie ein Modell auf der Liste ist, sollte der Support identisch sein.
+Mehrere ONTAP Modelle bieten Stromkennzahlen für Einblicke in die Dateninfrastruktur, die für Monitoring oder Warnmeldungen genutzt werden können. Die unten aufgeführten Listen unterstützter und nicht unterstützter Modelle sind nicht umfassend, sollten jedoch einige Hinweise enthalten. Wenn ein Modell in der gleichen Familie wie ein Modell auf der Liste ist, sollte der Support identisch sein.
 
 Unterstützte Modelle:
 

@@ -47,8 +47,6 @@ Alle Dashboard-Widgets können entsprechend Ihren Anforderungen für jedes Dashb
 
 Klicken Sie im Dashboard-Bearbeitungsmodus auf das Menü im Widget und wählen Sie *Duplizieren*. Der Widget-Editor wird gestartet, mit der ursprünglichen Widget-Konfiguration und mit einem "Kopie" Suffix im Widget-Namen ausgefüllt. Sie können ganz einfach alle erforderlichen Änderungen vornehmen und das neue Widget speichern. Das Widget wird am unteren Rand des Dashboards platziert und Sie können sie nach Bedarf positionieren. Denken Sie daran, Ihr Dashboard zu speichern, wenn alle Änderungen abgeschlossen sind.
 
-image:DuplicateWidget.png["Duplizieren eines Widgets"]
-
 
 
 == Widget-Legenden Werden Angezeigt
@@ -471,7 +469,7 @@ Das Widget wird im Bearbeitungsmodus geöffnet. Standardmäßig wird eine Abfrag
 +
 Das Diagramm zeigt eine Zeile mit der Summe der IOPS-Gesamtwerte an.
 
-. Klicken Sie auf das Symbol _Diese Abfrage duplizieren_ image:DuplicateQueryIcon.png["Duplicat-Abfrage"] So erstellen Sie eine Kopie der Abfrage.
+. Klicken Sie auf das Symbol _Diese Abfrage duplizieren_, um eine Kopie der Abfrage zu erstellen.
 +
 Ein Duplikat der Abfrage wird unterhalb des Originals hinzugefügt.
 
@@ -505,7 +503,7 @@ Um eine Variable in einem Ausdruck zu verwenden, geben Sie einfach den Variablen
 
 Tabellen-Widgets behandeln Ausdrücke etwas anders. Sie können bis zu fünf Ausdrücke in einem einzelnen Tabellen-Widget haben, von denen jeder als neue Spalte zur Tabelle hinzugefügt wird. Jeder Ausdruck kann bis zu fünf Werte enthalten, auf denen die Berechnung durchgeführt werden soll. Sie können die Spalte einfach etwas Sinnvolles benennen.
 
-image:Expression Example.png["Ausdruck in einem TabellenWidget"]
+image:ExpressionExample.png["Ausdruck in einem TabellenWidget"]
 
 
 
@@ -612,7 +610,7 @@ Variablennamen:
 
 Mit den Widgets für Volumenanzeige und Glühlampen können Sie Schwellenwerte für die Stufen _Warnung_ und/oder _kritisch_ festlegen, um die angegebenen Daten klar zu darstellen.
 
-image:Gauge Widget Formatting.png["Formateinstellungen für Widget „Anzeige“"]
+image:GaugeWidgetFormatting.png["Formateinstellungen für Widget „Anzeige“"]
 
 So legen Sie die Formatierung für diese Widgets fest:
 
@@ -632,7 +630,7 @@ image:Gauge-Bullet.png["Rundmesser, Breite = 374"]
 
 Im Widget „Single-Value“ können Sie neben der Einstellung „Warning (orange)“ und „Critical (Red) schwellern die Werte im Bereich (die unterhalb der Warnstufe) mit grünem oder weißem Hintergrund anzeigen lassen.
 
-image:Single-Value Widgets.png["Single-Value Widget mit und ohne Formatierung"]
+image:Single-ValueWidgets.png["Single-Value Widget mit und ohne Formatierung"]
 
 Wenn Sie auf den Link in einem Widget mit einem Wert oder einem Gauge-Widget klicken, wird eine Abfrageseite angezeigt, die der ersten Abfrage im Widget entspricht.
 
@@ -692,7 +690,7 @@ NOTE: Cloud Insights nutzt die Namensstandards für die Benennung amerikanischer
 
 Wenn Sie über ein Widget mit Zeitreihen verfügen (z. B. Linie, Spline, Bereich, gestapelter Bereich), das zwei Abfragen enthält, bei denen beide die primäre Y-Achse dargestellt werden, wird die Basiseinheit nicht oben auf der Y-Achse angezeigt. Wenn Ihr Widget jedoch über eine Abfrage auf der primären Y-Achse und eine Abfrage auf der sekundären Y-Achse verfügt, werden die Basiseinheiten für jede einzelne Achse angezeigt.
 
-image:UnitsOnPrimaryAnd SecondaryYAxis.png["Einheiten an beiden Y-Achsen"]
+image:UnitsOnPrimaryAndSecondaryYAxis.png["Einheiten an beiden Y-Achsen"]
 
 Wenn Ihr Widget drei oder mehr Abfragen hat, werden Basiseinheiten auf der Y-Achse nicht angezeigt.
 
@@ -802,8 +800,8 @@ In Kombination mit *TV-Modus* ermöglicht die automatische Aktualisierung die An
 
 NOTE: Da NetApp BlueXP über eine eigene Zeitüberschreitung für die Benutzeranmeldung von 7 Tagen verfügt, muss sich Cloud Insights auch bei diesem Ereignis abmelden. Sie können sich einfach erneut anmelden und Ihr Dashboard wird weiterhin angezeigt.
 
-* Um den TV-Modus zu aktivieren, klicken Sie auf image:ActivateTVMode.png["TV-Modus"] Schaltfläche.
-* Um den TV-Modus zu deaktivieren, klicken Sie oben links auf dem Bildschirm auf die Schaltfläche *Beenden*. image:ExitTVMode.png["Schaltfläche Exit"]
+* Um den TV-Modus zu aktivieren, klicken Sie auf die Schaltfläche TV-Modus.
+* Um den TV-Modus zu deaktivieren, klicken Sie oben links auf dem Bildschirm auf die Schaltfläche *Beenden*.
 
 
 Sie können die automatische Aktualisierung vorübergehend unterbrechen, indem Sie oben rechts auf die Schaltfläche „Pause“ klicken. Während der Pause wird im Feld Zeitbereich des Dashboards der aktive Zeitraum der angehaltenen Daten angezeigt. Ihre Daten werden weiterhin erfasst und aktualisiert, während die automatische Aktualisierung angehalten wird. Klicken Sie auf die Schaltfläche Fortsetzen, um mit der automatischen Aktualisierung von Daten fortzufahren.

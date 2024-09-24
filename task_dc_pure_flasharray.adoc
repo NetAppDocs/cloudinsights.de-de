@@ -19,17 +19,17 @@ summary: Pure Storage Data Collector wird konfiguriert.
 
 
 [role="lead"]
-Cloud Insights erfasst mithilfe des Datensammlers Pure Storage FlashArray Bestands- und Performance-Daten.
+Data Infrastructure Insights verwendet den Pure Storage FlashArray Datensammler zur Erfassung von Bestands- und Performance-Daten.
 
 
 
 == Terminologie
 
-Für jeden von Cloud Insights erfassten Asset-Typ wird die am häufigsten für die Ressource verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die gängigste Terminologie für die Ressource angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Laufwerk (SSD) | Festplatte 

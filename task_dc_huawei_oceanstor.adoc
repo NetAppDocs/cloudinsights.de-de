@@ -19,17 +19,17 @@ summary: 'Konfigurieren des Datensammlers Huawei OceanStor (REST/HTTPS)'
 
 
 [role="lead"]
-Cloud Insights verwendet den Datensammler Huawei OceanStor (REST/HTTPS), um Inventar und Performance für Huawei OceanStor und OceanStor Dorado Storage zu ermitteln.
+Data Infrastructure Insights nutzt den Huawei OceanStor (REST/HTTPS) Datensammler zur Ermittlung von Inventar und Leistung für Huawei OceanStor und OceanStor Dorado Speicher.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestands- und Leistungsinformationen vom Huawei OceanStor. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestands- und Leistungsinformationen vom Huawei OceanStor. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Storage-Pool | Storage-Pool 

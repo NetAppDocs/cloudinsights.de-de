@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: Willkommen beim Dokumentationsportal für Cloud Insights. 
+summary: Willkommen beim Dokumentationsportal zu Data Infrastructure Insights. 
 keywords:  
 ---
-= Cloud Insights-Dokumentation
+= Dokumentation zu Data Infrastructure Insights
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ keywords:
 
 
 [role="lead"]
-NetApp Cloud Insights ist ein Tool für das Monitoring der Cloud-Infrastruktur, mit dem Sie Ihre gesamte Infrastruktur im Blick haben. Es überwacht nicht nur alle Ressourcen, die in Public Clouds und privaten Datacentern liegen, sondern hilft auch dabei, Fehler aufzuspüren und den Ressourceneinsatz zu optimieren. Cloud Insights
+NetApp Data Infrastructure Insights (ehemals Cloud Insights) ist ein Cloud-Infrastruktur-Monitoring-Tool, mit dem Sie die gesamte Infrastruktur im Blick haben. Es überwacht nicht nur alle Ressourcen, die in Public Clouds und privaten Datacentern liegen, sondern hilft auch dabei, Fehler aufzuspüren und den Ressourceneinsatz zu optimieren.
 
 
 
-== Welche Vorteile bietet Cloud Insights für mich?
+== Welche Vorteile bietet mir Dateninfrastruktur Insights?
 
-Cloud Insights bietet Hybrid-Multi-Cloud-Monitoring und ermöglicht die Beobachtung von Infrastruktur und Workloads in einem kompletten Stack.
+Data Infrastructure Insights ermöglicht das Monitoring in der Hybrid-Multi-Cloud, wodurch Sie Infrastruktur und Workloads vollständig beobachten können.
 
 * Datensammler für heterogene Infrastrukturen und Workloads einschließlich Kubernetes
 * Offener Telegraf-Kollektor und offene APIs für eine einfache Integration
@@ -42,7 +42,7 @@ Cloud Insights bietet Hybrid-Multi-Cloud-Monitoring und ermöglicht die Beobacht
 
 == Erste Schritte
 
-* Wie kann ich link:task_cloud_insights_onboarding_1.html["*Start*"] Mit Cloud Insights?
+* link:task_cloud_insights_onboarding_1.html["*Start*"]Welche Vorteile bietet Dateninfrastruktur Insights?
 * Ich bin angemeldet. Was mache ich nun?link:task_getting_started_with_cloud_insights.html["Erfassen Von Daten"]
 link:concept_user_roles.html["Benutzer einrichten"]
 * Genial! Nächste Schritte

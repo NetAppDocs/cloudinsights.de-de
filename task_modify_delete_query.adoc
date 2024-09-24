@@ -26,13 +26,12 @@ Sie können die Kriterien ändern, die einer Abfrage zugeordnet sind, wenn Sie d
 == Ändern einer Abfrage
 
 .Schritte
-. Klicken Sie auf *Abfragen* und wählen Sie *Alle Anfragen anzeigen*.
+. Klicken Sie auf *Explore* und wählen Sie *All Metric Queries*.
 +
 Die Seite Abfragen wird angezeigt.
 
 . Klicken Sie auf den Namen der Abfrage
-. Um der Abfrage ein Kriterium hinzuzufügen, klicken Sie auf image:GearIcon.png["Spalten"] Wählen Sie in der Liste ein Kriterium aus.
-. Um einen Filter aus der Abfrage zu entfernen, klicken Sie auf das *X* neben dem zu entfernenden Filter.
+. Um der Abfrage ein Kriterium hinzuzufügen, klicken Sie auf das Symbol Spalten, und wählen Sie eine Metrik oder ein Attribut aus der Liste aus.
 
 
 Wenn Sie alle erforderlichen Änderungen vorgenommen haben, führen Sie einen der folgenden Schritte aus:

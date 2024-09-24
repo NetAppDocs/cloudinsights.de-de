@@ -22,7 +22,7 @@ Dieser Datensammler erfasst Inventar
 
 == Terminologie
 
-Cloud Insights erwirbt Inventar von diesem Sammler.
+Data Infrastructure Insights erfasst Bestände aus diesem Collector.
 
 
 

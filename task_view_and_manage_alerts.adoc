@@ -31,7 +31,7 @@ TIP: Monitore und Alarmfunktionen sind in der Cloud Insights Standard Edition un
 Gehen Sie wie folgt vor, um Meldungen anzuzeigen und zu verwalten.
 
 . Navigieren Sie zur Seite *Alerts > All Alerts*.
-. Eine Liste der letzten 1,000 Meldungen wird angezeigt. Sie können diese Liste in einem beliebigen Feld sortieren, indem Sie auf die Spaltenüberschrift für das Feld klicken. In der Liste werden die folgenden Informationen angezeigt. Beachten Sie, dass standardmäßig nicht alle dieser Spalten angezeigt werden. Sie können die anzuzeigenden Spalten auswählen, indem Sie auf das Zahnrad-Symbol klicken image:gear.png["Zahnrad-Symbol"]:
+. Eine Liste der letzten 1,000 Meldungen wird angezeigt. Sie können diese Liste in einem beliebigen Feld sortieren, indem Sie auf die Spaltenüberschrift für das Feld klicken. In der Liste werden die folgenden Informationen angezeigt. Beachten Sie, dass standardmäßig nicht alle dieser Spalten angezeigt werden. Sie können die anzuzeigenden Spalten auswählen, indem Sie auf das Zahnradsymbol klicken:
 +
 ** *Alarm-ID*: Vom System generierte eindeutige Alarm-ID
 ** *Auslösezeit*: Der Zeitpunkt, zu dem der betreffende Monitor den Alarm ausgelöst hat

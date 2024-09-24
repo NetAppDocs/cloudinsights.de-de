@@ -19,7 +19,7 @@ summary: Konfiguration des Kapacitors
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Metriken von influxdatapacitor zu sammeln.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen von influxdata Kapacitor zu sammeln.
 
 
 

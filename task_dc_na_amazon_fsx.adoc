@@ -19,20 +19,20 @@ summary: Amazon FSX für NetApp ONTAP Data Collector
 
 
 [role="lead"]
-Dieser Datensammler erfasst Bestands- und Performance-Daten von Amazon FSX für NetApp ONTAP. Dieser Datensammler wird schrittweise in allen Cloud Insights-Servicegebieten zur Verfügung gestellt. Wenden Sie sich an Ihren Vertriebsmitarbeiter, wenn das Symbol für diesen Sammler in Ihrer Cloud Insights-Umgebung nicht angezeigt wird.
+Dieser Datensammler erfasst Bestands- und Performance-Daten von Amazon FSX für NetApp ONTAP. Dieser Datensammler wird in den gesamten Serviceregionen von Data Infrastructure Insights inkrementell zur Verfügung gestellt. Wenden Sie sich an Ihren Vertriebsmitarbeiter, wenn das Symbol für diesen Collector in Ihrer Data Infrastructure Insights Environment nicht angezeigt wird.
 
 
-NOTE: Für diesen Cloud Insights-Collector ist ein ONTAP-Benutzer mit der Rolle _Filesystem-scoped_ erforderlich. Bitte sehen Sie sich die AWS durchsehen link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["Rollen und Regeln"] Dokumentation für verfügbare Optionen. AWS unterstützt derzeit nur eine Art Benutzerrolle mit Filesystem Scope, nämlich _fsxadmin_. Dies ist die geeignete Rolle, die für den Cloud Insights-Collector verwendet werden soll. Dem Benutzer sollten auch alle drei dieser Anwendungen zugewiesen sein: http, ontapi, ssh.
+NOTE: Für diesen Dateninfrastrukturüberblick ist ein ONTAP-Benutzer mit einer Rolle _Filesystem-scoped_ erforderlich. In der AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["Rollen und Regeln"] Dokumentation finden Sie weitere Informationen zu verfügbaren Optionen. AWS unterstützt derzeit nur eine Art Benutzerrolle mit Filesystem Scope, nämlich _fsxadmin_. Dies ist die geeignete Rolle für den Data Infrastructure Insights Collector. Dem Benutzer sollten auch alle drei dieser Anwendungen zugewiesen sein: http, ontapi, ssh.
 
 
 
 == Terminologie
 
-Cloud Insights erfasst Bestands- und Performance-Daten des FSX-NetApp Datensammlers. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst Inventar- und Performance-Daten aus dem FSX-NetApp-Datensammler. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Cluster | Storage 
@@ -58,8 +58,8 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den FSX-
 * Seriennummer: Die Seriennummer des Arrays.
 * IP: In der Regel werden die in der Datenquelle konfigurierten IP(s) oder Hostnamen(s) verwendet.
 * Rohkapazität: Die Summe aus 2 des gesamten SSD-Speichers, der dem FSX-Dateisystem zugewiesen ist
-* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise beziehen Cloud Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Anstelle des Arrays, die dies anbieten, führt Cloud Insights in der Regel eine IOPS-gewichtete Berechnung durch, die aus den Statistiken der einzelnen internen Volumen abgeleitet wird.
-* Durchsatz: Aggregiert aus internen Volumes. Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Erstellung programmgesteuert durch die Cloud Insights Datenquelle im Rahmen der Bestandsberichterstattung.
+* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise bezieht Data Infrastructure Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Statt dieses Array in Betracht zu ziehen, führt Data Infrastructure Insights in der Regel eine IOPS-gewichtete Berechnung aus den Statistiken der einzelnen internen Volumes durch.
+* Durchsatz: Aggregiert aus internen Volumes. Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Programmgesteuert erstellt von der Datenquelle „Data Infrastructure Insights“ als Teil der Bestandsberichterstattung.
 
 
 
@@ -120,7 +120,7 @@ Dieser Datensammler sammelt die folgenden erweiterten Metriken aus dem FSX für 
 * Workload_Volume
 
 
-Beachten Sie, dass FSX CLI- und API-Befehle einige Kapazitätswerte abrufen, die Cloud Insights ZAPI nicht sammelt, so dass bestimmte Kapazitätswerte (z. B. für Speicherpools) in Cloud Insights anders sein können als sie auf dem FSX selbst sind.
+Beachten Sie, dass FSX CLI- und API-Befehle einige Kapazitätswerte abrufen, die Data Infrastructure Insights ZAPI nicht sammelt, so dass bestimmte Kapazitätswerte (z. B. für Speicherpools) in Data Infrastructure Insights anders sein können als sie auf dem FSX selbst sind.
 
 
 

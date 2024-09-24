@@ -19,7 +19,7 @@ summary: Konfiguration des netstat Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammlung, um netstat-Kennzahlen zu sammeln.
+Data Infrastructure Insights verwendet diesen Datensammler, um netstat-Metriken zu erfassen.
 
 
 

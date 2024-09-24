@@ -19,7 +19,7 @@ summary: Konfigurieren des Dell EMC XC-Datensammlers.
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Bestands- und Performanceinformationen für die Dell EMC XC-Speicher-Arrays zu ermitteln.
+Data Infrastructure Insights verwendet diesen Datensammler, um Bestands- und Leistungsinformationen für die Dell Speicherarrays der EMC XC-Serie zu ermitteln.
 
 
 

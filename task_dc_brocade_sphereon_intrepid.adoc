@@ -19,7 +19,7 @@ summary: Konfigurieren des Datensammlers Brocade Sphereon/Intrepid Switch
 
 
 [role="lead"]
-Cloud Insights nutzt die Datensammlung von Brocade Sphereon/Intrepid Switch (SNMP), um den Bestand an Brocade Sphereon- oder Intrepid-Switches zu ermitteln.
+Dateninfrastruktur Insights verwendet den Brocade-Datensammler Sphereon/Intrepid Switch (SNMP) zur Bestandsaufnahme von Brocade Sphereon oder Intrepid Switches.
 
 
 
@@ -27,7 +27,7 @@ Cloud Insights nutzt die Datensammlung von Brocade Sphereon/Intrepid Switch (SNM
 
 Zur Konfiguration dieses Datensammlers müssen die folgenden Anforderungen erfüllt sein:
 
-* Für alle Switches in der Fabric muss eine IP-Konnektivität vorhanden sein. Wenn Sie das Kontrollkästchen Alle Switches in der Fabric erkennen auswählen, erkennt Cloud Insights alle Switches in der Fabric. Für die Erkennung ist jedoch eine IP-Konnektivität für diese zusätzlichen Switches erforderlich.
+* Es muss eine IP-Verbindung zu allen Switches in der Fabric vorhanden sein. Wenn Sie das Kontrollkästchen Alle Switches in der Fabric ermitteln aktivieren, identifiziert Data Infrastructure Insights alle Switches in der Fabric, benötigt jedoch IP-Konnektivität zu diesen zusätzlichen Switches, um sie zu erkennen.
 * Schreibgeschützte Community-Zeichenfolge bei Verwendung von SNMP V1 oder SNMP V2
 * HTTP-Zugriff auf den Switch, um Zoning-Informationen zu erhalten.
 * Zugriffsvalidierung durch Ausführen des snmpwalk-Dienstprogramms zum Switch (siehe _<install_path>\bin\_).

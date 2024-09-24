@@ -19,17 +19,17 @@ summary: Konfigurieren von Brocade BNA Collector
 
 
 [role="lead"]
-Cloud Insights erfasst mithilfe des Brocade Network Advisor Datensammlers Inventar- und Performance-Daten von Brocade Switches.
+Dateninfrastrukturanalysen verwenden den Datensammler Brocade Netzwerkberater, um Bestands- und Performancedaten von Brocade-Switches zu erfassen.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom Datensammler Brocade Network Advisor. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Inventarinformationen aus dem Brocade Netzwerkberater-Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Switch | Switch 
@@ -51,7 +51,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 
 Zur Konfiguration dieses Datensammlers sind folgende Voraussetzungen erforderlich:
 
-* Die Cloud Insights-Erfassungseinheit führt Verbindungen zum TCP-Port 443 auf dem BNA-Server ein. BNA-Server muss Version 14.2.1 oder höher ausführen.
+* Die Data Infrastructure Insights Acquisition Unit führt Verbindungen zu TCP-Port 443 auf dem BNA-Server ein. BNA-Server muss Version 14.2.1 oder höher ausführen.
 * IP-Adresse des Brocade Network Advisor Servers
 * Benutzername und Kennwort für ein Administratorkonto
 * Port-Anforderung: HTTP/HTTPS 443

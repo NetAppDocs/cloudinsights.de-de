@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: security_admin_tool.html 
-summary: Cloud Insights befolgt die Best Practices für die Sicherheit während des gesamten Release-Lebenszyklus. 
+summary: Data Infrastructure Insights befolgt während des gesamten Release-Lebenszyklus sicherheitstechnikrelevante Best Practices. 
 keywords: security, risk, protection 
 ---
 = Sicherheitstool
@@ -19,11 +19,11 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-Cloud Insights umfasst Sicherheitsfunktionen, mit denen Ihre Umgebung sicherer betrieben werden kann. Die Funktionen umfassen Verbesserungen bei der Verschlüsselung, Passwort-Hashing und die Fähigkeit, interne Benutzerpasswörter zu ändern sowie Schlüsselpaare, die Kennwörter verschlüsseln und entschlüsseln.
+Dateninfrastruktur Insights umfasst Sicherheitsfunktionen, mit denen Ihre Umgebung sicherer betrieben werden kann. Die Funktionen umfassen Verbesserungen bei der Verschlüsselung, Passwort-Hashing und die Fähigkeit, interne Benutzerpasswörter zu ändern sowie Schlüsselpaare, die Kennwörter verschlüsseln und entschlüsseln.
 
 Zum Schutz sensibler Daten empfiehlt NetApp, nach einer Installation oder einem Upgrade die Standardschlüssel und das Benutzerpasswort „_Acquisition_“ zu ändern.
 
-Verschlüsselte Passwörter für die Datenquelle werden in Cloud Insights gespeichert, wobei ein öffentlicher Schlüssel zur Verschlüsselung von Passwörtern verwendet wird, wenn ein Benutzer diese auf einer Konfigurationsseite des Datensammlers eingibt. Cloud Insights verfügt nicht über die privaten Schlüssel, die zum Entschlüsseln der Datensammlerkennwörter erforderlich sind. Nur Erfassungseinheiten (aus) verfügen über den privaten Datensammlerschlüssel, der zum Entschlüsseln der Datensammlerkennwörter erforderlich ist.
+Verschlüsselte Passwörter der Datenquelle werden in Data Infrastructure Insights gespeichert, das einen öffentlichen Schlüssel verwendet, um Passwörter zu verschlüsseln, wenn ein Benutzer sie auf einer Konfigurationsseite für den Datensammler eingibt. Data Infrastructure Insights verfügt nicht über die privaten Schlüssel, die zum Entschlüsseln der Datensammlerkennwörter erforderlich sind. Nur Acquisition Units (aus) verfügen über den privaten Datensammlerschlüssel, der zum Entschlüsseln der Datensammlerkennwörter erforderlich ist.
 
 
 
@@ -35,7 +35,7 @@ Wenn Ihr Insight-System nicht standardmäßige Sicherheitskonfigurationen enthä
 
 == Sicherheitsverwaltung auf der Akquisitionseinheit
 
-Mit dem SecurityAdmin-Tool können Sie Sicherheitsoptionen für Cloud Insights verwalten und auf dem System der Erfassungseinheit ausgeführt werden. Die Sicherheitsverwaltung umfasst das Verwalten von Schlüsseln und Passwörtern, das Speichern und Wiederherstellen von Sicherheitskonfigurationen, die Sie erstellen oder auf die Standardeinstellungen wiederherstellen.
+Mit dem SecurityAdmin-Tool können Sie die Sicherheitsoptionen für Data Infrastructure Insights verwalten und wird auf dem Erfassungssystem ausgeführt. Die Sicherheitsverwaltung umfasst das Verwalten von Schlüsseln und Passwörtern, das Speichern und Wiederherstellen von Sicherheitskonfigurationen, die Sie erstellen oder auf die Standardeinstellungen wiederherstellen.
 
 
 
@@ -168,7 +168,7 @@ usage: securityadmin -pr -ap <arg> | -h | -rp | -upr <arg>
 
 The purpose of this tool is to enable reconfiguration of security aspects
 of the Acquisition Unit such as encryption keys, and proxy configuration,
-etc. For more information about this tool, please check the Cloud Insights
+etc. For more information about this tool, please check the Data Infrastructure Insights
 Documentation.
 
 -ap,--add-proxy <arg>       add a proxy server.  Arguments: ip=ip
@@ -207,7 +207,7 @@ Um einen Proxy zu aktualisieren, lautet der Befehl
 
 Wenn Sie ein UNIX-Shell-Skript bereitstellen, kann es von der Erfassungseinheit ausgeführt werden, um den *privaten Schlüssel* und den *öffentlichen Schlüssel* von Ihrem Schlüsselverwaltungssystem abzurufen.
 
-Um den Schlüssel abzurufen, führt Cloud Insights das Skript aus und gibt zwei Parameter an: _Key id_ und _key type_. _Key id_ kann verwendet werden, um den Schlüssel in Ihrem Key Management System zu identifizieren. _Schlüsseltyp_ ist entweder "öffentlich" oder "privat". Wenn der Schlüsseltyp „public“ ist, muss das Skript den öffentlichen Schlüssel zurückgeben. Wenn der Schlüsseltyp „privat“ ist, muss der private Schlüssel zurückgegeben werden.
+Um den Schlüssel abzurufen, führt Data Infrastructure Insights das Skript aus und gibt zwei Parameter an: _Key id_ und _key type_. _Key id_ kann verwendet werden, um den Schlüssel in Ihrem Key Management System zu identifizieren. _Schlüsseltyp_ ist entweder "öffentlich" oder "privat". Wenn der Schlüsseltyp „public“ ist, muss das Skript den öffentlichen Schlüssel zurückgeben. Wenn der Schlüsseltyp „privat“ ist, muss der private Schlüssel zurückgegeben werden.
 
 Um den Schlüssel an die Erfassungseinheit zurücksenden zu können, muss das Skript den Schlüssel auf die Standardausgabe drucken. Das Skript muss _only_ den Schlüssel zur Standardausgabe drucken; kein anderer Text muss in der Standardausgabe gedruckt werden. Sobald der angeforderte Schlüssel in die Standardausgabe gedruckt wurde, muss das Skript mit einem Exit-Code von 0 beendet werden. Jeder andere Rückgabewert wird als Fehler angesehen.
 

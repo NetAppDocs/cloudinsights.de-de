@@ -19,17 +19,17 @@ summary: Pure Storage Data Collector wird konfiguriert.
 
 
 [role="lead"]
-Cloud Insights verwendet den Datensammler Pure Storage FlashBlade, um Inventar- und Performance-Daten von FlashBlade-Clustern zu erfassen, die Version 2 ihrer REST-API offenlegen
+Data Infrastructure Insights verwendet den Pure Storage FlashBlade Data Collector, um Inventar- und Performance-Daten von FlashBlade-Clustern zu erfassen, die Version 2 ihrer REST-API bieten
 
 
 
 == Terminologie
 
-Für jeden von Cloud Insights erfassten Asset-Typ wird die am häufigsten für die Ressource verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die gängigste Terminologie für die Ressource angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Laufwerk (SSD) | Festplatte 
@@ -72,7 +72,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 | FlashBlade Host-IP-Adresse | IP-Adresse des Storage-Systems 
 
 
-| Benutzername | Benutzername, der Cloud Insights-Administratoren hilft, sich zu merken, zu welchem Benutzer ihr API-Token gehört 
+| Benutzername | Benutzername, der Data Infrastructure Insights Administratoren hilft, sich zu merken, zu welchem Benutzer ihr API-Token gehört 
 
 
 | API-Token | API-Token 

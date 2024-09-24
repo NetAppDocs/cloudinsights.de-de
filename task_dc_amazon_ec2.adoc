@@ -19,7 +19,7 @@ summary: Amazon EC2 Data Collector wird konfiguriert.
 
 
 [role="lead"]
-Cloud Insights erfasst mit dem Amazon EC2 Data Collector Bestands- und Performance-Daten von EC2 Instanzen.
+Data Infrastructure Insights verwendet den Amazon EC2 Datensammler, um Bestands- und Performance-Daten von EC2-Instanzen zu erfassen.
 
 
 
@@ -63,7 +63,7 @@ Geben Sie die Daten in die Felder des Datensammlers gemäß der folgenden Tabell
 | AWS IAM Secret Access Key | Geben Sie den AWS IAM-Schlüssel für den geheimen Zugriff ein. Erforderlich, wenn Sie die IAM-Rolle nicht verwenden. 
 
 
-| Ich verstehe, dass mir AWS API-Anfragen nach | Sehen Sie sich dies an, um zu überprüfen, ob AWS Sie mit API-Anfragen von Cloud Insights-Umfragen in Rechnung stellt. 
+| Ich verstehe, dass mir AWS API-Anfragen nach | Überprüfen Sie dies, um zu überprüfen, ob AWS Sie für API-Anfragen abfragt, die durch die Data Infrastructure Insights Umfrage gemacht wurden. 
 |===
 
 
@@ -92,7 +92,7 @@ Geben Sie die Daten in die Felder des Datensammlers gemäß der folgenden Tabell
 | Leistungsintervall (Sek.) | Der Standardwert ist 1800 
 
 
-| CloudWatch Agent Metrics Namespace | Namespace in EC2/EBS zur Erfassung von Daten Wenn die Namen der Standardmetriken in diesem Namespace geändert werden, kann Cloud Insights die umbenannten Daten möglicherweise nicht erfassen. Es wird empfohlen, die standardmäßigen metrischen Namen zu belassen. 
+| CloudWatch Agent Metrics Namespace | Namespace in EC2/EBS zur Erfassung von Daten Wenn die Namen der Standardmetriken in diesem Namespace geändert werden, kann Data Infrastructure Insights diese umbenannten Daten möglicherweise nicht erfassen. Es wird empfohlen, die standardmäßigen metrischen Namen zu belassen. 
 |===
 
 
@@ -120,11 +120,11 @@ Hinweis: Die IAM-Rolle kann nur verwendet werden, wenn die Acquisition Unit in e
 
 
 
-== Zuordnen von Amazon Tags zu Cloud Insights-Annotationen
+== Zuordnen von Amazon Tags zu Annotationen zu Data Infrastructure Insights
 
-Der Amazon EC2 Data Collector bietet eine Option, mit der Sie Cloud Insights Annotationen mit Tags ausfüllen können, die auf EC2 konfiguriert sind. Die Anmerkungen müssen genau wie die EC2-Tags benannt werden. Cloud Insights wird immer die gleichen Textanmerkungen mit dem gleichen Namen ausfüllen und versucht, Anmerkungen anderer Typen (Nummer, boolescher Wert usw.) am besten auszufüllen. Wenn Ihre Anmerkung einen anderen Typ hat und der Datensammler sie nicht füllt, kann es erforderlich sein, die Anmerkung zu entfernen und sie als Texttyp neu zu erstellen.
+Der Amazon EC2 Datensammler enthält eine Option zum Ausfüllen von Anmerkungen zu Data Infrastructure Insights mit auf EC2 konfigurierten Tags. Die Anmerkungen müssen genau wie die EC2-Tags benannt werden. Data Infrastructure Insights füllt immer Anmerkungen vom gleichen Namen aus und versucht, Anmerkungen anderer Typen (Zahl, Boolescher Wert usw.) zu füllen. Wenn Ihre Anmerkung einen anderen Typ hat und der Datensammler sie nicht füllt, kann es erforderlich sein, die Anmerkung zu entfernen und sie als Texttyp neu zu erstellen.
 
-Bei AWS werden die Groß-/Kleinschreibung berücksichtigt, während die Groß-/Kleinschreibung von Cloud Insights nicht berücksichtigt wird. Wenn Sie also eine Annotation mit dem Namen „EIGENTÜMER“ in Cloud Insights und den Tags mit dem Namen „EIGENTÜMER“, „Eigentümer“ und „Eigentümer“ in EC2 erstellen, wird all die EC2-Varianten des „EIGENTÜMERS“ der Annotation von Cloud Insight zugeordnet.
+Bei AWS muss die Groß-/Kleinschreibung nicht beachtet werden, während bei Data Infrastructure Insights die Groß-/Kleinschreibung nicht beachtet werden muss. Wenn Sie in Data Infrastructure Insights eine Annotation mit dem Namen „OWNER“, „OWNER“ und „OWNER“ in EC2 erstellen, werden alle EC2-Variationen von „Owner“ der „Owner“ in der Annotation von Cloud Insight mit der Bezeichnung „OWNER“ zusammengefasst.
 
 
 
@@ -136,17 +136,17 @@ Im Abschnitt AWS Data Collector *Erweiterte Konfiguration* können Sie das Feld 
 
 == Erfassung über AWS Child-Konten
 
-Cloud Insights unterstützt die Erfassung von untergeordneten Konten für AWS innerhalb eines einzigen AWS Datensammlers. Die Konfiguration dieser Sammlung erfolgt in der AWS-Umgebung:
+Data Infrastructure Insights unterstützt die Erfassung von untergeordneten Konten für AWS innerhalb eines einzigen AWS-Datensammlers. Die Konfiguration dieser Sammlung erfolgt in der AWS-Umgebung:
 
 * Sie müssen jedes Child-Konto so konfigurieren, dass eine AWS Rolle zugewiesen wird, die es der Haupt-Account-ID ermöglicht, über das Children-Konto auf EC2 Details zuzugreifen.
 * Für jedes untergeordnete Konto muss der Rollenname mit demselben String konfiguriert sein.
-* Geben Sie diese Zeichenfolge für den Rollennamen im Abschnitt Cloud Insights AWS Data Collector *Erweiterte Konfiguration* im Feld * Kontotrole* ein.
+* Geben Sie diese Zeichenfolge für den Rollennamen im Abschnitt Data Infrastructure Insights AWS Data Collector *Advanced Configuration* im Feld *Cross Account role* ein.
 * Das Konto, auf dem der Collector installiert ist, muss über _Delegate Access Administrator_ Privileges verfügen. link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["AWS-Dokumentation"]Weitere Informationen finden Sie im.
 
 
 Best Practice: Es wird dringend empfohlen, dem EC2-Hauptkonto die vordefinierte Richtlinie _AmazonEC2ReadOnlyAccess_ zuzuweisen. Außerdem sollte dem in der Datenquelle konfigurierten Benutzer mindestens die vordefinierte Richtlinie _AWSOrganizationsReadOnlyAccess_ zugewiesen sein, um AWS abzufragen.
 
-Informationen zum Konfigurieren Ihrer Umgebung, damit Cloud Insights von den AWS-Child-Konten erfasst werden kann, finden Sie im folgenden Abschnitt:
+Im Folgenden finden Sie Informationen zur Konfiguration Ihrer Umgebung, damit Data Infrastructure Insights von untergeordneten AWS-Konten erfasst werden kann:
 
 link:https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html["Tutorial: Delegieren des Zugriffs über AWS Konten mithilfe von IAM-Rollen"]
 

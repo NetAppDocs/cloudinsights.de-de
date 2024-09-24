@@ -19,7 +19,7 @@ summary: Redis Konfiguration des Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Kennzahlen von RethinkDB zu sammeln.
+Data Infrastructure Insights nutzt diesen Datensammler, um Kennzahlen von RethinkDB zu sammeln.
 
 
 

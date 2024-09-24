@@ -29,7 +29,7 @@ Cloud Insight erfasst mithilfe von REST die folgenden Inventarinformationen der 
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplatte | Festplatte 
@@ -56,7 +56,7 @@ Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Dies
 == Anforderungen
 
 * Die IP-Adresse jedes Controllers im Array
-* Dieser Collector unterstützt nur Arrays mit E-Series-Modellen mit *nativen REST-API-Funktionen*. Die E-Series Organisation liefert eine Array-externe, installierbare REST API-Distribution für ältere E-Series Arrays, die dieses Szenario nicht unterstützt. Benutzer mit älteren Arrays sollten weiterhin Cloud Insights verwenden. link:task_dc_na_eseries.html["E-Series SANtricity API"] Kollektor.
+* Dieser Collector unterstützt nur Arrays mit E-Series-Modellen mit *nativen REST-API-Funktionen*. Die E-Series Organisation liefert eine Array-externe, installierbare REST API-Distribution für ältere E-Series Arrays, die dieses Szenario nicht unterstützt. Benutzer mit älteren Arrays sollten weiterhin den link:task_dc_na_eseries.html["E-Series SANtricity API"]Collector von Data Infrastructure Insights verwenden.
 * Das Feld „E-Series Controller IP-Adressen“ unterstützt eine durch Kommas getrennte Zeichenfolge von 2 IP/Hostnamen. Der Collector versucht intelligent, den zweiten IP/Hostnamen zu verwenden, wenn der erste nicht zugänglich ist.
 * HTTPS-Port: Der Standardwert ist 8443.
 
@@ -102,9 +102,9 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Asse
 * IP: In der Regel werden die in der Datenquelle konfigurierten IP(s) oder Hostnamen(s) verwendet
 * Microcode-Version – Firmware
 * Rohkapazität – Basis-2-Zusammenfassung aller physischen Laufwerke im System, unabhängig von ihrer Rolle
-* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise beziehen Cloud Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Anstelle des Arrays, die dies anbieten, führt Cloud Insights in der Regel eine IOPS-gewichtete Berechnung aus den Statistiken der einzelnen Volumes durch.
-* Durchsatz – der Gesamthost des Arrays mit Blick auf den Durchsatz. Idealerweise direkt aus dem Array bezogen, falls nicht verfügbar, fasst Cloud Insights den Durchsatz der Volumes zusammen, um diesen Wert abzuleiten
-* Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Erstellt programmgesteuert durch die Cloud Insights Datenquelle im Rahmen der Bestandsberichterstattung
+* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise bezieht Data Infrastructure Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Statt dieses Array in Betracht zu ziehen, führt Data Infrastructure Insights in der Regel eine IOPS-gewichtete Berechnung aus den Statistiken der einzelnen Volumes durch.
+* Durchsatz – der Gesamthost des Arrays mit Blick auf den Durchsatz. Data Infrastructure Insights wird im Idealfall direkt aus dem Array bezogen, falls nicht verfügbar, und fasst den Durchsatz der Volumes zusammen, um diesen Wert abzuleiten
+* Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Programmgesteuert erstellt von der Data Infrastructure Insights Datenquelle als Teil der Bestandsberichterstattung  
 
 
 

@@ -222,4 +222,4 @@ Wenn Sie beispielsweise auf den verknüpften Prozentsatz neben einem Top-korreli
 
 
 
-Nachdem Sie ein Asset ausgewählt haben, wird es im Abschnitt zusätzliche Ressourcen angezeigt. Wenn Sie keine Informationen über das Asset mehr anzeigen möchten, klicken Sie auf image:TrashCanIcon.png["Löschen"].
+Nachdem Sie ein Asset ausgewählt haben, wird es im Abschnitt zusätzliche Ressourcen angezeigt. Wenn Sie keine Informationen mehr über das Asset anzeigen möchten, klicken Sie auf das Papierkorb-Symbol, um es zu löschen.

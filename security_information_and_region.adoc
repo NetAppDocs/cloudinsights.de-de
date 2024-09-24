@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: security_information_and_region.html 
-summary: Cloud Insights befolgt die Best Practices für die Sicherheit während des gesamten Release-Lebenszyklus. 
+summary: Data Infrastructure Insights befolgt während des gesamten Release-Lebenszyklus sicherheitstechnikrelevante Best Practices. 
 keywords: security, risk, protection 
 ---
 = Informationen und Region
@@ -19,13 +19,13 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-NetApp nimmt die Sicherheit von Kundeninformationen sehr ernst. So und wo Cloud Insights Ihre Informationen speichert:
+NetApp nimmt die Sicherheit von Kundeninformationen sehr ernst. Hier erfahren Sie, wie und wo Data Infrastructure Insights Ihre Informationen speichert.
 
 
 
-== Welche Informationen speichert Cloud Insights?
+== Welche Informationen werden in Data Infrastructure Insights gespeichert?
 
-Cloud Insights speichert folgende Informationen:
+Data Infrastructure Insights speichert folgende Informationen:
 
 * Performance-Daten
 +
@@ -41,7 +41,7 @@ Dies fasst vom Kunden bereitgestellte Konfigurationsdaten zusammen, die zur Verw
 
 * Secrets
 +
-Secrets bestehen aus den Anmeldeinformationen, die von der Cloud Insights-Erfassungseinheit für den Zugriff auf Kundengeräte und -Dienste verwendet werden. Diese Anmeldeinformationen werden mit einer starken asymmetrischen Verschlüsselung verschlüsselt, und die privaten Schlüssel werden nur auf den Akquisitionseinheiten gespeichert und verlassen nie die Kundenumgebung. Selbst privilegierte Cloud Insights SREs können aufgrund dieses Designs nicht in Klartext auf Kundengeheimnisse zugreifen.
+Geheimnisse umfassen die Anmeldeinformationen, die von der Data Infrastructure Insights Acquisition Unit für den Zugriff auf Kundengeräte und -Services verwendet werden. Diese Anmeldeinformationen werden mit einer starken asymmetrischen Verschlüsselung verschlüsselt, und die privaten Schlüssel werden nur auf den Akquisitionseinheiten gespeichert und verlassen nie die Kundenumgebung. Selbst privilegierte Data Infrastructure Insights SRES können aufgrund dieses Designs nicht auf Kundengeheimnisse im Klartext zugreifen.
 
 * Funktionale Daten
 +
@@ -49,7 +49,7 @@ Diese Daten werden durch die Bereitstellung des Cloud Data Service durch NetApp 
 
 * Benutzerdaten
 +
-Authentifizierungs- und Zugriffsinformationen, die NetApp BlueXP ermöglichen, mit regionalen Cloud Insights Sites zu kommunizieren, einschließlich Daten zur Benutzerautorisierung.
+Authentifizierungs- und Zugriffsinformationen, die es NetApp BlueXP  ermöglichen, mit regionalen Dateninfrastrukturen Insights zu kommunizieren, einschließlich Daten zur Benutzerautorisierung.
 
 * Sicherheitsdaten Des Benutzerverzeichnisses Für Storage-Workloads
 +
@@ -58,35 +58,35 @@ In Fällen, in denen die Workload-Sicherheitsfunktion aktiviert ist UND der Kund
 
 
 
-NOTE: Benutzerdaten im Benutzerverzeichnis beziehen sich auf Benutzerverzeichnisdaten, die vom Datensammler des Workload Security User Directory erfasst werden, nicht auf Daten der Benutzer von Cloud Insights/Workload Security selbst.
+NOTE: Benutzerverzeichnisdaten beziehen sich auf Benutzerverzeichnisinformationen, die vom Datensammler Workload Security User Directory erfasst werden, nicht auf Daten über die Benutzer von Data Infrastructure Insights/Workload Security selbst.
 
 *Es werden keine expliziten personenbezogenen Daten* aus Infrastruktur- und Dienstleistungsressourcen erhoben. Die erfassten Daten bestehen aus Performance-Kennzahlen, Konfigurationsdaten und Infrastrukturmetadaten, ähnlich wie viele Telefonanbieter mit NetApp Auto-Support und ActiveIQ. Abhängig von den Namenskonventionen des Kunden werden jedoch Daten für Shares, Volumes, VMs, qtrees, Anwendungen usw. können personenbezogene Informationen enthalten.
 
-Wenn Workload Security aktiviert ist, untersucht das System außerdem Datei- und Verzeichnisnamen auf SMB- oder anderen Freigaben, die personenbezogene Informationen enthalten können. Wenn Kunden den Workload Security User Directory Collector (der im Wesentlichen Windows SIDs über Active Directory Nutzernamen zu Benutzernamen einordnet) aktivieren, werden der Anzeigename, die Unternehmens-E-Mail-Adresse und alle ausgewählten zusätzlichen Attribute von Cloud Insights erfasst und gespeichert.
+Wenn Workload Security aktiviert ist, untersucht das System außerdem Datei- und Verzeichnisnamen auf SMB- oder anderen Freigaben, die personenbezogene Informationen enthalten können. Wenn Kunden den Workload Security User Directory Collector aktivieren (der Windows SIDs im Wesentlichen über Active Directory Benutzernamen zuordnet), werden der Anzeigename, die Unternehmens-E-Mail-Adresse und alle zusätzlich ausgewählten Attribute von Data Infrastructure Insights erfasst und gespeichert.
 
-Darüber hinaus werden Zugriffsprotokolle an Cloud Insights erstellt und enthalten die IP- und E-Mail-Adressen der Benutzer, die bei der Anmeldung beim Service verwendet werden.
+Darüber hinaus werden Zugriffsprotokolle zu Data Infrastructure Insights verwaltet und enthalten die IP- und E-Mail-Adressen der Benutzer, die zur Anmeldung beim Service verwendet werden.
 
 
 
 == Wo werden meine Informationen gespeichert?
 
-Cloud Insights speichert Informationen je nach Region, in der Ihre Umgebung erstellt wird.
+Data Infrastructure Insights speichert Informationen entsprechend der Region, in der Ihre Umgebung erstellt wird.
 
 Folgende Informationen werden in der Host-Region gespeichert:
 
 * Telemetrie- und Asset-/Objektdaten, einschließlich Zähler und Performance-Kennzahlen
 * Informationen zu den Erfassungseinheiten
 * Funktionale Daten
-* Audit-Informationen zu Benutzeraktivitäten in Cloud Insights
+* Audit-Informationen zu Benutzeraktivitäten innerhalb von Data Infrastructure Insights
 * Active Directory-Informationen zu Workload-Sicherheit
 * Informationen zur Workload Security Audit
 
 
-Die folgenden Informationen befinden sich in den USA, unabhängig davon, in welcher Region Sie Ihre Cloud Insights-Umgebung hosten:
+Die folgenden Informationen verbleiben in den USA, unabhängig von der Region, in der Ihre Data Infrastructure Insights Umgebung gehostet wird:
 
 * Angaben zum Umgebungsstandort (manchmal auch „Mandant“ genannt), z. B. Standort-/Kontoinhaber.
-* Informationen, die es NetApp BlueXP ermöglichen, mit regionalen Cloud Insights Sites zu kommunizieren, einschließlich aller Vorgänge im Hinblick auf die Benutzerautorisierung.
-* Informationen in Bezug auf die Beziehung zwischen dem Cloud Insights-Benutzer und dem Mandanten.
+* Informationen, die es NetApp BlueXP  ermöglichen, mit regionalen Einsichten zu Dateninfrastrukturen zu kommunizieren, einschließlich aller Vorgänge, die mit der Benutzerautorisierung ausgeführt werden.
+* Informationen im Zusammenhang mit der Beziehung zwischen dem Benutzer Data Infrastructure Insights und dem Mandanten.
 
 
 

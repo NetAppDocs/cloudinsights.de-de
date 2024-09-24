@@ -19,7 +19,7 @@ summary: HAProxy Data Collector-Konfiguration
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammlung, um Kennzahlen von HAProxy zu erfassen.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen von HAProxy zu sammeln.
 
 
 

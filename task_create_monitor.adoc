@@ -101,6 +101,16 @@ image:Monitor_metric_conditions.png["Definieren Sie die Bedingungen des Monitors
 
 
 
+==== Definieren Sie das Verhalten für die Alarmauflösung
+
+Sie können festlegen, wie eine Kennzahlüberwachung behoben werden soll. Ihnen stehen zwei Möglichkeiten zur Verfügung:
+
+* Beheben Sie, wenn die Metrik wieder in den zulässigen Bereich zurückkehrt.
+* Beheben Sie, wenn die Kennzahl für einen bestimmten Zeitraum innerhalb des zulässigen Bereichs liegt, von 1 Minute bis 7 Tage.
+
+
+
+
 === Protokollüberwachung
 
 Beim Erstellen eines *Protokollmonitors* wählen Sie zunächst aus der verfügbaren Protokollliste aus, welches Protokoll überwacht werden soll. Sie können dann nach den verfügbaren Attributen wie oben filtern. Sie können auch ein oder mehrere Attribute „Gruppieren nach“ auswählen.
@@ -122,12 +132,39 @@ Sie können den Monitor so erstellen, dass er mit dem Schweregrad „_kritisch_�
 
 Sie können festlegen, wie eine Protokollüberwachung behoben werden soll. Sie erhalten drei Möglichkeiten:
 
-* Sofort beheben
-* Löschen Sie die Daten nach Ablauf der Aufbewahrungsfrist (Details finden Sie auf der Seite „Editionen“). Beachten Sie, dass der Monitor keine Auflösungsbedingung per Definition hat. Daher bleibt eine Warnung _aktiv_ und unterdrückt alle nachfolgenden Warnungen mit übereinstimmenden _Group_by_, die von diesem Monitor erstellt wurden, bis die Aufbewahrungsfrist für Daten abgelaufen ist.
-* Auflösen anhand von Protokolleingaben: Warnung auflösen, wenn die Protokollzeile wie in der folgenden Definition beschrieben erkannt wird, oder nach Ablauf der Aufbewahrungsfrist löschen.
+* *Sofort beheben*: Der Alarm wird sofort behoben, ohne dass weitere Maßnahmen erforderlich sind
+* *Auflösung basierend auf Zeit*: Der Alarm wird nach Ablauf der angegebenen Zeit gelöst
+* *Auflösung basierend auf Protokolleintrag*: Der Alarm wird aufgelöst, wenn eine nachfolgende Log-Aktivität stattgefunden hat. Beispiel: Wenn ein Objekt als „verfügbar“ protokolliert wird.
 
 
-image:LogMonitorAlertResolution.png["Optionen Für Die Alarmauflösung"]
+image:Monitor_log_monitor_resolution.png["Alarmauflösung"]
+
+
+
+=== Überwachung Der Anomalieerkennung
+
+. Suchen Sie im Dropdown-Menü nach einem Objekttyp und einer Metrik, die überwacht werden soll, und wählen Sie diesen aus.
+
+
+Filter können eingesetzt werden, um festzulegen, welche Objektattribute oder Metriken überwacht werden sollen.
+
+image:AnomalyDetectionMonitorMetricChoosing.png["Filtern von Kennzahlen für die Erkennung von Anomalien"]
+
+
+
+==== Definieren Sie die Bedingungen des Monitors.
+
+. Nachdem Sie das zu überwachende Objekt und die zu überwachende Metrik ausgewählt haben, legen Sie die Bedingungen fest, unter denen eine Anomalie erkannt wird.
++
+** Wählen Sie aus, ob eine Anomalie erkannt werden soll, wenn die gewählte Metrik *über* die vorhergesagten Grenzen spikt, *unter* diese Grenzen fällt oder *Spikes über oder unter* die Grenzen fällt.
+** Stellen Sie die *Empfindlichkeit* der Erkennung ein. *Niedrig* (weniger Anomalien werden entfernt), *Mittel* oder *hoch* (es werden mehr Anomalien entdeckt).
+** Stellen Sie die Alarme auf verdorren *Warnung* oder *kritisch* ein.
+** Bei Bedarf können Sie das Rauschen reduzieren und Anomalien ignorieren, wenn die gewählte Metrik unter einem von Ihnen festgelegten Schwellenwert liegt.
+
+
+
+
+image:AnomalyDetectionMonitorDefineConditions.png["Definieren der Bedingungen, um eine Anomalieerkennung auszulösen"]
 
 
 

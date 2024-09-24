@@ -25,11 +25,11 @@ Der HP Enterprise Alletra 6000 (vormals Nimble) Datensammler unterstützt Bestan
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen von diesem Sammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus dieser Sammlung. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Array Erledigen | Storage 
@@ -69,7 +69,7 @@ Zum Erfassen von Bestands- und Konfigurationsdaten aus dem Speicher-Array müsse
 Zum Erfassen von Performance-Daten aus dem Speicher-Array müssen Sie Folgendes haben:
 
 * Auf dem Array muss NimbleOS 4.0.0 oder höher ausgeführt werden
-* Für das Array müssen Volumes konfiguriert sein. Die einzige Performance API NimbleOS hat sich für Volumes entwickelt, und alle Statistiken Cloud Insights Berichte wurden aus den Statistiken zu Volumes abgeleitet
+* Für das Array müssen Volumes konfiguriert sein. Die einzige Performance-API, die NimbleOS bietet, gilt für Volumes. Alle Statistiken zu Data Infrastructure Insights Berichten werden aus den Statistiken zu Volumes abgeleitet
 
 
 

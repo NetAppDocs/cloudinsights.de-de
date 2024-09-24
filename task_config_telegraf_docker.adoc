@@ -19,7 +19,7 @@ summary: Docker Konfiguration für die Datenerfassung
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus Docker.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen aus Docker zu sammeln.
 
 
 
@@ -80,7 +80,7 @@ volumeMounts:
 - name: docker-sock
 mountPath: /var/run/docker.sock
 ----
-Beachten Sie, dass sich das für die Kubernetes-Plattform bereitgestellte Cloud Insights-Installationsprogramm automatisch um diese Zuordnung kümmert.
+Beachten Sie, dass das Installationsprogramm von Data Infrastructure Insights für die Kubernetes-Plattform diese Zuordnung automatisch übernimmt.
 
 
 
@@ -122,6 +122,6 @@ Folgende Objekte und ihre Zähler werden gesammelt:
 | Problem: | Versuchen Sie dies: 
 
 
-| Nach den Anweisungen auf der Konfigurationsseite sehe ich meine Docker-Metriken in Cloud Insights nicht. | Prüfen Sie die Telegraf-Agentenprotokolle, um zu sehen, ob es folgenden Fehler meldet: E! Fehler im Plugin [inputs.docker]: Berechtigung verweigert beim Versuch, eine Verbindung zum Docker Daemon-Socket herzustellen.Falls dies der Fall ist, ergreifen Sie die erforderlichen Schritte, um den Telegraf-Agent-Zugriff auf den Docker Unix-Sockel wie oben angegeben zu ermöglichen. 
+| Ich sehe meine Docker-Kennzahlen in Data Infrastructure Insights nicht, nachdem ich die Anweisungen auf der Konfigurationsseite befolgt habe. | Prüfen Sie die Telegraf-Agentenprotokolle, um zu sehen, ob es folgenden Fehler meldet: E! Fehler im Plugin [inputs.docker]: Berechtigung verweigert beim Versuch, eine Verbindung zum Docker Daemon-Socket herzustellen.Falls dies der Fall ist, ergreifen Sie die erforderlichen Schritte, um den Telegraf-Agent-Zugriff auf den Docker Unix-Sockel wie oben angegeben zu ermöglichen. 
 |===
 Weitere Informationen finden Sie im link:concept_requesting_support.html["Unterstützung"] Seite.

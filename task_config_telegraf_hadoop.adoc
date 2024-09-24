@@ -19,7 +19,7 @@ summary: Konfiguration des Hadoop Data Collector
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus Hadoop.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen aus Hadoop zu sammeln.
 
 
 

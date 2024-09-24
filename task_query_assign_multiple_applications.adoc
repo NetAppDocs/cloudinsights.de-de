@@ -28,7 +28,7 @@ NOTE: Sie können diese Schritte zum Hinzufügen oder Entfernen verwenden link:t
 Sie müssen bereits eine Abfrage erstellt haben, die alle Assets findet, die Sie bearbeiten möchten.
 
 .Schritte
-. Klicken Sie auf *Abfragen* und wählen Sie *Alle Anfragen anzeigen*.
+. Klicken Sie auf *Explore* und wählen Sie *Metric Queries*.
 +
 Die Seite Abfragen wird angezeigt.
 
@@ -38,15 +38,15 @@ Die Liste der mit der Abfrage verknüpften Assets wird angezeigt.
 
 . Wählen Sie die gewünschten Assets in der Liste aus, oder klicken Sie auf das oberste Kontrollkästchen, um alle auszuwählen.
 +
-Der image:BulkActions.png["Aktionen"] Die Schaltfläche wird angezeigt.
+Die Dropdown-Liste Massenaktionen wird angezeigt.
 
-. Um den ausgewählten Assets eine Anwendung hinzuzufügen, klicken Sie auf image:BulkActions.png["Aktionen"] Und wählen Sie *Anwendung hinzufügen*.
+. Um eine Anwendung zu den ausgewählten Assets hinzuzufügen, klicken Sie auf Massenaktionen und wählen *Anwendung hinzufügen*.
 . Wählen Sie eine oder mehrere Anwendungen aus.
 +
 Sie können jedoch mehrere Applikationen für Hosts, interne Volumes, qtrees und Virtual Machines auswählen. Sie können nur eine Anwendung für ein Volume oder eine Freigabe auswählen.
 
 . Klicken Sie Auf *Speichern*.
-. Klicken Sie auf, um eine der Assets zugewiesene Anwendung zu entfernen image:BulkActions.png["Aktionen"] Und wählen Sie *Anwendung entfernen*.
+. Um eine Anwendung zu entfernen, die den Assets zugewiesen ist, klicken Sie auf Massenaktionen und wählen Sie *Anwendung entfernen*.
 . Wählen Sie die Anwendung oder die Anwendungen aus, die Sie entfernen möchten.
 . Klicken Sie Auf *Löschen*.
 

@@ -21,17 +21,17 @@ summary: KONFIGURIEREN DES DELL EMC PowerStore-Datensammlers.
 [role="lead"]
 Der EMC PowerStore Data Collector sammelt Bestandsdaten aus dem EMC PowerStore-Speicher. Zur Konfiguration benötigt der Datensammler die IP-Adresse der Speicherprozessoren sowie einen schreibgeschützten Benutzernamen und ein Kennwort.
 
-Der EMC PowerStore Datensammler erfasst die Replikationsbeziehungen zwischen Volume und Volume, die PowerStore über andere Speicher-Arrays hinweg koordiniert. Cloud Insights zeigt für jeden PowerStore Cluster ein Storage-Array an und sammelt Bestandsdaten für Knoten und Storage-Ports auf diesem Cluster. Es werden keine Storage-Pool- oder Volume-Daten erfasst.
+Der EMC PowerStore Datensammler erfasst die Replikationsbeziehungen zwischen Volume und Volume, die PowerStore über andere Speicher-Arrays hinweg koordiniert. Data Infrastructure Insights zeigt ein Speicher-Array für jeden PowerStore-Cluster und sammelt Bestandsdaten für Knoten und Speicherports auf diesem Cluster. Es werden keine Storage-Pool- oder Volume-Daten erfasst.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen von diesem Datensammler. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Bestandsinformationen aus diesem Datensammler. Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Host | Host 
@@ -103,7 +103,7 @@ Zur Konfiguration dieses Datensammlers sind folgende Informationen erforderlich:
 
 | Abfrageintervall für Bestand (Minuten) | Intervall zwischen Bestandsabstimmungen Der Standardwert ist 60 Minuten. 
 |===
-Die PowerStore Performance-Sammlung von Cloud Insight nutzt die 5-minütigen Granularitätsquelldaten von PowerStore. Beispielsweise fragt Cloud Insights alle fünf Minuten nach diesen Daten ab. Dies ist nicht konfigurierbar.
+Die PowerStore Performance-Sammlung von Cloud Insight nutzt die 5-minütigen Granularitätsquelldaten von PowerStore. Daher fragt Data Infrastructure Insights diese Daten alle fünf Minuten ab. Dies ist nicht konfigurierbar.
 
 
 

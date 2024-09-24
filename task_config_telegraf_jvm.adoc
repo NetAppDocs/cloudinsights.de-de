@@ -19,7 +19,7 @@ summary: Konfiguration der JVM-Datenerfassung
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datenerfassung zum Erfassen von Kennzahlen aus JVM.
+Data Infrastructure Insights verwendet diesen Datensammler zur Erfassung von Kennzahlen aus JVM.
 
 
 

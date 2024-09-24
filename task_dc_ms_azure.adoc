@@ -19,7 +19,7 @@ summary: Azure Compute Data Collector konfigurieren.
 
 
 [role="lead"]
-Cloud Insights erfasst mithilfe des Azure Computing-Datensammlers Bestands- und Performance-Daten aus Azure Computing-Instanzen.
+Data Infrastructure Insights verwendet den Compute-Datensammler Azure, um Inventar- und Performance-Daten aus Azure Computing-Instanzen zu erfassen.
 
 
 
@@ -33,9 +33,9 @@ Sie benötigen die folgenden Informationen, um diesen Datensammler zu konfigurie
 * Azure Resource Manager IP (management.core.windows.net)
 * Azure Service Principal Application (Client)-ID (Reader-Rolle erforderlich)
 * Azure Service Principal Authentifizierungsschlüssel (Benutzerkennwort)
-* Sie müssen ein Azure Konto für die Cloud Insights-Erkennung einrichten.
+* Sie müssen ein Azure-Konto für die Erkennung von Data Infrastructure Insights einrichten.
 +
-Sobald das Konto ordnungsgemäß konfiguriert ist und Sie die Applikation in Azure registrieren, verfügen Sie über die erforderlichen Zugangsdaten, um die Azure Instanz mit Cloud Insights zu ermitteln. Über den folgenden Link wird beschrieben, wie Sie das Konto für die Ermittlung einrichten.https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
+Sobald das Konto ordnungsgemäß konfiguriert ist und Sie die Applikation in Azure registrieren, verfügen Sie über die erforderlichen Zugangsdaten, um die Azure-Instanz mit Data Infrastructure Insights zu ermitteln. Über den folgenden Link wird beschrieben, wie Sie das Konto für die Ermittlung einrichten. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
 
 
 

@@ -29,7 +29,7 @@ Cloud Insight erfasst die folgenden Bestandsinformationen aus dem NetApp E-Serie
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Festplatte | Festplatte 
@@ -67,9 +67,9 @@ Die folgenden Begriffe gelten für Objekte oder Referenzen, die Sie auf den Asse
 * IP: In der Regel werden die in der Datenquelle konfigurierten IP(s) oder Hostnamen(s) verwendet
 * Microcode-Version – Firmware
 * Rohkapazität – Basis-2-Zusammenfassung aller physischen Laufwerke im System, unabhängig von ihrer Rolle
-* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise beziehen Cloud Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Anstelle des Arrays, die dies anbieten, führt Cloud Insights in der Regel eine IOPS-gewichtete Berechnung aus den Statistiken der einzelnen Volumes durch.
-* Durchsatz – der Gesamthost des Arrays mit Blick auf den Durchsatz. Idealerweise direkt aus dem Array bezogen, falls nicht verfügbar, fasst Cloud Insights den Durchsatz der Volumes zusammen, um diesen Wert abzuleiten
-* Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Erstellt programmgesteuert durch die Cloud Insights Datenquelle im Rahmen der Bestandsberichterstattung
+* Latenz – eine Darstellung der Workloads, die sich auf dem Host auslasten, sowohl bei Lese- als auch bei Schreibzugriffen. Idealerweise bezieht Data Infrastructure Insights diesen Wert direkt ein, ist dies jedoch häufig nicht der Fall. Statt dieses Array in Betracht zu ziehen, führt Data Infrastructure Insights in der Regel eine IOPS-gewichtete Berechnung aus den Statistiken der einzelnen Volumes durch.
+* Durchsatz – der Gesamthost des Arrays mit Blick auf den Durchsatz. Data Infrastructure Insights wird im Idealfall direkt aus dem Array bezogen, falls nicht verfügbar, und fasst den Durchsatz der Volumes zusammen, um diesen Wert abzuleiten
+* Verwaltung – dieser kann einen Hyperlink für die Verwaltungsschnittstelle des Geräts enthalten. Programmgesteuert erstellt von der Data Infrastructure Insights Datenquelle als Teil der Bestandsberichterstattung  
 
 
 

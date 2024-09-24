@@ -19,7 +19,7 @@ summary: Konfiguration des Puppet Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Metriken vom Puppet Agent zu erfassen.
+Data Infrastructure Insights nutzt diesen Datensammler, um Kennzahlen von Puppet Agent zu sammeln.
 
 
 

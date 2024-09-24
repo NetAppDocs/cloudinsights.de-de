@@ -19,7 +19,7 @@ keywords: data collector, queries, create
 
 
 [role="lead"]
-Dieser Datensammler unterstützt Inventar- und Performance-Erfassung aus Google Compute Cloud-Plattformkonfigurationen. Dieser Sammler wird versuchen, alle Computing-Ressourcen in allen Projekten innerhalb einer Google-Organisation zu entdecken. Wenn Sie mehrere Google-Organisationen haben, die Sie mit Cloud Insights entdecken möchten, möchten Sie einen Cloud Insights-Collector pro Organisation bereitstellen.
+Dieser Datensammler unterstützt Inventar- und Performance-Erfassung aus Google Compute Cloud-Plattformkonfigurationen. Dieser Sammler wird versuchen, alle Computing-Ressourcen in allen Projekten innerhalb einer Google-Organisation zu entdecken. Wenn Sie über mehrere Google-Unternehmen verfügen, die Sie mit Data Infrastructure Insights ermitteln möchten, möchten Sie pro Unternehmen einen Data Infrastructure Insights Collector implementieren.
 
 
 
@@ -33,7 +33,7 @@ Dieser Datensammler unterstützt Inventar- und Performance-Erfassung aus Google 
 | Organisation-ID | Die Organisations-ID, die Sie mit diesem Sammler entdecken möchten. Dieses Feld ist erforderlich, wenn Ihr Servicekonto mehr als eine Organisation sehen kann 
 
 
-| Wählen Sie „Ausschließen“ oder „Einschließen“, um GCP-Projekte nach IDs zu filtern | Wenn Sie begrenzen möchten, welche Projektressourcen in Cloud Insights bereitgestellt werden. 
+| Wählen Sie „Ausschließen“ oder „Einschließen“, um GCP-Projekte nach IDs zu filtern | Wenn Sie einschränken möchten, welche Projektressourcen in Data Infrastructure Insights einfließen. 
 
 
 | Projekt-IDs | Die Liste der Projekt-IDs, die Sie in oder aus der Erkennung filtern möchten, hängt vom Wert des Werts "Ausschließen"... ab. Die Standardliste ist leer 

@@ -19,7 +19,7 @@ summary: Kibana Data Collector Konfiguration
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Kennzahlen von Kibana zu sammeln.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen von Kibana zu sammeln.
 
 
 

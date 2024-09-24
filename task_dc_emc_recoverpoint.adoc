@@ -23,7 +23,7 @@ Der primäre Anwendungsfall des EMC RecoverPoint Data Collector ist die Ermittlu
 
 Zur Konfiguration benötigt der Datensammler die IP-Adresse der Speicherprozessoren sowie einen schreibgeschützten Benutzernamen und ein Kennwort.
 
-Der EMC RecoverPoint Data Collector sammelt die Replikationsbeziehungen zwischen Volume und Volume, die RecoverPoint über andere Speicher-Arrays hinweg koordiniert. Cloud Insights zeigt für jedes RecoverPoint-Cluster ein Speicher-Array an und sammelt Bestandsdaten für Knoten und Speicherports auf diesem Cluster. Es werden keine Storage-Pool- oder Volume-Daten erfasst.
+Der EMC RecoverPoint Data Collector sammelt die Replikationsbeziehungen zwischen Volume und Volume, die RecoverPoint über andere Speicher-Arrays hinweg koordiniert. Data Infrastructure Insights zeigt ein Speicher-Array für jeden RecoverPoint-Cluster an und sammelt Bestandsdaten für Knoten und Speicherports auf diesem Cluster. Es werden keine Storage-Pool- oder Volume-Daten erfasst.
 
 
 

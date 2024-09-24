@@ -19,17 +19,17 @@ summary: VMware Data Collector wird konfiguriert.
 
 
 [role="lead"]
-Der Datensammler für VMware vSphere erfasst Performance- und Konfigurationsinformationen für die VM-Gast- und ESXi Hosts und erfordert schreibgeschützte Privileges für alle Objekte in vSphere. Ab August 2024 werden bei vSphere Collector zusätzlich Protokollmeldungen aus vSphere-Umgebungen und einige VMware-spezifische Kennzahlen integriert. Beachten Sie bitte, dass Cloud Insights nur Informationen zu VMware-Protokollen aus Umgebungen ab vSphere 8.0.1 abrufen kann. Ebenso werden die anbieterspezifischen Metriken nur für vSphere 7+-Umgebungen unterstützt. Daher können Sie das Kontrollkästchen Protokolle und/oder anbieterspezifische Metriken für einen bestimmten Collector deaktivieren, wenn auf eine ältere vSphere-Instanz verwiesen wird.
+Der Datensammler für VMware vSphere erfasst Performance- und Konfigurationsinformationen für die VM-Gast- und ESXi Hosts und erfordert schreibgeschützte Privileges für alle Objekte in vSphere. Ab August 2024 werden bei vSphere Collector zusätzlich Protokollmeldungen aus vSphere-Umgebungen und einige VMware-spezifische Kennzahlen integriert. Beachten Sie bitte, dass Data Infrastructure Insights nur Informationen zu VMware-Protokollen aus Umgebungen mit vSphere 8.0.1 oder höher abrufen kann. Ebenso werden die anbieterspezifischen Metriken nur für vSphere 7+-Umgebungen unterstützt. Daher können Sie das Kontrollkästchen Protokolle und/oder anbieterspezifische Metriken für einen bestimmten Collector deaktivieren, wenn auf eine ältere vSphere-Instanz verwiesen wird.
 
 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom VMware vSphere Data Collector. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights bezieht die folgenden Inventarinformationen aus dem VMware vSphere-Datensammler. Für jeden erworbenen Asset-Typ wird die am häufigsten für das Asset verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Virtuelle Festplatte | Festplatte 
@@ -129,24 +129,24 @@ Aktivieren Sie im Bildschirm Erweiterte Konfiguration die Option *VM Performance
 | Kommunikations-Port | Der Standardwert ist 443 
 
 
-| Geräteliste Filtern... | Diese Liste muss aus exakten String-Übereinstimmungen bestehen - wenn Sie nach ESX_HOST filtern möchten, müssen Sie eine durch Komma getrennte Liste mit den genauen „Namen“ Ihrer ESX-Hosts erstellen, wie sowohl in Cloud Insights als auch vSphere gemeldet. Bei diesen „Namen“ handelt es sich entweder um IP-Adressen, einfache Hostnamen oder vollqualifizierte Domain-Namen (FQDNs) – dies wird durch den Namen dieser Hosts bestimmt, als sie ursprünglich zu vSphere hinzugefügt wurden. Beim Filtern nach CLUSTER Verwenden Sie die Cloud Insights-ähnlichen Cluster-Namen wie von CI auf Hypervisoren gemeldet - Cloud Insights prepends the vSphere Cluster Name with the vSphere Datacenter Name and a forward slash - „DC1/clusterA“ ist der Clustername, den Cloud Insights über einen Hypervisor in clusterA innerhalb des Rechenzentrums DC1 berichten würde. 
+| Geräteliste Filtern... | Diese Liste muss aus exakten String-Übereinstimmungen bestehen. Wenn Sie nach ESX_HOST filtern möchten, müssen Sie eine kommagetrennte Liste mit den genauen „Namen“ Ihrer ESX-Hosts erstellen, wie in Data Infrastructure Insights und vSphere gemeldet. Bei diesen „Namen“ handelt es sich entweder um IP-Adressen, einfache Hostnamen oder vollqualifizierte Domain-Namen (FQDNs) – dies wird durch den Namen dieser Hosts bestimmt, als sie ursprünglich zu vSphere hinzugefügt wurden. Verwenden Sie bei der Filterung nach CLUSTER die von CI auf Hypervisoren gemeldeten Cluster-Namen im Stil von Data Infrastructure Insights – Data Infrastructure Insights setzt den vSphere-Cluster-Namen mit dem vSphere-Datacenter-Namen und einem Schrägstrich voraus – „DC1/clusterA“ ist der Cluster-Name Data Infrastructure Insights würde über einen Hypervisor in ClusterA im Rechenzentrum DC1 berichten. 
 
 
 | Leistungsintervall (Sek.) | Der Standardwert ist 300 
 |===
 
 
-== Zuordnen von VMware-Tags zu Cloud Insights-Annotationen
+== Zuordnen von VMware Tags zu Annotationen zu Data Infrastructure Insights
 
-Der VMware Datensammler ermöglicht das Befüllen von Cloud Insights Annotationen mit Tags, die auf VMware konfiguriert sind. Die Annotationen müssen genau mit den VMware Tags benannt werden. Cloud Insights wird immer die gleichen Textanmerkungen mit dem gleichen Namen ausfüllen und versucht, Anmerkungen anderer Typen (Nummer, boolescher Wert usw.) am besten auszufüllen. Wenn Ihre Anmerkung einen anderen Typ hat und der Datensammler sie nicht füllt, kann es erforderlich sein, die Anmerkung zu entfernen und sie als Texttyp neu zu erstellen.
+Der VMware Datensammler ermöglicht das Befüllen von Data Infrastructure Insights Annotationen mit Tags, die auf VMware konfiguriert sind. Die Annotationen müssen genau mit den VMware Tags benannt werden. Data Infrastructure Insights füllt immer Anmerkungen vom gleichen Namen aus und versucht, Anmerkungen anderer Typen (Zahl, Boolescher Wert usw.) zu füllen. Wenn Ihre Anmerkung einen anderen Typ hat und der Datensammler sie nicht füllt, kann es erforderlich sein, die Anmerkung zu entfernen und sie als Texttyp neu zu erstellen.
 
-Beachten Sie, dass bei VMware Tags die Groß-/Kleinschreibung beachtet werden muss, während bei Cloud Insights Tags die Groß-/Kleinschreibung nicht beachtet wird. Wenn Sie also eine Annotation mit dem Namen „BESITZER“ in Cloud Insights und Tags mit den Namen „Eigentümer“, „Eigentümer“ und „Eigentümer“ in VMware erstellen, würden alle diese Variationen von „EIGENTÜMER“ in der Annotation von Cloud Insight zum „EIGENTÜMER“ abbilden.
+Achten Sie darauf, dass bei VMware Tags die Groß-/Kleinschreibung beachtet wird, während bei Data Infrastructure Insights die Tags nicht beachtet werden müssen. Wenn Sie in Data Infrastructure Insights eine Annotation mit dem Namen „BESITZER“ und Tags mit den Namen „EIGENTÜMER“, „Eigentümer“ und „Eigentümer“ in VMware erstellen, würden alle diese Variationen von „Eigentümer“ auch der Annotation von Cloud Insight zugeordnet.
 
 Beachten Sie Folgendes:
 
-* Cloud Insights veröffentlicht derzeit nur automatisch Supportinformationen für NetApp-Geräte.
+* Data Infrastructure Insights veröffentlicht derzeit nur automatisch Supportinformationen für NetApp-Geräte.
 * Da diese Support-Informationen in Anmerkungsform gespeichert sind, können Sie sie abfragen oder in Dashboards verwenden.
-* Wenn ein Benutzer den Anmerkungswert überschreibt oder leert, wird der Wert beim Aktualisieren von Cloud Insights-Anmerkungen, die er einmal täglich tut, erneut automatisch gefräst.
+* Wenn ein Benutzer den Anmerkungswert überschreibt oder leert, wird der Wert erneut automatisch gefräst, wenn Data Infrastructure Insights die Anmerkungen aktualisiert, die er einmal täglich tut.
 
 
 

@@ -19,7 +19,7 @@ summary: Konfiguration der Kafka Datensammler
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammler, um Metriken aus Kafka zu sammeln.
+Data Infrastructure Insights nutzt diesen Datensammler, um Kennzahlen aus Kafka zu sammeln.
 
 
 

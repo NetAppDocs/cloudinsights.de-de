@@ -27,11 +27,11 @@ Der SolidFire Datensammler nutzt die SolidFire REST API. Die Erfassungseinheit, 
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom NetApp SolidFire All-Flash Array Data Collector. Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights bezieht die folgenden Inventarinformationen aus dem Datensammler für rein Flash-basierte NetApp SolidFire Arrays: Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Laufwerk | Festplatte 
@@ -108,7 +108,7 @@ Die folgenden Anforderungen gelten für die Konfiguration dieses Datensammlers:
 
 == Fehlerbehebung
 
-Wenn SolidFire einen Fehler meldet, wird er in Cloud Insights wie folgt angezeigt:
+Wenn SolidFire einen Fehler meldet, wird er in Data Infrastructure Insights wie folgt angezeigt:
 
 _Beim Versuch, Daten abzurufen, wurde eine Fehlermeldung von einem SolidFire-Gerät empfangen. Der Aufruf war <method> (<parameterString> ). Die Fehlermeldung vom Gerät war (überprüfen Sie die Bedienungsanleitung des Geräts): <message>_
 

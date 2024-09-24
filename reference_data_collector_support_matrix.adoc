@@ -17593,16 +17593,19 @@ Von diesem Datensammler unterstützte Produkte:
 | Typ | Lücke | HTTPS |  
 
 
-.4+| Leistung | Qtree | Storage | Fehlerhafte Festplatten | Implementiert | HTTPS 
+.5+| Leistung | Storage | Fehlerhafte Festplatten | Implementiert | HTTPS |  
 
 
-|  .3+| Storage-Node | Cache-Trefferverhältnis Insgesamt | Implementiert | HTTPS 
+.3+| Storage-Node | Cache-Trefferverhältnis Insgesamt | Implementiert | HTTPS |  
 
 
-|  | Insgesamt Ausgetauschte Festplatten-Lesevorgang | Implementiert | HTTPS 
+| Insgesamt Ausgetauschte Festplatten-Lesevorgang | Implementiert | HTTPS |  
 
 
-|  | Auslastung Insgesamt | Implementiert | HTTPS 
+| Auslastung Insgesamt | Implementiert | HTTPS |  
+
+
+| Qtree |  | Implementiert | HTTPS |  
 |===
 Von diesem Datensammler verwendete Management-APIs:
 

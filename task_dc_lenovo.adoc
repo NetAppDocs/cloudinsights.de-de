@@ -19,7 +19,7 @@ summary: Lenovo Datensammler konfigurieren.
 
 
 [role="lead"]
-Cloud Insights ermittelt mit dem Lenovo Datensammler Bestands- und Performancedaten für Lenovo HX-Speichersysteme.
+Data Infrastructure Insights verwendet den Lenovo Datensammler zur Ermittlung von Bestands- und Leistungsdaten für Lenovo HX-Speichersysteme.
 
 Hinweis: Es handelt sich hierbei nur um allgemeine Terminologiezuordnungen. Diese stellen für diesen Datensammler möglicherweise nicht alle Fälle dar.
 

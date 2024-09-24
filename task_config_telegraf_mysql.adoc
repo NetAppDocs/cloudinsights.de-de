@@ -19,7 +19,7 @@ summary: Konfiguration des MySQL-Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diese Datensammlung, um Kennzahlen von MySQL zu sammeln.
+Data Infrastructure Insights verwendet diesen Datensammler, um Kennzahlen aus MySQL zu sammeln.
 
 
 

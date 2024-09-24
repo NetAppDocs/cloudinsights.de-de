@@ -25,11 +25,11 @@ Der Microsoft Hyper-V Datensammler erfasst Bestands- und Performancedaten aus de
 
 == Terminologie
 
-Cloud Insights erwirbt die folgenden Bestandsinformationen vom Microsoft Hyper-V (WMI). Die am häufigsten für diese Ressource verwendete Terminologie wird für jeden von Cloud Insights erfassten Asset-Typ angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
+Data Infrastructure Insights erfasst die folgenden Inventarinformationen aus dem Microsoft Hyper-V (WMI). Für jeden Asset-Typ, der von Data Infrastructure Insights erworben wurde, wird die für diese Ressource am häufigsten verwendete Terminologie angezeigt. Beachten Sie bei der Anzeige oder Fehlerbehebung dieses Datensammlers die folgende Terminologie:
 
 [cols="2*"]
 |===
-| Anbieter-/Modelllaufzeit | Laufzeit Für Cloud Insights 
+| Anbieter-/Modelllaufzeit | Einblicke Aus Der Dateninfrastruktur 
 
 
 | Virtuelle Festplatte | Virtuelles Laufwerk 
@@ -63,7 +63,7 @@ Zur Konfiguration dieses Datensammlers sind folgende Voraussetzungen erforderlic
 * WinRM muss aktiviert sein und alle Hypervisoren abhören
 * Port-Anforderungen: Port 135 über WMI & Dynamic TCP Ports zugewiesen 1024-65535 für Windows 2003 und älter und 49152-65535 für Windows 2008.
 * DNS-Auflösung muss erfolgreich sein, auch wenn der Datensammler nur auf eine IP-Adresse verweist
-* Für jeden Hyper-V Hypervisor muss für jede VM, auf jedem Host, „Resource Metering“ aktiviert sein. Dadurch kann jeder Hypervisor auf jedem Gast mehr Daten für Cloud Insights zur Verfügung stellen. Wenn diese Einstellung nicht festgelegt ist, werden für jeden Gast weniger Performance-Metriken erfasst. Weitere Informationen zur Ressourcenmessung finden Sie in der Microsoft-Dokumentation:
+* Für jeden Hyper-V Hypervisor muss für jede VM, auf jedem Host, „Resource Metering“ aktiviert sein. Dadurch kann jeder Hypervisor bei jedem Gast mehr Daten für Data Infrastructure Insights zur Verfügung haben. Wenn diese Einstellung nicht festgelegt ist, werden für jeden Gast weniger Performance-Metriken erfasst. Weitere Informationen zur Ressourcenmessung finden Sie in der Microsoft-Dokumentation:
 +
 link:https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831661(v=ws.11)["Hyper-V Übersicht zur Ressourcenmessung"]
 

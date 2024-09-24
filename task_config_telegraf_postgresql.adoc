@@ -19,7 +19,7 @@ summary: Konfiguration des PostgreSQL-Datensammlers
 
 
 [role="lead"]
-Cloud Insights verwendet diesen Datensammler, um Metriken aus PostgreSQL zu sammeln.
+Data Infrastructure Insights nutzt diesen Datensammler, um Metriken aus PostgreSQL zu sammeln.
 
 
 
