@@ -4,7 +4,7 @@ permalink: data_collector_list.html
 summary: Liste der unterstützten Datensammler. 
 keywords: data collector, vendor, infrastructure, integration, service 
 ---
-= Cloud Insights Data Collector-Liste
+= Data Infrastructure Insights Data Collector List
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -19,7 +19,7 @@ keywords: data collector, vendor, infrastructure, integration, service
 
 
 [role="lead"]
-Cloud Insights unterstützt eine Vielzahl von Datensammlern unterschiedlicher Anbieter und Services.
+Data Infrastructure Insights unterstützt eine Vielzahl von Datensammlern von verschiedenen Anbietern und Services.
 
 Datensammler sind nach folgenden Typen kategorisiert:
 
@@ -27,7 +27,7 @@ Datensammler sind nach folgenden Typen kategorisiert:
 * Service: Erworben durch Services wie Kubernetes oder Docker Auch _Integration_ genannt.
 
 
-Alphabetische Liste der von Cloud Insights unterstützten Datensammler:
+Alphabetische Liste der von Data Infrastructure Insights unterstützten Data Collectors:
 
 [cols="<,<"]
 |===

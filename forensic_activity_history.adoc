@@ -96,13 +96,14 @@ Sie können forensische Aktivitätsdaten nach folgenden Feldern filtern:
 
 * *Benutzername* des Benutzers, der die Aktivität ausführt. Sie müssen den genauen Benutzernamen angeben, um sie zu filtern. Die Suche mit teilweisen Nutzernamen oder teilweisen Nutzernamen, vorfixiert oder mit ‘*’ abgestickt, funktioniert nicht.
 * *Rauschunterdrückung* zum Filtern von Dateien, die in den letzten 2 Stunden vom Benutzer erstellt werden. Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.
+* *Domain* des Benutzers, der die Aktivität ausführt. Sie müssen die *genaue Domain* angeben, um zu filtern. Die Suche nach einer partiellen Domäne oder einer partiellen Domäne mit Präfix oder Suffix mit Platzhalter ()'*') funktioniert nicht. _None_ kann angegeben werden, um nach fehlender Domain zu suchen.
 
 
 Die folgenden Felder unterliegen speziellen Filterregeln:
 
-* *Entity Type*, mit Entity (file) Extension
-* *Pfad* der Entität
-* *Benutzer* die Aktivität durchführen
+* *Entity Type*, mit Entity (File) Extension - es ist vorzuziehen, den genauen Entity-Typ in Anführungszeichen anzugeben. Beispiel: _ „Txt“_.
+* *Pfad* der Entity - Verzeichnispfad-Filter (Pfadstring endet mit /) für schnellere Ergebnisse werden bis zu 4 Verzeichnisse empfohlen. Beispiel: _/Home/userX/nested1/nested2/_ ODER _“/Home/userX/nested1/nested2/“_. Weitere Informationen finden Sie in der folgenden Tabelle.
+* *User* die Aktivität durchführen - es ist vorzuziehen, den genauen Benutzer in Anführungszeichen anzugeben. Für eample_„Administrator“_.
 * *Gerät* (SVM), in dem sich Entitäten befinden
 * *Volumen*, in dem sich Entitäten befinden
 * Der *Original-Pfad*, der bei der Umbenennung der Originaldatei verwendet wird.
@@ -117,15 +118,65 @@ Die vorhergehenden Felder unterliegen beim Filtern folgenden Kriterien:
 
 
 
+== Beispiele Für Forensik-Filter Für Aktivitäten:
+
+|===
+| Vom Benutzer angewendeter Filterausdruck | Erwartetes Ergebnis | Performance-Assessment | Kommentar 
+
+
+| Pfad = /Home/userX/nested1/nested2/ oder /Home/userX/nested1/nested2/* oder "/Home/userX/nested1/nested2/" | Rekursive Abfrage aller Dateien und Ordner unter dem angegebenen Verzeichnis | Schnell | Verzeichnissuchen bis zu 4 Verzeichnisse werden schnell sein. 
+
+
+| Pfad = /Home/userX/nested1/ oder /Home/userX/nested1/* oder "/Home/userX/nested1/" | Rekursive Abfrage aller Dateien und Ordner unter dem angegebenen Verzeichnis | Schnell | Verzeichnissuchen bis zu 4 Verzeichnisse werden schnell sein. 
+
+
+| Pfad = /Home/userX/nested1/Test* oder /Home/userX/nested1/Test | Rekursive Abfrage aller Dateien und Ordner unter dem angegebenen Pfad regex(Test* könnte Datei ODER Verzeichnis ODER beides bedeuten) | Langsamer | Die Suche nach Verzeichnis+Datei ist langsamer als bei Verzeichnissuchen. 
+
+
+| Pfad = /Home/userX/nested1/nested2/nested3/ oder /Home/userX/nested1/nested2/nested3/* oder "/Home/userX/nested1/nested2/nested3/" | Rekursive Abfrage aller Dateien und Ordner unter dem angegebenen Verzeichnis | Langsamer | Mehr als 4 Verzeichnissuchen sind langsamer zu suchen. 
+
+
+| Pfad=\*userX/nested1/Test* | Rekursive Abfrage aller Dateien und Ordner unter der angegebenen Platzhalterpfad-Zeichenfolge (Test* kann Datei ODER Verzeichnis ODER beides bedeuten) | Langsam | Führende Platzhaltersuche sind langsamste Suchvorgänge. 
+
+
+| Alle anderen nicht pfadbasierten Filter. Benutzer- und Entitätstyp-Filter, die in Anführungszeichen empfohlen werden, z. B. Benutzer=„Administrator“ Entitätstyp=„txt“ |  | Schnell |  
+|===
+HINWEIS:
+
+. Die Anzahl der Aktivitäten, die neben dem Symbol „Alle Aktivitäten“ angezeigt wird, wird auf 30 Minuten gerundet, wenn der ausgewählte Zeitraum mehr als 3 Tage umfasst. In einem Zeitraum von _1. September 10:15 bis 7. September 10:15 werden die Aktivitätszahlen vom 1. September 10:00 bis 7. September 10:30 Uhr angezeigt.
+. Ebenso werden die Zählmetriken in Aktivitätstypen, Aktivität auf Entitätstypen und Aktivitätsverlauf auf 30 Minuten abgerundet, wenn der ausgewählte Zeitraum mehr als 3 Tage umfasst.
+
+
+
+
 == Forensische Vorgangshistorie-Daten Sortieren
 
 Sie können Vorgangshistorie-Daten nach_Time, User, Source IP, Activity, Path_ und_Entity Type_ sortieren. Standardmäßig wird die Tabelle nach absteigender_Time_-Reihenfolge sortiert, was bedeutet, dass die neuesten Daten zuerst angezeigt werden. Die Sortierung ist für die Felder _Device_ und _Protocol_ deaktiviert.
 
 
 
-== Alle Aktivitäten Werden Exportiert
+== Benutzerhandbuch für asynchrone Exporte
 
-Sie können den Vorgangsverlauf in eine CSV-Datei exportieren, indem Sie über der Tabelle „Vorgangsverlauf“ auf die Schaltfläche „_Export_“ klicken. Beachten Sie, dass nur die 100,000 wichtigsten Datensätze exportiert werden. Je nach Datenmenge kann es einige Sekunden bis zu mehreren Minuten dauern, bis der Export abgeschlossen ist.
+
+
+=== Überblick
+
+Die Funktion „asynchrone Exporte“ in „Storage Workload Security“ wurde für die Verarbeitung großer Datenexporte entwickelt.
+
+
+
+=== Schritt-für-Schritt-Anleitung: Daten mit asynchronen Exporten exportieren
+
+. *Export starten*: Wählen Sie die gewünschte Zeitdauer und Filter für den Export aus und klicken Sie auf den Export-Button.
+. *Wait for Export to complete*: Die Verarbeitungszeit kann von ein paar Minuten bis zu einigen Stunden betragen. Unter Umständen müssen Sie die Seite „Forensik“ einige Male aktualisieren. Sobald der Exportauftrag abgeschlossen ist, wird die Schaltfläche "Letzten Export CSV-Datei herunterladen" aktiviert.
+. *Download*: Klicken Sie auf den Button "Download Last created Export file", um die exportierten Daten im .zip-Format zu erhalten. Diese Daten können heruntergeladen werden, bis der Benutzer einen anderen asynchronen Export initiiert oder 3 Tage vergangen sind, je nachdem, was zuerst eintritt. Die Schaltfläche bleibt aktiviert, bis ein anderer asynchroner Export gestartet wird.
+. *Einschränkungen*:
++
+** Die Anzahl asynchroner Downloads ist derzeit auf 1 pro Benutzer und 3 pro Mandant begrenzt.
+** Die exportierten Daten sind auf maximal 1 Million Datensätze begrenzt.
+
+
+
 
 Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Informationen zum Skript finden Sie in der Infodatei an dieser Stelle.
 
@@ -148,21 +199,19 @@ Der Aktivitätsverlauf wird 13 Monate lang in aktiven Workload-Sicherheitsumgebu
 == Anwendbarkeit von Filtern in Forensics Seite
 
 |===
+| Filtern | Das macht es | Beispiel | Gilt für diese Filter | Gilt nicht für diese Filter | Ergebnis 
 
 
-| Filtern | Das macht es | Beispiel | In welchen Filtern anwendbar? | Gilt nicht für welche Filter | Ergebnis 
+| * (Sternchen) | Ermöglicht Ihnen die Suche nach allem | Auto*03172022 Wenn der Suchtext Bindestrich oder Unterstrich enthält, geben Sie den Ausdruck in Klammern an, z. B. (svm*) für die Suche nach svm-123 | Benutzer, PFAD, Einheitstyp, Gerät, Volume, ursprünglicher Pfad |  | Gibt alle Ressourcen zurück, die mit „Auto“ beginnen und mit „03172022“ enden 
 
 
-| * (Sternchen) | Ermöglicht Ihnen die Suche nach allem | Auto*03172022 | Benutzer, PFAD, Einheitstyp, Gerätetyp, Volume, Ursprünglicher Pfad |  | Gibt alle Ressourcen zurück, die mit „Auto“ beginnen und mit „03172022“ enden 
+| ? (Fragezeichen) | Ermöglicht die Suche nach einer bestimmten Anzahl von Zeichen | AutoSabotageUser1_03172022? | Benutzer, Einheitstyp, Gerät, Volume |  | Gibt AutoSabotageUser1_03172022A, AutoSabotageUser1_03172022B, AutoSabotageUser1_031720225 usw. zurück 
 
 
-| ? (Fragezeichen) | Ermöglicht die Suche nach einer bestimmten Anzahl von Zeichen | AutoSabotageUser1_03172022? | Benutzer, Einheitstyp, Gerät, Volume |  | Gibt AutoSabotageUser1_03172022A, AutoSabotageUser1_03172022AB, AutoSabotageUser1_031720225 usw. zurück 
+| ODER | Ermöglicht Ihnen die Angabe mehrerer Elemente | AutoSabotageUser1_03172022 ODER AutoBefreiUser4_03162022 | Benutzer, Domäne, PFAD, Entitätstyp, ursprünglicher Pfad |  | Gibt eine beliebige von AutoSabotageUser1_03172022 ODER AutoBefreiUser4_03162022 zurück 
 
 
-| ODER | Ermöglicht Ihnen die Angabe mehrerer Elemente | AutoSabotageUser1_03172022 ODER AutoBefreiUser4_03162022 | Benutzer, Domäne, Benutzername, PFAD, Einheitstyp, Gerät, Originalpfad |  | Gibt eine beliebige von AutoSabotageUser1_03172022 ODER AutoBefreiUser4_03162022 zurück 
-
-
-| NICHT | Ermöglicht das Ausschließen von Text aus den Suchergebnissen | NICHT automatisch BefreiUser4_03162022 | Benutzer, Domäne, Benutzername, PFAD, Einheitstyp, Ursprünglicher PFAD, Volume | Gerät | Gibt alles zurück, was nicht mit "AutoBefreiUser4_03162022" beginnt 
+| NICHT | Ermöglicht das Ausschließen von Text aus den Suchergebnissen | NICHT automatisch BefreiUser4_03162022 | Benutzer, Domäne, PFAD, Entitätstyp, ursprünglicher PFAD | Gerät | Gibt alles zurück, was nicht mit "AutoBefreiUser4_03162022" beginnt 
 
 
 | Keine | Sucht in allen Feldern nach Null-Werten | Keine | Domäne |  | Gibt Ergebnisse an, bei denen das Zielfeld leer ist 
@@ -242,28 +291,11 @@ Wenn die Lösung immer noch nicht behoben wird, überprüfen Sie, ob Sie den kor
 | Einige NFS-Ereignisse werden in der UI nicht angezeigt. | Überprüfen Sie Folgendes: 1. Ein Benutzer-Verzeichnis-Collector für AD-Server mit POSIX-Attributen sollte mit dem unixid-Attribut ausgeführt werden, das über UI aktiviert ist. 2. Jeder Benutzer, der NFS-Zugang macht, sollte angezeigt werden, wenn er in der Benutzerseite von UI 3 durchsucht wird. RAW-Ereignisse (Ereignisse, für die der Benutzer noch nicht erkannt wurde) werden für NFS 4 nicht unterstützt. Anonymer Zugriff auf den NFS-Export wird nicht überwacht. 5. Stellen Sie sicher, dass die NFS-Version in weniger als NFS4.1 verwendet wird. 
 
 
-| Nachdem Sie einige Buchstaben mit einem Platzhalterzeichen wie Sternchen (*) in die Filter auf den Seiten Forensics _All Activity_ oder _entities_ eingegeben haben, werden die Seiten sehr langsam geladen. | Ein Sternchen (\*) in der Suchzeichenfolge sucht nach allem. Führende Platzhalterzeichenfolgen wie _*<searchTerm>_ oder _*<searchTerm>*_ führen jedoch zu einer langsamen Abfrage.
-Um eine bessere Leistung zu erzielen, verwenden Sie stattdessen Präfix-Strings im Format _<searchTerm>*_ (mit anderen Worten: Fügen Sie das Sternchen (*) _nach_ einem Suchbegriff hinzu).
-Beispiel: Verwenden Sie den String _testvolume*_ anstatt _*testvolume_ oder _*Test*Volume_.
-
-Verwenden Sie eine präfixbasierte Suche, um alle Aktivitäten unterhalb eines bestimmten Ordners rekursiv anzuzeigen (hierarchische Suche). Z.B. _/path1/path2/path3_ oder _“/path1/path2/path3“_ listet alle Aktivitäten rekursiv unter _/path1/path2/path3_ auf.
-Alternativ können Sie die Option „zum Filter hinzufügen“ auf der Registerkarte „Alle Aktivitäten“ verwenden. 
+| Nachdem Sie einige Buchstaben mit einem Platzhalterzeichen wie Sternchen (*) in die Filter auf den Seiten Forensics _All Activity_ oder _entities_ eingegeben haben, werden die Seiten sehr langsam geladen. | Ein Sternchen (\*) in der Suchzeichenfolge sucht nach allem. Führende Platzhalterzeichenfolgen wie _*<searchTerm>_ oder _*<searchTerm>*_ führen jedoch zu einer langsamen Abfrage. Um eine bessere Leistung zu erzielen, verwenden Sie stattdessen Präfix-Strings im Format _<searchTerm>*_ (mit anderen Worten: Fügen Sie das Sternchen (*) _nach_ einem Suchbegriff hinzu). Beispiel: Verwenden Sie den String _testvolume*_ anstatt _*testvolume_ oder _*Test*Volume_. Verwenden Sie eine Verzeichnissuche, um alle Aktivitäten unterhalb eines bestimmten Ordners rekursiv anzuzeigen (hierarchische Suche). Z.B. werden unter /path1/path2/path3/ oder „/path1/path2/path3/“ alle Vorgänge rekursiv unter /path1/path2/path3 aufgelistet. Alternativ können Sie die Option „zum Filter hinzufügen“ unter der Registerkarte „Alle Aktivitäten“ verwenden. 
 
 
 | Bei der Verwendung eines Pfadfilters tritt ein Fehler „Anfrage fehlgeschlagen mit Statuscode 500/503“ auf. | Versuchen Sie, einen kleineren Datumsbereich zum Filtern von Datensätzen zu verwenden. 
 
 
-| Die forensische Benutzeroberfläche lädt Daten langsam, wenn der _PATH_-Filter verwendet wird. | Wenn der Pfad _/AAA/BBB/CCC/DDD_ lautet, dann suchen Sie nicht nach:
-
-Aaa/Bbb/Ccc*
-
-ODER
-
-AAA/BBB/C*
-
-Suchen Sie nach:
-
-Aaa/Bbb/Ccc/*
-
-Diese Suche sollte es ermöglichen, die Daten schneller zu laden. 
+| Die forensische Benutzeroberfläche lädt Daten langsam, wenn der _PATH_-Filter verwendet wird. | Verzeichnispfad-Filter (Pfadstring endet mit /) für schnellere Ergebnisse werden bis zu 4 Verzeichnisse empfohlen. Beispiel: Wenn der Verzeichnispfad /AAA/BBB/CCC/DDD ist, versuchen Sie, nach /AAA/BBB/CCC/DDD/ oder „/AAA/BBB/CCC/DDD/“ zu suchen, um Daten schneller zu laden. 
 |===

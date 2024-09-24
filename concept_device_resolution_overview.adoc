@@ -19,7 +19,7 @@ summary: Mit der automatischen Geräteauflösung können Sie die Leistung und de
 
 
 [role="lead"]
-Sie müssen alle Geräte identifizieren, die Sie mit Cloud Insights überwachen möchten. Für die genaue Nachverfolgung der Performance und des Inventars in Ihrer Umgebung ist eine Identifizierung erforderlich. In der Regel werden die meisten in Ihrer Umgebung erkannten Geräte durch _Automatische Geräteauflösung_ identifiziert.
+Sie müssen alle Geräte identifizieren, die Sie mit Data Infrastructure Insights überwachen möchten. Für die genaue Nachverfolgung der Performance und des Inventars in Ihrer Umgebung ist eine Identifizierung erforderlich. In der Regel werden die meisten in Ihrer Umgebung erkannten Geräte durch _Automatische Geräteauflösung_ identifiziert.
 
 Nachdem Sie Datensammler konfiguriert haben, werden Geräte in Ihrer Umgebung einschließlich Switches, Storage-Arrays und Ihre virtuelle Infrastruktur von Hypervisoren und VMs identifiziert. Dies erkennt jedoch normalerweise nicht 100 % der Geräte in Ihrer Umgebung.
 
@@ -32,7 +32,7 @@ Nachdem Geräte vom Typ Data Collector konfiguriert wurden, empfiehlt es sich, R
 
 Geräte, die nach der Geräteauflösung als nicht bekannt sind, gelten als allgemeine Geräte, die Sie auch in Abfragen und auf Dashboards anzeigen können.
 
-Die wiederum erstellten Regeln identifizieren automatisch neue Geräte mit ähnlichen Attributen, wie sie Ihrer Umgebung hinzugefügt werden. In manchen Fällen ermöglicht die Geräteauflösung auch eine manuelle Identifizierung, bei der die Geräterauflösungsregeln für nicht erkannte Geräte innerhalb von Cloud Insights nicht beachtet werden.
+Die wiederum erstellten Regeln identifizieren automatisch neue Geräte mit ähnlichen Attributen, wie sie Ihrer Umgebung hinzugefügt werden. In einigen Fällen ermöglicht die Geräteauflösung auch die manuelle Identifizierung, wobei die Regeln für die Geräteauflösung für nicht erkannte Geräte in Data Infrastructure Insights umgangen werden.
 
 Eine unvollständige Identifizierung von Geräten kann zu folgenden Problemen führen:
 

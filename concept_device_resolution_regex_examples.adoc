@@ -19,13 +19,13 @@ summary:
 
 
 [role="lead"]
-Wenn Sie den regulären Ausdrucks-Ansatz als Ihre Ausgangs-Benennungsstrategie ausgewählt haben, können Sie die Beispiele für reguläre Ausdrücke als Leitfäden für Ihre eigenen Ausdrücke verwenden, die in den automatischen Auflösungsmethoden von Cloud Insights verwendet werden.
+Wenn Sie den Ansatz für reguläre Ausdrücke als Namensstrategie für die Quelle ausgewählt haben, können Sie die Beispiele für reguläre Ausdrücke als Leitfaden für Ihre eigenen Ausdrücke verwenden, die in den automatischen Auflösungsmethoden von Data Infrastructure Insights verwendet werden.
 
 
 
 == Formatieren von regulären Ausdrücken
 
-Wenn Sie reguläre Ausdrücke für die automatische Auflösung von Cloud Insights erstellen, können Sie das Ausgabeformat konfigurieren, indem Sie Werte in ein Feld mit dem Namen _FORMAT_ eingeben.
+Wenn Sie reguläre Ausdrücke für die automatische Auflösung von Data Infrastructure Insights erstellen, können Sie das Ausgabeformat konfigurieren, indem Sie Werte in ein Feld namens _FORMAT_ eingeben.
 
 Die Standardeinstellung ist \1. Das bedeutet, dass ein Zonenname, der dem regulären Ausdruck entspricht, durch den Inhalt der ersten Variablen ersetzt wird, die durch den regulären Ausdruck erstellt wurde. In einem regelmäßigen Ausdruck werden variable Werte durch parteiliche Aussagen erzeugt. Wenn mehrere parenthetische Aussagen auftreten, werden die Variablen numerisch von links nach rechts referenziert. Die Variablen können in beliebiger Reihenfolge im Ausgabeformat verwendet werden. Konstanttext kann auch in die Ausgabe eingefügt werden, indem es dem FORMATFELD hinzugefügt wird.
 
@@ -280,7 +280,7 @@ Die ^ (umgangen oder caret) *innen eckige Klammern* negiert den Ausdruck, zum Be
 
 *Hostname:* mhs-apps44-d
 
-*RegExp:* ([^_]+)_([ab]).*Format in Cloud Insights: \1-\2 ([^_]+)_ ([^_]+)_([^_]+).*Format in Cloud Insights: \1-\2-\3
+*RegExp:* ([^_]+)_([ab]).*Format in Data Infrastructure Insights: \1-\2 ([^_]+)_ ([^_]+)_([^_]+).*Format in Data Infrastructure Insights: \1-\2-\3
 
 
 

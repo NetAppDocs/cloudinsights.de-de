@@ -38,9 +38,9 @@ image:ServiceMap_NKMO_Deployment_Options.png["Auswahl der Option Karte beim NKMO
 
 == Monitore
 
-Die Workload Map verwendet link:task_create_monitor.html["Monitore"] Um Informationen abzuleiten. Cloud Insights bietet eine Reihe von Kubernetes-Standardmonitoren an (beachten Sie, dass diese standardmäßig „_Paused_“ sein können. Sie können die gewünschten Monitore _Resume_ (d. h. aktivieren) oder benutzerdefinierte Monitore für kubernetes-Objekte erstellen, die auch von der Workload Map verwendet werden.
+Die Workload Map verwendetlink:task_create_monitor.html["Monitore"], um Informationen abzuleiten. Data Infrastructure Insights bietet eine Reihe von Kubernetes-Standardmonitoren (beachten Sie, dass diese standardmäßig „_Paused_“ sein können. Sie können die gewünschten Monitore _Resume_ (d. h. aktivieren) oder benutzerdefinierte Monitore für kubernetes-Objekte erstellen, die auch von der Workload Map verwendet werden.
 
-Sie können Cloud Insights-Metrik-Warnmeldungen für jeden der unten aufgeführten Objekttypen erstellen. Stellen Sie sicher, dass die Daten nach dem Standardobjekttyp gruppiert sind.
+Sie können für jeden der unten aufgeführten Objekttypen metrische Warnmeldungen zu Data Infrastructure Insights erstellen. Stellen Sie sicher, dass die Daten nach dem Standardobjekttyp gruppiert sind.
 
 * kubernetes.Workload
 * kubernetes.demonset
@@ -83,7 +83,7 @@ image:Workload_Map_Slideout_with_Alert.png["Details Zum Workload-Slideout Mit Wa
 
 == Suchen und Filtern
 
-Wie bei anderen Cloud Insights-Funktionen können Sie auch bei den Filtern einfach den Fokus auf die gewünschten Objekte oder Workload-Attribute legen.
+Wie andere Funktionen von Data Infrastructure Insights können Sie auch hier ganz einfach Filter festlegen, die sich ganz auf die gewünschten Objekte oder Workload-Attribute konzentrieren.
 
 image:Workload_Map_Filtering.png["Workload Map-Filterung"]
 
@@ -117,7 +117,7 @@ Workload-Bezeichnungen sind erforderlich, wenn die Zuordnung die angezeigten Wor
 
 * Wenn sich die Quelle außerhalb des kubernetes-Clusters befindet:
 +
-** Cloud Insights versucht, den DNS-aufgelösten Namen zu analysieren, um den Diensttyp zu extrahieren.
+** Data Infrastructure Insights versucht, den DNS-aufgelösten Namen zu analysieren, um den Diensttyp zu extrahieren.
 +
 Beispiel: Mit einem DNS-aufgelösten Namen von _s3.eu-north-1.amazonaws.com_ wird der aufgelöste Name analysiert, um _s3_ als Diensttyp zu erhalten.
 

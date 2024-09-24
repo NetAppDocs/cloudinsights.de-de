@@ -16,9 +16,6 @@ summary: 'Sie können automatische Antwortrichtlinien für potenzielle Angriffe 
 [role="lead"]
 Antwortrichtlinien lösen Aktionen aus, wie z. B. das Erstellen eines Snapshots oder das Einschränken des Benutzerzugriffs bei einem Angriff oder einem anormalen Benutzerverhalten.
 
-
-NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
-
 Sie können Richtlinien für bestimmte Geräte oder alle Geräte festlegen. Um eine Antwortrichtlinie festzulegen, wählen Sie *Admin > Automatische Antwortrichtlinien* aus und klicken Sie auf die entsprechende Schaltfläche *+Policy*. Sie können Richtlinien für Angriffe oder Warnungen erstellen.
 
 image:Automated_Response_Screenshot.png["Angriffsrichtlinie Erstellen"]

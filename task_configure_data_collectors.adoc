@@ -19,7 +19,7 @@ summary: Allgemeine Anweisungen zur Datenerfassung
 
 
 [role="lead"]
-Sie konfigurieren Datensammler in Ihrer Cloud Insights-Umgebung, um Daten von Geräten im Datacenter zu erfassen.
+Sie konfigurieren Data Collectors in Ihrer Data Infrastructure Insights-Umgebung, um Daten von Geräten im Rechenzentrum zu erfassen.
 
 .Bevor Sie beginnen
 * Sie müssen eine Erfassungseinheit konfiguriert haben, bevor Sie mit dem Erfassen von Daten beginnen können.
@@ -28,7 +28,7 @@ Sie konfigurieren Datensammler in Ihrer Cloud Insights-Umgebung, um Daten von Ge
 
 
 .Schritte
-. Klicken Sie im Menü Cloud Insights auf *Observability > Collectors*
+. Klicken Sie im Menü Data Infrastructure Insights auf *Observability > Collectors*
 +
 Das System zeigt die verfügbaren Datensammler an, die nach Hersteller geordnet sind.
 
@@ -39,7 +39,7 @@ Im Dialogfeld können Sie den Datensammler konfigurieren und eine Erfassungseinh
 . Geben Sie einen Namen für den Datensammler ein.
 . Klicken Sie auf *Erweiterte Konfiguration*, um weitere Konfigurationsfelder hinzuzufügen. (Nicht alle Datensammler benötigen erweiterte Konfiguration.)
 . Klicken Sie auf *Testkonfiguration*, um zu überprüfen, ob der Datensammler ordnungsgemäß konfiguriert ist.
-. Klicken Sie auf *Collector hinzufügen*, um die Konfiguration zu speichern und den Datensammler zu Ihrem Cloud Insights-Mandanten hinzuzufügen.
+. Klicken Sie auf *Add Collector*, um die Konfiguration zu speichern und den Data Collector zu Ihrem Data Infrastructure Insights-Mandanten hinzuzufügen.
 
 
 Es kann bis zu zwei Abfrageperioden dauern, bis die Daten aus dem Dienst in Dashboards angezeigt oder für die Abfrage verfügbar sind.

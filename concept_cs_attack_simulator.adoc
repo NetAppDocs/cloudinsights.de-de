@@ -22,9 +22,6 @@ summary: Mithilfe eines Skripts können Sie einen Ransomware-Angriff zum Testen 
 Mithilfe der Anweisungen auf dieser Seite können Sie einen Angriff für das Testen oder Demonieren der Workload-Sicherheit mithilfe des im Lieferumfang enthaltenen Skripts Ransomware Simulation simulieren.
 
 
-NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
-
-
 
 == Dinge zu beachten, bevor Sie beginnen
 

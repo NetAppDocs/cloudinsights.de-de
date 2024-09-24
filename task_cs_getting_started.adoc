@@ -21,9 +21,6 @@ summary: Mit ein paar einfachen Schritten können Sie die Verwendung von Workloa
 [role="lead"]
 Es müssen Konfigurationsaufgaben abgeschlossen werden, bevor Sie mit Workload Security beginnen können, um die Benutzeraktivitäten zu überwachen.
 
-
-NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
-
 Das Workload Security-System verwendet einen Agenten, um Zugriffsdaten von Speichersystemen und Benutzerinformationen von Directory Services-Servern zu erfassen.
 
 Sie müssen Folgendes konfigurieren, bevor Sie mit dem Erfassen von Daten beginnen können:

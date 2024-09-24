@@ -19,7 +19,7 @@ summary: Der Log Explorer ist ein leistungsstarkes Tool zur Untersuchung von Pro
 
 
 [role="lead"]
-Der Cloud Insights Log Explorer ist ein leistungsstarkes Tool zum Abfragen von Systemprotokollen. Zusätzlich zur Unterstützung bei Ermittlungen können Sie auch eine Protokollabfrage in einem Monitor speichern, um Warnmeldungen zu geben, wenn diese bestimmten Protokollauslöser aktiviert sind.
+Der Data Infrastructure Insights Log Explorer ist ein leistungsstarkes Tool zum Abfragen von Systemprotokollen. Zusätzlich zur Unterstützung bei Ermittlungen können Sie auch eine Protokollabfrage in einem Monitor speichern, um Warnmeldungen zu geben, wenn diese bestimmten Protokollauslöser aktiviert sind.
 
 Klicken Sie auf *Log Queries > +New Log Query*, um mit der Suche nach Protokollen zu beginnen.
 
@@ -33,7 +33,7 @@ NOTE: Die für das Abfragen verfügbaren Protokolltypen können je nach Umgebung
 Sie können Filter festlegen, um die Ergebnisse der Abfrage weiter zu verfeinern. Um beispielsweise alle Protokollmeldungen zu finden, die einen Fehler anzeigen, setzen Sie einen Filter für _Messages_, der das Wort „Fehlgeschlagen“ enthält.
 
 
-TIP: Sie können damit beginnen, den gewünschten Text in das Filterfeld einzugeben. Cloud Insights fordert Sie auf, eine Platzhaltersuche zu erstellen, die den String enthält, während Sie eingeben.
+TIP: Sie können den gewünschten Text in das Filterfeld eingeben. Data Infrastructure Insights fordert Sie auf, bei der Eingabe eine Platzhaltersuche zu erstellen, die den String enthält.
 
 Die Ergebnisse werden in einem Diagramm angezeigt, in dem die Anzahl der Protokollinstanzen in jedem angezeigten Zeitraum angezeigt wird. Unter der Grafik sehen Sie die Protokolleinträge, die sich selbst bewegen. Das Diagramm und die Einträge werden automatisch auf der Grundlage des ausgewählten Zeitbereichs aktualisiert.
 
@@ -79,7 +79,7 @@ Beachten Sie, dass im obigen Fall, da sowohl "cm-Monitoring" als auch "EG-Monito
 
 
 . Die Ergebnisse des aktuellen Filters, einschließlich aller „Filtern nach“-Werte UND des erweiterten Abfragefilters, werden in der Ergebnisliste angezeigt. Die Liste kann nach allen angezeigten Spalten sortiert werden. Um weitere Spalten anzuzeigen, wählen Sie das Zahnrad-Symbol.
-. Das Diagramm wurde vergrößert, um nur Protokollergebnisse anzuzeigen, die innerhalb eines bestimmten Zeitrahmens aufgetreten sind. Der hier angezeigte Zeitbereich entspricht dem aktuellen Zoomfaktor. Wählen Sie die Schaltfläche _Zoom zurücksetzen_, um den Zoom-Level auf den aktuellen Cloud Insights-Zeitbereich zurückzusetzen.
+. Das Diagramm wurde vergrößert, um nur Protokollergebnisse anzuzeigen, die innerhalb eines bestimmten Zeitrahmens aufgetreten sind. Der hier angezeigte Zeitbereich entspricht dem aktuellen Zoomfaktor. Wählen Sie die Schaltfläche _Zoom zurücksetzen_, um den Zoomfaktor auf den aktuellen Dateninfrastrukturzeitbereich zurückzusetzen.
 . Die Diagrammergebnisse wurden nach dem Feld _source_ gruppiert. Das Diagramm zeigt die Ergebnisse in jeder Spalte, die in Farben gruppiert sind. Wenn Sie den Mauszeiger über eine Spalte im Diagramm bewegen, werden einige Details zu den spezifischen Einträgen angezeigt.
 +
 image:Log_Advanced_Query_Group_Detail.png["Details Zum Gruppierten Hover"]

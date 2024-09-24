@@ -64,7 +64,7 @@ Wenn Legenden angezeigt werden, wird die Legende als Link zu dieser Asset-Seite 
 
 == Neue Metriken
 
-Cloud Insights bietet verschiedene *transform*-Optionen für bestimmte Metriken in Widgets (insbesondere die Metriken "Custom" oder Integration Metrics, wie etwa von Kubernetes, ONTAP Advanced Data, Telegraf Plugins, etc.), so dass Sie die Daten auf eine Reihe von Möglichkeiten anzuzeigen. Beim Hinzufügen transformbarer Metriken zu einem Widget werden Sie mit einem Dropdown-Menü mit den folgenden Optionen zur Transformation angezeigt:
+Data Infrastructure Insights bietet verschiedene *transform*-Optionen für bestimmte Kennzahlen in Widgets (insbesondere die Kennzahlen, die als „Benutzerdefinierte“ oder „Integrationsmetriken“ bezeichnet werden, wie z. B. von Kubernetes, ONTAP Advanced Data, Telegraf-Plug-ins usw.), so dass Sie die Daten auf verschiedene Arten anzeigen können. Beim Hinzufügen transformbarer Metriken zu einem Widget werden Sie mit einem Dropdown-Menü mit den folgenden Optionen zur Transformation angezeigt:
 
 Keine:: Die Daten werden ohne Manipulation als IS angezeigt.
 Preis:: Aktueller Wert geteilt durch den Zeitbereich seit der vorherigen Beobachtung.
@@ -541,7 +541,7 @@ Wenn Sie jedoch vorübergehend nur Nodes in einzelnen Subnetzen in Ihrer Umgebun
 
 image:Variables_Node_Example_After_Variable_Applied.png["Agent-Knoten Nach Variablenfilter"]
 
-Sie können auch eine Variable festlegen, um unabhängig vom Objekttyp auf _all_ Objekte mit einem bestimmten Attribut zu filtern, zum Beispiel Objekte mit einem Attribut "Anbieter", indem Sie _*.Vendor_ im Feld Variable angeben. Sie müssen nicht das "*." eingeben; Cloud Insights wird dies liefern, wenn Sie die Platzhalteroption auswählen.
+Sie können auch eine Variable festlegen, um unabhängig vom Objekttyp auf _all_ Objekte mit einem bestimmten Attribut zu filtern, zum Beispiel Objekte mit einem Attribut "Anbieter", indem Sie _*.Vendor_ im Feld Variable angeben. Sie müssen kein „*.“ eingeben; Data Infrastructure Insights liefert dies, wenn Sie die Platzhalteroption auswählen.
 
 image:Variables_Attribute_Vendor_Example.png["Attributvariable für den Anbieter"]
 
@@ -641,7 +641,7 @@ Wenn Sie auf den Link in einem Widget mit einem Wert oder einem Gauge-Widget kli
 Wie Widgets mit einem Wert und einer Anzeige können Sie bedingte Formatierungen in TabellenWidgets festlegen, sodass Sie Daten mit Farben und/oder speziellen Symbolen hervorheben können.
 
 
-NOTE: Bedingte Formatierung ist derzeit in der Cloud Insights Bundesausgabe nicht verfügbar.
+NOTE: Bedingte Formatierung ist derzeit in Data Infrastructure Insights Federal Edition nicht verfügbar.
 
 Mit Conditional Formatting können Sie Schwellenwerte auf Warnebene und kritische Ebene in den TabellenWidgets festlegen und hervorheben. Dadurch erhalten Sie sofortige Sichtbarkeit für Ausreißer und außergewöhnliche Datenpunkte.
 
@@ -659,9 +659,9 @@ Sie können festlegen, ob die Zustandsformatierung als Farbe, Symbole oder beide
 
 == Auswählen des Geräts für die Datenanzeigen(Anzeige
 
-Die meisten Widgets auf einem Dashboard ermöglichen die Angabe der Einheiten, in denen Werte angezeigt werden sollen, z. B. _Megabyte_, _Tausende_, _Prozentsatz_, _Millisekunden (ms)_, Etc. In vielen Fällen kennt Cloud Insights das beste Format für die zu erschaffenden Daten. Wenn das beste Format nicht bekannt ist, können Sie das gewünschte Format festlegen.
+In den meisten Widgets auf einem Dashboard können Sie die Einheiten angeben, in denen Werte angezeigt werden sollen, z. B. _Megabyte_, _Tausende_, _Prozentsatz_, _Millisekunden (ms)_ usw. in vielen Fällen kennt Data Infrastructure Insights das beste Format für die erfassten Daten. Wenn das beste Format nicht bekannt ist, können Sie das gewünschte Format festlegen.
 
-Im nachstehenden Liniendiagramm sind die für das Widget ausgewählten Daten in _Bytes_ (die Basiseinheit IEC-Daten: Siehe Tabelle unten) angegeben, sodass die Basiseinheit automatisch als 'Byte (B)' ausgewählt wird. Die Datenwerte sind jedoch groß genug, um als Gibibyte (gib) präsentiert werden zu können, sodass Cloud Insights standardmäßig die Werte als gib automatisch formatiert. Auf der Y-Achse im Diagramm wird auf der Anzeigeeinheit „gib“ angezeigt, und alle Werte werden gemäß dieser Einheit angezeigt.
+Im nachstehenden Liniendiagramm sind die für das Widget ausgewählten Daten in _Bytes_ (die Basiseinheit IEC-Daten: Siehe Tabelle unten) angegeben, sodass die Basiseinheit automatisch als 'Byte (B)' ausgewählt wird. Die Datenwerte sind jedoch groß genug, um als Gibibyte (gib) dargestellt zu werden. Daher formatiert Data Infrastructure Insights die Werte standardmäßig automatisch als gib. Auf der Y-Achse im Diagramm wird auf der Anzeigeeinheit „gib“ angezeigt, und alle Werte werden gemäß dieser Einheit angezeigt.
 
 image:used_memory_in_bytes.png["Basiseinheit Byte angezeigt in Gigabyte, Breite = 640"]
 
@@ -679,10 +679,10 @@ Um die Einstellungen zu löschen und wieder zu starten, klicken Sie auf *Standar
 
 === Ein Wort zu Auto-Format
 
-Die meisten Metriken werden von Datensammlern in der kleinsten Einheit berichtet, beispielsweise als ganze Zahl wie 1,234,567,890 Bytes. Standardmäßig formatiert Cloud Insights den Wert für die lesbare Anzeige automatisch. Beispielsweise würde ein Datenwert von 1,234,567,890 Byte automatisch auf 1.23 _Gibibyte_ formatiert. Sie können wählen, ob Sie es in einem anderen Format anzeigen möchten, z. B. _Mebibyte_. Der Wert wird entsprechend angezeigt.
+Die meisten Metriken werden von Datensammlern in der kleinsten Einheit berichtet, beispielsweise als ganze Zahl wie 1,234,567,890 Bytes. Standardmäßig formatiert Data Infrastructure Insights den Wert für die am besten lesbare Anzeige automatisch. Beispielsweise würde ein Datenwert von 1,234,567,890 Byte automatisch auf 1.23 _Gibibyte_ formatiert. Sie können wählen, ob Sie es in einem anderen Format anzeigen möchten, z. B. _Mebibyte_. Der Wert wird entsprechend angezeigt.
 
 
-NOTE: Cloud Insights nutzt die Namensstandards für die Benennung amerikanischer Zahlen. Die amerikanische "Milliarde" entspricht "tausend Millionen".
+NOTE: Data Infrastructure Insights verwendet amerikanische Standards für die Nummernbenennung. Die amerikanische "Milliarde" entspricht "tausend Millionen".
 
 
 
@@ -795,10 +795,10 @@ Jedes Widget zeigt sein Intervall für die automatische Aktualisierung in der ob
 
 Die automatische Aktualisierung ist für den benutzerdefinierten Zeitbereich des Dashboards nicht verfügbar.
 
-In Kombination mit *TV-Modus* ermöglicht die automatische Aktualisierung die Anzeige von Daten auf einem Dashboard oder einer Asset-Seite nahezu in Echtzeit. Der TV-Modus bietet ein übersichtliches Display. Das Navigationsmenü ist ausgeblendet und bietet so mehr Platz für Ihre Datenanzeige, wie die Schaltfläche Bearbeiten. Der TV-Modus ignoriert typische Cloud Insights-Timeouts und lässt das Display so lange in Betrieb, bis es manuell oder automatisch durch Autorisierungsprotokolle abgemeldet wird.
+In Kombination mit *TV-Modus* ermöglicht die automatische Aktualisierung die Anzeige von Daten auf einem Dashboard oder einer Asset-Seite nahezu in Echtzeit. Der TV-Modus bietet ein übersichtliches Display. Das Navigationsmenü ist ausgeblendet und bietet so mehr Platz für Ihre Datenanzeige, wie die Schaltfläche Bearbeiten. Im TV-Modus werden typische Daten-Infrastruktur-Insights-Timeouts ignoriert. Die Anzeige bleibt so lange aktiv, bis sie manuell oder automatisch über Sicherheitsprotokolle der Autorisierung abgemeldet wird.
 
 
-NOTE: Da NetApp BlueXP über eine eigene Zeitüberschreitung für die Benutzeranmeldung von 7 Tagen verfügt, muss sich Cloud Insights auch bei diesem Ereignis abmelden. Sie können sich einfach erneut anmelden und Ihr Dashboard wird weiterhin angezeigt.
+NOTE: Da NetApp BlueXP  eine eigene Zeitüberschreitung für die Benutzeranmeldung von 7 Tagen hat, muss sich Dateninfrastruktur Insights auch bei diesem Ereignis abmelden. Sie können sich einfach erneut anmelden und Ihr Dashboard wird weiterhin angezeigt.
 
 * Um den TV-Modus zu aktivieren, klicken Sie auf die Schaltfläche TV-Modus.
 * Um den TV-Modus zu deaktivieren, klicken Sie oben links auf dem Bildschirm auf die Schaltfläche *Beenden*.
@@ -835,7 +835,7 @@ Um Dashboards zur Gruppe hinzuzufügen, klicken Sie auf die Gruppe _Alle Dashboa
 Entfernen Sie Dashboards auf dieselbe Weise aus der aktuellen Gruppe, indem Sie _aus Gruppe_ entfernen auswählen. Sie können Dashboards nicht aus der Gruppe _Alle Dashboards_ oder _Meine Dashboards_ entfernen.
 
 
-NOTE: Durch Entfernen eines Dashboards aus einer Gruppe wird das Dashboard nicht aus Cloud Insights gelöscht. Um ein Dashboard vollständig zu entfernen, wählen Sie das Dashboard aus, und klicken Sie auf _Löschen_. Dadurch wird er von allen Gruppen entfernt, zu denen er gehört hat und für keinen Benutzer mehr verfügbar ist.
+NOTE: Durch das Entfernen eines Dashboards aus einer Gruppe wird das Dashboard nicht aus Data Infrastructure Insights gelöscht. Um ein Dashboard vollständig zu entfernen, wählen Sie das Dashboard aus, und klicken Sie auf _Löschen_. Dadurch wird er von allen Gruppen entfernt, zu denen er gehört hat und für keinen Benutzer mehr verfügbar ist.
 
 
 
@@ -851,7 +851,7 @@ image:DashboardPin.png["Fixierte Dashboards"]
 
 == Dunkles Thema
 
-Sie können wählen, Cloud Insights entweder mit einem hellen Thema (die Standardeinstellung), die die meisten Bildschirme mit einem hellen Hintergrund mit dunklem Text, oder ein dunkles Thema, das die meisten Bildschirme mit einem dunklen Hintergrund mit leichtem Text angezeigt.
+Sie können Daten-Infrastruktur-Insights entweder mit einem hellen Thema (der Standard) anzeigen, das die meisten Bildschirme mit einem hellen Hintergrund mit dunklem Text anzeigt, oder mit einem dunklen Thema, das die meisten Bildschirme mit einem dunklen Hintergrund mit hellem Text anzeigt.
 
 Um zwischen hellen und dunklen Themen zu wechseln, klicken Sie auf die Schaltfläche Benutzername in der oberen rechten Ecke des Bildschirms und wählen Sie das gewünschte Thema.
 
@@ -870,7 +870,7 @@ NOTE: Einige Bildschirmbereiche, wie bestimmte Widget-Diagramme, zeigen immer no
 
 Unterschiedliche Datensammler stellen ihre Daten häufig in unterschiedlichen Intervallen in Frage. Zum Beispiel kann Datensammler A alle 15 Minuten abfragen, während Datensammler B alle fünf Minuten abfragt. Wenn ein Liniendiagramm-Widget (auch Spline-, Bereich- und gestapelte Flächendiagramme) diese Daten von mehreren Datensammlern in einer einzelnen Zeile zusammenfasst (z. B. wenn das Widget nach „all“ gruppiert wird), Und die Aktualisierung der Linie alle fünf Minuten, können die Daten von Collector B korrekt angezeigt werden, während die Daten von Collector A Lücken haben können, so dass das Aggregat bis zum Sammler Eine erneute Abstimmungen.
 
-Um dies zu lindern, interpoliert Cloud Insights Daten bei der Aggregation, unter Verwendung der umgebenden Datenpunkte zu einem "besten Raten" an Daten bis Datensammler wieder abfragen. Sie können die Objektdaten jedes Datensammlers immer einzeln anzeigen, indem Sie die Gruppierung des Widgets anpassen.
+Um dies zu verringern, interpoliert Data Infrastructure Insights Daten bei der Aggregation und nutzt die umliegenden Datenpunkte, um eine „Best Guess“ an Daten zu nehmen, bis die Datensammler wieder abfragen. Sie können die Objektdaten jedes Datensammlers immer einzeln anzeigen, indem Sie die Gruppierung des Widgets anpassen.
 
 
 

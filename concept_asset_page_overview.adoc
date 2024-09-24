@@ -25,7 +25,7 @@ Die Asset-Seiten fassen den aktuellen Status eines Assets zusammen und enthalten
 
 == Arten von Asset-Seiten
 
-Cloud Insights bietet Asset-Seiten für die folgenden Materialien:
+Data Infrastructure Insights bietet Asset-Seiten für die folgenden Ressourcen:
 
 * Virtual Machine
 * Storage Virtual Machine (SVM)

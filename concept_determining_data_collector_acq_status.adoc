@@ -19,7 +19,7 @@ keywords: collector, acquisition, status
 
 
 [role="lead"]
-Da Datensammler die primäre Informationsquelle für Cloud Insights sind, müssen Sie unbedingt sicherstellen, dass diese im laufenden Zustand bleiben.
+Da Datensammler die primäre Informationsquelle für Einblicke in die Dateninfrastruktur sind, muss sichergestellt werden, dass der Betrieb auch weiterhin gewährleistet ist.
 
 Der Datenerfassungsstatus wird in der rechten oberen Ecke einer beliebigen Asset-Seite als Meldung „Erfasste N Minuten zuvor“ angezeigt, wobei N die letzte Erfassungszeit des Datensammlers des Assets angibt. Die Aufnahmezeit/das Erfassungsdatum wird ebenfalls angezeigt.
 

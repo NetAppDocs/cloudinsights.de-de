@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_asset_alerts_section.html 
-summary: Übersicht über den Abschnitt „Verwandte Meldungen“ in Cloud Insights. 
+summary: Überblick über den Abschnitt „Zugehörige Warnmeldungen“ der Bestandsseite in Data Infrastructure Insights. 
 keywords: asset, landing page, violations, Alerts, 
 ---
 = Abschnitt „Hinweise auf der Seite „Ressourcen“

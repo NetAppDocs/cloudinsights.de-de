@@ -22,9 +22,6 @@ keywords: email, notifications, alerts, warnings, attacks
 Um die Empfänger von Benachrichtigungen für die Workload-Sicherheit zu konfigurieren, klicken Sie auf *Admin > Benachrichtigungen* und geben Sie für jeden Empfänger eine E-Mail-Adresse in die entsprechenden Abschnitte ein.
 
 
-NOTE: Workload-Sicherheit ist in der Cloud Insights Bundesausgabe nicht verfügbar.
-
-
 
 == Potenzielle Angriffs- und Warnhinweise
 
@@ -66,5 +63,5 @@ Beachten Sie Folgendes:
 | *Problem:* | *Teste das:* 
 
 
-| E-Mail-IDs sind in den „Data Collector Health Alerts“ vorhanden, ich erhalte jedoch keine Benachrichtigungen. | Benachrichtigungs-E-Mails werden von der NetApp Cloud Insights-Domain gesendet, d. h. von _accounts@service.cloudinsights.netapp.com_. Einige Unternehmen blockieren eingehende E-Mails, wenn sie von einer externen Domäne stammen. Stellen Sie sicher, dass externe Benachrichtigungen von NetApp Cloud Insights-Domänen auf die Whitelist gesetzt sind. 
+| E-Mail-IDs sind in den „Data Collector Health Alerts“ vorhanden, ich erhalte jedoch keine Benachrichtigungen. | Benachrichtigungs-E-Mails werden von der NetApp-Data-Infrastructure-Insights-Domain gesendet, d. h. von _accounts@service.cloudinsights.NetApp.com_. Einige Unternehmen blockieren eingehende E-Mails, wenn sie von einer externen Domäne stammen. Stellen Sie sicher, dass externe Benachrichtigungen aus NetApp-Dateninfrastrukturdomänen auf die Whitelist gesetzt sind. 
 |===

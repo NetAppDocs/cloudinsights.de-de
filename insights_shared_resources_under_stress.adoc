@@ -19,7 +19,7 @@ summary: Anhand der Einblicke erhalten Sie einen Einblick, wie sich Ressourcen a
 
 
 [role="lead"]
-Durch Workloads mit hohen Auswirkungen kann die Performance anderer Workloads in einer gemeinsamen Ressource reduziert werden. Dadurch wird die gemeinsam genutzte Ressource unter Druck. Cloud Insights bietet Tools, mit denen Sie die Sättigung von Ressourcen und Auswirkungen in Ihrer Umgebung analysieren können.
+Durch Workloads mit hohen Auswirkungen kann die Performance anderer Workloads in einer gemeinsamen Ressource reduziert werden. Dadurch wird die gemeinsam genutzte Ressource unter Druck. Data Infrastructure Insights bietet Tools, mit denen Sie die Ressourcensättigung und Beeinträchtigungen Ihrer Umgebung untersuchen können.
 
 
 
@@ -31,7 +31,7 @@ Ein *anspruchsvoller Workload* ist ein Workload, der derzeit als Auswirkungen au
 
 Ein *betroffener Workload* ist ein Workload, der von einer hohen Auslastung im Shared Storage Pool beeinflusst wird. Diese Workloads verzeichnen aufgrund anspruchsvoller Workloads einen geringeren IOPS-Wert und/oder eine höhere Latenz.
 
-Zu beachten ist, dass das Volume oder das interne Volume selbst als Workload erkannt wird, falls Cloud Insights den führenden Computing-Workload nicht erkannt hat. Dies gilt sowohl für anspruchsvolle als auch für betroffene Workloads.
+Beachten Sie, dass das Volume oder das interne Volume selbst als Workload erkannt wird, falls Data Infrastructure Insights den führenden Computing-Workload nicht erkannt hat. Dies gilt sowohl für anspruchsvolle als auch für betroffene Workloads.
 
 *Shared Resource Sättigung* ist das Verhältnis der IOPS-Auswirkung zu _Baseline_.
 
@@ -47,7 +47,7 @@ Wenn Sie sich mit anspruchsvollen und beeinträchtigten Workloads in Ihren gemei
 
 image:InsightsMenu.png["Menü „Insights“"]
 
-Cloud Insights zeigt eine Liste aller Workloads an, bei denen eine Sättigung erkannt wurde. Beachten Sie, dass Cloud Insights Workloads zeigt, bei denen mindestens eine _anspruchsvolle Ressource_ *oder* _betroffene Ressource_ erkannt wurde.
+Data Infrastructure Insights zeigt eine Liste aller Workloads an, bei denen eine Sättigung erkannt wurde. Beachten Sie, dass Data Infrastructure Insights Workloads zeigt, bei denen mindestens eine _anspruchsvolle Ressource_ *oder* _betroffene Ressource_ erkannt wurde.
 
 Klicken Sie auf einen Workload, um die Detailseite anzuzeigen. Das obere Diagramm zeigt den Vorgang auf der gemeinsam genutzten Ressource (z. B. einen Storage-Pool), über den Konflikte/Sättigung stattfinden.
 

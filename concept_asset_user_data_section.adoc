@@ -48,7 +48,7 @@ Um eine Anwendung zu entfernen, legen Sie die Anwendungsliste herunter und deakt
 
 == Verwenden des Abschnitts „Benutzerdaten“ zum Zuweisen oder Ändern von Anmerkungen
 
-Wenn Sie Cloud Insights anpassen, um die Daten zur Nachverfolgung Ihrer Unternehmensanforderungen zu verfolgen, können Sie spezielle Anmerkungen mit der Bezeichnung „Anmerkungen“ definieren und diese Ihren Assets zuweisen. Im Abschnitt „Benutzerdaten“ einer Asset-Seite werden Anmerkungen angezeigt, die einem Asset zugeordnet sind, und Sie können auch die Anmerkungen ändern, die diesem Asset zugewiesen sind.
+Wenn Sie Data Infrastructure Insights an Ihre Unternehmensanforderungen anpassen, um Daten nachzuverfolgen, können Sie spezielle Notizen als Anmerkungen definieren und sie Ihren Ressourcen zuweisen. Im Abschnitt „Benutzerdaten“ einer Asset-Seite werden Anmerkungen angezeigt, die einem Asset zugeordnet sind, und Sie können auch die Anmerkungen ändern, die diesem Asset zugewiesen sind.
 
 .Schritte
 . Um dem Asset eine Anmerkung hinzuzufügen, klicken Sie im Bereich Benutzerdaten auf der Asset-Seite auf *+Annotation*.

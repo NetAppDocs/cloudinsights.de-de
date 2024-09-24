@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_storage_virtualization.html 
-summary: Cloud Insights bietet sowohl Ansichten von virtualisiertem Front-End als auch von Back-End Storage. 
+summary: Data Infrastructure Insights bietet Einblicke in virtualisierten Front-End- und Back-End-Storage. 
 keywords: storage, virtual, virtualized, virtualization, 
 ---
 = Storage-Virtualisierung
@@ -19,7 +19,7 @@ keywords: storage, virtual, virtualized, virtualization,
 
 
 [role="lead"]
-Cloud Insights kann zwischen einem Storage-Array mit lokalem Speicher oder der Virtualisierung anderer Storage-Arrays unterscheiden. So können Sie Kosten nachvollziehen und die Performance vom Front-End bis zum Back-End Ihrer Infrastruktur differenzieren.
+Anhand von Dateninfrastrukturdaten können Storage-Arrays mit lokalem Storage oder der Virtualisierung anderer Storage-Arrays unterschieden werden. So können Sie Kosten nachvollziehen und die Performance vom Front-End bis zum Back-End Ihrer Infrastruktur differenzieren.
 
 
 

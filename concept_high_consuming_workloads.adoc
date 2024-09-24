@@ -19,7 +19,7 @@ summary: Anhand der Einblicke erhalten Sie einen Einblick, wie sich Ressourcen a
 
 
 [role="lead"]
-Durch Workloads mit hohen Auswirkungen kann die Performance anderer Workloads in einer gemeinsamen Ressource reduziert werden. Cloud Insights bietet Tools, mit denen Sie die Sättigung von Ressourcen und Auswirkungen in Ihrer Umgebung analysieren können.
+Durch Workloads mit hohen Auswirkungen kann die Performance anderer Workloads in einer gemeinsamen Ressource reduziert werden. Data Infrastructure Insights bietet Tools, mit denen Sie die Ressourcensättigung und Beeinträchtigungen Ihrer Umgebung untersuchen können.
 
 
 
@@ -29,7 +29,7 @@ Wenn wir über Workload- oder Ressourcenauswirkungen sprechen, sind die folgende
 
 Eine * wirkungsvolle* oder _gierige_ Ressource ist eine, die negative Auswirkungen auf eine andere Ressource verursacht. Beispielsweise kann ein Volume mit sehr hohen IOPS zu einer erhöhten Latenz bei anderen Volumes führen (d. h. _beeinträchtigte_ oder beeinträchtigte Ressourcen). Wirkungsvolle und beeinträchtigte Ressourcen sind „Kollegen“, die dieselbe gemeinsam genutzte Ressource nutzen, zum Beispiel einen Storage-Pool oder ein Volume.
 
-Ein *hochperformanter Workload* ist ein Workload, der derzeit als Auswirkungen auf andere Ressourcen im Shared Storage Pool identifiziert wird. Diese Workloads ermöglichen höhere IOPS und reduzieren die IOPS für die betroffenen Workloads. In Cloud Insights werden diese als *anspruchsvolle Workloads* bezeichnet.
+Ein *hochperformanter Workload* ist ein Workload, der derzeit als Auswirkungen auf andere Ressourcen im Shared Storage Pool identifiziert wird. Diese Workloads ermöglichen höhere IOPS und reduzieren die IOPS für die betroffenen Workloads. In Data Infrastructure Insights werden diese als *anspruchsvolle Workloads* bezeichnet.
 
 Ein *betroffener Workload* ist ein Workload, der von einer hohen Auslastung im Shared Storage Pool betroffen ist. Diese Workloads verzeichnen aufgrund anspruchsvoller Workloads einen geringeren IOPS-Wert und/oder eine höhere Latenz.
 
@@ -43,7 +43,7 @@ Ein *Konflikt* tritt auf, wenn IOPS bestimmt werden, die sich auf andere Ressour
 
 === Anspruchsvolle Workloads
 
-Alle von Cloud Insights erkannten hochintensiven Workloads werden in den _gemeinsam genutzten Ressourcen unter „Stress_ Insight“ angezeigt. Rufen Sie *Observability > Infrastructure Insights* auf, um diese Einblicke anzuzeigen.
+Alle hochintensiven Workloads, die Data Infrastructure Insights entdeckt, werden in der _Shared Resources unter „Stress_ Insight“ angezeigt. Rufen Sie *Observability > Infrastructure Insights* auf, um diese Einblicke anzuzeigen.
 
 image:Impacts_Workloads_Menu.png["Gemeinsame Nutzung Von Ressourcen"]
 

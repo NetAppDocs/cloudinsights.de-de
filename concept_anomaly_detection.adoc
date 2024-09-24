@@ -19,9 +19,9 @@ summary: Kennzahlen auf Anomalien überwachen
 
 
 [role="lead"]
-Die Anomalieerkennung ermöglicht Einblicke in unerwartete Änderungen an Datenmustern in Ihrer Umgebung. Eine Anomalie tritt auf, wenn sich das Muster des Objektes in Ihrer Umgebung ändert, z. B. wenn ein Objekt mittwochs zu einer bestimmten Zeit eine bestimmte Latenz erfährt, aber die Latenzspitzen am folgenden Mittwoch über diesem Niveau liegen. diese Spitze würde als eine Anomalie betrachtet werden. Mit Cloud Insights können Monitore erstellt werden, um bei Anomalien wie diesem zu warnen.
+Die Anomalieerkennung ermöglicht Einblicke in unerwartete Änderungen an Datenmustern in Ihrer Umgebung. Eine Anomalie tritt auf, wenn sich das Muster des Objektes in Ihrer Umgebung ändert, z. B. wenn ein Objekt mittwochs zu einer bestimmten Zeit eine bestimmte Latenz erfährt, aber die Latenzspitzen am folgenden Mittwoch über diesem Niveau liegen. diese Spitze würde als eine Anomalie betrachtet werden. Data Infrastructure Insights ermöglicht die Erstellung von Monitoren, die bei solchen Anomalien entsprechende Alarme ausgeben.
 
-Die Anomalieerkennung ist für Objektmetriken geeignet, die ein wiederkehrendes, vorhersehbares Muster aufweisen. Wenn diese Objektkennzahlen über- oder unterschreiten, kann Cloud Insights einen Alarm erstellen, um eine Untersuchung einzuleiten.
+Die Anomalieerkennung ist für Objektmetriken geeignet, die ein wiederkehrendes, vorhersehbares Muster aufweisen. Wenn diese Objektkennzahlen über oder unter dem erwarteten Niveau liegen, kann Data Infrastructure Insights eine Warnmeldung zur schnellen Untersuchung generieren.
 
 image:anomaly_detection_expert_view.png["Diagramm mit einer erkannten Anomalie"]
 
@@ -29,7 +29,7 @@ image:anomaly_detection_expert_view.png["Diagramm mit einer erkannten Anomalie"]
 
 == Was ist die Anomaly-Erkennung?
 
-Eine Anomalie tritt auf, wenn der Mittelwert einer Metrik eine Reihe von Standardabweichungen außerhalb des gewichteten Mittelwerts dieser Metrik für die letzten Wochen ist, wobei die letzten Wochen mehr Gewicht als die letzten Wochen haben. Cloud Insights bietet die Möglichkeit, Daten zu überwachen und bei Anomalien entsprechende Alarme zu melden. Sie haben die Wahl, die Erkennungsstufen für die „Empfindlichkeit“ einzustellen. Eine höhere Sensitivität wäre beispielsweise dann gegeben, wenn der Mittelwert weniger Standardabweichungen vom Mittelwert ist, wodurch mehr Warnungen generiert werden. Umgekehrt: Niedrigere Empfindlichkeit = mehr Standardabweichungen vom Mittelwert = weniger Alarme.
+Eine Anomalie tritt auf, wenn der Mittelwert einer Metrik eine Reihe von Standardabweichungen außerhalb des gewichteten Mittelwerts dieser Metrik für die letzten Wochen ist, wobei die letzten Wochen mehr Gewicht als die letzten Wochen haben. Data Infrastructure Insights bietet die Möglichkeit, Daten zu überwachen und bei Anomalien entsprechende Warnmeldungen zu ausgeben. Sie haben die Wahl, die Erkennungsstufen für die „Empfindlichkeit“ einzustellen. Eine höhere Sensitivität wäre beispielsweise dann gegeben, wenn der Mittelwert weniger Standardabweichungen vom Mittelwert ist, wodurch mehr Warnungen generiert werden. Umgekehrt: Niedrigere Empfindlichkeit = mehr Standardabweichungen vom Mittelwert = weniger Alarme.
 
 
 

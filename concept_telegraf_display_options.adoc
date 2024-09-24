@@ -19,7 +19,7 @@ summary: Optionen zur Anzeige von Telegraf-Daten
 
 
 [role="lead"]
-Cloud Insights bietet verschiedene *transform*-Optionen für bestimmte Metriken in Widgets (insbesondere die Metriken "Custom" oder Integration Metrics, wie etwa von Kubernetes, ONTAP Advanced Data, Telegraf Plugins, etc.), so dass Sie die Daten auf eine Reihe von Möglichkeiten anzuzeigen. Beim Hinzufügen transformbarer Metriken zu einem Widget werden Sie mit einem Dropdown-Menü mit den folgenden Optionen zur Transformation angezeigt:
+Data Infrastructure Insights bietet verschiedene *transform*-Optionen für bestimmte Kennzahlen in Widgets (insbesondere die Kennzahlen, die als „Benutzerdefinierte“ oder „Integrationsmetriken“ bezeichnet werden, wie z. B. von Kubernetes, ONTAP Advanced Data, Telegraf-Plug-ins usw.), so dass Sie die Daten auf verschiedene Arten anzeigen können. Beim Hinzufügen transformbarer Metriken zu einem Widget werden Sie mit einem Dropdown-Menü mit den folgenden Optionen zur Transformation angezeigt:
 
 Keine:: Die Daten werden ohne Manipulation als IS angezeigt.
 Preis:: Aktueller Wert geteilt durch den Zeitbereich seit der vorherigen Beobachtung.
