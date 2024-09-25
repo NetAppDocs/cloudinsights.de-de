@@ -88,22 +88,18 @@ Drücken Sie die Eingabetaste, oder klicken Sie außerhalb des Filterfelds, um d
 Sie können forensische Aktivitätsdaten nach folgenden Feldern filtern:
 
 * Der Typ *Aktivität*.
-
-
 * *Quell-IP*, auf die das Element zugegriffen wurde. Sie müssen eine gültige Quell-IP-Adresse in doppelten Anführungszeichen angeben, z. B. „10.1.1.1.“. Unvollständige IPs wie „10.1.1.*“, „10.1.*.*“ usw. funktionieren nicht.
 * *Protokoll* zum Abrufen protokollspezifischer Aktivitäten.
-
-
 * *Benutzername* des Benutzers, der die Aktivität ausführt. Sie müssen den genauen Benutzernamen angeben, um sie zu filtern. Die Suche mit teilweisen Nutzernamen oder teilweisen Nutzernamen, vorfixiert oder mit ‘*’ abgestickt, funktioniert nicht.
 * *Rauschunterdrückung* zum Filtern von Dateien, die in den letzten 2 Stunden vom Benutzer erstellt werden. Sie wird auch zum Filtern temporärer Dateien (z. B. .tmp-Dateien) verwendet, auf die der Benutzer Zugriff hat.
-* *Domain* des Benutzers, der die Aktivität ausführt. Sie müssen die *genaue Domain* angeben, um zu filtern. Die Suche nach einer partiellen Domäne oder einer partiellen Domäne mit Präfix oder Suffix mit Platzhalter ()'*') funktioniert nicht. _None_ kann angegeben werden, um nach fehlender Domain zu suchen.
+* *Domain* des Benutzers, der die Aktivität ausführt. Sie müssen die *genaue Domain* angeben, um zu filtern. Die Suche nach einer partiellen Domäne oder einer partiellen Domäne mit Präfix oder Suffix mit Platzhalter ('*') funktioniert nicht. _None_ kann angegeben werden, um nach fehlender Domain zu suchen.
 
 
 Die folgenden Felder unterliegen speziellen Filterregeln:
 
 * *Entity Type*, mit Entity (File) Extension - es ist vorzuziehen, den genauen Entity-Typ in Anführungszeichen anzugeben. Beispiel: _ „Txt“_.
 * *Pfad* der Entity - Verzeichnispfad-Filter (Pfadstring endet mit /) für schnellere Ergebnisse werden bis zu 4 Verzeichnisse empfohlen. Beispiel: _/Home/userX/nested1/nested2/_ ODER _“/Home/userX/nested1/nested2/“_. Weitere Informationen finden Sie in der folgenden Tabelle.
-* *User* die Aktivität durchführen - es ist vorzuziehen, den genauen Benutzer in Anführungszeichen anzugeben. Für eample_„Administrator“_.
+* *User* die Aktivität durchführen - es ist vorzuziehen, den genauen Benutzer in Anführungszeichen anzugeben. Beispiel: _ „Administrator“_.
 * *Gerät* (SVM), in dem sich Entitäten befinden
 * *Volumen*, in dem sich Entitäten befinden
 * Der *Original-Pfad*, der bei der Umbenennung der Originaldatei verwendet wird.
@@ -151,7 +147,7 @@ HINWEIS:
 
 == Forensische Vorgangshistorie-Daten Sortieren
 
-Sie können Vorgangshistorie-Daten nach_Time, User, Source IP, Activity, Path_ und_Entity Type_ sortieren. Standardmäßig wird die Tabelle nach absteigender_Time_-Reihenfolge sortiert, was bedeutet, dass die neuesten Daten zuerst angezeigt werden. Die Sortierung ist für die Felder _Device_ und _Protocol_ deaktiviert.
+Sie können Daten aus dem Aktivitätsverlauf nach _Zeit, Benutzer, Quell-IP, Aktivität,_ und _Entitätstyp_ sortieren. Standardmäßig wird die Tabelle nach absteigender_Time_-Reihenfolge sortiert, was bedeutet, dass die neuesten Daten zuerst angezeigt werden. Die Sortierung ist für die Felder _Device_ und _Protocol_ deaktiviert.
 
 
 
@@ -178,7 +174,7 @@ Die Funktion „asynchrone Exporte“ in „Storage Workload Security“ wurde f
 
 
 
-Ein Beispielskript zum Extrahieren forensischer Daten über API ist unter _/opt/netapp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Informationen zum Skript finden Sie in der Infodatei an dieser Stelle.
+Ein Beispielskript zum Extrahieren forensischer Daten über API ist auf dem Agenten unter _/opt/NetApp/CloudSecure/Agent/Export-script/_ vorhanden. Weitere Informationen zum Skript finden Sie in der Infodatei an dieser Stelle.
 
 
 
