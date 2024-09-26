@@ -27,10 +27,10 @@ image:Device_Resolution_IP.png["IP-Geräteauflösung"]
 
 == Manuelles Hinzufügen von IP-Geräten
 
-Sie können Cloud Insights manuell ein IP-Gerät hinzufügen, indem Sie die im Bildschirm IP-Identifizierung verfügbare Funktion zum manuellen Hinzufügen verwenden.
+Sie können Data Infrastructure Insights manuell ein IP-Gerät hinzufügen, indem Sie die manuelle Add-Funktion verwenden, die im Bildschirm IP Identify verfügbar ist.
 
 .Verfahren
-. Melden Sie sich in der Weboberfläche von Cloud Insights an.
+. Melden Sie sich bei der Web-UI von Data Infrastructure Insights an.
 . Klicken Sie auf *Verwalten > Geräteauflösung*
 . Klicken Sie auf die Registerkarte * IP-Adresse identifizieren*.
 . Klicken Sie auf die Schaltfläche *Hinzufügen*.
@@ -74,7 +74,7 @@ NOTE: Als Best Practice wird empfohlen, zunächst die IP-Adresse Identify-Inform
 
 == Exportieren der IP-Gerätekennung in eine CSV-Datei
 
-Sie können vorhandene Identifizierungen für IP-Geräte von der Cloud Insights-Geräteauflösung in eine CSV-Datei exportieren. Sie können eine Geräteidentifikation exportieren, damit Sie sie ändern und dann wieder in Cloud Insights importieren können, wo sie dann verwendet wird, um Geräte zu identifizieren, die denen ähneln, die ursprünglich mit der exportierten Identifizierung übereinstimmen.
+Sie können vorhandene IP-Gerätekennungen aus der Funktion Data Infrastructure Insights Geräteauflösung in eine CSV-Datei exportieren. Möglicherweise möchten Sie eine Gerätekennung exportieren, damit Sie sie ändern und dann wieder in Data Infrastructure Insights importieren können. Dort werden dann Geräte identifiziert, die denen ähneln, die ursprünglich mit der exportierten Identifizierung übereinstimmen.
 
 .Über diese Aufgabe
 . Dieses Szenario kann verwendet werden, wenn Geräte ähnliche Attribute haben, die einfach in der .CSV-Datei bearbeitet und dann wieder in das System importiert werden können.
@@ -87,7 +87,7 @@ Wenn Sie eine IP-Geräte-ID in eine CSV-Datei exportieren, enthält die Datei di
 | Adresse | IP | Name 
 |===
 .Verfahren
-. Melden Sie sich in der Cloud Insights Web-UI an.
+. Melden Sie sich bei der Web-UI von Data Infrastructure Insights an.
 . Klicken Sie Auf *Verwalten > Geräteauflösung*
 . Wählen Sie die Registerkarte * IP Address Identify* aus.
 . Wählen Sie das IP-Gerät oder die Geräte aus, deren Kennung Sie exportieren möchten.

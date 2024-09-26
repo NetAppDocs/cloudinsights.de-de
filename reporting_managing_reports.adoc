@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 Sie können das Ausgabeformat und die Ausgabe eines Berichts anpassen, Berichteigenschaften oder Zeitpläne festlegen und E-Mail-Berichte erstellen.
 
 
-NOTE: Die Berichtsfunktion ist in Cloud Insights verfügbar link:concept_subscribing_to_cloud_insights.html["Premium Edition"].
+NOTE: Die Berichtsfunktion ist in Data Infrastructure Insights verfügbarlink:concept_subscribing_to_cloud_insights.html["Premium Edition"].
 
 
 
@@ -30,7 +30,7 @@ NOTE: Die Berichtsfunktion ist in Cloud Insights verfügbar link:concept_subscri
 
 Sie können das Format und die Bereitstellungsmethode von Berichten anpassen.
 
-. Gehen Sie im Cloud Insights-Berichtsportal zu *Menü > Inhalt > eigene Inhalte/Teaminhalte*. Bewegen Sie die Maus über den Bericht, den Sie anpassen möchten, und öffnen Sie das Menü „drei Punkte“.
+. Gehen Sie im Data Infrastructure Insights Reporting Portal zu *Menü > Inhalt > My Content/Team Content*. Bewegen Sie die Maus über den Bericht, den Sie anpassen möchten, und öffnen Sie das Menü „drei Punkte“.
 
 
 image:Reporting_Output_and_Delivery.png["Berichtsausgabe und -Ausgabe"]

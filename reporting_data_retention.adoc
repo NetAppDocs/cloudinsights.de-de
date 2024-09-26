@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_data_retention.html 
-summary: Cloud Insights Datenhaltung für Berichterstellung 
+summary: Dateninfrastruktur Insights Datenaufbewahrung für Reporting 
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying, retention 
 ---
 = Aufbewahrung historischer Daten für die Berichterstellung
@@ -19,7 +19,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 
 
 [role="lead"]
-Cloud Insights speichert Verlaufsdaten für die Verwendung in Berichten basierend auf den Datentabellen und Granularität der Daten, wie in der folgenden Tabelle dargestellt.
+Data Infrastructure Insights speichert historische Daten für die Verwendung in Reporting auf der Grundlage der Datentabellen und der Granularität der Daten, wie in der folgenden Tabelle dargestellt.
 
 |===
 

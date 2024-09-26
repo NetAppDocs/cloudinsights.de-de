@@ -22,7 +22,7 @@ keywords: query, queries, export, csv
 Sie können die Ergebnisse einer beliebigen Abfrage in eine .CSV-Datei exportieren, die es Ihnen ermöglicht, die Daten zu analysieren oder in eine andere Anwendung zu importieren.
 
 .Schritte
-. Melden Sie sich bei Cloud Insights an.
+. Melden Sie sich bei Data Infrastructure Insights an.
 . Klicken Sie auf *Abfragen* und wählen Sie *Alle Anfragen anzeigen*.
 +
 Die Seite Abfragen wird angezeigt.

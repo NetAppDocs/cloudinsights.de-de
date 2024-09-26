@@ -30,13 +30,13 @@ Um Kubernetes Change Analytics anzuzeigen, navigieren Sie zu *Kubernetes > Chang
 
 image:ChangeAnalytitcs_Main_Screen.png["Kubernetes Change Analytics Hauptbildschirm mit Warnungen und kritischen Alarmen, erfolgreichen und fehlgeschlagenen Implementierungen und den 3 wichtigsten Workloads, die Warnungen auslösen"].
 
-Die Seite wird basierend auf dem aktuell ausgewählten Cloud Insights-Zeitbereich automatisch aktualisiert.  Kleinere Zeitbereiche bedeuten eine häufigere Bildschirmerneuerung.
+Die Seite wird automatisch aktualisiert, basierend auf dem aktuell ausgewählten Zeitbereich von Data Infrastructure Insights. Kleinere Zeitbereiche bedeuten eine häufigere Bildschirmerneuerung.
 
 
 
 == Filtern
 
-Wie bei allen Funktionen von Cloud Insights ist auch die Filterung der Änderungsliste intuitiv: Ganz oben auf der Seite können Sie Werte für Ihren Kubernetes-Cluster, Namespace oder Workload eingeben oder auswählen oder Ihre eigenen Filter hinzufügen, indem Sie auf die Schaltfläche {+] klicken.
+Wie bei allen Funktionen von Data Infrastructure Insights ist auch das Filtern der Änderungsliste intuitiv: Ganz oben auf der Seite können Sie Werte für Ihren Kubernetes-Cluster, Namespace oder Workload eingeben oder auswählen oder mit der Schaltfläche {+] eigene Filter hinzufügen.
 
 Wenn Sie nach unten zu einem bestimmten Cluster, Namespace und Workload filtern (zusammen mit allen anderen Filtern, die Sie festlegen), wird Ihnen ein Zeitplan für die Implementierungen und Warnungen für diesen Workload in diesem Namespace auf dem Cluster angezeigt. Vergrößern Sie die Ansicht weiter, indem Sie auf das Diagramm klicken und es ziehen, um einen bestimmten Zeitraum zu fokussieren.
 

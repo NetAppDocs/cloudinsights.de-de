@@ -5,17 +5,14 @@ keywords: k8s, pods, clusters, nodes. troubleshooting, planning
 summary: Die Seite mit den Kubernetes-Node-Details bietet Einblick in das Back-End-PV und den Pod Storage. 
 ---
 = Kubernetes Node Detail-Seite
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -27,9 +24,9 @@ image:KubernetesNodeFiltering.png["Die Seite Kubernetes Node Detail mit der Filt
 
 == Wie die Pods und persistenten Volumes des Node erforscht werden
 
-Cloud Insights bietet einen Einblick in den Back-End Storage für Ihre Kubernetes-Umgebungen und gibt Ihnen einen Einblick in die Kubernetes Pods und PVS (Persistent Volumes). Sie können PV-Zähler wie IOPS, Latenz und Durchsatz von der Nutzung eines einzelnen Pods über einen PV-Zähler zu einem PV und bis zum Back-End-Speichergerät verfolgen.
+Data Infrastructure Insights bietet einen transparenten Einblick in den Back-End Storage Ihrer Kubernetes-Umgebungen und erlaubt Ihnen, Ihre Kubernetes Pods und Persistent Volumes (PVs) im Blick zu behalten. Sie können PV-Zähler wie IOPS, Latenz und Durchsatz von der Nutzung eines einzelnen Pods über einen PV-Zähler zu einem PV und bis zum Back-End-Speichergerät verfolgen.
 
-Auf PV-Ebene erfasst Cloud Insights Back-End-Kapazitätsinformationen (Gesamt, genutzte Prozentsatz) (internes Volumen oder Volumen je nach PV-Typ) sowie die Anzahl der internen Volume-Snapshots. Auf der Ebene des Pod zum Storage werden Back-End-Kapazität und die Anzahl interner Volume-Snapshots erfasst.
+Auf PV-Ebene erfasst Data Infrastructure Insights Back-End-Kapazitätsinformationen (internes Volume oder Volume, je nach PV-Typ) (Gesamt-, verbrauchte, verwendete Prozent) sowie die Anzahl interner Volume-Snapshots. Auf der Ebene des Pod zum Storage werden Back-End-Kapazität und die Anzahl interner Volume-Snapshots erfasst.
 
 Auf einer Landing Page des Volume oder des internen Volume werden zwei Tabellen angezeigt:
 

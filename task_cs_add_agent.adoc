@@ -27,7 +27,7 @@ Workload Security (ehemals Cloud Secure) erfasst Daten zu Benutzeraktivitäten m
 
 * Die sudo-Berechtigung ist für die Installation, das Ausführen von Skripten und die Deinstallation erforderlich.
 * Während der Installation des Agenten werden ein lokaler Benutzer _cssys_ und eine lokale Gruppe _cssys_ auf dem Computer erstellt. Wenn die Berechtigungseinstellungen die Erstellung eines lokalen Benutzers nicht zulassen und stattdessen Active Directory benötigen, muss im Active Directory-Server ein Benutzer mit dem Benutzernamen _csys_ erstellt werden.
-* Hier erfahren Sie mehr über Cloud Insights-Sicherheit link:security_overview.html["Hier"].
+* Erfahren Sie mehr über Data Infrastructure Insights Security link:security_overview.html["Hier"].
 
 
 
@@ -94,7 +94,7 @@ Probenausgabe:
 
 == „Pinning“ an einen Agenten in der aktuellen Version
 
-Standardmäßig aktualisiert Cloud Insights Workload Security die Agenten automatisch. Einige Kunden möchten die automatische Aktualisierung anhalten, sodass ein Agent die aktuelle Version verwendet, bis eine der folgenden Aktionen durchgeführt wird:
+Standardmäßig aktualisiert Data Infrastructure Insights Workload Security die Agenten automatisch. Einige Kunden möchten die automatische Aktualisierung anhalten, sodass ein Agent die aktuelle Version verwendet, bis eine der folgenden Aktionen durchgeführt wird:
 
 * Der Kunde nimmt die automatischen Agentenaktualisierungen wieder auf.
 * 30 Tage sind vergangen. Beachten Sie, dass die 30 Tage am Tag der letzten Agentenaktualisierung beginnen, nicht an dem Tag, an dem der Agent angehalten wurde.
@@ -153,7 +153,7 @@ Bekannte Probleme und deren Lösungen sind in der folgenden Tabelle beschrieben.
 | Bei der Installation des Agenten bleibt die Installation nach dem Entpacken hängen. | Der Befehl „chmod 755 -RF“ schlägt fehl. Der Befehl schlägt fehl, wenn der Agent-Installationsbefehl von einem nicht-Root-Sudo-Benutzer ausgeführt wird, der Dateien im Arbeitsverzeichnis hat, die zu einem anderen Benutzer gehören, und die Berechtigungen dieser Dateien können nicht geändert werden. Wegen des fehlerhaften chmod-Befehls wird die restliche Installation nicht ausgeführt. 1. Erstellen Sie ein neues Verzeichnis namens „cloudSecure“. 2. Gehen Sie zu diesem Verzeichnis. 3. Kopieren Sie und fügen Sie die vollständige “Token=…… … ./cloudSecure-Agent-install.sh“-Installationsbefehl und drücken Sie die Eingabetaste. 4. Die Installation sollte fortgesetzt werden können. 
 
 
-| Falls der Agent sich immer noch nicht mit Saas verbinden kann, öffnen Sie bitte einen Fall mit dem NetApp Support. Geben Sie die Cloud Insights Seriennummer an, um einen Fall zu öffnen, und hängen Sie wie erwähnt Protokolle an den Fall an. | Protokolle an den Fall anhängen: 1. Führen Sie das folgende Skript mit Root-Berechtigung aus und teilen Sie die Ausgabedatei (cloudSecure-Agent-symptoms.zip). a. /Opt/netapp/cloudSecure/Agent/bin/cloudsecure-agent-symptom-collector.sh 2. Führen Sie die folgenden Befehle nacheinander mit Root-Berechtigung aus und teilen Sie die Ausgabe. a. id csys B. Gruppen cssys c. CAT /etc/os-Freigabe 
+| Falls der Agent sich immer noch nicht mit Saas verbinden kann, öffnen Sie bitte einen Fall mit dem NetApp Support. Geben Sie die Seriennummer von Data Infrastructure Insights an, um einen Fall zu öffnen und Protokolle wie angegeben an den Fall anzuhängen. | Protokolle an den Fall anhängen: 1. Führen Sie das folgende Skript mit Root-Berechtigung aus und teilen Sie die Ausgabedatei (cloudSecure-Agent-symptoms.zip). a. /Opt/netapp/cloudSecure/Agent/bin/cloudsecure-agent-symptom-collector.sh 2. Führen Sie die folgenden Befehle nacheinander mit Root-Berechtigung aus und teilen Sie die Ausgabe. a. id csys B. Gruppen cssys c. CAT /etc/os-Freigabe 
 
 
 | Das Skript cloudsecure-agent-symptom-collector.sh schlägt mit folgendem Fehler fehl. [Root@Machine tmp]# /opt/netapp/cloudSecure/Agent/bin/cloudsecure-agent-symptom-collector.sh Service-Protokoll erfassen Erfassung von Anwendungsprotokollen Erfassung von Agent-Konfigurationen Aufnahme des Service-Status-Snapshots unter Verwendung von Agent-Verzeichnisstruktur-Snapshot ………………… . ………………… . /Opt/netapp/cloudSecure/Agent/bin/cloudSecure-Agent-Symptom-Collector.sh: Zeile 52: ZIP: Befehl nicht gefunden FEHLER: /Tmp/cloudsecure-agent-symptoms.zip konnte nicht erstellt werden | Zip-Werkzeug ist nicht installiert. Installieren Sie das Zip-Tool, indem Sie den Befehl „yum install zip“ ausführen. Führen Sie dann die cloudsecure-agent-symptom-collector.sh erneut aus. 

@@ -22,7 +22,7 @@ summary: Erstellen von Monitoren, damit bei Performance- oder Bestandsschwellenw
 Sie erstellen Monitore zum Festlegen von Schwellenwerten, die Alarme auslösen, um Sie über Probleme im Zusammenhang mit den Ressourcen im Netzwerk zu informieren. Beispielsweise können Sie einen Monitor erstellen, der für eine beliebige Vielzahl an Protokollen eine Warnung bezüglich „_Node Write Latency_“ ausgegeben wird.
 
 
-TIP: Monitore und Alarmfunktionen sind in allen Cloud Insights Editionen verfügbar. Die Basisversion unterliegt jedoch den folgenden Eigenschaften: * Sie können nur bis zu fünf benutzerdefinierte Monitore gleichzeitig aktiv haben. Alle Monitore jenseits von fünf werden im Status _Paused_ erstellt oder in den Status verschoben. * Die metrischen Monitore VMDK, Virtual Machine, Host und Datenspeicher werden nicht unterstützt. Wenn für diese Metriken Monitore erstellt wurden, werden sie angehalten und können nicht wieder aufgenommen werden, wenn Sie auf Basic Edition heruntergestuft werden.
+TIP: Monitore und Alarmfunktionen sind in allen Data Infrastructure Insights Editionen verfügbar, die Basic Edition unterliegt jedoch folgenden Bedingungen: * Sie können jeweils nur bis zu fünf benutzerdefinierte Monitore aktiv haben. Alle Monitore jenseits von fünf werden im Status _Paused_ erstellt oder in den Status verschoben. * Die metrischen Monitore VMDK, Virtual Machine, Host und Datenspeicher werden nicht unterstützt. Wenn für diese Metriken Monitore erstellt wurden, werden sie angehalten und können nicht wieder aufgenommen werden, wenn Sie auf Basic Edition heruntergestuft werden.
 
 
 toc::[]
@@ -30,19 +30,19 @@ toc::[]
 
 Sie können auch Monitore erstellen, um Warnmeldungen auf Warn-, kritischen oder informationellen Ebene auszulösen, wenn bestimmte _log-Ereignisse_ erkannt werden.
 
-Cloud Insights bietet eine Reihe von link:task_system_monitors.html["Systemdefinierte Monitore"] Außerdem zu integrieren.
+Dateninfrastruktur Insights bietet ebenfalls eine Vielzahl an Funktionenlink:task_system_monitors.html["Systemdefinierte Monitore"], je nach Umgebung.
 
 
 
 == Best Practice Für Sicherheit
 
-Cloud Insights Warnmeldungen wurden entwickelt, um Datenpunkte und Trends in Ihrer Umgebung hervorzuheben. Mit Cloud Insights können Sie jede gültige E-Mail-Adresse als Warnungsempfänger angeben. Wenn Sie in einer sicheren Umgebung arbeiten, achten Sie besonders darauf, wer die Benachrichtigung erhält oder anderweitig Zugriff auf die Warnmeldung hat.
+Warnmeldungen zu Data Infrastructure Insights wurden entwickelt, um Datenpunkte und Trends in Ihrer Umgebung hervorzuheben. Mit Data Infrastructure Insights können Sie jede gültige E-Mail-Adresse als Empfänger für Warnmeldungen eingeben. Wenn Sie in einer sicheren Umgebung arbeiten, achten Sie besonders darauf, wer die Benachrichtigung erhält oder anderweitig Zugriff auf die Warnmeldung hat.
 
 
 
 == Metrik oder Protokollmonitor?
 
-. Klicken Sie im Menü Cloud Insights auf *Alarme > Monitore verwalten*
+. Klicken Sie im Menü Data Infrastructure Insights auf *Alerts > Manage Monitors*
 +
 Die Listenseite Monitore wird angezeigt und zeigt die derzeit konfigurierten Monitore an.
 
@@ -240,8 +240,8 @@ Die folgenden Monitorgruppen werden angezeigt. Neben dem Gruppennamen wird die A
 
 * * Alle Monitore* listet alle Monitore auf.
 * *Benutzerdefinierte Monitore* listet alle vom Benutzer erstellten Monitore auf.
-* *Suspended Monitore* listet alle Systemmonitore auf, die von Cloud Insights ausgesetzt wurden.
-* Cloud Insights zeigt auch eine Reihe von *Systemüberwachengruppen* an, in denen eine oder mehrere Gruppen von aufgelistet werden link:task_system_monitors.html["Systemdefinierte Monitore"], Einschließlich der ONTAP Infrastruktur und Workload-Überwachung.
+* *Suspended Monitors* listet alle Systemmonitore auf, die von Data Infrastructure Insights ausgesetzt wurden.
+* Data Infrastructure Insights zeigt auch eine Reihe von *Systemüberwachungsgruppen*, die eine oder mehrere Gruppen von auflistenlink:task_system_monitors.html["Systemdefinierte Monitore"], einschließlich ONTAP Infrastruktur und Workload-Monitore.
 
 
 
@@ -251,13 +251,13 @@ NOTE: Benutzerdefinierte Monitore können angehalten, fortgesetzt, gelöscht ode
 
 === Suspendierte Monitore
 
-Diese Gruppe wird nur angezeigt, wenn Cloud Insights einen oder mehrere Monitore ausgesetzt hat. Ein Monitor kann ausgesetzt werden, wenn er übermäßige oder kontinuierliche Alarme erzeugt. Wenn es sich bei dem Monitor um einen benutzerdefinierten Monitor handelt, ändern Sie die Bedingungen, um eine kontinuierliche Warnung zu verhindern, und setzen Sie den Monitor dann fort. Der Monitor wird aus der Gruppe der suspendierten Monitore entfernt, wenn das Problem, das die Aussetzung verursacht, behoben wird.
+Diese Gruppe wird nur angezeigt, wenn Data Infrastructure Insights einen oder mehrere Monitore ausgesetzt hat. Ein Monitor kann ausgesetzt werden, wenn er übermäßige oder kontinuierliche Alarme erzeugt. Wenn es sich bei dem Monitor um einen benutzerdefinierten Monitor handelt, ändern Sie die Bedingungen, um eine kontinuierliche Warnung zu verhindern, und setzen Sie den Monitor dann fort. Der Monitor wird aus der Gruppe der suspendierten Monitore entfernt, wenn das Problem, das die Aussetzung verursacht, behoben wird.
 
 
 
 === Systemdefinierte Monitore
 
-Diese Gruppen zeigen von Cloud Insights bereitgestellte Monitore an, sofern Ihre Umgebung die von den Monitoren benötigten Geräte und/oder Protokollverfügbarkeit enthält.
+In diesen Gruppen werden Monitore angezeigt, die von Data Infrastructure Insights bereitgestellt werden, sofern Ihre Umgebung die Geräte und/oder die Protokollverfügbarkeit enthält, die von den Monitoren benötigt werden.
 
 Systemdefinierte Monitore können nicht geändert, in eine andere Gruppe verschoben oder gelöscht werden. Sie können jedoch ein Systemmonitor duplizieren und das Duplikat ändern oder verschieben.
 
@@ -283,13 +283,13 @@ image:Monitors_AssociateToGroup.png["Mit Gruppe verknüpfen"]
 Entfernen Sie Monitore, indem Sie auf eine Gruppe klicken und im Menü _aus Gruppe_ entfernen auswählen. Sie können keine Monitore aus der Gruppe „_Alle Monitore_“ oder „ Benutzerdefinierte Monitore_“ entfernen. Um einen Monitor aus diesen Gruppen zu löschen, müssen Sie den Monitor selbst löschen.
 
 
-NOTE: Durch Entfernen eines Monitors aus einer Gruppe wird der Monitor nicht aus Cloud Insights gelöscht. Um einen Monitor vollständig zu entfernen, wählen Sie den Monitor aus, und klicken Sie auf _Löschen_. Dadurch wird sie auch aus der Gruppe entfernt, zu der sie gehört hat und für keinen Benutzer mehr verfügbar ist.
+NOTE: Durch das Entfernen eines Monitors aus einer Gruppe wird der Monitor nicht aus Data Infrastructure Insights gelöscht. Um einen Monitor vollständig zu entfernen, wählen Sie den Monitor aus, und klicken Sie auf _Löschen_. Dadurch wird sie auch aus der Gruppe entfernt, zu der sie gehört hat und für keinen Benutzer mehr verfügbar ist.
 
 Sie können einen Monitor auf dieselbe Weise in eine andere Gruppe verschieben und dabei _zu Gruppe_ verschieben.
 
 Um alle Monitore in einer Gruppe gleichzeitig anzuhalten oder wieder aufzunehmen, wählen Sie das Menü für die Gruppe aus und klicken Sie auf _Pause_ oder _Fortsetzen_.
 
-Verwenden Sie dasselbe Menü, um eine Gruppe umzubenennen oder zu löschen. Durch das Löschen einer Gruppe werden die Monitore nicht aus Cloud Insights gelöscht; sie sind weiterhin in _Alle Monitore_ verfügbar.
+Verwenden Sie dasselbe Menü, um eine Gruppe umzubenennen oder zu löschen. Beim Löschen einer Gruppe werden die Monitore nicht aus Data Infrastructure Insights gelöscht, sondern sind weiterhin in _Alle Monitore_ verfügbar.
 
 image:Monitors_PauseGroup.png["Anhalten einer Gruppe"]
 
@@ -297,9 +297,9 @@ image:Monitors_PauseGroup.png["Anhalten einer Gruppe"]
 
 == Systemdefinierte Monitore
 
-Cloud Insights umfasst eine Reihe von systemdefinierten Monitoren für Kennzahlen und Protokolle. Die verfügbaren Systemmonitore sind abhängig von den Datensammlern in Ihrer Umgebung. Aus diesem Grund können sich die in Cloud Insights verfügbaren Monitore ändern, wenn Datensammler hinzugefügt oder ihre Konfigurationen geändert werden.
+Data Infrastructure Insights umfasst eine Reihe von systemdefinierten Monitoring-Funktionen für Kennzahlen und Protokolle. Die verfügbaren Systemmonitore sind abhängig von den Datensammlern in Ihrer Umgebung. Aus diesem Grund können sich die in Data Infrastructure Insights verfügbaren Monitore ändern, wenn Datensammler hinzugefügt oder ihre Konfigurationen geändert werden.
 
-Sehen Sie sich die an link:task_system_monitors.html["Systemdefinierte Monitore"] Seite mit Beschreibungen der in Cloud Insights enthaltenen Monitore.
+Auf der link:task_system_monitors.html["Systemdefinierte Monitore"] Seite finden Sie Beschreibungen der in Data Infrastructure Insights enthaltenen Monitore.
 
 
 

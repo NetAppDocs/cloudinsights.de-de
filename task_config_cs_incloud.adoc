@@ -69,7 +69,7 @@ Konfigurieren Sie die Maschine, die als Workload Security Agent verwendet werden
 
 == Installieren Sie den Workload Security Agent
 
-. Melden Sie sich als Administrator oder Account-Inhaber in Ihrer Cloud Insights-Umgebung an.
+. Melden Sie sich als Administrator oder Account Owner bei Ihrer Data Infrastructure Insights-Umgebung an.
 . Navigieren Sie zu Workload Security *Collectors* und klicken Sie auf die Registerkarte *Agents*.
 . Klicken Sie auf *+Agent* und geben Sie RHEL als Zielplattform an.
 . Kopieren Sie den Befehl Agenteninstallation.

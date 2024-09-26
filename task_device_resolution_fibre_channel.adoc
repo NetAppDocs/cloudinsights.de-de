@@ -38,7 +38,7 @@ Der Link „_Total Coverage_“ zeigt eine Liste der für Ihre Konfiguration ver
 
 == Manuelles Hinzufügen eines Fibre-Channel-Geräts
 
-Sie können Cloud Insights manuell ein Fibre Channel-Gerät hinzufügen, indem Sie die Funktion _Manual Add_ verwenden, die auf der Registerkarte Fibre Channel Identify für Geräteauflösung verfügbar ist. Dieser Prozess kann für die Voridentifizierung eines Geräts verwendet werden, das in Zukunft entdeckt werden soll.
+Sie können Data Infrastructure Insights manuell ein Fibre-Channel-Gerät hinzufügen, indem Sie die _Manual Add_ -Funktion verwenden, die auf der Registerkarte Device Resolution Fibre Channel Identify verfügbar ist. Dieser Prozess kann für die Voridentifizierung eines Geräts verwendet werden, das in Zukunft entdeckt werden soll.
 
 .Bevor Sie beginnen
 Zum erfolgreichen Hinzufügen einer Geräteidentifikation zum System müssen Sie die WWN- oder IP-Adresse und den Gerätenamen kennen.
@@ -47,7 +47,7 @@ Zum erfolgreichen Hinzufügen einer Geräteidentifikation zum System müssen Sie
 Sie können Host, Speicher, Band oder Unbekanntes Fibre Channel-Gerät manuell hinzufügen.
 
 .Verfahren
-. Melden Sie sich in der Weboberfläche von Cloud Insights an
+. Melden Sie sich bei der Web-UI von Data Infrastructure Insights an
 . Klicken Sie Auf *Verwalten > Geräteauflösung*
 . Klicken Sie auf die Registerkarte * Fibre Channel Identify*.
 . Klicken Sie auf die Schaltfläche *Hinzufügen*.
@@ -64,7 +64,7 @@ Das Gerät, das Sie eingeben, wird der Geräteliste auf der Registerkarte Fibre 
 
 == Importieren der Fibre-Channel-Gerätekennung aus einer CSV-Datei
 
-Sie können die Identifikation von Fibre-Channel-Geräten mithilfe einer Geräteliste in einer CSV-Datei manuell in die Cloud Insights-Geräteauflösung importieren.
+Sie können die Identifizierung von Fibre-Channel-Geräten manuell in die Geräteauflösung von Data Infrastructure Insights importieren, indem Sie eine Liste von Geräten in einer CSV-Datei verwenden.
 
 . Bevor Sie beginnen
 
@@ -89,7 +89,7 @@ NOTE: Als Best Practice wird empfohlen, zunächst die Fibre Channel-Identify-Inf
 
 Um Fibre Channel zu importieren, identifizieren Sie Informationen:
 
-. Melden Sie sich in der Cloud Insights Web-UI an.
+. Melden Sie sich bei der Web-UI von Data Infrastructure Insights an.
 . Klicken Sie Auf *Verwalten > Geräteauflösung*
 . Wählen Sie die Registerkarte * Fibre Channel Identify* aus.
 . Klicken Sie auf die Schaltfläche * Identifizieren > aus Datei identifizieren*.
@@ -103,7 +103,7 @@ Die von Ihnen eingegebenen Geräte werden der Geräteliste auf der Registerkarte
 
 == Exportieren der Identifizierungen von Fibre Channel-Geräten in eine CSV-Datei
 
-Sie können vorhandene Identifizierungen für Fibre Channel-Geräte von der Cloud Insights-Geräteauflösung in eine CSV-Datei exportieren. Sie können eine Geräteidentifikation exportieren, damit Sie sie ändern und dann wieder in Cloud Insights importieren können, wo sie dann verwendet wird, um Geräte zu identifizieren, die denen ähneln, die ursprünglich mit der exportierten Identifizierung übereinstimmen.
+Sie können vorhandene Fibre-Channel-Gerätekennungen aus der Funktion Data Infrastructure Insights Geräteauflösung in eine CSV-Datei exportieren. Möglicherweise möchten Sie eine Gerätekennung exportieren, damit Sie sie ändern und dann wieder in Data Infrastructure Insights importieren können. Dort werden dann Geräte identifiziert, die denen ähneln, die ursprünglich mit der exportierten Identifizierung übereinstimmen.
 
 .Über diese Aufgabe
 Dieses Szenario kann verwendet werden, wenn Geräte ähnliche Attribute haben, die einfach in der .CSV-Datei bearbeitet und dann wieder in das System importiert werden können.
@@ -116,7 +116,7 @@ Wenn Sie eine Fibre-Channel-Gerätekennung in eine CSV-Datei exportieren, enthä
 | WWN | IP | Name | Typ 
 |===
 .Verfahren
-. Melden Sie sich in der Cloud Insights Web-UI an.
+. Melden Sie sich bei der Web-UI von Data Infrastructure Insights an.
 . Klicken Sie Auf *Verwalten > Geräteauflösung*
 . Wählen Sie die Registerkarte * Fibre Channel Identify* aus.
 . Wählen Sie das Fibre-Channel-Gerät oder die Geräte aus, deren Kennung Sie exportieren möchten.

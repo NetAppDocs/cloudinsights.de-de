@@ -53,7 +53,7 @@ Sie können jedoch mehrere Applikationen für Hosts, interne Volumes, qtrees und
 
 Neue Anwendungen, die Sie zuweisen, überschreiben alle Anwendungen auf dem Asset, die von einem anderen Asset abgeleitet wurden. Beispielsweise übernehmen Volumes Applikationen von Hosts, und wenn neuen Applikationen einem Volume zugewiesen werden, hat die neue Applikation Vorrang vor der abgeleiteten Applikation.
 
-Nachdem Sie bei einer Massenlösch-Aktion auf „ _Save_“ oder „ _Remove_“ geklickt haben, informiert Cloud Insights Sie darüber, dass die Aktion einige Zeit in Anspruch nehmen wird. Sie können diese Meldung verwerfen; die Aktion wird im Hintergrund fortgesetzt.
+Nachdem Sie bei einer Massenlöschung auf _Speichern_ oder _Entfernen_ geklickt haben, werden Sie von Data Infrastructure Insights darüber informiert, dass die Aktion einige Zeit in Anspruch nehmen wird. Sie können diese Meldung verwerfen; die Aktion wird im Hintergrund fortgesetzt.
 
 
 NOTE: In Umgebungen mit großen Mengen verwandter Assets kann die Vererbung von Applikationszuweisungen an diese Ressourcen mehrere Minuten dauern. Bitte geben Sie mehr Zeit für Vererbung, wenn Sie viele verwandte Vermögenswerte haben.

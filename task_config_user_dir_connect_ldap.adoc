@@ -22,7 +22,7 @@ summary: Konfigurieren des LDAP-Benutzerverzeichnissammler für die Workload-Sic
 Sie konfigurieren die Workload Security so, dass Benutzerattribute von LDAP Directory-Servern erfasst werden.
 
 .Bevor Sie beginnen
-* Sie müssen ein Cloud Insights-Administrator oder -Kontoinhaber sein, um diese Aufgabe auszuführen.
+* Sie müssen ein Data Infrastructure Insights Administrator oder Account Owner sein, um diese Aufgabe ausführen zu können.
 * Sie müssen über die IP-Adresse des Servers verfügen, der den LDAP-Directory-Server hostet.
 * Ein Agent muss konfiguriert werden, bevor Sie einen LDAP-Directory-Konnektor konfigurieren.
 

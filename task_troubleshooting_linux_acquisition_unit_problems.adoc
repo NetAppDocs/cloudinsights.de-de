@@ -36,13 +36,13 @@ Hier finden Sie Vorschläge zur Fehlerbehebung bei Problemen mit Akquisitionsein
 | Serveranforderungen nicht erfüllt | Stellen Sie sicher, dass Ihr Akquisitionsgruppenserver oder Ihre VM die Anforderungen erfüllt link:concept_acquisition_unit_requirements.html["Anforderungen"] 
 
 
-| Netzwerkanforderungen nicht erfüllt | Stellen Sie sicher, dass Ihr Acquisition Unit-Server/VM über eine SSL-Verbindung über Port 443 auf Ihre Cloud Insights-Umgebung (<Environment-Name>.c01.cloudinsights.netapp.com) zugreifen kann. Versuchen Sie folgende Befehle: _Ping <Environment-Name>.c01.cloudinsights.netapp.com_ _traceroute <Environment-Name>.c01.cloudinsights.netapp.com_ _curl \https://<environment-name>.c01.cloudinsights.netapp.com_ _wget \https://<environment-name>.c01.cloudinsights.netapp.com_ 
+| Netzwerkanforderungen nicht erfüllt | Stellen Sie sicher, dass Ihr Acquisition Unit-Server/Ihre VM über eine SSL-Verbindung über Port 443 auf Ihre Data Infrastructure Insights-Umgebung (<environment-name>.c01.cloudinsights.NetApp.com) zugreifen kann. Versuchen Sie es mit folgenden Befehlen: _Ping <environment-name>.c01.cloudinsights.NetApp.com_ _traceroute <environment-name>.c01.cloudinsights.NetApp.com_ _curl \https://<environment-name>.c01.cloudinsights.NetApp.com_ _wget \https://<environment-name>.c01.cloudinsights.NetApp.com_ 
 
 
 | Proxy-Server nicht ordnungsgemäß konfiguriert | Überprüfen Sie Ihre Proxy-Einstellungen und deinstallieren/installieren Sie die Software für die Acquisition Unit, falls erforderlich, um die richtigen Proxy-Einstellungen einzugeben. 1. Versuchen Sie "Curl". Beziehen Sie sich auf "man Curl" Informationen/Dokumentation zu Proxys: --preproxy, --Proxy-* (das ist ein Platzhalter "*", da Curl viele Proxy-Einstellungen unterstützt). 2. Versuchen Sie "wget". In der Dokumentation finden Sie Proxy-Optionen. 
 
 
-| Die Installation der Erfassungseinheit ist in Cloud Insights fehlgeschlagen, bei dem Fehler bei Anmeldeinformationen beim Starten des Erfassungsservice aufgetreten sind (und im acq.log sichtbar). | Dies kann durch die Einbeziehung von Sonderzeichen in die Proxy-Anmeldeinformationen verursacht werden. Deinstallieren Sie AU (_sudo nebundinsights-uninstall.sh_) und installieren Sie sie erneut, ohne Sonderzeichen zu verwenden. 
+| Installation der Erfassungseinheit in Data Infrastructure Insights mit Anmeldefehlern beim Starten des Erfassungsservice (und sichtbar im acq.log) fehlgeschlagen. | Dies kann durch die Einbeziehung von Sonderzeichen in die Proxy-Anmeldeinformationen verursacht werden. Deinstallieren Sie AU (_sudo nebundinsights-uninstall.sh_) und installieren Sie sie erneut, ohne Sonderzeichen zu verwenden. 
 
 
 | Linux: Fehlende Bibliothek / Datei nicht gefunden | Stellen Sie sicher, dass Ihr Linux Acquisition Unit Server/VM über alle erforderlichen Bibliotheken verfügt. Zum Beispiel muss die Bibliothek _unzip_ auf dem Server installiert sein. Um die Bibliothek _unzip_ zu installieren, führen Sie den Befehl _*sudo yum install unzip*_ aus, bevor Sie das Installationsskript für die Erfassungseinheit ausführen 
@@ -57,10 +57,10 @@ Hier finden Sie Vorschläge zur Fehlerbehebung bei Problemen mit Akquisitionsein
 | Probleme Bei Der Datenerfassung: | Senden Sie einen Fehlerbericht von der Data Collector-Startseite, indem Sie auf die Schaltfläche „Fehlerbericht senden“ klicken 
 
 
-| Status: Herzschlag Fehlgeschlagen | Die Acquisition Unit (AU) sendet alle 60 Sekunden einen Herzschlag an Cloud Insights, um den Mietvertrag zu verlängern. Wenn der Heartbeat-Anruf aufgrund eines Netzwerkproblems oder aufgrund von nicht reagierenden Cloud Insights fehlschlägt, wird die Leasing-Zeit der AU nicht aktualisiert. Wenn die Leasingzeit der AU abläuft, zeigt Cloud Insights den Status „Heartbeat failed“ an. Schritte zur Fehlerbehebung: Prüfen Sie die Netzwerkverbindung zwischen dem Server der Akquisitionseinheit und CloudInsights. Prüfen Sie, ob der Dienst für die Erfassungseinheit ausgeführt wird. Wenn der Dienst nicht ausgeführt wird, starten Sie den Dienst. Überprüfen Sie im Log der Acquisition Unit (/var/log/netapp/nebinsights/acq/acq.log), ob Fehler aufgetreten sind. 
+| Status: Herzschlag Fehlgeschlagen | Die Acquisition Unit (AU) sendet zur Erneuerung des Leasingvertrags alle 60 Sekunden einen Heartbeat an Data Infrastructure Insights. Wenn der Heartbeat-Anruf aufgrund eines Netzwerkproblems oder einer nicht reagierenden Data Infrastructure Insights fehlschlägt, wird die Leasingzeit des AU nicht aktualisiert. Wenn die Leasingzeit der AU abläuft, zeigt Data Infrastructure Insights den Status „Heartbeat failed“ an. Schritte zur Fehlerbehebung: Prüfen Sie die Netzwerkverbindung zwischen dem Server der Akquisitionseinheit und CloudInsights. Prüfen Sie, ob der Dienst für die Erfassungseinheit ausgeführt wird. Wenn der Dienst nicht ausgeführt wird, starten Sie den Dienst. Überprüfen Sie im Log der Acquisition Unit (/var/log/netapp/nebinsights/acq/acq.log), ob Fehler aufgetreten sind. 
 
 
-| Ich sehe die Meldung „Heartbeat Error:“ | Dieser Fehler kann auftreten, wenn eine Netzwerkunterbrechung vorliegt, die dazu führt, dass die Kommunikation zwischen der Erfassungseinheit und der Cloud Insights-Umgebung länger als eine Minute unterbrochen wird. Stellen Sie sicher, dass die Verbindung zwischen AU und Cloud Insights stabil und aktiv ist. 
+| Ich sehe die Meldung „Heartbeat Error:“ | Dieser Fehler kann auftreten, wenn eine Netzwerkunterbrechung vorliegt, die dazu führt, dass die Kommunikation zwischen der Erfassungseinheit und der Data Infrastructure Insights-Umgebung länger als eine Minute unterbrochen wird. Überprüfen Sie, ob die Verbindung zwischen AU und Data Infrastructure Insights stabil und aktiv ist. 
 
 
 | Bei der Neuinstallation der Acquisition Unit sehe ich „ValueError: Dateikontext für /opt/netapp/Cloudinsights(/.*)? Bereits definiert“. | Auf einem System mit SELinux wird möglicherweise nach dieser Fehlermeldung angezeigt `cloudinsights-uninstall.sh -p` Wurde ausgeführt und die Erfassungseinheit muss neu installiert werden. Ausführen des Befehls `semanage fcontext -d -t usr_t "/opt/netapp/cloudinsights(/.*)?"` Sollte das Problem beheben und die Meldung entfernen. 
@@ -69,23 +69,23 @@ Hier finden Sie Vorschläge zur Fehlerbehebung bei Problemen mit Akquisitionsein
 
 == Überlegungen zu Proxys und Firewalls
 
-Wenn Ihr Unternehmen Proxy-Nutzung für den Internet-Zugriff erfordert, müssen Sie möglicherweise das Proxy-Verhalten Ihrer Organisation verstehen und bestimmte Ausnahmen für Cloud Insights zu arbeiten suchen. Beachten Sie Folgendes:
+Wenn Ihr Unternehmen die Proxy-Nutzung für den Internetzugang benötigt, müssen Sie möglicherweise das Proxy-Verhalten Ihres Unternehmens kennen und bestimmte Ausnahmen suchen, damit Data Infrastructure Insights funktioniert. Beachten Sie Folgendes:
 
 * Erstens blockiert Ihr Unternehmen standardmäßig den Zugriff und erlaubt ausschließlich den Zugriff auf bestimmte Websites/Domänen durch Ausnahme? Wenn dies der Fall ist, müssen Sie die folgende Domäne der Ausnahmeliste hinzufügen:
 +
  *.cloudinsights.netapp.com
 +
-Ihre Cloud Insights-Erfassungseinheit sowie Ihre Interaktionen in einem Webbrowser mit Cloud Insights werden alle zu Hosts mit diesem Domainnamen aufgerufen.
+Ihre Data Infrastructure Insights Acquisition Unit sowie Ihre Interaktionen in einem Webbrowser mit Data Infrastructure Insights gehen alle zu Hosts mit diesem Domänennamen.
 
-* Zweitens versuchen einige Proxys, eine TLS/SSL-Inspektion durchzuführen, indem sie Cloud Insights Websites mit digitalen Zertifikaten imitieren, die nicht von NetApp generiert wurden. Das Sicherheitsmodell der Cloud Insights-Erwerbseinheit ist grundsätzlich mit diesen Technologien unvereinbar. Sie würden auch den vorgenannten Domain-Namen von dieser Funktionalität ausgenommen benötigen, damit sich die Cloud Insights Acquisition Unit erfolgreich bei Cloud Insights anmelden und die Datenerkennung erleichtern kann.
+* Zweitens versuchen einige Proxys, TLS/SSL-Prüfungen durchzuführen, indem sie Webseiten von Data Infrastructure Insights mit digitalen Zertifikaten imitieren, die nicht von NetApp generiert wurden. Das Sicherheitsmodell der Data Infrastructure Insights Acquisition Unit ist mit diesen Technologien grundsätzlich nicht kompatibel. Sie benötigen außerdem den oben genannten Domänennamen, der von dieser Funktionalität ausgenommen ist, damit sich die Data Infrastructure Insights Acquisition Unit erfolgreich bei Data Infrastructure Insights anmelden und die Datenerkennung erleichtern kann.
 
 
-Wenn der Proxy für die Datenverkehrsprüfung eingerichtet ist, muss die Cloud Insights-Umgebung einer Ausnahmeliste in der Proxy-Konfiguration hinzugefügt werden. Das Format und die Einrichtung dieser Ausnahmeliste variieren je nach Proxy-Umgebung und Tools. Im Allgemeinen müssen Sie jedoch die URLs der Cloud Insights-Server zu dieser Ausnahmeliste hinzufügen, damit die AU mit diesen Servern ordnungsgemäß kommunizieren kann.
+Wenn der Proxy für die Verkehrsinspektion eingerichtet ist, muss die Data Infrastructure Insights-Umgebung einer Ausnahmeliste in der Proxy-Konfiguration hinzugefügt werden. Das Format und die Einrichtung dieser Ausnahmeliste variieren je nach Proxy-Umgebung und -Tools. Im Allgemeinen müssen Sie jedoch die URLs der Data Infrastructure Insights-Server zu dieser Ausnahmeliste hinzufügen, damit die AU ordnungsgemäß mit diesen Servern kommunizieren kann.
 
-Am einfachsten ist es, die Cloud Insights-Domäne selbst zur Ausnahmeliste hinzuzufügen:
+Am einfachsten fügen Sie dazu die Data Infrastructure Insights-Domäne selbst der Ausnahmeliste hinzu:
 
  *.cloudinsights.netapp.com
-Wenn der Proxy nicht für die Verkehrsprüfung eingerichtet ist, kann eine Ausnahmeliste erforderlich sein oder nicht. Wenn Sie sich nicht sicher sind, ob Sie Cloud Insights zu einer Ausnahmeliste hinzufügen müssen oder wenn Sie Schwierigkeiten bei der Installation oder Ausführung von Cloud Insights aufgrund der Proxy- und/oder Firewall-Konfiguration haben, wenden Sie sich an Ihr Proxy-Administrationsteam, um die Bearbeitung von SSL-Abfangen durch den Proxy einzurichten.
+Wenn der Proxy nicht für die Verkehrsprüfung eingerichtet ist, kann eine Ausnahmeliste erforderlich sein oder nicht. Wenn Sie sich nicht sicher sind, ob Sie Data Infrastructure Insights zu einer Ausnahmeliste hinzufügen müssen, oder wenn aufgrund der Proxy- und/oder Firewall-Konfiguration Probleme bei der Installation oder Ausführung von Data Infrastructure Insights auftreten, wenden Sie sich an Ihr Proxy-Verwaltungsteam, um die Verarbeitung des SSL-Abhörens durch den Proxy einzurichten.
 
 
 
@@ -101,4 +101,4 @@ image:ProxyEndpoints_NewTable.png["Tabelle Mit Proxy-Endpunkten"]
 
 Weitere Tipps zur Fehlerbehebung finden Sie im link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["NetApp Knowledge Base"] (Support-Anmeldung erforderlich).
 
-Weitere Support-Informationen sind im Cloud Insights erhältlich link:concept_requesting_support.html["Unterstützung"] Seite.
+Weitere Support-Informationen finden Sie auf der Seite Data Infrastructure Insightslink:concept_requesting_support.html["Unterstützung"].

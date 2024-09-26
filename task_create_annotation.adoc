@@ -5,17 +5,14 @@ keywords: annotations, annotation rules, manual annotations,
 summary: So erstellen Sie eine Anmerkung. 
 ---
 = Mit Anmerkungen
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -25,9 +22,9 @@ Sie erstellen Anmerkungen und weisen diese den zu überwachten Assets zu. Anmerk
 
 == Anmerkungen definieren
 
-Mithilfe von Annotationen können Sie benutzerdefinierte geschäftsspezifische Daten hinzufügen, die auf die Anforderungen Ihres Unternehmens an Assets abgestimmt sind. Cloud Insights bietet zwar eine Reihe von Standardanmerkungen, z. B. den Lebenszyklus von Ressourcen (Geburtstag oder Ende der Nutzungsdauer), den Standort des Gebäudes oder Datacenters und das Tier, doch können Sie auch feststellen, dass Sie Daten auf andere Weise anzeigen möchten.
+Mithilfe von Annotationen können Sie benutzerdefinierte geschäftsspezifische Daten hinzufügen, die auf die Anforderungen Ihres Unternehmens an Assets abgestimmt sind. Während Data Infrastructure Insights standardmäßig mit Annotationen ausgestattet ist, beispielsweise Lebenszyklus von Assets (Geburtstag oder Ende der Nutzungsdauer), Aufbau oder Standort des Datacenters sowie Tiering, können Daten möglicherweise auf andere Weise angezeigt werden.
 
-Die Daten in benutzerdefinierten Annotationen ergänzen die bereits erfassten Gerätedaten wie Switch-Hersteller, Anzahl Ports und Leistungsstatistiken. Die Daten, die Sie mit Annotationen hinzufügen, werden von Cloud Insights nicht erkannt.
+Die Daten in benutzerdefinierten Annotationen ergänzen die bereits erfassten Gerätedaten wie Switch-Hersteller, Anzahl Ports und Leistungsstatistiken. Die mit Annotationen hinzugefügten Daten werden von Data Infrastructure Insights nicht erkannt.
 
 .Bevor Sie beginnen
 * Geben Sie die Terminologie an, der die Umgebungsdaten zugeordnet werden müssen.
@@ -39,7 +36,7 @@ Die Daten in benutzerdefinierten Annotationen ergänzen die bereits erfassten Ge
 Führen Sie die folgenden Schritte aus, um eine Anmerkung zu erstellen.
 
 .Schritte
-. Klicken Sie im Menü Cloud Insights auf *Verwalten > Anmerkungen*
+. Klicken Sie im Menü Data Infrastructure Insights auf *Observability > Enrich > Annotationen*
 . Klicken Sie auf *+ Anmerkung*, um eine neue Anmerkung zu erstellen.
 . Geben Sie einen Namen, eine Beschreibung und einen Typ für die neue Anmerkung ein.
 +
@@ -64,7 +61,7 @@ Durch das Zuweisen von Annotationen zu Assets können Sie Assets auf eine für I
 
 
 .Schritte
-. Melden Sie sich in Ihrer Cloud Insights Umgebung an.
+. Melden Sie sich bei Ihrer Data Infrastructure Insights Umgebung an.
 . Suchen Sie das Element, auf das Sie die Anmerkung anwenden möchten.
 +
 ** Sie können Assets suchen, indem Sie eine Abfrage durchführen, aus einem Dassoard-Widget auswählen oder suchen. Wenn Sie die gewünschte Ressource gefunden haben, klicken Sie auf den Link, um die Landing Page der Ressource zu öffnen.
@@ -88,7 +85,7 @@ Wenn Sie den Wert der Anmerkung nach der Zuweisung ändern möchten, klicken Sie
 
 == Anmerkungen mit Anmerkungsregeln zuweisen
 
-Um Assets anhand von Kriterien, die Sie definieren, automatisch Anmerkungen zuzuweisen, konfigurieren Sie Anmerkungsregeln. Cloud Insights weist anhand dieser Regeln Anmerkungen zu Assets zu. Cloud Insights bietet zudem zwei Standard-Anmerkungsregeln, die Sie je nach Bedarf ändern können oder entfernen können, wenn Sie sie nicht verwenden möchten.
+Um Assets anhand von Kriterien, die Sie definieren, automatisch Anmerkungen zuzuweisen, konfigurieren Sie Anmerkungsregeln. Data Infrastructure Insights weist Assets anhand dieser Regeln die Annotationen zu. Data Infrastructure Insights bietet außerdem zwei standardmäßige Anmerkungsregeln, die Sie an Ihre Anforderungen anpassen oder entfernen können, wenn Sie sie nicht verwenden möchten.
 
 
 

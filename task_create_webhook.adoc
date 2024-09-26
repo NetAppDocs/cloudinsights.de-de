@@ -5,23 +5,20 @@ keywords: webhook, notification, slack, integration
 summary: Erstellen von Monitoren, damit bei Performance- oder Bestandsschwellenwerten eine Warnung ausgegeben wird 
 ---
 = Benachrichtigung über Webhooks
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 Mit Webhooks können Benutzer über einen benutzerdefinierten Webhook-Kanal Benachrichtigungen an verschiedene Anwendungen senden.
 
-Viele kommerzielle Anwendungen unterstützen Webhooks als Standard-Input-Schnittstelle, zum Beispiel Slack, PagerDuty, Teams und Discord unterstützen Webhooks. Durch die Unterstützung eines allgemeinen, individuell anpassbaren Webhook-Kanals unterstützt Cloud Insights viele dieser Lieferkanäle. Informationen zu Webhooks finden Sie auf diesen Anwendungs-Websites. Slack bietet zum Beispiel link:https://api.slack.com/messaging/webhooks["Dieser Leitfaden ist hilfreich"].
+Viele kommerzielle Anwendungen unterstützen Webhooks als Standard-Input-Schnittstelle, zum Beispiel Slack, PagerDuty, Teams und Discord unterstützen Webhooks. Durch die Unterstützung eines generischen, anpassbaren Webhook-Kanals kann Data Infrastructure Insights viele dieser Bereitstellungskanäle unterstützen. Informationen zu Webhooks finden Sie auf diesen Anwendungs-Websites. Slack bietet zum Beispiel link:https://api.slack.com/messaging/webhooks["Dieser Leitfaden ist hilfreich"].
 
 Sie können mehrere Webhook-Kanäle erstellen, jeden Kanal für einen anderen Zweck ausgerichtet; separate Anwendungen, verschiedene Empfänger, etc..
 
@@ -54,7 +51,7 @@ Die Instanz des Webhook-Kanals besteht aus folgenden Elementen:
 
 == Erstellen eines Webhook
 
-Um einen Cloud Insights Webhook zu erstellen, gehen Sie zu *Admin > Benachrichtigungen* und wählen Sie die Registerkarte *Webhooks*.
+Um einen Data Infrastructure Insights Webhook zu erstellen, gehen Sie zu *Admin > Benachrichtigungen* und wählen Sie die Registerkarte *Webhooks* aus.
 
 Das folgende Bild zeigt einen Beispiel-Webhook, der für Slack konfiguriert ist:
 
@@ -64,9 +61,9 @@ Geben Sie die entsprechenden Informationen für die einzelnen Felder ein, und kl
 
 Sie können auch auf die Schaltfläche "Webhook testen" klicken, um die Verbindung zu testen. Beachten Sie, dass der Nachrichtentext (ohne Ersatz) entsprechend der ausgewählten Methode an die definierte URL gesendet wird.
 
-Cloud Insights Webhooks enthalten eine Reihe von Standardparametern. Außerdem können Sie eigene benutzerdefinierte Parameter oder Geheimnisse erstellen.
+Data Infrastructure Insights Webhooks umfassen eine Reihe von Standardparametern. Außerdem können Sie eigene benutzerdefinierte Parameter oder Geheimnisse erstellen.
 
-image:Webhook_Default_Parameters.png["Cloud Insights Standardparameter Für Webhook"]
+image:Webhook_Default_Parameters.png["Data Infrastructure Insights Standard-Webhook-Parameter"]
 
 
 

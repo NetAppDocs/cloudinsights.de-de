@@ -31,13 +31,13 @@ In der folgenden Tabelle sind die möglichen Optionen für die _AgentConfigurati
 | Agent |  | Konfigurationsoptionen, die allen Komponenten gemeinsam sind, die der Bediener installieren kann. Diese können als "globale" Optionen betrachtet werden. 
 
 
-|  | DockerRepo | Ein ockerRepo override, um Bilder von Kunden private Docker-Repos im Vergleich zu Cloud Insights Docker Repo zu ziehen. Der Standardwert ist Cloud Insights Docker Repo 
+|  | DockerRepo | Ein ockerRepo-Überschreiben, um Bilder von privaten Docker-Repos des Kunden im Vergleich zu Data Infrastructure Insights Docker Repo zu beziehen. Der Standardwert ist Data Infrastructure Insights Docker Repo 
 
 
 |  | DockerImagePullSecret | Optional: Ein Geheimnis für den Kunden private repo 
 
 
-|  | ClusterName | Freitextfeld, das einen Cluster über alle Kundencluster eindeutig identifiziert. Diese sollte bei einem Cloud Insights-Mandanten eindeutig sein. Der Standardwert ist das, was der Kunde in die Benutzeroberfläche für das Feld „Cluster Name“ eingibt 
+|  | ClusterName | Freitextfeld, das einen Cluster über alle Kundencluster eindeutig identifiziert. Diese sollte bei einem Mandanten von Dateninfrastruktur Insights eindeutig sein. Der Standardwert ist das, was der Kunde in die Benutzeroberfläche für das Feld „Cluster Name“ eingibt 
 
 
 |  | Proxy
@@ -271,10 +271,10 @@ spec:
   # #   To update them, uncomment the line, change the value, and apply the updated AgentConfiguration.
   agent:
     # # [Required Field] A uniquely identifiable user-friendly clustername.
-    # # clusterName must be unique across all clusters in your Cloud Insights environment.
+    # # clusterName must be unique across all clusters in your Data Infrastructure Insights environment.
     clusterName: "my_cluster"
 
-    # # Proxy settings. The proxy that the operator should use to send metrics to Cloud Insights.
+    # # Proxy settings. The proxy that the operator should use to send metrics to Data Infrastructure Insights.
     # # Please see documentation here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#configuring-proxy-support
     # proxy:
     #   server:

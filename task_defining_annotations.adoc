@@ -19,7 +19,7 @@ summary: Verfolgen von Daten mithilfe von Anmerkungen
 
 
 [role="lead"]
-Wenn Sie Cloud Insights anpassen, um die Daten zur Nachverfolgung Ihrer Unternehmensanforderungen zu verfolgen, können Sie spezielle Notizen, die so genannten Anmerkungen, definieren und diese Ihrer Assets zuweisen.
+Wenn Sie Data Infrastructure Insights an Ihre Unternehmensanforderungen anpassen, um Daten nachzuverfolgen, können Sie spezielle Notizen, sogenannte Annotationen, definieren und diese Ihren Ressourcen zuweisen.
 
 Sie können Assets mit Informationen zum Ende des Lebenszyklus der Ressource, zum Datacenter, zum Standort, zum Storage-Tier oder zu einem Volume Service-Level Anmerkungen zuweisen.
 
@@ -38,7 +38,7 @@ Wenn z. B. ein Asset geleast wird und der Mietvertrag innerhalb von zwei Monaten
 
 == Standard-Anmerkungstypen
 
-Cloud Insights bietet einige Standard-Anmerkungstypen. Mit diesen Annotationen lassen sich Daten filtern oder gruppieren.
+Data Infrastructure Insights bietet einige standardmäßige Anmerkungstypen. Mit diesen Annotationen lassen sich Daten filtern oder gruppieren.
 
 Sie können Assets mit Standardanmerkungstypen verknüpfen, z. B.:
 
@@ -48,7 +48,7 @@ Sie können Assets mit Standardanmerkungstypen verknüpfen, z. B.:
 * Status, z. B. „heiß“ (hohe Auslastung)
 
 
-In der folgenden Tabelle sind die von Cloud Insights bereitgestellten Anmerkungstypen aufgeführt.
+In der folgenden Tabelle sind die von Data Infrastructure Insights bereitgestellten Anmerkungstypen aufgeführt.
 
 [cols="30,53, 16"]
 |===
@@ -93,10 +93,10 @@ NOTE: Alias, Datacenter, Heiß, Service-Level, Sonnenuntergang, Switch-Ebene, St
 
 == Erstellen benutzerdefinierter Anmerkungen
 
-Mithilfe von Annotationen können Sie benutzerdefinierte geschäftsspezifische Daten hinzufügen, die auf die Anforderungen Ihres Unternehmens an Assets abgestimmt sind. Cloud Insights bietet eine Reihe von Standardanmerkungen, doch können Sie herausfinden, dass Sie Daten auf andere Weise anzeigen möchten. Die Daten in benutzerdefinierten Annotationen ergänzen bereits erfassten Gerätedaten, wie z. B. Speicherhersteller, Anzahl Volumen und Leistungsstatistiken. Die Daten, die Sie mit Annotationen hinzufügen, werden von Cloud Insights nicht erkannt.
+Mithilfe von Annotationen können Sie benutzerdefinierte geschäftsspezifische Daten hinzufügen, die auf die Anforderungen Ihres Unternehmens an Assets abgestimmt sind. Während Data Infrastructure Insights eine Reihe von Standardannotationen umfasst, kann es sein, dass Sie Daten auf andere Weise anzeigen möchten. Die Daten in benutzerdefinierten Annotationen ergänzen bereits erfassten Gerätedaten, wie z. B. Speicherhersteller, Anzahl Volumen und Leistungsstatistiken. Die mit Annotationen hinzugefügten Daten werden von Data Infrastructure Insights nicht erkannt.
 
 .Schritte
-. Klicken Sie im Menü Cloud Insights auf *Verwalten > Anmerkungen*.
+. Klicken Sie im Menü Data Infrastructure Insights auf *Verwalten > Anmerkungen*.
 +
 Auf der Seite Anmerkungen wird die Liste der Anmerkungen angezeigt.
 

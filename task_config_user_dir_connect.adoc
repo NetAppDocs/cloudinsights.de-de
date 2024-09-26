@@ -22,7 +22,7 @@ summary: Konfigurieren Von Workload Security Active Directory User Directory Col
 Workload Security kann so konfiguriert werden, dass Benutzerattribute von Active Directory-Servern erfasst werden.
 
 .Bevor Sie beginnen
-* Sie müssen ein Cloud Insights-Administrator oder -Kontoinhaber sein, um diese Aufgabe auszuführen.
+* Sie müssen ein Data Infrastructure Insights Administrator oder Account Owner sein, um diese Aufgabe ausführen zu können.
 * Sie müssen über die IP-Adresse des Servers verfügen, der den Active Directory-Server hostet.
 * Ein Agent muss konfiguriert werden, bevor Sie einen Benutzerverzeichnisanschluss konfigurieren.
 

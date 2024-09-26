@@ -22,9 +22,9 @@ keywords: reporting, cognos, data warehouse, dwh, ad-hoc, custom
 Sie können die Tools zur Erstellung benutzerdefinierter Berichte verwenden. Nachdem Sie Berichte erstellt haben, können Sie sie speichern und regelmäßig ausführen. Die Ergebnisse der Berichte können automatisch per E-Mail an sich selbst und andere gesendet werden.
 
 
-NOTE: Die Berichtsfunktion ist in Cloud Insights verfügbar link:concept_subscribing_to_cloud_insights.html["Premium Edition"].
+NOTE: Die Berichtsfunktion ist in Data Infrastructure Insights verfügbarlink:concept_subscribing_to_cloud_insights.html["Premium Edition"].
 
-Die Beispiele in diesem Abschnitt veranschaulichen den folgenden Prozess, der für jedes der Cloud Insights-Berichtsdatenmodelle verwendet werden kann:
+Die Beispiele in diesem Abschnitt zeigen den folgenden Prozess, der für jedes Datenmodell der Data Infrastructure Insights Reporting-Funktion verwendet werden kann:
 
 * Ermitteln einer Frage, die mit einem Bericht beantwortet werden soll
 * Ermitteln der für die Ergebnisse erforderlichen Daten
@@ -38,7 +38,7 @@ Wenn Sie beispielsweise den Gerätekennungsprozess nicht abschließen, sind die 
 Bevor Sie Ihre Berichte entwerfen, führen Sie die folgenden Aufgaben aus:
 
 * Alle konfigurieren link:task_configure_data_collectors.html["Datensammler"] Richtig.
-* Geben Sie Annotationen (z. B. Tiers, Datacenter und Geschäftsbereiche) auf Geräten und Ressourcen in Ihrer Umgebung ein. Da Cloud Insights Reporting historische Daten erfasst, ist es vorteilhaft, Anmerkungen vor der Berichterstellung stabil zu lassen.
+* Geben Sie Annotationen (z. B. Tiers, Datacenter und Geschäftsbereiche) auf Geräten und Ressourcen in Ihrer Umgebung ein. Vor der Berichterstellung ist es von Vorteil, dass die Annotationen stabil sind, da in Data Infrastructure Insights Reporting Verlaufsdaten erfasst werden.
 
 
 
@@ -87,9 +87,9 @@ Bei der Erstellung von Berichten sind einige Tipps hilfreich.
 
 * Legen Sie fest, ob Sie aktuelle oder historische Daten verwenden müssen.
 +
-Die meisten Berichte müssen nur über die neuesten Daten berichten, die in der Cloud Insights verfügbar sind.
+In den meisten Berichten müssen Sie nur zu den neuesten Daten berichten, die unter Data Infrastructure Insights verfügbar sind.
 
-* Cloud Insights-Berichte liefern zwar Verlaufsdaten zu Kapazität und Performance, jedoch nicht zum Inventar.
+* Data Infrastructure Insights Reporting liefert Verlaufsdaten zu Kapazität und Performance, jedoch nicht zu Bestand.
 * Jeder sieht alle Daten, aber möglicherweise müssen Sie die Daten auf bestimmte Zielgruppen beschränken.
 +
 Um die Informationen für verschiedene Benutzer zu segmentieren, können Sie Berichte erstellen und Zugriffsberechtigungen für sie festlegen.
@@ -100,7 +100,7 @@ Um die Informationen für verschiedene Benutzer zu segmentieren, können Sie Ber
 
 == Reporting-Datenmodelle
 
-Cloud Insights umfasst mehrere Datenmodelle, aus denen Sie entweder vordefinierte Berichte auswählen oder Ihren eigenen benutzerdefinierten Bericht erstellen können.
+Data Infrastructure Insights umfasst mehrere Datenmodelle, aus denen Sie entweder vordefinierte Berichte auswählen oder Ihren eigenen individuellen Bericht erstellen können.
 
 Jedes Datenmodell enthält einen einfachen Data Marts und einen erweiterten Data Marts:
 
@@ -188,7 +188,7 @@ Ermöglicht Ihnen, Berichte über Ihre virtuelle Umgebung und deren Kapazitätsa
 * Wie hoch sind meine Storage-Effizienzeinsparungen durch Storage Thin Provisioning und Deduplizierungstechnologien?
 
 
-Die Kapazitäten im VM-Kapazitätsdatenmodell werden von virtuellen Festplatten (VMDKs) genutzt. Das bedeutet, dass die bereitgestellte Größe einer VM mit dem VM-Kapazitätsdatenmodell die Größe der virtuellen Festplatten entspricht. Dies unterscheidet sich von der bereitgestellten Kapazität in der Ansicht Virtual Machines in Cloud Insights, die die bereitgestellte Größe für die VM selbst anzeigt.
+Die Kapazitäten im VM-Kapazitätsdatenmodell werden von virtuellen Festplatten (VMDKs) genutzt. Das bedeutet, dass die bereitgestellte Größe einer VM mit dem VM-Kapazitätsdatenmodell die Größe der virtuellen Festplatten entspricht. Dies unterscheidet sich von der bereitgestellten Kapazität in der Ansicht „Data Infrastructure Insights“ für Virtual Machines, in der die bereitgestellte Größe der VM angezeigt wird.
 
 
 
@@ -302,7 +302,7 @@ Das Performance-Datenmodell enthält Informationen, mit denen Sie die Angemessen
 
 === Storage-Effizienz-Datenmodell
 
-Nachverfolgung des Storage-Effizienz-Ergebnisses und des Potenzials im Laufe der Zeit Dieses Datenmodell speichert Messungen nicht nur der bereitgestellten Kapazität, sondern auch der genutzten oder verbrauchten Menge (der physischen Messung). Wenn beispielsweise Thin Provisioning aktiviert ist, gibt Cloud Insights an, wie viel Kapazität das Gerät benötigt. Mithilfe dieses Modells lässt sich außerdem die Effizienz bei aktivierter Deduplizierung bestimmen. Sie können verschiedene Fragen mithilfe des Storage-Effizienz-Data Marts beantworten:
+Nachverfolgung des Storage-Effizienz-Ergebnisses und des Potenzials im Laufe der Zeit Dieses Datenmodell speichert Messungen nicht nur der bereitgestellten Kapazität, sondern auch der genutzten oder verbrauchten Menge (der physischen Messung). Wenn beispielsweise Thin Provisioning aktiviert ist, zeigt Data Infrastructure Insights an, wie viel Kapazität vom Gerät belegt wird. Mithilfe dieses Modells lässt sich außerdem die Effizienz bei aktivierter Deduplizierung bestimmen. Sie können verschiedene Fragen mithilfe des Storage-Effizienz-Data Marts beantworten:
 
 * Wie hoch sind unsere Storage-Effizienzeinsparungen als Ergebnis der Implementierung von Thin Provisioning und Deduplizierungstechnologien?
 * Wie hoch sind die Storage-Einsparungen in den gesamten Datacentern?

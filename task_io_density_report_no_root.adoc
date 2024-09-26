@@ -67,7 +67,7 @@ Anmerkungen sind spezielle Notizen, die Sie Ihren Assets zuweisen, damit Sie Ass
 Sie müssen alle Root-Aggregate identifiziert haben, die Sie aus dem Bericht „hohe I/O-Dichte“ ausschließen möchten.
 
 .Schritte
-. Klicken Sie im Menü Cloud Insights auf *Verwalten > Anmerkungen*
+. Klicken Sie im Menü Data Infrastructure Insights auf *Verwalten > Anmerkungen*
 . Klicken Sie Auf *Hinzufügen*
 +
 .. Geben Sie den Namen für die Anmerkung ein: *RootAggr*
@@ -88,7 +88,7 @@ Alternativ zum manuellen Anwenden von Anmerkungen auf einzelne Assets können Si
 Sie müssen eine Abfrage erstellt und gespeichert haben, die die NetApp Root-Aggregate identifiziert, die Sie in Ihrer Umgebung identifiziert haben.
 
 .Schritte
-. Klicken Sie in der Cloud Insights-Symbolleiste auf *Verwalten > Anmerkungsregeln*.
+. Klicken Sie in der Symbolleiste Data Infrastructure Insights auf *Verwalten > Anmerkungsregeln*.
 . Klicken Sie Auf *Hinzufügen*. Das Dialogfeld Regel hinzufügen wird angezeigt.
 +
 .. Geben Sie im Feld Name einen eindeutigen Namen ein, der die Regel *"RootAggrExclude"* beschreibt

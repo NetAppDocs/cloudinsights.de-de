@@ -19,10 +19,10 @@ keywords: monitor, alert, viewing
 
 
 [role="lead"]
-Cloud Insights zeigt bei jedem dieser Meldungen an link:task_create_monitor.html["Überwachte Schwellenwerte"] Werden überschritten.
+Data Infrastructure Insights zeigt Warnmeldungen an, wenn link:task_create_monitor.html["Überwachte Schwellenwerte"] diese überschritten werden.
 
 
-TIP: Monitore und Alarmfunktionen sind in der Cloud Insights Standard Edition und höher erhältlich.
+TIP: Monitore und Alarmfunktionen sind ab Data Infrastructure Insights Standard Edition verfügbar.
 
 
 
@@ -71,7 +71,7 @@ image:alert_detail_page.png["Seite Mit Den Alarmdetails"]
 
 == Benachrichtigt, Wenn Daten Fehlen
 
-In einem Echtzeit-System wie Cloud Insights, um die Analyse eines Monitors anzustoßen, um zu entscheiden, ob ein Alarm generiert werden soll, verlassen wir uns auf eines von zwei Dingen:
+In einem Echtzeit-System wie Data Infrastructure Insights, um die Analyse eines Monitors auszulösen, um zu entscheiden, ob ein Alarm generiert werden soll, setzen wir auf eines von zwei Dingen:
 
 * Der nächste Datenpunkt zu kommen
 * Ein Timer zum Feuer, wenn es keinen Datenpunkt gibt und Sie lange genug gewartet haben
@@ -87,4 +87,4 @@ Wenn Sie einen Monitor mit einem 30-Minuten-Fenster haben, das bemerkt, dass ein
 
 Es ist möglich, einen Monitor so zu konfigurieren, dass die Bedingung *immer* auf dem überwachten Objekt vorhanden ist, z. B. IOPS > 1 oder Latenz > 0. Diese werden oft als „Test“-Monitore erzeugt und dann vergessen. Solche Monitore erzeugen Warnmeldungen, die dauerhaft an den einzelnen Objekten offen bleiben. Dies kann zu Problemen mit der Systemspannung und Stabilität im Laufe der Zeit führen.
 
-Um dies zu verhindern, schließt Cloud Insights automatisch alle „dauerhaft aktiven“ Warnungen nach 7 Tagen. Beachten Sie, dass die zugrunde liegenden Monitorbedingungen (wahrscheinlich) weiterhin existieren, wodurch fast sofort eine neue Warnung ausgegeben wird, aber durch das Schließen von „immer aktiven“ Warnungen werden einige der sonst auftretenden Systembelastungen verringert.
+Um dies zu verhindern, schließt Data Infrastructure Insights automatisch alle „permanent aktiv“-Warnmeldungen nach 7 Tagen. Beachten Sie, dass die zugrunde liegenden Monitorbedingungen (wahrscheinlich) weiterhin existieren, wodurch fast sofort eine neue Warnung ausgegeben wird, aber durch das Schließen von „immer aktiven“ Warnungen werden einige der sonst auftretenden Systembelastungen verringert.

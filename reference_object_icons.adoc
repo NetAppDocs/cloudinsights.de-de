@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference_object_icons.html 
-summary: Referenz für das Cloud Insights-Objektsymbol 
+summary: Symbolreferenz für das Objekt Data Infrastructure Insights 
 keywords: icons, assets, objects, reference, map 
 ---
 = Objekt Symbol Referenz
@@ -9,7 +9,7 @@ keywords: icons, assets, objects, reference, map
 
 
 [role="lead"]
-In Cloud Insights verwendete Objektsymbole.
+In Data Infrastructure Insights verwendete Objektsymbole:
 
 
 

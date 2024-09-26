@@ -5,17 +5,14 @@ summary: Sie definieren Anwendungen, die Sie dann je nach Bedarf auf Assets in I
 keywords: application, create application, 
 ---
 = Anwendungen Werden Erstellt
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -28,7 +25,7 @@ Wenn Sie die Anwendung einer Geschäftseinheit zuordnen möchten, müssen Sie di
 Mit Cloud Insights können Sie Daten von Ressourcen, die zu Applikationen zugeordnet sind, aus z. B. zu Nutzungsdaten oder zur Kostenberichterstellung nachverfolgen.
 
 .Schritte
-. Klicken Sie im Menü Cloud Insights auf *Verwalten > Anwendungen*.
+. Klicken Sie im Menü Cloud Insights auf *Observability > Enrich > Applications*. Wählen Sie
 +
 Das Dialogfeld Anwendung hinzufügen wird angezeigt.
 
