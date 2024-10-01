@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_cs_user_management.html 
 keywords: Workload Security, User, Login, account, cloud secure 
-summary: Benutzerkonten für die Workload-Sicherheit werden über das Cloud Insights Benutzermanagement verwaltet 
+summary: Benutzerkonten für Workload-Sicherheit werden über Data Infrastructure Insights User Management gemanagt 
 ---
 = Benutzerverwaltung
 :hardbreaks:
@@ -16,9 +16,9 @@ summary: Benutzerkonten für die Workload-Sicherheit werden über das Cloud Insi
 
 
 [role="lead"]
-Benutzerkonten für die Workload-Sicherheit werden über Cloud Insights gemanagt.
+Benutzerkonten für Workload-Sicherheit werden über Data Infrastructure Insights gemanagt.
 
-Cloud Insights bietet vier Benutzerkontoebenen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen. Ein Benutzerkonto mit Administratorrechten kann Benutzer erstellen oder ändern und jedem Benutzer eine der folgenden Workload-Sicherheitsrollen zuweisen:
+Data Infrastructure Insights bietet vier Benutzerkontoebenen: Kontoinhaber, Administrator, Benutzer und Gast. Jedem Konto werden bestimmte Berechtigungsebenen zugewiesen. Ein Benutzerkonto mit Administratorrechten kann Benutzer erstellen oder ändern und jedem Benutzer eine der folgenden Workload-Sicherheitsrollen zuweisen:
 
 |===
 
@@ -38,11 +38,11 @@ Cloud Insights bietet vier Benutzerkontoebenen: Kontoinhaber, Administrator, Ben
 . Melden Sie sich bei Workload Security an
 . Klicken Sie im Menü auf *Admin > Benutzerverwaltung*
 +
-Sie werden zur Seite User Management von Cloud Insights weitergeleitet.
+Sie werden auf die Seite User Management von Data Infrastructure Insights weitergeleitet.
 
 . Wählen Sie die gewünschte Rolle für jeden Benutzer aus.
 
 
 Wählen Sie beim Hinzufügen eines neuen Benutzers einfach die gewünschte Rolle aus (normalerweise Benutzer oder Gast).
 
-Weitere Informationen zu Benutzerkonten und Rollen finden Sie im Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["Benutzerrolle"] Dokumentation.
+Weitere Informationen zu Benutzerkonten und Rollen finden Sie in der Dokumentation zu Data Infrastructure Insightslink:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["Benutzerrolle"].
