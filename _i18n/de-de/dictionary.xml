@@ -7536,8 +7536,6 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">Hier ist eine Beispieldatei mit den richtigen Cisys Berechtigungen.</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">Ich sehe Datenerhebungsfehler mit der Meldung "unbekannter Code"</block>
   <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM hat mehrere Untertypen. Davon werden nur _default_, _Sync_source_ und _Sync_Destination_ unterstützt.</block>
-  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">Empfohlene Konfiguration für Metro Cluster</block>
-  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">Die folgenden Empfehlungen für MetroCluster:</block>
   <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">Verbinden Sie zwei Data Collectors – eine mit der Quell-SVM und eine andere mit der Ziel-SVM.</block>
   <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">Die Datensammler sollten durch _Cluster IP_ verbunden werden.</block>
   <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">Zu jedem Zeitpunkt sollte ein Datensammler in Betrieb sein, ein anderer wird im Fehler sein.</block>
@@ -13438,4 +13436,6 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">Die folgende Tabelle und Abbildung zeigen die Zuordnung von Feldern zwischen PagerDuty und Data Infrastructure Insights:</block>
   <block id="55f37f5127b4085cc0881e89df336196" category="cell">Ein ockerRepo-Überschreiben, um Bilder von privaten Docker-Repos des Kunden im Vergleich zu Data Infrastructure Insights Docker Repo zu beziehen. Der Standardwert ist Data Infrastructure Insights Docker Repo</block>
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">Freitextfeld, das einen Cluster über alle Kundencluster eindeutig identifiziert. Diese sollte bei einem Mandanten von Dateninfrastruktur Insights eindeutig sein. Der Standardwert ist das, was der Kunde in die Benutzeroberfläche für das Feld „Cluster Name“ eingibt</block>
+  <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">Empfohlene Konfiguration für MetroCluster</block>
+  <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">Für MetroCluster wird Folgendes empfohlen:</block>
 </blocks>

@@ -221,9 +221,9 @@ Das System zeigt die Konfigurationsseite der ONTAP SVM an. Geben Sie die erforde
 
 
 
-== Empfohlene Konfiguration für Metro Cluster
+== Empfohlene Konfiguration für MetroCluster
 
-Die folgenden Empfehlungen für MetroCluster:
+Für MetroCluster wird Folgendes empfohlen:
 
 . Verbinden Sie zwei Data Collectors – eine mit der Quell-SVM und eine andere mit der Ziel-SVM.
 . Die Datensammler sollten durch _Cluster IP_ verbunden werden.
