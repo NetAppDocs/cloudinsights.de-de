@@ -76,7 +76,7 @@ Geben Sie die Daten in die Felder des Datensammlers gemäß der folgenden Tabell
 
 == Fehlerbehebung
 
-* Die von Ihrem ANF-Datensammler verwendeten Anmeldedaten dürfen keinen Zugriff auf Azure-Abonnements haben, die ANF-Volumes enthalten.
+* Die von Ihrem ANF-Datensammler verwendeten Zugangsdaten müssen auf alle Azure-Abonnements zugreifen können, die ANF-Volumes enthalten.
 * Wenn der Zugang zum Reader dazu führt, dass die Leistensammlung fehlschlägt, versuchen Sie, den Zugriff auf Mitarbeiter auf Ressourcengruppenebene zu gewähren.
 
 
