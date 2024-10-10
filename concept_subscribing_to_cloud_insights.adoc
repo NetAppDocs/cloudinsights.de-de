@@ -106,7 +106,7 @@ NOTE: Eine _Modulbewertung_ ist keine _Testversion_ - wir verwenden den Begriff 
 
 === Kalkulator
 
-Während einer Modulbewertung wird die ME-Auslastung für Ressourcen, die für das Modul verbraucht werden, nicht geändert. aber Sie können den *Estimator* (auf der _Summary_ Registerkarte) öffnen, um zu sehen, wie MUs nach der Auswertung berechnet werden, sowie mit "Was wäre wenn"-Szenarien mit der Anzahl der Mus spielen, die Sie in Zukunft benötigen. Setzen Sie die Zahlen zurück, indem Sie den Kalkulator beenden.
+Während einer Modulbewertung wird Ihnen die ME-Nutzung für Ressourcen, die für das Modul verbraucht werden, nicht berechnet. Sie können jedoch den *Estimator* (auf der Registerkarte _Summary_) öffnen, um zu sehen, wie die ME nach der Auswertung berechnet werden, sowie mit "Was wäre wenn"-Szenarien mit der Anzahl der MUs, die Sie in Zukunft benötigen, spielen. Setzen Sie die Zahlen zurück, indem Sie den Kalkulator beenden.
 
 image:Module_Trials_Estimator.png["Kalkulator"]
 
@@ -126,7 +126,36 @@ Um sich zu registrieren, gehen Sie zu *Admin -> Abonnement*. Zusätzlich zu den 
 
 === Observability-Messung
 
-Einblicke in die Dateninfrastruktur die Beobachtbarkeit der Infrastruktur von Data Infrastructure und die Beobachtbarkeit von Kubernetes werden pro *gemanagter Einheit* gemessen. Die Nutzung Ihrer verwalteten Einheiten wird anhand der Anzahl der *Hosts oder virtuellen Maschinen* und der Menge der *unformatierten Kapazität* berechnet, die in Ihrer Infrastrukturumgebung verwaltet wird.
+Die Beobachtbarkeit von Einblicken in die Dateninfrastruktur lässt sich auf zwei Arten gemessen werden:
+
+* Kapazitätsmessung
+* Managed Unit Metering (Legacy)
+
+
+Ihr Abonnement wird mit einer dieser Methoden gemessen, je nachdem, ob Sie bereits ein Abonnement haben oder ein neues Abonnement starten.
+
+
+
+==== Kapazitätsmessung
+
+Dateninfrastruktur Insights Observability misst die Nutzung nach Speicherebene in Ihrer Umgebung. Sie können Speicher haben, die in eine oder mehrere dieser Kategorien fallen:
+
+* Primäre Rohkost
+* Objekt Raw
+* Cloud Genutzt
+
+
+Für jede Stufe wird eine andere Geschwindigkeit gemessen. Das gesamte Tier wird berechnet, sodass Ihnen eine _effektive Berechtigung_ zusteht. Die Formel für die Berechnung der effektiven Nutzung ist wie folgt:
+
+ Effective usage = Raw TiB + (0.1 x Object Tier Raw TiB) + (0.25 x Cloud Tier Provisioning TiB)
+
+NOTE: Die Summe der verwalteten Einheiten kann sich leicht von der Datensammler-Anzahl im Zusammenfassungsbereich unterscheiden. Dies liegt daran, dass die Anzahl der verwalteten Einheiten auf die nächste verwaltete Einheit aufgerundet wird. Die Summe dieser Zahlen in der Datensammler-Liste kann etwas höher sein als die Summe der verwalteten Einheiten im Statusbereich. Im Übersichtsbereich finden Sie die tatsächliche Anzahl der verwalteten Einheiten für Ihr Abonnement. Um dies zu erleichtern, berechnet DII eine einzelne *effektive Berechtigungsnummer* auf Basis von _abonnierten_ Mengen; sie berechnet dann dieselbe Zahl basierend auf _Discovered_ Speicher und erklärt nur dann den Verstoß, wenn die effektive erkannte Kapazität größer als die effektive Berechtigung ist. So können Sie flexibel die Mengen überwachen, die von den abonnierten Beträgen für jeden Tier abweichen, was DII zulässt, solange sich der gesamte erkannte Speicher innerhalb der abonnierten effektiven Berechtigung befindet.
+
+
+
+==== Managed Unit Metering (Legacy)
+
+Dateninfrastruktureinblicke Infrastrukturbeobachtbarkeit und Kubernetes Observability Meter Nutzung pro *Managed Unit*. Die Nutzung Ihrer verwalteten Einheiten wird anhand der Anzahl der *Hosts oder virtuellen Maschinen* und der Menge der *unformatierten Kapazität* berechnet, die in Ihrer Infrastrukturumgebung verwaltet wird.
 
 * 1 Managed Unit = 2 Hosts (jede virtuelle oder physische Maschine)
 * 1 Managed Unit = 4 tib unformatierte Kapazität physischer oder virtueller Festplatten
