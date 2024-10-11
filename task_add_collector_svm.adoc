@@ -239,7 +239,7 @@ Der aktuelle ‘running’ SVM-Datensammler wird als _running_ angezeigt. Der Da
 
 == Service-Richtlinie
 
-Bei Verwendung der Service-Policy aus ONTAP Version 9.9.1, um eine Verbindung zum Datenquellensammler herzustellen, ist der Dienst _Data-fpolicy-Client_ zusammen mit dem Datendienst _Data-nfs_ und/oder _Data-cifs_ erforderlich.
+Wenn Sie die Service Policy mit ONTAP *Version 9.9.1 oder neuer* verwenden, um eine Verbindung zum Data Source Collector herzustellen, ist der _Data-fpolicy-Client_-Dienst zusammen mit dem Datendienst _Data-nfs_ und/oder _Data-cifs_ erforderlich.
 
 Beispiel:
 
