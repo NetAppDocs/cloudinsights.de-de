@@ -22,6 +22,9 @@ Sie können das Ausgabeformat und die Ausgabe eines Berichts anpassen, Berichtei
 NOTE: Die Berichtsfunktion ist in Data Infrastructure Insights verfügbarlink:concept_subscribing_to_cloud_insights.html["Premium Edition"].
 
 
+IMPORTANT: Bevor Sie Änderungen an den Berichtsberechtigungen oder der Sicherheit vornehmen, müssen Sie „My Content“-Berichte in den Ordner „Team Content“ kopieren, um sicherzustellen, dass die Berichte gespeichert werden.
+
+
 
 == Anpassen des Ausgabeformats und der Bereitstellung eines Berichts
 

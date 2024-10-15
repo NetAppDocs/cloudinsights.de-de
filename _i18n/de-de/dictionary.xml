@@ -13509,4 +13509,5 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">NetApp-Hostauflösung für allgemeine DB:Hardbreaks:</block>
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP-REST-Datensammler:Hardbreaks:</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">Manuelles Installieren von Workload Security Agent und Collector:Hardbreaks:</block>
+  <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">Bevor Sie Änderungen an den Berichtsberechtigungen oder der Sicherheit vornehmen, müssen Sie „My Content“-Berichte in den Ordner „Team Content“ kopieren, um sicherzustellen, dass die Berichte gespeichert werden.</block>
 </blocks>
