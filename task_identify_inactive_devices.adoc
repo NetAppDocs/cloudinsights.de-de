@@ -5,17 +5,14 @@ keywords: inactive, device,
 summary: Mit der Identifizierung inaktiver Geräte können Sie diese löschen oder einer aktiven Rolle zuweisen. 
 ---
 = Identifizieren von inaktiven Geräten
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
