@@ -18,31 +18,7 @@ summary: Die Data Infrastructure Insights API ermöglicht die Integration in and
 [role="lead"]
 Die Insights API der Dateninfrastruktur ermöglicht es NetApp Kunden und unabhängigen Softwareanbietern (ISVs), Dateninfrastrukturanalysen mit anderen Applikationen wie beispielsweise CMDBs oder anderen Ticketsystemen zu integrieren.
 
-Beachten Sie, dass die Data Infrastructure Insights APIs auf Basis Ihrer aktuellen Edition verfügbar sind:
-
-[cols="<,^s,^s,^s"]
-|===
-| API-Typ | Basic | Standard | Premium 
-
-
-| Erfassungseinheit | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
-
-
-| Datenerfassung | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
-
-
-| Meldungen |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
-
-
-| Ressourcen |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
-
-
-| Datenaufnahme |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
-
-
-| Aufnahme Protokollieren |  | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] | image:SmallCheckMark.png["Aktivieren Sie das Kontrollkästchen"] 
-|===
-Außerdem link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["Funktionsgruppe Rolle"]bestimmt Ihre Data Infrastructure Insights, auf welche APIs Sie zugreifen können. Benutzer- und Gastrollen haben weniger Berechtigungen als Administratorrolle. Wenn Sie z. B. in Überwachen und Optimieren eine Administratorrolle haben, die Rolle Benutzer jedoch in Reporting verwendet wird, können Sie alle API-Typen außer Data Warehouse verwalten.
+Ihre Dateninfrastruktur Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["Funktionsgruppe Rolle"]bestimmt, auf welche APIs Sie zugreifen können. Benutzer- und Gastrollen haben weniger Berechtigungen als Administratorrolle. Wenn Sie z. B. in Überwachen und Optimieren eine Administratorrolle haben, die Rolle Benutzer jedoch in Reporting verwendet wird, können Sie alle API-Typen außer Data Warehouse verwalten.
 
 
 
