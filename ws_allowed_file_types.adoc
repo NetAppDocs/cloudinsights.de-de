@@ -5,12 +5,7 @@ keywords: workload security, cloud secure, include list, allowed, file types, ra
 summary: Fügen Sie Dateierweiterungen zu einer Liste zulässiger Dateitypen hinzu, um Warnungen zu reduzieren. 
 ---
 = Richtlinien Für Zulässige Dateitypen
-:hardbreaks:
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

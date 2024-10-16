@@ -5,14 +5,17 @@ keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall
 summary: Hinzufügen von Datensammlern für Workload-Sicherheit 
 ---
 = Konfiguration des ONTAP SVM Data Collector
+:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
+:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

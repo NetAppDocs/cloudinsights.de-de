@@ -4,12 +4,13 @@ permalink: cs_automated_response_policies.html
 keywords: alert, snapshot, ransomware, attack 
 summary: 'Sie können automatische Antwortrichtlinien für potenzielle Angriffe (z. B. Ransomware) und/oder Warnungen zu Aktivitäten festlegen' 
 ---
-= Richtlinien für automatische Reaktionen:Hardware-Unterbrechungen:
+= Automatisierte Antwortrichtlinien
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ./media
 
 
 [role="lead"]

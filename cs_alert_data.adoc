@@ -4,12 +4,13 @@ permalink: cs_alert_data.html
 keywords: alert, attack, ransomware, activity, security, abnormal 
 summary: Workload Security erzeugt Warnmeldungen bei abnormalen Benutzeraktivitäten oder potenziellen Angriffen. Auf der Seite „Meldungen“ werden diese Aktivitäten für eine schnelle und einfache Untersuchung aufgeführt. 
 ---
-= Warnmeldungen:Hardbreaks:
+= Meldungen
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ./media
 
 
 [role="lead"]

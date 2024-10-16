@@ -4,7 +4,8 @@ permalink: task_config_telegraf_agent_k8s.html
 keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
 summary: Der Kubernetes Monitoring Operator erfasst Kubernetes-Daten zur Verwendung in Data Infrastructure Insights. 
 ---
-= Installation und Konfiguration des Kubernetes Monitoring Operator:Hardware-Unterbrechungen:
+= Installation und Konfiguration des Kubernetes Monitoring Operator
+:hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
 :nofooter: 
@@ -258,11 +259,6 @@ Ereignisprotokoll
 Netzwerkleistung und -Zuordnung
 
 * ci-Netz-Beobachter
-
-
-Änderungsanalyse
-
-* ci-K8s-Change-Observer
 
 
 Übertragen Sie das Operator-Docker-Image gemäß Ihren Unternehmensrichtlinien in das private/lokale/unternehmenseigene Docker-Repository. Stellen Sie sicher, dass die Bild-Tags und Verzeichnispfade zu diesen Images in Ihrem Repository mit denen im Data Infrastructure Insights Repository übereinstimmen.
