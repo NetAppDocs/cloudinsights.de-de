@@ -8143,13 +8143,7 @@
   <block id="2c56c637347a0a87008437d711d16263" category="cell">Passwort, das für Isilon verwendet wird</block>
   <block id="01cba5236d5d580a0466283128eeaca6" category="cell">Der Standardwert ist 8080.</block>
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">Veraltet</block>
-  <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">Aufbau, Schutz und Kontrolle Ihres hybriden Multi-Cloud-Datenbestands über eine einzige Kontrollebene</block>
   <block id="fa0f9b91b9b3862eb566219b032aa9f6" category="inline-link-macro">_Vorschau_</block>
-  <block id="8a281fcc91b3d1c2a8f6a3503b98db32" category="admonition">Die Integration des Navigationsmenüs von BlueXP wird als A betrachtet <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> Feature und kann daher geändert werden.</block>
-  <block id="dc2328c73b90d6c1704bed2d775bd562" category="inline-image-macro">Das Navigationsmenü von BlueXP zeigt Beobachtbarkeit oben und andere NetApp Services unten</block>
-  <block id="070ed5b249a03236a4b58ef440cd9a27" category="paragraph"><block ref="070ed5b249a03236a4b58ef440cd9a27" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27a7deb0ec1bdff43e3eb6bbcee65f55" category="paragraph">Mit den QuickInfo-Tools finden Sie weitere Informationen.</block>
-  <block id="03aa38861ba70a29a2ebce320835a31b" category="paragraph">Weitere Informationen zu BlueXP finden Sie auf der BlueXP-Website.</block>
   <block id="643c94a9b7fa8044a23bb9cbc6ebffbe" category="section-title">Formatieren Von Tabellenwidgets</block>
   <block id="9e2381c8e7ac28deb699317b34df149b" category="paragraph">Wie Widgets mit einem Wert und einer Anzeige können Sie bedingte Formatierungen in TabellenWidgets festlegen, sodass Sie Daten mit Farben und/oder speziellen Symbolen hervorheben können.</block>
   <block id="1631a79ea8e49d2933f6cfd9657b3f26" category="paragraph">Wenn Sie die Einheitenanzeige für eine Spalte ändern, bleibt die bedingte Formatierung erhalten und gibt die Änderung der Werte wieder. Die nachfolgenden Bilder zeigen die gleiche bedingte Formatierung, auch wenn die Anzeigeeinheit anders ist.</block>
@@ -8809,7 +8803,6 @@
   <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">RsMemRequest</block>
   <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">Speicheranforderung für telegraf rs</block>
   <block id="6fd605953233d5564943f85815683d62" category="cell">RunPrivileged</block>
-  <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">Führen Sie den telegraf Container im privilegierten Modus aus. Setzen Sie diese Einstellung auf TRUE, wenn SELinux auf Ihren K8s-Knoten aktiviert ist</block>
   <block id="986b07451fa1766c43f2eead1470731c" category="cell">Stapelgröße</block>
   <block id="f73038607dbfd988c8ed06aa707b67b6" category="inline-link-macro">Telegraf-Konfigurationsdokumentation</block>
   <block id="4a686d41d5d06d7af488bce13a4b6b1c" category="cell">Siehe <block ref="1220f98ff4e67fb30a54b092e87489e7" category="inline-link-macro-rx"></block></block>
@@ -8837,7 +8830,6 @@
   <block id="a28f540659f42fa52be34b45558bb6c6" category="cell">DnsMode</block>
   <block id="5c0864cc25dbf397d47948de9ac342f1" category="cell">TCP/UDP, Modus für DNS</block>
   <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">Workload-Zuordnung</block>
-  <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">Konfigurationsoptionen, mit denen die Erfassung der Workload-Zuordnung und die Installation des Operators angepasst werden können</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">CpuLimit</block>
   <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">MemLimit</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">CPU-Anforderung für Netto-Observer-ds</block>
@@ -12999,10 +12991,6 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="cc3cee81cef851f2f036f9ae6b1ac477" category="paragraph">Performancedaten werden über viele Geräte als separate Proben erfasst. Data Infrastructure Insights sammelt stündlich (standardmäßig) Performance-Proben und fasst sie zusammen.</block>
   <block id="1852e85c98f9e7216ff053507e056147" category="paragraph">Jeder Performance-Datenobjekttyp verfügt über einen eigenen Satz von Performance-Kennzahlen. Das Performance-Objekt der virtuellen Maschine unterstützt beispielsweise „diskThrughput“ als Leistungskennzahl. Jede unterstützte Leistungsmetrik ist eine bestimmte „performanceCategory“, die im metrischen Wörterbuch dargestellt wird. Data Infrastructure Insights unterstützt mehrere später in diesem Dokument aufgeführte Performance-Kenngrößen. Jedes Wörterbuch der Leistungsmetrik hat auch das Feld „Beschreibung“, das eine vom Menschen lesbare Beschreibung dieser Leistungsmetrik und eine Reihe von Zähleinträgen mit Leistungszusammenfassung ist.</block>
   <block id="257f0ceb0672288b52ab4e080578e700" category="paragraph">Data Infrastructure Insights ist eine erweiterbare (weit offene) Lösung, die die Integration in Orchestrierungs-, Business Management-, Change Control- und Ticketsysteme von Drittanbietern sowie benutzerdefinierte CMDB-Integrationen ermöglicht.</block>
-  <block id="c92924fbf7861a093c4349a94f8bcf0e" category="doc">Einblicke aus Dateninfrastrukturen sind Teil von BlueXP </block>
-  <block id="e5e173192c2f69b363ad91f5ed6b33d3" category="paragraph">Mit BlueXP können Sie all Ihre NetApp Storage- und Daten-Assets über eine einzige Oberfläche managen. In BlueXP finden Sie viele neue Speicherservices sowie Datenservices, die bisher nur als Stand-Alone-Service mit einer separaten Benutzeroberfläche zur Verfügung standen. Einer dieser Services ist der Einblick in die Dateninfrastruktur (ehemals Cloud Insights).</block>
-  <block id="fde977b4517b5a88b8ee2d3fcd1c0fd8" category="paragraph">Intuitives neues Menü im Navigationsmenü von BlueXP werden die Datendienste nach Kategorien geordnet und nach ihrer Funktionalität benannt. Die Funktionen „Einblicke aus Dateninfrastrukturen“ finden Sie beispielsweise im Menü „Beobachtbarkeit“. Bei der Erkundung von Data Infrastructure Insights wird der Abschnitt „Beobachtbarkeit“ oben im Navigationsmenü angezeigt. Dies gilt für jeden BlueXP-Service, wie Sie es erkunden.</block>
-  <block id="9ecae0812a01df2d2809eccbaae9fb2d" category="admonition">In dieser Dokumentation können die Begriffe „Data Infrastructure Insights“ und „Observability“ synonym verwendet werden.</block>
   <block id="c0775283da3261d158df55d820b4e47b" category="paragraph">Beginnen Sie mit einer Data Infrastructure Insights Acquisition Unit mit nur 8 GB Arbeitsspeicher und 50 GB Festplattenspeicher. In größeren Umgebungen sollten Sie sich jedoch folgende Fragen stellen:</block>
   <block id="cde8307fb591a6c3934539dcb5919f06" category="list-text">Für Acquisition Unit-Installationen in Data Infrastructure Insights Federal Edition-Clustern muss das zugrunde liegende Betriebssystem über eine gute Entropiequelle verfügen. Auf Linux-Systemen erfolgt dies typischerweise durch die Installation von _rng-Tools_ oder durch die Hardware-Zufallszahlengenerierung (RNG). Es liegt in der Verantwortung des Kunden, sicherzustellen, dass diese Anforderung auf der Maschine der Erfassungseinheit erfüllt wird.</block>
   <block id="96cb7682ad0362f3aff6ef6f90dd2520" category="summary">Dateninfrastruktur Insights erfasst Risikodaten von NetApp Active IQ</block>
@@ -13427,7 +13415,6 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="631118e6a302427a45c08e77b6d37e3b" category="cell">Stellen Sie sicher, dass Ihr Acquisition Unit-Server/Ihre VM über eine SSL-Verbindung über Port 443 auf Ihre Data Infrastructure Insights-Umgebung (&lt;environment-name&gt;.c01.cloudinsights.NetApp.com) zugreifen kann. Versuchen Sie es mit folgenden Befehlen: _Ping &lt;environment-name&gt;.c01.cloudinsights.NetApp.com_ _traceroute &lt;environment-name&gt;.c01.cloudinsights.NetApp.com_ _curl \https://&lt;environment-name&gt;.c01.cloudinsights.NetApp.com_ _wget \https://&lt;environment-name&gt;.c01.cloudinsights.NetApp.com_ Beachten Sie, dass Port 443 von der AU zu Dateninfrastruktureinblicken "ausgehend" geöffnet werden muss.</block>
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">Ich sehe Warnhinweise von Telegraf wie folgt: _W! [Inputs.diskio] der Datenträgername für „vdc“ kann nicht erfasst werden: Fehler beim Lesen von /dev/vdc: Keine Datei oder Verzeichnis_</block>
   <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">Konfigurationsoptionen des Bedieners</block>
-  <block id="9de6368f45ca30e61d7d6eb11d0da5a5" category="cell">Für den Kubernetes Monitoring Operator sind diese Warnmeldungen gutartig und können sicher ignoriert werden. Alternativ können Sie den telegraf-Abschnitt in AgentConfiguration bearbeiten und runPrivileged auf true setzen. Weitere Informationen finden Sie im <block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>.</block>
   <block id="c2a794ea709fc6031fad37bbb11353ed" category="paragraph">Während einer Modulbewertung wird Ihnen die ME-Nutzung für Ressourcen, die für das Modul verbraucht werden, nicht berechnet. Sie können jedoch den *Estimator* (auf der Registerkarte _Summary_) öffnen, um zu sehen, wie die ME nach der Auswertung berechnet werden, sowie mit "Was wäre wenn"-Szenarien mit der Anzahl der MUs, die Sie in Zukunft benötigen, spielen. Setzen Sie die Zahlen zurück, indem Sie den Kalkulator beenden.</block>
   <block id="6b3c6b1f0dcfdec2952b9d7ebe9ff11f" category="paragraph">Die Beobachtbarkeit von Einblicken in die Dateninfrastruktur lässt sich auf zwei Arten gemessen werden:</block>
   <block id="5e787d0212aa58a0466b454df1baca59" category="list-text">Kapazitätsmessung</block>
@@ -13451,4 +13438,9 @@ Wenn Sie mit SELinux arbeiten, wird empfohlen, die folgenden Befehle auf dem Erf
   <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">NetApp-Hostauflösung für allgemeine DB</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST-Datensammler</block>
   <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">Manuelles Installieren von Workload Security Agent und Collector</block>
+  <block id="1f3c6b9eb496e3586cb89ac14caca626" category="cell">Für den Kubernetes Monitoring Operator sind diese Warnmeldungen gutartig und können sicher ignoriert werden.  Alternativ können Sie den telegraf-Abschnitt in AgentConfiguration bearbeiten und _runDsPrivileged_ auf true setzen. Weitere Informationen finden Sie im <block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>.</block>
+  <block id="03d93e1826c4b75f5882487510637b6a" category="cell">Führen Sie den Container _telegraf-mountstats-Poller_ des telegraf DemonSet im privilegierten Modus aus. Setzen Sie dies auf „true“, wenn SELinux auf Ihren Kubernetes-Nodes aktiviert ist.</block>
+  <block id="324bdfa0e3afdc96a6b7ec1a6d383285" category="cell">RunDsPrivileged</block>
+  <block id="853d5e0ee500d0a29752a0f7c287f08d" category="cell">Stellen Sie runDsPrivileged auf true, um den telegraf DemonSet-Container im privilegierten Modus auszuführen.</block>
+  <block id="f39ed19a7c5e5e2b0cff68ee1bedc0ef" category="cell">Konfigurationsoptionen, mit denen die Erfassung der Workload-Zuordnung und die Installation des Operators angepasst werden können.</block>
 </blocks>

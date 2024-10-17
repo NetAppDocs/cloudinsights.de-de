@@ -87,7 +87,7 @@ Proxy:
 |  | RsMemRequest | Speicheranforderung für telegraf rs 
 
 
-|  | RunPrivileged | Führen Sie den telegraf Container im privilegierten Modus aus. Setzen Sie diese Einstellung auf TRUE, wenn SELinux auf Ihren K8s-Knoten aktiviert ist 
+|  | RunPrivileged | Führen Sie den Container _telegraf-mountstats-Poller_ des telegraf DemonSet im privilegierten Modus aus. Setzen Sie dies auf „true“, wenn SELinux auf Ihren Kubernetes-Nodes aktiviert ist. 
 
 
 |  | Stapelgröße | Siehe link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf-Konfigurationsdokumentation"] 
@@ -179,7 +179,10 @@ Persistent volumeclaims=[*],persistent Volumes=[*],Pods=[*],replikasets=[*],reso
 |  | RunPrivileged | Setzen Sie runPrivileged auf true, wenn Fluent Bit nicht startet und versucht, seine Datenbank zu öffnen/zu erstellen. 
 
 
-| Workload-Zuordnung |  | Konfigurationsoptionen, mit denen die Erfassung der Workload-Zuordnung und die Installation des Operators angepasst werden können 
+|  | RunDsPrivileged | Stellen Sie runDsPrivileged auf true, um den telegraf DemonSet-Container im privilegierten Modus auszuführen. 
+
+
+| Workload-Zuordnung |  | Konfigurationsoptionen, mit denen die Erfassung der Workload-Zuordnung und die Installation des Operators angepasst werden können. 
 
 
 |  | CpuLimit | CPU-Limit für Netto-Observer ds 
